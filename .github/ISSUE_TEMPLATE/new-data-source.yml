@@ -1,0 +1,47 @@
+name: New data source
+description: Suggest a dataset, share processed data, or contribute validation results.
+labels: ["data"]
+body:
+  - type: dropdown
+    id: project
+    attributes:
+      label: Project
+      options:
+        - Skeletal Muscle Aging (junb-sasp-skeletal-muscle)
+        - Mapping Schizophrenia Risk (scz-neuronal-convergence)
+        - General / cross-project
+    validations:
+      required: true
+
+  - type: input
+    id: dataset_name
+    attributes:
+      label: Dataset name
+      placeholder: "e.g., GTEx v8 Muscle, PGC3 EAS GWAS"
+    validations:
+      required: true
+
+  - type: input
+    id: accession
+    attributes:
+      label: Accession number or URL
+      description: Where can we find this data?
+      placeholder: "e.g., GEO GSE12345, https://..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: relevance
+    attributes:
+      label: Why is this relevant?
+      description: Explain what this dataset adds to the project. What question does it help answer? What gap does it fill?
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Additional details
+      description: Sample size, modality, species, known limitations, preprocessing notes, etc.
+    validations:
+      required: false

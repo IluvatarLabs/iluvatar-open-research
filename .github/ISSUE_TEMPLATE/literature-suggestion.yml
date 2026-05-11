@@ -1,0 +1,35 @@
+name: Literature suggestion or new direction
+description: Flag a relevant paper, propose a hypothesis, or suggest a method.
+labels: ["literature", "direction"]
+body:
+  - type: dropdown
+    id: project
+    attributes:
+      label: Project
+      options:
+        - Skeletal Muscle Aging (junb-sasp-skeletal-muscle)
+        - Mapping Schizophrenia Risk (scz-neuronal-convergence)
+        - General / cross-project
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: What are you suggesting?
+      description: |
+        Options:
+        - A paper we should have cited (include full citation and key finding)
+        - A hypothesis Marvin should test in the next iteration
+        - A method or analytical approach worth trying
+        - A question the project hasn't asked yet
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why does this matter for the project?
+      description: Connect it to a specific finding, open question, or gap in the current analysis.
+    validations:
+      required: true

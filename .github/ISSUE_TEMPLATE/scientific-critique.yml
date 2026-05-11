@@ -1,0 +1,38 @@
+name: Scientific critique
+description: Challenge a methodology, interpretation, or confidence classification.
+labels: ["critique"]
+body:
+  - type: dropdown
+    id: project
+    attributes:
+      label: Project
+      options:
+        - Skeletal Muscle Aging (junb-sasp-skeletal-muscle)
+        - Mapping Schizophrenia Risk (scz-neuronal-convergence)
+    validations:
+      required: true
+
+  - type: input
+    id: finding
+    attributes:
+      label: Which finding or hypothesis?
+      description: Reference by number or title (e.g., "Finding #4 — Vascular-FAP crosstalk").
+      placeholder: "Finding #..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: critique
+    attributes:
+      label: What's wrong or questionable?
+      description: Be specific. Reference the methodology, statistical test, dataset, or interpretation you're challenging. Include evidence or citations if possible.
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested correction or alternative interpretation
+      description: Optional. If you have a specific fix or alternative analysis in mind, describe it here.
+    validations:
+      required: false

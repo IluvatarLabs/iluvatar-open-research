@@ -1,0 +1,51 @@
+name: New project idea
+description: Propose a research question for Marvin to run.
+labels: ["project-idea"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Research question
+      description: One sentence. What are you trying to answer?
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it matters
+      description: 2-3 sentences. Who cares, what's the unmet need, why hasn't this been done?
+    validations:
+      required: true
+
+  - type: input
+    id: field
+    attributes:
+      label: Field / domain
+      placeholder: "e.g., computational biology, materials science, psychiatric genetics"
+    validations:
+      required: true
+
+  - type: textarea
+    id: data
+    attributes:
+      label: What public data exists?
+      description: Bulleted list of known datasets with accession numbers or URLs. If you're not sure, describe what kind of data would be needed.
+    validations:
+      required: true
+
+  - type: textarea
+    id: validation
+    attributes:
+      label: What would validation look like?
+      description: What experiments, analyses, or independent datasets would confirm or refute the results?
+    validations:
+      required: true
+
+  - type: textarea
+    id: background
+    attributes:
+      label: Your background (optional)
+      description: Brief description of your expertise and relevant publications. Helps us assess fit and plan collaboration.
+    validations:
+      required: false

@@ -1,0 +1,46 @@
+name: Validation offer
+description: Offer to experimentally or computationally validate a hypothesis.
+labels: ["validation"]
+body:
+  - type: dropdown
+    id: project
+    attributes:
+      label: Project
+      options:
+        - Skeletal Muscle Aging (junb-sasp-skeletal-muscle)
+        - Mapping Schizophrenia Risk (scz-neuronal-convergence)
+    validations:
+      required: true
+
+  - type: input
+    id: hypothesis
+    attributes:
+      label: Which hypothesis?
+      description: Reference by number or title.
+      placeholder: "Hypothesis #..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: system
+    attributes:
+      label: What experimental or analytical system will you use?
+      description: Describe the model system, assay, or computational approach. Be specific enough that we can assess feasibility and avoid duplicate effort.
+    validations:
+      required: true
+
+  - type: input
+    id: timeline
+    attributes:
+      label: Estimated timeline
+      placeholder: "e.g., 8-12 weeks"
+    validations:
+      required: true
+
+  - type: textarea
+    id: expertise
+    attributes:
+      label: Relevant expertise
+      description: Brief description of your lab's or group's relevant experience. Links to publications welcome.
+    validations:
+      required: false
