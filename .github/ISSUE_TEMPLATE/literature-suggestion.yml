@@ -1,6 +1,6 @@
 name: Literature suggestion or new direction
 description: Flag a relevant paper, propose a hypothesis, or suggest a method.
-labels: ["literature", "direction"]
+labels: ["literature"]
 body:
   - type: dropdown
     id: project
