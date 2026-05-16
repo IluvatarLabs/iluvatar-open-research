@@ -1,0 +1,25 @@
+compartment,TF,partial_rho,covariate_set,source_batch,note
+Vascular,JUNB,0.9121,age+sex+tech,batch_060/i2_partial_correlations.csv,
+Vascular,FOS,0.8399,age+sex+tech,batch_060/i2_partial_correlations.csv,
+Vascular,EGR1,0.8913,age+sex+tech,batch_060/i2_partial_correlations.csv,
+Vascular,CEBPB,0.8893,age+sex+tech,batch_060/i2_partial_correlations.csv,
+Vascular,ATF3,,,,
+Vascular,STAT3,,,,
+FAP,JUNB,0.0322,age+sex+tech,batch_060/i2_partial_correlations.csv,
+FAP,FOS,-0.153,age+sex+tech,batch_060/i2_partial_correlations.csv,
+FAP,EGR1,-0.0367,age+sex+tech,batch_060/i2_partial_correlations.csv,
+FAP,CEBPB,0.8882,age+sex+tech,batch_060/i2_partial_correlations.csv,
+FAP,ATF3,,,,
+FAP,STAT3,,,,
+Immune,JUNB,,covariate_set_mismatch,batch_059 (incompatible: snRNA-only),covariate_set_mismatch
+Immune,FOS,,covariate_set_mismatch,batch_059 (incompatible: snRNA-only),covariate_set_mismatch
+Immune,EGR1,,covariate_set_mismatch,batch_059 (incompatible: snRNA-only),covariate_set_mismatch
+Immune,CEBPB,,covariate_set_mismatch,batch_059 (incompatible: snRNA-only),covariate_set_mismatch
+Immune,ATF3,,covariate_set_mismatch,batch_059 (incompatible: snRNA-only),covariate_set_mismatch
+Immune,STAT3,,covariate_set_mismatch,batch_059 (incompatible: snRNA-only),covariate_set_mismatch
+MuSC,JUNB,0.5128,age+sex+tech,batch_060/musc_partial.csv,
+MuSC,FOS,0.5711,age+sex+tech,batch_060/musc_partial.csv,
+MuSC,EGR1,0.6215,age+sex+tech,batch_060/musc_partial.csv,
+MuSC,CEBPB,0.4407,age+sex+tech,batch_060/musc_partial.csv,
+MuSC,ATF3,,,,
+MuSC,STAT3,,,,

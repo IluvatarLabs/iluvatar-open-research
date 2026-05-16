@@ -1,0 +1,850 @@
+{
+  "MuSC": {
+    "name": "MuSC",
+    "shape": {
+      "n_cells": 9559,
+      "n_genes": 48355
+    },
+    "n_cells_by_annotation_age": {
+      "Early Primed MuSC_old_pop": 786,
+      "Early Primed MuSC_young_pop": 273,
+      "Diff.MuSC_old_pop": 788,
+      "Diff.MuSC_young_pop": 220,
+      "Late Primed MuSC_old_pop": 110,
+      "Late Primed MuSC_young_pop": 62,
+      "Quiescent MuSC_old_pop": 5444,
+      "Quiescent MuSC_young_pop": 1876
+    },
+    "n_donors_by_annotation_age": {
+      "Early Primed MuSC_old_pop": 9,
+      "Early Primed MuSC_young_pop": 4,
+      "Diff.MuSC_old_pop": 13,
+      "Diff.MuSC_young_pop": 4,
+      "Late Primed MuSC_old_pop": 10,
+      "Late Primed MuSC_young_pop": 5,
+      "Quiescent MuSC_old_pop": 15,
+      "Quiescent MuSC_young_pop": 8
+    },
+    "sparsity": 0.8855713986818705,
+    "genes_per_cell_by_tech": {
+      "scRNA": {
+        "median": 1822.0,
+        "mean": 2016.8887055647217,
+        "std": 779.8107904931047,
+        "min": 504.0,
+        "max": 4552.0
+      },
+      "snRNA": {
+        "median": 1474.0,
+        "mean": 1567.8623789764868,
+        "std": 604.1312467969545,
+        "min": 501.0,
+        "max": 3951.0
+      }
+    },
+    "donor_composition": {
+      "Quiescent MuSC": {
+        "max_donor_pct": 28.797814207650273,
+        "n_donors": 23,
+        "dominant_donor": "OM3"
+      },
+      "Diff.MuSC": {
+        "max_donor_pct": 53.86904761904761,
+        "n_donors": 23,
+        "dominant_donor": "OM3"
+      },
+      "Early Primed MuSC": {
+        "max_donor_pct": 40.03777148253069,
+        "n_donors": 23,
+        "dominant_donor": "OM3"
+      },
+      "Late Primed MuSC": {
+        "max_donor_pct": 28.488372093023255,
+        "n_donors": 23,
+        "dominant_donor": "YM1"
+      }
+    },
+    "tech_balance": {
+      "scRNA": {
+        "young_pct": 22.94885255737213,
+        "old_pct": 77.05114744262787,
+        "young_n": 1530,
+        "old_n": 5137
+      },
+      "snRNA": {
+        "young_pct": 31.15491009681881,
+        "old_pct": 68.84508990318119,
+        "young_n": 901,
+        "old_n": 1991
+      }
+    },
+    "marker_expression": {
+      "PAX7": {
+        "young_pop": {
+          "positive_fraction": 0.8321678321678322,
+          "positive_n": 2023,
+          "total_n": 2431
+        },
+        "old_pop": {
+          "positive_fraction": 0.7631874298540965,
+          "positive_n": 5440,
+          "total_n": 7128
+        }
+      },
+      "MYOD1": {
+        "young_pop": {
+          "positive_fraction": 0.051007815713698064,
+          "positive_n": 124,
+          "total_n": 2431
+        },
+        "old_pop": {
+          "positive_fraction": 0.07996632996632996,
+          "positive_n": 570,
+          "total_n": 7128
+        }
+      }
+    },
+    "passes": {},
+    "flags": [],
+    "checks": [
+      [
+        "MuSC >=500 young",
+        true,
+        "2431"
+      ],
+      [
+        "MuSC >=500 old",
+        true,
+        "7128"
+      ],
+      [
+        ">=3 donors per group",
+        true,
+        "min=4"
+      ],
+      [
+        "sparsity <0.90 (scRNA)",
+        true,
+        "0.8856"
+      ],
+      [
+        "scRNA median >=500 genes",
+        true,
+        "1822"
+      ],
+      [
+        "snRNA median >=200 genes",
+        true,
+        "1474"
+      ],
+      [
+        "max donor <50%",
+        false,
+        "53.9%"
+      ],
+      [
+        "snRNA tech confound <15pp",
+        false,
+        "37.7pp"
+      ],
+      [
+        "PAX7 detectable",
+        true,
+        "young=0.8322, old=0.7632"
+      ],
+      [
+        "MYOD1 detectable",
+        true,
+        "young=0.0510, old=0.0800"
+      ]
+    ],
+    "overall_pass": false
+  },
+  "Immune": {
+    "name": "Immune",
+    "shape": {
+      "n_cells": 13773,
+      "n_genes": 48355
+    },
+    "n_cells_by_annotation_age": {
+      "CCL20+ TC_old_pop": 63,
+      "CCL20+ TC_young_pop": 113,
+      "CD4+ TC_old_pop": 86,
+      "CD4+ TC_young_pop": 68,
+      "CD4+ naive TC_old_pop": 1002,
+      "CD4+ naive TC_young_pop": 118,
+      "CD8+ TC_old_pop": 904,
+      "CD8+ TC_young_pop": 545,
+      "CD8+ naive TC_old_pop": 317,
+      "CD8+ naive TC_young_pop": 444,
+      "CD14+ Mono_old_pop": 452,
+      "CD14+ Mono_young_pop": 115,
+      "CD16+ Mono_old_pop": 453,
+      "CD16+ Mono_young_pop": 138,
+      "DC_old_pop": 117,
+      "DC_young_pop": 32,
+      "LAM M\u03a6_old_pop": 821,
+      "LAM M\u03a6_young_pop": 52,
+      "LYVE1+ M2_old_pop": 4478,
+      "LYVE1+ M2_young_pop": 205,
+      "Mast cell_old_pop": 571,
+      "Mast cell_young_pop": 21,
+      "Mem BC_old_pop": 126,
+      "Mem BC_young_pop": 80,
+      "NK_old_pop": 996,
+      "NK_young_pop": 667,
+      "NKT_old_pop": 323,
+      "NKT_young_pop": 116,
+      "Naive BC_old_pop": 137,
+      "Naive BC_young_pop": 71,
+      "reg TC_old_pop": 105,
+      "reg TC_young_pop": 37
+    },
+    "n_donors_by_annotation_age": {
+      "CCL20+ TC_old_pop": 5,
+      "CCL20+ TC_young_pop": 2,
+      "CD4+ TC_old_pop": 9,
+      "CD4+ TC_young_pop": 4,
+      "CD4+ naive TC_old_pop": 12,
+      "CD4+ naive TC_young_pop": 4,
+      "CD8+ TC_old_pop": 9,
+      "CD8+ TC_young_pop": 3,
+      "CD8+ naive TC_old_pop": 10,
+      "CD8+ naive TC_young_pop": 2,
+      "CD14+ Mono_old_pop": 8,
+      "CD14+ Mono_young_pop": 2,
+      "CD16+ Mono_old_pop": 9,
+      "CD16+ Mono_young_pop": 3,
+      "DC_old_pop": 9,
+      "DC_young_pop": 3,
+      "LAM M\u03a6_old_pop": 7,
+      "LAM M\u03a6_young_pop": 3,
+      "LYVE1+ M2_old_pop": 13,
+      "LYVE1+ M2_young_pop": 6,
+      "Mast cell_old_pop": 7,
+      "Mast cell_young_pop": 2,
+      "Mem BC_old_pop": 8,
+      "Mem BC_young_pop": 4,
+      "NK_old_pop": 11,
+      "NK_young_pop": 4,
+      "NKT_old_pop": 8,
+      "NKT_young_pop": 4,
+      "Naive BC_old_pop": 10,
+      "Naive BC_young_pop": 3,
+      "reg TC_old_pop": 8,
+      "reg TC_young_pop": 4
+    },
+    "sparsity": 0.8990242503448777,
+    "genes_per_cell_by_tech": {
+      "scRNA": {
+        "median": 1452.5,
+        "mean": 1642.7661445783133,
+        "std": 860.0392426663445,
+        "min": 501.0,
+        "max": 4553.0
+      },
+      "snRNA": {
+        "median": 1720.0,
+        "mean": 1827.667458432304,
+        "std": 717.0129068836482,
+        "min": 546.0,
+        "max": 4091.0
+      }
+    },
+    "donor_composition": {
+      "CD16+ Mono": {
+        "max_donor_pct": 25.042301184433164,
+        "n_donors": 12,
+        "dominant_donor": "0"
+      },
+      "CD4+ naive TC": {
+        "max_donor_pct": 31.96428571428571,
+        "n_donors": 16,
+        "dominant_donor": "0"
+      },
+      "LYVE1+ M2": {
+        "max_donor_pct": 40.46551355968396,
+        "n_donors": 19,
+        "dominant_donor": "8"
+      },
+      "NK": {
+        "max_donor_pct": 37.221888153938664,
+        "n_donors": 15,
+        "dominant_donor": "21"
+      },
+      "CD8+ TC": {
+        "max_donor_pct": 35.127674258109046,
+        "n_donors": 12,
+        "dominant_donor": "21"
+      },
+      "CD14+ Mono": {
+        "max_donor_pct": 65.07936507936508,
+        "n_donors": 10,
+        "dominant_donor": "0"
+      },
+      "CD8+ naive TC": {
+        "max_donor_pct": 55.05913272010512,
+        "n_donors": 12,
+        "dominant_donor": "21"
+      },
+      "DC": {
+        "max_donor_pct": 24.832214765100673,
+        "n_donors": 12,
+        "dominant_donor": "1"
+      },
+      "Naive BC": {
+        "max_donor_pct": 31.25,
+        "n_donors": 13,
+        "dominant_donor": "21"
+      },
+      "reg TC": {
+        "max_donor_pct": 28.87323943661972,
+        "n_donors": 12,
+        "dominant_donor": "0"
+      },
+      "CD4+ TC": {
+        "max_donor_pct": 32.467532467532465,
+        "n_donors": 13,
+        "dominant_donor": "21"
+      },
+      "Mem BC": {
+        "max_donor_pct": 35.92233009708738,
+        "n_donors": 12,
+        "dominant_donor": "21"
+      },
+      "NKT": {
+        "max_donor_pct": 26.195899772209568,
+        "n_donors": 12,
+        "dominant_donor": "0"
+      },
+      "LAM M\u03a6": {
+        "max_donor_pct": 54.63917525773196,
+        "n_donors": 10,
+        "dominant_donor": "0"
+      },
+      "Mast cell": {
+        "max_donor_pct": 49.83108108108108,
+        "n_donors": 9,
+        "dominant_donor": "2"
+      },
+      "CCL20+ TC": {
+        "max_donor_pct": 61.93181818181818,
+        "n_donors": 7,
+        "dominant_donor": "21"
+      }
+    },
+    "tech_balance": {
+      "scRNA": {
+        "young_pct": 31.903614457831324,
+        "old_pct": 68.09638554216868,
+        "young_n": 2648,
+        "old_n": 5652
+      },
+      "snRNA": {
+        "young_pct": 3.179243559291065,
+        "old_pct": 96.82075644070893,
+        "young_n": 174,
+        "old_n": 5299
+      }
+    },
+    "marker_expression": {},
+    "passes": {},
+    "flags": [],
+    "checks": [
+      [
+        ">=3 donors per group",
+        false,
+        "min=2"
+      ],
+      [
+        "sparsity <0.90 (scRNA)",
+        true,
+        "0.8990"
+      ],
+      [
+        "scRNA median >=500 genes",
+        true,
+        "1452"
+      ],
+      [
+        "snRNA median >=200 genes",
+        true,
+        "1720"
+      ],
+      [
+        "max donor <50%",
+        false,
+        "65.1%"
+      ],
+      [
+        "snRNA tech confound <15pp",
+        false,
+        "93.6pp"
+      ]
+    ],
+    "overall_pass": false
+  },
+  "Vascular": {
+    "name": "Vascular",
+    "shape": {
+      "n_cells": 28160,
+      "n_genes": 48355
+    },
+    "n_cells_by_annotation_age": {
+      "ArtEC_old_pop": 1086,
+      "ArtEC_young_pop": 188,
+      "IL6+ VenEC_old_pop": 1395,
+      "IL6+ VenEC_young_pop": 147,
+      "CD44+ MC_old_pop": 404,
+      "CD44+ MC_young_pop": 147,
+      "CapEC_old_pop": 10013,
+      "CapEC_young_pop": 1844,
+      "Pericyte_old_pop": 4346,
+      "Pericyte_young_pop": 1286,
+      "SMC_old_pop": 3880,
+      "SMC_young_pop": 398,
+      "VenEC_old_pop": 2756,
+      "VenEC_young_pop": 270
+    },
+    "n_donors_by_annotation_age": {
+      "ArtEC_old_pop": 14,
+      "ArtEC_young_pop": 8,
+      "IL6+ VenEC_old_pop": 15,
+      "IL6+ VenEC_young_pop": 7,
+      "CD44+ MC_old_pop": 15,
+      "CD44+ MC_young_pop": 7,
+      "CapEC_old_pop": 15,
+      "CapEC_young_pop": 8,
+      "Pericyte_old_pop": 15,
+      "Pericyte_young_pop": 8,
+      "SMC_old_pop": 15,
+      "SMC_young_pop": 8,
+      "VenEC_old_pop": 15,
+      "VenEC_young_pop": 8
+    },
+    "sparsity": 0.8990352272727272,
+    "genes_per_cell_by_tech": {
+      "scRNA": {
+        "median": 1699.0,
+        "mean": 1894.7743899293196,
+        "std": 740.3646599944674,
+        "min": 569.0,
+        "max": 4553.0
+      },
+      "snRNA": {
+        "median": 1141.0,
+        "mean": 1252.7915005127036,
+        "std": 496.07270974501154,
+        "min": 502.0,
+        "max": 4002.0
+      }
+    },
+    "donor_composition": {
+      "Pericyte": {
+        "max_donor_pct": 18.803267045454543,
+        "n_donors": 23,
+        "dominant_donor": "OM1"
+      },
+      "CD44+ MC": {
+        "max_donor_pct": 20.689655172413794,
+        "n_donors": 23,
+        "dominant_donor": "OM3"
+      },
+      "ArtEC": {
+        "max_donor_pct": 17.896389324960754,
+        "n_donors": 23,
+        "dominant_donor": "OM1"
+      },
+      "CapEC": {
+        "max_donor_pct": 25.824407522982206,
+        "n_donors": 23,
+        "dominant_donor": "OM1"
+      },
+      "IL6+ VenEC": {
+        "max_donor_pct": 31.971465629053174,
+        "n_donors": 23,
+        "dominant_donor": "OM2"
+      },
+      "VenEC": {
+        "max_donor_pct": 26.04097818902842,
+        "n_donors": 23,
+        "dominant_donor": "OM3"
+      },
+      "SMC": {
+        "max_donor_pct": 37.844787283777464,
+        "n_donors": 23,
+        "dominant_donor": "OM3"
+      }
+    },
+    "tech_balance": {
+      "scRNA": {
+        "young_pct": 9.910746530464841,
+        "old_pct": 90.08925346953515,
+        "young_n": 1921,
+        "old_n": 17462
+      },
+      "snRNA": {
+        "young_pct": 26.877065056397402,
+        "old_pct": 73.1229349436026,
+        "young_n": 2359,
+        "old_n": 6418
+      }
+    },
+    "marker_expression": {},
+    "passes": {},
+    "flags": [],
+    "checks": [
+      [
+        ">=3 donors per group",
+        true,
+        "min=7"
+      ],
+      [
+        "sparsity <0.90 (scRNA)",
+        true,
+        "0.8990"
+      ],
+      [
+        "scRNA median >=500 genes",
+        true,
+        "1699"
+      ],
+      [
+        "snRNA median >=200 genes",
+        true,
+        "1141"
+      ],
+      [
+        "max donor <50%",
+        true,
+        "37.8%"
+      ],
+      [
+        "snRNA tech confound <15pp",
+        false,
+        "46.2pp"
+      ]
+    ],
+    "overall_pass": false
+  },
+  "FAP": {
+    "name": "FAP",
+    "shape": {
+      "n_cells": 40389,
+      "n_genes": 37841
+    },
+    "n_cells_by_annotation_age": {
+      "CD55+ FAP_old_pop": 9706,
+      "CD55+ FAP_young_pop": 678,
+      "CD99+ FAP_old_pop": 697,
+      "CD99+ FAP_young_pop": 1,
+      "GPC3+ FAP_old_pop": 5116,
+      "GPC3+ FAP_young_pop": 423,
+      "MME+ FAP_old_pop": 13555,
+      "MME+ FAP_young_pop": 2202,
+      "RUNX2+ FAP_old_pop": 605,
+      "RUNX2+ FAP_young_pop": 18,
+      "Tenocyte_old_pop": 7158,
+      "Tenocyte_young_pop": 230
+    },
+    "n_donors_by_annotation_age": {
+      "CD55+ FAP_old_pop": 13,
+      "CD55+ FAP_young_pop": 6,
+      "CD99+ FAP_old_pop": 2,
+      "CD99+ FAP_young_pop": 1,
+      "GPC3+ FAP_old_pop": 13,
+      "GPC3+ FAP_young_pop": 7,
+      "MME+ FAP_old_pop": 14,
+      "MME+ FAP_young_pop": 8,
+      "RUNX2+ FAP_old_pop": 5,
+      "RUNX2+ FAP_young_pop": 4,
+      "Tenocyte_old_pop": 13,
+      "Tenocyte_young_pop": 4
+    },
+    "sparsity": null,
+    "genes_per_cell_by_tech": {
+      "scRNA": {
+        "median": 2001.0,
+        "mean": 2235.5086899234534,
+        "std": 885.3348639504528,
+        "min": 552.0,
+        "max": 4553.0
+      },
+      "snRNA": {
+        "median": 1500.0,
+        "mean": 1638.1548220368848,
+        "std": 687.6498795604175,
+        "min": 502.0,
+        "max": 4105.0
+      }
+    },
+    "donor_composition": {
+      "MME+ FAP": {
+        "max_donor_pct": 36.87884749635083,
+        "n_donors": 22,
+        "dominant_donor": "OM3"
+      },
+      "Tenocyte": {
+        "max_donor_pct": 56.158635625338384,
+        "n_donors": 22,
+        "dominant_donor": "OM3"
+      },
+      "CD55+ FAP": {
+        "max_donor_pct": 42.074345146379045,
+        "n_donors": 22,
+        "dominant_donor": "OM3"
+      },
+      "GPC3+ FAP": {
+        "max_donor_pct": 31.901065174219173,
+        "n_donors": 22,
+        "dominant_donor": "OM2"
+      },
+      "RUNX2+ FAP": {
+        "max_donor_pct": 50.7223113964687,
+        "n_donors": 22,
+        "dominant_donor": "OM5"
+      },
+      "CD99+ FAP": {
+        "max_donor_pct": 99.7134670487106,
+        "n_donors": 22,
+        "dominant_donor": "OM2"
+      }
+    },
+    "tech_balance": {
+      "scRNA": {
+        "young_pct": 4.859455389634835,
+        "old_pct": 95.14054461036517,
+        "young_n": 1549,
+        "old_n": 30327
+      },
+      "snRNA": {
+        "young_pct": 23.528720779983555,
+        "old_pct": 76.47127922001644,
+        "young_n": 2003,
+        "old_n": 6510
+      }
+    },
+    "marker_expression": {},
+    "passes": {},
+    "flags": [
+      "data appears normalized (log-transformed), sparsity not computed"
+    ],
+    "checks": [
+      [
+        ">=3 donors per group",
+        false,
+        "min=1"
+      ],
+      [
+        "sparsity check",
+        true,
+        "N/A (normalized data)"
+      ],
+      [
+        "scRNA median >=500 genes",
+        true,
+        "2001"
+      ],
+      [
+        "snRNA median >=200 genes",
+        true,
+        "1500"
+      ],
+      [
+        "max donor <50%",
+        false,
+        "99.7%"
+      ],
+      [
+        "snRNA tech confound <15pp",
+        false,
+        "52.9pp"
+      ]
+    ],
+    "overall_pass": false
+  },
+  "Myonuclei": {
+    "name": "Myonuclei",
+    "shape": {
+      "n_cells": 150894,
+      "n_genes": 48355
+    },
+    "n_cells_by_annotation_age": {
+      "Type I_old_pop": 44354,
+      "Type I_young_pop": 21251,
+      "Type II_old_pop": 19877,
+      "Type II_young_pop": 29937,
+      "DCLK1+ (I)_old_pop": 4345,
+      "DCLK1+ (I)_young_pop": 231,
+      "DCLK1+ (II)_old_pop": 586,
+      "DCLK1+ (II)_young_pop": 122,
+      "ENOX1+ (II)_old_pop": 4746,
+      "ENOX1+ (II)_young_pop": 5217,
+      "ID1+ (I)_old_pop": 6465,
+      "ID1+ (I)_young_pop": 104,
+      "ID1+ (II)_old_pop": 2658,
+      "ID1+ (II)_young_pop": 377,
+      "SAA2+ (I)_old_pop": 628,
+      "SAA2+ (I)_young_pop": 2,
+      "SAA2+ (II)_old_pop": 2276,
+      "SAA2+ (II)_young_pop": 92,
+      "TNNT2+ (I)_old_pop": 4449,
+      "TNNT2+ (I)_young_pop": 152,
+      "TNNT2+ (II)_old_pop": 32,
+      "TNNT2+ (II)_young_pop": 53,
+      "MTJ_old_pop": 1321,
+      "MTJ_young_pop": 1355,
+      "NMJ_old_pop": 194,
+      "NMJ_young_pop": 70
+    },
+    "n_donors_by_annotation_age": {
+      "Type I_old_pop": 15,
+      "Type I_young_pop": 7,
+      "Type II_old_pop": 15,
+      "Type II_young_pop": 7,
+      "DCLK1+ (I)_old_pop": 14,
+      "DCLK1+ (I)_young_pop": 6,
+      "DCLK1+ (II)_old_pop": 11,
+      "DCLK1+ (II)_young_pop": 5,
+      "ENOX1+ (II)_old_pop": 15,
+      "ENOX1+ (II)_young_pop": 7,
+      "ID1+ (I)_old_pop": 15,
+      "ID1+ (I)_young_pop": 6,
+      "ID1+ (II)_old_pop": 13,
+      "ID1+ (II)_young_pop": 6,
+      "SAA2+ (I)_old_pop": 12,
+      "SAA2+ (I)_young_pop": 2,
+      "SAA2+ (II)_old_pop": 13,
+      "SAA2+ (II)_young_pop": 6,
+      "TNNT2+ (I)_old_pop": 14,
+      "TNNT2+ (I)_young_pop": 5,
+      "TNNT2+ (II)_old_pop": 5,
+      "TNNT2+ (II)_young_pop": 4,
+      "MTJ_old_pop": 15,
+      "MTJ_young_pop": 6,
+      "NMJ_old_pop": 11,
+      "NMJ_young_pop": 5
+    },
+    "sparsity": 0.8903379325884395,
+    "genes_per_cell_by_tech": {
+      "snRNA": {
+        "median": 1614.0,
+        "mean": 1760.2302742322424,
+        "std": 800.2140917771382,
+        "min": 501.0,
+        "max": 4106.0
+      }
+    },
+    "donor_composition": {
+      "Type I": {
+        "max_donor_pct": 21.181312399969514,
+        "n_donors": 22,
+        "dominant_donor": "OM9"
+      },
+      "Type II": {
+        "max_donor_pct": 20.761231782229896,
+        "n_donors": 22,
+        "dominant_donor": "YM1"
+      },
+      "MTJ": {
+        "max_donor_pct": 29.409566517189834,
+        "n_donors": 22,
+        "dominant_donor": "OM9"
+      },
+      "DCLK1+ (I)": {
+        "max_donor_pct": 48.09877622377623,
+        "n_donors": 22,
+        "dominant_donor": "OM9"
+      },
+      "ENOX1+ (II)": {
+        "max_donor_pct": 25.032620696577336,
+        "n_donors": 22,
+        "dominant_donor": "YM3"
+      },
+      "ID1+ (I)": {
+        "max_donor_pct": 68.00121784137616,
+        "n_donors": 22,
+        "dominant_donor": "OM9"
+      },
+      "SAA2+ (I)": {
+        "max_donor_pct": 63.49206349206349,
+        "n_donors": 22,
+        "dominant_donor": "OM9"
+      },
+      "ID1+ (II)": {
+        "max_donor_pct": 50.444810543657326,
+        "n_donors": 22,
+        "dominant_donor": "OM9"
+      },
+      "DCLK1+ (II)": {
+        "max_donor_pct": 34.74576271186441,
+        "n_donors": 22,
+        "dominant_donor": "OM9"
+      },
+      "NMJ": {
+        "max_donor_pct": 26.136363636363637,
+        "n_donors": 22,
+        "dominant_donor": "OM5"
+      },
+      "TNNT2+ (I)": {
+        "max_donor_pct": 72.28863290589003,
+        "n_donors": 22,
+        "dominant_donor": "OM9"
+      },
+      "SAA2+ (II)": {
+        "max_donor_pct": 55.57432432432432,
+        "n_donors": 22,
+        "dominant_donor": "OM9"
+      },
+      "TNNT2+ (II)": {
+        "max_donor_pct": 51.76470588235295,
+        "n_donors": 22,
+        "dominant_donor": "YM1"
+      }
+    },
+    "tech_balance": {
+      "snRNA": {
+        "young_pct": 39.07577504738426,
+        "old_pct": 60.924224952615745,
+        "young_n": 58963,
+        "old_n": 91931
+      }
+    },
+    "marker_expression": {},
+    "passes": {},
+    "flags": [],
+    "checks": [
+      [
+        ">=3 donors per group",
+        false,
+        "min=2"
+      ],
+      [
+        "sparsity <0.97 (snRNA)",
+        true,
+        "0.8903"
+      ],
+      [
+        "snRNA median >=200 genes",
+        true,
+        "1614"
+      ],
+      [
+        "max donor <50%",
+        false,
+        "72.3%"
+      ],
+      [
+        "snRNA tech confound <15pp",
+        false,
+        "21.8pp"
+      ]
+    ],
+    "overall_pass": false
+  },
+  "OMIX004308-03": {
+    "name": "OMIX004308-03",
+    "status": "skipped",
+    "reason": "truncated file, unreadable"
+  }
+}

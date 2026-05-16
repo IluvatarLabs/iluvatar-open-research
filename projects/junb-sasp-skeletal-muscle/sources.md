@@ -9,7 +9,7 @@ All analyses use publicly available datasets. No original experimental data were
 | Dataset | Source | Accession / URL | Samples | Used for |
 |---------|--------|----------------|---------|----------|
 | Human Lifemap Muscle Atlas (HLMA) | Lai et al. 2024 | CNGBdb OMIX004308 | 387,000+ cells/nuclei, 23 donors aged 15-99 | Primary analysis: donor-level TF-SASP correlations, pySCENIC module inference, partial-correlation decomposition, ligand-receptor crosstalk |
-| Nature Aging 2024 atlas | Kedlian et al. 2024, Sanger cellxgene | cellxgene portal | 90,902 nuclei, 17 donors | Cross-atlas replication (endothelial and fibroblast compartments) |
+| Nature Aging 2024 atlas | Kedlian et al. 2024, Sanger cellxgene | cellxgene portal | 90,902 nuclei, 17 donors total (12 used for endothelial replication) | Cross-atlas replication (endothelial and fibroblast compartments) |
 | GTEx v8 bulk muscle | GTEx Consortium | gtexportal.org | N=803 | Post-mortem ischemic-time confound triangulation (SMTSISCH covariate). Bulk avenue ultimately closed due to confound structure. |
 | OneK1K single-cell eQTL | Yazar et al. | N=982, 14 immune cell types | cis-eQTL validation: AP-1 TFs null at cis-eQTL level, CDKN1A carries significant cis-eQTL (p=3.4e-10) |
 | Open Targets / Genetics Portal | genetics.opentargets.org | — | Bulk muscle eQTL colocalizations: 54 TF x sarcopenia/lean-body-mass trait combinations, 0 hits |

@@ -1,0 +1,32 @@
+[
+  {
+    "location": "figure_legends_supplementary.md L4",
+    "statement": "FOS is a canonical JNK immediate-early gene target",
+    "issue": "ACCEPTABLE \u2014 \"canonical\" is factual (FOS is confirmed JNK target in literature)",
+    "recommendation": "Keep as-is"
+  },
+  {
+    "location": "figure_legends_supplementary.md L43",
+    "statement": "JUNB suppression (if causal) would reduce SASP by ~16% maximum",
+    "issue": "ACCEPTABLE \u2014 conditional phrasing \"if causal\" is appropriate",
+    "recommendation": "Keep as-is"
+  },
+  {
+    "location": "manuscript_draft_outline.md L35",
+    "statement": "Here we identify vascular endothelial cells as the dominant source",
+    "issue": "ACCEPTABLE \u2014 \"identify\" means characterize, not prove causation",
+    "recommendation": "Keep as-is"
+  },
+  {
+    "location": "manuscript_draft_outline.md L48",
+    "statement": "The aged muscle SASP burden is primarily vascular in origin",
+    "issue": "WATCH \u2014 \"primarily\" is quantitative, supported by rho=0.93 vs FAP rho=0.02",
+    "recommendation": "Keep if \"primarily\" refers to correlation strength; add \"(by correlation magnitude)\" if ambiguous"
+  },
+  {
+    "location": "research_state.md L32",
+    "statement": "Preprint framing is UNCHANGED",
+    "issue": "ACCEPTABLE \u2014 framing refers to presentation, not claims",
+    "recommendation": "Keep as-is"
+  }
+]

@@ -1,0 +1,116 @@
+{
+  "batch": "batch_060",
+  "script": "run_i2_partial.py",
+  "date": "2026-04-17T11:14:33.461109",
+  "method": {
+    "approach": "Partial correlation controlling for age + sex + tech simultaneously",
+    "implementation": "pingouin.partial_corr (fallback: residualization)",
+    "correlation_type": "Spearman partial correlation"
+  },
+  "data_sources": {
+    "Vascular": "/home/yuanz/Documents/GitHub/biomarvin_fibro/data/Vascular_scsn_RNA.h5ad",
+    "MuSC": "/home/yuanz/Documents/GitHub/biomarvin_fibro/data/MuSC_scsn_RNA.h5ad",
+    "FAP": "/home/yuanz/Documents/GitHub/biomarvin_fibro/data/OMIX004308-02.h5ad"
+  },
+  "TFs_analyzed": [
+    "JUNB",
+    "CDKN1A",
+    "CEBPB",
+    "KLF10",
+    "EGR1",
+    "FOS"
+  ],
+  "results_summary": {
+    "survive_thresholds": {
+      "min_partial_rho": 0.5,
+      "max_p_value": 0.05
+    },
+    "total_tested": 12,
+    "survive_count": 9,
+    "survive_list": [
+      {
+        "TF": "CEBPB",
+        "compartment": "FAP",
+        "partial_rho": 0.8882,
+        "p_partial": 3.4457772727483276e-08
+      },
+      {
+        "TF": "CDKN1A",
+        "compartment": "FAP",
+        "partial_rho": 0.5099,
+        "p_partial": 0.015342627496744856
+      },
+      {
+        "TF": "KLF10",
+        "compartment": "FAP",
+        "partial_rho": 0.9187,
+        "p_partial": 1.624556477811128e-09
+      },
+      {
+        "TF": "EGR1",
+        "compartment": "Vascular",
+        "partial_rho": 0.8913,
+        "p_partial": 1.167055298446974e-08
+      },
+      {
+        "TF": "JUNB",
+        "compartment": "Vascular",
+        "partial_rho": 0.9121,
+        "p_partial": 1.3862822602287868e-09
+      },
+      {
+        "TF": "FOS",
+        "compartment": "Vascular",
+        "partial_rho": 0.8399,
+        "p_partial": 5.367168712483917e-07
+      },
+      {
+        "TF": "CDKN1A",
+        "compartment": "Vascular",
+        "partial_rho": 0.9377,
+        "p_partial": 4.133520162074528e-11
+      },
+      {
+        "TF": "KLF10",
+        "compartment": "Vascular",
+        "partial_rho": 0.8508,
+        "p_partial": 2.6977559195331056e-07
+      },
+      {
+        "TF": "CEBPB",
+        "compartment": "Vascular",
+        "partial_rho": 0.8893,
+        "p_partial": 1.3975049546636897e-08
+      }
+    ],
+    "compartment_summary": {
+      "Vascular": {
+        "n_donors": 23,
+        "n_tested": 6,
+        "n_survive": 6,
+        "surviving_tfs": [
+          "EGR1",
+          "JUNB",
+          "FOS",
+          "CDKN1A",
+          "KLF10",
+          "CEBPB"
+        ]
+      },
+      "FAP": {
+        "n_donors": 22,
+        "n_tested": 6,
+        "n_survive": 3,
+        "surviving_tfs": [
+          "CEBPB",
+          "CDKN1A",
+          "KLF10"
+        ]
+      }
+    }
+  },
+  "output_files": [
+    "i2_partial_correlations.csv",
+    "results.json"
+  ]
+}

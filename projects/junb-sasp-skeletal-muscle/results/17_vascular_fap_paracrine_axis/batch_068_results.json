@@ -1,0 +1,76 @@
+{
+  "batch": "batch_068",
+  "date": "2026-04-23",
+  "n_lr_pairs_analyzed": 49,
+  "n_vascular_donors": 23,
+  "n_fap_donors": 22,
+  "junb_sasp_rho": 0.8261540935510872,
+  "junb_sasp_p": 1.1969041134865306e-06,
+  "n_age_increasing": 2,
+  "n_age_decreasing": 5,
+  "n_junb_correlated": 30,
+  "n_sasp_correlated": 33,
+  "top_age_dependent_pairs": [
+    {
+      "ligand": "ANGPT2",
+      "receptor": "TIE1",
+      "rho_age": 0.46534744701088754,
+      "p_age": 0.025246461991716092
+    },
+    {
+      "ligand": "ANGPT2",
+      "receptor": "TEK",
+      "rho_age": 0.46534744701088754,
+      "p_age": 0.025246461991716092
+    },
+    {
+      "ligand": "SEMA3A",
+      "receptor": "NRP1",
+      "rho_age": 0.34092648378637114,
+      "p_age": 0.11139235967928972
+    },
+    {
+      "ligand": "SEMA3A",
+      "receptor": "NRP2",
+      "rho_age": 0.34092648378637114,
+      "p_age": 0.11139235967928972
+    },
+    {
+      "ligand": "CXCL1",
+      "receptor": "CXCR2",
+      "rho_age": 0.24949518693862738,
+      "p_age": 0.250935129985306
+    },
+    {
+      "ligand": "FGF2",
+      "receptor": "FGFR1",
+      "rho_age": 0.2435648339674007,
+      "p_age": 0.2627455664113215
+    },
+    {
+      "ligand": "FGF2",
+      "receptor": "FGFR3",
+      "rho_age": 0.2435648339674007,
+      "p_age": 0.2627455664113215
+    },
+    {
+      "ligand": "FGF2",
+      "receptor": "FGFR2",
+      "rho_age": 0.2435648339674007,
+      "p_age": 0.2627455664113215
+    },
+    {
+      "ligand": "FGF7",
+      "receptor": "FGFR2",
+      "rho_age": 0.22456578447817527,
+      "p_age": 0.30293809402844873
+    },
+    {
+      "ligand": "CXCL2",
+      "receptor": "CXCR2",
+      "rho_age": 0.2017369975477972,
+      "p_age": 0.3559638904821988
+    }
+  ],
+  "results_csv": "/home/yuanz/Documents/GitHub/biomarvin_fibro/experiments/batch_068/results.csv"
+}

@@ -1,0 +1,158 @@
+{
+  "metadata": {
+    "batch": "batch_030",
+    "purpose": "FAP growth factor compensation sufficiency (U89)",
+    "date": "2026-04-10",
+    "random_seed": 42,
+    "fap_n_donors": 22,
+    "musc_n_donors": 9559,
+    "overlapping_donors": 21,
+    "fap_gf_genes": [
+      "FGF7",
+      "HGF",
+      "PDGFA",
+      "IGF1",
+      "IGF2",
+      "FGF2",
+      "VEGFA"
+    ],
+    "musc_activation_genes": [
+      "MKI67",
+      "MYOD1",
+      "MYOG",
+      "PAX7",
+      "PCNA",
+      "MYH3",
+      "ACTA2"
+    ]
+  },
+  "part_a_correlation": {
+    "fap_gf_vs_musc_activation": {
+      "pearson_rho": 0.1893805762995195,
+      "pearson_p": 0.4109692308430281,
+      "spearman_rho": 0.14155844155844155,
+      "spearman_p": 0.5404880300232261,
+      "n_matched_donors": 21,
+      "within_old_rho": -0.1365345515919927,
+      "within_old_p": 0.6416265941739541,
+      "adequate": false
+    },
+    "fap_gf_vs_musc_inflammation": {
+      "pearson_rho": 0.16155588161691836,
+      "pearson_p": 0.484161014100813,
+      "interpretation": "null control - should not correlate"
+    }
+  },
+  "part_b_crosstalk_sufficiency": {
+    "HGF->MET": {
+      "ligand_d": 1.104,
+      "receptor_d": 0.599,
+      "crosstalk_score": 0.661,
+      "ligand_up": true,
+      "receptor_up": true,
+      "both_up": true,
+      "large_crosstalk": true,
+      "coordinated": true
+    },
+    "FGF7->FGFR1": {
+      "ligand_d": 1.29,
+      "receptor_d": 0.133,
+      "crosstalk_score": 0.171,
+      "ligand_up": true,
+      "receptor_up": false,
+      "both_up": false,
+      "large_crosstalk": false,
+      "coordinated": false
+    },
+    "PDGFA->PDGFRA": {
+      "ligand_d": 0.444,
+      "receptor_d": 0.702,
+      "crosstalk_score": 0.312,
+      "ligand_up": true,
+      "receptor_up": true,
+      "both_up": true,
+      "large_crosstalk": true,
+      "coordinated": true
+    }
+  },
+  "part_c_absolute_expression": {
+    "FGF7": {
+      "mean_young": "-0.38149396",
+      "mean_old": "0.0048101386",
+      "log2fc": 0,
+      "cohens_d": "1.4619081",
+      "p_value": 0.007934106338359243,
+      "n_young": 8,
+      "n_old": 14,
+      "direction": "COMPENSATED"
+    },
+    "HGF": {
+      "mean_young": "-0.052684642",
+      "mean_old": "0.13395837",
+      "log2fc": 0,
+      "cohens_d": "0.5984895",
+      "p_value": 0.26509218279011276,
+      "n_young": 8,
+      "n_old": 14,
+      "direction": "COMPENSATED"
+    },
+    "PDGFA": {
+      "mean_young": "-0.06904512",
+      "mean_old": "-0.022117142",
+      "log2fc": 0,
+      "cohens_d": "0.4971767",
+      "p_value": 0.337190646236054,
+      "n_young": 8,
+      "n_old": 14,
+      "direction": "COMPENSATED"
+    },
+    "IGF1": {
+      "mean_young": "-0.08026051",
+      "mean_old": "-0.22207427",
+      "log2fc": 0,
+      "cohens_d": "-0.30202124",
+      "p_value": 0.5114203533405621,
+      "n_young": 8,
+      "n_old": 14,
+      "direction": "DECLINED"
+    },
+    "IGF2": {
+      "mean_young": "0.2517486",
+      "mean_old": "-0.02557877",
+      "log2fc": "nan",
+      "cohens_d": "-0.47986656",
+      "p_value": 0.262353059100775,
+      "n_young": 8,
+      "n_old": 14,
+      "direction": "DECLINED"
+    },
+    "FGF2": {
+      "mean_young": "-0.013648232",
+      "mean_old": "0.012307222",
+      "log2fc": 0,
+      "cohens_d": "0.25673506",
+      "p_value": 0.5586760828235058,
+      "n_young": 8,
+      "n_old": 14,
+      "direction": "COMPENSATED"
+    },
+    "VEGFA": {
+      "mean_young": "-0.08552702",
+      "mean_old": "0.008439378",
+      "log2fc": 0,
+      "cohens_d": "0.57717943",
+      "p_value": 0.24474486817609026,
+      "n_young": 8,
+      "n_old": 14,
+      "direction": "COMPENSATED"
+    }
+  },
+  "verdict": {
+    "part_a_adequate": false,
+    "part_b_adequate": true,
+    "part_c_adequate": true,
+    "n_adequate": 2,
+    "verdict": "INADEQUATE",
+    "reasoning": "Part A (functional test) fails: FAP GF does not predict MuSC activation. Parts B/C show molecular compensation exists but does not translate to functional benefit."
+  }
+}

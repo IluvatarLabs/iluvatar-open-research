@@ -1,0 +1,187 @@
+{
+  "vascular": {
+    "n_donors": 21,
+    "n_genes_tested": 35229,
+    "n_sig_bh005": 93,
+    "JUNB": {
+      "log2FC": 1.0174753860993027,
+      "wald_stat": 1.2794820803602562,
+      "p_value": 0.2007273459664728,
+      "bh_q": 0.8831770113801936,
+      "significant_bh005": false
+    },
+    "INFLAMMATORY_RESPONSE": {
+      "NES": 1.7635757948741855,
+      "FDR_q": 0.00365731820452437
+    },
+    "VIF": [
+      {
+        "factor": "country",
+        "VIF": 1.004830917874396
+      },
+      {
+        "factor": "age_group",
+        "VIF": 1.0048309178743966
+      }
+    ],
+    "cell_counts": {
+      "OM1": 4111,
+      "OM2": 2786,
+      "OM3": 3470,
+      "OM4": 981,
+      "OM5": 280,
+      "OM6": 227,
+      "OM7": 297,
+      "OM8": 116,
+      "OM9": 980,
+      "P13": 74,
+      "P17": 47,
+      "P21": 485,
+      "P23": 305,
+      "P26": 170,
+      "P27": 58,
+      "P29": 330,
+      "P3": 777,
+      "P5": 139,
+      "YM1": 458,
+      "YM2": 21,
+      "YM3": 304,
+      "YM4": 175,
+      "YM5": 1108
+    },
+    "metadata_summary": {
+      "age_group": {
+        "old": 14,
+        "young": 7
+      },
+      "country": {
+        "China": 13,
+        "Spain": 8
+      }
+    },
+    "data_caveat": "quasi-counts from log-normalized data (not raw UMIs)"
+  },
+  "musc": {
+    "n_donors": 15,
+    "n_genes_tested": 32435,
+    "n_sig_bh005": 19,
+    "JUNB": {
+      "log2FC": 0.9549081517441171,
+      "wald_stat": 1.0013728877618495,
+      "p_value": 0.3166465666413907,
+      "bh_q": 0.9999072823399678,
+      "significant_bh005": false
+    },
+    "INFLAMMATORY_RESPONSE": {
+      "NES": 1.6286313952485665,
+      "FDR_q": 0.020004269203793494
+    },
+    "VIF": [
+      {
+        "factor": "country",
+        "VIF": 1.0114942528735633
+      },
+      {
+        "factor": "age_group",
+        "VIF": 1.0114942528735638
+      }
+    ],
+    "cell_counts": {
+      "OM1": 535,
+      "OM2": 1347,
+      "OM3": 3076,
+      "OM4": 237,
+      "OM5": 251,
+      "OM6": 193,
+      "OM7": 12,
+      "OM8": 43,
+      "OM9": 1095,
+      "P17": 5,
+      "P21": 112,
+      "P23": 28,
+      "P26": 28,
+      "P27": 23,
+      "P29": 113,
+      "P3": 58,
+      "P32": 1,
+      "P5": 70,
+      "YM1": 894,
+      "YM2": 5,
+      "YM3": 146,
+      "YM4": 418,
+      "YM5": 869
+    },
+    "metadata_summary": {
+      "age_group": {
+        "old": 10,
+        "young": 5
+      },
+      "country": {
+        "China": 11,
+        "Spain": 4
+      }
+    },
+    "data_caveat": "quasi-counts from log-normalized data (not raw UMIs)"
+  },
+  "fap": {
+    "n_donors": 16,
+    "n_genes_tested": 37770,
+    "n_sig_bh005": 1541,
+    "JUNB": {
+      "log2FC": 4.634588926337324,
+      "wald_stat": 2.6700789464459422,
+      "p_value": 0.007583341471342735,
+      "bh_q": 0.12609600782881172,
+      "significant_bh005": false
+    },
+    "INFLAMMATORY_RESPONSE": {
+      "NES": 1.709201136587102,
+      "FDR_q": 0.002886712568960356
+    },
+    "VIF": [
+      {
+        "factor": "country",
+        "VIF": 1.0096153846153852
+      },
+      {
+        "factor": "age_group",
+        "VIF": 1.0096153846153848
+      }
+    ],
+    "cell_counts": {
+      "OM1": 2612,
+      "OM2": 8828,
+      "OM3": 11822,
+      "OM4": 867,
+      "OM5": 978,
+      "OM6": 492,
+      "OM7": 1665,
+      "OM8": 656,
+      "OM9": 1662,
+      "P13": 1,
+      "P17": 1,
+      "P21": 58,
+      "P23": 4,
+      "P26": 5,
+      "P29": 17,
+      "P3": 17,
+      "P5": 59,
+      "YM1": 869,
+      "YM2": 151,
+      "YM3": 684,
+      "YM4": 292,
+      "YM5": 1261
+    },
+    "metadata_summary": {
+      "age_group": {
+        "old": 10,
+        "young": 6
+      },
+      "country": {
+        "China": 14,
+        "Spain": 2
+      }
+    },
+    "data_caveat": "quasi-counts from log-normalized data (not raw UMIs)"
+  }
+}

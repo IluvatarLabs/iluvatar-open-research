@@ -1,0 +1,40 @@
+compartment,metric,JUNB,KLF10
+Vascular,"Total rho(KLF10/JUNB, SASP12)",0.9282,0.8766
+Vascular,p-value (total),0.0,0.0
+Vascular,"rho(TF, country)",0.6966,0.6963
+Vascular,"rho(TF, age)",0.0846,0.0859
+Vascular,"rho(TF, SASP | country) [pingouin]",0.8833,0.7921
+Vascular,"rho(TF, SASP | country) [resid]",0.8678,0.7714
+Vascular,"Within-China rho(TF, SASP)",0.9341,0.8846
+Vascular,Within-China p,0.0,0.0001
+Vascular,Within-China N,13,13
+Vascular,"Within-Spain rho(TF, SASP)",0.5868,0.3333
+Vascular,Within-Spain p,0.1262,0.4198
+Vascular,Within-Spain N,8,8
+Vascular,"rho(TF, age | country) [pingouin]",0.3302,0.3319
+MuSC,"Total rho(KLF10/JUNB, SASP12)",0.9071,0.9214
+MuSC,p-value (total),0.0,0.0
+MuSC,"rho(TF, country)",0.663,0.6281
+MuSC,"rho(TF, age)",0.0269,-0.2363
+MuSC,"rho(TF, SASP | country) [pingouin]",0.8289,0.8668
+MuSC,"rho(TF, SASP | country) [resid]",0.8143,0.8786
+MuSC,"Within-China rho(TF, SASP)",0.7727,0.8273
+MuSC,Within-China p,0.0053,0.0017
+MuSC,Within-China N,11,11
+MuSC,"Within-Spain rho(TF, SASP)",1.0,1.0
+MuSC,Within-Spain p,0.0,0.0
+MuSC,Within-Spain N,4,4
+MuSC,"rho(TF, age | country) [pingouin]",0.2956,-0.0811
+FAP,"Total rho(KLF10/JUNB, SASP12)",0.2265,0.8618
+FAP,p-value (total),0.399,0.0
+FAP,"rho(TF, country)",0.5329,-0.082
+FAP,"rho(TF, age)",0.3728,0.0488
+FAP,"rho(TF, SASP | country) [pingouin]",0.436,0.8712
+FAP,"rho(TF, SASP | country) [resid]",0.3588,0.8529
+FAP,"Within-China rho(TF, SASP)",0.3934,0.8505
+FAP,Within-China p,0.164,0.0001
+FAP,Within-China N,14,14
+FAP,"Within-Spain rho(TF, SASP)",N/A,N/A
+FAP,Within-Spain p,N/A,N/A
+FAP,Within-Spain N,2,2
+FAP,"rho(TF, age | country) [pingouin]",0.583,0.0327

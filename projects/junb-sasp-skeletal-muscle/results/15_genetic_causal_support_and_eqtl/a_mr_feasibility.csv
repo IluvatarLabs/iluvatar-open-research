@@ -1,0 +1,5 @@
+tf,outcome,outcome_efo,n_cis_eqtls_muscle,mean_F_stat_estimate,max_coloc_H4_with_outcome,gwas_sumstats_url,gwas_sumstats_local_path,verdict,reason
+CDKN1A,grip_strength,EFO_0006941,0,,,https://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST90025001-GCST90026000/GCST90025994/,,INCONCLUSIVE,No cis-eQTL in UBERON_0001134 found in OT evidences.
+CDKN1A,appendicular_lean_mass,EFO_0004980,0,,,https://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST90025001-GCST90026000/GCST90025979/,,INCONCLUSIVE,No cis-eQTL in UBERON_0001134 found in OT evidences.
+CEBPB,grip_strength,EFO_0006941,0,,,https://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST90025001-GCST90026000/GCST90025994/,,INCONCLUSIVE,No cis-eQTL in UBERON_0001134 found in OT evidences.
+CEBPB,appendicular_lean_mass,EFO_0004980,0,,,https://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST90025001-GCST90026000/GCST90025979/,,INCONCLUSIVE,No cis-eQTL in UBERON_0001134 found in OT evidences.

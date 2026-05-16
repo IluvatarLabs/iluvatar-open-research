@@ -1,0 +1,6 @@
+axis,ligand,receptor,d_ligand,d_receptor,score,note
+HGF→MET,HGF,MET,1.1,0.6,0.66,Dominant FAP→MuSC crosstalk (batch_024)
+FGF7→FGFR1,FGF7,FGFR1,1.29,0.13,0.17,"BROKEN: growth factor up, receptor NOT up (batch_030)"
+PDGFA→PDGFRA,PDGFA,PDGFRA,0.44,0.7,0.31,Coordinated (batch_024)
+TNF→TNFRSF1A,TNF,TNFRSF1A,-0.54,0.89,-0.3,"DECOUPLED: ligand down, receptor up (batch_024)"
+IGF2→IGF1R,IGF2,IGF1R,-0.87,0.89,-0.49,"DECOUPLED: ligand down, receptor up (batch_024)"

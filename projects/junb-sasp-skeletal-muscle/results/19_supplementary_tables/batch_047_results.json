@@ -1,0 +1,25 @@
+{
+  "status": "COMPLETE",
+  "tables_computed": [
+    "table1",
+    "table2",
+    "table3",
+    "table4",
+    "table5"
+  ],
+  "reviewer_items": [
+    "R5",
+    "R7",
+    "R8"
+  ],
+  "key_numbers": {
+    "table1_sheets": 24,
+    "table2_sheets": 59,
+    "table3_subtypes": 9,
+    "table4_crosstalk_axes": 5,
+    "table5_null_genes": 17,
+    "r5_subtypes_analyzed": 9,
+    "r7_statements_reviewed": 5,
+    "r8_correlations_with_ci": 7
+  }
+}

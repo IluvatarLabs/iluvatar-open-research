@@ -1,0 +1,13 @@
+compartment,JUNB,FOS,EGR1,CEBPB,ATF3,STAT3
+Vascular,0.9121,0.8399,0.8913,0.8893,,
+FAP,0.0322,-0.153,-0.0367,0.8882,,
+Immune,,,,,,
+MuSC,0.5128,0.5711,0.6215,0.4407,,
+
+# NOTE: partial_rho controls for age + sex + tech (Vasc/FAP/MuSC via batch_060).
+# MuSC from batch_060 musc_partial.csv (covariate set: age+sex+tech).
+# Immune row NaN with note 'covariate_set_mismatch' — snRNA-only
+#   cohort in batch_059 means tech is constant, so covariate set
+#   is NOT equivalent to age+sex+tech used for other compartments.
+#   See long-form CSV (tf_coupling_4compartment.csv) for per-cell
+#   covariate_set and source_batch columns.

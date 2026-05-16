@@ -1,0 +1,83 @@
+{
+  "iteration": 64,
+  "batch": "batch_064",
+  "analysis": "C",
+  "seed": 1,
+  "n_permutations_gene_label": 1000,
+  "n_permutations_signature_rand": 1000,
+  "nes_threshold": 2.0,
+  "p_threshold": 0.05,
+  "signature_size": 100,
+  "ieg_verdict": {
+    "ieg_precheck_pooled": "PASS"
+  },
+  "data_limitations": {
+    "age_stratification": "NOT AVAILABLE \u2014 MoTrPAC .rda DA aggregates do not contain per-participant age covariates. Pooled-only analysis run.",
+    "between_subject_permutation_null": "NOT AVAILABLE \u2014 requires per-participant raw counts. Signature-randomization null substituted as secondary null. Gene-label permutation (gseapy default) also reported.",
+    "c2_propensity_score_balance": "NOT AVAILABLE \u2014 no participant covariates in .rda DA. C2 is DESCRIPTIVE-ONLY with BALANCE_UNKNOWN=True."
+  },
+  "c1_24hr_cells": [
+    {
+      "compartment": "Vascular",
+      "direction": "UP",
+      "NES": -1.6444002445499857,
+      "p_gene": 0.0029940119760479044,
+      "p_sig_rand": 0.003996003996003996,
+      "verdict": "NOT_ENRICHED"
+    },
+    {
+      "compartment": "MuSC",
+      "direction": "UP",
+      "NES": -1.2432051890606108,
+      "p_gene": 0.10263929618768329,
+      "p_sig_rand": 0.12887112887112886,
+      "verdict": "NOT_ENRICHED"
+    },
+    {
+      "compartment": "FAP",
+      "direction": "DOWN",
+      "NES": 1.058876542606513,
+      "p_gene": 0.35344827586206895,
+      "p_sig_rand": 0.23976023976023977,
+      "verdict": "NOT_ENRICHED"
+    },
+    {
+      "compartment": "MuSC",
+      "direction": "DOWN",
+      "NES": -0.9371410337708428,
+      "p_gene": 0.5798045602605864,
+      "p_sig_rand": 0.5834165834165834,
+      "verdict": "NOT_ENRICHED"
+    },
+    {
+      "compartment": "Vascular",
+      "direction": "DOWN",
+      "NES": -0.8463927658145841,
+      "p_gene": 0.8390092879256966,
+      "p_sig_rand": 0.8811188811188811,
+      "verdict": "NOT_ENRICHED"
+    },
+    {
+      "compartment": "FAP",
+      "direction": "UP",
+      "NES": -0.5138078912033048,
+      "p_gene": 0.9783653846153846,
+      "p_sig_rand": 0.962037962037962,
+      "verdict": "NOT_ENRICHED"
+    }
+  ],
+  "outputs": {
+    "signatures": "/home/yuanz/Documents/GitHub/biomarvin_fibro/experiments/batch_064/c_signatures.csv",
+    "ieg_precheck": "/home/yuanz/Documents/GitHub/biomarvin_fibro/experiments/batch_064/c_ieg_precheck.csv",
+    "gsea_results": "/home/yuanz/Documents/GitHub/biomarvin_fibro/experiments/batch_064/c_gsea_results.csv",
+    "c2_baseline": "/home/yuanz/Documents/GitHub/biomarvin_fibro/experiments/batch_064/c_c2_baseline.csv",
+    "correlation": "/home/yuanz/Documents/GitHub/biomarvin_fibro/experiments/batch_064/c_correlation.csv",
+    "log": "/home/yuanz/Documents/GitHub/biomarvin_fibro/experiments/batch_064/logs/c_stdout.log"
+  },
+  "decision_pre_commit": "Per brief v2 decision rules: because age stratification and between-subject permutation null are both unavailable from the .rda aggregate, ESTABLISHED calls are structurally unreachable this iter. Maximum attainable classification is SUGGESTED at the pooled level (if NES<-2.0 aging-UP AND NES>+2.0 aging-DOWN, both p<0.05 under BOTH nulls, AND ieg_precheck_pooled==PASS). Otherwise INCONCLUSIVE.",
+  "rollup_pooled_24hr": {
+    "Vascular": "INCONCLUSIVE",
+    "FAP": "INCONCLUSIVE",
+    "MuSC": "INCONCLUSIVE"
+  }
+}

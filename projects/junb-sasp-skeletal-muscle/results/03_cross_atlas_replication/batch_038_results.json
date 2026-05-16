@@ -1,0 +1,109 @@
+{
+  "batch_id": "batch_038",
+  "hypothesis": "Cross-compartment replication of JUNB\u2192SASP in Nature Aging endothelial cells (V4 resolution)",
+  "status": "complete",
+  "cell_type_counts": {
+    "smooth muscle cell": 7994,
+    "capillary endothelial cell": 2982,
+    "vein endothelial cell": 2707,
+    "pericyte": 2344,
+    "endothelial cell of arteriole": 2091,
+    "blood vessel endothelial cell": 466,
+    "endothelial cell of artery": 372,
+    "endothelial cell of lymphatic vessel": 221,
+    "mural cell": 140
+  },
+  "detection_rates": {
+    "JUNB": 0.827582305690689,
+    "FOS": 0.6105894331938002,
+    "CDKN1A": 0.5688426292567033,
+    "CXCL1": 0.09458083493607874,
+    "CXCL8": 0.10102952822717502,
+    "CXCL6": 0.0016970245502884941,
+    "CCL2": 0.42878153637289285,
+    "CCL20": 0.002262699400384659,
+    "CCL7": 0.00045253988007693175,
+    "IL6": 0.2657540445751782,
+    "SERPINE1": 0.144247086774522,
+    "MMP1": 0.0029415092205000567,
+    "MMP3": 0.004525398800769318,
+    "PLAUR": 0.1250141418712524
+  },
+  "available_sasp": [
+    "CXCL1",
+    "CXCL8",
+    "CXCL6",
+    "CCL2",
+    "CCL20",
+    "CCL7",
+    "IL6",
+    "SERPINE1",
+    "MMP1",
+    "MMP3",
+    "PLAUR"
+  ],
+  "primary": {
+    "metric": "rho(JUNB, SASP12)",
+    "rho": 0.6433566433566434,
+    "p_value": 0.024003191200713644,
+    "ci_95_lo": 0.110098484237978,
+    "ci_95_hi": 0.8890161317977197,
+    "n": 12
+  },
+  "secondary": {
+    "fos_sasp": {
+      "rho": 0.49650349650349657,
+      "p_value": 0.10060263183225483,
+      "note": "exploratory"
+    },
+    "junb_fos": {
+      "rho": 0.8321678321678322,
+      "p_value": 0.0007854416778536137,
+      "note": "exploratory collinearity check"
+    },
+    "cdkn1a_sasp": {
+      "rho": 0.5104895104895105,
+      "p_value": 0.08991373630263913,
+      "note": "exploratory"
+    }
+  },
+  "verdict": "MODERATE REPLICATION",
+  "notes": [],
+  "cell_type_column": "cell_type",
+  "metadata_columns": [
+    "Age_group",
+    "Age_bin",
+    "development_stage_ontology_term_id",
+    "sex_ontology_term_id",
+    "donor_id",
+    "sex",
+    "development_stage"
+  ],
+  "donor_column": "donor_id",
+  "n_endothelial_cells": 8839,
+  "has_junb": true,
+  "has_fos": true,
+  "has_cdkn1a": true,
+  "n_donors": 12,
+  "donors": [
+    "339C",
+    "343B",
+    "362C",
+    "367C",
+    "411C",
+    "464C",
+    "470BR",
+    "582C",
+    "583B",
+    "591C",
+    "621B",
+    "640C"
+  ],
+  "confidence": "INCONCLUSIVE",
+  "comparison_to_f084": {
+    "f084_rho": 0.9287,
+    "batch038_rho": 0.6433566433566434,
+    "delta": -0.2853433566433565,
+    "interpretation": "Cross-compartment delta within Nature Aging = -0.285"
+  }
+}

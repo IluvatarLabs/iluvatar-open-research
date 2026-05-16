@@ -1,0 +1,123 @@
+{
+  "batch": "batch_055_d1",
+  "script": "run_fap_aucell.py",
+  "date": "2026-04-14T21:23:16.962124",
+  "dataset": "HLMA_FAP",
+  "analysis": "FAP-only pySCENIC: GRNBoost2 + co-expression regulons + AUCell + SASP correlation",
+  "key_metrics": {
+    "JUNB": {
+      "aucell_rho": -0.3941176470588235,
+      "aucell_p": 0.13091285429899105,
+      "aucell_ci_95": "[-0.744, 0.126]",
+      "raw_mrna_rho": 0.22647058823529412,
+      "delta_rho": -0.6205882352941177,
+      "regulon_source": "coexpression",
+      "n_targets": 175,
+      "n_donors": 16
+    },
+    "KLF10": {
+      "aucell_rho": 0.07941176470588236,
+      "aucell_p": 0.770025319039825,
+      "aucell_ci_95": "[-0.433, 0.553]",
+      "raw_mrna_rho": 0.8617647058823529,
+      "delta_rho": -0.7823529411764705,
+      "regulon_source": "coexpression",
+      "n_targets": 81,
+      "n_donors": 16
+    },
+    "CEBPB": {
+      "aucell_rho": 0.4735294117647058,
+      "aucell_p": 0.06391907182682008,
+      "aucell_ci_95": "[-0.029, 0.785]",
+      "raw_mrna_rho": 0.7529411764705882,
+      "delta_rho": -0.2794117647058824,
+      "regulon_source": "coexpression",
+      "n_targets": 96,
+      "n_donors": 16
+    },
+    "EGR2": {
+      "aucell_rho": 0.4676470588235294,
+      "aucell_p": 0.06776085019015395,
+      "aucell_ci_95": "[-0.037, 0.782]",
+      "raw_mrna_rho": 0.7411764705882353,
+      "delta_rho": -0.2735294117647059,
+      "regulon_source": "coexpression",
+      "n_targets": 125,
+      "n_donors": 16
+    },
+    "EGR1": {
+      "aucell_rho": -0.4735294117647058,
+      "aucell_p": 0.06391907182682008,
+      "aucell_ci_95": "[-0.785, 0.029]",
+      "raw_mrna_rho": 0.15882352941176472,
+      "delta_rho": -0.6323529411764706,
+      "regulon_source": "coexpression",
+      "n_targets": 200,
+      "n_donors": 16
+    },
+    "ATF3": {
+      "aucell_rho": -0.2411764705882353,
+      "aucell_p": 0.36820660804263405,
+      "aucell_ci_95": "[-0.658, 0.289]",
+      "raw_mrna_rho": 0.4852941176470588,
+      "delta_rho": -0.7264705882352941,
+      "regulon_source": "coexpression",
+      "n_targets": 93,
+      "n_donors": 16
+    },
+    "FOSL1": {
+      "aucell_rho": -0.4382352941176471,
+      "aucell_p": 0.08953003199187995,
+      "aucell_ci_95": "[-0.767, 0.073]",
+      "raw_mrna_rho": 0.3294117647058824,
+      "delta_rho": -0.7676470588235296,
+      "regulon_source": "coexpression",
+      "n_targets": 68,
+      "n_donors": 16
+    },
+    "IRF1": {
+      "aucell_rho": 0.15,
+      "aucell_p": 0.5792486306642535,
+      "aucell_ci_95": "[-0.373, 0.601]",
+      "raw_mrna_rho": 0.4941176470588235,
+      "delta_rho": -0.34411764705882353,
+      "regulon_source": "coexpression",
+      "n_targets": 82,
+      "n_donors": 16
+    },
+    "FOS": {
+      "aucell_rho": -0.3235294117647059,
+      "aucell_p": 0.2215741250012429,
+      "aucell_ci_95": "[-0.706, 0.205]",
+      "raw_mrna_rho": 0.15588235294117647,
+      "delta_rho": -0.47941176470588237,
+      "regulon_source": "coexpression",
+      "n_targets": 200,
+      "n_donors": 16
+    },
+    "FOSB": {
+      "aucell_rho": -0.2764705882352941,
+      "aucell_p": 0.2999421284923735,
+      "aucell_ci_95": "[-0.679, 0.254]",
+      "raw_mrna_rho": 0.17058823529411765,
+      "delta_rho": -0.44705882352941173,
+      "regulon_source": "coexpression",
+      "n_targets": 200,
+      "n_donors": 16
+    }
+  },
+  "design_decisions": [
+    "snRNA-only cells for GRNBoost2 (tech confound avoidance)",
+    "z-scored data: variance-based HVG selection via dispersions_norm",
+    "All expressed TFs from human_tfs.txt for GRNBoost2 (not just TARGET_TFS)",
+    "cisTarget SKIPPED (broken in batch_054)",
+    "Co-expression regulons: top-80th-percentile importance per TF, min 5, max 200 targets",
+    "AUCell on ALL cells (snRNA + scRNA)",
+    "Donor-level correlation: min 50 cells per donor",
+    "delta_rho = aucell_rho - raw_mrna_rho"
+  ],
+  "runtime": {
+    "grnboost2_minutes": 31.41841954390208,
+    "aucell_minutes": 4.347050253550211
+  }
+}

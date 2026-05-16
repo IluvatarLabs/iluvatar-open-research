@@ -1,0 +1,25 @@
+{
+  "batch": "batch_051",
+  "date": "2026-04-13",
+  "analyses": {
+    "F1_confound": {
+      "key_finding": "Country (China/Spain) is dominant confound, not age",
+      "rho_JUNB_age": 0.04193548903515096,
+      "rho_JUNB_country": 0.6260613063084415,
+      "rho_JUNB_SASP_raw": 0.92125096762891
+    },
+    "I1_power": "7 findings analyzed",
+    "I2_partial_corr": "15 TF-dataset combinations",
+    "I3_sensitivity": "40 threshold analyses",
+    "I4_tiering": "21 TFs tiered"
+  },
+  "files": [
+    "f1_confound_analysis.csv",
+    "i1_power_analysis.csv",
+    "i2_partial_correlations.csv",
+    "i3_cell_count_sensitivity.csv",
+    "i4_replication_tiering.csv",
+    "a2_cell_donor_counts.csv",
+    "a3_qc_metrics.csv"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "batch": "batch_055_c1",
+  "script": "run_cebpb_country.py",
+  "date": "2026-04-14T20:42:30.852167",
+  "analysis": "CEBPB country stratification (within-China vs within-Spain)",
+  "target_tfs": [
+    "CEBPB",
+    "JUNB"
+  ],
+  "sasp12_genes": [
+    "CCL2",
+    "CXCL1",
+    "CXCL2",
+    "CXCL3",
+    "CXCL6",
+    "IL6",
+    "CXCL8",
+    "SERPINE1",
+    "MMP1",
+    "MMP3",
+    "PLAU",
+    "PLAUR"
+  ],
+  "bonferroni_alpha": 0.008333333333333333,
+  "bonferroni_note": "alpha_adj = 0.05 / (3 compartments \u00d7 2 countries) = 0.0083",
+  "methodology": {
+    "correlation": "Spearman rank",
+    "ci_method": "Fisher Z transformation",
+    "partial_corr": "pingouin.partial_corr (Spearman) + residualization cross-check",
+    "min_cells_per_donor": 50,
+    "cell_type_filters": {
+      "Vascular": [
+        "ArtEC",
+        "CapEC",
+        "VenEC",
+        "IL6+ VenEC"
+      ],
+      "FAP": [
+        "MME+ FAP",
+        "CD55+ FAP",
+        "GPC3+ FAP",
+        "RUNX2+ FAP",
+        "CD99+ FAP"
+      ],
+      "MuSC": "all cells"
+    }
+  },
+  "data_sources": {
+    "Vascular": "data/Vascular_scsn_RNA.h5ad",
+    "MuSC": "data/MuSC_scsn_RNA.h5ad",
+    "FAP": "data/OMIX004308-02.h5ad"
+  },
+  "caveats": [
+    "Spain N is very small after min 50 cells filter (2-4 donors/compartment)",
+    "Spain donors may be from a different surgical context than China donors",
+    "China is almost entirely snRNA while Spain has scRNA enrichment",
+    "CEBPB is a broad transcriptional activator -- positive SASP correlation may reflect co-activation rather than direct regulatory targeting"
+  ]
+}

@@ -1,0 +1,508 @@
+{
+  "metadata": {
+    "batch": "batch_031",
+    "purpose": "FAP subtype-specific GF expression by age",
+    "date": "2026-04-10",
+    "random_seed": 42,
+    "data_path": "/home/yuanz/Documents/GitHub/biomarvin_fibro/data/OMIX004308-02.h5ad",
+    "n_cells_total": 40389,
+    "n_genes_total": 37841,
+    "n_donors_total": 22
+  },
+  "part_a": {
+    "donor_cell_counts": {
+      "CD55+ FAP": {
+        "OM1": 597,
+        "OM2": 2973,
+        "OM3": 4369,
+        "OM4": 263,
+        "OM5": 196,
+        "OM6": 105,
+        "OM7": 746,
+        "OM8": 138,
+        "OM9": 290,
+        "P3": 1,
+        "P13": 0,
+        "P17": 0,
+        "P21": 20,
+        "P23": 1,
+        "P26": 0,
+        "P29": 7,
+        "YM1": 151,
+        "YM2": 40,
+        "YM3": 210,
+        "YM4": 75,
+        "YM5": 199
+      },
+      "GPC3+ FAP": {
+        "OM1": 561,
+        "OM2": 1767,
+        "OM3": 1642,
+        "OM4": 118,
+        "OM5": 182,
+        "OM6": 75,
+        "OM7": 302,
+        "OM8": 169,
+        "OM9": 281,
+        "P3": 7,
+        "P13": 0,
+        "P17": 0,
+        "P21": 10,
+        "P23": 1,
+        "P26": 4,
+        "P29": 1,
+        "YM1": 122,
+        "YM2": 17,
+        "YM3": 84,
+        "YM4": 30,
+        "YM5": 156
+      },
+      "MME+ FAP": {
+        "OM1": 1453,
+        "OM2": 3392,
+        "OM3": 5811,
+        "OM4": 486,
+        "OM5": 284,
+        "OM6": 283,
+        "OM7": 616,
+        "OM8": 343,
+        "OM9": 838,
+        "P3": 9,
+        "P13": 1,
+        "P17": 1,
+        "P21": 28,
+        "P23": 2,
+        "P26": 1,
+        "P29": 9,
+        "YM1": 585,
+        "YM2": 93,
+        "YM3": 386,
+        "YM4": 185,
+        "YM5": 905
+      },
+      "Tenocyte": {
+        "OM1": 677,
+        "OM2": 1571,
+        "OM3": 4149,
+        "OM4": 120,
+        "OM5": 198,
+        "OM6": 73,
+        "OM7": 194,
+        "OM8": 22,
+        "OM9": 136,
+        "P3": 6,
+        "P13": 0,
+        "P17": 3,
+        "P21": 4,
+        "P23": 0,
+        "P26": 0,
+        "P29": 5,
+        "YM1": 40,
+        "YM2": 0,
+        "YM3": 26,
+        "YM4": 57,
+        "YM5": 107
+      }
+    },
+    "sample_sizes": {
+      "MME+ FAP": {
+        "young": 7,
+        "old": 14
+      },
+      "CD55+ FAP": {
+        "young": 5,
+        "old": 13
+      },
+      "GPC3+ FAP": {
+        "young": 6,
+        "old": 13
+      },
+      "Tenocyte": {
+        "young": 4,
+        "old": 13
+      }
+    },
+    "sample_sizes_note": "Counts donors with valid pseudobulk values (non-NaN). Some 'young' donors include pediatric samples (P13=13yo, P17=17yo, P21=21yo, P23=23yo, P26=26yo, P29=29yo) in addition to young adult samples (YM1=15yo, YM2=18yo, YM3=29yo, YM4=34yo, YM5=38yo). This broadens the 'young' definition but is biologically valid.",
+    "sparsity": {
+      "MME+ FAP": {
+        "PDGFA_young": 1.1,
+        "PDGFA_old": 1.6,
+        "HGF_young": 1.9,
+        "HGF_old": 8.2
+      },
+      "CD55+ FAP": {
+        "PDGFA_young": 0.6,
+        "PDGFA_old": 2.9,
+        "HGF_young": 6.8,
+        "HGF_old": 8.0
+      },
+      "GPC3+ FAP": {
+        "PDGFA_young": 1.5,
+        "PDGFA_old": 1.6,
+        "HGF_young": 5.1,
+        "HGF_old": 15.0
+      },
+      "Tenocyte": {
+        "PDGFA_young": 2.2,
+        "PDGFA_old": 2.5,
+        "HGF_young": 13.5,
+        "HGF_old": 10.2
+      }
+    },
+    "cohens_d": {
+      "MME+ FAP": {
+        "FGF7": {
+          "d": 0.9951,
+          "mean_young": -0.473,
+          "mean_old": -0.2644,
+          "n_young": 7,
+          "n_old": 14
+        },
+        "HGF": {
+          "d": 0.9561,
+          "mean_young": -0.101,
+          "mean_old": -0.0079,
+          "n_young": 7,
+          "n_old": 14
+        },
+        "PDGFA": {
+          "d": 0.4268,
+          "mean_young": -0.0741,
+          "mean_old": 0.0226,
+          "n_young": 7,
+          "n_old": 14
+        },
+        "IGF1": {
+          "d": 0.0573,
+          "mean_young": -0.047,
+          "mean_old": -0.0082,
+          "n_young": 7,
+          "n_old": 14
+        },
+        "IGF2": {
+          "d": -0.6632,
+          "mean_young": 0.4705,
+          "mean_old": 0.0149,
+          "n_young": 7,
+          "n_old": 14
+        }
+      },
+      "CD55+ FAP": {
+        "FGF7": {
+          "d": 0.8897,
+          "mean_young": -0.4689,
+          "mean_old": 0.1023,
+          "n_young": 5,
+          "n_old": 13
+        },
+        "HGF": {
+          "d": 0.6862,
+          "mean_young": -0.1096,
+          "mean_old": 0.0154,
+          "n_young": 5,
+          "n_old": 13
+        },
+        "PDGFA": {
+          "d": 0.1606,
+          "mean_young": -0.0811,
+          "mean_old": -0.0673,
+          "n_young": 5,
+          "n_old": 13
+        },
+        "IGF1": {
+          "d": -0.433,
+          "mean_young": -0.089,
+          "mean_old": -0.4251,
+          "n_young": 5,
+          "n_old": 13
+        },
+        "IGF2": {
+          "d": -1.0073,
+          "mean_young": 0.2101,
+          "mean_old": -0.1339,
+          "n_young": 5,
+          "n_old": 13
+        }
+      },
+      "GPC3+ FAP": {
+        "FGF7": {
+          "d": 1.08,
+          "mean_young": -0.2744,
+          "mean_old": 0.1493,
+          "n_young": 6,
+          "n_old": 13
+        },
+        "HGF": {
+          "d": 1.0374,
+          "mean_young": -0.0624,
+          "mean_old": 0.1079,
+          "n_young": 6,
+          "n_old": 13
+        },
+        "PDGFA": {
+          "d": -0.602,
+          "mean_young": 0.0438,
+          "mean_old": -0.0733,
+          "n_young": 6,
+          "n_old": 13
+        },
+        "IGF1": {
+          "d": -0.8162,
+          "mean_young": -0.0221,
+          "mean_old": -0.3744,
+          "n_young": 6,
+          "n_old": 13
+        },
+        "IGF2": {
+          "d": -0.6027,
+          "mean_young": 0.4317,
+          "mean_old": 0.0907,
+          "n_young": 6,
+          "n_old": 13
+        }
+      },
+      "Tenocyte": {
+        "FGF7": {
+          "d": 1.5348,
+          "mean_young": -0.3955,
+          "mean_old": 0.2551,
+          "n_young": 4,
+          "n_old": 13
+        },
+        "HGF": {
+          "d": 0.0225,
+          "mean_young": 0.1685,
+          "mean_old": 0.1817,
+          "n_young": 4,
+          "n_old": 13
+        },
+        "PDGFA": {
+          "d": 0.2756,
+          "mean_young": -0.0123,
+          "mean_old": 0.1582,
+          "n_young": 4,
+          "n_old": 13
+        },
+        "IGF1": {
+          "d": -1.1056,
+          "mean_young": 0.1883,
+          "mean_old": -0.3119,
+          "n_young": 4,
+          "n_old": 13
+        },
+        "IGF2": {
+          "d": -1.2426,
+          "mean_young": 0.2632,
+          "mean_old": -0.1592,
+          "n_young": 4,
+          "n_old": 13
+        }
+      }
+    },
+    "t_tests": {
+      "MME+ FAP": {
+        "FGF7": {
+          "t_stat": 2.1055,
+          "p_value": 0.058028
+        },
+        "HGF": {
+          "t_stat": 2.3957,
+          "p_value": 0.027957
+        },
+        "PDGFA": {
+          "t_stat": 1.2788,
+          "p_value": 0.220197
+        },
+        "IGF1": {
+          "t_stat": 0.1235,
+          "p_value": 0.903729
+        },
+        "IGF2": {
+          "t_stat": -1.1115,
+          "p_value": 0.302655
+        }
+      },
+      "CD55+ FAP": {
+        "FGF7": {
+          "t_stat": 2.6069,
+          "p_value": 0.019839
+        },
+        "HGF": {
+          "t_stat": 2.0316,
+          "p_value": 0.060809
+        },
+        "PDGFA": {
+          "t_stat": 0.3235,
+          "p_value": 0.754393
+        },
+        "IGF1": {
+          "t_stat": -1.2032,
+          "p_value": 0.246398
+        },
+        "IGF2": {
+          "t_stat": -1.3072,
+          "p_value": 0.25476
+        }
+      },
+      "GPC3+ FAP": {
+        "FGF7": {
+          "t_stat": 2.8789,
+          "p_value": 0.010426
+        },
+        "HGF": {
+          "t_stat": 2.8019,
+          "p_value": 0.012323
+        },
+        "PDGFA": {
+          "t_stat": -0.8204,
+          "p_value": 0.448459
+        },
+        "IGF1": {
+          "t_stat": -1.4259,
+          "p_value": 0.195841
+        },
+        "IGF2": {
+          "t_stat": -1.1162,
+          "p_value": 0.296618
+        }
+      }
+    },
+    "bh_corrected": {
+      "MME+ FAP": {
+        "FGF7": {
+          "p_raw": 0.058028,
+          "p_bh": 0.152023,
+          "significant": false
+        },
+        "HGF": {
+          "p_raw": 0.027957,
+          "p_bh": 0.104839,
+          "significant": false
+        },
+        "PDGFA": {
+          "p_raw": 0.220197,
+          "p_bh": 0.378319,
+          "significant": false
+        },
+        "IGF1": {
+          "p_raw": 0.903729,
+          "p_bh": 0.903729,
+          "significant": false
+        },
+        "IGF2": {
+          "p_raw": 0.302655,
+          "p_bh": 0.378319,
+          "significant": false
+        }
+      },
+      "CD55+ FAP": {
+        "FGF7": {
+          "p_raw": 0.019839,
+          "p_bh": 0.099195,
+          "significant": false
+        },
+        "HGF": {
+          "p_raw": 0.060809,
+          "p_bh": 0.152023,
+          "significant": false
+        },
+        "PDGFA": {
+          "p_raw": 0.754393,
+          "p_bh": 0.808278,
+          "significant": false
+        },
+        "IGF1": {
+          "p_raw": 0.246398,
+          "p_bh": 0.378319,
+          "significant": false
+        },
+        "IGF2": {
+          "p_raw": 0.25476,
+          "p_bh": 0.378319,
+          "significant": false
+        }
+      },
+      "GPC3+ FAP": {
+        "FGF7": {
+          "p_raw": 0.010426,
+          "p_bh": 0.092423,
+          "significant": false
+        },
+        "HGF": {
+          "p_raw": 0.012323,
+          "p_bh": 0.092423,
+          "significant": false
+        },
+        "PDGFA": {
+          "p_raw": 0.448459,
+          "p_bh": 0.517453,
+          "significant": false
+        },
+        "IGF1": {
+          "p_raw": 0.195841,
+          "p_bh": 0.378319,
+          "significant": false
+        },
+        "IGF2": {
+          "p_raw": 0.296618,
+          "p_bh": 0.378319,
+          "significant": false
+        }
+      }
+    }
+  },
+  "part_b": {
+    "MME+ FAP": {
+      "rho": 0.0627,
+      "p_value": 0.78171,
+      "n_donors": 22
+    },
+    "CD55+ FAP": {
+      "rho": -0.2053,
+      "p_value": 0.399223,
+      "n_donors": 19
+    },
+    "GPC3+ FAP": {
+      "rho": 0.5143,
+      "p_value": 0.020346,
+      "n_donors": 20
+    }
+  },
+  "part_c": {
+    "MME+ FAP": {
+      "n_cells": 15757,
+      "n_junb_pos": 219,
+      "observed_fraction": 0.0139,
+      "expected_fraction": 0.0305,
+      "enrichment_ratio": 0.4559
+    },
+    "CD55+ FAP": {
+      "n_cells": 10384,
+      "n_junb_pos": 409,
+      "observed_fraction": 0.0394,
+      "expected_fraction": 0.0305,
+      "enrichment_ratio": 1.292
+    },
+    "GPC3+ FAP": {
+      "n_cells": 5539,
+      "n_junb_pos": 89,
+      "observed_fraction": 0.0161,
+      "expected_fraction": 0.0305,
+      "enrichment_ratio": 0.5271
+    },
+    "Tenocyte": {
+      "n_cells": 7388,
+      "n_junb_pos": 410,
+      "observed_fraction": 0.0555,
+      "expected_fraction": 0.0305,
+      "enrichment_ratio": 1.8204
+    },
+    "RUNX2+ FAP": {
+      "n_cells": 623,
+      "n_junb_pos": 83,
+      "observed_fraction": 0.1332,
+      "expected_fraction": 0.0305,
+      "enrichment_ratio": 4.3702
+    }
+  }
+}

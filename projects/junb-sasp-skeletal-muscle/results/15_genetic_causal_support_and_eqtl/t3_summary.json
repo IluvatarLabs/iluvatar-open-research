@@ -1,0 +1,45 @@
+{
+  "iteration": 65,
+  "batch": "batch_065",
+  "task": "T3",
+  "seed": 42,
+  "config": {
+    "n_hvg": 5000,
+    "n_cells_per_compartment": 4000,
+    "n_synthetic_bulks": 100,
+    "n_bootstrap": 100,
+    "cv_threshold": 0.3,
+    "rho_gate": 0.7,
+    "gibbs": {
+      "chain.length": 1000,
+      "burn.in": 500,
+      "thinning": 2,
+      "seed": 42
+    },
+    "opt": {
+      "maxit": 100000,
+      "optimizer": "MAP"
+    }
+  },
+  "n_gtex_samples": 803,
+  "gtex_tertile_counts": {
+    "T1_low": 270,
+    "T3_high": 268,
+    "T2_mid": 265
+  },
+  "n_hvg_final": 9854,
+  "t3a_gate1_error": "Error: input contains negative, non-finite or                              non-numeric values. Please double check your                              input is unnormalized and untransformed raw count.",
+  "t3a_gates": {
+    "dual_pass": false,
+    "ground_truth_pass": false,
+    "sentinel_pass": false
+  },
+  "t3a_dual_gate": "SKIPPED (T3a failed)",
+  "t3a_pre_cv_n": 0,
+  "t3a_post_cv_n": 0,
+  "t3a_bonf_sig_count": 0,
+  "t3b_bonf_sig_count": 1,
+  "t3b_surviving_tfs": [],
+  "primary_method": "T3b_fallback",
+  "verdict": "T3a_FAILED_fallback_to_T3b"
+}

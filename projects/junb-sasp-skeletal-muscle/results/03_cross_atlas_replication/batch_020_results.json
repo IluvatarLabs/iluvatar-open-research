@@ -1,0 +1,400 @@
+{
+  "metadata": {
+    "date": "2026-04-09",
+    "experiment": "GAP 1: Cross-atlas FAP Subtype Specificity Replication",
+    "n_total_cells": 40389,
+    "n_young_cells": 3493,
+    "n_old_cells": 36837,
+    "young_threshold": 40,
+    "old_threshold": 70,
+    "sasp_genes": [
+      "CCL2",
+      "CXCL1",
+      "CXCL2",
+      "CXCL3",
+      "CXCL6",
+      "IL6",
+      "SERPINE1",
+      "MMP1",
+      "MMP3",
+      "PLAU"
+    ],
+    "il8_note": "IL8 (CXCL8) not present in dataset - 10 SASP genes used",
+    "technology_confounding_note": "Young ages predominantly snRNA; Old ages predominantly scRNA - stratification required"
+  },
+  "subtypes": {
+    "MME+ FAP": {
+      "cell_counts": {
+        "young": 2156,
+        "old": 13555,
+        "total": 15757,
+        "meets_threshold": true
+      },
+      "skipped": false,
+      "junb_age_effect": {
+        "cohens_d": 1.03659267036492,
+        "p_value": 0.0,
+        "mean_young": -0.8334966897964478,
+        "mean_old": 0.0634097084403038,
+        "std_young": 1.011670470237732,
+        "std_old": 0.8396145105361938,
+        "t_statistic": 44.70749827526184
+      },
+      "junb_sasp_correlation": {
+        "average_rho": 0.13521686198662505,
+        "per_gene": [
+          {
+            "gene": "CCL2",
+            "rho": 0.5094203601169767,
+            "p_value": 6.119466346702819e-277,
+            "p_value_bh": 6.119466346702819e-276,
+            "significant_bh": true
+          },
+          {
+            "gene": "CXCL1",
+            "rho": 0.19561952403180555,
+            "p_value": 0.008133253734064129,
+            "p_value_bh": 0.011618933905805899,
+            "significant_bh": true
+          },
+          {
+            "gene": "CXCL2",
+            "rho": 0.36612675724431626,
+            "p_value": 6.947595292443411e-55,
+            "p_value_bh": 1.7368988231108525e-54,
+            "significant_bh": true
+          },
+          {
+            "gene": "CXCL3",
+            "rho": -0.13476715087395963,
+            "p_value": 0.02981761022427634,
+            "p_value_bh": 0.03313067802697371,
+            "significant_bh": true
+          },
+          {
+            "gene": "CXCL6",
+            "rho": -0.18266411630174034,
+            "p_value": 0.04583878536858405,
+            "p_value_bh": 0.04583878536858405,
+            "significant_bh": true
+          },
+          {
+            "gene": "IL6",
+            "rho": 0.09988092007671566,
+            "p_value": 0.017062552743931158,
+            "p_value_bh": 0.021328190929913945,
+            "significant_bh": true
+          },
+          {
+            "gene": "SERPINE1",
+            "rho": 0.35640919221556233,
+            "p_value": 2.8275012020553535e-104,
+            "p_value_bh": 9.425004006851178e-104,
+            "significant_bh": true
+          },
+          {
+            "gene": "MMP1",
+            "rho": -0.5712230972740375,
+            "p_value": 2.7496352977927715e-05,
+            "p_value_bh": 5.499270595585543e-05,
+            "significant_bh": true
+          },
+          {
+            "gene": "MMP3",
+            "rho": 0.2501761749981217,
+            "p_value": 0.00016550577100474676,
+            "p_value_bh": 0.00027584295167457795,
+            "significant_bh": true
+          },
+          {
+            "gene": "PLAU",
+            "rho": 0.4631900556324899,
+            "p_value": 7.926667495613212e-175,
+            "p_value_bh": 3.963333747806606e-174,
+            "significant_bh": true
+          }
+        ],
+        "n_significant_bh": 10
+      },
+      "junb_fos_coactivation": {
+        "rho": 0.6428293386564082,
+        "p_value": 0.0
+      },
+      "technology_breakdown": {
+        "young": {
+          "snRNA": 1188,
+          "scRNA": 968
+        },
+        "old": {
+          "scRNA": 11100,
+          "snRNA": 2455
+        }
+      },
+      "technology_stratified": {
+        "scRNA": {
+          "n_cells": 12068,
+          "avg_junb_sasp_rho": 0.33711986763485025
+        },
+        "snRNA": {
+          "n_cells": 3689,
+          "avg_junb_sasp_rho": 0.14015959167393574
+        }
+      }
+    },
+    "CD55+ FAP": {
+      "cell_counts": {
+        "young": 675,
+        "old": 9706,
+        "total": 10384,
+        "meets_threshold": true
+      },
+      "skipped": false,
+      "junb_age_effect": {
+        "cohens_d": 0.8578227608653414,
+        "p_value": 8.377277168859097e-101,
+        "mean_young": -0.6897258162498474,
+        "mean_old": 0.18803708255290985,
+        "std_young": 1.024253249168396,
+        "std_old": 1.0231750011444092,
+        "t_statistic": 21.550135067122834
+      },
+      "junb_sasp_correlation": {
+        "average_rho": -0.056679207411365076,
+        "per_gene": [
+          {
+            "gene": "CCL2",
+            "rho": 0.3703829758698663,
+            "p_value": 1.1083283464837179e-103,
+            "p_value_bh": 5.541641732418589e-103,
+            "significant_bh": true
+          },
+          {
+            "gene": "CXCL1",
+            "rho": -0.5668611205574029,
+            "p_value": 1.0973598932247974e-33,
+            "p_value_bh": 2.7433997330619935e-33,
+            "significant_bh": true
+          },
+          {
+            "gene": "CXCL2",
+            "rho": -0.0781170911029181,
+            "p_value": 0.004797567032503136,
+            "p_value_bh": 0.004797567032503136,
+            "significant_bh": true
+          },
+          {
+            "gene": "CXCL3",
+            "rho": -0.4971853357781228,
+            "p_value": 1.9196462646166373e-22,
+            "p_value_bh": 3.199410441027729e-22,
+            "significant_bh": true
+          },
+          {
+            "gene": "CXCL6",
+            "rho": -0.2132465974594315,
+            "p_value": 0.0008852056919841019,
+            "p_value_bh": 0.0009835618799823355,
+            "significant_bh": true
+          },
+          {
+            "gene": "IL6",
+            "rho": -0.2691649827313606,
+            "p_value": 6.132824749625096e-16,
+            "p_value_bh": 8.761178213750138e-16,
+            "significant_bh": true
+          },
+          {
+            "gene": "SERPINE1",
+            "rho": 0.2857869702633643,
+            "p_value": 1.2716074088323658e-47,
+            "p_value_bh": 4.2386913627745528e-47,
+            "significant_bh": true
+          },
+          {
+            "gene": "MMP1",
+            "rho": 0.5199813450773068,
+            "p_value": 2.671239851660715e-13,
+            "p_value_bh": 3.3390498145758933e-13,
+            "significant_bh": true
+          },
+          {
+            "gene": "MMP3",
+            "rho": -0.5801174982996069,
+            "p_value": 1.26591326107043e-22,
+            "p_value_bh": 2.53182652214086e-22,
+            "significant_bh": true
+          },
+          {
+            "gene": "PLAU",
+            "rho": 0.46174926060465477,
+            "p_value": 5.11463544867894e-136,
+            "p_value_bh": 5.11463544867894e-135,
+            "significant_bh": true
+          }
+        ],
+        "n_significant_bh": 10
+      },
+      "junb_fos_coactivation": {
+        "rho": 0.744999652620767,
+        "p_value": 0.0
+      },
+      "technology_breakdown": {
+        "young": {
+          "snRNA": 446,
+          "scRNA": 229
+        },
+        "old": {
+          "scRNA": 7983,
+          "snRNA": 1723
+        }
+      },
+      "technology_stratified": {
+        "scRNA": {
+          "n_cells": 8212,
+          "avg_junb_sasp_rho": 0.31694780742624545
+        },
+        "snRNA": {
+          "n_cells": 2172,
+          "avg_junb_sasp_rho": 0.3131056836523417
+        }
+      }
+    },
+    "GPC3+ FAP": {
+      "cell_counts": {
+        "young": 413,
+        "old": 5116,
+        "total": 5539,
+        "meets_threshold": true
+      },
+      "skipped": false,
+      "junb_age_effect": {
+        "cohens_d": 1.135617760248112,
+        "p_value": 1.1524003018876808e-104,
+        "mean_young": -0.9285866618156433,
+        "mean_old": 0.07130618393421173,
+        "std_young": 0.9643343687057495,
+        "std_old": 0.8733794093132019,
+        "t_statistic": 22.19980448821351
+      },
+      "junb_sasp_correlation": {
+        "average_rho": 0.18057209142474284,
+        "per_gene": [
+          {
+            "gene": "CCL2",
+            "rho": 0.475020973186128,
+            "p_value": 5.59107353005224e-106,
+            "p_value_bh": 5.591073530052239e-105,
+            "significant_bh": true
+          },
+          {
+            "gene": "CXCL1",
+            "rho": -0.020278190884437056,
+            "p_value": 0.8676676586274188,
+            "p_value_bh": 0.8676676586274188,
+            "significant_bh": false
+          },
+          {
+            "gene": "CXCL2",
+            "rho": 0.2512565791894203,
+            "p_value": 3.147049221867501e-13,
+            "p_value_bh": 7.867623054668751e-13,
+            "significant_bh": true
+          },
+          {
+            "gene": "CXCL3",
+            "rho": -0.2980485225264733,
+            "p_value": 0.0008133793808368081,
+            "p_value_bh": 0.00135563230139468,
+            "significant_bh": true
+          },
+          {
+            "gene": "CXCL6",
+            "rho": 0.07802347314166304,
+            "p_value": 0.546658596071862,
+            "p_value_bh": 0.659231207464144,
+            "significant_bh": false
+          },
+          {
+            "gene": "IL6",
+            "rho": 0.1763268400400648,
+            "p_value": 1.9151929241950423e-05,
+            "p_value_bh": 3.8303858483900845e-05,
+            "significant_bh": true
+          },
+          {
+            "gene": "SERPINE1",
+            "rho": 0.3424473854766966,
+            "p_value": 1.0954398130903936e-24,
+            "p_value_bh": 3.651466043634646e-24,
+            "significant_bh": true
+          },
+          {
+            "gene": "MMP1",
+            "rho": 0.12711546592812012,
+            "p_value": 0.5933080867177296,
+            "p_value_bh": 0.659231207464144,
+            "significant_bh": false
+          },
+          {
+            "gene": "MMP3",
+            "rho": 0.2733870967741936,
+            "p_value": 0.13671921695690384,
+            "p_value_bh": 0.1953131670812912,
+            "significant_bh": false
+          },
+          {
+            "gene": "PLAU",
+            "rho": 0.40046981392205216,
+            "p_value": 1.4894606759923247e-32,
+            "p_value_bh": 7.447303379961623e-32,
+            "significant_bh": true
+          }
+        ],
+        "n_significant_bh": 6
+      },
+      "junb_fos_coactivation": {
+        "rho": 0.6744539188085172,
+        "p_value": 0.0
+      },
+      "technology_breakdown": {
+        "young": {
+          "snRNA": 247,
+          "scRNA": 166
+        },
+        "old": {
+          "scRNA": 4068,
+          "snRNA": 1048
+        }
+      },
+      "technology_stratified": {
+        "scRNA": {
+          "n_cells": 4234,
+          "avg_junb_sasp_rho": 0.288403917150424
+        },
+        "snRNA": {
+          "n_cells": 1305,
+          "avg_junb_sasp_rho": 0.1055212005551519
+        }
+      }
+    }
+  },
+  "cross_atlas_comparison": {
+    "nature_aging": {
+      "Par_FB": {
+        "rho": 0.776,
+        "p": 0.003,
+        "role": "dominant_driver"
+      },
+      "Inter_FB": {
+        "rho": 0.559,
+        "p": "NS",
+        "role": "largest_age_effect"
+      },
+      "Adv_FB": {
+        "rho": 0.469,
+        "p": "NS",
+        "role": "weakest"
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "batch": "batch_067",
+  "date": "2026-04-23",
+  "note": "SCENIC+ deferred; F054_01 already established",
+  "h2_cross_compartment_sasp": {
+    "vascular_n_donors": 23,
+    "vascular_sasp_mean": 0.06896243244409561,
+    "vascular_sasp_std": 0.05885494500398636,
+    "musc_n_donors": 23,
+    "musc_sasp_mean": 0.07476458390834448,
+    "musc_sasp_std": 0.06652984206028094,
+    "fap_n_donors": 22,
+    "fap_sasp_mean": -0.18740449845790863,
+    "fap_sasp_std": 0.11231672763824463,
+    "immune_n_donors": 19,
+    "immune_sasp_mean": 0.03421396502523292,
+    "immune_sasp_std": 0.04572104923812679,
+    "vasc_fap_n_genes": 12,
+    "vasc_fap_n_high_delta": 1,
+    "vasc_fap_max_delta": 0.46807217597961426,
+    "vasc_fap_mean_delta": 0.15107600390911102,
+    "sasp_factor_csv": "/home/yuanz/Documents/GitHub/biomarvin_fibro/experiments/batch_067/sasp_factor_vasc_fap.csv",
+    "compartment_specific": false,
+    "verdict": "UNIFORM (single anti-SASP approach valid)",
+    "immune_vasc_diff": -0.06511028731693164
+  },
+  "h3_sex_compartment": {
+    "vascular_has_sex_metadata": true,
+    "musc_has_sex_metadata": true,
+    "fap_has_sex_metadata": true,
+    "immune_has_sex_metadata": true,
+    "correlations": {
+      "musc_JUNB_Female": {
+        "rho": 0.7688049900984276,
+        "p": 0.0034756600087814103,
+        "n": 12
+      },
+      "musc_JUNB_Male": {
+        "rho": 0.7981987297166114,
+        "p": 0.0032294805171160144,
+        "n": 11
+      },
+      "musc_FOS_Female": {
+        "rho": 0.7047379075902253,
+        "p": 0.010488822607963078,
+        "n": 12
+      },
+      "musc_FOS_Male": {
+        "rho": 0.5780059766913394,
+        "p": 0.06253391314008457,
+        "n": 11
+      },
+      "musc_CEBPB_Female": {
+        "rho": 0.7957943811805186,
+        "p": 0.0019622856162422628,
+        "n": 12
+      },
+      "musc_CEBPB_Male": {
+        "rho": 0.9070973226867958,
+        "p": 0.00011607727018567844,
+        "n": 11
+      },
+      "fap_JUNB_Male": {
+        "rho": -0.22377622377622378,
+        "p": 0.48445166145539886,
+        "n": 12
+      },
+      "fap_JUNB_Female": {
+        "rho": -0.17575757575757575,
+        "p": 0.6271883447764844,
+        "n": 10
+      },
+      "fap_FOS_Male": {
+        "rho": -0.4825174825174825,
+        "p": 0.11210929146889191,
+        "n": 12
+      },
+      "fap_FOS_Female": {
+        "rho": -0.12727272727272726,
+        "p": 0.7260570147627894,
+        "n": 10
+      },
+      "fap_CEBPB_Male": {
+        "rho": 0.6573426573426573,
+        "p": 0.020185498509854096,
+        "n": 12
+      },
+      "fap_CEBPB_Female": {
+        "rho": 0.6121212121212121,
+        "p": 0.05997214247725524,
+        "n": 10
+      },
+      "immune_JUNB_1": {
+        "rho": 0.7777390621413379,
+        "p": 0.008084305364102587,
+        "n": 10
+      },
+      "immune_JUNB_0": {
+        "rho": 0.9539832459815244,
+        "p": 6.57887130355338e-05,
+        "n": 9
+      },
+      "immune_FOS_1": {
+        "rho": 0.7902832405629725,
+        "p": 0.006513525003210773,
+        "n": 10
+      },
+      "immune_FOS_0": {
+        "rho": 0.9663865546218487,
+        "p": 2.2184715649982247e-05,
+        "n": 9
+      },
+      "immune_CEBPB_1": {
+        "rho": 0.4054878048780488,
+        "p": 0.2450126813128139,
+        "n": 10
+      },
+      "immune_CEBPB_0": {
+        "rho": 0.8284591346681658,
+        "p": 0.0057953731994397194,
+        "n": 9
+      }
+    },
+    "n_interactions_above_threshold": 0,
+    "sex_interaction_detected": false,
+    "verdict": "NO SEX INTERACTION (sex-independent across all non-vascular compartments)"
+  }
+}

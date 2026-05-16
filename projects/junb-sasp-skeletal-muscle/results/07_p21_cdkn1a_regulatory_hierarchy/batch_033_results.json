@@ -1,0 +1,197 @@
+{
+  "metadata": {
+    "batch": "batch_033",
+    "purpose": "p21 vs JUNB as vascular senescence biomarker",
+    "date": "2026-04-11",
+    "n_donors": 23,
+    "n_sasp_genes": 12,
+    "cdkn1a_detection_rate_pct": 60.3144148047286,
+    "data_source": "Vascular_scsn_RNA.h5ad",
+    "cell_types": [
+      "CapEC",
+      "VenEC",
+      "ArtEC"
+    ]
+  },
+  "primary": {
+    "rho_junb_sasp": 0.92868041091624,
+    "p_junb_sasp": 1.654839197862362e-10,
+    "rho_p21_sasp": 0.9126229677830253,
+    "p_p21_sasp": 1.2984763223723933e-09,
+    "rho_junb_p21": 0.9153836214667117,
+    "p_junb_p21": 9.384930328711873e-10,
+    "delta": -0.016057443133214666
+  },
+  "secondary": {
+    "fisher_z_comparison": {
+      "z_junb": 1.6487101458726086,
+      "z_p21": 1.5429992008334388,
+      "z_diff": -0.33428735993265396,
+      "p_value_two_tailed": 0.7381627276797715,
+      "se_diff": 0.31622776601683794,
+      "n": 23
+    },
+    "partial_correlation": {
+      "r_partial_p21_sasp_given_junb": 0.4187530710509883,
+      "z_partial": 0.4461789862428904,
+      "p_partial": 0.6554679608737228,
+      "interpretation": "p21 provides independent information about SASP if partial_r differs substantially from 0"
+    },
+    "per_gene_summary": {
+      "n_p21_wins": 4,
+      "n_junb_wins": 8,
+      "n_total": 12
+    }
+  },
+  "per_gene": {
+    "CCL2": {
+      "rho_junb": 0.8693649435165706,
+      "p_junb": 7.277085933525469e-08,
+      "rho_p21": 0.8499934755972819,
+      "p_p21": 2.8424568544530146e-07,
+      "delta": -0.019371467919288676,
+      "winner": "JUNB"
+    },
+    "CXCL1": {
+      "rho_junb": 0.8573871258144405,
+      "p_junb": 1.730015620292169e-07,
+      "rho_p21": 0.8108224938624593,
+      "p_p21": 2.7051148779504474e-06,
+      "delta": -0.04656463195198124,
+      "winner": "JUNB"
+    },
+    "CXCL2": {
+      "rho_junb": 0.929245283018868,
+      "p_junb": 1.5261310850503798e-10,
+      "rho_p21": 0.8745671685247485,
+      "p_p21": 4.8641735270557766e-08,
+      "delta": -0.05467811449411952,
+      "winner": "JUNB"
+    },
+    "CXCL3": {
+      "rho_junb": 0.8973445049171038,
+      "p_junb": 6.580939037074819e-09,
+      "rho_p21": 0.8930691614554824,
+      "p_p21": 9.906684113276652e-09,
+      "delta": -0.004275343461621395,
+      "winner": "JUNB"
+    },
+    "CXCL6": {
+      "rho_junb": 0.10331128367682231,
+      "p_junb": 0.6390039530964017,
+      "rho_p21": 0.1746453019925193,
+      "p_p21": 0.4254423594090806,
+      "delta": 0.07133401831569698,
+      "winner": "CDKN1A"
+    },
+    "IL6": {
+      "rho_junb": 0.9288425001769859,
+      "p_junb": 1.6169442374335065e-10,
+      "rho_p21": 0.9149277701873293,
+      "p_p21": 9.909251201008207e-10,
+      "delta": -0.013914729989656593,
+      "winner": "JUNB"
+    },
+    "CXCL8": {
+      "rho_junb": 0.7318736168577438,
+      "p_junb": 7.212003156334987e-05,
+      "rho_p21": 0.7246741958689044,
+      "p_p21": 9.19552272258631e-05,
+      "delta": -0.007199420988839411,
+      "winner": "JUNB"
+    },
+    "SERPINE1": {
+      "rho_junb": 0.7101825921982082,
+      "p_junb": 0.000146731703653651,
+      "rho_p21": 0.8135178703912986,
+      "p_p21": 2.3564656407333866e-06,
+      "delta": 0.10333527819309041,
+      "winner": "CDKN1A"
+    },
+    "MMP1": {
+      "rho_junb": 0.5398199010406102,
+      "p_junb": 0.007844211967512997,
+      "rho_p21": 0.5205982371151952,
+      "p_p21": 0.01087039789780055,
+      "delta": -0.019221663925415022,
+      "winner": "JUNB"
+    },
+    "MMP3": {
+      "rho_junb": 0.43357188776559863,
+      "p_junb": 0.03874739440450457,
+      "rho_p21": 0.4600987245546384,
+      "p_p21": 0.027169118365158215,
+      "delta": 0.026526836789039776,
+      "winner": "CDKN1A"
+    },
+    "PLAU": {
+      "rho_junb": 0.5918570009930485,
+      "p_junb": 0.0029297783029735166,
+      "rho_p21": 0.6032870849470662,
+      "p_p21": 0.002307575369024992,
+      "delta": 0.011430083954017678,
+      "winner": "CDKN1A"
+    },
+    "PLAUR": {
+      "rho_junb": 0.679466637739688,
+      "p_junb": 0.0003627040677662588,
+      "rho_p21": 0.6630319639636042,
+      "p_p21": 0.0005645178399116734,
+      "delta": -0.016434673776083764,
+      "winner": "JUNB"
+    }
+  },
+  "age_stratified": {
+    "old": {
+      "n_donors": 15,
+      "rho_junb_sasp": 0.9347635546721791,
+      "p_junb": 3.304398542493735e-07,
+      "rho_p21_sasp": 0.9569953944480929,
+      "p_p21": 2.3241787987024735e-08
+    },
+    "young": {
+      "n_donors": 8,
+      "rho_junb_sasp": 0.8263621207201486,
+      "p_junb": 0.01144276499994122,
+      "rho_p21_sasp": 0.8263621207201486,
+      "p_p21": 0.01144276499994122
+    }
+  },
+  "decision": {
+    "primary_test": "partial_correlation",
+    "exploratory_test": "delta_comparison",
+    "rho_threshold": 0.5,
+    "partial_r_independent_threshold": 0.3,
+    "partial_r_marginal_threshold": 0.1,
+    "delta_threshold_exploratory": 0.05,
+    "power_note": "Delta comparison power=0.50 for delta=0.05 (N=23). EXPLORATORY ONLY.",
+    "rho_junb_sasp": 0.92868041091624,
+    "rho_p21_sasp": 0.9126229677830253,
+    "partial_r": 0.4187530710509883,
+    "p_partial": 0.6554679608737228,
+    "delta": -0.016057443133214666,
+    "step1": {
+      "question": "Is p21 a useful biomarker?",
+      "rho_p21_sasp": 0.9126229677830253,
+      "threshold": 0.5,
+      "verdict": "USEFUL",
+      "reasoning": "rho(p21,SASP)=0.9126 >= 0.5 \u2014 p21 IS a useful biomarker"
+    },
+    "step2": {
+      "question": "Does p21 provide independent SASP signal beyond JUNB?",
+      "partial_r": 0.4187530710509883,
+      "p_partial": 0.6554679608737228,
+      "verdict": "INDEPENDENT",
+      "reasoning": "partial_r=0.4188 > 0.3 \u2014 p21 provides non-trivial independent SASP signal"
+    },
+    "finding": "SUGGESTED",
+    "step3": {
+      "question": "Delta comparison (EXPLORATORY)",
+      "rho_junb_sasp": 0.92868041091624,
+      "rho_p21_sasp": 0.9126229677830253,
+      "delta": -0.016057443133214666,
+      "note": "EXPLORATORY \u2014 power=0.50 for delta=0.05, N=23. Cannot support confirmatory claims."
+    },
+    "verdict": "p21_INDEPENDENT"
+  }
+}

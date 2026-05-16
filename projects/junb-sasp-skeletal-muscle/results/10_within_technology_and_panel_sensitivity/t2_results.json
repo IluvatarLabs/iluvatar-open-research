@@ -1,0 +1,32 @@
+{
+  "analysis": "T2: Softening two-independent-axes language",
+  "n_donors": 23,
+  "correlations": {
+    "JUNB_SASP12": {
+      "rho": 0.8722166419325326,
+      "p": 5.84780505767222e-08
+    },
+    "p21_SASP12": {
+      "rho": 0.9344703075993763,
+      "p": 6.980648460451181e-11
+    },
+    "JUNB_p21": {
+      "rho": 0.9153836214667117,
+      "p": 9.384930328711873e-10
+    }
+  },
+  "partial_correlation": {
+    "p21_to_SASP_given_JUNB": {
+      "r": 0.48880440790447904,
+      "p": 0.01794133645447468
+    }
+  },
+  "fisher_z": {
+    "z": -1.1076563768960588,
+    "p": 0.2680102457456721
+  },
+  "revised_language": {
+    "original": "Two mechanistically distinct axes independently drive vascular SASP",
+    "revised": "Vascular SASP is strongly associated with both JUNB and p21, which are highly collinear and likely capture the same senescence program"
+  }
+}

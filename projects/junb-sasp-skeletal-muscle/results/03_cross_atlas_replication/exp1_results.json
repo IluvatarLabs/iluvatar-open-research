@@ -1,0 +1,62 @@
+{
+  "fos_collagen_rho": -0.03289229297940541,
+  "fos_collagen_pval": 0.016872515302986543,
+  "fos_collagen_r2": 0.0010819029374430423,
+  "junb_collagen_rho": -0.09162055145432968,
+  "junb_collagen_pval": 2.592428151139744e-11,
+  "junb_collagen_r2": 0.008394325448795472,
+  "junb_sasp4_rho": 0.37742915041693775,
+  "junb_sasp4_pval": 2.701407534138088e-178,
+  "junb_sasp4_r2": 0.14245276358445141,
+  "junb_sasp12_rho": 0.3967448032278196,
+  "junb_sasp12_pval": 1.8184080852402638e-198,
+  "junb_sasp12_r2": 0.15740643888828126,
+  "fos_collagen_fdr": 0.016872515302986543,
+  "junb_collagen_fdr": 3.4565708681863255e-11,
+  "junb_sasp4_fdr": 5.402815068276176e-178,
+  "junb_sasp12_fdr": 7.273632340961055e-198,
+  "n_old_fap": 5277,
+  "n_young_fap": 6796,
+  "collagen_genes_used": [
+    "COL1A1",
+    "COL3A1",
+    "COL6A1",
+    "COL6A3",
+    "FN1",
+    "LOX",
+    "LOXL1"
+  ],
+  "sasp4_genes_used": [
+    "CXCL1",
+    "CXCL2",
+    "IL6",
+    "CXCL8"
+  ],
+  "sasp12_genes_used": [
+    "CXCL1",
+    "CXCL2",
+    "IL6",
+    "CXCL8",
+    "IL1B",
+    "CCL2",
+    "SERPINE1",
+    "MMP1",
+    "MMP3",
+    "PLAU",
+    "VEGFA",
+    "CCL5"
+  ],
+  "ap1_members_present": [
+    "FOS",
+    "FOSL1",
+    "FOSL2",
+    "JUN",
+    "JUNB",
+    "JUND"
+  ],
+  "decision": {
+    "fos_collagen_replicated": false,
+    "fos_as_fibrosis_driver": "REFUTED",
+    "junb_sasp_expanded": "STRENGTHENED"
+  }
+}

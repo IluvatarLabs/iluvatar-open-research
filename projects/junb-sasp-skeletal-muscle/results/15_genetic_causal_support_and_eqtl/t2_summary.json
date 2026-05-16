@@ -1,0 +1,265 @@
+{
+  "iteration": 65,
+  "test": "T2",
+  "hypothesis": "H065_02",
+  "overall_verdict": "INCONCLUSIVE",
+  "any_suggested": false,
+  "any_refuted": false,
+  "both_strata_sig": false,
+  "verdict_per_cell": [
+    {
+      "cell": "Vascular_UP_ACUTE",
+      "verdict": "INCONCLUSIVE_LOW_COVERAGE",
+      "concordant_n": 1,
+      "total_n": 1,
+      "fisher_p": NaN,
+      "low_coverage_cohorts": [
+        "GSE28422",
+        "GSE8479"
+      ],
+      "blocked_coverage_cohorts": [
+        "GSE28422"
+      ]
+    },
+    {
+      "cell": "Vascular_UP_CHRONIC",
+      "verdict": "INCONCLUSIVE_LOW_COVERAGE",
+      "concordant_n": 1,
+      "total_n": 1,
+      "fisher_p": NaN,
+      "low_coverage_cohorts": [
+        "GSE28422",
+        "GSE8479"
+      ],
+      "blocked_coverage_cohorts": [
+        "GSE28422"
+      ]
+    },
+    {
+      "cell": "Vascular_UP_POOLED",
+      "verdict": "INCONCLUSIVE_LOW_COVERAGE",
+      "concordant_n": 2,
+      "total_n": 2,
+      "fisher_p": 0.0008059709231531228,
+      "low_coverage_cohorts": [
+        "GSE28422",
+        "GSE8479"
+      ],
+      "blocked_coverage_cohorts": [
+        "GSE28422"
+      ]
+    },
+    {
+      "cell": "Vascular_DOWN_ACUTE",
+      "verdict": "INCONCLUSIVE",
+      "concordant_n": 0,
+      "total_n": 1,
+      "fisher_p": NaN,
+      "low_coverage_cohorts": [
+        "GSE28422"
+      ],
+      "blocked_coverage_cohorts": [
+        "GSE28422"
+      ]
+    },
+    {
+      "cell": "Vascular_DOWN_CHRONIC",
+      "verdict": "INCONCLUSIVE",
+      "concordant_n": 0,
+      "total_n": 1,
+      "fisher_p": NaN,
+      "low_coverage_cohorts": [
+        "GSE28422"
+      ],
+      "blocked_coverage_cohorts": [
+        "GSE28422"
+      ]
+    },
+    {
+      "cell": "Vascular_DOWN_POOLED",
+      "verdict": "INCONCLUSIVE",
+      "concordant_n": 0,
+      "total_n": 2,
+      "fisher_p": 0.8962113841789034,
+      "low_coverage_cohorts": [
+        "GSE28422"
+      ],
+      "blocked_coverage_cohorts": [
+        "GSE28422"
+      ]
+    },
+    {
+      "cell": "MuSC_UP_ACUTE",
+      "verdict": "INCONCLUSIVE",
+      "concordant_n": 1,
+      "total_n": 1,
+      "fisher_p": NaN,
+      "low_coverage_cohorts": [
+        "GSE28422"
+      ],
+      "blocked_coverage_cohorts": [
+        "GSE28422"
+      ]
+    },
+    {
+      "cell": "MuSC_UP_CHRONIC",
+      "verdict": "INCONCLUSIVE",
+      "concordant_n": 1,
+      "total_n": 1,
+      "fisher_p": NaN,
+      "low_coverage_cohorts": [
+        "GSE28422"
+      ],
+      "blocked_coverage_cohorts": [
+        "GSE28422"
+      ]
+    },
+    {
+      "cell": "MuSC_UP_POOLED",
+      "verdict": "INCONCLUSIVE",
+      "concordant_n": 2,
+      "total_n": 2,
+      "fisher_p": 0.07896260051050587,
+      "low_coverage_cohorts": [
+        "GSE28422"
+      ],
+      "blocked_coverage_cohorts": [
+        "GSE28422"
+      ]
+    },
+    {
+      "cell": "MuSC_DOWN_ACUTE",
+      "verdict": "INCONCLUSIVE_LOW_COVERAGE",
+      "concordant_n": 0,
+      "total_n": 1,
+      "fisher_p": NaN,
+      "low_coverage_cohorts": [
+        "GSE28422",
+        "GSE8479"
+      ],
+      "blocked_coverage_cohorts": [
+        "GSE28422"
+      ]
+    },
+    {
+      "cell": "MuSC_DOWN_CHRONIC",
+      "verdict": "INCONCLUSIVE_LOW_COVERAGE",
+      "concordant_n": 0,
+      "total_n": 1,
+      "fisher_p": NaN,
+      "low_coverage_cohorts": [
+        "GSE28422",
+        "GSE8479"
+      ],
+      "blocked_coverage_cohorts": [
+        "GSE28422"
+      ]
+    },
+    {
+      "cell": "MuSC_DOWN_POOLED",
+      "verdict": "INCONCLUSIVE_LOW_COVERAGE",
+      "concordant_n": 0,
+      "total_n": 2,
+      "fisher_p": 0.9486158885479216,
+      "low_coverage_cohorts": [
+        "GSE28422",
+        "GSE8479"
+      ],
+      "blocked_coverage_cohorts": [
+        "GSE28422"
+      ]
+    },
+    {
+      "cell": "FAP_UP_ACUTE",
+      "verdict": "BLOCKED_COVERAGE",
+      "concordant_n": 1,
+      "total_n": 1,
+      "fisher_p": NaN,
+      "low_coverage_cohorts": [
+        "MoTrPAC_24hr",
+        "GSE28422",
+        "GSE8479"
+      ],
+      "blocked_coverage_cohorts": [
+        "GSE28422",
+        "GSE8479"
+      ]
+    },
+    {
+      "cell": "FAP_UP_POOLED",
+      "verdict": "BLOCKED_COVERAGE",
+      "concordant_n": 1,
+      "total_n": 1,
+      "fisher_p": NaN,
+      "low_coverage_cohorts": [
+        "MoTrPAC_24hr",
+        "GSE28422",
+        "GSE8479"
+      ],
+      "blocked_coverage_cohorts": [
+        "GSE28422",
+        "GSE8479"
+      ]
+    },
+    {
+      "cell": "FAP_DOWN_ACUTE",
+      "verdict": "INCONCLUSIVE",
+      "concordant_n": 1,
+      "total_n": 1,
+      "fisher_p": NaN,
+      "low_coverage_cohorts": [
+        "GSE28422"
+      ],
+      "blocked_coverage_cohorts": [
+        "GSE28422"
+      ]
+    },
+    {
+      "cell": "FAP_DOWN_CHRONIC",
+      "verdict": "INCONCLUSIVE",
+      "concordant_n": 0,
+      "total_n": 1,
+      "fisher_p": NaN,
+      "low_coverage_cohorts": [
+        "GSE28422"
+      ],
+      "blocked_coverage_cohorts": [
+        "GSE28422"
+      ]
+    },
+    {
+      "cell": "FAP_DOWN_POOLED",
+      "verdict": "INCONCLUSIVE",
+      "concordant_n": 1,
+      "total_n": 2,
+      "fisher_p": 0.4241168361254808,
+      "low_coverage_cohorts": [
+        "GSE28422"
+      ],
+      "blocked_coverage_cohorts": [
+        "GSE28422"
+      ]
+    }
+  ],
+  "cohorts_analyzed": [
+    "GSE28422",
+    "GSE8479",
+    "MoTrPAC_24hr"
+  ],
+  "cohorts_blocked_or_failed": [
+    "GSE97084",
+    "GSE151066"
+  ],
+  "bonferroni_alpha": 0.0020833333333333333,
+  "nes_magnitude_disclosed_threshold": 1.5,
+  "nes_threshold_disclosure": "|NES|>=1.5 was ex-post tuned on F064_04 (NES=-1.644); primary criterion is SIGN-CONCORDANCE per Critic 2 B3.",
+  "environment": {
+    "python": "3.13.7",
+    "numpy": "2.0.1",
+    "pandas": "2.3.2",
+    "scipy": "1.16.2",
+    "seed": 42,
+    "n_permutations": 1000,
+    "n_sig_rand_perm": 1000
+  }
+}

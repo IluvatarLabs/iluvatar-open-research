@@ -1,0 +1,22 @@
+TF,datasets_rho_above_0.5,datasets_rho_above_0.3,category,details
+KLF10,5,5,ROBUST (rho>0.5 in ≥3 datasets),HLMA/Vascular: 0.829; HLMA/MuSC: 0.902; HLMA/FAP: 0.784; NA/Endothelium: 0.531; NA/FAP: 0.748
+FOSB,4,4,ROBUST (rho>0.5 in ≥3 datasets),HLMA/Vascular: 0.877; HLMA/MuSC: 0.881; HLMA/FAP: 0.037; NA/Endothelium: 0.545; NA/FAP: 0.552
+EGR1,4,4,ROBUST (rho>0.5 in ≥3 datasets),HLMA/Vascular: 0.908; HLMA/MuSC: 0.917; HLMA/FAP: 0.054; NA/Endothelium: 0.643; NA/FAP: 0.671
+FOSL1,4,4,ROBUST (rho>0.5 in ≥3 datasets),HLMA/Vascular: 0.845; HLMA/MuSC: 0.553; HLMA/FAP: 0.530; NA/Endothelium: 0.804; NA/FAP: 0.014
+JUNB,4,4,ROBUST (rho>0.5 in ≥3 datasets),HLMA/Vascular: 0.929; HLMA/MuSC: 0.934; HLMA/FAP: 0.014; NA/Endothelium: 0.720; NA/FAP: 0.573
+IRF1,4,5,ROBUST (rho>0.5 in ≥3 datasets),HLMA/Vascular: 0.710; HLMA/MuSC: 0.683; HLMA/FAP: 0.471; NA/Endothelium: 0.643; NA/FAP: 0.720
+EGR2,4,5,ROBUST (rho>0.5 in ≥3 datasets),HLMA/Vascular: 0.883; HLMA/MuSC: 0.800; HLMA/FAP: 0.799; NA/Endothelium: 0.510; NA/FAP: 0.406
+FOS,3,4,ROBUST (rho>0.5 in ≥3 datasets),HLMA/Vascular: 0.853; HLMA/MuSC: 0.849; HLMA/FAP: 0.091; NA/Endothelium: 0.566; NA/FAP: 0.455
+CEBPB,3,3,ROBUST (rho>0.5 in ≥3 datasets),HLMA/Vascular: 0.797; HLMA/MuSC: 0.851; HLMA/FAP: 0.802; NA/Endothelium: 0.140; NA/FAP: 0.133
+CDKN1A,3,5,ROBUST (rho>0.5 in ≥3 datasets),HLMA/Vascular: 0.913; HLMA/MuSC: 0.929; HLMA/FAP: 0.483; NA/Endothelium: 0.538; NA/FAP: 0.371
+ATF3,3,5,ROBUST (rho>0.5 in ≥3 datasets),HLMA/Vascular: 0.892; HLMA/MuSC: 0.803; HLMA/FAP: 0.308; NA/Endothelium: 0.566; NA/FAP: 0.490
+JUN,2,3,MODERATE (rho>0.5 in 2 datasets),HLMA/Vascular: 0.752; HLMA/MuSC: 0.869; HLMA/FAP: 0.200; NA/Endothelium: 0.217; NA/FAP: 0.455
+JUND,2,2,MODERATE (rho>0.5 in 2 datasets),HLMA/Vascular: 0.867; HLMA/MuSC: 0.880; HLMA/FAP: 0.146; NA/Endothelium: 0.035; NA/FAP: 0.084
+KLF6,2,2,MODERATE (rho>0.5 in 2 datasets),HLMA/Vascular: 0.666; HLMA/MuSC: 0.911; HLMA/FAP: 0.067; NA/Endothelium: 0.140; NA/FAP: 0.224
+FOSL2,2,3,MODERATE (rho>0.5 in 2 datasets),HLMA/Vascular: 0.875; HLMA/MuSC: 0.894; HLMA/FAP: 0.078; NA/Endothelium: 0.476; NA/FAP: 0.168
+KLF2,2,2,MODERATE (rho>0.5 in 2 datasets),HLMA/Vascular: 0.711; HLMA/MuSC: 0.799; HLMA/FAP: 0.053; NA/Endothelium: 0.266; NA/FAP: 0.091
+KLF4,2,3,MODERATE (rho>0.5 in 2 datasets),HLMA/Vascular: 0.828; HLMA/MuSC: 0.912; HLMA/FAP: 0.043; NA/Endothelium: 0.308; NA/FAP: 0.217
+CEBPD,2,2,MODERATE (rho>0.5 in 2 datasets),HLMA/Vascular: 0.786; HLMA/MuSC: 0.856; HLMA/FAP: 0.014; NA/Endothelium: 0.189; NA/FAP: 0.196
+RELA,2,3,MODERATE (rho>0.5 in 2 datasets),HLMA/Vascular: 0.797; HLMA/MuSC: 0.822; HLMA/FAP: 0.430; NA/Endothelium: 0.084; NA/FAP: 0.168
+STAT3,2,4,MODERATE (rho>0.5 in 2 datasets),HLMA/Vascular: 0.653; HLMA/MuSC: 0.840; HLMA/FAP: 0.014; NA/Endothelium: 0.490; NA/FAP: 0.350
+NFKB1,1,3,HLMA-SPECIFIC,HLMA/Vascular: 0.404; HLMA/MuSC: 0.652; HLMA/FAP: 0.398; NA/Endothelium: 0.147; NA/FAP: 0.112

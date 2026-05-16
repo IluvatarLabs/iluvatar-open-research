@@ -1,0 +1,20 @@
+{
+  "d2_reference": {
+    "rho": 0.643,
+    "pval": 0.024
+  },
+  "d2_panel_recomputed": {
+    "rho": 0.6433566433566434,
+    "pval": 0.024003191200713644
+  },
+  "q1_rerun_batch043": {
+    "rho": 0.776,
+    "pval": 0.003
+  },
+  "correct_panel": {
+    "rho": 0.7202797202797203,
+    "pval": 0.008239768712338441
+  },
+  "panels_differ": true,
+  "explanation": "D2 and Q1-RERUN used DIFFERENT SASP panels. Both are \"correct\" (no IGFBPs) but have 6 genes in common, 6 different genes."
+}

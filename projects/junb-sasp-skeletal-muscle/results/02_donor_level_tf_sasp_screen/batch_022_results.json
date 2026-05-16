@@ -1,0 +1,375 @@
+{
+  "metadata": {
+    "date": "2026-04-10",
+    "batch": "batch_022",
+    "random_seed": 42,
+    "fap_subtypes": [
+      "MME+ FAP",
+      "CD55+ FAP",
+      "GPC3+ FAP"
+    ],
+    "sasp_panels": {
+      "SASP12": [
+        "CCL2",
+        "CXCL1",
+        "CXCL2",
+        "CXCL3",
+        "CXCL6",
+        "IL6",
+        "CXCL8",
+        "SERPINE1",
+        "MMP1",
+        "MMP3",
+        "PLAU",
+        "PLAU"
+      ],
+      "Copp\u00e92008": [
+        "IL6",
+        "CXCL8",
+        "CXCL1",
+        "CCL2",
+        "SERPINE1",
+        "MMP1",
+        "MMP3",
+        "PLAU"
+      ],
+      "Basisty2020": [
+        "CCL2",
+        "CXCL1",
+        "CXCL2",
+        "CXCL3",
+        "IL6",
+        "IL1B",
+        "SERPINE1",
+        "MMP1",
+        "MMP3",
+        "PLAU",
+        "VEGFA",
+        "CCL5",
+        "CXCL8"
+      ],
+      "Minimal4": [
+        "CCL2",
+        "CXCL1",
+        "CXCL2",
+        "IL6"
+      ]
+    }
+  },
+  "r1": {
+    "donor_level": {
+      "rho": 0.023150762281197064,
+      "p_value": 0.9185490835113286,
+      "n_donors": 22
+    },
+    "per_gene_rho": {
+      "CCL2": {
+        "rho": 0.189158667419537,
+        "p_value": 0.3991761294159495
+      },
+      "CXCL1": {
+        "rho": -0.17447769621682668,
+        "p_value": 0.43740178605254565
+      },
+      "CXCL2": {
+        "rho": 0.059288537549407126,
+        "p_value": 0.7932554520311476
+      },
+      "CXCL3": {
+        "rho": -0.3382269904009035,
+        "p_value": 0.12365619745899702
+      },
+      "CXCL6": {
+        "rho": -0.5844155844155845,
+        "p_value": 0.004286990058910934
+      },
+      "IL6": {
+        "rho": -0.4511575381140599,
+        "p_value": 0.03507614342579068
+      },
+      "CXCL8": {
+        "rho": -0.3529079616036138,
+        "p_value": 0.10718178816694088
+      },
+      "SERPINE1": {
+        "rho": 0.3280632411067194,
+        "p_value": 0.13608127719219507
+      },
+      "MMP1": {
+        "rho": -0.5358554488989272,
+        "p_value": 0.010157158875820884
+      },
+      "MMP3": {
+        "rho": -0.39920948616600793,
+        "p_value": 0.065688713148864
+      }
+    },
+    "mixed_effects": {
+      "slope": 0.10724990784473812,
+      "p_value": 0.6267669026800043,
+      "ci_lower": -0.3250213900823341,
+      "ci_upper": 0.5395212057718103,
+      "r_squared": 0.013479060073114058
+    },
+    "cross_atlas": {
+      "rho": 0.416247483584795,
+      "p_value": 0.05399228801765893,
+      "n_donors": 22,
+      "note": "Used all Nature Aging cells (150,894); no FB-specific annotation found; donor = sample",
+      "n_cells": 150894
+    }
+  },
+  "r2": {
+    "hedges_g": 0.8536831140518188,
+    "cohens_d": 0.8873811364173889,
+    "pooled_sd": 0.8842867612838745,
+    "bootstrap_ci_lower": 0.14286420866847058,
+    "bootstrap_ci_upper": 1.9552354902029032,
+    "n_old": 14,
+    "n_young": 8,
+    "mean_old": -0.5730593800544739,
+    "mean_young": -1.3577587604522705,
+    "sd_old": 0.951860785484314,
+    "sd_young": 0.6077331304550171,
+    "per_donor_means": [
+      {
+        "donor": "OM1",
+        "junb_mean": 0.061815474182367325,
+        "age_pop": "old_pop"
+      },
+      {
+        "donor": "OM2",
+        "junb_mean": 0.29506784677505493,
+        "age_pop": "old_pop"
+      },
+      {
+        "donor": "OM3",
+        "junb_mean": 0.14205116033554077,
+        "age_pop": "old_pop"
+      },
+      {
+        "donor": "OM4",
+        "junb_mean": 0.34119880199432373,
+        "age_pop": "old_pop"
+      },
+      {
+        "donor": "OM5",
+        "junb_mean": -0.26063066720962524,
+        "age_pop": "old_pop"
+      },
+      {
+        "donor": "OM6",
+        "junb_mean": 0.46718236804008484,
+        "age_pop": "old_pop"
+      },
+      {
+        "donor": "OM7",
+        "junb_mean": 0.07417334616184235,
+        "age_pop": "old_pop"
+      },
+      {
+        "donor": "OM8",
+        "junb_mean": 0.538952648639679,
+        "age_pop": "old_pop"
+      },
+      {
+        "donor": "OM9",
+        "junb_mean": -1.3063595294952393,
+        "age_pop": "old_pop"
+      },
+      {
+        "donor": "P3",
+        "junb_mean": -2.1144211292266846,
+        "age_pop": "old_pop"
+      },
+      {
+        "donor": "P5",
+        "junb_mean": -2.0174782276153564,
+        "age_pop": "young_pop"
+      },
+      {
+        "donor": "P13",
+        "junb_mean": -1.5435550212860107,
+        "age_pop": "young_pop"
+      },
+      {
+        "donor": "P17",
+        "junb_mean": -2.0483391284942627,
+        "age_pop": "old_pop"
+      },
+      {
+        "donor": "P21",
+        "junb_mean": -1.6526834964752197,
+        "age_pop": "old_pop"
+      },
+      {
+        "donor": "P23",
+        "junb_mean": -1.069341778755188,
+        "age_pop": "old_pop"
+      },
+      {
+        "donor": "P26",
+        "junb_mean": -2.2662923336029053,
+        "age_pop": "young_pop"
+      },
+      {
+        "donor": "P29",
+        "junb_mean": -1.491497278213501,
+        "age_pop": "old_pop"
+      },
+      {
+        "donor": "YM1",
+        "junb_mean": -0.9299783110618591,
+        "age_pop": "young_pop"
+      },
+      {
+        "donor": "YM2",
+        "junb_mean": -0.9135527610778809,
+        "age_pop": "young_pop"
+      },
+      {
+        "donor": "YM3",
+        "junb_mean": -0.94361412525177,
+        "age_pop": "young_pop"
+      },
+      {
+        "donor": "YM4",
+        "junb_mean": -1.8302795886993408,
+        "age_pop": "young_pop"
+      },
+      {
+        "donor": "YM5",
+        "junb_mean": -0.41731926798820496,
+        "age_pop": "young_pop"
+      }
+    ],
+    "mannwhitneyu_stat": 81.0,
+    "mannwhitneyu_pvalue": 0.09501829439909935,
+    "ttest_stat": 2.0022018406607573,
+    "ttest_pvalue": 0.0590102301719064,
+    "interpretation": "Positive effect (old > young)"
+  },
+  "r3": {
+    "panels": {
+      "SASP12": {
+        "cell_rho": 0.18402484207624173,
+        "cell_p_value": 2.5074728641485462e-239,
+        "cell_n_cells": 31680,
+        "donor_rho": 0.06041784302653869,
+        "donor_p_value": 0.7894023352862747,
+        "n_genes": 12,
+        "genes_available": [
+          "CCL2",
+          "CXCL1",
+          "CXCL2",
+          "CXCL3",
+          "CXCL6",
+          "IL6",
+          "CXCL8",
+          "SERPINE1",
+          "MMP1",
+          "MMP3",
+          "PLAU",
+          "PLAU"
+        ],
+        "genes_missing": []
+      },
+      "Copp\u00e92008": {
+        "cell_rho": 0.1987903392647817,
+        "cell_p_value": 1.0060539118364197e-279,
+        "cell_n_cells": 31680,
+        "donor_rho": 0.042348955392433656,
+        "donor_p_value": 0.8515642629643547,
+        "n_genes": 8,
+        "genes_available": [
+          "IL6",
+          "CXCL8",
+          "CXCL1",
+          "CCL2",
+          "SERPINE1",
+          "MMP1",
+          "MMP3",
+          "PLAU"
+        ],
+        "genes_missing": []
+      },
+      "Basisty2020": {
+        "cell_rho": 0.1967576557208275,
+        "cell_p_value": 5.793400055212494e-274,
+        "cell_n_cells": 31680,
+        "donor_rho": 0.03557312252964427,
+        "donor_p_value": 0.8751168714582229,
+        "n_genes": 13,
+        "genes_available": [
+          "CCL2",
+          "CXCL1",
+          "CXCL2",
+          "CXCL3",
+          "IL6",
+          "IL1B",
+          "SERPINE1",
+          "MMP1",
+          "MMP3",
+          "PLAU",
+          "VEGFA",
+          "CCL5",
+          "CXCL8"
+        ],
+        "genes_missing": []
+      },
+      "Minimal4": {
+        "cell_rho": 0.20943533811112477,
+        "cell_p_value": 0.0,
+        "cell_n_cells": 31680,
+        "donor_rho": 0.015245623941276118,
+        "donor_p_value": 0.946312760752094,
+        "n_genes": 4,
+        "genes_available": [
+          "CCL2",
+          "CXCL1",
+          "CXCL2",
+          "IL6"
+        ],
+        "genes_missing": []
+      }
+    }
+  },
+  "r4": {
+    "cell_level": {
+      "rho": 0.45109062813376344,
+      "p_value": 0.0,
+      "n_cells": 17699,
+      "n_sasp_genes": 12
+    },
+    "donor_level": {
+      "rho": 0.9262039298204634,
+      "p_value": 2.3420652903653426e-10,
+      "n_donors": 23
+    },
+    "age_effect": {
+      "cohens_d": 0.6801721453666687,
+      "ci_lower": 0.676410262286663,
+      "ci_upper": 0.7788468524813652,
+      "n_old_cells": 15250,
+      "n_young_cells": 2449,
+      "mean_old": 1.837094783782959,
+      "mean_young": 1.061196208000183
+    },
+    "available_annotations": {
+      "CapEC": 11857,
+      "Pericyte": 5632,
+      "SMC": 4278,
+      "VenEC": 3026,
+      "IL6+ VenEC": 1542,
+      "ArtEC": 1274,
+      "CD44+ MC": 551
+    },
+    "cell_types_analyzed": [
+      "CapEC",
+      "VenEC",
+      "IL6+ VenEC",
+      "ArtEC"
+    ],
+    "n_cells_total": 17699
+  }
+}

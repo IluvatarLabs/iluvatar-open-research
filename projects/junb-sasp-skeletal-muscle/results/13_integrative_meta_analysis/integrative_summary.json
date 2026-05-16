@@ -1,0 +1,39 @@
+{
+  "robust_tfs": [
+    "KLF10",
+    "FOSB",
+    "EGR1",
+    "FOSL1",
+    "JUNB",
+    "IRF1",
+    "EGR2",
+    "FOS",
+    "CEBPB",
+    "CDKN1A",
+    "ATF3"
+  ],
+  "moderate_tfs": [
+    "JUN",
+    "JUND",
+    "KLF6",
+    "FOSL2",
+    "KLF2",
+    "KLF4",
+    "CEBPD",
+    "RELA",
+    "STAT3"
+  ],
+  "june_pooled_rho": 0.78,
+  "june_heterogeneity_I2": 89.6,
+  "june_votes": 4,
+  "cdkn1a_pooled_rho": 0.792,
+  "cdkn1a_votes": 5,
+  "klf10_lowest_heterogeneity": 27.2,
+  "klf10_pooled_rho": 0.813,
+  "biology_tfs_low_heterogeneity": [
+    "KLF10",
+    "EGR2",
+    "IRF1"
+  ],
+  "n_datasets": 5
+}

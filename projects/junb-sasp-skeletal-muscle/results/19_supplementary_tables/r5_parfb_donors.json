@@ -1,0 +1,74 @@
+[
+  {
+    "subtype": "Adv_FB",
+    "n_cells": 3827,
+    "n_donors": 12,
+    "cells_per_donor": 318.9166666666667,
+    "JUNB_mean": 2.308600902557373,
+    "JUNB_detection": 0.8142147896524693
+  },
+  {
+    "subtype": "Inter_FB",
+    "n_cells": 8627,
+    "n_donors": 12,
+    "cells_per_donor": 718.9166666666666,
+    "JUNB_mean": 2.4298949241638184,
+    "JUNB_detection": 0.8522081836095978
+  },
+  {
+    "subtype": "Par_FB",
+    "n_cells": 5773,
+    "n_donors": 12,
+    "cells_per_donor": 481.0833333333333,
+    "JUNB_mean": 1.204248309135437,
+    "JUNB_detection": 0.5891217737744674
+  },
+  {
+    "subtype": "Endoneural_FB-TAC1+",
+    "n_cells": 285,
+    "n_donors": 11,
+    "cells_per_donor": 25.90909090909091,
+    "JUNB_mean": 3.4746572971343994,
+    "JUNB_detection": 0.9754385964912281
+  },
+  {
+    "subtype": "Perineural_FB",
+    "n_cells": 547,
+    "n_donors": 10,
+    "cells_per_donor": 54.7,
+    "JUNB_mean": 3.5191986560821533,
+    "JUNB_detection": 0.9305301645338209
+  },
+  {
+    "subtype": "Tenocyte",
+    "n_cells": 487,
+    "n_donors": 12,
+    "cells_per_donor": 40.583333333333336,
+    "JUNB_mean": 1.4902266263961792,
+    "JUNB_detection": 0.6365503080082136
+  },
+  {
+    "subtype": "Endoneural_FB-CDH19+",
+    "n_cells": 429,
+    "n_donors": 11,
+    "cells_per_donor": 39.0,
+    "JUNB_mean": 2.5393714904785156,
+    "JUNB_detection": 0.8088578088578089
+  },
+  {
+    "subtype": "nmSchwann_cell",
+    "n_cells": 150,
+    "n_donors": 12,
+    "cells_per_donor": 12.5,
+    "JUNB_mean": 1.9460583925247192,
+    "JUNB_detection": 0.6666666666666666
+  },
+  {
+    "subtype": "mSchwann_cell",
+    "n_cells": 486,
+    "n_donors": 8,
+    "cells_per_donor": 60.75,
+    "JUNB_mean": 2.6731503009796143,
+    "JUNB_detection": 0.8251028806584362
+  }
+]

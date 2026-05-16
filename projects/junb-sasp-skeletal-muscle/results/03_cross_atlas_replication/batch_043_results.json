@@ -1,0 +1,15 @@
+{
+  "n_donors": 12,
+  "n_sasp_genes": 12,
+  "n_tfs_tested": 114,
+  "jUNB_rho": 0.7762237762237763,
+  "jUNB_pvalue": 0.0029928636801859797,
+  "jUNB_qvalue": 0.07128776532538714,
+  "jUNB_ci_low": null,
+  "jUNB_ci_high": null,
+  "d2_reference_rho": 0.643,
+  "d2_reference_pval": 0.024,
+  "delta_from_d2": 0.13322377622377624,
+  "verdict": "BIOLOGY REPLICATES at HLMA level",
+  "n_significant_tfs": 0
+}

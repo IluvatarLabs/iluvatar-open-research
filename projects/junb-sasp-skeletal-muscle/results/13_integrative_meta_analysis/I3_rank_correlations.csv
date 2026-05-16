@@ -1,0 +1,6 @@
+comparison,description,spearman_rho,p_value,n_tfs
+HLMA/Vascular vs NA/Endothelium,Both endothelial — should be most similar,0.505,0.01949043669697086,21
+HLMA/Vascular vs HLMA/MuSC,"Same atlas, different compartments",0.471,0.030978075295294786,21
+HLMA/Vascular vs HLMA/FAP,"Same atlas, different compartments",0.016,0.9465439560865645,21
+HLMA/FAP vs NA/FAP,Both FAP — cross-atlas,-0.077,0.7413113765158403,21
+HLMA/MuSC vs HLMA/FAP,"Same atlas, different compartments",-0.379,0.08999962703369169,21

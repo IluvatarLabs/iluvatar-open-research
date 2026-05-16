@@ -1,0 +1,344 @@
+{
+  "donor_data": [
+    {
+      "sample": "OM3",
+      "strata": "old_male",
+      "sex": "Male",
+      "age": 84.0,
+      "n_cells": 5965,
+      "JUNB": 2.396097421646118,
+      "SASP12": 0.16732768714427948
+    },
+    {
+      "sample": "OM4",
+      "strata": "old_male",
+      "sex": "Male",
+      "age": 79.0,
+      "n_cells": 1515,
+      "JUNB": 2.534977674484253,
+      "SASP12": 0.37298938632011414
+    },
+    {
+      "sample": "OM8",
+      "strata": "old_female",
+      "sex": "Female",
+      "age": 84.0,
+      "n_cells": 165,
+      "JUNB": 1.8019258975982666,
+      "SASP12": 0.10861920565366745
+    },
+    {
+      "sample": "YM1",
+      "strata": "young_male",
+      "sex": "Male",
+      "age": 15.0,
+      "n_cells": 1021,
+      "JUNB": 0.2189105749130249,
+      "SASP12": 0.01453901082277298
+    },
+    {
+      "sample": "YM3",
+      "strata": "young_male",
+      "sex": "Male",
+      "age": 34.0,
+      "n_cells": 610,
+      "JUNB": 0.05648425221443176,
+      "SASP12": 0.004161278251558542
+    },
+    {
+      "sample": "OM1",
+      "strata": "old_female",
+      "sex": "Female",
+      "age": 82.0,
+      "n_cells": 5824,
+      "JUNB": 2.3237314224243164,
+      "SASP12": 0.4090508222579956
+    },
+    {
+      "sample": "OM2",
+      "strata": "old_female",
+      "sex": "Female",
+      "age": 79.0,
+      "n_cells": 4498,
+      "JUNB": 2.366929054260254,
+      "SASP12": 0.28709056973457336
+    },
+    {
+      "sample": "OM7",
+      "strata": "old_male",
+      "sex": "Male",
+      "age": 82.0,
+      "n_cells": 498,
+      "JUNB": 1.358054518699646,
+      "SASP12": 0.09214574098587036
+    },
+    {
+      "sample": "OM5",
+      "strata": "old_male",
+      "sex": "Male",
+      "age": 82.0,
+      "n_cells": 534,
+      "JUNB": 0.7119676470756531,
+      "SASP12": 0.04490790143609047
+    },
+    {
+      "sample": "OM6",
+      "strata": "old_female",
+      "sex": "Female",
+      "age": 80.0,
+      "n_cells": 395,
+      "JUNB": 1.311436653137207,
+      "SASP12": 0.08511043339967728
+    },
+    {
+      "sample": "OM9",
+      "strata": "old_female",
+      "sex": "Female",
+      "age": 80.0,
+      "n_cells": 1909,
+      "JUNB": 0.22805318236351013,
+      "SASP12": 0.02548171766102314
+    },
+    {
+      "sample": "P17",
+      "strata": "old_male",
+      "sex": "Male",
+      "age": 88.0,
+      "n_cells": 58,
+      "JUNB": 0.0,
+      "SASP12": 0.008336304686963558
+    },
+    {
+      "sample": "P21",
+      "strata": "old_female",
+      "sex": "Female",
+      "age": 89.0,
+      "n_cells": 620,
+      "JUNB": 0.06450303643941879,
+      "SASP12": 0.03698841854929924
+    },
+    {
+      "sample": "P23",
+      "strata": "old_male",
+      "sex": "Male",
+      "age": 85.0,
+      "n_cells": 402,
+      "JUNB": 0.029619088396430016,
+      "SASP12": 0.016768328845500946
+    },
+    {
+      "sample": "P27",
+      "strata": "old_female",
+      "sex": "Female",
+      "age": 99.0,
+      "n_cells": 82,
+      "JUNB": 0.0,
+      "SASP12": 0.0
+    },
+    {
+      "sample": "P29",
+      "strata": "old_male",
+      "sex": "Male",
+      "age": 77.0,
+      "n_cells": 432,
+      "JUNB": 0.14187966287136078,
+      "SASP12": 0.013155885972082615
+    },
+    {
+      "sample": "P3",
+      "strata": "old_female",
+      "sex": "Female",
+      "age": 92.0,
+      "n_cells": 983,
+      "JUNB": 0.36500799655914307,
+      "SASP12": 0.10908259451389313
+    },
+    {
+      "sample": "P13",
+      "strata": "young_male",
+      "sex": "Male",
+      "age": 38.0,
+      "n_cells": 110,
+      "JUNB": 0.043115634471178055,
+      "SASP12": 0.0
+    },
+    {
+      "sample": "P26",
+      "strata": "young_female",
+      "sex": "Female",
+      "age": 17.0,
+      "n_cells": 205,
+      "JUNB": 0.0,
+      "SASP12": 0.0
+    },
+    {
+      "sample": "P5",
+      "strata": "young_male",
+      "sex": "Male",
+      "age": 45.0,
+      "n_cells": 186,
+      "JUNB": 0.05566275119781494,
+      "SASP12": 0.020107794553041458
+    },
+    {
+      "sample": "YM2",
+      "strata": "young_female",
+      "sex": "Female",
+      "age": 34.0,
+      "n_cells": 54,
+      "JUNB": 0.0,
+      "SASP12": 0.0
+    },
+    {
+      "sample": "YM4",
+      "strata": "young_male",
+      "sex": "Male",
+      "age": 18.0,
+      "n_cells": 254,
+      "JUNB": 0.6947394013404846,
+      "SASP12": 0.04791714623570442
+    },
+    {
+      "sample": "YM5",
+      "strata": "young_female",
+      "sex": "Female",
+      "age": 29.0,
+      "n_cells": 1840,
+      "JUNB": 2.273750066757202,
+      "SASP12": 0.3484669625759125
+    }
+  ],
+  "strata_results": {
+    "old_female": {
+      "n_donors": 8,
+      "n_cells": 14476,
+      "rho_pearson": 0.8531071543693542,
+      "p_pearson": 0.00707661340665834,
+      "rho_spearman": 0.880952380952381,
+      "p_spearman": 0.0038503204637324014,
+      "mean_JUNB": 1.057698369026184,
+      "mean_SASP12": 0.13267797231674194,
+      "std_JUNB": 1.0147819519042969,
+      "std_SASP12": 0.14236493408679962,
+      "samples": [
+        "OM8",
+        "OM1",
+        "OM2",
+        "OM6",
+        "OM9",
+        "P21",
+        "P27",
+        "P3"
+      ]
+    },
+    "old_male": {
+      "n_donors": 7,
+      "n_cells": 9404,
+      "rho_pearson": 0.8892850875854492,
+      "p_pearson": 0.007374148169152753,
+      "rho_spearman": 0.9642857142857145,
+      "p_spearman": 0.0004541491691941689,
+      "mean_JUNB": 1.0246565341949463,
+      "mean_SASP12": 0.10223303735256195,
+      "std_JUNB": 1.0946966409683228,
+      "std_SASP12": 0.1322811245918274,
+      "samples": [
+        "OM3",
+        "OM4",
+        "OM7",
+        "OM5",
+        "P17",
+        "P23",
+        "P29"
+      ]
+    },
+    "young_female": {
+      "n_donors": 3,
+      "n_cells": 2099,
+      "rho_pearson": 0.9999999403953552,
+      "p_pearson": 0.0,
+      "rho_spearman": 1.0,
+      "p_spearman": 0.0,
+      "mean_JUNB": 0.7579166889190674,
+      "mean_SASP12": 0.11615565419197083,
+      "std_JUNB": 1.312750220298767,
+      "std_SASP12": 0.20118749141693115,
+      "samples": [
+        "P26",
+        "YM2",
+        "YM5"
+      ]
+    },
+    "young_male": {
+      "n_donors": 5,
+      "n_cells": 2181,
+      "rho_pearson": 0.9173665642738342,
+      "p_pearson": 0.02815855956576982,
+      "rho_spearman": 0.7,
+      "p_spearman": 0.1881204043741873,
+      "mean_JUNB": 0.21378251910209656,
+      "mean_SASP12": 0.017345046624541283,
+      "std_JUNB": 0.2784859240055084,
+      "std_SASP12": 0.018873408436775208,
+      "samples": [
+        "YM1",
+        "YM3",
+        "P13",
+        "P5",
+        "YM4"
+      ]
+    }
+  },
+  "old_male_vs_old_female": {
+    "fisher_z": {
+      "old_male_rho": 0.8892850875854492,
+      "old_male_n": 7,
+      "old_female_rho": 0.8531071543693542,
+      "old_female_n": 8,
+      "z_statistic": 0.2251568122863854,
+      "p_value": 0.8218572856178832,
+      "significant_at_0.05": false
+    },
+    "ttest_JUNB": {
+      "t": -0.06066294290893955,
+      "p": 0.9525503359004254,
+      "cohens_d": -0.0313960537314415
+    },
+    "ttest_SASP12": {
+      "t": -0.4268802438376937,
+      "p": 0.6764512844556532
+    }
+  },
+  "old_female_only_correlation": {
+    "rho": 0.8531071543693542,
+    "p": 0.00707661340665834,
+    "n": 8
+  },
+  "high_influence_donors": {
+    "samples": [
+      "OM1",
+      "OM3",
+      "OM4",
+      "OM8"
+    ],
+    "all_old_male": false,
+    "corrected_sex_breakdown": {
+      "old_male": [
+        "OM3",
+        "OM4"
+      ],
+      "old_female": [
+        "OM1",
+        "OM8"
+      ]
+    },
+    "total_influence": "2/4 high-influence donors are old-male, 2/4 are old-female"
+  },
+  "summary": {
+    "total_donors": 23,
+    "old_male_donors": 7,
+    "old_female_donors": 8,
+    "young_male_donors": 5,
+    "young_female_donors": 3
+  }
+}

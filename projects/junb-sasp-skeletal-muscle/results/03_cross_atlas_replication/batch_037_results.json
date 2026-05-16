@@ -1,0 +1,85 @@
+{
+  "batch_id": "batch_037",
+  "hypothesis": "Cross-atlas replication of p21\u2192SASP in MuSCs (F093)",
+  "status": "complete",
+  "donors": [
+    "339C",
+    "343B",
+    "362C",
+    "367C",
+    "411C",
+    "464C",
+    "470BR",
+    "582C",
+    "583B",
+    "591C",
+    "621B",
+    "640C"
+  ],
+  "detection_rates": {
+    "CXCL1": 0.06743496120492926,
+    "CXCL8": 0.010269283432222729,
+    "CXCL6": 0.012551346417161114,
+    "CCL2": 0.28057964399817437,
+    "CCL20": 0.0019397535371976267,
+    "IL6": 0.006389776357827476,
+    "SERPINE1": 0.08523505248744866,
+    "MMP3": 0.007873117298037425,
+    "PLAUR": 0.03154952076677316,
+    "CDKN1A": 0.47592423550890006,
+    "JUNB": 0.8845276129621178
+  },
+  "available_sasp": [
+    "CXCL1",
+    "CXCL8",
+    "CXCL6",
+    "CCL2",
+    "CCL20",
+    "IL6",
+    "SERPINE1",
+    "MMP3",
+    "PLAUR"
+  ],
+  "primary": {
+    "metric": "rho(CDKN1A, SASP12)",
+    "rho": 0.5034965034965035,
+    "p_value": 0.09515736659412469,
+    "ci_95_lo": -0.09902862596962544,
+    "ci_95_hi": 0.8358714842913006,
+    "n": 12
+  },
+  "secondary": {
+    "junb_sasp": {
+      "rho": 0.5454545454545455,
+      "p_value": 0.06661188226688902,
+      "note": "exploratory"
+    },
+    "cdkn1a_junb": {
+      "rho": 0.8811188811188813,
+      "p_value": 0.00015267406467669873,
+      "note": "exploratory collinearity check"
+    }
+  },
+  "verdict": "WEAK/ABSENT",
+  "notes": [
+    "No cell type annotation column found",
+    "WARNING: N=12 provides only ~50-65% power for rho=0.50; low power limits interpretation"
+  ],
+  "metadata_columns": [
+    "DonorID",
+    "Age_group",
+    "Age_bin",
+    "Sex"
+  ],
+  "donor_column": "DonorID",
+  "has_cdkn1a": true,
+  "has_junb": true,
+  "n_donors": 12,
+  "confidence": "INCONCLUSIVE",
+  "comparison_to_f093": {
+    "f093_rho": 0.941,
+    "batch037_rho": 0.5034965034965035,
+    "delta": -0.4375034965034964,
+    "interpretation": "Cross-atlas delta = -0.438"
+  }
+}

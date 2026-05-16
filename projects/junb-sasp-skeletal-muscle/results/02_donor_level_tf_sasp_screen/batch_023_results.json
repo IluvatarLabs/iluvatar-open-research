@@ -1,0 +1,387 @@
+{
+  "metadata": {
+    "batch": "batch_023",
+    "date": "2026-04-10",
+    "purpose": "V1-V4 verification of F084 (Vascular JUNB-SASP)"
+  },
+  "v1": {
+    "cell_level_rho": 0.48149884395050935,
+    "cell_level_p": 0.0,
+    "cell_level_n": 16157,
+    "donor_level_rho": 0.92868041091624,
+    "donor_level_p": 1.654839197862362e-10,
+    "donor_level_n": 23,
+    "cells_included": [
+      "CapEC",
+      "VenEC",
+      "ArtEC"
+    ],
+    "cells_excluded": [
+      "IL6+ VenEC"
+    ],
+    "n_cells_excluded": 1542,
+    "rho_with_il6_venec": 0.9262,
+    "v1_decision": "PASS"
+  },
+  "v2": {
+    "loo_min_rho": 0.9184634773661278,
+    "loo_max_rho": 0.945643654254891,
+    "delta_from_full": -0.010216933550112217,
+    "most_influential_donor": "OM1",
+    "max_cooks_d": 0.5344670298615999,
+    "n_high_influence": 4,
+    "cooks_threshold": 0.17391304347826086,
+    "v2_decision": "PASS",
+    "loo_details": [
+      {
+        "donor_removed": "OM1",
+        "rho_loo": 0.9241260142179534,
+        "n_remaining": 22
+      },
+      {
+        "donor_removed": "OM2",
+        "rho_loo": 0.9229935068475884,
+        "n_remaining": 22
+      },
+      {
+        "donor_removed": "OM3",
+        "rho_loo": 0.9263910289586837,
+        "n_remaining": 22
+      },
+      {
+        "donor_removed": "OM4",
+        "rho_loo": 0.9207284921068581,
+        "n_remaining": 22
+      },
+      {
+        "donor_removed": "OM5",
+        "rho_loo": 0.9241260142179534,
+        "n_remaining": 22
+      },
+      {
+        "donor_removed": "OM6",
+        "rho_loo": 0.9252585215883186,
+        "n_remaining": 22
+      },
+      {
+        "donor_removed": "OM7",
+        "rho_loo": 0.9218609994772231,
+        "n_remaining": 22
+      },
+      {
+        "donor_removed": "OM8",
+        "rho_loo": 0.9275235363290489,
+        "n_remaining": 22
+      },
+      {
+        "donor_removed": "OM9",
+        "rho_loo": 0.9184634773661278,
+        "n_remaining": 22
+      },
+      {
+        "donor_removed": "P3",
+        "rho_loo": 0.9309210584401442,
+        "n_remaining": 22
+      },
+      {
+        "donor_removed": "P5",
+        "rho_loo": 0.9309210584401442,
+        "n_remaining": 22
+      },
+      {
+        "donor_removed": "P13",
+        "rho_loo": 0.945643654254891,
+        "n_remaining": 22
+      },
+      {
+        "donor_removed": "P17",
+        "rho_loo": 0.9299044948184579,
+        "n_remaining": 22
+      },
+      {
+        "donor_removed": "P21",
+        "rho_loo": 0.9286560436994139,
+        "n_remaining": 22
+      },
+      {
+        "donor_removed": "P23",
+        "rho_loo": 0.9388486100327003,
+        "n_remaining": 22
+      },
+      {
+        "donor_removed": "P26",
+        "rho_loo": 0.9276433288736106,
+        "n_remaining": 22
+      },
+      {
+        "donor_removed": "P27",
+        "rho_loo": 0.9276433288736106,
+        "n_remaining": 22
+      },
+      {
+        "donor_removed": "P29",
+        "rho_loo": 0.9309210584401442,
+        "n_remaining": 22
+      },
+      {
+        "donor_removed": "YM1",
+        "rho_loo": 0.9309210584401442,
+        "n_remaining": 22
+      },
+      {
+        "donor_removed": "YM2",
+        "rho_loo": 0.9276433288736106,
+        "n_remaining": 22
+      },
+      {
+        "donor_removed": "YM3",
+        "rho_loo": 0.9280897900142314,
+        "n_remaining": 22
+      },
+      {
+        "donor_removed": "YM4",
+        "rho_loo": 0.9241260142179534,
+        "n_remaining": 22
+      },
+      {
+        "donor_removed": "YM5",
+        "rho_loo": 0.9229935068475884,
+        "n_remaining": 22
+      }
+    ],
+    "cooks_details": [
+      {
+        "donor": "OM1",
+        "JUNB": 2.3113460540771484,
+        "SASP12": 0.5244169235229492,
+        "leverage": 0.15426731153929668,
+        "std_residual": 2.4207785392943895,
+        "cooks_d": 0.5344670298615999
+      },
+      {
+        "donor": "OM3",
+        "JUNB": 2.32134747505188,
+        "SASP12": 0.24775080382823944,
+        "leverage": 0.15560525956814647,
+        "std_residual": -2.322424007618407,
+        "cooks_d": 0.49697184094879643
+      },
+      {
+        "donor": "OM8",
+        "JUNB": 1.7938483953475952,
+        "SASP12": 0.16023783385753632,
+        "leverage": 0.09292133449789568,
+        "std_residual": -2.324279196707088,
+        "cooks_d": 0.27670504689756154
+      },
+      {
+        "donor": "OM4",
+        "JUNB": 2.5229275226593018,
+        "SASP12": 0.4872250556945801,
+        "leverage": 0.18380338888433337,
+        "std_residual": 1.2454495655890294,
+        "cooks_d": 0.17465499978875815
+      },
+      {
+        "donor": "YM5",
+        "JUNB": 2.159994602203369,
+        "SASP12": 0.43909525871276855,
+        "leverage": 0.13472534274871825,
+        "std_residual": 1.3543085533412462,
+        "cooks_d": 0.1427909096028821
+      },
+      {
+        "donor": "OM2",
+        "JUNB": 2.2640433311462402,
+        "SASP12": 0.3441444933414459,
+        "leverage": 0.14801762598487317,
+        "std_residual": -0.5233794665680243,
+        "cooks_d": 0.023795026296917626
+      },
+      {
+        "donor": "OM6",
+        "JUNB": 1.2136951684951782,
+        "SASP12": 0.1652771681547165,
+        "leverage": 0.04253664293145949,
+        "std_residual": -0.7294910912831502,
+        "cooks_d": 0.011820913487560664
+      },
+      {
+        "donor": "P3",
+        "JUNB": 0.3387872874736786,
+        "SASP12": 0.20387940108776093,
+        "leverage": 0.003314348535805765,
+        "std_residual": 2.037308025235448,
+        "cooks_d": 0.006901180187903723
+      },
+      {
+        "donor": "OM5",
+        "JUNB": 0.6533244848251343,
+        "SASP12": 0.0999334529042244,
+        "leverage": 0.012325423053252934,
+        "std_residual": -0.36770413362650367,
+        "cooks_d": 0.0008436357754972847
+      },
+      {
+        "donor": "YM4",
+        "JUNB": 0.6327941417694092,
+        "SASP12": 0.1040264144539833,
+        "leverage": 0.011562955793518369,
+        "std_residual": -0.2524694039921512,
+        "cooks_d": 0.000372827008260259
+      },
+      {
+        "donor": "OM7",
+        "JUNB": 1.4045301675796509,
+        "SASP12": 0.23800519108772278,
+        "leverage": 0.056964738612509676,
+        "std_residual": -0.04264660039900649,
+        "cooks_d": 5.493093798741753e-05
+      },
+      {
+        "donor": "P29",
+        "JUNB": 0.16489821672439575,
+        "SASP12": 0.028146548196673393,
+        "leverage": 0.0007851920314473644,
+        "std_residual": -0.2943482321870273,
+        "cooks_d": 3.404159417866659e-05
+      },
+      {
+        "donor": "P13",
+        "JUNB": 0.06587110459804535,
+        "SASP12": 0.0,
+        "leverage": 0.0001252950338731395,
+        "std_residual": -0.49283775576322286,
+        "cooks_d": 1.5218302870981333e-05
+      },
+      {
+        "donor": "P21",
+        "JUNB": 0.06667817384004593,
+        "SASP12": 0.05879367142915726,
+        "leverage": 0.0001283841350268814,
+        "std_residual": 0.4266432988128834,
+        "cooks_d": 1.1686029577752951e-05
+      },
+      {
+        "donor": "YM1",
+        "JUNB": 0.12322372198104858,
+        "SASP12": 0.03131943941116333,
+        "leverage": 0.0004384626562471539,
+        "std_residual": -0.1424724613741013,
+        "cooks_d": 4.45199771879835e-06
+      },
+      {
+        "donor": "P23",
+        "JUNB": 0.04120025411248207,
+        "SASP12": 0.04158983752131462,
+        "leverage": 4.9016664478968505e-05,
+        "std_residual": 0.21940619298444552,
+        "cooks_d": 1.1798663386731299e-06
+      },
+      {
+        "donor": "P5",
+        "JUNB": 0.07726322114467621,
+        "SASP12": 0.03834843263030052,
+        "leverage": 0.0001723810754004662,
+        "std_residual": 0.08028599960527799,
+        "cooks_d": 5.556663512281962e-07
+      },
+      {
+        "donor": "OM9",
+        "JUNB": 0.2790796458721161,
+        "SASP12": 0.06504146754741669,
+        "leverage": 0.0022490561173603143,
+        "std_residual": 0.004333648577361212,
+        "cooks_d": 2.1166815798957667e-08
+      },
+      {
+        "donor": "YM3",
+        "JUNB": 0.016477443277835846,
+        "SASP12": 0.023241719231009483,
+        "leverage": 7.840136355900295e-06,
+        "std_residual": -0.007596609797306023,
+        "cooks_d": 2.2622295128178688e-10
+      },
+      {
+        "donor": "P17",
+        "JUNB": 0.0,
+        "SASP12": 0.02755473181605339,
+        "leverage": 0.0,
+        "std_residual": 0.10035142303469816,
+        "cooks_d": 0.0
+      },
+      {
+        "donor": "P27",
+        "JUNB": 0.0,
+        "SASP12": 0.00702328234910965,
+        "leverage": 0.0,
+        "std_residual": -0.2214122140366186,
+        "cooks_d": 0.0
+      },
+      {
+        "donor": "P26",
+        "JUNB": 0.0,
+        "SASP12": 0.013985713943839073,
+        "leverage": 0.0,
+        "std_residual": -0.11229876267570665,
+        "cooks_d": 0.0
+      },
+      {
+        "donor": "YM2",
+        "JUNB": 0.0,
+        "SASP12": 0.02097214199602604,
+        "leverage": 0.0,
+        "std_residual": -0.002809244956654853,
+        "cooks_d": 0.0
+      }
+    ]
+  },
+  "v3": {
+    "senescence_markers_tested": [
+      "CDKN1A"
+    ],
+    "activation_markers_tested": [
+      "VCAM1",
+      "ICAM1",
+      "SELE"
+    ],
+    "available_markers": [
+      "CDKN1A",
+      "VCAM1",
+      "ICAM1",
+      "SELE"
+    ],
+    "correlations": {
+      "CDKN1A": {
+        "rho": 0.9153836214667117,
+        "p_value": 9.384930328711873e-10
+      },
+      "VCAM1": {
+        "rho": 0.7753227408142999,
+        "p_value": 1.390483081936238e-05
+      },
+      "ICAM1": {
+        "rho": 0.8543859780429408,
+        "p_value": 2.1232283265201003e-07
+      },
+      "SELE": {
+        "rho": 0.7701873910521801,
+        "p_value": 1.719981937210332e-05
+      }
+    },
+    "mean_senescence_rho": 0.9153836214667117,
+    "mean_activation_rho": 0.799965369969807,
+    "interpretation": "SENESCENCE",
+    "note": "CDKN2A (p16) excluded due to 0.2% detection rate"
+  },
+  "v4": {
+    "status": "NO_VASCULAR_CELLS",
+    "n_cells": 20611,
+    "cell_types_found": ["Inter_FB", "Par_FB", "Adv_FB", "Perineural_FB", "Tenocyte", "mSchwann_cell", "Endoneural_FB-CDH19+", "Endoneural_FB-TAC1+", "nmSchwann_cell"],
+    "vascular_cells_found": 0,
+    "note": "Nature Aging fibroblasts file contains fibroblasts and Schwann cells - no vascular endothelial cells (CapEC, VenEC, ArtEC). Endoneural_FB refers to nerve tissue, not blood vessels.",
+    "fallback": "F084 is single-atlas; cross-atlas vascular replication not possible with available data"
+  },
+  "overall_decision": "PRELIMINARY \u2014 See summary below",
+  "overall_assessment": "F084 ROBUST statistically \u2014 biological interpretation (V3) is key"
+}

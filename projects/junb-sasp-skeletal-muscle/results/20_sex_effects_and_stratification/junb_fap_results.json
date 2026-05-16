@@ -1,0 +1,290 @@
+{
+  "threshold_method": "mean_plus_1sd",
+  "threshold_value": 1.0129823684692383,
+  "junb_pos_cells": 3495,
+  "junb_neg_cells": 36894,
+  "junb_pos_fraction": 0.08653346208125975,
+  "age_comparison": {
+    "young_n_donors": 8,
+    "young_mean_frac": 0.016757891450320566,
+    "young_std": 0.027799130484905,
+    "old_n_donors": 14,
+    "old_mean_frac": 0.1073929592444373,
+    "old_std": 0.11016577794262346,
+    "Cohens_d": 1.0033961790782746,
+    "t_statistic": 2.1794027734305286,
+    "p_value": 0.041428299442325366
+  },
+  "clustering": {
+    "n_clusters": 8,
+    "cluster_sizes": {
+      "0": 1291,
+      "1": 1012,
+      "2": 413,
+      "3": 335,
+      "4": 329,
+      "5": 63,
+      "6": 30,
+      "7": 22
+    },
+    "top_markers": {
+      "cluster_0": [
+        "PRSS56",
+        "AL132780.4",
+        "C1orf185",
+        "SDR16C6P",
+        "AC079331.2",
+        "C2orf15",
+        "AC093642.2",
+        "CCT8L1P",
+        "EBAG9P1",
+        "AL133551.1"
+      ],
+      "cluster_1": [
+        "AC098650.1",
+        "RORA",
+        "LAMA2",
+        "NEGR1",
+        "NEAT1",
+        "RBMS3",
+        "PTPRG",
+        "FTX",
+        "DLC1",
+        "AC016831.7"
+      ],
+      "cluster_2": [
+        "NAT16",
+        "PTMAP3",
+        "AC083967.1",
+        "LINC02623",
+        "AC008764.5",
+        "AC091181.2",
+        "CYP4F8",
+        "CPA5",
+        "LINC02380",
+        "AC015967.2"
+      ],
+      "cluster_3": [
+        "SFRP2",
+        "SERPINF1",
+        "GAPDH",
+        "RPS2",
+        "CYP1B1",
+        "SPARC",
+        "IGFBP4",
+        "COL1A1",
+        "SERPINH1",
+        "PPIB"
+      ],
+      "cluster_4": [
+        "AL034550.3",
+        "RPL24P7",
+        "S100A7",
+        "BX276092.5",
+        "L34079.2",
+        "AL663058.1",
+        "RPL8P2",
+        "AP003071.3",
+        "SOX3",
+        "AC012498.2"
+      ],
+      "cluster_5": [
+        "ITIH5",
+        "HSPH1",
+        "PTGDS",
+        "AC006064.4",
+        "SLX1A-SULT1A3",
+        "BMP6",
+        "HCN3",
+        "CENPO",
+        "AC018804.1",
+        "SPARCL1"
+      ],
+      "cluster_6": [
+        "AL353579.1",
+        "TMEM217",
+        "AC098650.1",
+        "PTPRG",
+        "AL365440.1",
+        "MALAT1",
+        "PLLP",
+        "RBMS3",
+        "AC092447.7",
+        "PIN4P1"
+      ],
+      "cluster_7": [
+        "RPL3P4",
+        "RPL13P12",
+        "AC243919.1",
+        "RPL27",
+        "RPL6P27",
+        "RPL28",
+        "RPL31",
+        "RPS19",
+        "RPL35A",
+        "RPL41"
+      ]
+    }
+  },
+  "sasp_comparison": {
+    "genes_used": [
+      "IL6",
+      "CXCL8",
+      "IL1B",
+      "TNF",
+      "MMP1",
+      "MMP3",
+      "CCL2",
+      "CXCL1",
+      "CXCL2",
+      "CSF2",
+      "CSF3",
+      "VEGFA",
+      "IGFBP7"
+    ],
+    "junb_pos_n_cells": 3495,
+    "junb_pos_sasp_mean": 0.08228261768817902,
+    "junb_pos_sasp_std": 0.2999550402164459,
+    "junb_neg_n_cells": 36894,
+    "junb_neg_sasp_mean": -0.016351008787751198,
+    "junb_neg_sasp_std": 0.27414074540138245,
+    "Cohens_d": 0.3567616045475006,
+    "t_statistic": 20.157488093509176,
+    "p_value": 6.416428852284927e-90,
+    "interpretation": "JUNB+ cells have HIGHER SASP score (inflammatory)"
+  },
+  "subtype_composition": {
+    "junb_pos_annotations": {
+      "CD55+ FAP": 1348,
+      "Tenocyte": 1013,
+      "MME+ FAP": 776,
+      "GPC3+ FAP": 339,
+      "RUNX2+ FAP": 18,
+      "CD99+ FAP": 1
+    },
+    "junb_neg_annotations": {
+      "MME+ FAP": 14981,
+      "CD55+ FAP": 9036,
+      "Tenocyte": 6375,
+      "GPC3+ FAP": 5200,
+      "CD99+ FAP": 697,
+      "RUNX2+ FAP": 605
+    },
+    "enrichment_ratios": {
+      "MME+ FAP": {
+        "n_junb_pos": 776,
+        "n_junb_neg": 14981,
+        "frac_in_junb_pos": 0.049247953290601006,
+        "frac_overall": 0.39013097625591125,
+        "enrichment_ratio": 0.12623440918030615
+      },
+      "CD55+ FAP": {
+        "n_junb_pos": 1348,
+        "n_junb_neg": 9036,
+        "frac_in_junb_pos": 0.1298151001540832,
+        "frac_overall": 0.25709970536532223,
+        "enrichment_ratio": 0.5049212326775103
+      },
+      "Tenocyte": {
+        "n_junb_pos": 1013,
+        "n_junb_neg": 6375,
+        "frac_in_junb_pos": 0.1371142393069843,
+        "frac_overall": 0.1829210923766372,
+        "enrichment_ratio": 0.7495813496710597
+      },
+      "GPC3+ FAP": {
+        "n_junb_pos": 339,
+        "n_junb_neg": 5200,
+        "frac_in_junb_pos": 0.061202383101642895,
+        "frac_overall": 0.13714130084924114,
+        "enrichment_ratio": 0.4462724410709974
+      },
+      "CD99+ FAP": {
+        "n_junb_pos": 1,
+        "n_junb_neg": 697,
+        "frac_in_junb_pos": 0.0014326647564469914,
+        "frac_overall": 0.017281933199633562,
+        "enrichment_ratio": 0.08289956568501079
+      },
+      "RUNX2+ FAP": {
+        "n_junb_pos": 18,
+        "n_junb_neg": 605,
+        "frac_in_junb_pos": 0.028892455858747994,
+        "frac_overall": 0.0154249919532546,
+        "enrichment_ratio": 1.8730937394526046
+      }
+    }
+  },
+  "secretome": {
+    "TNF": {
+      "junb_pos_mean": 0.005546071100980043,
+      "junb_neg_mean": -0.0018279325449839234,
+      "Cohens_d": 0.007631316781044006,
+      "p_value": 0.6663383000033549,
+      "direction": "HIGHER in JUNB+"
+    },
+    "IL6": {
+      "junb_pos_mean": 0.1495748609304428,
+      "junb_neg_mean": -0.04935964569449425,
+      "Cohens_d": 0.2049429565668106,
+      "p_value": 5.8564649803776224e-31,
+      "direction": "HIGHER in JUNB+"
+    },
+    "FGF7": {
+      "junb_pos_mean": 0.16802138090133667,
+      "junb_neg_mean": -0.03970525786280632,
+      "Cohens_d": 0.20860396325588226,
+      "p_value": 5.177713128079882e-32,
+      "direction": "HIGHER in JUNB+"
+    },
+    "HGF": {
+      "junb_pos_mean": 0.01141505129635334,
+      "junb_neg_mean": -0.014386985450983047,
+      "Cohens_d": 0.026158256456255913,
+      "p_value": 0.13942105619690612,
+      "direction": "HIGHER in JUNB+"
+    },
+    "MMP1": {
+      "junb_pos_mean": -0.01146697998046875,
+      "junb_neg_mean": -0.023127585649490356,
+      "Cohens_d": 0.02009713277220726,
+      "p_value": 0.2561633340565986,
+      "direction": "HIGHER in JUNB+"
+    },
+    "IL1B": {
+      "junb_pos_mean": -0.013079176656901836,
+      "junb_neg_mean": -0.025332104414701462,
+      "Cohens_d": 0.02047218196094036,
+      "p_value": 0.247394578068905,
+      "direction": "HIGHER in JUNB+"
+    },
+    "CXCL8": {
+      "junb_pos_mean": 0.09068325906991959,
+      "junb_neg_mean": -0.016333533450961113,
+      "Cohens_d": 0.10864514112472534,
+      "p_value": 8.403771372703298e-10,
+      "direction": "HIGHER in JUNB+"
+    },
+    "CCL2": {
+      "junb_pos_mean": 0.43511930108070374,
+      "junb_neg_mean": -0.04200318455696106,
+      "Cohens_d": 0.4790821075439453,
+      "p_value": 6.191308502765174e-160,
+      "direction": "HIGHER in JUNB+"
+    }
+  },
+  "summary": {
+    "junb_pos_fraction": 0.08653346208125975,
+    "classification": "inflammatory_minority",
+    "inflammatory_markers_higher_in_junb_pos": [
+      "TNF",
+      "IL1B",
+      "IL6",
+      "MMP1"
+    ],
+    "regenerative_markers_higher_in_junb_pos": [
+      "FGF7",
+      "HGF"
+    ]
+  }
+}

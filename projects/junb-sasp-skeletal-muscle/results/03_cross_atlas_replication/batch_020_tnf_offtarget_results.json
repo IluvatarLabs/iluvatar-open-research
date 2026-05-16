@@ -1,0 +1,230 @@
+{
+  "experiment_id": "EXP-GAP2-020",
+  "thresholds": {
+    "cohen_d_min": 0.2,
+    "pearson_rho_min": 0.15
+  },
+  "compartments": {
+    "FAPs": {
+      "total_cells": 40389,
+      "young_n": 3493,
+      "old_n": 36837,
+      "tnf_present": true,
+      "tnfrsf1a_present": true,
+      "tnf": {
+        "young_mean": -0.011054960079491138,
+        "old_mean": -0.000274226360488683,
+        "cohen_d": 0.011148590594530106,
+        "t_stat": 0.9214286804199219,
+        "df": 5369.08447265625,
+        "p_value": 0.35686806082908273,
+        "significant": false,
+        "meaningful": false
+      },
+      "tnfrsf1a": {
+        "young_mean": -0.11465103924274445,
+        "old_mean": 0.012507039122283459,
+        "cohen_d": 0.12667249143123627,
+        "t_stat": 7.70120096206665,
+        "df": 4322.9189453125,
+        "p_value": 1.660160648609245e-14,
+        "significant": true,
+        "meaningful": false
+      },
+      "co_expression": {
+        "pearson_r": 0.005836190655827522,
+        "p_value": 0.24084177097044152,
+        "meaningful": false
+      }
+    },
+    "MuSCs": {
+      "total_cells": 9559,
+      "young_n": 2361,
+      "old_n": 7128,
+      "tnf_present": true,
+      "tnfrsf1a_present": true,
+      "tnf": {
+        "young_mean": 0.005561351180126277,
+        "old_mean": 0.006267168356065354,
+        "cohen_d": 0.006984435939394305,
+        "t_stat": 0.2984203918705181,
+        "df": 4137.824374238482,
+        "p_value": 0.7653973114620565,
+        "significant": false,
+        "meaningful": false
+      },
+      "tnfrsf1a": {
+        "young_mean": 0.33449757755188747,
+        "old_mean": 0.3959623441613523,
+        "cohen_d": 0.08717715247641267,
+        "t_stat": 3.771484449934475,
+        "df": 4230.7085886643745,
+        "p_value": 0.0001644964113406334,
+        "significant": true,
+        "meaningful": false
+      },
+      "co_expression": {
+        "pearson_r": -0.0020955643431820924,
+        "p_value": 0.8376838145250215,
+        "meaningful": false
+      }
+    },
+    "Immune": {
+      "total_cells": 13773,
+      "young_n": 2810,
+      "old_n": 10951,
+      "tnf_present": true,
+      "tnfrsf1a_present": true,
+      "tnf": {
+        "young_mean": 0.7414396420704512,
+        "old_mean": 0.1479350730345441,
+        "cohen_d": -0.8390050469476611,
+        "t_stat": -25.527473650686357,
+        "df": 3067.039407989436,
+        "p_value": 1.6799197993658277e-130,
+        "significant": true,
+        "meaningful": true
+      },
+      "tnfrsf1a": {
+        "young_mean": 0.0706616634788038,
+        "old_mean": 0.3867389678998621,
+        "cohen_d": 0.5030631824669993,
+        "t_stat": 33.875901074195944,
+        "df": 8659.132620881499,
+        "p_value": 2.4566466787208845e-236,
+        "significant": true,
+        "meaningful": true
+      },
+      "co_expression": {
+        "pearson_r": -0.10495856870523936,
+        "p_value": 4.824171986947957e-35,
+        "meaningful": false
+      }
+    },
+    "Vascular": {
+      "total_cells": 28160,
+      "young_n": 4094,
+      "old_n": 23880,
+      "tnf_present": true,
+      "tnfrsf1a_present": true,
+      "tnf": {
+        "young_mean": 0.0660562738776207,
+        "old_mean": 0.035394687205553055,
+        "cohen_d": -0.11221325397491455,
+        "t_stat": -5.0724945068359375,
+        "df": 4757.921875,
+        "p_value": 4.075637072072904e-07,
+        "significant": true,
+        "meaningful": false
+      },
+      "tnfrsf1a": {
+        "young_mean": 0.2515786588191986,
+        "old_mean": 0.4673808515071869,
+        "cohen_d": 0.27944523096084595,
+        "t_stat": 18.38949966430664,
+        "df": 6159.64697265625,
+        "p_value": 1.442553207062166e-73,
+        "significant": true,
+        "meaningful": true
+      },
+      "co_expression": {
+        "pearson_r": 0.003702679416164756,
+        "p_value": 0.5343940355635727,
+        "meaningful": false
+      }
+    }
+  },
+  "summary_table": [
+    {
+      "compartment": "FAPs",
+      "n_young": 3493,
+      "n_old": 36837,
+      "tnf_d": 0.011148590594530106,
+      "tnf_p": 0.35686806082908273,
+      "tnfrsf1a_d": 0.12667249143123627,
+      "tnfrsf1a_p": 1.660160648609245e-14,
+      "coexpr_r": 0.005836190655827522
+    },
+    {
+      "compartment": "MuSCs",
+      "n_young": 2361,
+      "n_old": 7128,
+      "tnf_d": 0.006984435939394305,
+      "tnf_p": 0.7653973114620565,
+      "tnfrsf1a_d": 0.08717715247641267,
+      "tnfrsf1a_p": 0.0001644964113406334,
+      "coexpr_r": -0.0020955643431820924
+    },
+    {
+      "compartment": "Immune",
+      "n_young": 2810,
+      "n_old": 10951,
+      "tnf_d": -0.8390050469476611,
+      "tnf_p": 1.6799197993658277e-130,
+      "tnfrsf1a_d": 0.5030631824669993,
+      "tnfrsf1a_p": 2.4566466787208845e-236,
+      "coexpr_r": -0.10495856870523936
+    },
+    {
+      "compartment": "Vascular",
+      "n_young": 4094,
+      "n_old": 23880,
+      "tnf_d": -0.11221325397491455,
+      "tnf_p": 4.075637072072904e-07,
+      "tnfrsf1a_d": 0.27944523096084595,
+      "tnfrsf1a_p": 1.442553207062166e-73,
+      "coexpr_r": 0.003702679416164756
+    }
+  ],
+  "vascular_subtypes": {
+    "Pericyte": {
+      "n": 5632,
+      "young_n": 1254,
+      "old_n": 4346,
+      "tnf_cohen_d": -0.13649150729179382,
+      "tnfrsf1a_cohen_d": 0.3639357089996338
+    },
+    "CD44+ MC": {
+      "n": 551,
+      "young_n": 140,
+      "old_n": 404,
+      "tnf_cohen_d": 0.11227790266275406,
+      "tnfrsf1a_cohen_d": 0.3418363630771637
+    },
+    "ArtEC": {
+      "n": 1274,
+      "young_n": 181,
+      "old_n": 1086,
+      "tnf_cohen_d": 0.03567077964544296,
+      "tnfrsf1a_cohen_d": 0.34429553151130676
+    },
+    "CapEC": {
+      "n": 11857,
+      "young_n": 1738,
+      "old_n": 10013,
+      "tnf_cohen_d": -0.11177302896976471,
+      "tnfrsf1a_cohen_d": 0.28102949261665344
+    },
+    "IL6+ VenEC": {
+      "n": 1542,
+      "young_n": 142,
+      "old_n": 1395,
+      "tnf_cohen_d": 0.08708512037992477,
+      "tnfrsf1a_cohen_d": 0.08187493681907654
+    },
+    "VenEC": {
+      "n": 3026,
+      "young_n": 249,
+      "old_n": 2756,
+      "tnf_cohen_d": -0.012211908586323261,
+      "tnfrsf1a_cohen_d": 0.19995155930519104
+    },
+    "SMC": {
+      "n": 4278,
+      "young_n": 390,
+      "old_n": 3880,
+      "tnf_cohen_d": -0.03302978724241257,
+      "tnfrsf1a_cohen_d": 0.10664879530668259
+    }
+  }
+}

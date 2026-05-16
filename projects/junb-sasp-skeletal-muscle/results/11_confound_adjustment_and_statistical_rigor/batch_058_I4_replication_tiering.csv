@@ -1,0 +1,6 @@
+finding_id,dataset,compartment,tf,n,rho,p,rho_gt_0.5,rho_gt_0.3,tier,notes,tier_description
+F084,HLMA,Vascular,JUNB,23,0.929,1.65e-10,True,True,ROBUST,4/5 datasets at rho>0.5,"rho>0.5 in ≥3 datasets, p<0.05"
+F084_rep,NA,Endothelium,JUNB,12,0.72,0.00824,True,True,ROBUST,Cross-atlas replication,"rho>0.5 in ≥3 datasets, p<0.05"
+F093,HLMA,MuSC,CDKN1A,23,0.929,1.66e-10,True,True,ROBUST,5/5 datasets at rho>0.5,"rho>0.5 in ≥3 datasets, p<0.05"
+F080,HLMA,FAP,JUNB,22,-0.014,0.95,False,False,NULL,"Donor-level null, cell-level only",rho<0.3 in all datasets or p>0.05
+Q2,NA,FAP,JUNB,12,0.573,0.051,True,True,UNDERPOWERED,"N=12, power=35%, p=0.051","N<15, power<50%, or p>0.05"

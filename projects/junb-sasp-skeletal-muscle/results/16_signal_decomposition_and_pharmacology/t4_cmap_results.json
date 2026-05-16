@@ -1,0 +1,36 @@
+{
+  "query": {
+    "n_up": 300,
+    "n_down": 300,
+    "up_genes_sample": [
+      "EFEMP1",
+      "AP3M2",
+      "AC093227.1",
+      "TGFBR2",
+      "HSPA4L",
+      "MDM2",
+      "HSD17B14",
+      "AC040977.1",
+      "LPCAT3",
+      "CYP1B1"
+    ],
+    "down_genes_sample": [
+      "MYH1",
+      "ITGA7",
+      "ENO3",
+      "ACTN3",
+      "PKD1P6",
+      "TPM2",
+      "SNTA1",
+      "LMOD1",
+      "MYLPF",
+      "MYL1"
+    ]
+  },
+  "api_status": "connection_failed",
+  "top_compounds": [],
+  "matches": {},
+  "classification": "UNINTERPRETABLE (API unavailable)",
+  "caveat": "LINCS L1000 uses cancer cell lines (MCF7, A549, PC3), not skeletal muscle or endothelial cells. 17% reproducibility rate. Results hypothesis-generating only.",
+  "api_detail": "Could not connect to L1000CDS2 server"
+}

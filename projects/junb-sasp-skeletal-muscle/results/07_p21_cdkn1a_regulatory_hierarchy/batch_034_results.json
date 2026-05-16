@@ -1,0 +1,72 @@
+{
+  "metadata": {
+    "batch": "batch_034",
+    "purpose": "Cross-Compartment p21->SASP Analysis",
+    "date": "2026-04-11",
+    "alpha_primary": 0.0125,
+    "primary_rho_threshold": 0.5,
+    "baselines": {
+      "f092_vascular_p21_sasp": 0.9126,
+      "f080_fap_junb_sasp": 0.023,
+      "f074_musc_junb_sasp": 0.072
+    }
+  },
+  "fap": {
+    "n_donors": 14,
+    "n_cells": 28597,
+    "cdkn1a_detection_rate": 0.5258943245795014,
+    "junb_detection_rate": 0.6618526418855125,
+    "rho_p21_sasp": {
+      "estimate": 0.4945054945054946,
+      "p_value": 0.07224967403413257
+    },
+    "rho_p21_junb": {
+      "estimate": 0.4901098901098901,
+      "p_value": 0.07522006672685849
+    },
+    "partial_r_p21_sasp_given_junb": {
+      "estimate": 0.3403557613346894,
+      "p_value": 0.7229680651829846
+    },
+    "young_rho_p21_sasp": {
+      "estimate": 0.19999999999999998,
+      "p_value": 0.747060078104662,
+      "n": 5
+    },
+    "old_rho_p21_sasp": {
+      "estimate": 0.5333333333333333,
+      "p_value": 0.13922686754397814,
+      "n": 9
+    }
+  },
+  "musc": {
+    "n_donors": 16,
+    "n_cells": 7463,
+    "cdkn1a_detection_rate": 0.5844834516950288,
+    "junb_detection_rate": 0.7458126758676136,
+    "rho_p21_sasp": {
+      "estimate": 0.941007044008889,
+      "p_value": 5.7000017794264174e-08
+    },
+    "rho_p21_junb": {
+      "estimate": 0.9351073133254478,
+      "p_value": 1.0933188834214834e-07
+    },
+    "young_rho_p21_sasp": {
+      "estimate": NaN,
+      "p_value": NaN,
+      "n": 0
+    },
+    "old_rho_p21_sasp": {
+      "estimate": 0.9181818181818183,
+      "p_value": 6.661451941355563e-05,
+      "n": 11
+    }
+  },
+  "interpretation": {
+    "fap_p21_sasp_interpretation": "INCONCLUSIVE",
+    "musc_p21_sasp_interpretation": "ESTABLISHED",
+    "overall_interpretation": "p21->SASP axis is PARTIALLY vascular-specific - coupling in MuSCs but not FAPs",
+    "decision_rule_triggered": "No UNINTERPRETABLE gate triggered"
+  }
+}

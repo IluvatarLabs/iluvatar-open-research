@@ -1,0 +1,102 @@
+dataset,donor,n_cells,age,sex,tech,country
+HLMA_Vascular,OM3,3470,84.0,Male,snRNA,China
+HLMA_Vascular,OM4,981,79.0,Male,snRNA,China
+HLMA_Vascular,OM8,116,84.0,Female,snRNA,China
+HLMA_Vascular,YM1,458,15.0,Male,snRNA,China
+HLMA_Vascular,YM3,304,34.0,Male,snRNA,China
+HLMA_Vascular,OM1,4111,82.0,Female,snRNA,China
+HLMA_Vascular,OM2,2786,79.0,Female,snRNA,China
+HLMA_Vascular,OM7,297,82.0,Male,snRNA,China
+HLMA_Vascular,OM5,280,82.0,Male,snRNA,China
+HLMA_Vascular,OM6,227,80.0,Female,snRNA,China
+HLMA_Vascular,OM9,980,80.0,Female,snRNA,China
+HLMA_Vascular,P17,47,88.0,Male,snRNA,Spain
+HLMA_Vascular,P21,485,89.0,Female,snRNA,Spain
+HLMA_Vascular,P23,305,85.0,Male,snRNA,Spain
+HLMA_Vascular,P27,58,99.0,Female,snRNA,Spain
+HLMA_Vascular,P29,330,77.0,Male,snRNA,Spain
+HLMA_Vascular,P3,777,92.0,Female,snRNA,Spain
+HLMA_Vascular,P13,74,38.0,Male,snRNA,Spain
+HLMA_Vascular,P26,170,17.0,Female,snRNA,Spain
+HLMA_Vascular,P5,139,45.0,Male,snRNA,Spain
+HLMA_Vascular,YM2,21,34.0,Female,snRNA,China
+HLMA_Vascular,YM4,175,18.0,Male,snRNA,China
+HLMA_Vascular,YM5,1108,29.0,Female,scRNA,China
+HLMA_MuSC,OM1,535,82,Female,scRNA,China
+HLMA_MuSC,OM2,1347,79,Female,scRNA,China
+HLMA_MuSC,OM3,3076,84,Male,scRNA,China
+HLMA_MuSC,OM4,237,79,Male,scRNA,China
+HLMA_MuSC,YM1,894,15,Male,scRNA,China
+HLMA_MuSC,YM4,418,18,Male,scRNA,China
+HLMA_MuSC,YM5,869,29,Female,scRNA,China
+HLMA_MuSC,OM8,43,84,Female,snRNA,China
+HLMA_MuSC,OM7,12,82,Male,snRNA,China
+HLMA_MuSC,OM5,251,82,Male,snRNA,China
+HLMA_MuSC,OM6,193,80,Female,snRNA,China
+HLMA_MuSC,YM3,146,34,Male,snRNA,China
+HLMA_MuSC,P26,28,17,Female,snRNA,Spain
+HLMA_MuSC,P32,1,25,Female,snRNA,Spain
+HLMA_MuSC,P5,70,45,Male,snRNA,Spain
+HLMA_MuSC,YM2,5,34,Female,snRNA,China
+HLMA_MuSC,OM9,1095,80,Female,snRNA,China
+HLMA_MuSC,P17,5,88,Male,snRNA,Spain
+HLMA_MuSC,P21,112,89,Female,snRNA,Spain
+HLMA_MuSC,P23,28,85,Male,snRNA,Spain
+HLMA_MuSC,P27,23,99,Female,snRNA,Spain
+HLMA_MuSC,P29,113,77,Male,snRNA,Spain
+HLMA_MuSC,P3,58,92,Female,snRNA,Spain
+HLMA_FAP,OM3,11822,84,Male,snRNA,China
+HLMA_FAP,OM4,867,79,Male,snRNA,China
+HLMA_FAP,OM8,656,84,Female,snRNA,China
+HLMA_FAP,YM1,869,15,Male,snRNA,China
+HLMA_FAP,YM3,684,34,Male,snRNA,China
+HLMA_FAP,OM1,2612,82,Female,snRNA,China
+HLMA_FAP,OM2,8828,79,Female,snRNA,China
+HLMA_FAP,OM7,1665,82,Male,snRNA,China
+HLMA_FAP,OM5,978,82,Male,snRNA,China
+HLMA_FAP,OM6,492,80,Female,snRNA,China
+HLMA_FAP,OM9,1662,80,Female,snRNA,China
+HLMA_FAP,P17,1,88,Male,snRNA,Spain
+HLMA_FAP,P21,58,89,Female,snRNA,Spain
+HLMA_FAP,P23,4,85,Male,snRNA,Spain
+HLMA_FAP,P29,17,77,Male,snRNA,Spain
+HLMA_FAP,P3,17,92,Female,snRNA,Spain
+HLMA_FAP,P13,1,38,Male,snRNA,Spain
+HLMA_FAP,P26,5,17,Female,snRNA,Spain
+HLMA_FAP,P5,59,45,Male,snRNA,Spain
+HLMA_FAP,YM2,151,34,Female,snRNA,China
+HLMA_FAP,YM4,292,18,Male,snRNA,China
+HLMA_FAP,YM5,1261,29,Female,scRNA,China
+NA_Endothelium,339C,539,70-75,female,10x 3' v2,
+NA_Endothelium,343B,133,70-75,female,10x 3' v2,
+NA_Endothelium,362C,1120,60-65,male,10x 3' v2,
+NA_Endothelium,367C,1954,70-75,male,10x 3' v2,
+NA_Endothelium,411C,807,25-30,male,10x 3' v2,
+NA_Endothelium,464C,280,35-40,male,10x 3' v2,
+NA_Endothelium,470BR,2827,15-20,male,10x 3' v2,
+NA_Endothelium,582C,107,55-60,female,10x 3' v3,
+NA_Endothelium,583B,123,25-30,male,10x 3' v3,
+NA_Endothelium,591C,163,35-40,male,10x 3' v3,
+NA_Endothelium,621B,45,50-55,male,10x 3' v3,
+NA_Endothelium,640C,54,70-75,female,10x 3' v3,
+NA_FAP,mus_SNuc7468112,1320,70-75,F,,
+NA_FAP,mus_SNuc7511880,1406,70-75,F,,
+NA_FAP,5386STDY7600838,1924,60-65,M,,
+NA_FAP,5386STDY7600839,2151,60-65,M,,
+NA_FAP,5386STDY7645353,418,70-75,M,,
+NA_FAP,5386STDY7645354,447,70-75,M,,
+NA_FAP,5386STDY7835292,434,25-30,M,,
+NA_FAP,5386STDY7835293,465,25-30,M,,
+NA_FAP,5386STDY8047212,709,35-40,M,,
+NA_FAP,5386STDY8090404,1152,15-20,M,,
+NA_FAP,5386STDY8090405,1069,15-20,M,,
+NA_FAP,WS_A_SKM9845425,492,55-60,F,,
+NA_FAP,WS_A_SKM9845426,566,55-60,F,,
+NA_FAP,WS_A_SKM9845427,1760,25-30,M,,
+NA_FAP,WS_A_SKM9845428,1851,25-30,M,,
+NA_FAP,WS_A_SKM9845429,575,35-40,M,,
+NA_FAP,WS_A_SKM9845430,668,35-40,M,,
+NA_FAP,WS_A_SKM10490125,189,50-55,M,,
+NA_FAP,WS_A_SKM10490126,203,50-55,M,,
+NA_FAP,WS_A_SKM10490127,220,70-75,F,,
+NA_FAP,WS_A_SKM10490128,208,70-75,F,,

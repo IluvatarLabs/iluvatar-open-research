@@ -1,0 +1,5 @@
+compartment,x_matrix_source,negative_clip_applied,x_min_pre_clip,n_cells,n_genes_in,x_min_probe_post,x_max_probe_post,marker_based,marker_genes_used,marker_genes_missing
+Vascular,raw.X,False,7.957001798786223e-05,28160,48355,0.02359652705490589,3.712183713912964,False,,
+MuSC,raw.X,False,0.7674281065384583,9559,48355,0.7979524741575698,3.723253494272824,False,,
+FAP,marker_panel_ReLU_mean,True,-15.7237548828125,33001,37841,-15.7237548828125,10.0,True,PDGFRA;CD34;DCN;LUM;DLK1;COL6A1;COL6A2;COL6A3;THY1;MFAP5;SERPINF1,
+Immune,raw.X,False,4.218784306431189e-05,13773,48355,0.00443553552031517,7.2698469161987305,False,,

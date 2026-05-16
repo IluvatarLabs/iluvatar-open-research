@@ -1,0 +1,19 @@
+{
+  "batch": "batch_054_d1",
+  "analysis": "Phase F decision rule application",
+  "results": {
+    "JUNB_HLMA_Vascular": {
+      "tf": "JUNB",
+      "dataset": "HLMA_Vascular",
+      "aucell_rho": 0.9229249011857708,
+      "aucell_p": 3.6430670854664447e-10,
+      "raw_mrna_rho": 0.92125096762891,
+      "delta_rho": 0.0016739335568607,
+      "n_donors": 23,
+      "regulon_source": "coexpression",
+      "power_at_50": 0.6902721797272747,
+      "power_at_60": 0.8728329864189117,
+      "verdict": "VALIDATED"
+    }
+  }
+}

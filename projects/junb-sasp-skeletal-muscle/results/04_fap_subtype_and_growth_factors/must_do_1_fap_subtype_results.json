@@ -1,0 +1,96 @@
+{
+  "subtype_results": [
+    {
+      "subtype": "Inter_FB",
+      "status": "completed",
+      "n_young_cells": 3971,
+      "n_old_cells": 4656,
+      "n_young_donors": 5,
+      "n_old_donors": 7,
+      "junb_mean_young": 1.8647269010543823,
+      "junb_mean_old": 2.911914110183716,
+      "junb_cohen_d": 0.7984892725944519,
+      "junb_p_value": 8.662461037385666e-278,
+      "sasp12_rho": 0.5594405594405596,
+      "sasp12_p_value": 0.05858947538856762,
+      "tech_stratification": {
+        "3'v2": {
+          "n_young": 1614,
+          "n_old": 3846,
+          "junb_cohen_d": 0.8143926858901978
+        },
+        "3'v3": {
+          "n_young": 2357,
+          "n_old": 810,
+          "junb_cohen_d": 0.5678402781486511
+        }
+      },
+      "junb_p_value_bh": 2.5987383112157e-277
+    },
+    {
+      "subtype": "Par_FB",
+      "status": "completed",
+      "n_young_cells": 3585,
+      "n_old_cells": 2188,
+      "n_young_donors": 5,
+      "n_old_donors": 7,
+      "junb_mean_young": 0.8389596939086914,
+      "junb_mean_old": 1.8027675151824951,
+      "junb_cohen_d": 0.8438549041748047,
+      "junb_p_value": 1.5545185646912363e-166,
+      "sasp12_rho": 0.7762237762237763,
+      "sasp12_p_value": 0.0029928636801859797,
+      "tech_stratification": {
+        "3'v2": {
+          "n_young": 1842,
+          "n_old": 1668,
+          "junb_cohen_d": 0.8403657674789429
+        },
+        "3'v3": {
+          "n_young": 1743,
+          "n_old": 520,
+          "junb_cohen_d": 0.9157346487045288
+        }
+      },
+      "junb_p_value_bh": 2.3317778470368544e-166
+    },
+    {
+      "subtype": "Adv_FB",
+      "status": "completed",
+      "n_young_cells": 1127,
+      "n_old_cells": 2700,
+      "n_young_donors": 5,
+      "n_old_donors": 7,
+      "junb_mean_young": 2.0699453353881836,
+      "junb_mean_old": 2.408217191696167,
+      "junb_cohen_d": 0.23277892172336578,
+      "junb_p_value": 9.563777703437341e-11,
+      "sasp12_rho": 0.4685314685314686,
+      "sasp12_p_value": 0.124454791188834,
+      "tech_stratification": {
+        "3'v2": {
+          "n_young": 373,
+          "n_old": 2152,
+          "junb_cohen_d": 0.38456597924232483
+        },
+        "3'v3": {
+          "n_young": 754,
+          "n_old": 548,
+          "junb_cohen_d": 0.0623934306204319
+        }
+      },
+      "junb_p_value_bh": 9.563777703437341e-11
+    },
+    {
+      "subtype": "Perineural_FB",
+      "status": "no_cells",
+      "note": "Perineural_FB is annotated as PnFB in annotation_level1, not FB. Contains 547 cells total.",
+      "total_cells": 547
+    }
+  ],
+  "summary": {
+    "strongest_junb_subtype": "Par_FB",
+    "strongest_sasp_coupling_subtype": "Par_FB",
+    "direction_consistent_across_subtypes": true
+  }
+}

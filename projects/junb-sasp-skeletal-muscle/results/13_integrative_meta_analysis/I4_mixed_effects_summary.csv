@@ -1,0 +1,22 @@
+TF,pooled_rho,pooled_p,I_squared,fixed_effect_significant,low_heterogeneity,verdict
+KLF10,0.813,0.0,27.2,True,True,"BIOLOGY — cross-dataset signal, low heterogeneity"
+CDKN1A,0.792,0.0,82.6,True,False,HETEROGENEOUS — significant but compartment/atlas-driven
+JUNB,0.78,0.0,89.6,True,False,HETEROGENEOUS — significant but compartment/atlas-driven
+EGR2,0.775,0.0,49.7,True,True,"BIOLOGY — cross-dataset signal, low heterogeneity"
+EGR1,0.75,0.0,88.1,True,False,HETEROGENEOUS — significant but compartment/atlas-driven
+ATF3,0.704,1.554312234475219e-14,72.8,True,False,HETEROGENEOUS — significant but compartment/atlas-driven
+CEBPB,0.691,8.304468224196171e-14,82.8,True,False,HETEROGENEOUS — significant but compartment/atlas-driven
+FOSB,0.69,1.0413891970983968e-13,85.1,True,False,HETEROGENEOUS — significant but compartment/atlas-driven
+FOSL2,0.656,5.275557768413819e-12,88.0,True,False,HETEROGENEOUS — significant but compartment/atlas-driven
+KLF4,0.653,7.509104449354709e-12,86.6,True,False,HETEROGENEOUS — significant but compartment/atlas-driven
+IRF1,0.646,1.524469439573295e-11,0.0,True,True,"BIOLOGY — cross-dataset signal, low heterogeneity"
+FOS,0.644,1.989053366457938e-11,83.7,True,False,HETEROGENEOUS — significant but compartment/atlas-driven
+FOSL1,0.641,2.51838550013872e-11,65.6,True,False,HETEROGENEOUS — significant but compartment/atlas-driven
+RELA,0.622,1.6391732415854676e-10,72.1,True,False,HETEROGENEOUS — significant but compartment/atlas-driven
+JUND,0.577,7.588223160936991e-09,90.0,True,False,HETEROGENEOUS — significant but compartment/atlas-driven
+KLF6,0.561,2.6864900748435616e-08,86.6,True,False,HETEROGENEOUS — significant but compartment/atlas-driven
+JUN,0.56,2.8924228345772462e-08,85.2,True,False,HETEROGENEOUS — significant but compartment/atlas-driven
+STAT3,0.557,3.444401963648147e-08,74.0,True,False,HETEROGENEOUS — significant but compartment/atlas-driven
+CEBPD,0.539,1.2003334237675745e-07,85.6,True,False,HETEROGENEOUS — significant but compartment/atlas-driven
+KLF2,0.447,2.405183915454856e-05,82.4,True,False,HETEROGENEOUS — significant but compartment/atlas-driven
+NFKB1,0.211,0.06068291308659868,74.9,False,False,PLATFORM — no consistent cross-dataset signal

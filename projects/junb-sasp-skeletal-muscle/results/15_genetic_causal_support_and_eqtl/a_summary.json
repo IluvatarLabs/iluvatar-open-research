@@ -1,0 +1,52 @@
+{
+  "iteration": 64,
+  "analysis": "A_opentargets",
+  "ot_endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+  "ot_release_probe": "26.03.1 (probe dated 2026-04-22)",
+  "ot_release_live": "26.03.1",
+  "status": "complete",
+  "error": null,
+  "total_cells_populated": 54,
+  "total_cells_total": 54,
+  "total_coloc_h4_gt_0.8_muscle": 0,
+  "pleiotropic_hits": 0,
+  "clean_muscle_cells": 0,
+  "grid_verdict": "NEGATIVE",
+  "grid_reason": "0 muscle-coloc cells; pre-registered interpretation: IEG post-translational regulation confirmed \u2014 mechanism constraint, not refutation.",
+  "mr_feasibility_verdicts": {
+    "CDKN1A_x_grip_strength": {
+      "verdict": "INCONCLUSIVE",
+      "reason": "No cis-eQTL in UBERON_0001134 found in OT evidences."
+    },
+    "CDKN1A_x_appendicular_lean_mass": {
+      "verdict": "INCONCLUSIVE",
+      "reason": "No cis-eQTL in UBERON_0001134 found in OT evidences."
+    },
+    "CEBPB_x_grip_strength": {
+      "verdict": "INCONCLUSIVE",
+      "reason": "No cis-eQTL in UBERON_0001134 found in OT evidences."
+    },
+    "CEBPB_x_appendicular_lean_mass": {
+      "verdict": "INCONCLUSIVE",
+      "reason": "No cis-eQTL in UBERON_0001134 found in OT evidences."
+    }
+  },
+  "top3_tfs_by_genetic_association": [
+    {
+      "tf": "CDKN1A",
+      "sum_ga_score": 1.8524
+    },
+    {
+      "tf": "EGR2",
+      "sum_ga_score": 0.9442
+    },
+    {
+      "tf": "ATF3",
+      "sum_ga_score": 0.8603
+    }
+  ],
+  "notes": [
+    "MR not executed this iter: no GWAS summary stats present in data/. Download URLs documented in a_mr_feasibility.csv; MR deferred to iter 065.",
+    "Pleiotropy check leaves pleiotropic=None when OT credibleSet root schema is unsupported by the running release (schema fallback logged)."
+  ]
+}

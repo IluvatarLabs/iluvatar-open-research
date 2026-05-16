@@ -1,0 +1,110 @@
+{
+  "experiment_id": "batch_010_exp3",
+  "hypothesis": "Nature Aging 2024 Atlas Cross-Validation (G2: Independent Replication)",
+  "data_qc": {
+    "total_cells": 20611,
+    "total_genes": 20772,
+    "age_annotation_found": true,
+    "age_column_used": "Age_group",
+    "age_type": "binned",
+    "age_values": [
+      "15-20",
+      "25-30",
+      "35-40",
+      "50-55",
+      "55-60",
+      "60-65",
+      "70-75"
+    ],
+    "age_numeric": false,
+    "age_min": 17.5,
+    "age_max": 72.5,
+    "pdgfra_present": true,
+    "dcn_present": true,
+    "ap1_genes_present": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "collagen_genes_present": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "fap_identification": {
+    "pdgfra_positive": 12075,
+    "dcn_positive": 20017,
+    "pdgfra_and_dcn": 12073,
+    "fap_percentage_of_total": 58.58
+  },
+  "age_grouping": {
+    "young_n": 6796,
+    "old_n": 4957,
+    "age_type": "binned",
+    "young_age_range": null,
+    "old_age_range": null,
+    "young_bins": [
+      "15-20",
+      "25-30",
+      "35-40"
+    ],
+    "old_bins": [
+      "55-60",
+      "60-65",
+      "70-75"
+    ]
+  },
+  "ap1_age_effect": {
+    "young_mean": -0.2204531580209732,
+    "old_mean": 0.30781084299087524,
+    "cohen_d": 0.5540290474891663,
+    "cohen_d_ci95": [
+      0.5172942876815796,
+      0.5937913656234741
+    ],
+    "p_value": 8.387029540268755e-185,
+    "bootstrap_n": 1000
+  },
+  "junb_age_effect": {
+    "young_mean": -0.40466752648353577,
+    "old_mean": 0.3620244562625885,
+    "cohen_d": 0.8625016212463379,
+    "cohen_d_ci95": [
+      0.8245246410369873,
+      0.9028007984161377
+    ],
+    "p_value": 0.0,
+    "bootstrap_n": 1000
+  },
+  "junb_collagen_correlation": {
+    "rho": -0.10076662336394052,
+    "p_value": 1.152994524540933e-12,
+    "n": 4957
+  },
+  "decision": {
+    "ap1_threshold_met": true,
+    "junb_threshold_met": true,
+    "g2_supported": true
+  },
+  "metadata": {
+    "ap1_threshold": 0.5,
+    "junb_threshold": 0.5,
+    "collagen_corr_threshold": 0.15,
+    "young_threshold": 40,
+    "old_threshold": 65,
+    "bootstrap_n": 1000,
+    "random_seed": 42,
+    "data_url": "https://cellgeni.cog.sanger.ac.uk/muscleageingcellatlas/SKM_fibroblasts_Schwann_human_2023-06-22.h5ad",
+    "python_version": "3.13.7 (main, Mar  3 2026, 12:19:54) [GCC 15.2.0]",
+    "scanpy_version": "1.11.5",
+    "numpy_version": "2.0.1"
+  }
+}

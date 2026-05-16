@@ -1,0 +1,178 @@
+{
+  "analysis": "batch_063 Analysis C \u2014 TMS cross-species AP-1 polarity replication",
+  "framing": "DESCRIPTIVE directional only; NOT confirmatory. Power at N=12-16 pseudobulks for rho=0.5 is ~45-60% (Fisher-z, alpha=0.05 two-sided). Do not over-interpret.",
+  "data": "/home/yuanz/Documents/GitHub/biomarvin_fibro/data/TMS_muscle/TMS_Droplet_Limb_Muscle.h5ad",
+  "min_cells_per_pseudobulk": 50,
+  "ap1_panel_used": [
+    "Junb",
+    "Fos",
+    "Fosb",
+    "Jund",
+    "Fosl1"
+  ],
+  "ap1_missing": [],
+  "mouse_sasp_panel_used": [
+    "Ccl2",
+    "Cxcl1",
+    "Cxcl2",
+    "Cxcl3",
+    "Il6",
+    "Serpine1",
+    "Mmp1a",
+    "Mmp1b",
+    "Mmp3",
+    "Plau",
+    "Plaur"
+  ],
+  "mouse_sasp_missing": [
+    "Cxcl6"
+  ],
+  "notes_on_sasp_mapping": {
+    "CXCL8/IL8": "no mouse ortholog; functional analogs Cxcl1/Cxcl2 already in panel",
+    "MMP1": "no 1:1 mouse ortholog; paralogs Mmp1a + Mmp1b both included",
+    "CXCL6": "mouse gene not in TMS var_names (dropped)"
+  },
+  "compartments": {
+    "EC": {
+      "ontology_label": "endothelial cell",
+      "n_pseudobulks": 16,
+      "expected_human_direction": "+",
+      "rho_per_TF": {
+        "Junb": 0.06470588235294117,
+        "Fos": -0.5205882352941177,
+        "Fosb": -0.10882352941176471,
+        "Jund": 0.09117647058823529,
+        "Fosl1": 0.4970588235294117
+      },
+      "direction_per_TF": {
+        "Junb": "~0",
+        "Fos": "-",
+        "Fosb": "-",
+        "Jund": "~0",
+        "Fosl1": "+"
+      },
+      "match_per_TF": {
+        "Junb": false,
+        "Fos": false,
+        "Fosb": false,
+        "Jund": false,
+        "Fosl1": true
+      },
+      "n_matches": 1,
+      "n_tested": 5,
+      "classification": "DIRECTIONAL_MISMATCH"
+    },
+    "FAP_equivalent": {
+      "ontology_label": "mesenchymal stem cell",
+      "n_pseudobulks": 16,
+      "expected_human_direction": "-",
+      "rho_per_TF": {
+        "Junb": 0.5323529411764706,
+        "Fos": 0.1764705882352941,
+        "Fosb": -0.38823529411764707,
+        "Jund": -0.5617647058823529,
+        "Fosl1": 0.2676470588235294
+      },
+      "direction_per_TF": {
+        "Junb": "+",
+        "Fos": "+",
+        "Fosb": "-",
+        "Jund": "-",
+        "Fosl1": "+"
+      },
+      "match_per_TF": {
+        "Junb": false,
+        "Fos": false,
+        "Fosb": true,
+        "Jund": true,
+        "Fosl1": false
+      },
+      "n_matches": 2,
+      "n_tested": 5,
+      "classification": "DIRECTIONAL_MISMATCH"
+    },
+    "MuSC": {
+      "ontology_label": "skeletal muscle satellite cell",
+      "n_pseudobulks": 15,
+      "expected_human_direction": "+",
+      "rho_per_TF": {
+        "Junb": 0.8142857142857142,
+        "Fos": 0.532142857142857,
+        "Fosb": 0.42142857142857143,
+        "Jund": 0.6357142857142856,
+        "Fosl1": 0.2571428571428571
+      },
+      "direction_per_TF": {
+        "Junb": "+",
+        "Fos": "+",
+        "Fosb": "+",
+        "Jund": "+",
+        "Fosl1": "+"
+      },
+      "match_per_TF": {
+        "Junb": true,
+        "Fos": true,
+        "Fosb": true,
+        "Jund": true,
+        "Fosl1": true
+      },
+      "n_matches": 5,
+      "n_tested": 5,
+      "classification": "DIRECTIONAL_MATCH"
+    },
+    "SMC": {
+      "ontology_label": "smooth muscle cell",
+      "n_pseudobulks": 12,
+      "expected_human_direction": null,
+      "rho_per_TF": {
+        "Junb": 0.1958041958041958,
+        "Fos": -0.02097902097902098,
+        "Fosb": -0.1188811188811189,
+        "Jund": -0.23076923076923078,
+        "Fosl1": -0.08391608391608392
+      },
+      "direction_per_TF": {
+        "Junb": "+",
+        "Fos": "~0",
+        "Fosb": "-",
+        "Jund": "-",
+        "Fosl1": "~0"
+      },
+      "classification": "NO_PREDICTION (no pre-registered human expectation for SMC)",
+      "n_matches": null,
+      "n_tested": null
+    },
+    "Macrophage": {
+      "ontology_label": "macrophage",
+      "n_pseudobulks": 14,
+      "expected_human_direction": "-",
+      "rho_per_TF": {
+        "Junb": 0.5780219780219781,
+        "Fos": 0.059340659340659345,
+        "Fosb": 0.9252747252747253,
+        "Jund": 0.6043956043956044,
+        "Fosl1": 0.7846153846153847
+      },
+      "direction_per_TF": {
+        "Junb": "+",
+        "Fos": "~0",
+        "Fosb": "+",
+        "Jund": "+",
+        "Fosl1": "+"
+      },
+      "match_per_TF": {
+        "Junb": false,
+        "Fos": true,
+        "Fosb": false,
+        "Jund": false,
+        "Fosl1": false
+      },
+      "n_matches": 1,
+      "n_tested": 5,
+      "classification": "DIRECTIONAL_MISMATCH"
+    }
+  },
+  "power_disclaimer": "At N=12-16 pseudobulks the Fisher-z 95% CI on a point estimate rho=0.5 has lower bound ~-0.07 (N=12) to ~0.00 (N=16), i.e. CIs will typically cross zero. The classification reported here is SIGN-BASED directional only. Per Analysis C decision rule: DIRECTIONAL MATCH if >=4/5 AP-1 TFs match human sign expectation; DIRECTIONAL MISMATCH if <=2/5; AMBIGUOUS if 3/5. We do NOT claim statistical replication.",
+  "headline": "EC=DIRECTIONAL_MISMATCH (1/5); MuSC=DIRECTIONAL_MATCH (5/5); FAP_equivalent=DIRECTIONAL_MISMATCH (2/5)",
+  "paper_call": "DIRECTIONAL_REPLICATION_FAILS: human-specific (mismatch in EC or MuSC)."
+}

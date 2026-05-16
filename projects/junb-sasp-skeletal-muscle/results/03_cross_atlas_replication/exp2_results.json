@@ -1,0 +1,100 @@
+{
+  "smad_collagen_rho": 0.10547881950234739,
+  "smad_collagen_pval": 7.770389147688442e-29,
+  "smad_collagen_r2": 0.01112578136360878,
+  "fos_collagen_unconditional_rho": 0.2575524298773606,
+  "fos_collagen_unconditional_pval": 1.15530361703122e-167,
+  "fos_collagen_unconditional_r2": 0.06633325413573275,
+  "junb_collagen_unconditional_rho": 0.20815171742020214,
+  "junb_collagen_unconditional_pval": 6.553578676453271e-109,
+  "junb_collagen_unconditional_r2": 0.04332713746497968,
+  "smad_terciles": {
+    "fos_collagen_tercile_0": {
+      "rho": 0.2566867024076596,
+      "pval": 1.0812281133024952e-56,
+      "n": 3696
+    },
+    "junb_collagen_tercile_0": {
+      "rho": 0.2263876350355787,
+      "pval": 3.625467881095288e-44,
+      "n": 3696
+    },
+    "fos_collagen_tercile_1": {
+      "rho": 0.23429950286255025,
+      "pval": 2.0378649053877149e-47,
+      "n": 3708
+    },
+    "junb_collagen_tercile_1": {
+      "rho": 0.1863038283094398,
+      "pval": 2.6043001386746937e-30,
+      "n": 3708
+    },
+    "fos_collagen_tercile_2": {
+      "rho": 0.24188700395579907,
+      "pval": 2.348958321255274e-50,
+      "n": 3696
+    },
+    "junb_collagen_tercile_2": {
+      "rho": 0.1788035239712037,
+      "pval": 6.285827648246396e-28,
+      "n": 3696
+    }
+  },
+  "smad_age_cohen_d": -7.186633753207565e-17,
+  "smad_age_tstat": -2.144228380066707e-15,
+  "smad_age_pval": 0.9999999999999982,
+  "n_young_mme": 968,
+  "n_old_mme": 11100,
+  "smad_collagen_fdr": 8.741687791149497e-29,
+  "fos_collagen_unconditional_fdr": 1.0397732553280981e-166,
+  "junb_collagen_unconditional_fdr": 2.9491104044039723e-108,
+  "fos_collagen_tercile_0_fdr": 3.2436843399074856e-56,
+  "junb_collagen_tercile_0_fdr": 5.438201821642933e-44,
+  "fos_collagen_tercile_1_fdr": 3.6681568296978864e-47,
+  "junb_collagen_tercile_1_fdr": 3.348385892581749e-30,
+  "fos_collagen_tercile_2_fdr": 5.2851562228243665e-50,
+  "junb_collagen_tercile_2_fdr": 6.285827648246396e-28,
+  "smad_targets_used": [
+    "ID1",
+    "ID2",
+    "ID3",
+    "ID4",
+    "SERPINE1",
+    "MMP2",
+    "MMP9",
+    "THBS1"
+  ],
+  "collagen_genes_used": [
+    "COL1A1",
+    "COL3A1",
+    "COL6A1",
+    "COL6A3",
+    "FN1",
+    "LOX",
+    "LOXL1"
+  ],
+  "smad_tercile_boundaries": [
+    -0.476597093491574,
+    0.3602915555018548
+  ],
+  "decision": {
+    "smad_age_effect": "NEGATIVE (d < 0.2)",
+    "smad_collagen": "WEAK (< 0.15)",
+    "fos_mediated_by_smad": "UNLIKELY (conditional rho > 0.15)",
+    "driver_ranking": [
+      [
+        "FOS",
+        0.2575524298773606
+      ],
+      [
+        "JUNB",
+        0.20815171742020214
+      ],
+      [
+        "SMAD",
+        0.10547881950234739
+      ]
+    ]
+  },
+  "fos_collagen_conditional_mean": 0.244291069742003
+}

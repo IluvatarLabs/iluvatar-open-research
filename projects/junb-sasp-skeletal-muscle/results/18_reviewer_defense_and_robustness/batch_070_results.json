@@ -1,0 +1,164 @@
+{
+  "batch": "batch_070",
+  "date": "2026-04-23",
+  "seed": 42,
+  "E1_pseudobulk": {
+    "status": "OK",
+    "per_compartment": {
+      "Vascular": {
+        "status": "OK",
+        "tech_confound_severity": "DEGENERATE",
+        "age_tech_crosstab": {
+          "scRNA": {
+            "old": 0,
+            "young": 1
+          },
+          "snRNA": {
+            "old": 15,
+            "young": 7
+          }
+        },
+        "design_factors": [
+          "age_binary",
+          "sex"
+        ],
+        "tech_vs_age_ratio": null,
+        "tech_vs_age_note": "tech term dropped due to degenerate age x tech crosstab",
+        "n_hallmark_sig_q01": 9,
+        "n_donors": 23,
+        "n_genes_tested": 32856,
+        "n_sig_padj0p1": 134
+      },
+      "MuSC": {
+        "status": "OK",
+        "tech_confound_severity": "MODERATE",
+        "age_tech_crosstab": {
+          "scRNA": {
+            "old": 4,
+            "young": 3
+          },
+          "snRNA": {
+            "old": 11,
+            "young": 5
+          }
+        },
+        "design_factors": [
+          "age_binary",
+          "tech",
+          "sex"
+        ],
+        "tech_dominated_frac_top100": 0.36,
+        "tech_vs_age_ratio": 0.81100627042639,
+        "tech_dominated_flag": true,
+        "n_hallmark_sig_q01": 27,
+        "n_donors": 23,
+        "n_genes_tested": 28028,
+        "n_sig_padj0p1": 63
+      },
+      "FAP": {
+        "status": "OK",
+        "tech_confound_severity": "DEGENERATE",
+        "age_tech_crosstab": {
+          "scRNA": {
+            "old": 0,
+            "young": 1
+          },
+          "snRNA": {
+            "old": 14,
+            "young": 7
+          }
+        },
+        "design_factors": [
+          "age_binary",
+          "sex"
+        ],
+        "tech_vs_age_ratio": null,
+        "tech_vs_age_note": "tech term dropped due to degenerate age x tech crosstab",
+        "n_hallmark_sig_q01": 10,
+        "n_donors": 22,
+        "n_genes_tested": 22712,
+        "n_sig_padj0p1": 22505
+      }
+    }
+  },
+  "E2_cellcount": {
+    "status": "OK",
+    "results": [
+      {
+        "compartment": "Vascular",
+        "TF": "JUNB",
+        "baseline_rho": 0.8360600179341936,
+        "baseline_N": 23,
+        "missing_sasp_genes": [],
+        "n_sasp_resolved": 12
+      },
+      {
+        "compartment": "MuSC",
+        "TF": "CDKN1A",
+        "baseline_rho": 0.798743491269497,
+        "baseline_N": 23,
+        "missing_sasp_genes": [],
+        "n_sasp_resolved": 12
+      }
+    ],
+    "jackknife_summary": [
+      {
+        "compartment": "Vascular",
+        "TF": "JUNB",
+        "baseline_rho": 0.8360600179341936,
+        "jackknife_min": 0.8148390529777174,
+        "jackknife_median": 0.8357904393294725,
+        "jackknife_max": 0.9118151672596794,
+        "jackknife_IQR_lo": 0.8205015898295431,
+        "jackknife_IQR_hi": 0.8414529761812983,
+        "jackknife_mean": 0.8351209792392721,
+        "jackknife_SE": 0.09468826927487876,
+        "jackknife_CI95_lo": 0.6495319714605097,
+        "jackknife_CI95_hi": 1.0207099870180345
+      },
+      {
+        "compartment": "MuSC",
+        "TF": "CDKN1A",
+        "baseline_rho": 0.798743491269497,
+        "jackknife_min": 0.7713686394274482,
+        "jackknife_median": 0.8012775067470813,
+        "jackknife_max": 0.8824831515511896,
+        "jackknife_IQR_lo": 0.7783863980878949,
+        "jackknife_IQR_hi": 0.8088101513474804,
+        "jackknife_mean": 0.797753445153781,
+        "jackknife_SE": 0.10913390651625147,
+        "jackknife_CI95_lo": 0.5838509883819281,
+        "jackknife_CI95_hi": 1.011655901925634
+      }
+    ],
+    "jackknife_summary_csv": "/home/yuanz/Documents/GitHub/biomarvin_fibro/experiments/batch_070/e2_jackknife_summary.csv",
+    "csv": "/home/yuanz/Documents/GitHub/biomarvin_fibro/experiments/batch_070/e2_cellcount_sensitivity.csv",
+    "readme": "/home/yuanz/Documents/GitHub/biomarvin_fibro/experiments/batch_070/e2_cellcount_sensitivity.README.txt"
+  },
+  "E3_power": {
+    "status": "OK",
+    "canonical_csv": "/home/yuanz/Documents/GitHub/biomarvin_fibro/experiments/batch_070/e3_power_annotated_canonical.csv",
+    "n_underpowered": 3,
+    "lr_n_pairs": 49,
+    "lr_csv": "/home/yuanz/Documents/GitHub/biomarvin_fibro/experiments/batch_070/e3_lr_multiple_testing.csv"
+  },
+  "E4_heatmap": {
+    "status": "OK",
+    "csv": "/home/yuanz/Documents/GitHub/biomarvin_fibro/experiments/batch_070/tf_coupling_4compartment.csv",
+    "png": "/home/yuanz/Documents/GitHub/biomarvin_fibro/experiments/batch_070/results/tf_coupling_4compartment_heatmap.png",
+    "n_na_cells": 12,
+    "n_total_cells": 24
+  },
+  "E5_audit": {
+    "status": "OK",
+    "csv": "/home/yuanz/Documents/GitHub/biomarvin_fibro/experiments/batch_070/confidence_tier_audit.csv",
+    "n_rows": 6,
+    "n_bookkeeping": 3,
+    "n_conditional": 3,
+    "notes": [
+      "F068_02: E3 FDR survivors=1/1 -> action=keep_ESTABLISHED",
+      "F068_03: E3 FDR survivors=1/1 -> action=keep_ESTABLISHED",
+      "F068_04: E3 FDR survivors=0/3 -> action=downgrade_to_SUGGESTED"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "bug_fixed": true,
+  "bug": "batch_048 loaded SKM_fibroblasts_Schwann (NA fibroblasts, 12 donors) as HLMA FAP",
+  "correction": "OMIX004308-02.h5ad is the correct HLMA FAP file (22 donors, 40,389 cells)",
+  "f080_old_rho": 0.573,
+  "f080_new_rho": -0.014,
+  "f080_new_n": 22,
+  "q2_rho": 0.573,
+  "q2_n": 12,
+  "hlma_fap_donor_rho": -0.014,
+  "hlma_fap_cell_rho": 0.207,
+  "d001_04_revised": "NA FAPs and HLMA FAPs are DIFFERENT datasets"
+}

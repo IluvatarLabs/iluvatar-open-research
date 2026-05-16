@@ -1,0 +1,26 @@
+{
+  "f084": {
+    "finding": "F084 HLMA Vascular JUNB-SASP",
+    "prior_rho": 0.929,
+    "obs_rho": 0.92868041091624,
+    "p_empirical": 0.0,
+    "significant": true
+  },
+  "f093": {
+    "finding": "F093 HLMA MuSC p21-SASP",
+    "prior_rho": 0.941,
+    "obs_rho": 0.9286561776286423,
+    "p_empirical": 0.0,
+    "significant": true
+  },
+  "batch_043_junb_endo": {
+    "finding": "batch_043 NA Endothelium JUNB-SASP",
+    "prior_rho": 0.776,
+    "obs_rho": 0.049036852783684234,
+    "p_empirical": 0.88,
+    "significant": false
+  },
+  "n_permutations": 10000,
+  "panel": "correct (no IGFBPs)",
+  "methodology_match": "All three use CORRECT SASP12 panel (matching batch_023 V1)"
+}

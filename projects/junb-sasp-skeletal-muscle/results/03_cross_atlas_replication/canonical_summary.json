@@ -1,0 +1,11 @@
+{
+  "f084_rho": 0.92868041091624,
+  "f093_rho": 0.9286561776286423,
+  "f080_rho": 0.5734265734265735,
+  "d2_rho": 0.7202797202797203,
+  "klf6_vas_rho": 0.66600790513834,
+  "klf6_endo_rho": -0.1398601398601399,
+  "klf6_classification": "HLMA-specific",
+  "batch_045_bug_confirmed": true,
+  "bug_explanation": "Z-score normalization within donors destroys between-donor variance"
+}

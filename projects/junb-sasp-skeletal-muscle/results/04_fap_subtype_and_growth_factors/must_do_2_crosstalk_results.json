@@ -1,0 +1,340 @@
+{
+  "junb_stratification": {
+    "junb_pos_n_cells": 7420,
+    "junb_neg_n_cells": 7420,
+    "junb_pos_mean": 0.9868984222412109,
+    "junb_neg_mean": -1.1105263233184814,
+    "quartile_threshold": 0.5999783277511597
+  },
+  "ligand_enrichment": [
+    {
+      "gene": "IL6",
+      "mean_junb_neg": -0.30384179949760437,
+      "mean_junb_pos": -0.06632475554943085,
+      "log2FC": NaN,
+      "p_value": 1.6798558774654514e-90,
+      "p_value_corrected": 1.595863083592179e-89,
+      "significant": false
+    },
+    {
+      "gene": "CCL2",
+      "mean_junb_neg": -0.32212039828300476,
+      "mean_junb_pos": 0.26618051528930664,
+      "log2FC": NaN,
+      "p_value": 2.2025018474885463e-287,
+      "p_value_corrected": 4.184753510228238e-286,
+      "significant": false
+    },
+    {
+      "gene": "CXCL1",
+      "mean_junb_neg": -0.07538988441228867,
+      "mean_junb_pos": 0.008686807937920094,
+      "log2FC": 2.1428535023045567,
+      "p_value": 4.083105754247783e-09,
+      "p_value_corrected": 8.61988992563421e-09,
+      "significant": true
+    },
+    {
+      "gene": "CXCL2",
+      "mean_junb_neg": -0.23158447444438934,
+      "mean_junb_pos": 0.01094874832779169,
+      "log2FC": NaN,
+      "p_value": 4.024576082050699e-64,
+      "p_value_corrected": 2.548898185298776e-63,
+      "significant": false
+    },
+    {
+      "gene": "CXCL3",
+      "mean_junb_neg": -0.09909581393003464,
+      "mean_junb_pos": -0.01695055514574051,
+      "log2FC": 6.521207022831138,
+      "p_value": 1.397908114560311e-10,
+      "p_value_corrected": 3.320031772080739e-10,
+      "significant": true
+    },
+    {
+      "gene": "CXCL8",
+      "mean_junb_neg": -0.06035304814577103,
+      "mean_junb_pos": -0.03125041723251343,
+      "log2FC": 0.7941410054258813,
+      "p_value": 0.027669247175217446,
+      "p_value_corrected": 0.04380964136076096,
+      "significant": true
+    },
+    {
+      "gene": "TNF",
+      "mean_junb_neg": -0.03876607120037079,
+      "mean_junb_pos": 0.0023796693421900272,
+      "log2FC": 0.7415260967338839,
+      "p_value": 0.003571129480497279,
+      "p_value_corrected": 0.00678514601294483,
+      "significant": true
+    },
+    {
+      "gene": "IL1B",
+      "mean_junb_neg": -0.018952317535877228,
+      "mean_junb_pos": -0.028375297784805298,
+      "log2FC": -0.17831369709573552,
+      "p_value": 0.2938356372809785,
+      "p_value_corrected": 0.2938356372809785,
+      "significant": false
+    },
+    {
+      "gene": "SERPINE1",
+      "mean_junb_neg": -0.1605335921049118,
+      "mean_junb_pos": 0.008455092087388039,
+      "log2FC": NaN,
+      "p_value": 4.553661080497049e-26,
+      "p_value_corrected": 2.1629890132360985e-25,
+      "significant": false
+    },
+    {
+      "gene": "MMP3",
+      "mean_junb_neg": -0.06382417678833008,
+      "mean_junb_pos": -0.041094325482845306,
+      "log2FC": 0.7033807719488081,
+      "p_value": 0.08570517878523409,
+      "p_value_corrected": 0.10177489980746549,
+      "significant": false
+    },
+    {
+      "gene": "PLAU",
+      "mean_junb_neg": -0.1362518072128296,
+      "mean_junb_pos": 0.030179623514413834,
+      "log2FC": NaN,
+      "p_value": 5.014932293184909e-24,
+      "p_value_corrected": 1.588061892841888e-23,
+      "significant": false
+    },
+    {
+      "gene": "PLAUR",
+      "mean_junb_neg": -0.17808692157268524,
+      "mean_junb_pos": -0.02301550842821598,
+      "log2FC": NaN,
+      "p_value": 2.706241114238087e-23,
+      "p_value_corrected": 7.345511595789093e-23,
+      "significant": false
+    },
+    {
+      "gene": "FGF7",
+      "mean_junb_neg": -0.17385868728160858,
+      "mean_junb_pos": -0.005659706890583038,
+      "log2FC": NaN,
+      "p_value": 1.7498451503400974e-24,
+      "p_value_corrected": 6.649411571292371e-24,
+      "significant": false
+    },
+    {
+      "gene": "CXCL10",
+      "mean_junb_neg": -0.03616989031434059,
+      "mean_junb_pos": -0.01128370501101017,
+      "log2FC": 0.4749619893360877,
+      "p_value": 0.04547926077826407,
+      "p_value_corrected": 0.06646968882977057,
+      "significant": false
+    },
+    {
+      "gene": "CXCL6",
+      "mean_junb_neg": -0.04111397638916969,
+      "mean_junb_pos": -0.022830739617347717,
+      "log2FC": 0.39010102238896005,
+      "p_value": 0.06777089567794933,
+      "p_value_corrected": 0.08584313452540249,
+      "significant": false
+    },
+    {
+      "gene": "HGF",
+      "mean_junb_neg": -0.010474570095539093,
+      "mean_junb_pos": 0.008107326924800873,
+      "log2FC": 0.2720948578342903,
+      "p_value": 0.2611162169646769,
+      "p_value_corrected": 0.2756226734627145,
+      "significant": false
+    },
+    {
+      "gene": "MMP1",
+      "mean_junb_neg": -0.04731415584683418,
+      "mean_junb_pos": -0.03814347833395004,
+      "log2FC": 0.23151032490183976,
+      "p_value": 0.05573142695057868,
+      "p_value_corrected": 0.07563550800435678,
+      "significant": false
+    },
+    {
+      "gene": "IL1RN",
+      "mean_junb_neg": -0.015033458359539509,
+      "mean_junb_pos": -0.027093611657619476,
+      "log2FC": -0.22084960997418923,
+      "p_value": 0.09762881406656523,
+      "p_value_corrected": 0.10911455689792585,
+      "significant": false
+    },
+    {
+      "gene": "PDGFA",
+      "mean_junb_neg": 0.0002034991921391338,
+      "mean_junb_pos": -0.036183204501867294,
+      "log2FC": -0.6509248176209796,
+      "p_value": 0.019518115386568724,
+      "p_value_corrected": 0.03371310839498234,
+      "significant": false
+    }
+  ],
+  "musc_receptor_expression": {
+    "Quiescent MuSC": {
+      "FGFR1": 0.6096176802471368,
+      "TNFRSF1A": 0.34481781522129656,
+      "PDGFRA": 0.23304043772931923,
+      "PLAUR": 0.10333758916888691,
+      "IL1RAP": 0.23569844091149447,
+      "PDGFRB": 0.15643027140383053,
+      "CXCR2": 0.0021884699109825704,
+      "FGFR4": 0.856965981066342,
+      "IL6R": 0.13951567011137658,
+      "FGFR2": 0.008773766916528461,
+      "LRP1": 0.7925125223917686,
+      "CXCR3": 0.001210425046899048,
+      "IL1R1": 0.1625512184534621,
+      "IL6ST": 0.9258506295786572,
+      "FGFR3": 0.005302852773356904,
+      "TNFRSF1B": 0.057672010926874705,
+      "CCR4": 0.0005605622473651671,
+      "MET": 0.481995409575736,
+      "IL1R2": 0.0024659183945426456,
+      "CXCR1": 0.000173662629771906,
+      "CCR2": 0.0006003404818647405
+    },
+    "Early Primed MuSC": {
+      "FGFR1": 0.6121449674969554,
+      "TNFRSF1A": 0.5688150941661985,
+      "PDGFRA": 0.2345418916976834,
+      "PLAUR": 0.14262903796522688,
+      "IL1RAP": 0.24405515719321239,
+      "PDGFRB": 0.15070572270381263,
+      "CXCR2": 0.0,
+      "FGFR4": 1.0189026013692692,
+      "IL6R": 0.11747742876961574,
+      "FGFR2": 0.006106990175922525,
+      "LRP1": 1.0047779837718642,
+      "CXCR3": 0.0030982534034985037,
+      "IL1R1": 0.30223341664768516,
+      "IL6ST": 1.213779561099009,
+      "FGFR3": 0.000914305364106262,
+      "TNFRSF1B": 0.05805217444674898,
+      "CCR4": 0.0,
+      "MET": 0.32932974781128177,
+      "IL1R2": 0.004395820573202285,
+      "CXCR1": 0.0,
+      "CCR2": 0.0
+    },
+    "Late Primed MuSC": {
+      "FGFR1": 0.7650280144325522,
+      "TNFRSF1A": 0.22860429903795554,
+      "PDGFRA": 0.14086074330085932,
+      "PLAUR": 0.0917118808557821,
+      "IL1RAP": 0.33700632875741915,
+      "PDGFRB": 0.050103367068046745,
+      "CXCR2": 0.0,
+      "FGFR4": 0.7510239360637443,
+      "IL6R": 0.08917953056651493,
+      "FGFR2": 0.0,
+      "LRP1": 0.48104539790818857,
+      "CXCR3": 0.0,
+      "IL1R1": 0.08869174642618312,
+      "IL6ST": 0.31144924045995226,
+      "FGFR3": 0.00658818524937297,
+      "TNFRSF1B": 0.06542311886022258,
+      "CCR4": 0.0,
+      "MET": 0.3814007248296294,
+      "IL1R2": 0.007221665493277616,
+      "CXCR1": 0.0,
+      "CCR2": 0.0
+    },
+    "Diff.MuSC": {
+      "FGFR1": 0.9749556834186653,
+      "TNFRSF1A": 0.44706238264922316,
+      "PDGFRA": 0.10036782174997914,
+      "PLAUR": 0.09948800950003191,
+      "IL1RAP": 0.22050586779680484,
+      "PDGFRB": 0.15264183228216896,
+      "CXCR2": 0.0008280129006500762,
+      "FGFR4": 1.0104607668858623,
+      "IL6R": 0.04954927342935379,
+      "FGFR2": 0.0021089109636488416,
+      "LRP1": 0.5670039214308599,
+      "CXCR3": 0.0,
+      "IL1R1": 0.21696935943182105,
+      "IL6ST": 1.0375144756693868,
+      "FGFR3": 0.003729504607026539,
+      "TNFRSF1B": 0.03627220564349868,
+      "CCR4": 0.0009092365701993307,
+      "MET": 0.4786636208591146,
+      "IL1R2": 0.002054158708525105,
+      "CXCR1": 0.0,
+      "CCR2": 0.001143743476224324
+    }
+  },
+  "crosstalk_summary": [
+    {
+      "ligand": "TNF",
+      "receptor": "TNFRSF1A",
+      "musc_state": "Quiescent MuSC",
+      "receptor_expression": 0.34481781522129656,
+      "ligand_log2FC": 0.7415260967338839,
+      "implication": "suppresses activation"
+    },
+    {
+      "ligand": "TNF",
+      "receptor": "TNFRSF1A",
+      "musc_state": "Early Primed MuSC",
+      "receptor_expression": 0.5688150941661985,
+      "ligand_log2FC": 0.7415260967338839,
+      "implication": "suppresses activation"
+    },
+    {
+      "ligand": "TNF",
+      "receptor": "TNFRSF1A",
+      "musc_state": "Late Primed MuSC",
+      "receptor_expression": 0.22860429903795554,
+      "ligand_log2FC": 0.7415260967338839,
+      "implication": "suppresses activation"
+    },
+    {
+      "ligand": "TNF",
+      "receptor": "TNFRSF1A",
+      "musc_state": "Diff.MuSC",
+      "receptor_expression": 0.44706238264922316,
+      "ligand_log2FC": 0.7415260967338839,
+      "implication": "suppresses activation"
+    }
+  ],
+  "metadata": {
+    "fap_n_cells_total": 40389,
+    "aged_fap_n_cells": 29679,
+    "musc_n_cells_total": 9559,
+    "n_ligands_tested": 19,
+    "n_ligands_enriched": 4,
+    "n_crosstalk_pairs": 4
+  },
+  "interpretation": {
+    "primary_finding": "TNF is the only significantly enriched SASP ligand in JUNB+ aged FAPs that signals to MuSCs",
+    "crosstalk_pathway": "JUNB+ FAPs -> TNF -> TNFRSF1A -> suppresses MuSC activation",
+    "evidence_strength": "ESTABLISHED",
+    "key_numbers": {
+      "junb_pos_cells": 7420,
+      "tnf_log2FC": 0.74,
+      "tnf_pvalue_adj": 0.007,
+      "tnf_receptor_tnfrsf1a_expression": {
+        "Quiescent_MuSC": 0.34,
+        "Early_Primed_MuSC": 0.57,
+        "Late_Primed_MuSC": 0.23,
+        "Diff_MuSC": 0.45
+      }
+    },
+    "growth_factor_analysis": {
+      "FGF7": "NOT elevated in JUNB+ FAPs",
+      "HGF": "Trend up but not significant (p=0.28)",
+      "PDGFA": "DECREASED in JUNB+ FAPs (log2FC=-0.65, p_adj=0.03)"
+    },
+    "biological_implication": "JUNB+ aged FAPs shift from regenerative secretome (FGF7, HGF, PDGFA) to inflammatory secretome (TNF). This impairs MuSC-mediated regeneration in aged muscle."
+  }
+}

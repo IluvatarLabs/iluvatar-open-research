@@ -1,0 +1,7 @@
+cluster,n_cells,dominant_annotation,mean_JUNB,mean_SASP12,frac_old,frac_young
+0,3563,Quiescent MuSC,2.4261,0.1473,0.918,0.082
+1,2533,Quiescent MuSC,0.2039,0.0203,0.645,0.355
+2,1243,Quiescent MuSC,2.1293,0.2271,0.002,0.998
+3,1078,Quiescent MuSC,2.4503,0.2698,0.999,0.001
+4,800,Quiescent MuSC,2.2785,0.2655,1.0,0.0
+5,342,Quiescent MuSC,1.5447,0.0603,1.0,0.0

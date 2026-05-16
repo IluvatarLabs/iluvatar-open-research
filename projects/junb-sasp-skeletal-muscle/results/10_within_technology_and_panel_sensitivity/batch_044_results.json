@@ -1,0 +1,81 @@
+{
+  "n_donors": 22,
+  "jUNB_rho_correct": -0.2693393562958781,
+  "jUNB_pval_correct": 0.22546327178614411,
+  "jUNB_rho_mixed": -0.313382269904009,
+  "jUNB_pval_mixed": 0.155560751936561,
+  "per_gene": [
+    {
+      "gene": "CCL2",
+      "rho": 0.07509881422924902,
+      "pvalue": 0.7397738044450592,
+      "direction": "flat"
+    },
+    {
+      "gene": "CXCL1",
+      "rho": -0.1993224167137211,
+      "pvalue": 0.37383975032592687,
+      "direction": "flat"
+    },
+    {
+      "gene": "CXCL2",
+      "rho": 0.010728402032749858,
+      "pvalue": 0.9622067945199976,
+      "direction": "flat"
+    },
+    {
+      "gene": "CXCL3",
+      "rho": -0.30095990965556185,
+      "pvalue": 0.1735037777241619,
+      "direction": "negative"
+    },
+    {
+      "gene": "CXCL6",
+      "rho": -0.45567476002258617,
+      "pvalue": 0.03307006765919109,
+      "direction": "negative"
+    },
+    {
+      "gene": "IL6",
+      "rho": -0.4703557312252965,
+      "pvalue": 0.027168310320796737,
+      "direction": "negative"
+    },
+    {
+      "gene": "CXCL8",
+      "rho": -0.3822699040090345,
+      "pvalue": 0.07913423131078041,
+      "direction": "negative"
+    },
+    {
+      "gene": "SERPINE1",
+      "rho": 0.2648221343873518,
+      "pvalue": 0.23364124157867966,
+      "direction": "positive"
+    },
+    {
+      "gene": "MMP1",
+      "rho": -0.43986448334274425,
+      "pvalue": 0.040511430908051246,
+      "direction": "negative"
+    },
+    {
+      "gene": "MMP3",
+      "rho": -0.3235460191981932,
+      "pvalue": 0.14187949365461486,
+      "direction": "negative"
+    },
+    {
+      "gene": "PLAU",
+      "rho": 0.15415019762845852,
+      "pvalue": 0.493384628947119,
+      "direction": "flat"
+    },
+    {
+      "gene": "PLAUR",
+      "rho": -0.033314511575381144,
+      "pvalue": 0.8829914722792039,
+      "direction": "flat"
+    }
+  ]
+}

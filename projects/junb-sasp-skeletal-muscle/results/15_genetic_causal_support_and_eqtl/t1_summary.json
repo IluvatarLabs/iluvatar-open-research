@@ -1,0 +1,105 @@
+{
+  "env": {
+    "python": "3.13.7",
+    "numpy": "2.0.1",
+    "pandas": "2.3.2",
+    "scipy": "1.16.2",
+    "statsmodels": "0.14.6",
+    "gseapy": "1.1.13",
+    "scanpy": "1.11.5",
+    "decoupler": "2.1.5",
+    "platform": "Linux-6.17.0-22-generic-x86_64-with-glibc2.42",
+    "command": "experiments/batch_065/run_t1_hypoxia.py",
+    "seed": 42
+  },
+  "t1a_hallmark_grid": {
+    "csv": "/home/yuanz/Documents/GitHub/biomarvin_fibro/experiments/batch_065/t1a_hallmark_grid.csv",
+    "n_rows": 48
+  },
+  "t1a_ortiz_barahona": {
+    "csv": "/home/yuanz/Documents/GitHub/biomarvin_fibro/experiments/batch_065/t1a_ortiz_barahona.csv",
+    "source": "decoupler.op.collectri:HIF1A+EPAS1+ARNT",
+    "set_size": 531
+  },
+  "t1a_contamination_audit": {
+    "csv": "/home/yuanz/Documents/GitHub/biomarvin_fibro/experiments/batch_065/t1a_contamination_audit.csv"
+  },
+  "t1b_correlations": {
+    "csv": "/home/yuanz/Documents/GitHub/biomarvin_fibro/experiments/batch_065/t1b_correlations.csv",
+    "scores_csv": "/home/yuanz/Documents/GitHub/biomarvin_fibro/experiments/batch_065/t1b_ssgsea_scores.csv"
+  },
+  "t1c_regressions": {
+    "csv": "/home/yuanz/Documents/GitHub/biomarvin_fibro/experiments/batch_065/t1c_regressions.csv"
+  },
+  "verdict": {
+    "t1a_vasc_up_hallmark_hypoxia": {
+      "jaccard": 0.0,
+      "overlap": 0,
+      "p_bonf_48": 1.0,
+      "hit_positive_criterion": false
+    },
+    "t1a_vasc_up_ortiz_barahona": {
+      "jaccard": 0.007987220447284345,
+      "overlap": 5,
+      "p_bonf_48": 0.8573773616183145,
+      "source": "decoupler.op.collectri:HIF1A+EPAS1+ARNT",
+      "hit_positive_criterion": false,
+      "hit_negative_criterion": true
+    },
+    "t1a_vasc_up_broad_stress": {
+      "n_hallmark_sets_jaccard_gt_010": 0,
+      "total_hallmark_sets": 8,
+      "trigger_broad_stress": false
+    },
+    "t1a_contamination_audit": {
+      "raw_overlap_hypoxia": 0,
+      "contam_overlap_14ap1sasp": 0,
+      "contam_genes_hit": "",
+      "clean_overlap": 0,
+      "clean_jaccard": 0.0,
+      "clean_p_bonf_48": 1.0
+    },
+    "t1b_hallmark_hypoxia": {
+      "pooled_rho": -0.17053982469964457,
+      "pooled_p": 0.376430447427069,
+      "pooled_n": 29,
+      "within_scRNA_rho": 0.9549937104572924,
+      "within_scRNA_n": 7,
+      "within_snRNA_rho": -0.10639529241637459,
+      "within_snRNA_n": 22,
+      "tech_confound_flags": [
+        "sign_flip(stratum=+0.955, pooled=-0.171)",
+        "magnitude_gap(1.13)"
+      ],
+      "tech_confound_unstable": true,
+      "hit_positive_criterion": false,
+      "hit_intermediate_criterion": false,
+      "hit_negative_criterion": true
+    },
+    "t1c_gtex": {
+      "beta_age_m1": 0.001344061304434277,
+      "beta_age_m2": -0.0003236228352987351,
+      "p_age_m1": 0.00015024682823751062,
+      "p_age_m2": 0.6240852572452069,
+      "p_smtsisch": 0.00011100040570876781,
+      "p_age_smtsisch_interaction": 0.0007124383466809154,
+      "attenuation_pct": 1.240779817282925,
+      "hit_positive_criterion": true,
+      "hit_negative_criterion": false,
+      "sensitivity_20pct": true,
+      "sensitivity_50pct": true,
+      "n": 803
+    },
+    "criteria_summary": {
+      "positive_1_dual_jaccard": false,
+      "positive_2_hlma_rho": false,
+      "positive_3_gtex_attenuation": true,
+      "negative_1_ortiz_low": true,
+      "negative_2_hlma_rho_low": true,
+      "negative_3_gtex_no_attenuation": false
+    },
+    "pre_registered_verdict": "UNINTERPRETABLE-TECH-CONFOUND"
+  },
+  "pre_registered_verdict": "UNINTERPRETABLE-TECH-CONFOUND",
+  "elapsed_sec": 45.81
+}

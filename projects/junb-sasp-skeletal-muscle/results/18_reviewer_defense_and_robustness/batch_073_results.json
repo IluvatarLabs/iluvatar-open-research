@@ -1,0 +1,343 @@
+{
+  "batch": "batch_073",
+  "date": "2026-05-09",
+  "environment": {
+    "timestamp": "2026-05-09T20:06:10.196533",
+    "python": "3.13.7 (main, Mar  3 2026, 12:19:54) [GCC 15.2.0]",
+    "platform": "Linux-6.17.0-22-generic-x86_64-with-glibc2.42",
+    "numpy": "2.0.1",
+    "pandas": "2.3.2",
+    "scipy": "1.16.2",
+    "statsmodels": "0.14.6",
+    "anndata": "0.12.10"
+  },
+  "experiments": {
+    "E1_within_country_slopes": {
+      "description": "Within-country JUNB-age and SASP12-age regression slopes",
+      "source": "PI directive A1",
+      "results": {
+        "Vascular": {
+          "Pooled": {
+            "N": 23,
+            "results": {
+              "JUNB_OLS": {
+                "estimate": 0.007669269385950169,
+                "p_value": 0.30951798037573197,
+                "R2": 0.04911014164093286,
+                "effect_size": null
+              },
+              "JUNB_Spearman": {
+                "estimate": 0.03697270926767747,
+                "p_value": 0.8669896969074844,
+                "R2": null,
+                "effect_size": null
+              },
+              "SASP12_OLS": {
+                "estimate": 0.0010027439802790955,
+                "p_value": 0.35353665432342496,
+                "R2": 0.04110184402862249,
+                "effect_size": null
+              },
+              "SASP12_Spearman": {
+                "estimate": 0.1693072626358761,
+                "p_value": 0.4399432136685203,
+                "R2": null,
+                "effect_size": null
+              }
+            }
+          },
+          "China": {
+            "N": 14,
+            "results": {
+              "JUNB_OLS": {
+                "estimate": 0.01781885238657699,
+                "p_value": 0.061693261414428546,
+                "R2": 0.26138076018122514,
+                "effect_size": null
+              },
+              "JUNB_Spearman": {
+                "estimate": 0.4589980976347002,
+                "p_value": 0.09875221186520337,
+                "R2": null,
+                "effect_size": null
+              },
+              "SASP12_OLS": {
+                "estimate": 0.001871094001087172,
+                "p_value": 0.23022828260080613,
+                "R2": 0.11749919491416438,
+                "effect_size": null
+              },
+              "SASP12_Spearman": {
+                "estimate": 0.3436942276974808,
+                "p_value": 0.22890816345352993,
+                "R2": null,
+                "effect_size": null
+              }
+            }
+          },
+          "China_MWU": {
+            "N": 14,
+            "results": {
+              "JUNB_MannWhitney": {
+                "estimate": 6.0,
+                "p_value": 0.02897102897102897,
+                "R2": null,
+                "effect_size": 0.7333333333333334
+              },
+              "SASP12_MannWhitney": {
+                "estimate": 9.0,
+                "p_value": 0.08291708291708291,
+                "R2": null,
+                "effect_size": 0.6
+              }
+            }
+          },
+          "Spain": {
+            "N": 9,
+            "results": {
+              "JUNB_OLS": {
+                "estimate": 0.0011750086769019585,
+                "p_value": 0.44531044172973466,
+                "R2": 0.08544092546683113,
+                "effect_size": null
+              },
+              "JUNB_Spearman": {
+                "estimate": 0.13561270072416207,
+                "p_value": 0.7279311027906801,
+                "R2": null,
+                "effect_size": null
+              },
+              "SASP12_OLS": {
+                "estimate": 0.0006734148029701294,
+                "p_value": 0.2983698007926481,
+                "R2": 0.15271766107970508,
+                "effect_size": null
+              },
+              "SASP12_Spearman": {
+                "estimate": 0.41666666666666663,
+                "p_value": 0.26458604674749614,
+                "R2": null,
+                "effect_size": null
+              }
+            }
+          }
+        },
+        "MuSC": {
+          "Pooled": {
+            "N": 23,
+            "results": {
+              "JUNB_OLS": {
+                "estimate": 0.004742375479642493,
+                "p_value": 0.5453314468306413,
+                "R2": 0.017677285942404142,
+                "effect_size": null
+              },
+              "JUNB_Spearman": {
+                "estimate": -0.005020444715748749,
+                "p_value": 0.9818620161175199,
+                "R2": null,
+                "effect_size": null
+              },
+              "SASP12_OLS": {
+                "estimate": -0.00024456149691366903,
+                "p_value": 0.7386638991899633,
+                "R2": 0.00541310920411453,
+                "effect_size": null
+              },
+              "SASP12_Spearman": {
+                "estimate": -0.17263758508043214,
+                "p_value": 0.4308657509334699,
+                "R2": null,
+                "effect_size": null
+              }
+            }
+          },
+          "China": {
+            "N": 14,
+            "results": {
+              "JUNB_OLS": {
+                "estimate": 0.012705306404434936,
+                "p_value": 0.18442850727168975,
+                "R2": 0.14182895199566914,
+                "effect_size": null
+              },
+              "JUNB_Spearman": {
+                "estimate": 0.3281725528982397,
+                "p_value": 0.2519976862905572,
+                "R2": null,
+                "effect_size": null
+              },
+              "SASP12_OLS": {
+                "estimate": -0.00010676221215951055,
+                "p_value": 0.9199295948514046,
+                "R2": 0.0008774600611385353,
+                "effect_size": null
+              },
+              "SASP12_Spearman": {
+                "estimate": -0.0509997886260778,
+                "p_value": 0.8625385905256262,
+                "R2": null,
+                "effect_size": null
+              }
+            }
+          },
+          "China_MWU": {
+            "N": 14,
+            "results": {
+              "JUNB_MannWhitney": {
+                "estimate": 10.0,
+                "p_value": 0.11188811188811189,
+                "R2": null,
+                "effect_size": 0.5555555555555556
+              },
+              "SASP12_MannWhitney": {
+                "estimate": 18.0,
+                "p_value": 0.6063936063936064,
+                "R2": null,
+                "effect_size": 0.19999999999999996
+              }
+            }
+          },
+          "Spain": {
+            "N": 9,
+            "results": {
+              "JUNB_OLS": {
+                "estimate": 0.0015344351077898964,
+                "p_value": 0.3795048212493111,
+                "R2": 0.11164297431371473,
+                "effect_size": null
+              },
+              "JUNB_Spearman": {
+                "estimate": 0.37625606633113623,
+                "p_value": 0.3182624239694385,
+                "R2": null,
+                "effect_size": null
+              },
+              "SASP12_OLS": {
+                "estimate": 0.00011595494696799207,
+                "p_value": 0.3312764365331213,
+                "R2": 0.1346839417118013,
+                "effect_size": null
+              },
+              "SASP12_Spearman": {
+                "estimate": 0.27386127875258304,
+                "p_value": 0.47579723851802413,
+                "R2": null,
+                "effect_size": null
+              }
+            }
+          }
+        }
+      }
+    },
+    "E2_egr2_polarity": {
+      "description": "EGR2 co-expression module target overlap between compartments",
+      "source": "PI directive A2",
+      "caveat": "Co-expression modules only (GRNBoost2), NOT motif-pruned. Interpretation capped at SUGGESTED.",
+      "results": {
+        "jaccard_median": 0.0,
+        "jaccard_p80": 0.0
+      }
+    },
+    "E3_runx2_fap": {
+      "description": "RUNX2+ FAP JUNB-SASP coupling (cell-level primary, donor-level secondary)",
+      "source": "PI directive A3",
+      "results": {
+        "cell_level": [
+          {
+            "subtype": "MME+ FAP",
+            "N_cells": 15757,
+            "rho": 0.18915978625040808,
+            "p_value": 7.38086766755856e-127,
+            "junb_mean": -0.06534881265901397,
+            "junb_nonzero_frac": 0.603731674811195,
+            "sasp12_mean": -0.07571966859026694
+          },
+          {
+            "subtype": "CD55+ FAP",
+            "N_cells": 10384,
+            "rho": 0.20029959514423062,
+            "p_value": 1.902978496857491e-94,
+            "junb_mean": 0.13047526402002285,
+            "junb_nonzero_frac": 0.6765215716486903,
+            "sasp12_mean": -0.024829033623497896
+          },
+          {
+            "subtype": "Tenocyte",
+            "N_cells": 7388,
+            "rho": 0.18340743639856963,
+            "p_value": 6.661888517870543e-57,
+            "junb_mean": 0.34265291009423726,
+            "junb_nonzero_frac": 0.7989983757444504,
+            "sasp12_mean": 0.23194899179722642
+          },
+          {
+            "subtype": "GPC3+ FAP",
+            "N_cells": 5539,
+            "rho": 0.21755891689955958,
+            "p_value": 2.4606410596937767e-60,
+            "junb_mean": -0.007377913450002514,
+            "junb_nonzero_frac": 0.6338689294096407,
+            "sasp12_mean": -0.0867256492150954
+          },
+          {
+            "subtype": "CD99+ FAP",
+            "N_cells": 698,
+            "rho": 0.21848283536159718,
+            "p_value": 5.459990094568919e-09,
+            "junb_mean": 0.09386780216488026,
+            "junb_nonzero_frac": 0.7148997134670487,
+            "sasp12_mean": 0.02637559720641936
+          },
+          {
+            "subtype": "RUNX2+ FAP",
+            "N_cells": 623,
+            "rho": 0.08644104798184007,
+            "p_value": 0.030984479347200736,
+            "junb_mean": -0.7393288098165038,
+            "junb_nonzero_frac": 0.3579454253611557,
+            "sasp12_mean": -0.21430543366228474
+          }
+        ],
+        "donor_level": [
+          {
+            "threshold": 10,
+            "effective_N": 4,
+            "donor_ids": "OM5,OM9,OM6,YM1",
+            "ages": "15,82,80,80",
+            "countries": "China,China,China,China",
+            "cell_counts": "11,316,29,253",
+            "rho": 0.19999999999999998,
+            "p_value": 0.8,
+            "note": "Degenerate: N=4<5. Pre-declared INCONCLUSIVE."
+          },
+          {
+            "threshold": 20,
+            "effective_N": 3,
+            "donor_ids": "OM5,OM9,OM6",
+            "ages": "82,80,80",
+            "countries": "China,China,China",
+            "cell_counts": "316,29,253",
+            "rho": 0.5,
+            "p_value": 0.6666666666666667,
+            "note": "Degenerate: N=3<5. Pre-declared INCONCLUSIVE."
+          }
+        ],
+        "cell_count_summary": {
+          "total_runx2_cells": 623,
+          "donors_ge20": 3,
+          "donors_ge10": 4
+        }
+      }
+    }
+  },
+  "output_files": [
+    "e1_junb_age_slopes.csv",
+    "e2_egr2_polarity.json",
+    "e2_egr2_targets.csv",
+    "e3_runx2_fap_cell_level.csv",
+    "e3_runx2_fap_donor_level.csv",
+    "e3_runx2_fap_cell_counts.csv",
+    "results.json"
+  ]
+}

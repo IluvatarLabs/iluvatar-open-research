@@ -1,0 +1,233 @@
+{
+  "caveat": "Co-expression modules only (GRNBoost2). NOT motif-pruned regulatory targets. cisTarget failed in batch_054.",
+  "compartments": {
+    "Vascular": {
+      "median": {
+        "n_targets": 76,
+        "sasp12_in_targets": [],
+        "n_sasp12_in_targets": 0
+      },
+      "p80": {
+        "n_targets": 31,
+        "sasp12_in_targets": [],
+        "n_sasp12_in_targets": 0
+      },
+      "top10": [
+        {
+          "target": "ALG11",
+          "importance": 2.4345686624933207
+        },
+        {
+          "target": "KDELC1P1",
+          "importance": 2.3709843531289208
+        },
+        {
+          "target": "AC099487.1",
+          "importance": 2.242492651677481
+        },
+        {
+          "target": "AC025300.1",
+          "importance": 1.9092955118130568
+        },
+        {
+          "target": "AL158211.5",
+          "importance": 1.6700617375785347
+        },
+        {
+          "target": "POLR2J3.1",
+          "importance": 1.5262593742219366
+        },
+        {
+          "target": "AC009054.1",
+          "importance": 1.4777689637467015
+        },
+        {
+          "target": "AC107081.4",
+          "importance": 1.2316205579744064
+        },
+        {
+          "target": "LINC01209",
+          "importance": 0.9898862260766365
+        },
+        {
+          "target": "AC092919.1",
+          "importance": 0.9014637363944312
+        }
+      ]
+    },
+    "MuSC": {
+      "median": {
+        "n_targets": 59,
+        "sasp12_in_targets": [],
+        "n_sasp12_in_targets": 0
+      },
+      "p80": {
+        "n_targets": 24,
+        "sasp12_in_targets": [],
+        "n_sasp12_in_targets": 0
+      },
+      "top10": [
+        {
+          "target": "SMAP2",
+          "importance": 4.139892708573524
+        },
+        {
+          "target": "ZNF202",
+          "importance": 2.0579007231305626
+        },
+        {
+          "target": "AURKB",
+          "importance": 1.8666793716524208
+        },
+        {
+          "target": "AC024028.1",
+          "importance": 1.8175537881052573
+        },
+        {
+          "target": "CDCA8",
+          "importance": 1.8083124982793832
+        },
+        {
+          "target": "EIF5A2",
+          "importance": 1.6446189019377089
+        },
+        {
+          "target": "CEP55",
+          "importance": 1.5573382893077174
+        },
+        {
+          "target": "TRIM69",
+          "importance": 1.4968176884271092
+        },
+        {
+          "target": "MYNN",
+          "importance": 1.364863283687385
+        },
+        {
+          "target": "MXI1",
+          "importance": 1.3106750871791302
+        }
+      ]
+    },
+    "FAP": {
+      "median": {
+        "n_targets": 312,
+        "sasp12_in_targets": [
+          "SERPINE1"
+        ],
+        "n_sasp12_in_targets": 1
+      },
+      "p80": {
+        "n_targets": 125,
+        "sasp12_in_targets": [],
+        "n_sasp12_in_targets": 0
+      },
+      "top10": [
+        {
+          "target": "HOXB2",
+          "importance": 3.1024551931431894
+        },
+        {
+          "target": "ZNF615",
+          "importance": 2.8589284841070755
+        },
+        {
+          "target": "ZNF267",
+          "importance": 2.4405186953274605
+        },
+        {
+          "target": "SP4",
+          "importance": 2.203729825323096
+        },
+        {
+          "target": "ZNF14",
+          "importance": 2.10707149080603
+        },
+        {
+          "target": "AC013437.1",
+          "importance": 2.065584723761957
+        },
+        {
+          "target": "TRMO",
+          "importance": 1.924922854478616
+        },
+        {
+          "target": "IER3",
+          "importance": 1.6841213055364277
+        },
+        {
+          "target": "RUFY4",
+          "importance": 1.6257533201308816
+        },
+        {
+          "target": "ZNF716",
+          "importance": 1.5585206357573909
+        }
+      ]
+    }
+  },
+  "jaccard_comparisons": [
+    {
+      "pair": "Vascular_vs_MuSC",
+      "threshold": "median",
+      "n_targets_1": 76,
+      "n_targets_2": 59,
+      "intersection_size": 0,
+      "union_size": 135,
+      "jaccard": 0.0,
+      "sasp12_in_c1": [],
+      "sasp12_in_c2": [],
+      "sasp12_unique_to_c1": [],
+      "sasp12_unique_to_c2": []
+    },
+    {
+      "pair": "Vascular_vs_MuSC",
+      "threshold": "p80",
+      "n_targets_1": 31,
+      "n_targets_2": 24,
+      "intersection_size": 0,
+      "union_size": 55,
+      "jaccard": 0.0,
+      "sasp12_in_c1": [],
+      "sasp12_in_c2": [],
+      "sasp12_unique_to_c1": [],
+      "sasp12_unique_to_c2": []
+    },
+    {
+      "pair": "FAP_vs_Vascular",
+      "threshold": "median",
+      "n_targets_1": 312,
+      "n_targets_2": 76,
+      "intersection_size": 4,
+      "union_size": 384,
+      "jaccard": 0.010416666666666666
+    },
+    {
+      "pair": "FAP_vs_Vascular",
+      "threshold": "p80",
+      "n_targets_1": 125,
+      "n_targets_2": 31,
+      "intersection_size": 1,
+      "union_size": 155,
+      "jaccard": 0.0064516129032258064
+    },
+    {
+      "pair": "FAP_vs_MuSC",
+      "threshold": "median",
+      "n_targets_1": 312,
+      "n_targets_2": 59,
+      "intersection_size": 1,
+      "union_size": 370,
+      "jaccard": 0.002702702702702703
+    },
+    {
+      "pair": "FAP_vs_MuSC",
+      "threshold": "p80",
+      "n_targets_1": 125,
+      "n_targets_2": 24,
+      "intersection_size": 0,
+      "union_size": 149,
+      "jaccard": 0.0
+    }
+  ]
+}

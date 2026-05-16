@@ -1,0 +1,128 @@
+{
+  "experiment1_subtype_analysis": {
+    "scRNA": {
+      "MME_plus": {
+        "n_old": 11100,
+        "n_young": 968,
+        "ap1_d": 0.3041999936103821,
+        "ap1_d_ci95": [
+          -0.06719999760389328,
+          0.06669999659061432
+        ],
+        "junb_d": 1.0089999437332153
+      },
+      "CD55_plus": {
+        "n_old": 7983,
+        "n_young": 229,
+        "ap1_d": null,
+        "ap1_d_ci95": null,
+        "junb_d": null,
+        "excluded": true
+      },
+      "GPC3_plus": {
+        "n_old": 4068,
+        "n_young": 166,
+        "ap1_d": 0.3237999975681305,
+        "ap1_d_ci95": [
+          -0.1589999943971634,
+          0.1551000028848648
+        ],
+        "junb_d": 1.052899956703186
+      },
+      "RUNX2_plus": {
+        "n_old": 0,
+        "n_young": 0,
+        "ap1_d": null,
+        "ap1_d_ci95": null,
+        "junb_d": null,
+        "excluded": "insufficient_cells"
+      }
+    },
+    "snRNA": {
+      "MME_plus": {
+        "n_old": 2455,
+        "n_young": 1234,
+        "ap1_d": 0.7475000023841858,
+        "ap1_d_ci95": [
+          -0.06809999793767929,
+          0.07259999960660934
+        ],
+        "junb_d": 0.5910000205039978
+      },
+      "CD55_plus": {
+        "n_old": 1723,
+        "n_young": 449,
+        "ap1_d": 1.0961999893188477,
+        "ap1_d_ci95": [
+          -0.11169999837875366,
+          0.10199999809265137
+        ],
+        "junb_d": 0.7006999850273132
+      },
+      "GPC3_plus": {
+        "n_old": 1048,
+        "n_young": 257,
+        "ap1_d": 0.957099974155426,
+        "ap1_d_ci95": [
+          -0.12860000133514404,
+          0.13330000638961792
+        ],
+        "junb_d": 0.7642999887466431
+      },
+      "RUNX2_plus": {
+        "n_old": 605,
+        "n_young": 18,
+        "ap1_d": null,
+        "ap1_d_ci95": null,
+        "junb_d": null,
+        "excluded": true
+      }
+    }
+  },
+  "experiment2_junb_specificity": {
+    "within_mme_plus_scRNA_old": {
+      "n": 11100
+    },
+    "ap1_member_correlations": {
+      "FOS_FOSL1": 0.2578,
+      "FOS_FOSL2": 0.1875,
+      "FOS_JUN": 0.8162,
+      "FOS_JUNB": 0.7097,
+      "FOS_JUND": 0.2728,
+      "FOSL1_FOSL2": 0.5005,
+      "FOSL1_JUN": 0.278,
+      "FOSL1_JUNB": 0.3881,
+      "FOSL1_JUND": 0.0898,
+      "FOSL2_JUN": 0.1805,
+      "FOSL2_JUNB": 0.2625,
+      "FOSL2_JUND": 0.0872,
+      "JUN_JUNB": 0.6788,
+      "JUN_JUND": 0.251,
+      "JUNB_JUND": 0.2472
+    },
+    "ap1_vs_collagen": {
+      "FOS": 0.2576,
+      "FOSL1": 0.2407,
+      "FOSL2": 0.114,
+      "JUN": 0.2381,
+      "JUNB": 0.2082,
+      "JUND": 0.1067
+    },
+    "ap1_vs_sasp": {
+      "FOS": 0.2448,
+      "FOSL1": 0.3752,
+      "FOSL2": 0.2708,
+      "JUN": 0.2351,
+      "JUNB": 0.2981,
+      "JUND": 0.0679
+    },
+    "specificity_test": {
+      "junb_collagen_rho": 0.2082,
+      "fos_collagen_rho": 0.2576,
+      "junb_gt_fos_collagen": false,
+      "junb_sasp_rho": 0.2981,
+      "fos_sasp_rho": 0.2448,
+      "junb_gt_fos_sasp": true
+    }
+  }
+}

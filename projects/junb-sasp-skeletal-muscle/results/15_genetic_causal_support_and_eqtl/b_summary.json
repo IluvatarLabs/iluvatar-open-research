@@ -1,0 +1,144 @@
+{
+  "seed": 42,
+  "bootstrap_b": 500,
+  "compartments": [
+    "Vascular",
+    "MuSC",
+    "FAP",
+    "Immune"
+  ],
+  "signature_basis_caveat": "HLMA h5ads contain log1p-normalized data in .raw.X (not raw counts). Signature is mean log1p-normalized expression per compartment, renormalized to CPM-like 1e6 scale. Rank-preserving for NNLS; absolute fraction values not directly comparable to count-based deconvolutions (BayesPrism iter 065 will compare).",
+  "missing_myofiber_caveat": "No Myofiber reference h5ad available in HLMA bundle; NNLS runs with 4 compartments (Vascular, FAP, MuSC, Immune). Absolute fractions inflated; interpretation focuses on relative age-slope direction, not absolute fraction magnitudes.",
+  "confounder_deviation": "GTEx v8 public SubjectPhenotypes contains only SUBJID, SEX, AGE, DTHHRDY; BMI and RACE are dbGaP-protected and unavailable here. Primary model uses: age_midpoint + SMTSISCH + SMRIN + SEX + SMCENTER (as COLLECTION_SITE proxy) + DTHHRDY. Cluster-robust SE clustered on SMCENTER.",
+  "fap_signature_method": "FAP column built via option-3 fallback (curated marker-gene panel + per-cell ReLU-mean of scaled expression, L1-normalized to 1e6 CPM-like scale). WHY: OMIX004308-02 stores scaled (z-score-like) data with negatives in both .X and .raw.X; no raw-count FAP matrix is available locally (OMIX004308-03 is truncated on disk; OMIX004308-05 is the myofiber compartment). Marker panel: PDGFRA (weight 3, Uezumi 2010 / Joe 2010 / HLMA lit_doi_10.1038_s41586-024-07348-6), CD34, DCN, LUM, DLK1, COL6A1/2/3, THY1, MFAP5, SERPINF1 (weight 1, Schwalie 2018 Nature + HLMA). Tenocytes excluded. This is WEAKER than a count-based pseudobulk; iter 065 should replace with BayesPrism (R) or external FAP raw counts. Documented in b_hlma_signature_source.csv column 'marker_based'.",
+  "signature_path": "/home/yuanz/Documents/GitHub/biomarvin_fibro/experiments/batch_064/b_hlma_signature.csv",
+  "signature_shape": [
+    4,
+    25259
+  ],
+  "signature_reports": [
+    {
+      "compartment": "Vascular",
+      "n_cells": 28160,
+      "n_genes_in": 48355,
+      "donor_col_used": "sample",
+      "n_donors": 23,
+      "x_matrix_source": "raw.X",
+      "x_min": 0.02359652705490589,
+      "x_max": 3.712183713912964,
+      "sample_row_sum": 2436.256103515625,
+      "negative_clip_applied": false,
+      "x_min_pre_clip": 7.957001798786223e-05,
+      "marker_based": false,
+      "marker_genes_used": [],
+      "marker_genes_missing": []
+    },
+    {
+      "compartment": "MuSC",
+      "n_cells": 9559,
+      "n_genes_in": 48355,
+      "donor_col_used": "sample",
+      "n_donors": 23,
+      "x_matrix_source": "raw.X",
+      "x_min": 0.7979524741575698,
+      "x_max": 3.723253494272824,
+      "sample_row_sum": 4632.062048215309,
+      "negative_clip_applied": false,
+      "x_min_pre_clip": 0.7674281065384583,
+      "marker_based": false,
+      "marker_genes_used": [],
+      "marker_genes_missing": []
+    },
+    {
+      "compartment": "FAP",
+      "n_cells": 33001,
+      "n_genes_in": 37841,
+      "donor_col_used": "sample",
+      "n_donors": 22,
+      "x_matrix_source": "marker_panel_ReLU_mean",
+      "x_min": -15.7237548828125,
+      "x_max": 10.0,
+      "sample_row_sum": -903.2876586914062,
+      "negative_clip_applied": true,
+      "x_min_pre_clip": -15.7237548828125,
+      "marker_based": true,
+      "marker_genes_used": [
+        "PDGFRA",
+        "CD34",
+        "DCN",
+        "LUM",
+        "DLK1",
+        "COL6A1",
+        "COL6A2",
+        "COL6A3",
+        "THY1",
+        "MFAP5",
+        "SERPINF1"
+      ],
+      "marker_genes_missing": []
+    },
+    {
+      "compartment": "Immune",
+      "n_cells": 13773,
+      "n_genes_in": 48355,
+      "donor_col_used": "sample",
+      "n_donors": 19,
+      "x_matrix_source": "raw.X",
+      "x_min": 0.00443553552031517,
+      "x_max": 7.2698469161987305,
+      "sample_row_sum": 1771.3465905189514,
+      "negative_clip_applied": false,
+      "x_min_pre_clip": 4.218784306431189e-05,
+      "marker_based": false,
+      "marker_genes_used": [],
+      "marker_genes_missing": []
+    }
+  ],
+  "signature_source_path": "/home/yuanz/Documents/GitHub/biomarvin_fibro/experiments/batch_064/b_hlma_signature_source.csv",
+  "signature_log_space_threshold": 0.5,
+  "signature_n_genes_after_symbol_filter": 47087,
+  "signature_n_genes_after_expression_filter": 25259,
+  "gtex_qc": {
+    "n_before_qc": 803,
+    "n_after_tissue_filter": 803,
+    "n_after_rin_filter": 796,
+    "n_after_age_filter": 796,
+    "n_final": 796
+  },
+  "gtex_age_bin_counts": {
+    "20-29": 67,
+    "30-39": 64,
+    "40-49": 123,
+    "50-59": 254,
+    "60-69": 260,
+    "70-79": 28
+  },
+  "gtex_age_bins_below_30": [
+    "70-79"
+  ],
+  "nnls_n_common_genes": 18350,
+  "smoke_test_mean_fractions": {
+    "FAP": 0.01124669850102455,
+    "Immune": 0.03019277559715921,
+    "MuSC": 0.5235687308012447,
+    "Vascular": 0.43499179510057157
+  },
+  "smoke_test_abort": false,
+  "fractions_path": "/home/yuanz/Documents/GitHub/biomarvin_fibro/experiments/batch_064/b_gtex_fractions.csv",
+  "n_samples_total": 796,
+  "n_samples_poor_fit": 469,
+  "frac_poor_fit": 0.5891959798994975,
+  "age_primary_path": "/home/yuanz/Documents/GitHub/biomarvin_fibro/experiments/batch_064/b_age_regression_primary.csv",
+  "age_tertile_path": "/home/yuanz/Documents/GitHub/biomarvin_fibro/experiments/batch_064/b_age_regression_tertile.csv",
+  "b1s_path": "/home/yuanz/Documents/GitHub/biomarvin_fibro/experiments/batch_064/b_b1s_fraction_adjusted.csv",
+  "decision": {
+    "b1_classification": "INCONCLUSIVE_ischemic_confounded",
+    "b1_n_sig_compartments": 1,
+    "b1_replicated_in_t1_low": [],
+    "b1_alpha_bonf_used": 0.0125,
+    "b1s_classification": "null_activity_signal_or_not_applicable",
+    "b1s_n_sig_after_fractions": 3,
+    "b1s_alpha_bonf_used": 0.0020833333333333333
+  },
+  "elapsed_seconds": 776.8
+}

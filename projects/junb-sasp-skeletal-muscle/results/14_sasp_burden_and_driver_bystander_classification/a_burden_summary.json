@@ -1,0 +1,340 @@
+{
+  "provenance": {
+    "script": "/home/yuanz/Documents/GitHub/biomarvin_fibro/experiments/batch_063/run_a_burden.py",
+    "scanpy_version": "1.11.5",
+    "numpy_version": "2.0.1",
+    "pandas_version": "2.3.2",
+    "score_genes_params": {
+      "ctrl_size": 50,
+      "n_bins": 25,
+      "random_state": 1,
+      "use_raw": false
+    },
+    "bootstrap_params": {
+      "n_resamples": 1000,
+      "seed": 42
+    },
+    "min_cells_per_donor": 20,
+    "hlma_age_threshold": 50,
+    "panels": {
+      "SASP12": [
+        "CCL2",
+        "CXCL1",
+        "CXCL2",
+        "CXCL3",
+        "CXCL6",
+        "CXCL8",
+        "IL6",
+        "SERPINE1",
+        "MMP1",
+        "MMP3",
+        "PLAU",
+        "PLAUR"
+      ],
+      "regen_MuSC_only": [
+        "PAX7",
+        "MYOD1",
+        "MYOG",
+        "CDK1",
+        "MKI67"
+      ],
+      "fibrotic_FAP_only": [
+        "COL1A1",
+        "COL3A1",
+        "ACTA2",
+        "FN1",
+        "TGFBI"
+      ],
+      "senescence": [
+        "CDKN2A",
+        "GLB1"
+      ]
+    }
+  },
+  "counts": {
+    "HLMA|FAP|old": {
+      "n_donor_total": 14,
+      "n_donor_pass_20cells": 10,
+      "median_n_cells": 761.5
+    },
+    "HLMA|FAP|young": {
+      "n_donor_total": 8,
+      "n_donor_pass_20cells": 6,
+      "median_n_cells": 221.5
+    },
+    "HLMA|Immune|old": {
+      "n_donor_total": 13,
+      "n_donor_pass_20cells": 10,
+      "median_n_cells": 285.0
+    },
+    "HLMA|Immune|young": {
+      "n_donor_total": 6,
+      "n_donor_pass_20cells": 4,
+      "median_n_cells": 65.5
+    },
+    "HLMA|MuSC|old": {
+      "n_donor_total": 15,
+      "n_donor_pass_20cells": 13,
+      "median_n_cells": 113.0
+    },
+    "HLMA|MuSC|young": {
+      "n_donor_total": 8,
+      "n_donor_pass_20cells": 6,
+      "median_n_cells": 108.0
+    },
+    "HLMA|Vascular|old": {
+      "n_donor_total": 15,
+      "n_donor_pass_20cells": 15,
+      "median_n_cells": 534.0
+    },
+    "HLMA|Vascular|young": {
+      "n_donor_total": 8,
+      "n_donor_pass_20cells": 8,
+      "median_n_cells": 229.5
+    },
+    "NA_atlas|FAP|old": {
+      "n_donor_total": 7,
+      "n_donor_pass_20cells": 7,
+      "median_n_cells": 1083.0
+    },
+    "NA_atlas|FAP|young": {
+      "n_donor_total": 5,
+      "n_donor_pass_20cells": 5,
+      "median_n_cells": 1253.0
+    },
+    "NA_atlas|MuSC|old": {
+      "n_donor_total": 7,
+      "n_donor_pass_20cells": 7,
+      "median_n_cells": 793.0
+    },
+    "NA_atlas|MuSC|young": {
+      "n_donor_total": 5,
+      "n_donor_pass_20cells": 5,
+      "median_n_cells": 2341.0
+    },
+    "NA_atlas|Vascular|old": {
+      "n_donor_total": 7,
+      "n_donor_pass_20cells": 7,
+      "median_n_cells": 139.0
+    },
+    "NA_atlas|Vascular|young": {
+      "n_donor_total": 5,
+      "n_donor_pass_20cells": 5,
+      "median_n_cells": 285.0
+    }
+  },
+  "predictions_vs_observed": {
+    "HLMA_old_vascular_vs_musc_mean_SASP": {
+      "vascular": {
+        "point": 0.01284049468040117,
+        "ci_lo": -0.042430598381861466,
+        "ci_hi": 0.07399103483385629,
+        "n": 15
+      },
+      "musc": {
+        "point": -0.04057913699801334,
+        "ci_lo": -0.07685313430532346,
+        "ci_hi": 0.005650381150483489,
+        "n": 13
+      },
+      "vascular_ci_above_musc": false,
+      "ci_overlap": true
+    },
+    "HLMA_old_vascular_vs_fap_mean_SASP": {
+      "vascular": {
+        "point": 0.01284049468040117,
+        "ci_lo": -0.042430598381861466,
+        "ci_hi": 0.07399103483385629,
+        "n": 15
+      },
+      "fap": {
+        "point": -0.026103147444340336,
+        "ci_lo": -0.06731175404013261,
+        "ci_hi": 0.01502990343692704,
+        "n": 10
+      },
+      "vascular_ci_above_fap": false,
+      "ci_overlap": true
+    },
+    "HLMA_old_SASP_high_fraction": {
+      "vascular": {
+        "point": 0.21144892621206654,
+        "ci_lo": 0.10904541679514965,
+        "ci_hi": 0.3251897818470613,
+        "n": 15
+      },
+      "musc": {
+        "point": 0.13774150242931232,
+        "ci_lo": 0.05379854165031202,
+        "ci_hi": 0.2459390332356033,
+        "n": 13
+      },
+      "fap": {
+        "point": 0.3273163250807931,
+        "ci_lo": 0.24745873356776624,
+        "ci_hi": 0.4085086375978031,
+        "n": 10
+      },
+      "vascular_fap_overlap": true,
+      "musc_below_both": [
+        false,
+        true
+      ]
+    },
+    "HLMA_old_within_tech_snRNA_mean_SASP": {
+      "vascular": {
+        "point": 0.01284049468040117,
+        "ci_lo": -0.042430598381861466,
+        "ci_hi": 0.07399103483385629,
+        "n": 15
+      },
+      "musc": {
+        "point": -0.08752336446967407,
+        "ci_lo": -0.0990477501349702,
+        "ci_hi": -0.07390811505253642,
+        "n": 9
+      },
+      "fap": {
+        "point": -0.026103147444340336,
+        "ci_lo": -0.06731175404013261,
+        "ci_hi": 0.01502990343692704,
+        "n": 10
+      },
+      "vascular_ci_above_musc": true,
+      "vascular_ci_above_fap": false,
+      "any_ci_overlap_with_vascular": [
+        false,
+        true
+      ]
+    },
+    "HLMA_old_within_tech_scRNA_mean_SASP": {
+      "vascular": null,
+      "musc": {
+        "point": 0.0650453748132233,
+        "ci_lo": 0.020112308662891466,
+        "ci_hi": 0.104259426779073,
+        "n": 4
+      },
+      "fap": null,
+      "vascular_ci_above_musc": null,
+      "vascular_ci_above_fap": null,
+      "any_ci_overlap_with_vascular": [
+        null,
+        null
+      ]
+    },
+    "HLMA_old_within_country_China_mean_SASP": {
+      "vascular": {
+        "point": 0.05849084108985639,
+        "ci_lo": -0.018733205928585718,
+        "ci_hi": 0.1408679705724281,
+        "n": 9
+      },
+      "musc": {
+        "point": -0.0094060852009984,
+        "ci_lo": -0.06650661652124028,
+        "ci_hi": 0.04776041946967315,
+        "n": 8
+      },
+      "fap": {
+        "point": -0.02504382265164974,
+        "ci_lo": -0.0725219173760382,
+        "ci_hi": 0.01985762184605014,
+        "n": 9
+      },
+      "vascular_ci_above_musc": false,
+      "vascular_ci_above_fap": false
+    },
+    "HLMA_old_within_country_Spain_mean_SASP": {
+      "vascular": {
+        "point": -0.05563502493378165,
+        "ci_lo": -0.08408184918843764,
+        "ci_hi": -0.013845435523588941,
+        "n": 6
+      },
+      "musc": {
+        "point": -0.09045601987323726,
+        "ci_lo": -0.09675846646980943,
+        "ci_hi": -0.0810517120965277,
+        "n": 5
+      },
+      "fap": {
+        "point": -0.035637070578555655,
+        "ci_lo": -0.035637070578555655,
+        "ci_hi": -0.035637070578555655,
+        "n": 1
+      },
+      "vascular_ci_above_musc": false,
+      "vascular_ci_above_fap": false
+    },
+    "MuSC_regen_decline_old_vs_young": [
+      {
+        "dataset": "HLMA",
+        "compartment": "MuSC",
+        "stratum": "pooled",
+        "age_group": "old_vs_young_effect",
+        "metric": "regen_score",
+        "n_donor": 19,
+        "point": -0.6600610460770623,
+        "ci_lo": -1.7179801604129232,
+        "ci_hi": 0.23789032917162245,
+        "n_young": 6.0,
+        "n_old": 13.0,
+        "power_at_d_observed": 0.24339484156768673,
+        "mannwhitney_p": 0.41552410437859355
+      },
+      {
+        "dataset": "NA_atlas",
+        "compartment": "MuSC",
+        "stratum": "pooled",
+        "age_group": "old_vs_young_effect",
+        "metric": "regen_score",
+        "n_donor": 12,
+        "point": 0.34205924338192456,
+        "ci_lo": -1.0367162623349613,
+        "ci_hi": 1.5956560615587743,
+        "n_young": 5.0,
+        "n_old": 7.0,
+        "power_at_d_observed": 0.08276553614293779,
+        "mannwhitney_p": 0.8762626262626263
+      }
+    ],
+    "FAP_fibrotic_increase_old_vs_young": [
+      {
+        "dataset": "HLMA",
+        "compartment": "FAP",
+        "stratum": "pooled",
+        "age_group": "old_vs_young_effect",
+        "metric": "fibrotic_score",
+        "n_donor": 16,
+        "point": -0.4531302784316964,
+        "ci_lo": -2.215026606259729,
+        "ci_hi": 0.6157481061464285,
+        "n_young": 6.0,
+        "n_old": 10.0,
+        "power_at_d_observed": 0.12957344913132926,
+        "mannwhitney_p": 0.2197802197802198
+      },
+      {
+        "dataset": "NA_atlas",
+        "compartment": "FAP",
+        "stratum": "pooled",
+        "age_group": "old_vs_young_effect",
+        "metric": "fibrotic_score",
+        "n_donor": 12,
+        "point": 0.6156406758333992,
+        "ci_lo": -0.512547568126228,
+        "ci_hi": 1.8992332932224933,
+        "n_young": 5.0,
+        "n_old": 7.0,
+        "power_at_d_observed": 0.15877899193120576,
+        "mannwhitney_p": 0.5303030303030304
+      }
+    ]
+  },
+  "decision_rule_triggers": {
+    "vascular_per_cell_dominance_SUPPORTED": false,
+    "thesis_softened_within_tech_or_country_overlap": true,
+    "power_caveat": "At effective n approx 9-14 donors per compartment x age, power is ~20% for Cohen's d=0.5 and ~63% for d=1.0 (exact nct, alpha=0.05 two-sided). Negative results classify as INCONCLUSIVE, not REFUTED, per brief Decision Rule \u00a7Analysis A."
+  }
+}

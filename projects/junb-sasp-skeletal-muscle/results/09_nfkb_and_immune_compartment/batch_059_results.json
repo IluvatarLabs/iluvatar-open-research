@@ -1,0 +1,99 @@
+{
+  "batch": "batch_059",
+  "script": "run_immune_tfsasp.py",
+  "date": "2026-04-17T11:10:06.435146",
+  "data": {
+    "file": "/home/yuanz/Documents/GitHub/biomarvin_fibro/data/Immune_scsn_RNA.h5ad",
+    "n_cells": 13773,
+    "n_donors_total": 19,
+    "n_donors_filtered": 13,
+    "min_cells_per_donor": 50,
+    "all_china": true,
+    "n_subtypes": 16
+  },
+  "sasp12_genes": {
+    "requested": [
+      "CXCL1",
+      "CXCL2",
+      "CXCL3",
+      "CXCL8",
+      "IL1B",
+      "CCL2",
+      "CCL20",
+      "CXCL6",
+      "PLAU",
+      "PLAUR",
+      "TIMP1",
+      "MMP1"
+    ],
+    "detected": [
+      "CXCL1",
+      "CXCL2",
+      "CXCL3",
+      "CXCL8",
+      "IL1B",
+      "CCL2",
+      "CCL20",
+      "CXCL6",
+      "PLAU",
+      "PLAUR",
+      "TIMP1",
+      "MMP1"
+    ],
+    "n_detected": 12
+  },
+  "primary_findings": {
+    "top_tf": "CEBPB",
+    "top_rho": 0.8736,
+    "top_p": 9.5288972903705e-05,
+    "junb_rho": 0.7143,
+    "junb_p": 0.006088305245824148,
+    "junb_rank": 8
+  },
+  "age_adjustment": {
+    "note": "Continuous age partial correlation via rank residualization",
+    "top5_delta_summary": {
+      "FOS": 0.0604,
+      "ATF3": 0.022,
+      "EGR1": 0.022,
+      "EGR2": 0.0055,
+      "CEBPB": 0.0
+    }
+  },
+  "tech_confirm_analysis": {
+    "note": "Committed analysis to confirm tech confound from 1 scRNA donor",
+    "n_snrna_only": 12,
+    "junb_snrna_rho": 0.7203,
+    "junb_snrna_p": 0.008239768712338441,
+    "junb_mixed_rho": 0.7143,
+    "junb_direction_change": false
+  },
+  "tech_sensitivity": {
+    "note": "Only 1 of 13 donors uses scRNA. tech_fraction is near-constant. Tech-adjusted results are unreliable.",
+    "n_scrna_donors": 1,
+    "n_snrna_donors": 12
+  },
+  "power": {
+    "n_donors": 13,
+    "note": "N=13 provides adequate power (>=80%) for |rho| >= 0.70, marginal power for |rho| = 0.50, underpowered for |rho| < 0.40."
+  },
+  "caveats": [
+    "N=13 donors (all China) -- no country stratification possible",
+    "Only 1 scRNA donor -- tech adjustment unreliable",
+    "snRNA-only analysis confirms tech confound on JUNB and related TFs",
+    "9 old vs 4 young donors -- age dimension imbalanced",
+    "Cell-level correlations may be inflated by donor-level structure",
+    "MMP1 and CXCL6 expected to have near-zero detection in immune cells"
+  ],
+  "output_files": [
+    "immune_gene_detection.csv",
+    "donor_level_tf_sasp.csv",
+    "extended_sasp_comparison.csv",
+    "age_tech_adjustment.csv",
+    "snrna_only_results.csv",
+    "subtype_stratified.csv",
+    "cell_level_correlation.csv",
+    "power_analysis.csv",
+    "cross_compartment_comparison.csv"
+  ]
+}

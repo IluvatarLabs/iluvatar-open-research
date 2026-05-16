@@ -1,0 +1,117 @@
+{
+  "recommendation": "B",
+  "label": "KLF10 headline",
+  "rationale": "KLF10 has stronger raw effects in most compartments AND is less country-sensitive. KLF10 should be the headline finding.",
+  "evidence": [
+    "KLF10 has stronger raw rho(TF,SASP) in 2/3 compartments (JUNB wins in 1)",
+    "KLF10 is LESS country-sensitive in 3/3 compartments (JUNB less sensitive in 0)",
+    "FAP compartment: KLF10 rho=0.862 vs JUNB rho=0.226. KLF10 is the ONLY TF with strong SASP coupling in FAPs (the therapeutic target compartment).",
+    "Within-country significance (p<0.05 in >=1 country): JUNB=2/3, KLF10=3/3 compartments",
+    "MECHANISTIC NOTE: KLF10 is a transcriptional repressor (TIEG1). A positive rho(KLF10, SASP) is counterintuitive for a repressor -- it may indicate co-expression driven by a common upstream activator rather than KLF10 directly driving SASP expression. JUNB (AP-1 component) has a direct mechanistic link to SASP gene transcription.",
+    "NOTE: Pre-registered brief recommended Framing A but data supports Framing B. Going with data-driven recommendation."
+  ],
+  "key_metrics": {
+    "Vascular": {
+      "JUNB": {
+        "rho_total": 0.9282234981275013,
+        "rho_country": 0.6965577381388449,
+        "rho_ctry_adj": 0.8833417866536583,
+        "within_China": 0.9340659340659341,
+        "within_Spain": 0.5868368683374969,
+        "within_China_p": 2.998703750099579e-06,
+        "within_Spain_p": 0.12619898553608927
+      },
+      "KLF10": {
+        "rho_total": 0.8766233766233766,
+        "rho_country": 0.6963315463036429,
+        "rho_ctry_adj": 0.792109245978225,
+        "within_China": 0.8846153846153846,
+        "within_Spain": 0.3333333333333334,
+        "within_China_p": 5.9057452171910124e-05,
+        "within_Spain_p": 0.4197530864197531
+      }
+    },
+    "MuSC": {
+      "JUNB": {
+        "rho_total": 0.907142857142857,
+        "rho_country": 0.6629699999089105,
+        "rho_ctry_adj": 0.8289399276661888,
+        "within_China": 0.7727272727272727,
+        "within_Spain": 1.0,
+        "within_China_p": 0.005299487178643863,
+        "within_Spain_p": 0.0
+      },
+      "KLF10": {
+        "rho_total": 0.9214285714285713,
+        "rho_country": 0.6280768420189679,
+        "rho_ctry_adj": 0.8668320684343199,
+        "within_China": 0.8272727272727273,
+        "within_Spain": 1.0,
+        "within_China_p": 0.001676973896452378,
+        "within_Spain_p": 0.0
+      }
+    },
+    "FAP": {
+      "JUNB": {
+        "rho_total": 0.22647058823529412,
+        "rho_country": 0.5329480400990121,
+        "rho_ctry_adj": 0.4359722683931833,
+        "within_China": 0.3934065934065934,
+        "within_China_p": 0.16403157340077784
+      },
+      "KLF10": {
+        "rho_total": 0.8617647058823529,
+        "rho_country": -0.08199200616907878,
+        "rho_ctry_adj": 0.8712069144183752,
+        "within_China": 0.8505494505494505,
+        "within_China_p": 0.0001156561589098896
+      }
+    }
+  },
+  "methodology": {
+    "correlation": "Spearman rank (robust to non-normality, N=15-21 after min_cells filter)",
+    "ci_method": "Fisher Z transformation",
+    "partial_corr": "pingouin.partial_corr with Spearman method",
+    "residualization": "rank-transform then OLS residualization (cross-check)",
+    "min_cells_per_donor": 50,
+    "sasp12_genes": [
+      "CCL2",
+      "CXCL1",
+      "CXCL2",
+      "CXCL3",
+      "CXCL6",
+      "IL6",
+      "CXCL8",
+      "SERPINE1",
+      "MMP1",
+      "MMP3",
+      "PLAU",
+      "PLAUR"
+    ],
+    "cell_type_filters": {
+      "Vascular": [
+        "ArtEC",
+        "CapEC",
+        "VenEC",
+        "IL6+ VenEC"
+      ],
+      "FAP": [
+        "MME+ FAP",
+        "CD55+ FAP",
+        "GPC3+ FAP",
+        "RUNX2+ FAP",
+        "CD99+ FAP"
+      ],
+      "MuSC": "all cells"
+    }
+  },
+  "caveats": [
+    "Min 50 cells/donor filter reduces N from batch_051 (23/23/22) to (21/15/16); MuSC especially impacted",
+    "Within-Spain N=8 (Vascular), N=4 (MuSC), N=2 (FAP) -- severely underpowered for within-Spain analysis",
+    "MuSC within-Spain rho=1.0 for both TFs is an artifact of N=4 (perfect rank with 4 points is easy)",
+    "FAP has only 2 Spain donors passing min_cells filter -- within-Spain not computable for FAP",
+    "Country is confounded with some technical factors (snRNA/scRNA distribution differs by country)",
+    "KLF10 is a transcriptional repressor -- positive SASP correlation is mechanistically ambiguous",
+    "KLF10 rho(country) in Vascular (0.696) is essentially identical to JUNB (0.697) -- not less country-sensitive there"
+  ]
+}

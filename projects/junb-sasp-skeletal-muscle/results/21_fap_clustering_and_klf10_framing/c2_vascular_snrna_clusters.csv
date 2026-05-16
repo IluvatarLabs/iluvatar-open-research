@@ -1,0 +1,5 @@
+cluster,n_cells,dominant_annotation,mean_JUNB,mean_SASP12,frac_old,frac_young
+0,2265,CapEC,0.208,0.066,0.642,0.358
+1,1477,VenEC,0.4952,0.058,0.818,0.182
+2,1022,CapEC,0.3339,0.1684,0.925,0.075
+3,610,ArtEC,0.777,0.1088,0.78,0.22

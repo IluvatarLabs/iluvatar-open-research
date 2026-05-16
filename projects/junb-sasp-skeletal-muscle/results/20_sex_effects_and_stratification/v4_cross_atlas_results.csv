@@ -1,0 +1,4 @@
+donor,age_group,age_bin,sex,JUNB,SASP,n_cells
+362C,60-65,old,M,3.40277,0.14514977,315
+411C,25-30,young,M,2.495843,0.0993044,62
+470BR,15-20,young,M,2.4712467,0.08737494,254
