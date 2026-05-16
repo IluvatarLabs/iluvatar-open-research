@@ -1,0 +1,225 @@
+{
+  "status": "ok",
+  "batch": "056",
+  "sub": "b",
+  "wall_s": 31.323580980300903,
+  "reproduction_gate_R1": {
+    "status": "ok",
+    "preds_path": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/experiments/batch_054_A/output/sweep/cutoff_0.05/PGC3_EUR_PoPS.preds",
+    "n_common": 17459,
+    "rho_observed": 0.5101842528282293,
+    "rho_target": 0.5102,
+    "delta": 1.5747171770663648e-05,
+    "tolerance": 0.0001,
+    "pass": true
+  },
+  "n_full_intersection": 17459,
+  "mask_coordinates_build": "GRCh37",
+  "mask_definitions": {
+    "MHC": {
+      "chrom": "6",
+      "start": 25000000,
+      "end": 34000000,
+      "citation": "Bulik-Sullivan 2015 LDSC convention"
+    },
+    "17q21": {
+      "chrom": "17",
+      "start": 43000000,
+      "end": 47000000,
+      "citation": "Stefansson 2005 / Steinberg 2012 [lit_doi_10.1038_ng.2335] (v2 2026-04-23: widened from inversion core 43.5-45 Mb to LD-block 43-47 Mb; core gave 14 genes < 30 sanity min)"
+    },
+    "8p23": {
+      "chrom": "8",
+      "start": 7000000,
+      "end": 12000000,
+      "citation": "Salm 2012 [lit_doi_10.1101_gr.127209.111] (v2 2026-04-23: widened 5' by 1 Mb; 8-12 Mb gave 25 genes < 30 sanity min)"
+    }
+  },
+  "mask_counts": {
+    "MHC": 248,
+    "17q21": 63,
+    "8p23": 30
+  },
+  "mask_size_expected_range": [
+    30,
+    300
+  ],
+  "per_pattern": {
+    "MHC_only": {
+      "n_masked_genes": 248,
+      "n_intersection": 17211,
+      "rho_full_pearson_point": 0.5120166171873551,
+      "rho_full_spearman_point": 0.5101842528282293,
+      "rho_intersection_pearson_point": 0.5501525271575586,
+      "rho_intersection_spearman_point": 0.5249617904526264,
+      "delta_rho_pearson_point": 0.03813590997020344,
+      "delta_rho_spearman_point": 0.014777537624397041,
+      "delta_rho_pearson_ci": {
+        "ci_lo": 0.03168688942397712,
+        "ci_hi": 0.044881616913825605,
+        "median": 0.03834457622341381
+      },
+      "delta_rho_spearman_ci": {
+        "ci_lo": 0.011699964349203073,
+        "ci_hi": 0.01790404832787271,
+        "median": 0.014862057971695597
+      },
+      "rho_intersection_pearson_ci": {
+        "ci_lo": 0.5391964370485957,
+        "ci_hi": 0.5615444875289982,
+        "median": 0.5500247679947552
+      },
+      "rho_intersection_spearman_ci": {
+        "ci_lo": 0.5137814996571038,
+        "ci_hi": 0.5365800243989528,
+        "median": 0.5249928795774894
+      },
+      "rho_full_pearson_ci": {
+        "ci_lo": 0.4990576481985909,
+        "ci_hi": 0.5243725703508694,
+        "median": 0.5122059112188937
+      },
+      "rho_full_spearman_ci": {
+        "ci_lo": 0.4984211923083367,
+        "ci_hi": 0.5218612629253244,
+        "median": 0.5103345800006103
+      },
+      "bootstrap_n_keep_mean": 17210.411,
+      "bootstrap_n_keep_min": 17167
+    },
+    "17q21_only": {
+      "n_masked_genes": 63,
+      "n_intersection": 17396,
+      "rho_full_pearson_point": 0.5120166171873551,
+      "rho_full_spearman_point": 0.5101842528282293,
+      "rho_intersection_pearson_point": 0.5119038492962281,
+      "rho_intersection_spearman_point": 0.5101234097364922,
+      "delta_rho_pearson_point": -0.00011276789112701913,
+      "delta_rho_spearman_point": -6.084309173715052e-05,
+      "delta_rho_pearson_ci": {
+        "ci_lo": -0.0013100263201937107,
+        "ci_hi": 0.000921642951197224,
+        "median": -0.00014088770162679065
+      },
+      "delta_rho_spearman_ci": {
+        "ci_lo": -0.0008538684552975781,
+        "ci_hi": 0.0006629745626039817,
+        "median": -9.855731445373994e-05
+      },
+      "rho_intersection_pearson_ci": {
+        "ci_lo": 0.49837357339052063,
+        "ci_hi": 0.5246319849615244,
+        "median": 0.5119441258265796
+      },
+      "rho_intersection_spearman_ci": {
+        "ci_lo": 0.4981982790557701,
+        "ci_hi": 0.5220132899600658,
+        "median": 0.5102238264713759
+      },
+      "rho_full_pearson_ci": {
+        "ci_lo": 0.4990576481985909,
+        "ci_hi": 0.5243725703508694,
+        "median": 0.5122059112188937
+      },
+      "rho_full_spearman_ci": {
+        "ci_lo": 0.4984211923083367,
+        "ci_hi": 0.5218612629253244,
+        "median": 0.5103345800006103
+      },
+      "bootstrap_n_keep_mean": 17395.76,
+      "bootstrap_n_keep_min": 17367
+    },
+    "8p23_only": {
+      "n_masked_genes": 30,
+      "n_intersection": 17429,
+      "rho_full_pearson_point": 0.5120166171873551,
+      "rho_full_spearman_point": 0.5101842528282293,
+      "rho_intersection_pearson_point": 0.5116468931814421,
+      "rho_intersection_spearman_point": 0.5099512898290884,
+      "delta_rho_pearson_point": -0.00036972400591306354,
+      "delta_rho_spearman_point": -0.00023296299914088436,
+      "delta_rho_pearson_ci": {
+        "ci_lo": -0.0010374360090308371,
+        "ci_hi": 1.965563064559028e-05,
+        "median": -0.00035059268921083797
+      },
+      "delta_rho_spearman_ci": {
+        "ci_lo": -0.0005633916181724347,
+        "ci_hi": 6.213343997051862e-05,
+        "median": -0.00023014358223677478
+      },
+      "rho_intersection_pearson_ci": {
+        "ci_lo": 0.49855011250841313,
+        "ci_hi": 0.5238678434550802,
+        "median": 0.5118181463476897
+      },
+      "rho_intersection_spearman_ci": {
+        "ci_lo": 0.4980688416537336,
+        "ci_hi": 0.5217170839189659,
+        "median": 0.5101269430780737
+      },
+      "rho_full_pearson_ci": {
+        "ci_lo": 0.4990576481985909,
+        "ci_hi": 0.5243725703508694,
+        "median": 0.5122059112188937
+      },
+      "rho_full_spearman_ci": {
+        "ci_lo": 0.4984211923083367,
+        "ci_hi": 0.5218612629253244,
+        "median": 0.5103345800006103
+      },
+      "bootstrap_n_keep_mean": 17429.034,
+      "bootstrap_n_keep_min": 17413
+    },
+    "all_three": {
+      "n_masked_genes": 341,
+      "n_intersection": 17118,
+      "rho_full_pearson_point": 0.5120166171873551,
+      "rho_full_spearman_point": 0.5101842528282293,
+      "rho_intersection_pearson_point": 0.5500256135029459,
+      "rho_intersection_spearman_point": 0.5247594198732599,
+      "delta_rho_pearson_point": 0.03800899631559074,
+      "delta_rho_spearman_point": 0.01457516704503059,
+      "delta_rho_pearson_ci": {
+        "ci_lo": 0.03169024076328454,
+        "ci_hi": 0.04482173902730324,
+        "median": 0.03813697736516808
+      },
+      "delta_rho_spearman_ci": {
+        "ci_lo": 0.011457225342166316,
+        "ci_hi": 0.01761793444201173,
+        "median": 0.014612452574582713
+      },
+      "rho_intersection_pearson_ci": {
+        "ci_lo": 0.5390761344731716,
+        "ci_hi": 0.5609724268768868,
+        "median": 0.5497539119608961
+      },
+      "rho_intersection_spearman_ci": {
+        "ci_lo": 0.5136063511911261,
+        "ci_hi": 0.5367511072488627,
+        "median": 0.5247854008633908
+      },
+      "rho_full_pearson_ci": {
+        "ci_lo": 0.4990576481985909,
+        "ci_hi": 0.5243725703508694,
+        "median": 0.5122059112188937
+      },
+      "rho_full_spearman_ci": {
+        "ci_lo": 0.4984211923083367,
+        "ci_hi": 0.5218612629253244,
+        "median": 0.5103345800006103
+      },
+      "bootstrap_n_keep_mean": 17117.205,
+      "bootstrap_n_keep_min": 17053
+    }
+  },
+  "bootstrap": {
+    "n_boot": 1000,
+    "seed": 20260423
+  },
+  "decision_classification": {
+    "classification": "Intermediate",
+    "reason": "None of the 4 primary cells fired."
+  }
+}

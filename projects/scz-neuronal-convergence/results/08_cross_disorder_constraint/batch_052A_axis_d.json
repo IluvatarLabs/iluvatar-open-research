@@ -1,0 +1,173 @@
+{
+  "axis": "D_shet_distribution",
+  "s_het_source": "GeneBayes Zeng 2024 Nat Genet; post_mean",
+  "mapping_retention": {
+    "SCHEMA": {
+      "n_in_list": 10,
+      "n_mapped": 10,
+      "retention": 1.0
+    },
+    "ASD_FDR10": {
+      "n_in_list": 102,
+      "n_mapped": 102,
+      "retention": 1.0
+    },
+    "DDD_Kaplanis": {
+      "n_in_list": 285,
+      "n_mapped": 282,
+      "retention": 0.9894736842105263
+    },
+    "Heyne_DEE": {
+      "n_in_list": 33,
+      "n_mapped": 31,
+      "retention": 0.9393939393939394
+    }
+  },
+  "per_list_quartiles": {
+    "SCHEMA": {
+      "n": 10,
+      "median": 0.176097675,
+      "mean": 0.217652073,
+      "q25": 0.13822609749999998,
+      "q50": 0.176097675,
+      "q75": 0.2702519975,
+      "q90": 0.374223561,
+      "q95": 0.4069845104999999,
+      "iqr": 0.13202590000000003
+    },
+    "ASD_FDR10": {
+      "n": 102,
+      "median": 0.2424458,
+      "mean": 0.28080704137254897,
+      "q25": 0.1447169275,
+      "q50": 0.2424458,
+      "q75": 0.41094436,
+      "q90": 0.540055955,
+      "q95": 0.5883269254999998,
+      "iqr": 0.2662274325
+    },
+    "DDD_Kaplanis": {
+      "n": 282,
+      "median": 0.29829705500000003,
+      "mean": 0.3235902771985816,
+      "q25": 0.169689635,
+      "q50": 0.29829705500000003,
+      "q75": 0.48101644,
+      "q90": 0.590553222,
+      "q95": 0.6512077445,
+      "iqr": 0.311326805
+    },
+    "Heyne_DEE": {
+      "n": 31,
+      "median": 0.35865057,
+      "mean": 0.38535084387096774,
+      "q25": 0.255039835,
+      "q50": 0.35865057,
+      "q75": 0.53090863,
+      "q90": 0.6256921,
+      "q95": 0.660185115,
+      "iqr": 0.275868795
+    }
+  },
+  "pairwise_wilcoxon_holm6": [
+    {
+      "pair": "SCHEMA__ASD_FDR10",
+      "n_a": 10,
+      "n_b": 102,
+      "median_a": 0.176097675,
+      "median_b": 0.2424458,
+      "U_statistic": 418.0,
+      "p_raw": 0.35049743466026373,
+      "holm_q": 0.35049743466026373
+    },
+    {
+      "pair": "SCHEMA__DDD_Kaplanis",
+      "n_a": 10,
+      "n_b": 282,
+      "median_a": 0.176097675,
+      "median_b": 0.29829705500000003,
+      "U_statistic": 958.0,
+      "p_raw": 0.0853160207306721,
+      "holm_q": 0.22866819750040007
+    },
+    {
+      "pair": "SCHEMA__Heyne_DEE",
+      "n_a": 10,
+      "n_b": 31,
+      "median_a": 0.176097675,
+      "median_b": 0.35865057,
+      "U_statistic": 66.0,
+      "p_raw": 0.0072149403637958515,
+      "holm_q": 0.03607470181897926
+    },
+    {
+      "pair": "ASD_FDR10__DDD_Kaplanis",
+      "n_a": 102,
+      "n_b": 282,
+      "median_a": 0.2424458,
+      "median_b": 0.29829705500000003,
+      "U_statistic": 12523.5,
+      "p_raw": 0.053098750066757204,
+      "holm_q": 0.21239500026702882
+    },
+    {
+      "pair": "ASD_FDR10__Heyne_DEE",
+      "n_a": 102,
+      "n_b": 31,
+      "median_a": 0.2424458,
+      "median_b": 0.35865057,
+      "U_statistic": 1042.5,
+      "p_raw": 0.00419428676722206,
+      "holm_q": 0.025165720603332362
+    },
+    {
+      "pair": "DDD_Kaplanis__Heyne_DEE",
+      "n_a": 282,
+      "n_b": 31,
+      "median_a": 0.29829705500000003,
+      "median_b": 0.35865057,
+      "U_statistic": 3522.5,
+      "p_raw": 0.07622273250013335,
+      "holm_q": 0.22866819750040007
+    }
+  ],
+  "shet_ge_0p1_OR": [
+    {
+      "list": "SCHEMA",
+      "n_mapped": 10,
+      "k_shet_ge_0p1": 9,
+      "bg_n": 18547,
+      "bg_k_shet_ge_0p1": 3227,
+      "OR_HA": 30.06346501420088,
+      "fisher_p_greater": 1.2461090494728165e-06
+    },
+    {
+      "list": "ASD_FDR10",
+      "n_mapped": 102,
+      "k_shet_ge_0p1": 84,
+      "bg_n": 18455,
+      "bg_k_shet_ge_0p1": 3152,
+      "OR_HA": 22.17280579548621,
+      "fisher_p_greater": 1.2826471260305068e-46
+    },
+    {
+      "list": "DDD_Kaplanis",
+      "n_mapped": 282,
+      "k_shet_ge_0p1": 238,
+      "bg_n": 18275,
+      "bg_k_shet_ge_0p1": 2998,
+      "OR_HA": 27.30716481836424,
+      "fisher_p_greater": 5.05318424300827e-136
+    },
+    {
+      "list": "Heyne_DEE",
+      "n_mapped": 31,
+      "k_shet_ge_0p1": 29,
+      "bg_n": 18526,
+      "bg_k_shet_ge_0p1": 3207,
+      "OR_HA": 56.35856586126267,
+      "fisher_p_greater": 2.929570091369335e-20
+    }
+  ],
+  "seed": 20260424
+}

@@ -1,0 +1,156 @@
+{
+  "analysis": "D46_brainspan_developmental_trajectory",
+  "date": "2026-04-21",
+  "iteration": 41,
+  "data_source": "BrainSpan Atlas of the Developing Human Brain (brainspan.org)",
+  "gene_universe_size": 17343,
+  "peak_stage_distribution": {
+    "prenatal": 8915,
+    "adult": 5203,
+    "early_postnatal": 3282
+  },
+  "filter": "TPM >= 1.0 (science-critic correction: removes 24K zero-expression genes with np.argmax artifact)",
+  "enrichment_results": {
+    "Pardi\u00f1as_prenatal": {
+      "gene_list": "Pardi\u00f1as",
+      "stage": "prenatal",
+      "overlap": 144,
+      "n_scz": 373,
+      "n_stage": 8892,
+      "n_universe": 17343,
+      "pct_in_stage": 38.6,
+      "OR": 0.591,
+      "p_value": 0.9999997354653604,
+      "significant_005": false
+    },
+    "Pardi\u00f1as_early_postnatal": {
+      "gene_list": "Pardi\u00f1as",
+      "stage": "early_postnatal",
+      "overlap": 51,
+      "n_scz": 373,
+      "n_stage": 3272,
+      "n_universe": 17343,
+      "pct_in_stage": 13.7,
+      "OR": 0.676,
+      "p_value": 0.997046552621606,
+      "significant_005": false
+    },
+    "Pardi\u00f1as_adult": {
+      "gene_list": "Pardi\u00f1as",
+      "stage": "adult",
+      "overlap": 178,
+      "n_scz": 373,
+      "n_stage": 5192,
+      "n_universe": 17343,
+      "pct_in_stage": 47.7,
+      "OR": 2.177,
+      "p_value": 2.3270355888646815e-13,
+      "significant_005": true
+    },
+    "PGC3_prenatal": {
+      "gene_list": "PGC3",
+      "stage": "prenatal",
+      "overlap": 44,
+      "n_scz": 100,
+      "n_stage": 8892,
+      "n_universe": 17343,
+      "pct_in_stage": 44.0,
+      "OR": 0.745,
+      "p_value": 0.9406096487593418,
+      "significant_005": false
+    },
+    "PGC3_early_postnatal": {
+      "gene_list": "PGC3",
+      "stage": "early_postnatal",
+      "overlap": 20,
+      "n_scz": 100,
+      "n_stage": 3272,
+      "n_universe": 17343,
+      "pct_in_stage": 20.0,
+      "OR": 1.076,
+      "p_value": 0.42545051710845266,
+      "significant_005": false
+    },
+    "PGC3_adult": {
+      "gene_list": "PGC3",
+      "stage": "adult",
+      "overlap": 36,
+      "n_scz": 100,
+      "n_stage": 5192,
+      "n_universe": 17343,
+      "pct_in_stage": 36.0,
+      "OR": 1.319,
+      "p_value": 0.11270763889784258,
+      "significant_005": false
+    },
+    "Combined_prenatal": {
+      "gene_list": "Combined",
+      "stage": "prenatal",
+      "overlap": 179,
+      "n_scz": 448,
+      "n_stage": 8892,
+      "n_universe": 17343,
+      "pct_in_stage": 40.0,
+      "OR": 0.625,
+      "p_value": 0.9999995540758587,
+      "significant_005": false
+    },
+    "Combined_early_postnatal": {
+      "gene_list": "Combined",
+      "stage": "early_postnatal",
+      "overlap": 68,
+      "n_scz": 448,
+      "n_stage": 3272,
+      "n_universe": 17343,
+      "pct_in_stage": 15.2,
+      "OR": 0.765,
+      "p_value": 0.9833131508463459,
+      "significant_005": false
+    },
+    "Combined_adult": {
+      "gene_list": "Combined",
+      "stage": "adult",
+      "overlap": 201,
+      "n_scz": 448,
+      "n_stage": 5192,
+      "n_universe": 17343,
+      "pct_in_stage": 44.9,
+      "OR": 1.941,
+      "p_value": 1.0153552474025399e-11,
+      "significant_005": true
+    },
+    "neuronal_scz_prenatal": {
+      "gene_list": "neuronal_scz",
+      "stage": "prenatal",
+      "overlap": 3,
+      "n_scz": 17,
+      "n_stage": 8892,
+      "n_universe": 17343,
+      "pct_in_stage": 17.6,
+      "OR": 0.203,
+      "p_value": 0.9991696822968358
+    },
+    "neuronal_scz_early_postnatal": {
+      "gene_list": "neuronal_scz",
+      "stage": "early_postnatal",
+      "overlap": 1,
+      "n_scz": 17,
+      "n_stage": 3272,
+      "n_universe": 17343,
+      "pct_in_stage": 5.9,
+      "OR": 0.269,
+      "p_value": 0.9714490824453315
+    },
+    "neuronal_scz_adult": {
+      "gene_list": "neuronal_scz",
+      "stage": "adult",
+      "overlap": 13,
+      "n_scz": 17,
+      "n_stage": 5192,
+      "n_universe": 17343,
+      "pct_in_stage": 76.5,
+      "OR": 7.623,
+      "p_value": 0.00010001461961057297
+    }
+  }
+}

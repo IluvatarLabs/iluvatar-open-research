@@ -1,0 +1,21 @@
+{
+  "harmonization_meta": {
+    "disorder": "alzheimers",
+    "source": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/ldsc/comparator_sumstats/alzheimers.sumstats.gz",
+    "z_to_p_conversion": true,
+    "n_snps_input": 12069723,
+    "n_snps_after_bim_match": 10792913
+  },
+  "test": {
+    "disorder": "alzheimers",
+    "n_genes_in_output": 18464,
+    "n_b3_in_output": 18,
+    "median_b3": 0.81969,
+    "median_bg": 0.23521,
+    "sd_bg": 1.0856619203792364,
+    "std_effect": 0.5383628080054915,
+    "perm_p": 0.021397860213978603,
+    "n_perm": 10000,
+    "perm_seed": 20260423
+  }
+}

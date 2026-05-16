@@ -1,0 +1,70 @@
+{
+  "batch": "batch_048",
+  "sub": "B_har_tf_enrichment",
+  "generated_at": "2026-04-23T09:57:14.781914Z",
+  "n_tests": 2,
+  "results": [
+    {
+      "a": 0,
+      "b": 0,
+      "c": 1357,
+      "d": 15777,
+      "or": 0.0,
+      "p": 1.0,
+      "ci_low": 0.0,
+      "ci_high": Infinity,
+      "n_in_list": 0,
+      "n_target": 1357,
+      "n_bg": 17134,
+      "gene_list": "EGR1_PWM_targets",
+      "har_prox_count": 1357,
+      "bh_q": 1.0
+    },
+    {
+      "a": 0,
+      "b": 0,
+      "c": 1357,
+      "d": 15777,
+      "or": 0.0,
+      "p": 1.0,
+      "ci_low": 0.0,
+      "ci_high": Infinity,
+      "n_in_list": 0,
+      "n_target": 1357,
+      "n_bg": 17134,
+      "gene_list": "CTCF_PWM_targets",
+      "har_prox_count": 1357,
+      "bh_q": 1.0
+    }
+  ],
+  "inputs": {
+    "gnomad": {
+      "label": "gnomad_constraint",
+      "path": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/item_15/gnomad.v4.1.constraint_metrics.tsv",
+      "exists": true,
+      "sha256": "68d8abdb7fc48f570869b02dfaa74b9fecaece7fcc5f301ddca40ec1ce12da00",
+      "bytes": 95546041
+    },
+    "har": {
+      "label": "har_bed",
+      "path": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/item_15/reference_assets/harsRichard2020.GRCh37.bed",
+      "exists": true,
+      "sha256": "09d2a2221fbb6b603f1c7f72575676606013b2f87372aae0bb62b96517d6e6a2",
+      "bytes": 96325
+    },
+    "tss": {
+      "label": "gene_tss_grch37",
+      "path": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/ldsc/gene_tss_grch37.csv",
+      "exists": true,
+      "sha256": "98fd8d4cfd4827d785fe3c8d3c2639591ca7d9149d8622ac215cf2bd1b804a89",
+      "bytes": 5252382
+    },
+    "pgc3_xlsx": {
+      "label": "pgc3_xlsx",
+      "path": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/19426775/scz2022-Extended-Data-Table1.xlsx",
+      "exists": true,
+      "sha256": "7aa88b5944210540d63f6297803e4abfebc6b012bc265b1260cf618fa55394de",
+      "bytes": 110845
+    }
+  }
+}

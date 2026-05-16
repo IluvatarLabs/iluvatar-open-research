@@ -1,0 +1,95 @@
+{
+  "experiment": "E5_m3_erbb4_sensitivity",
+  "brief": "brief_v2.md section E5",
+  "analysis_type": "DESCRIPTIVE -- no formal decision rule",
+  "conditional_on": "E3 M3 PoPS OR >= 3.0",
+  "seed": 20260424,
+  "timestamp_start": "2026-04-24T21:20:05",
+  "m3_mapping": {
+    "n_symbols": 29,
+    "n_mapped": 27,
+    "unmapped": [
+      "NAA",
+      "PLP1"
+    ],
+    "erbb4_ensgid": "ENSG00000178568"
+  },
+  "conditional_gate": {
+    "e3_results_found": true,
+    "e3_m3_pops_or": 3.9655,
+    "gate_threshold": 3.0,
+    "gate_passed": true
+  },
+  "fisher_m3_with_erbb4": {
+    "OR": 3.9655,
+    "CI_lo": 1.6745,
+    "CI_hi": 10.8536,
+    "p_fisher": 0.014006829377262336,
+    "a_overlap": 5,
+    "b_top_only": 995,
+    "c_module_only": 22,
+    "d_neither": 17361,
+    "n_module_in_universe": 27,
+    "n_top_in_universe": 1000,
+    "n_universe": 18383,
+    "overlap_ensgids": [
+      "ENSG00000102934",
+      "ENSG00000112531",
+      "ENSG00000147488",
+      "ENSG00000174607",
+      "ENSG00000178568"
+    ],
+    "overlap_symbols": [
+      "ERBB4",
+      "PLLP",
+      "QKI",
+      "ST18",
+      "UGT8"
+    ]
+  },
+  "fisher_m3_without_erbb4": {
+    "OR": 3.1692,
+    "CI_lo": 1.2639,
+    "CI_hi": 9.6068,
+    "p_fisher": 0.050117151448138456,
+    "a_overlap": 4,
+    "b_top_only": 996,
+    "c_module_only": 22,
+    "d_neither": 17361,
+    "n_module_in_universe": 26,
+    "n_top_in_universe": 1000,
+    "n_universe": 18383,
+    "overlap_ensgids": [
+      "ENSG00000102934",
+      "ENSG00000112531",
+      "ENSG00000147488",
+      "ENSG00000174607"
+    ],
+    "overlap_symbols": [
+      "PLLP",
+      "QKI",
+      "ST18",
+      "UGT8"
+    ]
+  },
+  "or_change_summary": {
+    "OR_with_erbb4": 3.9655,
+    "OR_without_erbb4": 3.1692,
+    "CI_with": [
+      1.6745,
+      10.8536
+    ],
+    "CI_without": [
+      1.2639,
+      9.6068
+    ],
+    "overlap_with": 5,
+    "overlap_without": 4,
+    "or_change_pct": -20.1,
+    "erbb4_in_pops_top1000": true,
+    "erbb4_ensgid": "ENSG00000178568"
+  },
+  "descriptive_note": "M3 OR decreased from 3.9655 to 3.1692 (95% CI [1.2639, 9.6068]) upon ERBB4 removal. With 4 overlap genes from 26 module genes, the CI is too wide for formal classification. ERBB4 was in PoPS-top-1000.",
+  "timestamp_end": "2026-04-24T21:20:05",
+  "elapsed_seconds": 0.1
+}

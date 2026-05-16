@@ -1,0 +1,36 @@
+{
+  "batch_id": "batch_011",
+  "timestamp": "2026-04-09T11:38:16.700770",
+  "hypothesis": "snRNA-seq microglia markers show enrichment for SCZ GWAS genes",
+  "microglia_markers_k": 92,
+  "scz_genes_M": 444,
+  "background_N": 20000,
+  "microglia_markers_source": "Mathys et al. 2019, Nature Neuroscience (snRNA-seq)",
+  "overlap_count": 8,
+  "overlap_genes": [
+    "C4A",
+    "C4B",
+    "CD14",
+    "CXCR4",
+    "IL10",
+    "IL6",
+    "SPI1",
+    "TNFRSF1A"
+  ],
+  "odds_ratio": 4.253,
+  "p_value_raw": 0.0010124901091690117,
+  "p_value_corrected": 0.003037470327507035,
+  "classification": "POSITIVE",
+  "interpretation": "snRNA-seq markers show strong enrichment",
+  "batch_010_result": "PanglaoDB: OR=1.11, NEGATIVE",
+  "comparison": "snRNA-seq shows OR=4.25 vs PanglaoDB OR=1.11",
+  "power_at_or_2.5": 0.365,
+  "power_at_or_3.0": 0.537,
+  "power_limitation": "Power below 80% threshold - negative results may be Type II error",
+  "contingency_table": {
+    "scz_microglia": 8,
+    "scz_other": 436,
+    "non_scz_microglia": 84,
+    "non_scz_other": 19472
+  }
+}

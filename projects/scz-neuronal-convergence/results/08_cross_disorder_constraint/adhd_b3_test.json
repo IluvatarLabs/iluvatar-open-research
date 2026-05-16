@@ -1,0 +1,21 @@
+{
+  "harmonization_meta": {
+    "disorder": "adhd",
+    "source": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/ldsc/comparator_sumstats/adhd_ldsc.tsv",
+    "z_to_p_conversion": false,
+    "n_snps_input": 2628405,
+    "n_snps_after_bim_match": 2582922
+  },
+  "test": {
+    "disorder": "adhd",
+    "n_genes_in_output": 18298,
+    "n_b3_in_output": 18,
+    "median_b3": -0.146775,
+    "median_bg": 0.13641999999999999,
+    "sd_bg": 1.2139803901743857,
+    "std_effect": -0.23327806799195464,
+    "perm_p": 0.8378162183781622,
+    "n_perm": 10000,
+    "perm_seed": 20260423
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "status": "ok",
+  "batch": "060",
+  "sub": "e2",
+  "brief": "brief_v2.md",
+  "wall_s": 3366.7870242595673,
+  "smoke": false,
+  "n_aligned": 16556,
+  "n_features": 17423,
+  "n_brain_human_features": 1700,
+  "n_other_non_brain_features": 10363,
+  "full_model_rho": 0.5096146756032491,
+  "full_model_rho_anchor": 0.51,
+  "full_model_rho_deviation": 0.0003853243967508746,
+  "rho_gate_pass": true,
+  "observed_deltas": {
+    "delta_brain_human": 0.0036543779676732058,
+    "delta_other_non_brain": 0.10545323968248982,
+    "delta_joint": 0.13771780393549315,
+    "interaction_term": 0.02861018628533013,
+    "non_additivity_fraction": 0.2077450080363691
+  },
+  "permutation_null": {
+    "n_perm": 1000,
+    "seed": 20260425,
+    "mean": 0.039167800296177994,
+    "std": 0.0038685683813937987,
+    "p05": 0.032453857972815595,
+    "p50": 0.039541847004438996,
+    "p95": 0.04467654667783289,
+    "p_perm": 0.986
+  },
+  "bootstrap_ci": {
+    "n_boot": 1000,
+    "seed": 20260426,
+    "mean": 0.02860510547210712,
+    "ci_lo": 0.02516150568796703,
+    "ci_hi": 0.03232837297547542
+  },
+  "verdict": {
+    "verdict": "NO_INTERACTION",
+    "reason": "interaction=0.028610 <= perm_95th=0.044677. Mass-share confirmed. F-056-A brain-biology REFUTED at expression-partition level."
+  },
+  "f056_a_closure": "F-056-A PERMANENTLY CLOSED. Regardless of outcome, no further experiments on the PoPS expression-mechanism channel.",
+  "provenance_sha256": {
+    "gnomad_tsv": "68d8abdb7fc48f570869b02dfaa74b9fecaece7fcc5f301ddca40ec1ce12da00",
+    "gene_annot": "940086e0781e9b244da76d27f02cc25dd45c957ee4415915cd1ced37b63d1e72",
+    "magma_scz": "8eaded5409b49981de428189805957420d378c5cf138c9d40056acf4f1030fa0",
+    "pops_preds_p05": "60fcb6ccea3077d4b50f0612213ffe50db850f9783cc7660029146cee82f9405",
+    "pops_coefs_p05": "d3c5dcfa7382293c4306d3f7506f537897f611530100d95238cd5dc1c2eeae43"
+  },
+  "brief_contract": {
+    "n_permutations": 1000,
+    "n_bootstrap": 1000,
+    "seed_perm": 20260425,
+    "seed_boot": 20260426,
+    "full_model_rho_anchor": 0.51,
+    "rho_anchor_tolerance": 0.02
+  }
+}

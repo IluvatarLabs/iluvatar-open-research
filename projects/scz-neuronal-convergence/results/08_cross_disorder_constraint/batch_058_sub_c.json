@@ -1,0 +1,1943 @@
+{
+  "status": "ok",
+  "batch": "058",
+  "sub": "c",
+  "brief": "brief_v2.md (v2.1)",
+  "wall_s": 2873.1445088386536,
+  "smoke": false,
+  "disorders": [
+    "scz",
+    "bip",
+    "mdd",
+    "asd",
+    "adhd",
+    "ibd_delange2017",
+    "height",
+    "alzheimers"
+  ],
+  "gene_set_mappings": {
+    "EDT1_FULL": {
+      "n_symbols": 470,
+      "n_mapped": 454,
+      "mapping_rate": 0.9659574468085106,
+      "gate_pass": true
+    },
+    "EDT1_ex_B3": {
+      "n_symbols": 452,
+      "n_mapped": 436,
+      "mapping_rate": 0.9646017699115044,
+      "gate_pass": true
+    },
+    "Koopmans_ex_B3_ex_EDT1": {
+      "n_symbols": 1482,
+      "n_mapped": 1380,
+      "mapping_rate": 0.9311740890688259,
+      "gate_pass": true
+    }
+  },
+  "primary_EDT1_ex_B3": {
+    "gene_set": "EDT1_ex_B3",
+    "n_gene_set_ensg": 436,
+    "per_disorder": {
+      "scz": {
+        "status": "ok",
+        "n_gene_universe": 16556,
+        "n_set_in_universe": 414,
+        "ols": {
+          "status": "ok",
+          "beta_1": 3.4265879770359398,
+          "se_1": 0.07172674493387571,
+          "t": 47.77280748199131,
+          "p_one_sided": 0.0,
+          "p_two_sided": 0.0,
+          "ci_lo": 3.2860035569655435,
+          "ci_hi": 3.567172397106336,
+          "n": 16556,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.14279942081400987
+        },
+        "huber": {
+          "status": "ok",
+          "beta_1": 3.503466272193857,
+          "se_1": 0.06773702144766906,
+          "ci_lo": 3.3707017101564256,
+          "ci_hi": 3.636230834231289
+        },
+        "tukey": {
+          "status": "ok",
+          "beta_1": 3.5313325766845156,
+          "se_1": 0.06754751251736484,
+          "ci_lo": 3.3989394521504805,
+          "ci_hi": 3.6637257012185507,
+          "converged": true,
+          "niter": 19,
+          "final_scale": 1.3024171136999512
+        },
+        "rank_magma_ols": {
+          "status": "ok",
+          "beta_1": 1.7711494810852377,
+          "se_1": 0.047313063507129494,
+          "t": 37.43468187846994,
+          "p_one_sided": 8.784134974978593e-295,
+          "p_two_sided": 1.7568269949957186e-294,
+          "ci_lo": 1.678415876611264,
+          "ci_hi": 1.8638830855592114,
+          "n": 16556,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.1025303157758799
+        },
+        "influence": {
+          "status": "ok",
+          "max_abs_dfbetas_b3": 0.18522530928217074,
+          "argmax_dfbetas_b3_idx": 14376,
+          "cooks_max": 0.006473893328177045,
+          "cooks_mean": 6.372643539984696e-05,
+          "cooks_argmax_idx": 14468
+        },
+        "influential_outlier_reconciliation": {
+          "status": "skipped",
+          "reason": "no obs exceed DFBETAS cutoff"
+        },
+        "bh_q": 0.0,
+        "classification_v2": "ROBUST_POSITIVE",
+        "reconciled_post_removal": false
+      },
+      "bip": {
+        "status": "ok",
+        "n_gene_universe": 16050,
+        "n_set_in_universe": 399,
+        "ols": {
+          "status": "ok",
+          "beta_1": -0.1014661640519038,
+          "se_1": 0.05430020956494015,
+          "t": -1.8686145940294334,
+          "p_one_sided": 0.9691526685269426,
+          "p_two_sided": 0.06169466294611486,
+          "ci_lo": -0.2078945747991865,
+          "ci_hi": 0.004962246695378897,
+          "n": 16050,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.0008417268421442303
+        },
+        "huber": {
+          "status": "ok",
+          "beta_1": -0.12710823478617728,
+          "se_1": 0.05570632103822121,
+          "ci_lo": -0.23629262402109086,
+          "ci_hi": -0.01792384555126371
+        },
+        "tukey": {
+          "status": "ok",
+          "beta_1": -0.12142454970595769,
+          "se_1": 0.055641268873527085,
+          "ci_lo": -0.23048143669807075,
+          "ci_hi": -0.01236766271384461,
+          "converged": true,
+          "niter": 17,
+          "final_scale": 1.0601178877964745
+        },
+        "rank_magma_ols": {
+          "status": "ok",
+          "beta_1": -0.09439702113684213,
+          "se_1": 0.050877963673635854,
+          "t": -1.855361620649082,
+          "p_one_sided": 0.968218533936865,
+          "p_two_sided": 0.06356293212627011,
+          "ci_lo": -0.19411782993716842,
+          "ci_hi": 0.005323787663484139,
+          "n": 16050,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.0008443867447136544
+        },
+        "influence": {
+          "status": "ok",
+          "max_abs_dfbetas_b3": 0.16423789320633506,
+          "argmax_dfbetas_b3_idx": 9030,
+          "cooks_max": 0.005208424185983409,
+          "cooks_mean": 6.303100010521322e-05,
+          "cooks_argmax_idx": 9030
+        },
+        "influential_outlier_reconciliation": {
+          "status": "skipped",
+          "reason": "no obs exceed DFBETAS cutoff"
+        },
+        "bh_q": 0.9691526685269426,
+        "classification_v2": "CI_EXCLUDES_STRONG",
+        "reconciled_post_removal": false
+      },
+      "mdd": {
+        "status": "ok",
+        "n_gene_universe": 16725,
+        "n_set_in_universe": 414,
+        "ols": {
+          "status": "ok",
+          "beta_1": 0.8062178962671862,
+          "se_1": 0.06359935006327123,
+          "t": 12.676511559711344,
+          "p_one_sided": 5.88434370293636e-37,
+          "p_two_sided": 1.176868740587272e-36,
+          "ci_lo": 0.6815631701431746,
+          "ci_hi": 0.9308726223911978,
+          "n": 16725,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.02091619809546541
+        },
+        "huber": {
+          "status": "ok",
+          "beta_1": 0.7701228828470589,
+          "se_1": 0.06129838130509886,
+          "ci_lo": 0.6499780554890651,
+          "ci_hi": 0.8902677102050527
+        },
+        "tukey": {
+          "status": "ok",
+          "beta_1": 0.7599474550919906,
+          "se_1": 0.06130829599128659,
+          "ci_lo": 0.6397831949490689,
+          "ci_hi": 0.8801117152349123,
+          "converged": true,
+          "niter": 17,
+          "final_scale": 1.1824044372998694
+        },
+        "rank_magma_ols": {
+          "status": "ok",
+          "beta_1": 0.5930988692745714,
+          "se_1": 0.04945268437723523,
+          "t": 11.993259349690534,
+          "p_one_sided": 2.6324917345326985e-33,
+          "p_two_sided": 5.264983469065397e-33,
+          "ci_lo": 0.4961716078951904,
+          "ci_hi": 0.6900261306539525,
+          "n": 16725,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.01912410504866835
+        },
+        "influence": {
+          "status": "ok",
+          "max_abs_dfbetas_b3": 0.1940180238616541,
+          "argmax_dfbetas_b3_idx": 14357,
+          "cooks_max": 0.009627293214417137,
+          "cooks_mean": 6.645585061875973e-05,
+          "cooks_argmax_idx": 14357
+        },
+        "influential_outlier_reconciliation": {
+          "status": "skipped",
+          "reason": "no obs exceed DFBETAS cutoff"
+        },
+        "bh_q": 2.353737481174544e-36,
+        "classification_v2": "ROBUST_POSITIVE",
+        "reconciled_post_removal": false
+      },
+      "asd": {
+        "status": "ok",
+        "n_gene_universe": 16677,
+        "n_set_in_universe": 414,
+        "ols": {
+          "status": "ok",
+          "beta_1": 0.46193903238407885,
+          "se_1": 0.054292866582807804,
+          "t": 8.508282237769242,
+          "p_one_sided": 9.566482592620913e-18,
+          "p_two_sided": 1.9132965185241826e-17,
+          "ci_lo": 0.35552501388177554,
+          "ci_hi": 0.5683530508863821,
+          "n": 16677,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.008865989713134792
+        },
+        "huber": {
+          "status": "ok",
+          "beta_1": 0.420079706712618,
+          "se_1": 0.05472907871706896,
+          "ci_lo": 0.31281071242716285,
+          "ci_hi": 0.5273487009980732
+        },
+        "tukey": {
+          "status": "ok",
+          "beta_1": 0.38847146542640454,
+          "se_1": 0.054743536086624835,
+          "ci_lo": 0.2811741346966199,
+          "ci_hi": 0.4957687961561892,
+          "converged": true,
+          "niter": 18,
+          "final_scale": 1.059212472651554
+        },
+        "rank_magma_ols": {
+          "status": "ok",
+          "beta_1": 0.3959922828602519,
+          "se_1": 0.04972972604645924,
+          "t": 7.962888886423829,
+          "p_one_sided": 8.941140612467198e-16,
+          "p_two_sided": 1.7882281224934396e-15,
+          "ci_lo": 0.2985220198091918,
+          "ci_hi": 0.493462545911312,
+          "n": 16677,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.008376531093966522
+        },
+        "influence": {
+          "status": "ok",
+          "max_abs_dfbetas_b3": 0.21613532991796933,
+          "argmax_dfbetas_b3_idx": 16564,
+          "cooks_max": 0.011304515390515154,
+          "cooks_mean": 6.594399705227495e-05,
+          "cooks_argmax_idx": 16564
+        },
+        "influential_outlier_reconciliation": {
+          "status": "skipped",
+          "reason": "no obs exceed DFBETAS cutoff"
+        },
+        "bh_q": 2.55106202469891e-17,
+        "classification_v2": "ROBUST_POSITIVE",
+        "reconciled_post_removal": false
+      },
+      "adhd": {
+        "status": "ok",
+        "n_gene_universe": 16660,
+        "n_set_in_universe": 414,
+        "ols": {
+          "status": "ok",
+          "beta_1": 0.05653833629517788,
+          "se_1": 0.060527337731463085,
+          "t": 0.9340958716211359,
+          "p_one_sided": 0.1751339920554611,
+          "p_two_sided": 0.3502679841109222,
+          "ci_lo": -0.06209524565848977,
+          "ci_hi": 0.17517191824884554,
+          "n": 16660,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.009893845032431847
+        },
+        "huber": {
+          "status": "ok",
+          "beta_1": 0.014958115231116136,
+          "se_1": 0.054740538031429996,
+          "ci_lo": -0.09233333931048665,
+          "ci_hi": 0.12224956977271892
+        },
+        "tukey": {
+          "status": "ok",
+          "beta_1": 0.013100670567016963,
+          "se_1": 0.05433785269311867,
+          "ci_lo": -0.09340152071149563,
+          "ci_hi": 0.11960286184552957,
+          "converged": true,
+          "niter": 17,
+          "final_scale": 1.0420441724137364
+        },
+        "rank_magma_ols": {
+          "status": "ok",
+          "beta_1": 0.023469315045416883,
+          "se_1": 0.04971141794343044,
+          "t": 0.4721111570811358,
+          "p_one_sided": 0.31842681745044,
+          "p_two_sided": 0.63685363490088,
+          "ci_lo": -0.07396506412370678,
+          "ci_hi": 0.12090369421454054,
+          "n": 16660,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.009235738277082572
+        },
+        "influence": {
+          "status": "ok",
+          "max_abs_dfbetas_b3": 0.2853573890265474,
+          "argmax_dfbetas_b3_idx": 9276,
+          "cooks_max": 0.014126979078130066,
+          "cooks_mean": 6.186697995300196e-05,
+          "cooks_argmax_idx": 9276
+        },
+        "influential_outlier_reconciliation": {
+          "status": "skipped",
+          "reason": "no obs exceed DFBETAS cutoff"
+        },
+        "bh_q": 0.20015313377766983,
+        "classification_v2": "CI_EXCLUDES_STRONG",
+        "reconciled_post_removal": false
+      },
+      "ibd_delange2017": {
+        "status": "ok",
+        "n_gene_universe": 16384,
+        "n_set_in_universe": 412,
+        "ols": {
+          "status": "ok",
+          "beta_1": 0.15586513870921345,
+          "se_1": 0.0717855064465146,
+          "t": 2.1712619500058032,
+          "p_one_sided": 0.014962842950650335,
+          "p_two_sided": 0.02992568590130067,
+          "ci_lo": 0.015165546074044828,
+          "ci_hi": 0.2965647313443821,
+          "n": 16384,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.006729137040299871
+        },
+        "huber": {
+          "status": "ok",
+          "beta_1": 0.19464255996339663,
+          "se_1": 0.06454108031177368,
+          "ci_lo": 0.06814204255232023,
+          "ci_hi": 0.321143077374473
+        },
+        "tukey": {
+          "status": "ok",
+          "beta_1": 0.20079663912397508,
+          "se_1": 0.06379990777826004,
+          "ci_lo": 0.0757488198785854,
+          "ci_hi": 0.32584445836936476,
+          "converged": true,
+          "niter": 26,
+          "final_scale": 1.2210414912413805
+        },
+        "rank_magma_ols": {
+          "status": "ok",
+          "beta_1": 0.13570175587616104,
+          "se_1": 0.04991512471522928,
+          "t": 2.718650041452425,
+          "p_one_sided": 0.0032808967191888827,
+          "p_two_sided": 0.006561793438377765,
+          "ci_lo": 0.037868111434311666,
+          "ci_hi": 0.2335354003180104,
+          "n": 16384,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.005910087099199823
+        },
+        "influence": {
+          "status": "ok",
+          "max_abs_dfbetas_b3": 0.24267171584241318,
+          "argmax_dfbetas_b3_idx": 6927,
+          "cooks_max": 0.011595384921156405,
+          "cooks_mean": 5.9914530924217265e-05,
+          "cooks_argmax_idx": 6927
+        },
+        "influential_outlier_reconciliation": {
+          "status": "skipped",
+          "reason": "no obs exceed DFBETAS cutoff"
+        },
+        "bh_q": 0.023940548721040535,
+        "classification_v2": "ROBUST_POSITIVE",
+        "reconciled_post_removal": false
+      },
+      "height": {
+        "status": "ok",
+        "n_gene_universe": 16707,
+        "n_set_in_universe": 414,
+        "ols": {
+          "status": "ok",
+          "beta_1": 0.08313458136791159,
+          "se_1": 0.0568954159478534,
+          "t": 1.4611824165958693,
+          "p_one_sided": 0.07199210012515095,
+          "p_two_sided": 0.1439842002503019,
+          "ci_lo": -0.028380433889881068,
+          "ci_hi": 0.19464959662570425,
+          "n": 16707,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.008006896314001533
+        },
+        "huber": {
+          "status": "ok",
+          "beta_1": 0.11912501742214313,
+          "se_1": 0.054955679703388625,
+          "ci_lo": 0.01141188520350142,
+          "ci_hi": 0.22683814964078483
+        },
+        "tukey": {
+          "status": "ok",
+          "beta_1": 0.12393081801084878,
+          "se_1": 0.05498608232403609,
+          "ci_lo": 0.016158096655738044,
+          "ci_hi": 0.2317035393659595,
+          "converged": true,
+          "niter": 24,
+          "final_scale": 1.0552366981074044
+        },
+        "rank_magma_ols": {
+          "status": "ok",
+          "beta_1": 0.0752463180706777,
+          "se_1": 0.0497252828275092,
+          "t": 1.5132406251302337,
+          "p_one_sided": 0.06511873545938311,
+          "p_two_sided": 0.13023747091876622,
+          "ci_lo": -0.022215236271240335,
+          "ci_hi": 0.17270787241259575,
+          "n": 16707,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.00821302854740158
+        },
+        "influence": {
+          "status": "ok",
+          "max_abs_dfbetas_b3": 0.16007686618892367,
+          "argmax_dfbetas_b3_idx": 2682,
+          "cooks_max": 0.005056909513681818,
+          "cooks_mean": 5.9978187721397855e-05,
+          "cooks_argmax_idx": 2682
+        },
+        "influential_outlier_reconciliation": {
+          "status": "skipped",
+          "reason": "no obs exceed DFBETAS cutoff"
+        },
+        "bh_q": 0.0959894668335346,
+        "classification_v2": "CI_EXCLUDES_STRONG",
+        "reconciled_post_removal": false
+      },
+      "alzheimers": {
+        "status": "ok",
+        "n_gene_universe": 16713,
+        "n_set_in_universe": 414,
+        "ols": {
+          "status": "ok",
+          "beta_1": 0.3063034345131262,
+          "se_1": 0.05404206268998165,
+          "t": 5.667870900307232,
+          "p_one_sided": 7.348467017766266e-09,
+          "p_two_sided": 1.4696934035532532e-08,
+          "ci_lo": 0.20038099164076217,
+          "ci_hi": 0.4122258773854902,
+          "n": 16713,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.006039938229245756
+        },
+        "huber": {
+          "status": "ok",
+          "beta_1": 0.2964483520784444,
+          "se_1": 0.05032817401490215,
+          "ci_lo": 0.1978051310092362,
+          "ci_hi": 0.3950915731476526
+        },
+        "tukey": {
+          "status": "ok",
+          "beta_1": 0.2888064126587738,
+          "se_1": 0.050066509069625474,
+          "ci_lo": 0.1906760548823079,
+          "ci_hi": 0.3869367704352398,
+          "converged": true,
+          "niter": 18,
+          "final_scale": 0.9777174426496805
+        },
+        "rank_magma_ols": {
+          "status": "ok",
+          "beta_1": 0.2693820984032627,
+          "se_1": 0.04979377641531167,
+          "t": 5.409955175049291,
+          "p_one_sided": 3.195398703068432e-08,
+          "p_two_sided": 6.390797406136864e-08,
+          "ci_lo": 0.17178629662925182,
+          "ci_hi": 0.3669779001772736,
+          "n": 16713,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.005466050203676298
+        },
+        "influence": {
+          "status": "ok",
+          "max_abs_dfbetas_b3": 0.25463340064895845,
+          "argmax_dfbetas_b3_idx": 4716,
+          "cooks_max": 0.011333791643242922,
+          "cooks_mean": 6.07701079370039e-05,
+          "cooks_argmax_idx": 4716
+        },
+        "influential_outlier_reconciliation": {
+          "status": "skipped",
+          "reason": "no obs exceed DFBETAS cutoff"
+        },
+        "bh_q": 1.4696934035532532e-08,
+        "classification_v2": "ROBUST_POSITIVE",
+        "reconciled_post_removal": false
+      }
+    },
+    "per_disorder_classification": {
+      "scz": "ROBUST_POSITIVE",
+      "bip": "CI_EXCLUDES_STRONG",
+      "mdd": "ROBUST_POSITIVE",
+      "asd": "ROBUST_POSITIVE",
+      "adhd": "CI_EXCLUDES_STRONG",
+      "ibd_delange2017": "ROBUST_POSITIVE",
+      "height": "CI_EXCLUDES_STRONG",
+      "alzheimers": "ROBUST_POSITIVE"
+    },
+    "bh_q_by_disorder": {
+      "scz": 0.0,
+      "bip": 0.9691526685269426,
+      "mdd": 2.353737481174544e-36,
+      "asd": 2.55106202469891e-17,
+      "adhd": 0.20015313377766983,
+      "ibd_delange2017": 0.023940548721040535,
+      "height": 0.0959894668335346,
+      "alzheimers": 1.4696934035532532e-08
+    },
+    "aggregate_pattern": {
+      "classification": "F147_CROSS_DISORDER_EXTENDED",
+      "reason": ">=3 ROBUST disorders (['scz', 'mdd', 'asd', 'ibd_delange2017', 'alzheimers']); scope not SCZ-specific",
+      "counts": {
+        "robust_positive": [
+          "scz",
+          "mdd",
+          "asd",
+          "ibd_delange2017",
+          "alzheimers"
+        ],
+        "fragile": [],
+        "n_disorders": 8
+      }
+    },
+    "scz_beta_ols": 3.4265879770359398
+  },
+  "secondary_EDT1_FULL": {
+    "gene_set": "EDT1_FULL",
+    "n_gene_set_ensg": 454,
+    "per_disorder": {
+      "scz": {
+        "status": "ok",
+        "n_gene_universe": 16556,
+        "n_set_in_universe": 432,
+        "ols": {
+          "status": "ok",
+          "beta_1": 3.4297567497421313,
+          "se_1": 0.0700771684912964,
+          "t": 48.94257036324331,
+          "p_one_sided": 0.0,
+          "p_two_sided": 0.0,
+          "ci_lo": 3.2924054994991905,
+          "ci_hi": 3.567107999985072,
+          "n": 16556,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.1479182733018196
+        },
+        "huber": {
+          "status": "ok",
+          "beta_1": 3.505072326163304,
+          "se_1": 0.06626542150217349,
+          "ci_lo": 3.375192100019044,
+          "ci_hi": 3.6349525523075643
+        },
+        "tukey": {
+          "status": "ok",
+          "beta_1": 3.5318959996536865,
+          "se_1": 0.06610865326233853,
+          "ci_lo": 3.402323039259503,
+          "ci_hi": 3.66146896004787,
+          "converged": true,
+          "niter": 23,
+          "final_scale": 1.3012827879231792
+        },
+        "rank_magma_ols": {
+          "status": "ok",
+          "beta_1": 1.7707868902152963,
+          "se_1": 0.04628314250140358,
+          "t": 38.259867297506766,
+          "p_one_sided": 2.8317900472426574e-307,
+          "p_two_sided": 5.663580094485315e-307,
+          "ci_lo": 1.6800719309125454,
+          "ci_hi": 1.8615018495180473,
+          "n": 16556,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.105642248376558
+        },
+        "influence": {
+          "status": "ok",
+          "max_abs_dfbetas_b3": 0.18233349805557564,
+          "argmax_dfbetas_b3_idx": 14376,
+          "cooks_max": 0.006284675103200827,
+          "cooks_mean": 6.377873611998948e-05,
+          "cooks_argmax_idx": 14468
+        },
+        "influential_outlier_reconciliation": {
+          "status": "skipped",
+          "reason": "no obs exceed DFBETAS cutoff"
+        },
+        "bh_q": 0.0,
+        "classification_v2": "ROBUST_POSITIVE",
+        "reconciled_post_removal": false
+      },
+      "bip": {
+        "status": "ok",
+        "n_gene_universe": 16050,
+        "n_set_in_universe": 417,
+        "ols": {
+          "status": "ok",
+          "beta_1": -0.09402317185811852,
+          "se_1": 0.05317055218936721,
+          "t": -1.7683316795969033,
+          "p_one_sided": 0.9614877647357605,
+          "p_two_sided": 0.07702447052847894,
+          "ci_lo": -0.19823745414927826,
+          "ci_hi": 0.010191110433041217,
+          "n": 16050,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.000819017694616675
+        },
+        "huber": {
+          "status": "ok",
+          "beta_1": -0.1165892749792958,
+          "se_1": 0.05454671340330864,
+          "ci_lo": -0.22350083324978073,
+          "ci_hi": -0.009677716708810874
+        },
+        "tukey": {
+          "status": "ok",
+          "beta_1": -0.11016651613132418,
+          "se_1": 0.05448384378091434,
+          "ci_lo": -0.21695484994191627,
+          "ci_hi": -0.003378182320732087,
+          "converged": true,
+          "niter": 17,
+          "final_scale": 1.0604169739168814
+        },
+        "rank_magma_ols": {
+          "status": "ok",
+          "beta_1": -0.08727960926703916,
+          "se_1": 0.049819515530563144,
+          "t": -1.7519160581458304,
+          "p_one_sided": 0.9600963266220703,
+          "p_two_sided": 0.07980734675585924,
+          "ci_lo": -0.18492585970694292,
+          "ci_hi": 0.010366641172864594,
+          "n": 16050,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.0008211524846084561
+        },
+        "influence": {
+          "status": "ok",
+          "max_abs_dfbetas_b3": 0.16012922146090294,
+          "argmax_dfbetas_b3_idx": 9030,
+          "cooks_max": 0.004983330803870186,
+          "cooks_mean": 6.316436443821698e-05,
+          "cooks_argmax_idx": 9030
+        },
+        "influential_outlier_reconciliation": {
+          "status": "skipped",
+          "reason": "no obs exceed DFBETAS cutoff"
+        },
+        "bh_q": 0.9614877647357605,
+        "classification_v2": "CI_EXCLUDES_STRONG",
+        "reconciled_post_removal": false
+      },
+      "mdd": {
+        "status": "ok",
+        "n_gene_universe": 16725,
+        "n_set_in_universe": 432,
+        "ols": {
+          "status": "ok",
+          "beta_1": 0.8210874540256955,
+          "se_1": 0.06229908017813373,
+          "t": 13.179768492214238,
+          "p_one_sided": 9.026831294666158e-40,
+          "p_two_sided": 1.8053662589332315e-39,
+          "ci_lo": 0.6989812568765534,
+          "ci_hi": 0.9431936511748376,
+          "n": 16725,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.021670380582542226
+        },
+        "huber": {
+          "status": "ok",
+          "beta_1": 0.7831050973901361,
+          "se_1": 0.06005484170588166,
+          "ci_lo": 0.665397607646608,
+          "ci_hi": 0.9008125871336642
+        },
+        "tukey": {
+          "status": "ok",
+          "beta_1": 0.7711174253758599,
+          "se_1": 0.06006127144543229,
+          "ci_lo": 0.6533973333428127,
+          "ci_hi": 0.8888375174089072,
+          "converged": true,
+          "niter": 22,
+          "final_scale": 1.1829027016734708
+        },
+        "rank_magma_ols": {
+          "status": "ok",
+          "beta_1": 0.6018286577763682,
+          "se_1": 0.04844524183715302,
+          "t": 12.422864144210367,
+          "p_one_sided": 1.4054905473091076e-35,
+          "p_two_sided": 2.810981094618215e-35,
+          "ci_lo": 0.5068759837755483,
+          "ci_hi": 0.696781331777188,
+          "n": 16725,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.019733865365360703
+        },
+        "influence": {
+          "status": "ok",
+          "max_abs_dfbetas_b3": 0.188735432672149,
+          "argmax_dfbetas_b3_idx": 14357,
+          "cooks_max": 0.009280140940074127,
+          "cooks_mean": 6.654442298727253e-05,
+          "cooks_argmax_idx": 14357
+        },
+        "influential_outlier_reconciliation": {
+          "status": "skipped",
+          "reason": "no obs exceed DFBETAS cutoff"
+        },
+        "bh_q": 3.610732517866463e-39,
+        "classification_v2": "ROBUST_POSITIVE",
+        "reconciled_post_removal": false
+      },
+      "asd": {
+        "status": "ok",
+        "n_gene_universe": 16677,
+        "n_set_in_universe": 432,
+        "ols": {
+          "status": "ok",
+          "beta_1": 0.4912466306836065,
+          "se_1": 0.053182074504931065,
+          "t": 9.237071612128593,
+          "p_one_sided": 1.415861523405886e-20,
+          "p_two_sided": 2.831723046811772e-20,
+          "ci_lo": 0.38700976465394166,
+          "ci_hi": 0.5954834967132714,
+          "n": 16677,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.009630952553164596
+        },
+        "huber": {
+          "status": "ok",
+          "beta_1": 0.4364852558561752,
+          "se_1": 0.053631074901208164,
+          "ci_lo": 0.3313683490498072,
+          "ci_hi": 0.5416021626625432
+        },
+        "tukey": {
+          "status": "ok",
+          "beta_1": 0.4003054299339312,
+          "se_1": 0.053647203306656406,
+          "ci_lo": 0.29515691145288464,
+          "ci_hi": 0.5054539484149778,
+          "converged": true,
+          "niter": 19,
+          "final_scale": 1.0579687959759532
+        },
+        "rank_magma_ols": {
+          "status": "ok",
+          "beta_1": 0.41862813124546033,
+          "se_1": 0.04871591313334971,
+          "t": 8.593252272610648,
+          "p_one_sided": 4.596248260099858e-18,
+          "p_two_sided": 9.192496520199716e-18,
+          "ci_lo": 0.3231449415040949,
+          "ci_hi": 0.5141113209868258,
+          "n": 16677,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.008994569966567223
+        },
+        "influence": {
+          "status": "ok",
+          "max_abs_dfbetas_b3": 0.21067758779052323,
+          "argmax_dfbetas_b3_idx": 16564,
+          "cooks_max": 0.010872625899446303,
+          "cooks_mean": 6.638805542353686e-05,
+          "cooks_argmax_idx": 16564
+        },
+        "influential_outlier_reconciliation": {
+          "status": "skipped",
+          "reason": "no obs exceed DFBETAS cutoff"
+        },
+        "bh_q": 3.7756307290823627e-20,
+        "classification_v2": "ROBUST_POSITIVE",
+        "reconciled_post_removal": false
+      },
+      "adhd": {
+        "status": "ok",
+        "n_gene_universe": 16660,
+        "n_set_in_universe": 432,
+        "ols": {
+          "status": "ok",
+          "beta_1": 0.050012462380850546,
+          "se_1": 0.0593123363313436,
+          "t": 0.8432050644820319,
+          "p_one_sided": 0.19956293828368743,
+          "p_two_sided": 0.39912587656737486,
+          "ci_lo": -0.0662397168285829,
+          "ci_hi": 0.166264641590284,
+          "n": 16660,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.009884241619804501
+        },
+        "huber": {
+          "status": "ok",
+          "beta_1": 0.010408207007127126,
+          "se_1": 0.053636295392653105,
+          "ci_lo": -0.09471893196247297,
+          "ci_hi": 0.11553534597672721
+        },
+        "tukey": {
+          "status": "ok",
+          "beta_1": 0.00949377798542186,
+          "se_1": 0.05324686371509905,
+          "ci_lo": -0.09487007489617227,
+          "ci_hi": 0.113857630867016,
+          "converged": true,
+          "niter": 18,
+          "final_scale": 1.0419235275864196
+        },
+        "rank_magma_ols": {
+          "status": "ok",
+          "beta_1": 0.02013368480026241,
+          "se_1": 0.04871337086122165,
+          "t": 0.41330920944930666,
+          "p_one_sided": 0.3396927023968518,
+          "p_two_sided": 0.6793854047937036,
+          "ci_lo": -0.07534452208773201,
+          "ci_hi": 0.11561189168825683,
+          "n": 16660,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.009232640939546344
+        },
+        "influence": {
+          "status": "ok",
+          "max_abs_dfbetas_b3": 0.27976952621063633,
+          "argmax_dfbetas_b3_idx": 9276,
+          "cooks_max": 0.013602603311163622,
+          "cooks_mean": 6.163821646168338e-05,
+          "cooks_argmax_idx": 9276
+        },
+        "influential_outlier_reconciliation": {
+          "status": "skipped",
+          "reason": "no obs exceed DFBETAS cutoff"
+        },
+        "bh_q": 0.22807192946707136,
+        "classification_v2": "CI_EXCLUDES_STRONG",
+        "reconciled_post_removal": false
+      },
+      "ibd_delange2017": {
+        "status": "ok",
+        "n_gene_universe": 16384,
+        "n_set_in_universe": 430,
+        "ols": {
+          "status": "ok",
+          "beta_1": 0.17593715466785342,
+          "se_1": 0.07033634461082681,
+          "t": 2.5013690381739226,
+          "p_one_sided": 0.006190550302837082,
+          "p_two_sided": 0.012381100605674164,
+          "ci_lo": 0.03807791923063286,
+          "ci_hi": 0.313796390105074,
+          "n": 16384,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.006822646873621663
+        },
+        "huber": {
+          "status": "ok",
+          "beta_1": 0.20549351837856258,
+          "se_1": 0.06323813379294543,
+          "ci_lo": 0.08154677614438954,
+          "ci_hi": 0.3294402606127356
+        },
+        "tukey": {
+          "status": "ok",
+          "beta_1": 0.20785283858159018,
+          "se_1": 0.06251078247701572,
+          "ci_lo": 0.08533170492663937,
+          "ci_hi": 0.33037397223654097,
+          "converged": true,
+          "niter": 23,
+          "final_scale": 1.2209396426150239
+        },
+        "rank_magma_ols": {
+          "status": "ok",
+          "beta_1": 0.1475140806835615,
+          "se_1": 0.04890722447149304,
+          "t": 3.01620225391331,
+          "p_one_sided": 0.0012817754499934119,
+          "p_two_sided": 0.0025635508999868237,
+          "ci_lo": 0.05165592071943516,
+          "ci_hi": 0.24337224064768787,
+          "n": 16384,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.006013603473118412
+        },
+        "influence": {
+          "status": "ok",
+          "max_abs_dfbetas_b3": 0.236675869767042,
+          "argmax_dfbetas_b3_idx": 6927,
+          "cooks_max": 0.011107365376906798,
+          "cooks_mean": 6.030078948783828e-05,
+          "cooks_argmax_idx": 6927
+        },
+        "influential_outlier_reconciliation": {
+          "status": "skipped",
+          "reason": "no obs exceed DFBETAS cutoff"
+        },
+        "bh_q": 0.009904880484539332,
+        "classification_v2": "ROBUST_POSITIVE",
+        "reconciled_post_removal": false
+      },
+      "height": {
+        "status": "ok",
+        "n_gene_universe": 16707,
+        "n_set_in_universe": 432,
+        "ols": {
+          "status": "ok",
+          "beta_1": 0.09232569344396507,
+          "se_1": 0.05575363864611168,
+          "t": 1.6559581703714323,
+          "p_one_sided": 0.04887453840262429,
+          "p_two_sided": 0.09774907680524858,
+          "ci_lo": -0.016951438302413815,
+          "ci_hi": 0.20160282519034395,
+          "n": 16707,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.008042953029083422
+        },
+        "huber": {
+          "status": "ok",
+          "beta_1": 0.12825855067461117,
+          "se_1": 0.053861357257123044,
+          "ci_lo": 0.022690290450650005,
+          "ci_hi": 0.23382681089857232
+        },
+        "tukey": {
+          "status": "ok",
+          "beta_1": 0.13351400249295195,
+          "se_1": 0.053881132052458036,
+          "ci_lo": 0.027906983670134194,
+          "ci_hi": 0.2391210213157697,
+          "converged": true,
+          "niter": 17,
+          "final_scale": 1.0553670026513504
+        },
+        "rank_magma_ols": {
+          "status": "ok",
+          "beta_1": 0.08201016357842081,
+          "se_1": 0.04872748974904093,
+          "t": 1.6830369058778563,
+          "p_one_sided": 0.046193319059637784,
+          "p_two_sided": 0.09238663811927557,
+          "ci_lo": -0.013495716329699411,
+          "ci_hi": 0.17751604348654104,
+          "n": 16707,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.008245252211706022
+        },
+        "influence": {
+          "status": "ok",
+          "max_abs_dfbetas_b3": 0.15593190757151879,
+          "argmax_dfbetas_b3_idx": 2682,
+          "cooks_max": 0.00483512710188652,
+          "cooks_mean": 6.013730673052395e-05,
+          "cooks_argmax_idx": 2682
+        },
+        "influential_outlier_reconciliation": {
+          "status": "skipped",
+          "reason": "no obs exceed DFBETAS cutoff"
+        },
+        "bh_q": 0.06516605120349905,
+        "classification_v2": "CI_EXCLUDES_STRONG",
+        "reconciled_post_removal": false
+      },
+      "alzheimers": {
+        "status": "ok",
+        "n_gene_universe": 16713,
+        "n_set_in_universe": 432,
+        "ols": {
+          "status": "ok",
+          "beta_1": 0.3014855013940474,
+          "se_1": 0.05295844450648091,
+          "t": 5.6928692714370115,
+          "p_one_sided": 6.350992721379597e-09,
+          "p_two_sided": 1.2701985442759195e-08,
+          "ci_lo": 0.1976869501613448,
+          "ci_hi": 0.40528405262675,
+          "n": 16713,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.006056801707563619
+        },
+        "huber": {
+          "status": "ok",
+          "beta_1": 0.29473849411066344,
+          "se_1": 0.04933460679150105,
+          "ci_lo": 0.1980426647993214,
+          "ci_hi": 0.39143432342200546
+        },
+        "tukey": {
+          "status": "ok",
+          "beta_1": 0.28786875794720623,
+          "se_1": 0.049060416703132353,
+          "ci_lo": 0.19171034120906683,
+          "ci_hi": 0.38402717468534564,
+          "converged": true,
+          "niter": 18,
+          "final_scale": 0.9775635132408574
+        },
+        "rank_magma_ols": {
+          "status": "ok",
+          "beta_1": 0.2635171898995615,
+          "se_1": 0.04879590684385133,
+          "t": 5.400395380350775,
+          "p_one_sided": 3.3701431954839926e-08,
+          "p_two_sided": 6.740286390967985e-08,
+          "ci_lo": 0.16787721248561294,
+          "ci_hi": 0.3591571673135101,
+          "n": 16713,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.005459909020854137
+        },
+        "influence": {
+          "status": "ok",
+          "max_abs_dfbetas_b3": 0.24962363609260518,
+          "argmax_dfbetas_b3_idx": 4716,
+          "cooks_max": 0.01091422562729555,
+          "cooks_mean": 6.091400404095202e-05,
+          "cooks_argmax_idx": 4716
+        },
+        "influential_outlier_reconciliation": {
+          "status": "skipped",
+          "reason": "no obs exceed DFBETAS cutoff"
+        },
+        "bh_q": 1.2701985442759195e-08,
+        "classification_v2": "ROBUST_POSITIVE",
+        "reconciled_post_removal": false
+      }
+    },
+    "per_disorder_classification": {
+      "scz": "ROBUST_POSITIVE",
+      "bip": "CI_EXCLUDES_STRONG",
+      "mdd": "ROBUST_POSITIVE",
+      "asd": "ROBUST_POSITIVE",
+      "adhd": "CI_EXCLUDES_STRONG",
+      "ibd_delange2017": "ROBUST_POSITIVE",
+      "height": "CI_EXCLUDES_STRONG",
+      "alzheimers": "ROBUST_POSITIVE"
+    },
+    "bh_q_by_disorder": {
+      "scz": 0.0,
+      "bip": 0.9614877647357605,
+      "mdd": 3.610732517866463e-39,
+      "asd": 3.7756307290823627e-20,
+      "adhd": 0.22807192946707136,
+      "ibd_delange2017": 0.009904880484539332,
+      "height": 0.06516605120349905,
+      "alzheimers": 1.2701985442759195e-08
+    },
+    "aggregate_pattern": {
+      "classification": "F147_CROSS_DISORDER_EXTENDED",
+      "reason": ">=3 ROBUST disorders (['scz', 'mdd', 'asd', 'ibd_delange2017', 'alzheimers']); scope not SCZ-specific",
+      "counts": {
+        "robust_positive": [
+          "scz",
+          "mdd",
+          "asd",
+          "ibd_delange2017",
+          "alzheimers"
+        ],
+        "fragile": [],
+        "n_disorders": 8
+      }
+    },
+    "scz_beta_ols": 3.4297567497421313
+  },
+  "secondary_Koopmans_ex_B3_ex_EDT1": {
+    "gene_set": "Koopmans_ex_B3_ex_EDT1",
+    "n_gene_set_ensg": 1380,
+    "per_disorder": {
+      "scz": {
+        "status": "ok",
+        "n_gene_universe": 16556,
+        "n_set_in_universe": 1350,
+        "ols": {
+          "status": "ok",
+          "beta_1": 0.019523738012433622,
+          "se_1": 0.04477312021803438,
+          "t": 0.43605935698378157,
+          "p_one_sided": 0.33139967597374187,
+          "p_two_sided": 0.6627993519474837,
+          "ci_lo": -0.06823157761491376,
+          "ci_hi": 0.107279053639781,
+          "n": 16556,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.024602867766634895
+        },
+        "huber": {
+          "status": "ok",
+          "beta_1": 0.07546668485950625,
+          "se_1": 0.04124859153448751,
+          "ci_lo": -0.005380554548089264,
+          "ci_hi": 0.15631392426710178
+        },
+        "tukey": {
+          "status": "ok",
+          "beta_1": 0.09858316102962515,
+          "se_1": 0.041096302524389165,
+          "ci_lo": 0.018034408081822384,
+          "ci_hi": 0.17913191397742792,
+          "converged": true,
+          "niter": 18,
+          "final_scale": 1.3434785863661707
+        },
+        "rank_magma_ols": {
+          "status": "ok",
+          "beta_1": 0.03429384893567326,
+          "se_1": 0.028833599567994764,
+          "t": 1.1893710618683684,
+          "p_one_sided": 0.11715537312433973,
+          "p_two_sided": 0.23431074624867945,
+          "ci_lo": -0.022220006217596476,
+          "ci_hi": 0.09080770408894301,
+          "n": 16556,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.026621128480866507
+        },
+        "influence": {
+          "status": "ok",
+          "max_abs_dfbetas_b3": 0.13688056382658373,
+          "argmax_dfbetas_b3_idx": 15770,
+          "cooks_max": 0.0038157512164374787,
+          "cooks_mean": 6.13012234012772e-05,
+          "cooks_argmax_idx": 15770
+        },
+        "influential_outlier_reconciliation": {
+          "status": "skipped",
+          "reason": "no obs exceed DFBETAS cutoff"
+        },
+        "bh_q": 0.6627993519474837,
+        "classification_v2": "CI_EXCLUDES_STRONG",
+        "reconciled_post_removal": false
+      },
+      "bip": {
+        "status": "ok",
+        "n_gene_universe": 16050,
+        "n_set_in_universe": 1322,
+        "ols": {
+          "status": "ok",
+          "beta_1": -0.0002048980563109848,
+          "se_1": 0.03156056681756741,
+          "t": -0.006492217249942842,
+          "p_one_sided": 0.5025899614016469,
+          "p_two_sided": 0.9948200771967063,
+          "ci_lo": -0.0620636090187431,
+          "ci_hi": 0.06165381290612113,
+          "n": 16050,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.0006242786182950599
+        },
+        "huber": {
+          "status": "ok",
+          "beta_1": -0.0213410678964015,
+          "se_1": 0.03238341135035509,
+          "ci_lo": -0.08481255414309748,
+          "ci_hi": 0.04213041835029448
+        },
+        "tukey": {
+          "status": "ok",
+          "beta_1": -0.02340998053576335,
+          "se_1": 0.03234111671235254,
+          "ci_lo": -0.08679856929197433,
+          "ci_hi": 0.03997860822044763,
+          "converged": true,
+          "niter": 18,
+          "final_scale": 1.060089317601952
+        },
+        "rank_magma_ols": {
+          "status": "ok",
+          "beta_1": -0.00039932834576568557,
+          "se_1": 0.029571430915339602,
+          "t": -0.013503856032835455,
+          "p_one_sided": 0.5053870114408674,
+          "p_two_sided": 0.9892259771182651,
+          "ci_lo": -0.0583593329398313,
+          "ci_hi": 0.057560676248299934,
+          "n": 16050,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.0006300213859915527
+        },
+        "influence": {
+          "status": "ok",
+          "max_abs_dfbetas_b3": 0.10415917255314973,
+          "argmax_dfbetas_b3_idx": 7158,
+          "cooks_max": 0.002278727573693683,
+          "cooks_mean": 6.156251861432476e-05,
+          "cooks_argmax_idx": 4281
+        },
+        "influential_outlier_reconciliation": {
+          "status": "skipped",
+          "reason": "no obs exceed DFBETAS cutoff"
+        },
+        "bh_q": 0.6701199485355293,
+        "classification_v2": "CI_EXCLUDES_STRONG",
+        "reconciled_post_removal": false
+      },
+      "mdd": {
+        "status": "ok",
+        "n_gene_universe": 16725,
+        "n_set_in_universe": 1352,
+        "ols": {
+          "status": "ok",
+          "beta_1": 0.10443101080266044,
+          "se_1": 0.03738098656242637,
+          "t": 2.793693275811764,
+          "p_one_sided": 0.0026084579390151966,
+          "p_two_sided": 0.005216915878030393,
+          "ci_lo": 0.031164277140304758,
+          "ci_hi": 0.17769774446501613,
+          "n": 16725,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.01196700759484226
+        },
+        "huber": {
+          "status": "ok",
+          "beta_1": 0.08748072983747428,
+          "se_1": 0.03597883189820325,
+          "ci_lo": 0.016962219316995902,
+          "ci_hi": 0.15799924035795265
+        },
+        "tukey": {
+          "status": "ok",
+          "beta_1": 0.08920136544569551,
+          "se_1": 0.035982724011933476,
+          "ci_lo": 0.0186752263823059,
+          "ci_hi": 0.15972750450908513,
+          "converged": true,
+          "niter": 24,
+          "final_scale": 1.187783000494787
+        },
+        "rank_magma_ols": {
+          "status": "ok",
+          "beta_1": 0.08222834990450137,
+          "se_1": 0.029051484095826422,
+          "t": 2.8304354308809447,
+          "p_one_sided": 0.002327006455337242,
+          "p_two_sided": 0.004654012910674484,
+          "ci_lo": 0.025287441076681585,
+          "ci_hi": 0.13916925873232117,
+          "n": 16725,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.011159183270712747
+        },
+        "influence": {
+          "status": "ok",
+          "max_abs_dfbetas_b3": 0.14043356081718802,
+          "argmax_dfbetas_b3_idx": 13515,
+          "cooks_max": 0.006196010549378982,
+          "cooks_mean": 6.40673673393524e-05,
+          "cooks_argmax_idx": 6303
+        },
+        "influential_outlier_reconciliation": {
+          "status": "skipped",
+          "reason": "no obs exceed DFBETAS cutoff"
+        },
+        "bh_q": 0.020867663512121572,
+        "classification_v2": "ROBUST_POSITIVE",
+        "reconciled_post_removal": false
+      },
+      "asd": {
+        "status": "ok",
+        "n_gene_universe": 16677,
+        "n_set_in_universe": 1351,
+        "ols": {
+          "status": "ok",
+          "beta_1": 0.047400896673433134,
+          "se_1": 0.03186422367117587,
+          "t": 1.4875898801925502,
+          "p_one_sided": 0.06843899856335155,
+          "p_two_sided": 0.1368779971267031,
+          "ci_lo": -0.01505298172207157,
+          "ci_hi": 0.10985477506893784,
+          "n": 16677,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.004694283492869045
+        },
+        "huber": {
+          "status": "ok",
+          "beta_1": 0.05503171119458544,
+          "se_1": 0.03208020038655891,
+          "ci_lo": -0.007845481563070023,
+          "ci_hi": 0.1179089039522409
+        },
+        "tukey": {
+          "status": "ok",
+          "beta_1": 0.05849449283116559,
+          "se_1": 0.03208804928445378,
+          "ci_lo": -0.004398083766363817,
+          "ci_hi": 0.121387069428695,
+          "converged": true,
+          "niter": 18,
+          "final_scale": 1.064222031108254
+        },
+        "rank_magma_ols": {
+          "status": "ok",
+          "beta_1": 0.04530287164284499,
+          "se_1": 0.029178134684644353,
+          "t": 1.552630835811675,
+          "p_one_sided": 0.06026516846892336,
+          "p_two_sided": 0.12053033693784672,
+          "ci_lo": -0.011886272339057945,
+          "ci_hi": 0.10249201562474791,
+          "n": 16677,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.0047488393522542305
+        },
+        "influence": {
+          "status": "ok",
+          "max_abs_dfbetas_b3": 0.10624009035586907,
+          "argmax_dfbetas_b3_idx": 1370,
+          "cooks_max": 0.00424429482123381,
+          "cooks_mean": 6.147328025510417e-05,
+          "cooks_argmax_idx": 16564
+        },
+        "influential_outlier_reconciliation": {
+          "status": "skipped",
+          "reason": "no obs exceed DFBETAS cutoff"
+        },
+        "bh_q": 0.2737559942534062,
+        "classification_v2": "CI_EXCLUDES_STRONG",
+        "reconciled_post_removal": false
+      },
+      "adhd": {
+        "status": "ok",
+        "n_gene_universe": 16660,
+        "n_set_in_universe": 1349,
+        "ols": {
+          "status": "ok",
+          "beta_1": -0.10955278846044263,
+          "se_1": 0.035431902271609826,
+          "t": -3.0919251137194212,
+          "p_one_sided": 0.999004042488777,
+          "p_two_sided": 0.0019919150224458207,
+          "ci_lo": -0.17899931691279788,
+          "ci_hi": -0.04010626000808737,
+          "n": 16660,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.010410032051922147
+        },
+        "huber": {
+          "status": "ok",
+          "beta_1": -0.10349823024276379,
+          "se_1": 0.032057490725586626,
+          "ci_lo": -0.16633091206491357,
+          "ci_hi": -0.04066554842061401
+        },
+        "tukey": {
+          "status": "ok",
+          "beta_1": -0.09770878303960769,
+          "se_1": 0.031803534306329505,
+          "ci_lo": -0.16004371028001352,
+          "ci_hi": -0.03537385579920186,
+          "converged": true,
+          "niter": 22,
+          "final_scale": 1.0438428861889468
+        },
+        "rank_magma_ols": {
+          "status": "ok",
+          "beta_1": -0.09975572956321585,
+          "se_1": 0.029097923732849938,
+          "t": -3.4282765491820015,
+          "p_one_sided": 0.9996955519727031,
+          "p_two_sided": 0.000608896054593744,
+          "ci_lo": -0.15678766007960174,
+          "ci_hi": -0.04272379904682997,
+          "n": 16660,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.009921197930206627
+        },
+        "influence": {
+          "status": "ok",
+          "max_abs_dfbetas_b3": 0.16338404895556982,
+          "argmax_dfbetas_b3_idx": 5027,
+          "cooks_max": 0.006491755049291054,
+          "cooks_mean": 5.957773949643759e-05,
+          "cooks_argmax_idx": 4225
+        },
+        "influential_outlier_reconciliation": {
+          "status": "skipped",
+          "reason": "no obs exceed DFBETAS cutoff"
+        },
+        "bh_q": 0.999004042488777,
+        "classification_v2": "CI_EXCLUDES_STRONG",
+        "reconciled_post_removal": false
+      },
+      "ibd_delange2017": {
+        "status": "ok",
+        "n_gene_universe": 16384,
+        "n_set_in_universe": 1339,
+        "ols": {
+          "status": "ok",
+          "beta_1": -0.025774318052622237,
+          "se_1": 0.04214818157616278,
+          "t": -0.6115167271462809,
+          "p_one_sided": 0.7295669821302943,
+          "p_two_sided": 0.5408660357394115,
+          "ci_lo": -0.10838475394190128,
+          "ci_hi": 0.0568361178366568,
+          "n": 16384,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.006465910761497939
+        },
+        "huber": {
+          "status": "ok",
+          "beta_1": -0.04618376985616233,
+          "se_1": 0.03791279425734709,
+          "ci_lo": -0.12049284660056261,
+          "ci_hi": 0.028125306888237965
+        },
+        "tukey": {
+          "status": "ok",
+          "beta_1": -0.0561534111326043,
+          "se_1": 0.0374695990916512,
+          "ci_lo": -0.12959382535224065,
+          "ci_hi": 0.017287003087032043,
+          "converged": true,
+          "niter": 19,
+          "final_scale": 1.2190655624421565
+        },
+        "rank_magma_ols": {
+          "status": "ok",
+          "beta_1": -0.030280435499536164,
+          "se_1": 0.029308967293976997,
+          "t": -1.0331457671577122,
+          "p_one_sided": 0.8492245283906288,
+          "p_two_sided": 0.30155094321874254,
+          "ci_lo": -0.08772601139573108,
+          "ci_hi": 0.027165140396658752,
+          "n": 16384,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.005526286587606899
+        },
+        "influence": {
+          "status": "ok",
+          "max_abs_dfbetas_b3": 0.1495021696989603,
+          "argmax_dfbetas_b3_idx": 5816,
+          "cooks_max": 0.0068467391153372945,
+          "cooks_mean": 6.143152626682192e-05,
+          "cooks_argmax_idx": 15961
+        },
+        "influential_outlier_reconciliation": {
+          "status": "skipped",
+          "reason": "no obs exceed DFBETAS cutoff"
+        },
+        "bh_q": 0.8337908367203363,
+        "classification_v2": "CI_EXCLUDES_STRONG",
+        "reconciled_post_removal": false
+      },
+      "height": {
+        "status": "ok",
+        "n_gene_universe": 16707,
+        "n_set_in_universe": 1350,
+        "ols": {
+          "status": "ok",
+          "beta_1": 0.002682562853791833,
+          "se_1": 0.03334049139890701,
+          "t": 0.08045960755934672,
+          "p_one_sided": 0.4679363423043694,
+          "p_two_sided": 0.9358726846087388,
+          "ci_lo": -0.06266480028806591,
+          "ci_hi": 0.06802992599564957,
+          "n": 16707,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.007880464593402081
+        },
+        "huber": {
+          "status": "ok",
+          "beta_1": 0.004175745112347062,
+          "se_1": 0.0322102181563125,
+          "ci_lo": -0.058956282474025436,
+          "ci_hi": 0.06730777269871956
+        },
+        "tukey": {
+          "status": "ok",
+          "beta_1": 0.0028047788144061835,
+          "se_1": 0.03223053996445828,
+          "ci_lo": -0.060367079515932044,
+          "ci_hi": 0.06597663714474442,
+          "converged": true,
+          "niter": 17,
+          "final_scale": 1.0548304786254852
+        },
+        "rank_magma_ols": {
+          "status": "ok",
+          "beta_1": 0.006552808474800578,
+          "se_1": 0.029138918003954094,
+          "t": 0.22488166766903886,
+          "p_one_sided": 0.41103704119661044,
+          "p_two_sided": 0.8220740823932209,
+          "ci_lo": -0.05055947081294944,
+          "ci_hi": 0.0636650877625506,
+          "n": 16707,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.00808004686629149
+        },
+        "influence": {
+          "status": "ok",
+          "max_abs_dfbetas_b3": 0.1421185164567833,
+          "argmax_dfbetas_b3_idx": 9253,
+          "cooks_max": 0.006046143360087672,
+          "cooks_mean": 5.945062544728635e-05,
+          "cooks_argmax_idx": 9253
+        },
+        "influential_outlier_reconciliation": {
+          "status": "skipped",
+          "reason": "no obs exceed DFBETAS cutoff"
+        },
+        "bh_q": 0.6701199485355293,
+        "classification_v2": "CI_EXCLUDES_STRONG",
+        "reconciled_post_removal": false
+      },
+      "alzheimers": {
+        "status": "ok",
+        "n_gene_universe": 16713,
+        "n_set_in_universe": 1352,
+        "ols": {
+          "status": "ok",
+          "beta_1": 0.036627049093292154,
+          "se_1": 0.03166530676636339,
+          "t": 1.1566933288705543,
+          "p_one_sided": 0.12370710736000567,
+          "p_two_sided": 0.24741421472001135,
+          "ci_lo": -0.025436952168780086,
+          "ci_hi": 0.0986910503553644,
+          "n": 16713,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.0042084651827453134
+        },
+        "huber": {
+          "status": "ok",
+          "beta_1": 0.013186263803784576,
+          "se_1": 0.029519013083026104,
+          "ci_lo": -0.04467100183894659,
+          "ci_hi": 0.07104352944651574
+        },
+        "tukey": {
+          "status": "ok",
+          "beta_1": 0.0060618149189322025,
+          "se_1": 0.02933498607982707,
+          "ci_lo": -0.05143475779752885,
+          "ci_hi": 0.06355838763539326,
+          "converged": true,
+          "niter": 17,
+          "final_scale": 0.9772157783605974
+        },
+        "rank_magma_ols": {
+          "status": "ok",
+          "beta_1": 0.02623866916805292,
+          "se_1": 0.02917404551722403,
+          "t": 0.8993839799338732,
+          "p_one_sided": 0.18423056582564612,
+          "p_two_sided": 0.36846113165129224,
+          "ci_lo": -0.030942460045706176,
+          "ci_hi": 0.08341979838181202,
+          "n": 16713,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "r_squared": 0.003772041921362379
+        },
+        "influence": {
+          "status": "ok",
+          "max_abs_dfbetas_b3": 0.18013557468605462,
+          "argmax_dfbetas_b3_idx": 5682,
+          "cooks_max": 0.0067259586528563365,
+          "cooks_mean": 5.8235789216257526e-05,
+          "cooks_argmax_idx": 5682
+        },
+        "influential_outlier_reconciliation": {
+          "status": "skipped",
+          "reason": "no obs exceed DFBETAS cutoff"
+        },
+        "bh_q": 0.3298856196266818,
+        "classification_v2": "CI_EXCLUDES_STRONG",
+        "reconciled_post_removal": false
+      }
+    },
+    "per_disorder_classification": {
+      "scz": "CI_EXCLUDES_STRONG",
+      "bip": "CI_EXCLUDES_STRONG",
+      "mdd": "ROBUST_POSITIVE",
+      "asd": "CI_EXCLUDES_STRONG",
+      "adhd": "CI_EXCLUDES_STRONG",
+      "ibd_delange2017": "CI_EXCLUDES_STRONG",
+      "height": "CI_EXCLUDES_STRONG",
+      "alzheimers": "CI_EXCLUDES_STRONG"
+    },
+    "bh_q_by_disorder": {
+      "scz": 0.6627993519474837,
+      "bip": 0.6701199485355293,
+      "mdd": 0.020867663512121572,
+      "asd": 0.2737559942534062,
+      "adhd": 0.999004042488777,
+      "ibd_delange2017": 0.8337908367203363,
+      "height": 0.6701199485355293,
+      "alzheimers": 0.3298856196266818
+    },
+    "aggregate_pattern": {
+      "classification": "F147_NARROW_CONFIRMED",
+      "reason": "SCZ \u03b2=0.020 < 0.3\u03c3 OR not ROBUST_POSITIVE (class=CI_EXCLUDES_STRONG)",
+      "counts": {
+        "robust_positive": [
+          "mdd"
+        ],
+        "fragile": [],
+        "n_disorders": 8
+      }
+    },
+    "scz_beta_ols": 0.019523738012433622
+  },
+  "reproduction_gate_R1_sub_c": {
+    "gene_set": "EDT1_FULL",
+    "target_lo": 3.0,
+    "target_hi": 3.8,
+    "scz_beta_ols_edt1_full": 3.4297567497421313,
+    "pass": true
+  },
+  "provenance_sha256": {
+    "gnomad_tsv": "68d8abdb7fc48f570869b02dfaa74b9fecaece7fcc5f301ddca40ec1ce12da00",
+    "gene_annot": "940086e0781e9b244da76d27f02cc25dd45c957ee4415915cd1ced37b63d1e72",
+    "magma_geneloc": "bfcb5273801cc3e37dcb98f5465f4498daa8c0cfcda2f4f3fbc51abe02000e7e",
+    "magma_scz": "8eaded5409b49981de428189805957420d378c5cf138c9d40056acf4f1030fa0",
+    "pgc3_xlsx": "7aa88b5944210540d63f6297803e4abfebc6b012bc265b1260cf618fa55394de",
+    "magma_per_disorder": {
+      "bip": "4044deac6f1402590ca5452a34c269bfae50d8dec427e2fe4e6024984e59f75f",
+      "mdd": "f22df6596ffd78fb3f10ae1c6420ee6034c645ed37ce9031b4459f310e188d4b",
+      "asd": "2305fcfd341a9c533b1bc1231001ef69db94051d213e5e7f7733d5d5c9195f27",
+      "adhd": "f229faa8ee0e8879c8ff97a5c27a8f28765bccf4fb41d0867dbdbd7ea8b2702d",
+      "ibd_delange2017": "2bfcdd16615c57188a688b2d835893ffc1f8501fefbe45bb39e53c86a679a0bc",
+      "height": "80d3b384de512fa678843f2f8e5cab3422dfea2958ad8c40c42de4e4191b2a52",
+      "alzheimers": "dfb5fe0b299edf13db36c73986306af42e5fe8f407dee3d582c3697a803c5706"
+    }
+  },
+  "brief_contract": {
+    "bh_fdr_family_size": 8,
+    "bh_q": 0.05,
+    "sub_c_min_effect": 0.3,
+    "mapping_gate": 0.8,
+    "fragile_uninterpretable_count": 3,
+    "dfbetas_cutoff": 1.0
+  }
+}

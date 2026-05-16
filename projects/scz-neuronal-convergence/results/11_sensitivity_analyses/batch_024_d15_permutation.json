@@ -1,0 +1,56 @@
+{
+  "results": [
+    {
+      "finding_id": "neurons",
+      "label": "Neurons (PanglaoDB)",
+      "k": 211,
+      "m": 444,
+      "overlap": 24,
+      "odds_ratio": 6.033002291825822,
+      "fisher_p": 6.102111950289547e-11,
+      "empirical_p": 0.0,
+      "count_ge": 0,
+      "n_permutations": 10000,
+      "consistent": "False"
+    },
+    {
+      "finding_id": "oligo",
+      "label": "Oligodendrocytes (PanglaoDB)",
+      "k": 88,
+      "m": 444,
+      "overlap": 6,
+      "odds_ratio": 3.2806548613431334,
+      "fisher_p": 0.013601421546237124,
+      "empirical_p": 0.0143,
+      "count_ge": 143,
+      "n_permutations": 10000,
+      "consistent": "True"
+    },
+    {
+      "finding_id": "rela",
+      "label": "NF-kB RELA regulon",
+      "k": 14,
+      "m": 444,
+      "overlap": 3,
+      "odds_ratio": 12.100803957946814,
+      "fisher_p": 0.0032964689244482357,
+      "empirical_p": 0.0031,
+      "count_ge": 31,
+      "n_permutations": 10000,
+      "consistent": "True"
+    },
+    {
+      "finding_id": "spi1",
+      "label": "SPI1 regulon",
+      "k": 10,
+      "m": 444,
+      "overlap": 5,
+      "odds_ratio": 44.558086560364465,
+      "fisher_p": 1.2120207082929291e-06,
+      "empirical_p": 0.0,
+      "count_ge": 0,
+      "n_permutations": 10000,
+      "consistent": "False"
+    }
+  ]
+}

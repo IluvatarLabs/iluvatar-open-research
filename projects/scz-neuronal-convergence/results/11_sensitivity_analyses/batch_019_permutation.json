@@ -1,0 +1,20 @@
+{
+  "syngo": {
+    "fisher_exact_p": 0.0006659539126248691,
+    "fisher_exact_or": 2.0630521338808014,
+    "permutation_p": 0.0,
+    "mc_se": 0.0,
+    "overlap": 29,
+    "consistent": false
+  },
+  "kegg_tlr": {
+    "fisher_exact_p": 1.0,
+    "fisher_exact_or": 0.0,
+    "permutation_p": 1.0,
+    "mc_se": 0.0,
+    "overlap": 0,
+    "consistent": true
+  },
+  "decision": "SPECTRUM_CONFIRMED",
+  "both_consistent": false
+}

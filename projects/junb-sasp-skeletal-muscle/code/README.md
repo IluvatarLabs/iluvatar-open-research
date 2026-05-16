@@ -1,8 +1,8 @@
-# Analysis Code
+# Skeletal Muscle Aging: Analysis Code
 
-Scripts from the Marvin autonomous research agent's experiment batches, organized into logical analysis steps. Each step contains Python scripts and their corresponding outputs (in `../results/<step>/`).
+Scripts are organized into logical analysis steps. Each step contains Python scripts and their corresponding outputs (in `../results/<step>/`).
 
-All scripts reference local data files (`.h5ad` single-cell objects, GTEx matrices, eQTL tables) that must be obtained from the original sources listed in [`../sources.md`](../sources.md). Scripts are published as-is from the experiment runs and have not been modified; hardcoded paths reflect the Marvin workspace layout.
+All scripts reference local data files (`.h5ad` single-cell objects, GTEx matrices, eQTL tables) that must be obtained from the original sources listed in [sources.md](../sources.md). Scripts are published as-run and have not been modified.
 
 ---
 
@@ -13,11 +13,11 @@ HLMA atlas quality control and GRN viability assessment. Cell/nuclei counts, gen
 - **Findings supported:** Prerequisite for all findings
 
 ### 02_donor_level_tf_sasp_screen
-Unbiased donor-level Spearman correlation screen of transcription factors against SASP composite scores across vascular, FAP, and MuSC compartments. Includes JUNB specificity testing and methodological reviewer responses.
+Unbiased donor-level Spearman correlation screen of transcription factors against SASP composite scores across vascular, FAP, and MuSC compartments. Includes JUNB specificity testing.
 - **Findings supported:** 1, 2, 3
 
 ### 03_cross_atlas_replication
-Replication of TF-SASP correlations in the independent Nature Aging atlas. Includes vascular JUNB-SASP replication, FAP subtype cross-atlas validation, MuSC cross-atlas analysis, unbiased TF screen in Nature Aging endothelium, and canonical reconciliation of panel discrepancies across prior runs.
+Replication of TF-SASP correlations in the independent Nature Aging atlas. Includes vascular JUNB-SASP replication, FAP subtype cross-atlas validation, MuSC cross-atlas analysis, unbiased TF screen in Nature Aging endothelium, and canonical reconciliation of panel discrepancies.
 - **Findings supported:** 1, 2, 3
 
 ### 04_fap_subtype_and_growth_factors
@@ -45,7 +45,7 @@ NF-kB pathway activity in FAPs (alternative SASP mechanism) and immune compartme
 - **Findings supported:** 2
 
 ### 10_within_technology_and_panel_sensitivity
-Technical sensitivity analyses: within-technology (snRNA-only) replication of vascular JUNB-SASP, SASP gene panel reconciliation across batches, FAP per-gene decomposition with corrected panel, and 10,000-permutation null distribution testing.
+Technical sensitivity analyses: within-technology (snRNA-only) replication of vascular JUNB-SASP, SASP gene panel reconciliation, FAP per-gene decomposition with corrected panel, and 10,000-permutation null distribution testing.
 - **Findings supported:** 1, 2
 
 ### 11_confound_adjustment_and_statistical_rigor
@@ -81,41 +81,13 @@ Pre-submission robustness hardening: DESeq2 age-effect DE with technology covari
 - **Findings supported:** 1, 2, 4
 
 ### 19_supplementary_tables
-Supplementary tables 1-5 and reviewer items (R5 partial-rho donors, R7 tone review, R8 confidence intervals).
-- **Findings supported:** All (summary tables)
+Supplementary tables 1-5 and reviewer items (partial-rho donors, tone review, confidence intervals).
+- **Findings supported:** All
 
 ### 20_sex_effects_and_stratification
-Sex-stratified analysis of JUNB-SASP correlations, JUNB-FAP characterization, and cross-atlas v4 validation results.
+Sex-stratified analysis of JUNB-SASP correlations, JUNB-FAP characterization, and cross-atlas validation results.
 - **Findings supported:** 1, 2
 
 ### 21_fap_clustering_and_klf10_framing
 FAP subtype proportion analysis, de novo clustering with snRNA-only cells (FAP, MuSC, vascular), cluster-level DE, KLF10 driver-bystander framing (JUNB vs KLF10 comparison), and KLF10 country-level sensitivity analysis.
 - **Findings supported:** 2, 3
-
----
-
-## Batch-to-step mapping
-
-| Step | Source batches |
-|------|---------------|
-| 01 | 007 |
-| 02 | 010, 022, 023, 039 |
-| 03 | 011, 020, 037, 038, 043, 048 |
-| 04 | 012, 019, 024, 030, 031, 049 |
-| 05 | 013, 021 |
-| 06 | 015, 016, 017 |
-| 07 | 033, 034 |
-| 08 | 052, 054, 055, 057 |
-| 09 | 035, 059 |
-| 10 | 036, 040, 044, 045, 046 |
-| 11 | 051, 056, 058 |
-| 12 | 060 |
-| 13 | 050 |
-| 14 | 063 |
-| 15 | 064, 065 |
-| 16 | 066 |
-| 17 | 067, 068 |
-| 18 | 070, 073 |
-| 19 | 047 |
-| 20 | 029 |
-| 21 | 053 |

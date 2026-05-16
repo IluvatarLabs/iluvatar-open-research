@@ -1,0 +1,159 @@
+{
+  "status": "ok",
+  "batch": "059",
+  "sub": "e3",
+  "brief": "brief_v2.md (v2.1)",
+  "wall_s": 17.434282302856445,
+  "smoke": false,
+  "n_shared_frame": 16556,
+  "R1_reproduction_gate": {
+    "target": 0.229,
+    "tolerance": 0.02,
+    "lo": 0.21,
+    "hi": 0.25,
+    "observed_upper_tail_rho": 0.23436495920425637,
+    "pass": true
+  },
+  "3D_null_integrity": {
+    "thorndike_closed_form": {
+      "full_rho_R": 0.515,
+      "truncation_quantile": 0.8,
+      "z_tau": 0.8416212335729143,
+      "lambda_inverse_mills": 1.3998096020390418,
+      "var_trunc": 0.21864256207460797,
+      "s_S": 0.46759230326707474,
+      "expected_tail_rho": 0.27045965711169195
+    },
+    "iter059_mc": {
+      "status": "ok",
+      "tail_rho_mc": 0.2638032506943963,
+      "n_mc": 100000,
+      "n_tail": 19755,
+      "rho_input": 0.515,
+      "tau_input": 0.842,
+      "seed": 20260427
+    },
+    "iter058_mc_reference": 0.27,
+    "delta_thorndike_vs_iter059_mc": 0.006656406417295646,
+    "delta_thorndike_vs_iter058_mc": 0.0004596571116919357,
+    "agreement_threshold": 0.01,
+    "agreement_ok": true
+  },
+  "3A_kurtosis": {
+    "status": "ok",
+    "kurtosis_upper": 5.131534869189057,
+    "kurtosis_upper_ci_lo": 2.8412460086268205,
+    "kurtosis_upper_ci_hi": 7.668777470194458,
+    "kurtosis_middle": 0.6671543388555663,
+    "n_upper": 3311,
+    "n_middle": 3312,
+    "thresholds": {
+      "upper_ceiling": -0.5,
+      "middle_floor": -0.2
+    },
+    "fires_3A_ceiling_saturation": false
+  },
+  "3B_mhc_exclusion": {
+    "status": "ok",
+    "n_mhc_genes_in_frame": 208,
+    "upper_tail_rho_with_mhc": 0.23436495920425637,
+    "upper_tail_rho_without_mhc": 0.36915770624773475,
+    "delta": 0.13479274704347838,
+    "se_bootstrap": 0.013248380266901191,
+    "threshold": 0.026496760533802382,
+    "ci_lo_delta": 0.11018484501891868,
+    "ci_hi_delta": 0.16095870716335342,
+    "fires_3B_mhc_dilution": true
+  },
+  "3C_cross_trait": {
+    "per_disorder": {
+      "ibd_delange2017": {
+        "status": "ok",
+        "n": 16260,
+        "full_rho": 0.014982529680317887,
+        "upper_tail_rho": 0.020688933685929143,
+        "thorndike_predicted": 0.007006330030571468,
+        "delta_observed_minus_thorndike": 0.013682603655357676,
+        "below_threshold_minus_0_03": false,
+        "se_bootstrap": 0.01787672125616053,
+        "z_score": 0.7653866421753648
+      },
+      "bip": {
+        "status": "ok",
+        "n": 15944,
+        "full_rho": -0.0015965291632360574,
+        "upper_tail_rho": -0.007013828245040011,
+        "thorndike_predicted": -0.0007465254920633612,
+        "delta_observed_minus_thorndike": -0.0062673027529766496,
+        "below_threshold_minus_0_03": false,
+        "se_bootstrap": 0.016952570664309517,
+        "z_score": -0.36969630606945586
+      },
+      "height": {
+        "status": "ok",
+        "n": 16527,
+        "full_rho": 0.027224008275453338,
+        "upper_tail_rho": 0.0076930710852467004,
+        "thorndike_predicted": 0.012733424233336421,
+        "delta_observed_minus_thorndike": -0.005040353148089721,
+        "below_threshold_minus_0_03": false,
+        "se_bootstrap": 0.017887760566052915,
+        "z_score": -0.28177664439757855
+      }
+    },
+    "n_disorders_below_threshold": 0,
+    "min_required": 2,
+    "fires_3C_cross_trait_generic": false,
+    "z_scores": [
+      0.7653866421753648,
+      -0.36969630606945586,
+      -0.28177664439757855
+    ],
+    "stouffer_z_combined": 0.06576810057218858,
+    "stouffer_p_combined": 0.5262187733570294,
+    "stouffer_note": "Stouffer 1949 Z-method: Z_combined = sum(z_d) / sqrt(k) where z_d = (observed - Thorndike) / SE_bootstrap(observed). One-sided lower-tail p = norm.sf(-Z_combined) since tail-below-null is the LESS-signal alternative."
+  },
+  "bh_fdr_family_3abc": {
+    "labels": [
+      "3A_kurtosis",
+      "3B_mhc_delta",
+      "3C_cross_trait_stouffer"
+    ],
+    "pvals": [
+      0.9999845583630715,
+      0.0,
+      0.5262187733570294
+    ],
+    "qvals": [
+      0.9999845583630714,
+      0.0,
+      0.7893281600355441
+    ],
+    "q_threshold": 0.05,
+    "family_size": 3,
+    "dropped_3c_insufficient_data": false,
+    "note": "3A p: left-tail z on kurtosis vs 0 using bootstrap-derived SE. 3B p: right-tail z on \u0394 vs 0 using bootstrap SE. 3C p (M4 audit fix): Stouffer 1949 Z-method combined one-sided lower-tail p from per-disorder z_d = (tail_rho - Thorndike) / SE_bootstrap. If fewer than 2 disorders have finite z_d, 3C is dropped from the family (see dropped_3c_insufficient_data)."
+  },
+  "aggregate_verdict": {
+    "classification": "3B_MHC_DILUTION",
+    "fires_3A": false,
+    "fires_3B": true,
+    "fires_3C": false,
+    "reason": "Independent firings: 3A=False 3B=True 3C=False"
+  },
+  "provenance_sha256": {
+    "gnomad_tsv": "68d8abdb7fc48f570869b02dfaa74b9fecaece7fcc5f301ddca40ec1ce12da00",
+    "gene_annot": "940086e0781e9b244da76d27f02cc25dd45c957ee4415915cd1ced37b63d1e72",
+    "magma_scz": "8eaded5409b49981de428189805957420d378c5cf138c9d40056acf4f1030fa0",
+    "pops_preds_p05": "60fcb6ccea3077d4b50f0612213ffe50db850f9783cc7660029146cee82f9405"
+  },
+  "brief_contract": {
+    "n_bootstrap": 1000,
+    "seed_bootstrap": 20260424,
+    "seed_mc_null": 20260427,
+    "truncation_quantile": 0.8,
+    "full_rho_anchor": 0.515,
+    "thorndike_expected": 0.2705,
+    "mhc_region_grch37": "chr6:25000000-34000000"
+  }
+}

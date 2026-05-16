@@ -1,0 +1,621 @@
+{
+  "batch": "batch_055_B",
+  "version": "v2",
+  "generated_at": "2026-04-24T05:17:46.768645+00:00",
+  "provenance": {
+    "sha256": {
+      "gnomad_v4_1_constraint_tsv": "68d8abdb7fc48f570869b02dfaa74b9fecaece7fcc5f301ddca40ec1ce12da00",
+      "batch_054_B_results_json": "2f4d4bd40c7909c0e953ed585b3edff99954294d2e50fa78bd14c148bcebc7de",
+      "batch_048_script": "e95344481159eaa5378ecc12774c125aba00c918b4b0f4a19b0d2b879dea78ef"
+    },
+    "file_paths": {
+      "gnomad_v4_1_constraint_tsv": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/item_15/gnomad.v4.1.constraint_metrics.tsv",
+      "batch_054_B_results_json": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/experiments/batch_054_B/output/results.json",
+      "magma_binary": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/tools/magma_bin/magma",
+      "magma_geneloc": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/tools/magma_bin/refs/NCBI37.3.gene.loc",
+      "magma_bfile": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/tools/magma_bin/g1000_eur/g1000_eur",
+      "sumstats_dir": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/ldsc/comparator_sumstats"
+    },
+    "gene_lists": {
+      "B3": {
+        "n": 18,
+        "sha256_observed": "a627014497c3bdf1559fdeaec0f53162359c8f45a91f222474b066d0bab69617",
+        "sha256_expected": "a627014497c3bdf1559fdeaec0f53162359c8f45a91f222474b066d0bab69617",
+        "sha256_match": true,
+        "genes": [
+          "AP3B2",
+          "ASIC1",
+          "CNNM2",
+          "CPNE7",
+          "CRHR1",
+          "DTNB",
+          "EIF5",
+          "EPN2",
+          "FGFR1",
+          "KIF21B",
+          "MOB4",
+          "NAE1",
+          "NEGR1",
+          "NXPH1",
+          "OPCML",
+          "PLK2",
+          "SRPK2",
+          "STRN"
+        ]
+      },
+      "F144": {
+        "n": 48,
+        "sha256": "ddaac007c7186d3fc0787c3291f98866d7068076f133cfd84e4c1e5f4e13664c"
+      }
+    },
+    "bg_dedup_check": {
+      "n_unique_genes": 17133,
+      "n_rows": 17134,
+      "ratio": 0.9999416365121979
+    },
+    "hyperparameters": {
+      "PLI_THRESHOLD": 0.9,
+      "LOEUF_THRESHOLD": 0.35,
+      "MIS_Z_THRESHOLD_LITERAL": 3.09,
+      "RNG_SEED_PERMS": 20260423,
+      "RNG_SEED_BOOTSTRAP": 20260501,
+      "N_PERM_SUBB": 5000,
+      "N_BOOTSTRAP": 1000,
+      "N_PERM_SUBC": 10000,
+      "BH_ALPHA": 0.05,
+      "MAGMA_WINDOW_UP_KB": 35,
+      "MAGMA_WINDOW_DOWN_KB": 10
+    }
+  },
+  "sub_a": {
+    "B3_counts": {
+      "n": 18,
+      "pLI >= 0.9": 10,
+      "LOEUF <= 0.35": 5,
+      "mis_z top decile": 7,
+      "mis_z >= 3.09": 5,
+      "in_bg_intersect_n": 18
+    },
+    "F144_counts": {
+      "n": 48,
+      "pLI >= 0.9": 32,
+      "LOEUF <= 0.35": 12,
+      "mis_z top decile": 17,
+      "mis_z >= 3.09": 16,
+      "in_bg_intersect_n": 48
+    },
+    "bg_counts": {
+      "n": 17133,
+      "pLI >= 0.9": 3042,
+      "LOEUF <= 0.35": 1341,
+      "mis_z top decile": 1714,
+      "mis_z >= 3.09": 1465
+    },
+    "missense_z_top_decile_threshold_value": 2.8792899999999997,
+    "missense_z_literal_threshold_value": 3.09,
+    "B3_genes_meeting_all_3_predicted": [
+      "FGFR1",
+      "CNNM2",
+      "SRPK2"
+    ],
+    "B3_genes_meeting_all_3_observed_lit_threshold": [
+      "CNNM2",
+      "FGFR1",
+      "SRPK2"
+    ],
+    "n_unique_genes_div_n_rows_bg": 1.0,
+    "biological_category_summary_B3": {
+      "enzyme": 3,
+      "cell-adhesion": 3,
+      "scaffold/trafficking": 2,
+      "receptor": 2,
+      "scaffold": 2,
+      "transporter": 1,
+      "receptor/ion-channel": 1,
+      "enzyme/translation": 1,
+      "enzyme/Ca2+-binding": 1,
+      "scaffold/signaling": 1,
+      "enzyme/motor": 1
+    },
+    "status": "OK"
+  },
+  "sub_b_lofgo": {
+    "status": "OK",
+    "n_cells": 12,
+    "metrics": [
+      "pLI >= 0.9",
+      "LOEUF <= 0.35",
+      "missense_z top decile"
+    ],
+    "missense_z_top_decile_threshold": 2.8792899999999997,
+    "lofgo_subsets": {
+      "B3.1_drop_top5_pLI": [
+        "AP3B2",
+        "ASIC1",
+        "CPNE7",
+        "CRHR1",
+        "DTNB",
+        "EPN2",
+        "KIF21B",
+        "NAE1",
+        "NEGR1",
+        "NXPH1",
+        "OPCML",
+        "PLK2",
+        "STRN"
+      ],
+      "B3.2_drop_4_VERA_pLI": [
+        "AP3B2",
+        "ASIC1",
+        "CPNE7",
+        "CRHR1",
+        "DTNB",
+        "EIF5",
+        "EPN2",
+        "KIF21B",
+        "MOB4",
+        "NAE1",
+        "NXPH1",
+        "OPCML",
+        "SRPK2",
+        "STRN"
+      ],
+      "B3.3_drop_full_VERA_7": [
+        "AP3B2",
+        "ASIC1",
+        "CPNE7",
+        "DTNB",
+        "EIF5",
+        "EPN2",
+        "MOB4",
+        "NXPH1",
+        "OPCML",
+        "SRPK2",
+        "STRN"
+      ],
+      "B3.4_retain_pLI_lt_09": [
+        "AP3B2",
+        "CPNE7",
+        "CRHR1",
+        "DTNB",
+        "EPN2",
+        "KIF21B",
+        "NAE1",
+        "STRN"
+      ]
+    },
+    "cells": [
+      {
+        "lofgo": "B3.1_drop_top5_pLI",
+        "metric": "pLI >= 0.9",
+        "n_in_set": 13,
+        "n_in_bg": 13,
+        "a": 5,
+        "b": 8,
+        "c": 3037,
+        "d": 14084,
+        "OR": 2.8984194929206453,
+        "OR_scipy_ci95_low": 0.745449889178669,
+        "OR_scipy_ci95_high": 10.055580280865769,
+        "OR_bootstrap_ci95_low": 0.5650058951072632,
+        "OR_bootstrap_ci95_high": 9.409553420479535,
+        "p_fisher": 0.06463454768453653,
+        "emp_p": 0.0609878024395121,
+        "bh_fdr_q": 0.12926909536907305
+      },
+      {
+        "lofgo": "B3.1_drop_top5_pLI",
+        "metric": "LOEUF <= 0.35",
+        "n_in_set": 13,
+        "n_in_bg": 13,
+        "a": 0,
+        "b": 13,
+        "c": 1341,
+        "d": 15780,
+        "OR": 0.0,
+        "OR_scipy_ci95_low": 0.0,
+        "OR_scipy_ci95_high": 3.865908946336636,
+        "OR_bootstrap_ci95_low": 0.29005884757213896,
+        "OR_bootstrap_ci95_high": 0.8088313704287822,
+        "p_fisher": 1.0,
+        "emp_p": 1.0,
+        "bh_fdr_q": 1.0
+      },
+      {
+        "lofgo": "B3.1_drop_top5_pLI",
+        "metric": "missense_z top decile",
+        "n_in_set": 13,
+        "n_in_bg": 13,
+        "a": 4,
+        "b": 9,
+        "c": 1710,
+        "d": 15411,
+        "OR": 4.005458089668616,
+        "OR_scipy_ci95_low": 0.9002667479791719,
+        "OR_scipy_ci95_high": 14.368098030504026,
+        "OR_bootstrap_ci95_low": 0.7464513854167056,
+        "OR_bootstrap_ci95_high": 11.395830971277396,
+        "p_fisher": 0.03414129363063019,
+        "emp_p": 0.036392721455708855,
+        "bh_fdr_q": 0.11775266266758982
+      },
+      {
+        "lofgo": "B3.2_drop_4_VERA_pLI",
+        "metric": "pLI >= 0.9",
+        "n_in_set": 14,
+        "n_in_bg": 14,
+        "a": 6,
+        "b": 8,
+        "c": 3036,
+        "d": 14084,
+        "OR": 3.4792490118577075,
+        "OR_scipy_ci95_low": 0.9941668296051174,
+        "OR_scipy_ci95_high": 11.442875751813826,
+        "OR_bootstrap_ci95_low": 0.8967687841153793,
+        "OR_bootstrap_ci95_high": 10.818685653175383,
+        "p_fisher": 0.025561728041873042,
+        "emp_p": 0.02459508098380324,
+        "bh_fdr_q": 0.11775266266758982
+      },
+      {
+        "lofgo": "B3.2_drop_4_VERA_pLI",
+        "metric": "LOEUF <= 0.35",
+        "n_in_set": 14,
+        "n_in_bg": 14,
+        "a": 3,
+        "b": 11,
+        "c": 1338,
+        "d": 15782,
+        "OR": 3.216877293110477,
+        "OR_scipy_ci95_low": 0.5754989560328232,
+        "OR_scipy_ci95_high": 12.196199632676729,
+        "OR_bootstrap_ci95_low": 0.577980598802246,
+        "OR_bootstrap_ci95_high": 10.161116892828009,
+        "p_fisher": 0.09096708523885148,
+        "emp_p": 0.08398320335932813,
+        "bh_fdr_q": 0.15594357469517398
+      },
+      {
+        "lofgo": "B3.2_drop_4_VERA_pLI",
+        "metric": "missense_z top decile",
+        "n_in_set": 14,
+        "n_in_bg": 14,
+        "a": 4,
+        "b": 10,
+        "c": 1710,
+        "d": 15410,
+        "OR": 3.6046783625730994,
+        "OR_scipy_ci95_low": 0.8242183492155614,
+        "OR_scipy_ci95_high": 12.512993736738729,
+        "OR_bootstrap_ci95_low": 0.6091640921152733,
+        "OR_bootstrap_ci95_high": 10.334826057366612,
+        "p_fisher": 0.04411251976811067,
+        "emp_p": 0.04579084183163367,
+        "bh_fdr_q": 0.11775266266758982
+      },
+      {
+        "lofgo": "B3.3_drop_full_VERA_7",
+        "metric": "pLI >= 0.9",
+        "n_in_set": 11,
+        "n_in_bg": 11,
+        "a": 6,
+        "b": 5,
+        "c": 3036,
+        "d": 14087,
+        "OR": 5.56798418972332,
+        "OR_scipy_ci95_low": 1.414585832415959,
+        "OR_scipy_ci95_high": 23.075774082298114,
+        "OR_bootstrap_ci95_low": 1.5131023330655402,
+        "OR_bootstrap_ci95_high": 27.365370378970834,
+        "p_fisher": 0.006364923158073514,
+        "emp_p": 0.007598480303939212,
+        "bh_fdr_q": 0.07637907789688217
+      },
+      {
+        "lofgo": "B3.3_drop_full_VERA_7",
+        "metric": "LOEUF <= 0.35",
+        "n_in_set": 11,
+        "n_in_bg": 11,
+        "a": 3,
+        "b": 8,
+        "c": 1338,
+        "d": 15785,
+        "OR": 4.424047085201794,
+        "OR_scipy_ci95_low": 0.7549451592633623,
+        "OR_scipy_ci95_high": 18.456821417399393,
+        "OR_bootstrap_ci95_low": 0.8092335010756865,
+        "OR_bootstrap_ci95_high": 14.796664167916042,
+        "p_fisher": 0.0490636094448291,
+        "emp_p": 0.04319136172765447,
+        "bh_fdr_q": 0.11775266266758982
+      },
+      {
+        "lofgo": "B3.3_drop_full_VERA_7",
+        "metric": "missense_z top decile",
+        "n_in_set": 11,
+        "n_in_bg": 11,
+        "a": 2,
+        "b": 9,
+        "c": 1712,
+        "d": 15411,
+        "OR": 2.0003894080996885,
+        "OR_scipy_ci95_low": 0.2101473434447922,
+        "OR_scipy_ci95_high": 9.675228998996417,
+        "OR_bootstrap_ci95_low": 0.3528419845139088,
+        "OR_bootstrap_ci95_high": 6.980446834589809,
+        "p_fisher": 0.30279238767916544,
+        "emp_p": 0.3001399720055989,
+        "bh_fdr_q": 0.4037231835722206
+      },
+      {
+        "lofgo": "B3.4_retain_pLI_lt_09",
+        "metric": "pLI >= 0.9",
+        "n_in_set": 8,
+        "n_in_bg": 8,
+        "a": 0,
+        "b": 8,
+        "c": 3042,
+        "d": 14084,
+        "OR": 0.0,
+        "OR_scipy_ci95_low": 0.0,
+        "OR_scipy_ci95_high": 2.713913979067527,
+        "OR_bootstrap_ci95_low": 0.16512095143722336,
+        "OR_bootstrap_ci95_high": 0.6605201368508599,
+        "p_fisher": 1.0,
+        "emp_p": 1.0,
+        "bh_fdr_q": 1.0
+      },
+      {
+        "lofgo": "B3.4_retain_pLI_lt_09",
+        "metric": "LOEUF <= 0.35",
+        "n_in_set": 8,
+        "n_in_bg": 8,
+        "a": 0,
+        "b": 8,
+        "c": 1341,
+        "d": 15785,
+        "OR": 0.0,
+        "OR_scipy_ci95_low": 0.0,
+        "OR_scipy_ci95_high": 6.903538486007211,
+        "OR_bootstrap_ci95_low": 0.42258648105886726,
+        "OR_bootstrap_ci95_high": 1.6749006553105321,
+        "p_fisher": 1.0,
+        "emp_p": 1.0,
+        "bh_fdr_q": 1.0
+      },
+      {
+        "lofgo": "B3.4_retain_pLI_lt_09",
+        "metric": "missense_z top decile",
+        "n_in_set": 8,
+        "n_in_bg": 8,
+        "a": 2,
+        "b": 6,
+        "c": 1712,
+        "d": 15414,
+        "OR": 3.0011682242990654,
+        "OR_scipy_ci95_low": 0.29598661114234454,
+        "OR_scipy_ci95_high": 16.79886954520754,
+        "OR_bootstrap_ci95_low": 0.517848252366773,
+        "OR_bootstrap_ci95_high": 13.071172851360402,
+        "p_fisher": 0.18697344130966184,
+        "emp_p": 0.1835632873425315,
+        "bh_fdr_q": 0.2804601619644928
+      }
+    ],
+    "seeds": {
+      "perm_seed": 20260423,
+      "n_perm": 5000,
+      "bootstrap_seed": 20260501,
+      "n_bootstrap": 1000
+    },
+    "bh_fdr_alpha": 0.05
+  },
+  "sub_c_cross_disorder": {
+    "status": "OK",
+    "n_disorders_attempted": 7,
+    "n_disorders_ok": 7,
+    "n_disorders_failed": 0,
+    "failed_disorders": [],
+    "per_disorder": {
+      "adhd": {
+        "status": "OK",
+        "harmonization_meta": {
+          "disorder": "adhd",
+          "source": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/ldsc/comparator_sumstats/adhd_ldsc.tsv",
+          "z_to_p_conversion": false,
+          "n_snps_input": 2628405,
+          "n_snps_after_bim_match": 2582922
+        },
+        "test": {
+          "disorder": "adhd",
+          "n_genes_in_output": 18298,
+          "n_b3_in_output": 18,
+          "median_b3": -0.146775,
+          "median_bg": 0.13641999999999999,
+          "sd_bg": 1.2139803901743857,
+          "std_effect": -0.23327806799195464,
+          "perm_p": 0.8378162183781622,
+          "n_perm": 10000,
+          "perm_seed": 20260423,
+          "bh_fdr_q": 0.8378162183781622
+        },
+        "genes_out": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/experiments/batch_055_B/output/cross_disorder/adhd.genes.out"
+      },
+      "asd": {
+        "status": "OK",
+        "harmonization_meta": {
+          "disorder": "asd",
+          "source": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/ldsc/comparator_sumstats/asd_ldsc.tsv",
+          "z_to_p_conversion": false,
+          "n_snps_input": 8458484,
+          "n_snps_after_bim_match": 7823638
+        },
+        "test": {
+          "disorder": "asd",
+          "n_genes_in_output": 18356,
+          "n_b3_in_output": 18,
+          "median_b3": 0.9514250000000001,
+          "median_bg": 0.263165,
+          "sd_bg": 1.092834180808551,
+          "std_effect": 0.6297936247663665,
+          "perm_p": 0.012998700129987,
+          "n_perm": 10000,
+          "perm_seed": 20260423,
+          "bh_fdr_q": 0.045495450454954504
+        },
+        "genes_out": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/experiments/batch_055_B/output/cross_disorder/asd.genes.out"
+      },
+      "bip": {
+        "status": "OK",
+        "harmonization_meta": {
+          "disorder": "bip",
+          "source": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/ldsc/comparator_sumstats/bip_ldsc.tsv",
+          "z_to_p_conversion": false,
+          "n_snps_input": 533321,
+          "n_snps_after_bim_match": 511043
+        },
+        "test": {
+          "disorder": "bip",
+          "n_genes_in_output": 18208,
+          "n_b3_in_output": 18,
+          "median_b3": 0.21597,
+          "median_bg": -0.023696500000000002,
+          "sd_bg": 1.064447556540716,
+          "std_effect": 0.22515576134053772,
+          "perm_p": 0.2176782321767823,
+          "n_perm": 10000,
+          "perm_seed": 20260423,
+          "bh_fdr_q": 0.2539579375395794
+        },
+        "genes_out": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/experiments/batch_055_B/output/cross_disorder/bip.genes.out"
+      },
+      "mdd": {
+        "status": "OK",
+        "harmonization_meta": {
+          "disorder": "mdd",
+          "source": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/ldsc/comparator_sumstats/mdd_ldsc.tsv",
+          "z_to_p_conversion": false,
+          "n_snps_input": 8889960,
+          "n_snps_after_bim_match": 6286235
+        },
+        "test": {
+          "disorder": "mdd",
+          "n_genes_in_output": 18469,
+          "n_b3_in_output": 18,
+          "median_b3": 1.7915,
+          "median_bg": 0.73529,
+          "sd_bg": 1.2893784835147721,
+          "std_effect": 0.8191621106634508,
+          "perm_p": 0.0027997200279972004,
+          "n_perm": 10000,
+          "perm_seed": 20260423,
+          "bh_fdr_q": 0.019598040195980403
+        },
+        "genes_out": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/experiments/batch_055_B/output/cross_disorder/mdd.genes.out"
+      },
+      "ibd_delange2017": {
+        "status": "OK",
+        "harmonization_meta": {
+          "disorder": "ibd_delange2017",
+          "source": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/ldsc/comparator_sumstats/ibd_delange2017.preprocessed.tsv",
+          "z_to_p_conversion": false,
+          "n_snps_input": 1150510,
+          "n_snps_after_bim_match": 1150509
+        },
+        "test": {
+          "disorder": "ibd_delange2017",
+          "n_genes_in_output": 17920,
+          "n_b3_in_output": 18,
+          "median_b3": 1.15225,
+          "median_bg": 0.5846750000000001,
+          "sd_bg": 1.4320457984014825,
+          "std_effect": 0.3963385812336129,
+          "perm_p": 0.0537946205379462,
+          "n_perm": 10000,
+          "perm_seed": 20260423,
+          "bh_fdr_q": 0.07531246875312468
+        },
+        "genes_out": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/experiments/batch_055_B/output/cross_disorder/ibd_delange2017.genes.out"
+      },
+      "height": {
+        "status": "OK",
+        "harmonization_meta": {
+          "disorder": "height",
+          "source": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/ldsc/comparator_sumstats/height.sumstats.gz",
+          "z_to_p_conversion": true,
+          "n_snps_input": 31731185,
+          "n_snps_after_bim_match": 14820063
+        },
+        "test": {
+          "disorder": "height",
+          "n_genes_in_output": 19318,
+          "n_b3_in_output": 18,
+          "median_b3": 1.2959999999999998,
+          "median_bg": 0.7382150000000001,
+          "sd_bg": 1.1377126852538377,
+          "std_effect": 0.49026877104350036,
+          "perm_p": 0.0357964203579642,
+          "n_perm": 10000,
+          "perm_seed": 20260423,
+          "bh_fdr_q": 0.06264373562643735
+        },
+        "genes_out": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/experiments/batch_055_B/output/cross_disorder/height.genes.out"
+      },
+      "alzheimers": {
+        "status": "OK",
+        "harmonization_meta": {
+          "disorder": "alzheimers",
+          "source": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/ldsc/comparator_sumstats/alzheimers.sumstats.gz",
+          "z_to_p_conversion": true,
+          "n_snps_input": 12069723,
+          "n_snps_after_bim_match": 10792913
+        },
+        "test": {
+          "disorder": "alzheimers",
+          "n_genes_in_output": 18464,
+          "n_b3_in_output": 18,
+          "median_b3": 0.81969,
+          "median_bg": 0.23521,
+          "sd_bg": 1.0856619203792364,
+          "std_effect": 0.5383628080054915,
+          "perm_p": 0.021397860213978603,
+          "n_perm": 10000,
+          "perm_seed": 20260423,
+          "bh_fdr_q": 0.04992834049928341
+        },
+        "genes_out": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/experiments/batch_055_B/output/cross_disorder/alzheimers.genes.out"
+      }
+    },
+    "n_perm": 10000,
+    "perm_seed": 20260423,
+    "bh_fdr_alpha": 0.05,
+    "magma_binary": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/tools/magma_bin/magma",
+    "magma_window_kb": [
+      35,
+      10
+    ]
+  },
+  "reproduction_gate": {
+    "sub_a_count_match": true,
+    "sub_b_full_OR_match": true,
+    "sub_c_anchor_match": true,
+    "sub_a_count_mismatches": [],
+    "sub_b_full_OR_detail": {
+      "B3_full_set_pLI_OR_observed": 5.806398416886544,
+      "B3_full_set_pLI_OR_expected": 5.806398,
+      "tolerance": 0.0001,
+      "match": true,
+      "B3_full_observed_a": 10
+    },
+    "sub_c_scz_anchor": {
+      "status": "OK",
+      "n_b3_in_scz_output": 18,
+      "median_b3_scz": 4.57815,
+      "median_bg_scz": 0.85394,
+      "sd_bg_scz": 1.5606493075303751,
+      "std_effect_scz": 2.386320861470997,
+      "source_file": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/experiments/batch_053_B/output/PGC3_EUR_gene_ENSGID.genes.out"
+    }
+  },
+  "wall_time_min": 88.853
+}

@@ -1,0 +1,388 @@
+{
+  "experiment": "E3_g4_circularity",
+  "brief": "brief_v2.md section E3",
+  "seed": 20260424,
+  "timestamp_start": "2026-04-24T21:13:44",
+  "overlap": {
+    "overlap_count": 304,
+    "overlap_pct": 30.4,
+    "n_pops_top": 1000,
+    "n_magma_top": 1000,
+    "interpretable": true,
+    "overlap_genes": [
+      "ABCB9",
+      "ABCC8",
+      "ACE",
+      "ACTR5",
+      "AGBL4",
+      "AGO1",
+      "AGO3",
+      "AGO4",
+      "AKT3",
+      "AMBRA1",
+      "ANK3",
+      "ANKRD11",
+      "ANKRD44",
+      "ANKS1B",
+      "AP3B2",
+      "APH1A",
+      "ARHGAP44",
+      "ARID1B",
+      "ARID5B",
+      "ATP2A2",
+      "ATXN7",
+      "B3GAT1",
+      "B9D1",
+      "BACH2",
+      "BCL11A",
+      "BCL11B",
+      "BCL7A",
+      "BRINP1",
+      "BRSK2",
+      "C11orf31",
+      "C11orf49",
+      "CA8",
+      "CACNA1C",
+      "CACNA1I",
+      "CACNB2",
+      "CALB2",
+      "CALN1",
+      "CBX6",
+      "CCDC39",
+      "CCNB2",
+      "CCP110",
+      "CD40",
+      "CDC20",
+      "CDK5R1",
+      "CELSR3",
+      "CENPA",
+      "CENPM",
+      "CEP170",
+      "CHD2",
+      "CHRNA3",
+      "CHRNA5",
+      "CHRNB4",
+      "CHST2",
+      "CKAP5",
+      "CLCN3",
+      "CLIP1",
+      "CLU",
+      "CNNM2",
+      "CNOT1",
+      "CNOT7",
+      "CNTN4",
+      "CRHR1",
+      "CTNNA2",
+      "CUL3",
+      "CUL9",
+      "CXXC4",
+      "CXXC5",
+      "CYP17A1",
+      "CYP7B1",
+      "DCC",
+      "DGKI",
+      "DGKZ",
+      "DLG1",
+      "DLGAP2",
+      "DMTF1",
+      "DNAJB9",
+      "DNAJC19",
+      "DOC2A",
+      "DOT1L",
+      "DPYD",
+      "DPYSL5",
+      "DRD2",
+      "EEF1A2",
+      "EFNA5",
+      "EGR1",
+      "ELAVL4",
+      "ELOVL1",
+      "EMB",
+      "ENOX1",
+      "EP300",
+      "EPHA5",
+      "EPN2",
+      "ERBB4",
+      "ESAM",
+      "ETF1",
+      "FAM214A",
+      "FES",
+      "FLRT1",
+      "FOXO3",
+      "FOXP1"
+    ]
+  },
+  "module_mapping": {
+    "M1_neuronal": {
+      "n_symbols": 50,
+      "n_mapped_ensg": 47,
+      "mapping_rate": 0.94,
+      "unmapped_symbols": [
+        "NEFL",
+        "SYN1",
+        "SYP"
+      ]
+    },
+    "M2_astroglia": {
+      "n_symbols": 39,
+      "n_mapped_ensg": 39,
+      "mapping_rate": 1.0,
+      "unmapped_symbols": []
+    },
+    "M3_myelination": {
+      "n_symbols": 29,
+      "n_mapped_ensg": 27,
+      "mapping_rate": 0.931,
+      "unmapped_symbols": [
+        "NAA",
+        "PLP1"
+      ]
+    }
+  },
+  "universe_info": {
+    "n_pops_universe": 18383,
+    "n_magma_universe": 17459
+  },
+  "fisher_pops": {
+    "M1_neuronal": {
+      "OR": 26.3262,
+      "CI_lo": 14.6168,
+      "CI_hi": 46.5921,
+      "p_fisher": 7.079489592570363e-24,
+      "a_overlap": 28,
+      "b_top_only": 972,
+      "c_module_only": 19,
+      "d_neither": 17364,
+      "n_module_in_universe": 47,
+      "n_top_in_universe": 1000,
+      "n_universe": 18383,
+      "overlap_ensgids": [
+        "ENSG00000021645",
+        "ENSG00000067715",
+        "ENSG00000070808",
+        "ENSG00000078018",
+        "ENSG00000079841",
+        "ENSG00000105649",
+        "ENSG00000106089",
+        "ENSG00000113327",
+        "ENSG00000120251",
+        "ENSG00000124140",
+        "ENSG00000132535",
+        "ENSG00000132639",
+        "ENSG00000136854",
+        "ENSG00000141837",
+        "ENSG00000145920",
+        "ENSG00000148408",
+        "ENSG00000152413",
+        "ENSG00000154146",
+        "ENSG00000155511",
+        "ENSG00000162105",
+        "ENSG00000176884",
+        "ENSG00000179915",
+        "ENSG00000183454",
+        "ENSG00000186472",
+        "ENSG00000186868",
+        "ENSG00000196876",
+        "ENSG00000220205",
+        "ENSG00000273079"
+      ],
+      "q_BH": 0.0
+    },
+    "M2_astroglia": {
+      "OR": 0.9395,
+      "CI_lo": 0.3214,
+      "CI_hi": 4.1733,
+      "p_fisher": 0.6341543193112334,
+      "a_overlap": 2,
+      "b_top_only": 998,
+      "c_module_only": 37,
+      "d_neither": 17346,
+      "n_module_in_universe": 39,
+      "n_top_in_universe": 1000,
+      "n_universe": 18383,
+      "overlap_ensgids": [
+        "ENSG00000038945",
+        "ENSG00000120885"
+      ],
+      "q_BH": 0.634154
+    },
+    "M3_myelination": {
+      "OR": 3.9655,
+      "CI_lo": 1.6745,
+      "CI_hi": 10.8536,
+      "p_fisher": 0.014006829377262336,
+      "a_overlap": 5,
+      "b_top_only": 995,
+      "c_module_only": 22,
+      "d_neither": 17361,
+      "n_module_in_universe": 27,
+      "n_top_in_universe": 1000,
+      "n_universe": 18383,
+      "overlap_ensgids": [
+        "ENSG00000102934",
+        "ENSG00000112531",
+        "ENSG00000147488",
+        "ENSG00000174607",
+        "ENSG00000178568"
+      ],
+      "q_BH": 0.02101
+    }
+  },
+  "fisher_magma": {
+    "M1_neuronal": {
+      "OR": 3.3954,
+      "CI_lo": 1.6921,
+      "CI_hi": 7.4908,
+      "p_fisher": 0.004825490163647628,
+      "a_overlap": 8,
+      "b_top_only": 992,
+      "c_module_only": 39,
+      "d_neither": 16420,
+      "n_module_in_universe": 47,
+      "n_top_in_universe": 1000,
+      "n_universe": 17459,
+      "overlap_ensgids": [
+        "ENSG00000073969",
+        "ENSG00000079841",
+        "ENSG00000154146",
+        "ENSG00000179915",
+        "ENSG00000183454",
+        "ENSG00000186472",
+        "ENSG00000186868",
+        "ENSG00000197283"
+      ],
+      "q_BH": 0.014476
+    },
+    "M2_astroglia": {
+      "OR": 0.8895,
+      "CI_lo": 0.3043,
+      "CI_hi": 3.951,
+      "p_fisher": 0.6626099378324972,
+      "a_overlap": 2,
+      "b_top_only": 998,
+      "c_module_only": 37,
+      "d_neither": 16422,
+      "n_module_in_universe": 39,
+      "n_top_in_universe": 1000,
+      "n_universe": 17459,
+      "overlap_ensgids": [
+        "ENSG00000120885",
+        "ENSG00000204472"
+      ],
+      "q_BH": 0.66261
+    },
+    "M3_myelination": {
+      "OR": 1.3174,
+      "CI_lo": 0.4395,
+      "CI_hi": 5.9241,
+      "p_fisher": 0.4630397878405755,
+      "a_overlap": 2,
+      "b_top_only": 998,
+      "c_module_only": 25,
+      "d_neither": 16434,
+      "n_module_in_universe": 27,
+      "n_top_in_universe": 1000,
+      "n_universe": 17459,
+      "overlap_ensgids": [
+        "ENSG00000112531",
+        "ENSG00000178568"
+      ],
+      "q_BH": 0.66261
+    }
+  },
+  "or_ratios": {
+    "M1_neuronal": {
+      "OR_pops": 26.3262,
+      "OR_magma": 3.3954,
+      "ratio_magma_over_pops": 0.129
+    },
+    "M2_astroglia": {
+      "OR_pops": 0.9395,
+      "OR_magma": 0.8895,
+      "ratio_magma_over_pops": 0.9468
+    },
+    "M3_myelination": {
+      "OR_pops": 3.9655,
+      "OR_magma": 1.3174,
+      "ratio_magma_over_pops": 0.3322
+    }
+  },
+  "overlap_detail": {
+    "M1_neuronal": {
+      "pops_overlap_genes": [
+        "CACNA1A",
+        "CACNA1B",
+        "CAMK2A",
+        "CPLX2",
+        "DLG4",
+        "GABRG2",
+        "GRIA1",
+        "GRIA2",
+        "GRIN1",
+        "GRIN2A",
+        "GRIN2B",
+        "HOMER1",
+        "MAP2",
+        "MAPT",
+        "NRGN",
+        "NRXN1",
+        "NRXN3",
+        "PCLO",
+        "RAB3A",
+        "RIMS1",
+        "SCN8A",
+        "SHANK2",
+        "SLC12A5",
+        "SNAP25",
+        "STX1A",
+        "STXBP1",
+        "SYT1",
+        "VAMP2"
+      ],
+      "magma_overlap_genes": [
+        "GRIN2A",
+        "MAPT",
+        "NRGN",
+        "NRXN1",
+        "NSF",
+        "PCLO",
+        "RIMS1",
+        "SYNGAP1"
+      ],
+      "n_pops_overlap": 28,
+      "n_magma_overlap": 8
+    },
+    "M2_astroglia": {
+      "pops_overlap_genes": [
+        "CLU",
+        "MSR1"
+      ],
+      "magma_overlap_genes": [
+        "AIF1",
+        "CLU"
+      ],
+      "n_pops_overlap": 2,
+      "n_magma_overlap": 2
+    },
+    "M3_myelination": {
+      "pops_overlap_genes": [
+        "ERBB4",
+        "PLLP",
+        "QKI",
+        "ST18",
+        "UGT8"
+      ],
+      "magma_overlap_genes": [
+        "ERBB4",
+        "QKI"
+      ],
+      "n_pops_overlap": 5,
+      "n_magma_overlap": 2
+    }
+  },
+  "verdict": "GENUINE_SIGNAL_AMPLIFIED_BY_TRAINING",
+  "verdict_reason": "M1 neuronal OR(MAGMA)=3.40 >= 2.0 with p=0.004825 < 0.05. Polygenic risk genuinely concentrates in neuronal/synaptic genes. PoPS amplifies this signal by incorporating brain expression features.",
+  "m3_exploratory_note": "M3 myelination: EXPLORATORY. OR(MAGMA)=1.3174, overlap=2 genes. Expected overlap ~2-3 genes, insufficient power for formal test.",
+  "timestamp_end": "2026-04-24T21:13:44",
+  "elapsed_seconds": 0.1
+}

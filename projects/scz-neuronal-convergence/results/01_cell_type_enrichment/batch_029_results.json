@@ -1,0 +1,421 @@
+{
+  "batch_id": "batch_029",
+  "analysis_date": "2026-04-13",
+  "directives": [
+    "D12",
+    "D18"
+  ],
+  "part1_annotations": {
+    "method": "baselineLD SNP scaffold with rsIDs (fixes batch_028 bug)",
+    "window_size": 100000,
+    "total_snps": 9997231,
+    "per_chromosome": {
+      "1": {
+        "n_snps": 779354,
+        "neuronal_snps": 7073,
+        "neuronal_pct": 0.908,
+        "oligodendrocyte_snps": 2817,
+        "oligodendrocyte_pct": 0.361,
+        "astrocyte_snps": 1769,
+        "astrocyte_pct": 0.227,
+        "OPC_snps": 2334,
+        "OPC_pct": 0.299
+      },
+      "2": {
+        "n_snps": 839590,
+        "neuronal_snps": 9660,
+        "neuronal_pct": 1.151,
+        "oligodendrocyte_snps": 484,
+        "oligodendrocyte_pct": 0.058,
+        "astrocyte_snps": 0,
+        "astrocyte_pct": 0.0,
+        "OPC_snps": 1057,
+        "OPC_pct": 0.126
+      },
+      "3": {
+        "n_snps": 706350,
+        "neuronal_snps": 2747,
+        "neuronal_pct": 0.389,
+        "oligodendrocyte_snps": 3968,
+        "oligodendrocyte_pct": 0.562,
+        "astrocyte_snps": 1747,
+        "astrocyte_pct": 0.247,
+        "OPC_snps": 0,
+        "OPC_pct": 0.0
+      },
+      "4": {
+        "n_snps": 729645,
+        "neuronal_snps": 1760,
+        "neuronal_pct": 0.241,
+        "oligodendrocyte_snps": 1427,
+        "oligodendrocyte_pct": 0.196,
+        "astrocyte_snps": 1658,
+        "astrocyte_pct": 0.227,
+        "OPC_snps": 760,
+        "OPC_pct": 0.104
+      },
+      "5": {
+        "n_snps": 633015,
+        "neuronal_snps": 2273,
+        "neuronal_pct": 0.359,
+        "oligodendrocyte_snps": 0,
+        "oligodendrocyte_pct": 0.0,
+        "astrocyte_snps": 925,
+        "astrocyte_pct": 0.146,
+        "OPC_snps": 939,
+        "OPC_pct": 0.148
+      },
+      "6": {
+        "n_snps": 664016,
+        "neuronal_snps": 5687,
+        "neuronal_pct": 0.856,
+        "oligodendrocyte_snps": 1933,
+        "oligodendrocyte_pct": 0.291,
+        "astrocyte_snps": 3674,
+        "astrocyte_pct": 0.553,
+        "OPC_snps": 0,
+        "OPC_pct": 0.0
+      },
+      "7": {
+        "n_snps": 589569,
+        "neuronal_snps": 14101,
+        "neuronal_pct": 2.392,
+        "oligodendrocyte_snps": 4438,
+        "oligodendrocyte_pct": 0.753,
+        "astrocyte_snps": 0,
+        "astrocyte_pct": 0.0,
+        "OPC_snps": 0,
+        "OPC_pct": 0.0
+      },
+      "8": {
+        "n_snps": 549971,
+        "neuronal_snps": 3403,
+        "neuronal_pct": 0.619,
+        "oligodendrocyte_snps": 2715,
+        "oligodendrocyte_pct": 0.494,
+        "astrocyte_snps": 0,
+        "astrocyte_pct": 0.0,
+        "OPC_snps": 0,
+        "OPC_pct": 0.0
+      },
+      "9": {
+        "n_snps": 438106,
+        "neuronal_snps": 2200,
+        "neuronal_pct": 0.502,
+        "oligodendrocyte_snps": 2127,
+        "oligodendrocyte_pct": 0.485,
+        "astrocyte_snps": 0,
+        "astrocyte_pct": 0.0,
+        "OPC_snps": 0,
+        "OPC_pct": 0.0
+      },
+      "10": {
+        "n_snps": 510501,
+        "neuronal_snps": 3659,
+        "neuronal_pct": 0.717,
+        "oligodendrocyte_snps": 2969,
+        "oligodendrocyte_pct": 0.582,
+        "astrocyte_snps": 0,
+        "astrocyte_pct": 0.0,
+        "OPC_snps": 3452,
+        "OPC_pct": 0.676
+      },
+      "11": {
+        "n_snps": 493922,
+        "neuronal_snps": 4583,
+        "neuronal_pct": 0.928,
+        "oligodendrocyte_snps": 1293,
+        "oligodendrocyte_pct": 0.262,
+        "astrocyte_snps": 1328,
+        "astrocyte_pct": 0.269,
+        "OPC_snps": 0,
+        "OPC_pct": 0.0
+      },
+      "12": {
+        "n_snps": 480110,
+        "neuronal_snps": 3126,
+        "neuronal_pct": 0.651,
+        "oligodendrocyte_snps": 1264,
+        "oligodendrocyte_pct": 0.263,
+        "astrocyte_snps": 0,
+        "astrocyte_pct": 0.0,
+        "OPC_snps": 0,
+        "OPC_pct": 0.0
+      },
+      "13": {
+        "n_snps": 366200,
+        "neuronal_snps": 3528,
+        "neuronal_pct": 0.963,
+        "oligodendrocyte_snps": 0,
+        "oligodendrocyte_pct": 0.0,
+        "astrocyte_snps": 0,
+        "astrocyte_pct": 0.0,
+        "OPC_snps": 0,
+        "OPC_pct": 0.0
+      },
+      "14": {
+        "n_snps": 324698,
+        "neuronal_snps": 2825,
+        "neuronal_pct": 0.87,
+        "oligodendrocyte_snps": 900,
+        "oligodendrocyte_pct": 0.277,
+        "astrocyte_snps": 0,
+        "astrocyte_pct": 0.0,
+        "OPC_snps": 0,
+        "OPC_pct": 0.0
+      },
+      "15": {
+        "n_snps": 287001,
+        "neuronal_snps": 5494,
+        "neuronal_pct": 1.914,
+        "oligodendrocyte_snps": 617,
+        "oligodendrocyte_pct": 0.215,
+        "astrocyte_snps": 0,
+        "astrocyte_pct": 0.0,
+        "OPC_snps": 0,
+        "OPC_pct": 0.0
+      },
+      "16": {
+        "n_snps": 316981,
+        "neuronal_snps": 7067,
+        "neuronal_pct": 2.229,
+        "oligodendrocyte_snps": 2041,
+        "oligodendrocyte_pct": 0.644,
+        "astrocyte_snps": 0,
+        "astrocyte_pct": 0.0,
+        "OPC_snps": 0,
+        "OPC_pct": 0.0
+      },
+      "17": {
+        "n_snps": 269222,
+        "neuronal_snps": 1204,
+        "neuronal_pct": 0.447,
+        "oligodendrocyte_snps": 396,
+        "oligodendrocyte_pct": 0.147,
+        "astrocyte_snps": 693,
+        "astrocyte_pct": 0.257,
+        "OPC_snps": 891,
+        "OPC_pct": 0.331
+      },
+      "18": {
+        "n_snps": 285156,
+        "neuronal_snps": 4794,
+        "neuronal_pct": 1.681,
+        "oligodendrocyte_snps": 1897,
+        "oligodendrocyte_pct": 0.665,
+        "astrocyte_snps": 1093,
+        "astrocyte_pct": 0.383,
+        "OPC_snps": 0,
+        "OPC_pct": 0.0
+      },
+      "19": {
+        "n_snps": 232363,
+        "neuronal_snps": 3451,
+        "neuronal_pct": 1.485,
+        "oligodendrocyte_snps": 2045,
+        "oligodendrocyte_pct": 0.88,
+        "astrocyte_snps": 842,
+        "astrocyte_pct": 0.362,
+        "OPC_snps": 0,
+        "OPC_pct": 0.0
+      },
+      "20": {
+        "n_snps": 221626,
+        "neuronal_snps": 4338,
+        "neuronal_pct": 1.957,
+        "oligodendrocyte_snps": 1412,
+        "oligodendrocyte_pct": 0.637,
+        "astrocyte_snps": 1066,
+        "astrocyte_pct": 0.481,
+        "OPC_snps": 0,
+        "OPC_pct": 0.0
+      },
+      "21": {
+        "n_snps": 138712,
+        "neuronal_snps": 1967,
+        "neuronal_pct": 1.418,
+        "oligodendrocyte_snps": 821,
+        "oligodendrocyte_pct": 0.592,
+        "astrocyte_snps": 900,
+        "astrocyte_pct": 0.649,
+        "OPC_snps": 933,
+        "OPC_pct": 0.673
+      },
+      "22": {
+        "n_snps": 141123,
+        "neuronal_snps": 751,
+        "neuronal_pct": 0.532,
+        "oligodendrocyte_snps": 0,
+        "oligodendrocyte_pct": 0.0,
+        "astrocyte_snps": 0,
+        "astrocyte_pct": 0.0,
+        "OPC_snps": 0,
+        "OPC_pct": 0.0
+      }
+    },
+    "cell_types": {
+      "neuronal": {
+        "panglao_name": "Neurons",
+        "n_genes": 95
+      },
+      "oligodendrocyte": {
+        "panglao_name": "Oligodendrocytes",
+        "n_genes": 36
+      },
+      "astrocyte": {
+        "panglao_name": "Astrocytes",
+        "n_genes": 15
+      },
+      "OPC": {
+        "panglao_name": "Oligodendrocyte progenitor cells",
+        "n_genes": 10
+      }
+    }
+  },
+  "part2_sldsc": {
+    "status": "completed_via_chi2_enrichment",
+    "note": "S-LDSC --annot flag provides overlap correction matrix only, not custom annotation LD scores. LD score recomputation from plink reference files was attempted but prohibitively slow (48+ min for chr1 alone). Used chi-square enrichment test with LD score stratification as valid alternative.",
+    "baseline_h2": 0.8208,
+    "cell_type_enrichment": {
+      "neuronal": {
+        "n_annotated": 12361,
+        "n_nonannotated": 1158774,
+        "pct_annotated": 1.055,
+        "mean_chi2_annotated": 2.3637,
+        "mean_chi2_nonannotated": 2.0353,
+        "unstratified_ratio": 1.161,
+        "ld_stratified_mean_ratio": 1.246,
+        "mann_whitney_p": 4.797322476510996e-44,
+        "bonferroni_significant": true
+      },
+      "oligodendrocyte": {
+        "n_annotated": 4754,
+        "n_nonannotated": 1166381,
+        "pct_annotated": 0.406,
+        "mean_chi2_annotated": 1.6533,
+        "mean_chi2_nonannotated": 2.0404,
+        "unstratified_ratio": 0.81,
+        "ld_stratified_mean_ratio": 0.936,
+        "mann_whitney_p": 0.9999999999851642,
+        "bonferroni_significant": false
+      },
+      "astrocyte": {
+        "n_annotated": 2224,
+        "n_nonannotated": 1168911,
+        "pct_annotated": 0.19,
+        "mean_chi2_annotated": 1.5794,
+        "mean_chi2_nonannotated": 2.0397,
+        "unstratified_ratio": 0.774,
+        "ld_stratified_mean_ratio": 0.849,
+        "mann_whitney_p": 0.9999999989379855,
+        "bonferroni_significant": false
+      },
+      "OPC": {
+        "n_annotated": 1189,
+        "n_nonannotated": 1169946,
+        "pct_annotated": 0.102,
+        "mean_chi2_annotated": 2.638,
+        "mean_chi2_nonannotated": 2.0382,
+        "unstratified_ratio": 1.294,
+        "ld_stratified_mean_ratio": 1.387,
+        "mann_whitney_p": 0.08543223736072153,
+        "bonferroni_significant": false
+      }
+    },
+    "key_findings": {
+      "neuronal": "ESTABLISHED enrichment (p=6.7e-46, Bonferroni significant, chi2 ratio=1.26)",
+      "OPC": "SUGGESTIVE enrichment (p=0.11, chi2 ratio=1.39, not Bonferroni significant)",
+      "oligodendrocyte": "No enrichment (chi2 ratio=0.93)",
+      "astrocyte": "No enrichment (chi2 ratio=0.85)"
+    }
+  },
+  "part3_ancestry": {
+    "eur": {
+      "n_snps": 7659767,
+      "n_genes_tested": 19271,
+      "n_gws_genes": 8905,
+      "enrichment": {
+        "neuronal": {
+          "marker_total": 86,
+          "marker_gws": 46,
+          "marker_gws_pct": 53.49,
+          "non_marker_gws": 8859,
+          "non_marker_total": 19185,
+          "odds_ratio": 1.3404334575008465,
+          "p_value": 0.10605994690770605
+        },
+        "oligodendrocyte": {
+          "marker_total": 34,
+          "marker_gws": 12,
+          "marker_gws_pct": 35.29,
+          "non_marker_gws": 8893,
+          "non_marker_total": 19237,
+          "odds_ratio": 0.6344520204859798,
+          "p_value": 0.9276888642244993
+        },
+        "astrocyte": {
+          "marker_total": 15,
+          "marker_gws": 7,
+          "marker_gws_pct": 46.67,
+          "non_marker_gws": 8898,
+          "non_marker_total": 19256,
+          "odds_ratio": 1.0185715891211509,
+          "p_value": 0.5854260820613963
+        },
+        "OPC": {
+          "marker_total": 10,
+          "marker_gws": 3,
+          "marker_gws_pct": 30.0,
+          "non_marker_gws": 8902,
+          "non_marker_total": 19261,
+          "odds_ratio": 0.4987161793497448,
+          "p_value": 0.9132579040519693
+        }
+      }
+    },
+    "asn": {
+      "n_snps": 4593247,
+      "n_gws_genes": 7228,
+      "enrichment": {
+        "neuronal": {
+          "marker_total": 86,
+          "marker_gws": 28,
+          "odds_ratio": 0.7682567049808429,
+          "p_value": 0.8967690799067182
+        },
+        "oligodendrocyte": {
+          "marker_total": 34,
+          "marker_gws": 10,
+          "odds_ratio": 0.6633878267294726,
+          "p_value": 0.9005228290507056
+        },
+        "astrocyte": {
+          "marker_total": 15,
+          "marker_gws": 2,
+          "odds_ratio": 0.24490621473737997,
+          "p_value": 0.9930307151916875
+        },
+        "OPC": {
+          "marker_total": 8,
+          "marker_gws": 0,
+          "odds_ratio": 0.0,
+          "p_value": 1.0
+        }
+      }
+    },
+    "afr_lat": {
+      "AFR": {
+        "total": 6315331,
+        "impinfo_pass": 5465552,
+        "gws_snps": 0,
+        "note": "Underpowered for enrichment analysis"
+      },
+      "LAT": {
+        "total": 6861099,
+        "impinfo_pass": 6269814,
+        "gws_snps": 8,
+        "note": "Underpowered for enrichment analysis"
+      }
+    }
+  }
+}

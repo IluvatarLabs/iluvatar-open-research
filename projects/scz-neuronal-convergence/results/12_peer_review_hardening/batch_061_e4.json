@@ -1,0 +1,252 @@
+{
+  "experiment": "E4_complement_sensitivity",
+  "brief": "brief_v2.md section E4",
+  "analysis_type": "DESCRIPTIVE -- no formal decision rule",
+  "seed": 20260424,
+  "timestamp_start": "2026-04-24T21:15:55",
+  "gene_set": {
+    "name": "Complement_MHC_excluded",
+    "source": "Kim et al. 2021 Nat Neurosci, same as batch_060 E6. MHC genes excluded: C4A, C4B, C2, CFB.",
+    "n_requested": 24,
+    "n_mapped": 23,
+    "unmapped": [
+      "CFP"
+    ],
+    "symbol_to_ensgid": {
+      "C1QA": "ENSG00000173372",
+      "C1QB": "ENSG00000173369",
+      "C1QC": "ENSG00000159189",
+      "C1R": "ENSG00000159403",
+      "C1S": "ENSG00000182326",
+      "C3": "ENSG00000125730",
+      "C5": "ENSG00000106804",
+      "C6": "ENSG00000039537",
+      "C7": "ENSG00000112936",
+      "C8A": "ENSG00000157131",
+      "C8B": "ENSG00000021852",
+      "C8G": "ENSG00000176919",
+      "C9": "ENSG00000113600",
+      "CFD": "ENSG00000197766",
+      "CFH": "ENSG00000000971",
+      "CFI": "ENSG00000205403",
+      "CR1": "ENSG00000203710",
+      "CR2": "ENSG00000117322",
+      "CD46": "ENSG00000117335",
+      "CD55": "ENSG00000196352",
+      "CD59": "ENSG00000085063",
+      "SERPING1": "ENSG00000149131",
+      "CLU": "ENSG00000120885"
+    }
+  },
+  "clu_mapped": true,
+  "cr1_mapped": true,
+  "ols_conditions": {
+    "full": {
+      "status": "ok",
+      "beta": 0.6917,
+      "se": 0.2311,
+      "CI_lo": 0.2387,
+      "CI_hi": 1.1447,
+      "p_two_sided": 0.0027693956098929777,
+      "p_one_sided": 0.0013846978049464889,
+      "r_squared": 0.004662,
+      "n_universe": 16713,
+      "n_in_set": 22
+    },
+    "without_CLU": {
+      "status": "ok",
+      "beta": 0.4424,
+      "se": 0.2366,
+      "CI_lo": -0.0214,
+      "CI_hi": 0.9061,
+      "p_two_sided": 0.06154356820010696,
+      "p_one_sided": 0.03077178410005348,
+      "r_squared": 0.004337,
+      "n_universe": 16713,
+      "n_in_set": 21
+    },
+    "without_CR1": {
+      "status": "ok",
+      "beta": 0.4272,
+      "se": 0.2366,
+      "CI_lo": -0.0365,
+      "CI_hi": 0.891,
+      "p_two_sided": 0.07096542845647152,
+      "p_one_sided": 0.03548271422823576,
+      "r_squared": 0.004323,
+      "n_universe": 16713,
+      "n_in_set": 21
+    },
+    "without_CLU_CR1": {
+      "status": "ok",
+      "beta": 0.1523,
+      "se": 0.2424,
+      "CI_lo": -0.3229,
+      "CI_hi": 0.6275,
+      "p_two_sided": 0.5299365775748401,
+      "p_one_sided": 0.26496828878742007,
+      "r_squared": 0.004152,
+      "n_universe": 16713,
+      "n_in_set": 20
+    }
+  },
+  "dfbetas_conditions": {
+    "full": {
+      "status": "ok",
+      "per_gene_dfbetas": {
+        "CFH": -0.1033,
+        "C8B": -0.205,
+        "C6": -0.0093,
+        "CD59": -0.5261,
+        "C5": 0.0622,
+        "C7": 0.0242,
+        "C9": -0.2168,
+        "CR2": 0.409,
+        "CD46": 0.1004,
+        "CLU": 1.0776,
+        "C3": -0.1162,
+        "SERPING1": -0.6038,
+        "C8A": -0.224,
+        "C1QC": -0.243,
+        "C1QB": -0.289,
+        "C1QA": -0.2094,
+        "C8G": -0.436,
+        "C1S": 0.1351,
+        "CD55": 0.4355,
+        "CFD": -0.3079,
+        "CR1": 1.1427,
+        "CFI": 0.1014
+      },
+      "max_abs_dfbetas": 1.1427,
+      "max_abs_gene": "CR1",
+      "max_abs_ensgid": "ENSG00000203710"
+    },
+    "without_CLU": {
+      "status": "ok",
+      "per_gene_dfbetas": {
+        "CFH": -0.0533,
+        "C8B": -0.1577,
+        "C6": 0.043,
+        "CD59": -0.4867,
+        "C5": 0.1163,
+        "C7": 0.0774,
+        "C9": -0.1698,
+        "CR2": 0.4721,
+        "CD46": 0.1556,
+        "C3": -0.0667,
+        "SERPING1": -0.5666,
+        "C8A": -0.1772,
+        "C1QC": -0.1965,
+        "C1QB": -0.2437,
+        "C1QA": -0.1622,
+        "C8G": -0.3946,
+        "C1S": 0.1913,
+        "CD55": 0.4994,
+        "CFD": -0.2632,
+        "CR1": 1.2248,
+        "CFI": 0.1565
+      },
+      "max_abs_dfbetas": 1.2248,
+      "max_abs_gene": "CR1",
+      "max_abs_ensgid": "ENSG00000203710"
+    },
+    "without_CR1": {
+      "status": "ok",
+      "per_gene_dfbetas": {
+        "CFH": -0.0501,
+        "C8B": -0.1545,
+        "C6": 0.0462,
+        "CD59": -0.4835,
+        "C5": 0.1195,
+        "C7": 0.0806,
+        "C9": -0.1666,
+        "CR2": 0.4753,
+        "CD46": 0.1588,
+        "CLU": 1.1612,
+        "C3": -0.0635,
+        "SERPING1": -0.5633,
+        "C8A": -0.1741,
+        "C1QC": -0.1933,
+        "C1QB": -0.2405,
+        "C1QA": -0.159,
+        "C8G": -0.3914,
+        "C1S": 0.1944,
+        "CD55": 0.5026,
+        "CFD": -0.26,
+        "CFI": 0.1597
+      },
+      "max_abs_dfbetas": 1.1612,
+      "max_abs_gene": "CLU",
+      "max_abs_ensgid": "ENSG00000120885"
+    },
+    "without_CLU_CR1": {
+      "status": "ok",
+      "per_gene_dfbetas": {
+        "CFH": 0.0082,
+        "C8B": -0.0991,
+        "C6": 0.1071,
+        "CD59": -0.4368,
+        "C5": 0.1824,
+        "C7": 0.1424,
+        "C9": -0.1116,
+        "CR2": 0.5478,
+        "CD46": 0.2227,
+        "C3": -0.0057,
+        "SERPING1": -0.5189,
+        "C8A": -0.1192,
+        "C1QC": -0.1389,
+        "C1QB": -0.1873,
+        "C1QA": -0.1036,
+        "C8G": -0.3424,
+        "C1S": 0.2594,
+        "CD55": 0.5759,
+        "CFD": -0.2074,
+        "CFI": 0.2237
+      },
+      "max_abs_dfbetas": 0.5759,
+      "max_abs_gene": "CD55",
+      "max_abs_ensgid": "ENSG00000196352"
+    }
+  },
+  "beta_change_summary": {
+    "without_CLU": {
+      "beta_full": 0.6917,
+      "beta_reduced": 0.4424,
+      "delta_beta": -0.2493,
+      "pct_change": -36.0,
+      "CI_reduced": [
+        -0.0214,
+        0.9061
+      ],
+      "n_genes_removed": 1,
+      "n_remaining": 21
+    },
+    "without_CR1": {
+      "beta_full": 0.6917,
+      "beta_reduced": 0.4272,
+      "delta_beta": -0.2645,
+      "pct_change": -38.2,
+      "CI_reduced": [
+        -0.0365,
+        0.891
+      ],
+      "n_genes_removed": 1,
+      "n_remaining": 21
+    },
+    "without_CLU_CR1": {
+      "beta_full": 0.6917,
+      "beta_reduced": 0.1523,
+      "delta_beta": -0.5394,
+      "pct_change": -78.0,
+      "CI_reduced": [
+        -0.3229,
+        0.6275
+      ],
+      "n_genes_removed": 2,
+      "n_remaining": 20
+    }
+  },
+  "descriptive_note": "This is a DESCRIPTIVE analysis. With n=21-23 complement genes, the MDE is approximately 0.60 sigma. The analysis CANNOT formally distinguish 'CLU/CR1-driven signal' from 'genuine pathway enrichment.' Point estimates and CIs are reported for interpretation alongside domain knowledge about CLU and CR1 as established AD GWAS hits.",
+  "timestamp_end": "2026-04-24T21:20:00",
+  "elapsed_seconds": 245.0
+}

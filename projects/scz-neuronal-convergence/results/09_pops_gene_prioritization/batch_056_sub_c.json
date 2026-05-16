@@ -1,0 +1,111 @@
+{
+  "status": "ok",
+  "batch": "056",
+  "sub": "c",
+  "wall_s": 1812.5813145637512,
+  "reproduction_gate_R2": {
+    "status": "ok",
+    "preds_path": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/experiments/batch_055_A/output/pgrid/cutoff_0.07/PGC3_EUR_PoPS.preds",
+    "n_common": 17459,
+    "rho_observed": 0.528435359071882,
+    "rho_target": 0.5284,
+    "delta": 3.535907188201293e-05,
+    "tolerance": 0.0001,
+    "pass": true
+  },
+  "n_common": 17459,
+  "cutoffs": [
+    0.075,
+    0.08,
+    0.09
+  ],
+  "anchor_cutoff": 0.07,
+  "rho_anchor_point_spearman": 0.528435359071882,
+  "rho_anchor_bootstrap_ci": {
+    "ci_lo": 0.5168261392402748,
+    "ci_hi": 0.5402115324433249,
+    "median": 0.5284806586258428
+  },
+  "rho_per_cutoff_point_spearman": {
+    "0.075": 0.532703693088153,
+    "0.08": 0.5364523862397373,
+    "0.09": 0.42542478738305756
+  },
+  "rho_per_cutoff_bootstrap_ci": {
+    "0.075": {
+      "ci_lo": 0.5213425743271314,
+      "ci_hi": 0.5443576278300125,
+      "median": 0.5327633168516046
+    },
+    "0.08": {
+      "ci_lo": 0.5251611844542261,
+      "ci_hi": 0.5480162399062852,
+      "median": 0.5364621819749842
+    },
+    "0.09": {
+      "ci_lo": 0.4131453061879588,
+      "ci_hi": 0.4379120812018096,
+      "median": 0.42544622760953255
+    }
+  },
+  "delta_rho_per_cutoff_vs_anchor_ci": {
+    "0.075": {
+      "ci_lo": 0.003423497359451916,
+      "ci_hi": 0.005030018490531124,
+      "median": 0.004250372428072691
+    },
+    "0.08": {
+      "ci_lo": 0.006782169042486169,
+      "ci_hi": 0.009169155511644359,
+      "median": 0.007985615019983794
+    },
+    "0.09": {
+      "ci_lo": -0.10741244203763112,
+      "ci_hi": -0.09836426747414324,
+      "median": -0.10305573599663431
+    }
+  },
+  "bootstrap": {
+    "n_boot": 1000,
+    "seed": 20260423
+  },
+  "pops_run_meta": {
+    "0.075": {
+      "tag": "pgrid_cutoff_0.075",
+      "cutoff": 0.075,
+      "subset_features_path": null,
+      "rc": 0,
+      "wall_s": 488.7895407676697,
+      "log_path": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/experiments/batch_055_A/logs/pops_pgrid_cutoff_0.075.log",
+      "preds_path": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/experiments/batch_056/output/sub_c/pgrid/cutoff_0.075/PGC3_EUR_PoPS.preds",
+      "ok": true,
+      "cached": false
+    },
+    "0.08": {
+      "tag": "pgrid_cutoff_0.08",
+      "cutoff": 0.08,
+      "subset_features_path": null,
+      "rc": 0,
+      "wall_s": 461.89425015449524,
+      "log_path": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/experiments/batch_055_A/logs/pops_pgrid_cutoff_0.08.log",
+      "preds_path": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/experiments/batch_056/output/sub_c/pgrid/cutoff_0.08/PGC3_EUR_PoPS.preds",
+      "ok": true,
+      "cached": false
+    },
+    "0.09": {
+      "tag": "pgrid_cutoff_0.09",
+      "cutoff": 0.09,
+      "subset_features_path": null,
+      "rc": 0,
+      "wall_s": 847.5171575546265,
+      "log_path": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/experiments/batch_055_A/logs/pops_pgrid_cutoff_0.09.log",
+      "preds_path": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/experiments/batch_056/output/sub_c/pgrid/cutoff_0.09/PGC3_EUR_PoPS.preds",
+      "ok": true,
+      "cached": false
+    }
+  },
+  "decision_classification": {
+    "classification": "Shape_B",
+    "reason": "\u03c1(0.08) \u2212 \u03c1(0.07) = +0.0080 > 0.005 with \u0394\u03c1 CI = [0.0068,0.0092] > 0"
+  }
+}

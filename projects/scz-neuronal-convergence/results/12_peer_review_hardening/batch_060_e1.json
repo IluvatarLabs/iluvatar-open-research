@@ -1,0 +1,224 @@
+{
+  "status": "ok",
+  "batch": "060",
+  "sub": "e1",
+  "brief": "brief_v2.md",
+  "wall_s": 121.82368922233582,
+  "smoke": true,
+  "qc": {
+    "status": "ok",
+    "n_overlap_genes": 17685,
+    "n_bellenguez": 17709,
+    "n_existing": 17748,
+    "spearman_rho": 0.3057640132191068,
+    "spearman_p": 0.0,
+    "rho_threshold": 0.25,
+    "rho_pass": true,
+    "bell_top_k": 20,
+    "existing_top_k": 40,
+    "top_k_overlap": 18,
+    "top_k_overlap_min": 10,
+    "top_k_pass": true,
+    "qc_overall_pass": true,
+    "bell_top_k_ensgids": [
+      "ENSG00000007255",
+      "ENSG00000064687",
+      "ENSG00000069399",
+      "ENSG00000104856",
+      "ENSG00000104859",
+      "ENSG00000104866",
+      "ENSG00000110079",
+      "ENSG00000130201",
+      "ENSG00000130202",
+      "ENSG00000130204",
+      "ENSG00000130208",
+      "ENSG00000136717",
+      "ENSG00000140090",
+      "ENSG00000146904",
+      "ENSG00000159640",
+      "ENSG00000180448",
+      "ENSG00000186567",
+      "ENSG00000203710",
+      "ENSG00000213892",
+      "ENSG00000216588"
+    ],
+    "existing_top_k_ensgids": [
+      "ENSG00000007047",
+      "ENSG00000007255",
+      "ENSG00000064687",
+      "ENSG00000066923",
+      "ENSG00000069399",
+      "ENSG00000073008",
+      "ENSG00000073921",
+      "ENSG00000104853",
+      "ENSG00000104859",
+      "ENSG00000104866",
+      "ENSG00000110077",
+      "ENSG00000110079",
+      "ENSG00000120885",
+      "ENSG00000130201",
+      "ENSG00000130202",
+      "ENSG00000130203",
+      "ENSG00000130204",
+      "ENSG00000130208",
+      "ENSG00000136717",
+      "ENSG00000140090",
+      "ENSG00000142252",
+      "ENSG00000142273",
+      "ENSG00000146904",
+      "ENSG00000149534",
+      "ENSG00000159784",
+      "ENSG00000170684",
+      "ENSG00000179846",
+      "ENSG00000180448",
+      "ENSG00000182087",
+      "ENSG00000186567",
+      "ENSG00000187244",
+      "ENSG00000189114",
+      "ENSG00000197093",
+      "ENSG00000203710",
+      "ENSG00000213420",
+      "ENSG00000213892",
+      "ENSG00000214787",
+      "ENSG00000216588",
+      "ENSG00000234906",
+      "ENSG00000267467"
+    ],
+    "overlap_ensgids": [
+      "ENSG00000007255",
+      "ENSG00000064687",
+      "ENSG00000069399",
+      "ENSG00000104859",
+      "ENSG00000104866",
+      "ENSG00000110079",
+      "ENSG00000130201",
+      "ENSG00000130202",
+      "ENSG00000130204",
+      "ENSG00000130208",
+      "ENSG00000136717",
+      "ENSG00000140090",
+      "ENSG00000146904",
+      "ENSG00000180448",
+      "ENSG00000186567",
+      "ENSG00000203710",
+      "ENSG00000213892",
+      "ENSG00000216588"
+    ]
+  },
+  "R1_reproduction_gate": {
+    "lo": 2.5,
+    "hi": 3.5,
+    "b3_scz_beta_ols": 3.2401488526492814,
+    "pass": true
+  },
+  "primary_EDT1_ex_B3": {
+    "status": "ok",
+    "tag": "EDT1_ex_B3",
+    "n_gene_universe": 16696,
+    "n_set_in_universe": 414,
+    "ols": {
+      "status": "ok",
+      "beta_1": 0.3695350223797428,
+      "se_1": 0.06411101337404572,
+      "t": 5.76398660591665,
+      "p_one_sided": 4.17998678778957e-09,
+      "p_two_sided": 8.35997357557914e-09,
+      "ci_lo": 0.24387743616661317,
+      "ci_hi": 0.4951926085928724,
+      "n": 16696,
+      "covariates_used": [
+        "log10_gene_length",
+        "lof_pLI",
+        "log10_exp_lof_plus1",
+        "log10_NSNPS_plus1"
+      ],
+      "r_squared": 0.007398276758205924
+    },
+    "huber": {
+      "status": "ok",
+      "beta_1": 0.26619204083190645,
+      "se_1": 0.058667589818889226,
+      "ci_lo": 0.15120356478688357,
+      "ci_hi": 0.38118051687692933
+    },
+    "tukey": {
+      "status": "ok",
+      "beta_1": 0.21635377180620904,
+      "se_1": 0.05811349892453004,
+      "ci_lo": 0.10245131391413016,
+      "ci_hi": 0.33025622969828794,
+      "converged": true,
+      "niter": 20,
+      "final_scale": 1.1202176083056048
+    },
+    "rank_magma_ols": {
+      "status": "ok",
+      "beta_1": 0.25848326948220657,
+      "se_1": 0.0497739578844118,
+      "t": 5.19314276920619,
+      "p_one_sided": 1.0460122500155135e-07,
+      "p_two_sided": 2.092024500031027e-07,
+      "ci_lo": 0.16092631202875946,
+      "ci_hi": 0.3560402269356537,
+      "n": 16696,
+      "covariates_used": [
+        "log10_gene_length",
+        "lof_pLI",
+        "log10_exp_lof_plus1",
+        "log10_NSNPS_plus1"
+      ],
+      "r_squared": 0.006265324734446298
+    },
+    "influence": {
+      "status": "ok",
+      "max_abs_dfbetas_b3": 0.2903081390519753,
+      "argmax_dfbetas_b3_idx": 9471,
+      "cooks_max": 0.016172217219330404,
+      "cooks_mean": 6.17925361810154e-05,
+      "cooks_argmax_idx": 9471
+    },
+    "influential_outlier_reconciliation": {
+      "status": "skipped",
+      "reason": "no obs exceed DFBETAS cutoff"
+    }
+  },
+  "secondary": {
+    "B3": {
+      "status": "skipped_smoke"
+    }
+  },
+  "bh_fdr_family": {
+    "labels": [
+      "EDT1_ex_B3"
+    ],
+    "pvals": [
+      4.17998678778957e-09
+    ],
+    "qvals": [
+      4.17998678778957e-09
+    ],
+    "family_size": 1,
+    "q_threshold": 0.05
+  },
+  "verdict": {
+    "verdict": "AD_REPLICATED",
+    "reason": "beta=0.3695 in [0.1, 0.5]"
+  },
+  "provenance_sha256": {
+    "bellenguez_gene_z_tsv": "2dbb5c1c78f42a39b28fcd0c0a849345b2b6c68343ed2383b99f0214377e9a3e",
+    "existing_ad_magma": "dfb5fe0b299edf13db36c73986306af42e5fe8f407dee3d582c3697a803c5706",
+    "gnomad_tsv": "68d8abdb7fc48f570869b02dfaa74b9fecaece7fcc5f301ddca40ec1ce12da00",
+    "gene_annot": "940086e0781e9b244da76d27f02cc25dd45c957ee4415915cd1ced37b63d1e72",
+    "magma_scz": "8eaded5409b49981de428189805957420d378c5cf138c9d40056acf4f1030fa0"
+  },
+  "brief_contract": {
+    "qc_rho_threshold": 0.25,
+    "top_k_spotcheck": 20,
+    "top_k_overlap_min": 10,
+    "ad_replicated_band": [
+      0.1,
+      0.5
+    ],
+    "seed": 20260424
+  }
+}

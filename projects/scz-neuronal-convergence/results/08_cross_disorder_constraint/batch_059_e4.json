@@ -1,0 +1,44 @@
+{
+  "status": "E4_DEFERRED",
+  "batch": "059",
+  "sub": "e4",
+  "brief": "brief_v2.md (v2.1)",
+  "smoke": false,
+  "wall_cap_min": 90,
+  "pre_step_1_munge": {
+    "status": "ok",
+    "sha256": "013134d22a2a0c2dd0cb683192d0c109da1aec83ba54d94a837a8b71bcbc4a1f",
+    "n_rows": 21101103
+  },
+  "pre_step_2_liftover": {
+    "status": "ok",
+    "pct_lost": 0.0018675800975901592,
+    "n_in": 21101103,
+    "n_out": 21061695
+  },
+  "pre_step_3_magma": {
+    "status": "ok",
+    "genes_out_path": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/experiments/batch_059/output/e4/magma_work/bellenguez_magma.genes.out",
+    "n_effective_N": 382188,
+    "n_effective_source": "Bellenguez 2022 paper-reported",
+    "n_cases_observed": 69576,
+    "n_controls_observed": 360279,
+    "n_cases_paper": 111326,
+    "n_controls_paper": 677663
+  },
+  "pre_step_4_qc": {
+    "status": "ok",
+    "n_bellenguez": 17709,
+    "n_existing": 17748,
+    "n_overlap": 17685,
+    "ensg_overlap_fraction": 0.9986447569032695,
+    "spearman_rho": 0.3057640132191068,
+    "spearman_p": 0.0,
+    "overlap_pass": true,
+    "rho_pass": false
+  },
+  "verdict": {
+    "verdict": "E4_DEFERRED",
+    "reason": "QC failed: overlap_pass=True rho_pass=False"
+  }
+}

@@ -1,0 +1,317 @@
+{
+  "experiment": "E4",
+  "gene_set": "IEG_rPRGs",
+  "source": "Tyssowski et al. 2018 Neuron [lit_doi_10.1016_j.neuron.2018.04.001]",
+  "n_genes_requested": 19,
+  "n_genes_mapped": 19,
+  "n_genes_unmapped": [],
+  "n_genes_multi_mapped": [],
+  "symbol_to_ensgid": {
+    "FOS": "ENSG00000170345",
+    "FOSB": "ENSG00000125740",
+    "JUNB": "ENSG00000171223",
+    "EGR1": "ENSG00000120738",
+    "EGR2": "ENSG00000122877",
+    "EGR3": "ENSG00000179388",
+    "EGR4": "ENSG00000135625",
+    "NR4A1": "ENSG00000123358",
+    "NR4A2": "ENSG00000153234",
+    "NR4A3": "ENSG00000119508",
+    "ARC": "ENSG00000198576",
+    "NPAS4": "ENSG00000174576",
+    "BTG2": "ENSG00000159388",
+    "DUSP1": "ENSG00000120129",
+    "DUSP5": "ENSG00000138166",
+    "GADD45B": "ENSG00000099860",
+    "GADD45G": "ENSG00000130222",
+    "ATF3": "ENSG00000162772",
+    "PPP1R15A": "ENSG00000087074"
+  },
+  "reproduction_gate": {
+    "b3_n_mapped": 18,
+    "b3_n_total": 18,
+    "scz_b3_beta_ols": 3.2401488526492814,
+    "target_lo": 2.5,
+    "target_hi": 3.5,
+    "pass": true
+  },
+  "per_disorder": {
+    "scz": {
+      "ols_beta": 0.453519909617399,
+      "ols_se": 0.3520698242169219,
+      "ols_ci": [
+        -0.2365369458477679,
+        1.143576765082566
+      ],
+      "ols_p_one_sided": 0.09885530508631392,
+      "ols_p_two_sided": 0.19771061017262784,
+      "q_bh": 0.2636141468968371,
+      "ols_r_squared": 0.02468944789995242,
+      "ols_n": 16556,
+      "huber_beta": 0.5264604588295112,
+      "huber_ci": [
+        -0.10916095737418774,
+        1.16208187503321
+      ],
+      "tukey_beta": 0.5424834949991792,
+      "tukey_ci": [
+        -0.09112086884545734,
+        1.176087858843816
+      ],
+      "tukey_converged": true,
+      "rank_ols_beta": 0.35749176437058167,
+      "rank_sign_concordance": true,
+      "dfbetas_max": 0.5026580674360461,
+      "dfbetas_dusp1": -0.11678009720518509,
+      "n_gene_universe": 16556,
+      "n_set_in_universe": 19
+    },
+    "bip": {
+      "ols_beta": -0.102820717783928,
+      "ols_se": 0.25190211979007227,
+      "ols_ci": [
+        -0.5965488725724697,
+        0.39090743700461367
+      ],
+      "ols_p_one_sided": 0.658425506686064,
+      "ols_p_two_sided": 0.6831489866278719,
+      "q_bh": 0.8069870847969227,
+      "ols_r_squared": 0.0006346538873357455,
+      "ols_n": 16050,
+      "huber_beta": -0.008579267037324654,
+      "huber_ci": [
+        -0.5153023664762293,
+        0.49814383240157994
+      ],
+      "tukey_beta": -0.007067987716437139,
+      "tukey_ci": [
+        -0.5130210502155403,
+        0.4988850747826661
+      ],
+      "tukey_converged": true,
+      "rank_ols_beta": -0.095536131963265,
+      "rank_sign_concordance": true,
+      "dfbetas_max": 0.6755585567994629,
+      "dfbetas_dusp1": -0.04057778731791023,
+      "n_gene_universe": 16050,
+      "n_set_in_universe": 18
+    },
+    "mdd": {
+      "ols_beta": -0.1863781168669935,
+      "ols_se": 0.2940670885852133,
+      "ols_ci": [
+        -0.7627496104940115,
+        0.38999337676002455
+      ],
+      "ols_p_one_sided": 0.7368882082410368,
+      "ols_p_two_sided": 0.5262235835179263,
+      "q_bh": 0.8069870847969227,
+      "ols_r_squared": 0.011529525760823445,
+      "ols_n": 16725,
+      "huber_beta": -0.10163200749288076,
+      "huber_ci": [
+        -0.6562352421891933,
+        0.4529712272034317
+      ],
+      "tukey_beta": -0.10240219478605282,
+      "tukey_ci": [
+        -0.6571657487927758,
+        0.4523613592206701
+      ],
+      "tukey_converged": true,
+      "rank_ols_beta": -0.1549772155724623,
+      "rank_sign_concordance": true,
+      "dfbetas_max": 0.42169045876964867,
+      "dfbetas_dusp1": -0.08277330659522332,
+      "n_gene_universe": 16725,
+      "n_set_in_universe": 19
+    },
+    "asd": {
+      "ols_beta": 0.42104863141276583,
+      "ols_se": 0.2503286312533272,
+      "ols_ci": [
+        -0.06959548584375552,
+        0.9116927486692872
+      ],
+      "ols_p_one_sided": 0.04629538251847394,
+      "ols_p_two_sided": 0.09259076503694788,
+      "q_bh": 0.2636141468968371,
+      "ols_r_squared": 0.0047310628394742205,
+      "ols_n": 16677,
+      "huber_beta": 0.4218974015944077,
+      "huber_ci": [
+        -0.07212539932356771,
+        0.9159202025123832
+      ],
+      "tukey_beta": 0.43126893016436224,
+      "tukey_ci": [
+        -0.06286152511646276,
+        0.9253993854451872
+      ],
+      "tukey_converged": true,
+      "rank_ols_beta": 0.3829120231460567,
+      "rank_sign_concordance": true,
+      "dfbetas_max": 0.39669458246191214,
+      "dfbetas_dusp1": -0.1092867509222725,
+      "n_gene_universe": 16677,
+      "n_set_in_universe": 19
+    },
+    "adhd": {
+      "ols_beta": 0.15194385740803548,
+      "ols_se": 0.27847146534927875,
+      "ols_ci": [
+        -0.39386021467655086,
+        0.6977479294926219
+      ],
+      "ols_p_one_sided": 0.29266198620149586,
+      "ols_p_two_sided": 0.5853239724029917,
+      "q_bh": 0.5853239724029917,
+      "ols_r_squared": 0.009859671866438768,
+      "ols_n": 16660,
+      "huber_beta": 0.19396035274353363,
+      "huber_ci": [
+        -0.2995431176593603,
+        0.6874638231464276
+      ],
+      "tukey_beta": 0.20579804487309528,
+      "tukey_ci": [
+        -0.28417180955082655,
+        0.6957678992970171
+      ],
+      "tukey_converged": true,
+      "rank_ols_beta": 0.17383568530844132,
+      "rank_sign_concordance": true,
+      "dfbetas_max": 0.3580099713351059,
+      "dfbetas_dusp1": -0.2846407929167355,
+      "n_gene_universe": 16660,
+      "n_set_in_universe": 19
+    },
+    "ibd_delange2017": {
+      "ols_beta": 0.4622243112991755,
+      "ols_se": 0.329519012088414,
+      "ols_ci": [
+        -0.18363295239411592,
+        1.1080815749924668
+      ],
+      "ols_p_one_sided": 0.08035901816331456,
+      "ols_p_two_sided": 0.16071803632662912,
+      "q_bh": 0.2636141468968371,
+      "ols_r_squared": 0.0065625762774749186,
+      "ols_n": 16384,
+      "huber_beta": 0.4305263119895837,
+      "huber_ci": [
+        -0.15059072421568842,
+        1.011643348194856
+      ],
+      "tukey_beta": 0.41235646286924726,
+      "tukey_ci": [
+        -0.16185711648395734,
+        0.9865700422224519
+      ],
+      "tukey_converged": true,
+      "rank_ols_beta": 0.27808128627108625,
+      "rank_sign_concordance": true,
+      "dfbetas_max": 0.7674491061974356,
+      "dfbetas_dusp1": 0.017235089622078495,
+      "n_gene_universe": 16384,
+      "n_set_in_universe": 19
+    },
+    "height": {
+      "ols_beta": -0.03497759584652086,
+      "ols_se": 0.2618389971508504,
+      "ols_ci": [
+        -0.5481820302621876,
+        0.4782268385691459
+      ],
+      "ols_p_one_sided": 0.5531335706111573,
+      "ols_p_two_sided": 0.8937328587776854,
+      "q_bh": 0.8069870847969227,
+      "ols_r_squared": 0.007881140086641425,
+      "ols_n": 16707,
+      "huber_beta": 0.016284450625093903,
+      "huber_ci": [
+        -0.47954130305914705,
+        0.5121102043093348
+      ],
+      "tukey_beta": 0.03406428654334638,
+      "tukey_ci": [
+        -0.4620429070112238,
+        0.5301714800979166
+      ],
+      "tukey_converged": true,
+      "rank_ols_beta": 0.002531215816994733,
+      "rank_sign_concordance": false,
+      "dfbetas_max": 0.3810964609422616,
+      "dfbetas_dusp1": 0.15695263924678554,
+      "n_gene_universe": 16707,
+      "n_set_in_universe": 19
+    },
+    "alzheimers": {
+      "ols_beta": -0.21578740906345187,
+      "ols_se": 0.24892714234094365,
+      "ols_ci": [
+        -0.7036846080517014,
+        0.27210978992479773
+      ],
+      "ols_p_one_sided": 0.8069870847969227,
+      "ols_p_two_sided": 0.3860258304061547,
+      "q_bh": 0.8069870847969227,
+      "ols_r_squared": 0.0041735108602634075,
+      "ols_n": 16713,
+      "huber_beta": -0.3420222135999586,
+      "huber_ci": [
+        -0.7966103494026004,
+        0.11256592220268324
+      ],
+      "tukey_beta": -0.40947566047024914,
+      "tukey_ci": [
+        -0.8613637715700737,
+        0.04241245062957549
+      ],
+      "tukey_converged": true,
+      "rank_ols_beta": -0.26307656586367584,
+      "rank_sign_concordance": true,
+      "dfbetas_max": 0.9358846931662252,
+      "dfbetas_dusp1": -0.2605847479591562,
+      "n_gene_universe": 16713,
+      "n_set_in_universe": 19
+    }
+  },
+  "bh_q_by_disorder": {
+    "scz": 0.2636141468968371,
+    "bip": 0.8069870847969227,
+    "mdd": 0.8069870847969227,
+    "asd": 0.2636141468968371,
+    "adhd": 0.5853239724029917,
+    "ibd_delange2017": 0.2636141468968371,
+    "height": 0.8069870847969227,
+    "alzheimers": 0.8069870847969227
+  },
+  "loeuf_sensitivity": {},
+  "size_matched_null": {},
+  "classification": "IEG_WEAK",
+  "disorders_run": [
+    "scz",
+    "bip",
+    "mdd",
+    "asd",
+    "adhd",
+    "ibd_delange2017",
+    "height",
+    "alzheimers"
+  ],
+  "seed": 20260424,
+  "smoke": false,
+  "wall_s": 482.5081479549408,
+  "model": "MAGMA_Z ~ in_set + log10(gene_length) + lof_pLI + log10(exp_lof+1) + log10(NSNPS+1)",
+  "brief_contract": {
+    "bh_fdr_family_size": 8,
+    "bh_q_threshold": 0.05,
+    "dfbetas_cutoff": 1.0,
+    "max_missing_genes": 3,
+    "repro_gate_range": [
+      2.5,
+      3.5
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "finding": "F098",
+  "headline_adj_OR": 6.94,
+  "headline_source": "batch_040_d45",
+  "cells": [
+    {
+      "spec": "linear_10pct",
+      "n_scz_in_bg": 443,
+      "a_obs": 17,
+      "OR_obs": 10.215962441314554,
+      "OR_null_median": 2.5581334175084174,
+      "adj_OR": 3.993522140555415,
+      "emp_p": 9.999000099990002e-05,
+      "empty_buckets": 0
+    },
+    {
+      "spec": "log_0.1",
+      "n_scz_in_bg": 443,
+      "a_obs": 17,
+      "OR_obs": 10.215962441314554,
+      "OR_null_median": 2.0675219805030944,
+      "adj_OR": 4.941162675730626,
+      "emp_p": 9.999000099990002e-05,
+      "empty_buckets": 0
+    },
+    {
+      "spec": "quantile_5",
+      "n_scz_in_bg": 443,
+      "a_obs": 17,
+      "OR_obs": 10.215962441314554,
+      "OR_null_median": 1.5043310131477186,
+      "adj_OR": 6.791033590365389,
+      "emp_p": 9.999000099990002e-05,
+      "empty_buckets": 0
+    },
+    {
+      "spec": "quantile_10",
+      "n_scz_in_bg": 443,
+      "a_obs": 17,
+      "OR_obs": 10.215962441314554,
+      "OR_null_median": 2.0045356148850635,
+      "adj_OR": 5.096423513483106,
+      "emp_p": 9.999000099990002e-05,
+      "empty_buckets": 0
+    },
+    {
+      "spec": "quantile_20",
+      "n_scz_in_bg": 443,
+      "a_obs": 17,
+      "OR_obs": 10.215962441314554,
+      "OR_null_median": 2.0428436417095455,
+      "adj_OR": 5.000853825878405,
+      "emp_p": 9.999000099990002e-05,
+      "empty_buckets": 0
+    }
+  ],
+  "elapsed_s": 5.731287717819214
+}

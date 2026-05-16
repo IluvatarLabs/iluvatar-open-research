@@ -1,0 +1,5 @@
+{
+  "status": "failed",
+  "stdout_tail": "e\n    s, compression = which_compression(first_fh)\n                     ~~~~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"/home/yuanz/torchml/lib/python3.13/site-packages/ldscore/parse.py\", line 53, in which_compression\n    raise IOError('Could not open {F}[./gz/bz2]'.format(F=fh))\nOSError: Could not open /home/yuanz/Documents/GitHub/biomarvin_schizophrenia/experiments/batch_033/output/celltype_ld_scores/celltype.1.l2.ldscore[./gz/bz2]\n\nAnalysis finished at Tue Apr 14 15:44:12 2026\nTotal time elapsed: 11.05s\n",
+  "stderr_tail": "orchml/lib/python3.13/site-packages/ldscore/parse.py\", line 148, in ldscore\n    s, compression = which_compression(first_fh)\n                     ~~~~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"/home/yuanz/torchml/lib/python3.13/site-packages/ldscore/parse.py\", line 53, in which_compression\n    raise IOError('Could not open {F}[./gz/bz2]'.format(F=fh))\nOSError: Could not open /home/yuanz/Documents/GitHub/biomarvin_schizophrenia/experiments/batch_033/output/celltype_ld_scores/celltype.1.l2.ldscore[./gz/bz2]\n"
+}

@@ -1,0 +1,893 @@
+{
+  "K": 100,
+  "n_total": 18383,
+  "n_prioritised_total": 103,
+  "n_prioritised_protein_coding": 103,
+  "precision_at_K": {
+    "all_prioritised": {
+      "P@50": {
+        "hits": 6,
+        "K": 50,
+        "precision": 0.12,
+        "baseline": 0.005603002774302345,
+        "lift": 21.417087378640776
+      },
+      "P@100": {
+        "hits": 11,
+        "K": 100,
+        "precision": 0.11,
+        "baseline": 0.005603002774302345,
+        "lift": 19.63233009708738
+      },
+      "P@200": {
+        "hits": 15,
+        "K": 200,
+        "precision": 0.075,
+        "baseline": 0.005603002774302345,
+        "lift": 13.385679611650485
+      }
+    },
+    "pc_prioritised": {
+      "P@50": {
+        "hits": 6,
+        "K": 50,
+        "precision": 0.12,
+        "baseline": 0.005603002774302345,
+        "lift": 21.417087378640776
+      },
+      "P@100": {
+        "hits": 11,
+        "K": 100,
+        "precision": 0.11,
+        "baseline": 0.005603002774302345,
+        "lift": 19.63233009708738
+      },
+      "P@200": {
+        "hits": 15,
+        "K": 200,
+        "precision": 0.075,
+        "baseline": 0.005603002774302345,
+        "lift": 13.385679611650485
+      }
+    }
+  },
+  "auprc_all": 0.04418609065424187,
+  "auprc_protein_coding": 0.04418609065424187,
+  "spearman_rho_PoPS_vs_MAGMA_Z": {
+    "rho": 0.2996097274710248,
+    "p": 0.0,
+    "ci_95": [
+      0.2854257478511226,
+      0.3120792371760085
+    ],
+    "n_bootstrap": 1000,
+    "n_genes": 17459
+  },
+  "mhc_stratified": {
+    "K=50": {
+      "mhc_top_K_count": 0,
+      "non_mhc_top_K_count": 50,
+      "non_mhc_prioritised_hits": 6,
+      "non_mhc_precision": 0.12
+    },
+    "K=100": {
+      "mhc_top_K_count": 0,
+      "non_mhc_top_K_count": 100,
+      "non_mhc_prioritised_hits": 11,
+      "non_mhc_precision": 0.11
+    },
+    "K=200": {
+      "mhc_top_K_count": 0,
+      "non_mhc_top_K_count": 200,
+      "non_mhc_prioritised_hits": 15,
+      "non_mhc_precision": 0.075
+    }
+  },
+  "schema_median_pctile": 0.9409780775716695,
+  "schema_n": 9,
+  "syngo_edt1_median_pctile": 0.9880324212587717,
+  "syngo_edt1_n": 13,
+  "novel_top100": [
+    {
+      "ENSGID": "ENSG00000141837",
+      "NAME": "CACNA1A",
+      "CHR": 19,
+      "TSS": 13734804,
+      "PoPS_Score": 1.2804004636194777,
+      "MAGMA_Z": 2.1487,
+      "MAGMA_P": 0.01583
+    },
+    {
+      "ENSGID": "ENSG00000120251",
+      "NAME": "GRIA2",
+      "CHR": 4,
+      "TSS": 158125334,
+      "PoPS_Score": 1.266549487642464,
+      "MAGMA_Z": 1.4704,
+      "MAGMA_P": 0.070733
+    },
+    {
+      "ENSGID": "ENSG00000184226",
+      "NAME": "PCDH9",
+      "CHR": 13,
+      "TSS": 67804468,
+      "PoPS_Score": 1.2639496988978176,
+      "MAGMA_Z": 4.3799,
+      "MAGMA_P": 5.9368e-06
+    },
+    {
+      "ENSGID": "ENSG00000179915",
+      "NAME": "NRXN1",
+      "CHR": 2,
+      "TSS": 51259674,
+      "PoPS_Score": 1.2617206784499655,
+      "MAGMA_Z": 4.364,
+      "MAGMA_P": 6.3849000000000005e-06
+    },
+    {
+      "ENSGID": "ENSG00000185046",
+      "NAME": "ANKS1B",
+      "CHR": 12,
+      "TSS": 100378432,
+      "PoPS_Score": 1.1775068350531848,
+      "MAGMA_Z": 6.5713,
+      "MAGMA_P": 2.4943e-11
+    },
+    {
+      "ENSGID": "ENSG00000149294",
+      "NAME": "NCAM1",
+      "CHR": 11,
+      "TSS": 112831997,
+      "PoPS_Score": 1.1368495481391057,
+      "MAGMA_Z": 4.4201,
+      "MAGMA_P": 4.9338e-06
+    },
+    {
+      "ENSGID": "ENSG00000196628",
+      "NAME": "TCF4",
+      "CHR": 18,
+      "TSS": 53332018,
+      "PoPS_Score": 1.134123827709359,
+      "MAGMA_Z": 8.4607,
+      "MAGMA_P": 1.329e-17
+    },
+    {
+      "ENSGID": "ENSG00000021645",
+      "NAME": "NRXN3",
+      "CHR": 14,
+      "TSS": 78708734,
+      "PoPS_Score": 1.1248319622647636,
+      "MAGMA_Z": 2.8554,
+      "MAGMA_P": 0.0021489
+    },
+    {
+      "ENSGID": "ENSG00000178568",
+      "NAME": "ERBB4",
+      "CHR": 2,
+      "TSS": 213403565,
+      "PoPS_Score": 1.1232053374275612,
+      "MAGMA_Z": 6.5009,
+      "MAGMA_P": 3.9924e-11
+    },
+    {
+      "ENSGID": "ENSG00000165995",
+      "NAME": "CACNB2",
+      "CHR": 10,
+      "TSS": 18429606,
+      "PoPS_Score": 1.0933554262686829,
+      "MAGMA_Z": 8.5057,
+      "MAGMA_P": 9.0213e-18
+    },
+    {
+      "ENSGID": "ENSG00000079841",
+      "NAME": "RIMS1",
+      "CHR": 6,
+      "TSS": 72596406,
+      "PoPS_Score": 1.0922368469374235,
+      "MAGMA_Z": 4.3766,
+      "MAGMA_P": 6.0283e-06
+    },
+    {
+      "ENSGID": "ENSG00000187391",
+      "NAME": "MAGI2",
+      "CHR": 7,
+      "TSS": 79082890,
+      "PoPS_Score": 1.084880585140198,
+      "MAGMA_Z": 4.2362,
+      "MAGMA_P": 1.1365e-05
+    },
+    {
+      "ENSGID": "ENSG00000152578",
+      "NAME": "GRIA4",
+      "CHR": 11,
+      "TSS": 105480721,
+      "PoPS_Score": 1.0576059336726715,
+      "MAGMA_Z": 1.6384,
+      "MAGMA_P": 0.050668
+    },
+    {
+      "ENSGID": "ENSG00000169554",
+      "NAME": "ZEB2",
+      "CHR": 2,
+      "TSS": 145282147,
+      "PoPS_Score": 1.0284453273136978,
+      "MAGMA_Z": 6.144,
+      "MAGMA_P": 4.0224000000000005e-10
+    },
+    {
+      "ENSGID": "ENSG00000182389",
+      "NAME": "CACNB4",
+      "CHR": 2,
+      "TSS": 152955593,
+      "PoPS_Score": 1.0217428300957758,
+      "MAGMA_Z": 1.6169,
+      "MAGMA_P": 0.052953999999999994
+    },
+    {
+      "ENSGID": "ENSG00000148408",
+      "NAME": "CACNA1B",
+      "CHR": 9,
+      "TSS": 140772241,
+      "PoPS_Score": 0.9995268051397008,
+      "MAGMA_Z": 1.7517,
+      "MAGMA_P": 0.039911
+    },
+    {
+      "ENSGID": "ENSG00000112137",
+      "NAME": "PHACTR1",
+      "CHR": 6,
+      "TSS": 12717893,
+      "PoPS_Score": 0.9897156647894048,
+      "MAGMA_Z": 1.2761,
+      "MAGMA_P": 0.10096000000000001
+    },
+    {
+      "ENSGID": "ENSG00000164418",
+      "NAME": "GRIK2",
+      "CHR": 6,
+      "TSS": 101846664,
+      "PoPS_Score": 0.9864486055665102,
+      "MAGMA_Z": 1.9344,
+      "MAGMA_P": 0.026531
+    },
+    {
+      "ENSGID": "ENSG00000169862",
+      "NAME": "CTNND2",
+      "CHR": 5,
+      "TSS": 11904155,
+      "PoPS_Score": 0.9721203700754308,
+      "MAGMA_Z": 2.319,
+      "MAGMA_P": 0.010196
+    },
+    {
+      "ENSGID": "ENSG00000119866",
+      "NAME": "BCL11A",
+      "CHR": 2,
+      "TSS": 60780702,
+      "PoPS_Score": 0.9536328698866624,
+      "MAGMA_Z": 3.8685,
+      "MAGMA_P": 5.4756e-05
+    },
+    {
+      "ENSGID": "ENSG00000196277",
+      "NAME": "GRM7",
+      "CHR": 3,
+      "TSS": 6811688,
+      "PoPS_Score": 0.951243006930074,
+      "MAGMA_Z": 3.0032,
+      "MAGMA_P": 0.001336
+    },
+    {
+      "ENSGID": "ENSG00000176884",
+      "NAME": "GRIN1",
+      "CHR": 9,
+      "TSS": 140032842,
+      "PoPS_Score": 0.9377655578379788,
+      "MAGMA_Z": 0.74571,
+      "MAGMA_P": 0.22791999999999998
+    },
+    {
+      "ENSGID": "ENSG00000153956",
+      "NAME": "CACNA2D1",
+      "CHR": 7,
+      "TSS": 82073114,
+      "PoPS_Score": 0.9313956426257596,
+      "MAGMA_Z": 2.4468,
+      "MAGMA_P": 0.007206199999999999
+    },
+    {
+      "ENSGID": "ENSG00000138814",
+      "NAME": "PPP3CA",
+      "CHR": 4,
+      "TSS": 102269435,
+      "PoPS_Score": 0.9182737998411076,
+      "MAGMA_Z": 2.7267,
+      "MAGMA_P": 0.0031988000000000003
+    },
+    {
+      "ENSGID": "ENSG00000150672",
+      "NAME": "DLG2",
+      "CHR": 11,
+      "TSS": 85338966,
+      "PoPS_Score": 0.9093734987679696,
+      "MAGMA_Z": 2.5868,
+      "MAGMA_P": 0.0048438000000000005
+    },
+    {
+      "ENSGID": "ENSG00000198822",
+      "NAME": "GRM3",
+      "CHR": 7,
+      "TSS": 86273230,
+      "PoPS_Score": 0.8951114586038059,
+      "MAGMA_Z": 5.9336,
+      "MAGMA_P": 1.4817e-09
+    },
+    {
+      "ENSGID": "ENSG00000078328",
+      "NAME": "RBFOX1",
+      "CHR": 16,
+      "TSS": 6069095,
+      "PoPS_Score": 0.8931399539948216,
+      "MAGMA_Z": 6.2412,
+      "MAGMA_P": 2.1709e-10
+    },
+    {
+      "ENSGID": "ENSG00000105426",
+      "NAME": "PTPRS",
+      "CHR": 19,
+      "TSS": 5340814,
+      "PoPS_Score": 0.8895490551601646,
+      "MAGMA_Z": 2.4447,
+      "MAGMA_P": 0.007248899999999999
+    },
+    {
+      "ENSGID": "ENSG00000139220",
+      "NAME": "PPFIA2",
+      "CHR": 12,
+      "TSS": 82153332,
+      "PoPS_Score": 0.887299030706712,
+      "MAGMA_Z": 1.1784,
+      "MAGMA_P": 0.11930999999999999
+    },
+    {
+      "ENSGID": "ENSG00000114861",
+      "NAME": "FOXP1",
+      "CHR": 3,
+      "TSS": 71633140,
+      "PoPS_Score": 0.8847911769488027,
+      "MAGMA_Z": 7.8119,
+      "MAGMA_P": 2.8162e-15
+    },
+    {
+      "ENSGID": "ENSG00000168959",
+      "NAME": "GRM5",
+      "CHR": 11,
+      "TSS": 88799113,
+      "PoPS_Score": 0.8840056306225191,
+      "MAGMA_Z": 2.4539,
+      "MAGMA_P": 0.007065899999999999
+    },
+    {
+      "ENSGID": "ENSG00000151150",
+      "NAME": "ANK3",
+      "CHR": 10,
+      "TSS": 62493248,
+      "PoPS_Score": 0.8754354823789625,
+      "MAGMA_Z": 4.9579,
+      "MAGMA_P": 3.5628e-07
+    },
+    {
+      "ENSGID": "ENSG00000091129",
+      "NAME": "NRCAM",
+      "CHR": 7,
+      "TSS": 108097161,
+      "PoPS_Score": 0.8634068421103873,
+      "MAGMA_Z": 3.4465,
+      "MAGMA_P": 0.00028394
+    },
+    {
+      "ENSGID": "ENSG00000066032",
+      "NAME": "CTNNA2",
+      "CHR": 2,
+      "TSS": 79412357,
+      "PoPS_Score": 0.8585658568866487,
+      "MAGMA_Z": 3.9218,
+      "MAGMA_P": 4.3945e-05
+    },
+    {
+      "ENSGID": "ENSG00000145242",
+      "NAME": "EPHA5",
+      "CHR": 4,
+      "TSS": 66536213,
+      "PoPS_Score": 0.853015762476548,
+      "MAGMA_Z": 4.4453,
+      "MAGMA_P": 4.3893000000000005e-06
+    },
+    {
+      "ENSGID": "ENSG00000067715",
+      "NAME": "SYT1",
+      "CHR": 12,
+      "TSS": 79257773,
+      "PoPS_Score": 0.8425866525906307,
+      "MAGMA_Z": 2.2776,
+      "MAGMA_P": 0.011375
+    },
+    {
+      "ENSGID": "ENSG00000169851",
+      "NAME": "PCDH7",
+      "CHR": 4,
+      "TSS": 30722037,
+      "PoPS_Score": 0.8382862859128634,
+      "MAGMA_Z": 5.4886,
+      "MAGMA_P": 2.0253999999999997e-08
+    },
+    {
+      "ENSGID": "ENSG00000163618",
+      "NAME": "CADPS",
+      "CHR": 3,
+      "TSS": 62861054,
+      "PoPS_Score": 0.8380961877221756,
+      "MAGMA_Z": 3.0007,
+      "MAGMA_P": 0.0013467000000000002
+    },
+    {
+      "ENSGID": "ENSG00000115310",
+      "NAME": "RTN4",
+      "CHR": 2,
+      "TSS": 55339757,
+      "PoPS_Score": 0.8319139486862989,
+      "MAGMA_Z": 3.1456,
+      "MAGMA_P": 0.00082879
+    },
+    {
+      "ENSGID": "ENSG00000076356",
+      "NAME": "PLXNA2",
+      "CHR": 1,
+      "TSS": 208417665,
+      "PoPS_Score": 0.8252919175536905,
+      "MAGMA_Z": 3.2719,
+      "MAGMA_P": 0.0005342000000000001
+    },
+    {
+      "ENSGID": "ENSG00000081189",
+      "NAME": "MEF2C",
+      "CHR": 5,
+      "TSS": 88199922,
+      "PoPS_Score": 0.8243184916729811,
+      "MAGMA_Z": 3.9852,
+      "MAGMA_P": 3.3716e-05
+    },
+    {
+      "ENSGID": "ENSG00000115355",
+      "NAME": "CCDC88A",
+      "CHR": 2,
+      "TSS": 55647057,
+      "PoPS_Score": 0.8236071289605771,
+      "MAGMA_Z": 1.0476,
+      "MAGMA_P": 0.14742
+    },
+    {
+      "ENSGID": "ENSG00000120738",
+      "NAME": "EGR1",
+      "CHR": 5,
+      "TSS": 137801179,
+      "PoPS_Score": 0.8037661975432383,
+      "MAGMA_Z": 4.8202,
+      "MAGMA_P": 7.172100000000001e-07
+    },
+    {
+      "ENSGID": "ENSG00000183023",
+      "NAME": "SLC8A1",
+      "CHR": 2,
+      "TSS": 40838193,
+      "PoPS_Score": 0.7971324075469335,
+      "MAGMA_Z": 4.313,
+      "MAGMA_P": 8.0526e-06
+    },
+    {
+      "ENSGID": "ENSG00000067191",
+      "NAME": "CACNB1",
+      "CHR": 17,
+      "TSS": 37353956,
+      "PoPS_Score": 0.7967096495681021,
+      "MAGMA_Z": 2.6583,
+      "MAGMA_P": 0.0039272
+    },
+    {
+      "ENSGID": "ENSG00000176749",
+      "NAME": "CDK5R1",
+      "CHR": 17,
+      "TSS": 30813637,
+      "PoPS_Score": 0.7841956829763738,
+      "MAGMA_Z": 3.9325,
+      "MAGMA_P": 4.204e-05
+    },
+    {
+      "ENSGID": "ENSG00000157388",
+      "NAME": "CACNA1D",
+      "CHR": 3,
+      "TSS": 53528683,
+      "PoPS_Score": 0.7837358281039495,
+      "MAGMA_Z": 1.5159,
+      "MAGMA_P": 0.06476699999999999
+    },
+    {
+      "ENSGID": "ENSG00000130294",
+      "NAME": "KIF1A",
+      "CHR": 2,
+      "TSS": 241759725,
+      "PoPS_Score": 0.7821907452748671,
+      "MAGMA_Z": 0.50966,
+      "MAGMA_P": 0.30515
+    },
+    {
+      "ENSGID": "ENSG00000168280",
+      "NAME": "KIF5C",
+      "CHR": 2,
+      "TSS": 149632819,
+      "PoPS_Score": 0.7806432967897643,
+      "MAGMA_Z": NaN,
+      "MAGMA_P": NaN
+    },
+    {
+      "ENSGID": "ENSG00000188580",
+      "NAME": "NKAIN2",
+      "CHR": 6,
+      "TSS": 124125286,
+      "PoPS_Score": 0.7804618738843019,
+      "MAGMA_Z": 4.3452,
+      "MAGMA_P": 6.9580999999999995e-06
+    },
+    {
+      "ENSGID": "ENSG00000145934",
+      "NAME": "TENM2",
+      "CHR": 5,
+      "TSS": 166711804,
+      "PoPS_Score": 0.7779343611388271,
+      "MAGMA_Z": 3.9199,
+      "MAGMA_P": 4.4287e-05
+    },
+    {
+      "ENSGID": "ENSG00000186487",
+      "NAME": "MYT1L",
+      "CHR": 2,
+      "TSS": 2335032,
+      "PoPS_Score": 0.7758803641379588,
+      "MAGMA_Z": 3.1083,
+      "MAGMA_P": 0.00094083
+    },
+    {
+      "ENSGID": "ENSG00000167978",
+      "NAME": "SRRM2",
+      "CHR": 16,
+      "TSS": 2802330,
+      "PoPS_Score": 0.7751965951749502,
+      "MAGMA_Z": 0.90945,
+      "MAGMA_P": 0.18156
+    },
+    {
+      "ENSGID": "ENSG00000196361",
+      "NAME": "ELAVL3",
+      "CHR": 19,
+      "TSS": 11591861,
+      "PoPS_Score": 0.7749266788876014,
+      "MAGMA_Z": -0.30456,
+      "MAGMA_P": 0.61965
+    },
+    {
+      "ENSGID": "ENSG00000166206",
+      "NAME": "GABRB3",
+      "CHR": 15,
+      "TSS": 27184686,
+      "PoPS_Score": 0.7743255145516075,
+      "MAGMA_Z": 2.0543,
+      "MAGMA_P": 0.019975
+    },
+    {
+      "ENSGID": "ENSG00000182670",
+      "NAME": "TTC3",
+      "CHR": 21,
+      "TSS": 38445526,
+      "PoPS_Score": 0.7675550576237226,
+      "MAGMA_Z": 1.6825,
+      "MAGMA_P": 0.046234
+    },
+    {
+      "ENSGID": "ENSG00000196876",
+      "NAME": "SCN8A",
+      "CHR": 12,
+      "TSS": 51984050,
+      "PoPS_Score": 0.7647931364228892,
+      "MAGMA_Z": 2.6643,
+      "MAGMA_P": 0.0038574
+    },
+    {
+      "ENSGID": "ENSG00000151320",
+      "NAME": "AKAP6",
+      "CHR": 14,
+      "TSS": 32798479,
+      "PoPS_Score": 0.7570593954114267,
+      "MAGMA_Z": 2.4859999999999998,
+      "MAGMA_P": 0.0064586
+    },
+    {
+      "ENSGID": "ENSG00000155816",
+      "NAME": "FMN2",
+      "CHR": 1,
+      "TSS": 240177648,
+      "PoPS_Score": 0.7531978594487655,
+      "MAGMA_Z": 2.1361,
+      "MAGMA_P": 0.016337
+    },
+    {
+      "ENSGID": "ENSG00000160145",
+      "NAME": "KALRN",
+      "CHR": 3,
+      "TSS": 123798870,
+      "PoPS_Score": 0.7521322560283855,
+      "MAGMA_Z": 3.5869,
+      "MAGMA_P": 0.00016733
+    },
+    {
+      "ENSGID": "ENSG00000078018",
+      "NAME": "MAP2",
+      "CHR": 2,
+      "TSS": 210288782,
+      "PoPS_Score": 0.7483481674352798,
+      "MAGMA_Z": 2.3292,
+      "MAGMA_P": 0.0099246
+    },
+    {
+      "ENSGID": "ENSG00000157087",
+      "NAME": "ATP2B2",
+      "CHR": 3,
+      "TSS": 10749716,
+      "PoPS_Score": 0.7481138436597484,
+      "MAGMA_Z": 3.6585,
+      "MAGMA_P": 0.00012683
+    },
+    {
+      "ENSGID": "ENSG00000182621",
+      "NAME": "PLCB1",
+      "CHR": 20,
+      "TSS": 8112824,
+      "PoPS_Score": 0.7470621948167127,
+      "MAGMA_Z": 1.8259999999999998,
+      "MAGMA_P": 0.033928
+    },
+    {
+      "ENSGID": "ENSG00000145920",
+      "NAME": "CPLX2",
+      "CHR": 5,
+      "TSS": 175223313,
+      "PoPS_Score": 0.7436403729272886,
+      "MAGMA_Z": 1.5052,
+      "MAGMA_P": 0.066135
+    },
+    {
+      "ENSGID": "ENSG00000113448",
+      "NAME": "PDE4D",
+      "CHR": 5,
+      "TSS": 59817947,
+      "PoPS_Score": 0.7431655826197914,
+      "MAGMA_Z": 4.5729,
+      "MAGMA_P": 2.4048e-06
+    },
+    {
+      "ENSGID": "ENSG00000261115",
+      "NAME": "TMEM178B",
+      "CHR": 7,
+      "TSS": 140774032,
+      "PoPS_Score": 0.7385149724346569,
+      "MAGMA_Z": 4.4647,
+      "MAGMA_P": 4.0087e-06
+    },
+    {
+      "ENSGID": "ENSG00000119042",
+      "NAME": "SATB2",
+      "CHR": 2,
+      "TSS": 200335989,
+      "PoPS_Score": 0.7369465780585579,
+      "MAGMA_Z": 5.7208,
+      "MAGMA_P": 5.3008e-09
+    },
+    {
+      "ENSGID": "ENSG00000170579",
+      "NAME": "DLGAP1",
+      "CHR": 18,
+      "TSS": 4455335,
+      "PoPS_Score": 0.7347190832253658,
+      "MAGMA_Z": -0.056195,
+      "MAGMA_P": 0.52241
+    },
+    {
+      "ENSGID": "ENSG00000166862",
+      "NAME": "CACNG2",
+      "CHR": 22,
+      "TSS": 37099603,
+      "PoPS_Score": 0.733891192741255,
+      "MAGMA_Z": 2.2715,
+      "MAGMA_P": 0.011559
+    },
+    {
+      "ENSGID": "ENSG00000197535",
+      "NAME": "MYO5A",
+      "CHR": 15,
+      "TSS": 52821247,
+      "PoPS_Score": 0.731915278076465,
+      "MAGMA_Z": 3.5107,
+      "MAGMA_P": 0.00022346
+    },
+    {
+      "ENSGID": "ENSG00000087258",
+      "NAME": "GNAO1",
+      "CHR": 16,
+      "TSS": 56225302,
+      "PoPS_Score": 0.731333134078183,
+      "MAGMA_Z": 2.2907,
+      "MAGMA_P": 0.01099
+    },
+    {
+      "ENSGID": "ENSG00000156475",
+      "NAME": "PPP2R2B",
+      "CHR": 5,
+      "TSS": 146464347,
+      "PoPS_Score": 0.7299704286345798,
+      "MAGMA_Z": 4.1138,
+      "MAGMA_P": 1.9461e-05
+    },
+    {
+      "ENSGID": "ENSG00000155511",
+      "NAME": "GRIA1",
+      "CHR": 5,
+      "TSS": 152869175,
+      "PoPS_Score": 0.7292449054957357,
+      "MAGMA_Z": 1.7409999999999999,
+      "MAGMA_P": 0.040839999999999994
+    },
+    {
+      "ENSGID": "ENSG00000109339",
+      "NAME": "MAPK10",
+      "CHR": 4,
+      "TSS": 87515284,
+      "PoPS_Score": 0.7284877342036914,
+      "MAGMA_Z": 2.7632,
+      "MAGMA_P": 0.0028619
+    },
+    {
+      "ENSGID": "ENSG00000112320",
+      "NAME": "SOBP",
+      "CHR": 6,
+      "TSS": 107811162,
+      "PoPS_Score": 0.7280157355119896,
+      "MAGMA_Z": 2.3857,
+      "MAGMA_P": 0.0085231
+    },
+    {
+      "ENSGID": "ENSG00000148053",
+      "NAME": "NTRK2",
+      "CHR": 9,
+      "TSS": 87283466,
+      "PoPS_Score": 0.7252994612715236,
+      "MAGMA_Z": 0.13804,
+      "MAGMA_P": 0.44511000000000006
+    },
+    {
+      "ENSGID": "ENSG00000175161",
+      "NAME": "CADM2",
+      "CHR": 3,
+      "TSS": 85008132,
+      "PoPS_Score": 0.7231710403843785,
+      "MAGMA_Z": 1.5621,
+      "MAGMA_P": 0.059132000000000004
+    },
+    {
+      "ENSGID": "ENSG00000167535",
+      "NAME": "CACNB3",
+      "CHR": 12,
+      "TSS": 49207577,
+      "PoPS_Score": 0.7222370261322946,
+      "MAGMA_Z": 2.5369,
+      "MAGMA_P": 0.0055924
+    },
+    {
+      "ENSGID": "ENSG00000169045",
+      "NAME": "HNRNPH1",
+      "CHR": 5,
+      "TSS": 179061785,
+      "PoPS_Score": 0.7211069714848052,
+      "MAGMA_Z": 2.8426,
+      "MAGMA_P": 0.0022374
+    },
+    {
+      "ENSGID": "ENSG00000165323",
+      "NAME": "FAT3",
+      "CHR": 11,
+      "TSS": 92085262,
+      "PoPS_Score": 0.7201851042524798,
+      "MAGMA_Z": 1.1741,
+      "MAGMA_P": 0.12017
+    },
+    {
+      "ENSGID": "ENSG00000110076",
+      "NAME": "NRXN2",
+      "CHR": 11,
+      "TSS": 64490660,
+      "PoPS_Score": 0.7173810656421823,
+      "MAGMA_Z": 2.2365,
+      "MAGMA_P": 0.012661
+    },
+    {
+      "ENSGID": "ENSG00000033122",
+      "NAME": "LRRC7",
+      "CHR": 1,
+      "TSS": 70034081,
+      "PoPS_Score": 0.7140554667701836,
+      "MAGMA_Z": 2.6342,
+      "MAGMA_P": 0.0042165
+    },
+    {
+      "ENSGID": "ENSG00000088538",
+      "NAME": "DOCK3",
+      "CHR": 3,
+      "TSS": 50712672,
+      "PoPS_Score": 0.7136649543859732,
+      "MAGMA_Z": 1.0552,
+      "MAGMA_P": 0.14567
+    },
+    {
+      "ENSGID": "ENSG00000100354",
+      "NAME": "TNRC6B",
+      "CHR": 22,
+      "TSS": 40440821,
+      "PoPS_Score": 0.7121597006109569,
+      "MAGMA_Z": 2.0512,
+      "MAGMA_P": 0.020124
+    },
+    {
+      "ENSGID": "ENSG00000139767",
+      "NAME": "SRRM4",
+      "CHR": 12,
+      "TSS": 119419300,
+      "PoPS_Score": 0.7109654485857737,
+      "MAGMA_Z": 2.9305,
+      "MAGMA_P": 0.0016922999999999999
+    },
+    {
+      "ENSGID": "ENSG00000133318",
+      "NAME": "RTN3",
+      "CHR": 11,
+      "TSS": 63448918,
+      "PoPS_Score": 0.7095044768520806,
+      "MAGMA_Z": 3.2148,
+      "MAGMA_P": 0.00065272
+    },
+    {
+      "ENSGID": "ENSG00000154146",
+      "NAME": "NRGN",
+      "CHR": 11,
+      "TSS": 124609742,
+      "PoPS_Score": 0.7094816008961079,
+      "MAGMA_Z": 7.0367,
+      "MAGMA_P": 9.8427e-13
+    },
+    {
+      "ENSGID": "ENSG00000184144",
+      "NAME": "CNTN2",
+      "CHR": 1,
+      "TSS": 205012325,
+      "PoPS_Score": 0.7092543451187749,
+      "MAGMA_Z": 3.4792,
+      "MAGMA_P": 0.00025144
+    },
+    {
+      "ENSGID": "ENSG00000132639",
+      "NAME": "SNAP25",
+      "CHR": 20,
+      "TSS": 10199478,
+      "PoPS_Score": 0.7085693917736745,
+      "MAGMA_Z": 0.85741,
+      "MAGMA_P": 0.19560999999999998
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "F013_background_universe": {},
+  "F013_numerator_jaccard_W3": {
+    "all_coding|protein_only": 1.0,
+    "all_coding|brain_expressed": 1.0,
+    "all_coding|gtex_any": 1.0,
+    "all_coding|constrained_pLI09": 1.0,
+    "protein_only|brain_expressed": 1.0,
+    "protein_only|gtex_any": 1.0,
+    "protein_only|constrained_pLI09": 1.0,
+    "brain_expressed|gtex_any": 1.0,
+    "brain_expressed|constrained_pLI09": 1.0,
+    "gtex_any|constrained_pLI09": 1.0
+  },
+  "F098_numerator_jaccard_W3_note": "SCZ list and markers identical; numerator invariant across kernels. Differences are in null sampling, not numerator.",
+  "F121_numerator_jaccard_W3": {
+    "all__prioritised_n106|all__broader_n470": 0.3125,
+    "all__prioritised_n106|BP_only__prioritised_n106": 0.7,
+    "all__prioritised_n106|BP_only__broader_n470": 0.2413793103448276,
+    "all__prioritised_n106|CC_only__prioritised_n106": 1.0,
+    "all__prioritised_n106|CC_only__broader_n470": 0.3448275862068966,
+    "all__broader_n470|BP_only__prioritised_n106": 0.21875,
+    "all__broader_n470|BP_only__broader_n470": 0.8125,
+    "all__broader_n470|CC_only__prioritised_n106": 0.3125,
+    "all__broader_n470|CC_only__broader_n470": 0.90625,
+    "BP_only__prioritised_n106|BP_only__broader_n470": 0.2692307692307692,
+    "BP_only__prioritised_n106|CC_only__prioritised_n106": 0.7,
+    "BP_only__prioritised_n106|CC_only__broader_n470": 0.2413793103448276,
+    "BP_only__broader_n470|CC_only__prioritised_n106": 0.2413793103448276,
+    "BP_only__broader_n470|CC_only__broader_n470": 0.71875,
+    "CC_only__prioritised_n106|CC_only__broader_n470": 0.3448275862068966
+  },
+  "F121_scope_jaccard_C1": {
+    "all|BP_only": 0.662771285475793,
+    "all|CC_only": 0.8848080133555927,
+    "all|BP_union_CC": 1.0,
+    "BP_only|CC_only": 0.5475792988313857,
+    "BP_only|BP_union_CC": 0.662771285475793,
+    "CC_only|BP_union_CC": 0.8848080133555927
+  },
+  "F121_scopes_dropped": [
+    "BP_union_CC"
+  ],
+  "F124_tier_jaccard": {
+    "synaptic|F124_curated|HGNC_family": 0.0,
+    "synaptic|F124_curated|KEGG_path": 0.13043478260869565,
+    "synaptic|F124_curated|Reactome_path": 0.08,
+    "synaptic|HGNC_family|KEGG_path": 0.0,
+    "synaptic|HGNC_family|Reactome_path": 0.0,
+    "synaptic|KEGG_path|Reactome_path": 0.3055555555555556,
+    "ion_channel|F124_curated|HGNC_family": 0.75,
+    "ion_channel|F124_curated|KEGG_path": 0.0625,
+    "ion_channel|F124_curated|Reactome_path": 0.125,
+    "ion_channel|HGNC_family|KEGG_path": 0.058823529411764705,
+    "ion_channel|HGNC_family|Reactome_path": 0.26666666666666666,
+    "ion_channel|KEGG_path|Reactome_path": 0.07142857142857142,
+    "transcriptional|F124_curated|HGNC_family": 0.11538461538461539,
+    "transcriptional|F124_curated|KEGG_path": 0.07692307692307693,
+    "transcriptional|F124_curated|Reactome_path": 0.09803921568627451,
+    "transcriptional|HGNC_family|KEGG_path": 0.06382978723404255,
+    "transcriptional|HGNC_family|Reactome_path": 0.16455696202531644,
+    "transcriptional|KEGG_path|Reactome_path": 0.043478260869565216,
+    "other|F124_curated|HGNC_family": 0.8835164835164835,
+    "other|F124_curated|KEGG_path": 0.9071274298056156,
+    "other|F124_curated|Reactome_path": 0.8358862144420132,
+    "other|HGNC_family|KEGG_path": 0.8354978354978355,
+    "other|HGNC_family|Reactome_path": 0.7866666666666666,
+    "other|KEGG_path|Reactome_path": 0.8322295805739515
+  }
+}

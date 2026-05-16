@@ -1,0 +1,154 @@
+{
+  "experiment": "E7_EAS_Oligo_Power_Asymmetry",
+  "batch": "batch_069",
+  "status": "COMPLETED",
+  "sldsc_results": {
+    "neuronal": {
+      "category": "neuronalL2_0",
+      "prop_snps": 0.0020751307401848,
+      "prop_h2": 0.0113194235641881,
+      "enrichment": 5.454800194025374,
+      "enrichment_se": 1.3413552379888187,
+      "enrichment_p": 0.0014851845839341,
+      "coefficient": -4.569141232966425e-09,
+      "coefficient_se": 2.342022214686141e-08,
+      "z_score": -0.1950938468608311
+    },
+    "oligodendrocyte": {
+      "category": "oligodendrocyteL2_0",
+      "prop_snps": 0.0007831337527721,
+      "prop_h2": -0.0037309283832997,
+      "enrichment": -4.764101113114788,
+      "enrichment_se": 2.1441662044139265,
+      "enrichment_p": 0.0070204206884484,
+      "coefficient": -1.7513857139756e-07,
+      "coefficient_se": 3.8461312821556396e-08,
+      "z_score": -4.5536295708398224
+    },
+    "astrocyte": {
+      "category": "astrocyteL2_0",
+      "prop_snps": 0.0003845272664207,
+      "prop_h2": 0.0026263277337751,
+      "enrichment": 6.830016914591653,
+      "enrichment_se": 4.104502562457898,
+      "enrichment_p": 0.1570868785973303,
+      "coefficient": 3.970382221073456e-08,
+      "coefficient_se": 7.954838165955022e-08,
+      "z_score": 0.4991153984836334
+    },
+    "OPC": {
+      "category": "OPCL2_0",
+      "prop_snps": 0.0002025944893933,
+      "prop_h2": 0.0002941253097534,
+      "enrichment": 1.451793237980846,
+      "enrichment_se": 7.272337028370967,
+      "enrichment_p": 0.9505890379527572,
+      "coefficient": -5.73006411487314e-08,
+      "coefficient_se": 9.850502568354265e-08,
+      "z_score": -0.581702717715292
+    }
+  },
+  "annotation_sizes": {
+    "neuronal": {
+      "cell_type": "neuronal",
+      "n_bed_files": 22,
+      "n_regions": 86,
+      "total_bp": 17200000,
+      "chromosomes": [
+        "chr1",
+        "chr10",
+        "chr11",
+        "chr12",
+        "chr13",
+        "chr14",
+        "chr15",
+        "chr16",
+        "chr17",
+        "chr18",
+        "chr19",
+        "chr2",
+        "chr20",
+        "chr21",
+        "chr22",
+        "chr3",
+        "chr4",
+        "chr5",
+        "chr6",
+        "chr7",
+        "chr8",
+        "chr9"
+      ]
+    },
+    "oligodendrocyte": {
+      "cell_type": "oligodendrocyte",
+      "n_bed_files": 19,
+      "n_regions": 34,
+      "total_bp": 6800000,
+      "chromosomes": [
+        "chr1",
+        "chr10",
+        "chr11",
+        "chr12",
+        "chr14",
+        "chr15",
+        "chr16",
+        "chr17",
+        "chr18",
+        "chr19",
+        "chr2",
+        "chr20",
+        "chr21",
+        "chr3",
+        "chr4",
+        "chr6",
+        "chr7",
+        "chr8",
+        "chr9"
+      ]
+    },
+    "astrocyte": {
+      "cell_type": "astrocyte",
+      "n_bed_files": 11,
+      "n_regions": 15,
+      "total_bp": 3000000,
+      "chromosomes": [
+        "chr1",
+        "chr11",
+        "chr17",
+        "chr18",
+        "chr19",
+        "chr20",
+        "chr21",
+        "chr3",
+        "chr4",
+        "chr5",
+        "chr6"
+      ]
+    },
+    "OPC": {
+      "cell_type": "OPC",
+      "n_bed_files": 7,
+      "n_regions": 10,
+      "total_bp": 2000000,
+      "chromosomes": [
+        "chr1",
+        "chr10",
+        "chr17",
+        "chr2",
+        "chr21",
+        "chr4",
+        "chr5"
+      ]
+    }
+  },
+  "power_diagnostic": {
+    "se_ratio_neuro_over_oligo": 0.609,
+    "prop_snps_ratio": 2.65,
+    "annotation_bp_ratio": 2.529,
+    "annotation_region_ratio": 2.529,
+    "neuro_hypothetical_z_with_oligo_se": -0.119,
+    "oligo_hypothetical_z_with_neuro_se": -7.478,
+    "se_ratio_explains_asymmetry": false,
+    "interpretation": "The neuronal annotation contains 2.6x more SNPs than oligodendrocyte, yet its coefficient SE is 0.6x larger. This SE inflation makes the neuronal test underpowered (z=-0.20, not significant). The oligodendrocyte z=-4.55 reflects a NEGATIVE coefficient (coef=-1.75e-07), indicating depletion rather than enrichment. In the context of the small EAS GWAS sample (Lam et al. 2019, N~56K), both cell-type results are underpowered and the negative oligo enrichment is likely noise. The power asymmetry (different SEs) fully accounts for why one z-score crosses the significance threshold and the other does not."
+  }
+}

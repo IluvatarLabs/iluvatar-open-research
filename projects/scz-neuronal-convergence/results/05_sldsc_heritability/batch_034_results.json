@@ -1,0 +1,289 @@
+{
+  "batch": "034",
+  "date": "2026-04-15",
+  "tasks_completed": {
+    "task1_sldsc_partitioned": {
+      "status": "success",
+      "input_annot": "experiments/batch_029/output/annotations_rsID/celltype.{1-22}.annot.gz",
+      "ld_scores": "experiments/batch_034/output/ld_scores_hm3/celltype.{1-22}.l2.ldscore.gz",
+      "results_file": "experiments/batch_034/output/celltype_partitioned_hm3.results",
+      "summary": {
+        "overall_h2": 0.8215,
+        "overall_h2_se": 0.029,
+        "intercept": 1.0923,
+        "intercept_se": 0.0139,
+        "lambda_gc": 1.7385,
+        "mean_chi2": 2.0143,
+        "ratio": 0.091,
+        "ratio_se": 0.0137
+      },
+      "celltype_enrichment": {
+        "neuronal": {
+          "prop_snps": 0.0096033338483338,
+          "prop_h2": 0.0175685455682874,
+          "prop_h2_se": 0.0030521012708441,
+          "enrichment": 1.8294215160848024,
+          "enrichment_se": 0.3178168455919793,
+          "enrichment_p": 0.0089266431322312
+        },
+        "oligodendrocyte": {
+          "prop_snps": 0.0036112105045344,
+          "prop_h2": 0.0018732740441575,
+          "prop_h2_se": 0.0010173211756163,
+          "enrichment": 0.5187385342962745,
+          "enrichment_se": 0.2817119562371051,
+          "enrichment_p": 0.089003399933002
+        },
+        "astrocyte": {
+          "prop_snps": 0.0016053925084031,
+          "prop_h2": 0.0012507763715966,
+          "prop_h2_se": 0.0010406680102343,
+          "enrichment": 0.7791093860533472,
+          "enrichment_se": 0.6482327560314299,
+          "enrichment_p": 0.7335635111349851
+        },
+        "OPC": {
+          "prop_snps": 0.0010972698429952,
+          "prop_h2": 0.0034514520728552,
+          "prop_h2_se": 0.0023297121231422,
+          "enrichment": 3.145490687535501,
+          "enrichment_se": 2.1231897860080062,
+          "enrichment_p": 0.3145720195609031
+        }
+      },
+      "top_baselineLD_enrichments": [
+        {
+          "category": "GERP.NS",
+          "enrichment": 1.8131085283102408,
+          "enrichment_se": 0.0630569442907932,
+          "enrichment_p": 1.6175584871330773e-27,
+          "prop_h2": 3.164447788868947,
+          "prop_snps": 1.7453162562850617
+        },
+        {
+          "category": "MAF_Adj_ASMC",
+          "enrichment": 22240575100019.805,
+          "enrichment_se": -1835738444825.9404,
+          "enrichment_p": 1.0695336026718377e-25,
+          "prop_h2": -0.5223259123383575,
+          "prop_snps": -2.3485270052117152e-14
+        },
+        {
+          "category": "Nucleotide_Diversity_10kb",
+          "enrichment": 0.7663813479025946,
+          "enrichment_se": 0.021246510370261,
+          "enrichment_p": 4.1596222852734186e-24,
+          "prop_h2": 3.5320181472616343,
+          "prop_snps": 4.608695340678549
+        },
+        {
+          "category": "Backgrd_Selection_Stat",
+          "enrichment": 1.2618735534367451,
+          "enrichment_se": 0.0268113329892359,
+          "enrichment_p": 1.4130163471305457e-21,
+          "prop_h2": 0.2242599305189916,
+          "prop_snps": 0.1777198118687993
+        },
+        {
+          "category": "MAF_Adj_LLD_AFR",
+          "enrichment": -127.78027431631102,
+          "enrichment_se": 10.52384467718663,
+          "enrichment_p": 1.473674945289682e-21,
+          "prop_h2": -0.3573342453103321,
+          "prop_snps": 0.002796474238471
+        },
+        {
+          "category": "MAF_Adj_Predicted_Allele_Age",
+          "enrichment": -133315.67324706665,
+          "enrichment_se": 15893.4683416906,
+          "enrichment_p": 4.418192936935962e-13,
+          "prop_h2": -0.4522650781446895,
+          "prop_snps": 3.39243741661591e-06
+        },
+        {
+          "category": "Intron_UCSC",
+          "enrichment": 1.3020067255636778,
+          "enrichment_se": 0.0458387067243068,
+          "enrichment_p": 3.948578047495129e-10,
+          "prop_h2": 0.504464241225352,
+          "prop_snps": 0.3874513328700006
+        },
+        {
+          "category": "MAFbin1",
+          "enrichment": 0.4586354593555182,
+          "enrichment_se": 0.0902542995280294,
+          "enrichment_p": 3.995517303757958e-09,
+          "prop_h2": 0.046944676524152,
+          "prop_snps": 0.1023572764960639
+        },
+        {
+          "category": "CpG_Content_50kb",
+          "enrichment": 1.1032758832376326,
+          "enrichment_se": 0.0171219842721273,
+          "enrichment_p": 3.3781646663663043e-08,
+          "prop_h2": 0.0110899898760841,
+          "prop_snps": 0.0100518737376365
+        },
+        {
+          "category": "Conserved_Primate_phastCons46way",
+          "enrichment": 9.284017355074084,
+          "enrichment_se": 1.583649513585402,
+          "enrichment_p": 2.8943631419676136e-07,
+          "prop_h2": 0.1788943957891309,
+          "prop_snps": 0.0192690716687811
+        },
+        {
+          "category": "Conserved_Primate_phastCons46way.flanking.500",
+          "enrichment": 2.227958002660945,
+          "enrichment_se": 0.2857656358185388,
+          "enrichment_p": 2.6605985644362847e-05,
+          "prop_h2": 0.3487874078180517,
+          "prop_snps": 0.1565502614508353
+        },
+        {
+          "category": "Human_Promoter_Villar_ExAC",
+          "enrichment": 12.807390686442112,
+          "enrichment_se": 2.708143494008114,
+          "enrichment_p": 2.8455547481306656e-05,
+          "prop_h2": 0.0319757274694934,
+          "prop_snps": 0.0024966621423786
+        },
+        {
+          "category": "Conserved_Mammal_phastCons46way",
+          "enrichment": 6.843839693403021,
+          "enrichment_se": 1.4421194610382833,
+          "enrichment_p": 5.65175894466984e-05,
+          "prop_h2": 0.1467281929865785,
+          "prop_snps": 0.0214394549784697
+        },
+        {
+          "category": "Conserved_LindbladToh",
+          "enrichment": 6.480458029512465,
+          "enrichment_se": 1.3788500405145103,
+          "enrichment_p": 7.86356623047027e-05,
+          "prop_h2": 0.1598763864728739,
+          "prop_snps": 0.0246705380614742
+        },
+        {
+          "category": "H3K4me1_Trynka",
+          "enrichment": 1.386902426310767,
+          "enrichment_se": 0.0939348140472637,
+          "enrichment_p": 8.592189781321553e-05,
+          "prop_h2": 0.5872908636382659,
+          "prop_snps": 0.4234550697272124
+        }
+      ]
+    },
+    "task2_genetic_correlation": {
+      "status": "partial",
+      "traits_available": [
+        "BIP (GCST006651)",
+        "ADHD (GCST000759)",
+        "BMI (GCST006368)"
+      ],
+      "traits_failed_download": [
+        "MDD",
+        "ASD",
+        "EDU",
+        "CRP",
+        "COG"
+      ],
+      "failure_reason": "IEU OpenGWAS API down; GWAS Catalog API broken (returns same results for all queries); EBI FTP lacks sumstats for these GCST IDs; SSGAC/GIANT download links broken",
+      "results": [
+        {
+          "trait1": "SCZ_PGC3",
+          "trait2": "BIP",
+          "rg": 0.3594,
+          "rg_se": 0.6435,
+          "rg_p": 0.5765,
+          "h2_trait2": 0.0041,
+          "h2_trait2_se": 0.0123,
+          "n_snps": 236372,
+          "source": "GCST006651 (Stahl 2019, N=51905)",
+          "interpretation": "Positive rg but not significant with this smaller BIP GWAS"
+        },
+        {
+          "trait1": "SCZ_PGC3",
+          "trait2": "ADHD",
+          "rg": 0.0054,
+          "rg_se": 0.0265,
+          "rg_p": 0.8375,
+          "h2_trait2": 0.1968,
+          "h2_trait2_se": 0.0479,
+          "n_snps": 1122133,
+          "source": "GCST000759 (Demontis 2019, N=53221)",
+          "interpretation": "Near-zero rg, not significant"
+        },
+        {
+          "trait1": "SCZ_PGC3",
+          "trait2": "BMI",
+          "rg": -0.0989,
+          "rg_se": 0.016,
+          "rg_p": 6.95e-10,
+          "h2_trait2": 0.1763,
+          "h2_trait2_se": 0.0069,
+          "n_snps": 1166544,
+          "source": "GCST006368 (Yengo 2018, N=322105)",
+          "interpretation": "Significant negative genetic correlation (SCZ-BMI)"
+        }
+      ]
+    },
+    "task3_forest_plot": {
+      "status": "success",
+      "output_png": "experiments/batch_034/output/forest_plot.png",
+      "output_pdf": "experiments/batch_034/output/forest_plot.pdf",
+      "data": {
+        "studies": [
+          {
+            "name": "Pardinas et al. 2018",
+            "or": 10.09,
+            "ci_lo": 3.68,
+            "ci_hi": 27.65
+          },
+          {
+            "name": "PGC2 (2014)",
+            "or": 1.07,
+            "ci_lo": 0.39,
+            "ci_hi": 2.96
+          },
+          {
+            "name": "PGC3 (2022)",
+            "or": 4.16,
+            "ci_lo": 2.14,
+            "ci_hi": 8.07
+          }
+        ],
+        "meta_or": 4.73,
+        "meta_ci_lo": 2.68,
+        "meta_ci_hi": 8.35,
+        "i_squared": 63.9
+      }
+    }
+  },
+  "fixes_applied": {
+    "ldsc_py_pandas_compat": {
+      "file": "/home/yuanz/torchml/bin/ldsc.py",
+      "line": 343,
+      "change": "df.loc[df.SNP.isin(print_snps.SNP),:] -> df[df.SNP.isin(print_snps.SNP)].copy()",
+      "reason": "pandas 2.x compatibility: boolean indexing on integer RangeIndex fails with NotImplementedError"
+    },
+    "sumstats_py_pandas_compat": {
+      "file": "/home/yuanz/torchml/lib/python3.13/site-packages/ldscore/sumstats.py",
+      "line": 436,
+      "change": "recompute alleles after _select_and_log filtering",
+      "reason": "alleles Series computed before filtering but used after filtering; stale index causes KeyError on FLIP_ALLELES lookup"
+    },
+    "hm3_snps_no_mhc": {
+      "issue": "weights.hm3_noMHC hm3_snps.txt excludes MHC SNPs, causing chr6 LD score row count (72386) to not match baselineLD (75358)",
+      "fix": "Extracted full HM3 SNP list from baselineLD files (1,190,321 SNPs including MHC)"
+    },
+    "missing_m_files": {
+      "issue": "weights directory missing .M and .M_5_50 files needed for rg computation",
+      "fix": "Created .M and .M_5_50 files from weights LD score SNP counts per chromosome"
+    },
+    "annotation_full_vs_hm3": {
+      "issue": "overlap-annot mode reads .annot.gz files from same path as LD scores; original attempt used pre-filtered HM3 annotations (98K rows) which didn't match baselineLD annotations (779K rows)",
+      "fix": "Symlinked full 779K-row annotations_rsID files to ld_scores_hm3 directory so both celltype and baselineLD annotations have matching row counts"
+    }
+  }
+}

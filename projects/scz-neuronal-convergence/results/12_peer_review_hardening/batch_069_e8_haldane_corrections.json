@@ -1,0 +1,47 @@
+{
+  "experiment": "E8_Haldane_Correction",
+  "batch": "batch_069",
+  "status": "COMPLETED",
+  "n_tests_scanned": 12,
+  "n_zero_cell_results": 1,
+  "corrections": [
+    {
+      "gene_list": "glutamate_receptor",
+      "constraint_metric": "pLI >= 0.9",
+      "original_table": {
+        "a": 3,
+        "b": 0,
+        "c": 3039,
+        "d": 14092
+      },
+      "original_or": "inf",
+      "original_p": 0.0,
+      "original_ci": [
+        1.9150029800248622,
+        Infinity
+      ],
+      "zero_cells": [
+        "b"
+      ],
+      "haldane_correction": {
+        "a_corrected": 3.5,
+        "b_corrected": 0.5,
+        "c_corrected": 3039.5,
+        "d_corrected": 14092.5,
+        "or_corrected": 32.4552,
+        "log_or": 3.4799,
+        "se_log_or": 1.512,
+        "ci_low_woolf": 1.6759,
+        "ci_high_woolf": 628.5154
+      },
+      "fisher_exact": {
+        "or_fisher": "Infinity",
+        "p_fisher_two_sided": 0.005591765758012887,
+        "ci_low_fisher": 1.9150029800248622,
+        "ci_high_fisher": "Infinity"
+      },
+      "n_in_list": 3
+    }
+  ],
+  "method_note": "Haldane-Anscombe correction (Haldane 1956, Anscombe 1956): add 0.5 to all four cells of the 2x2 table. Woolf (1955) method for log-OR SE: SE = sqrt(1/a' + 1/b' + 1/c' + 1/d'). 95% CI: exp(log(OR) +/- 1.96 * SE). Fisher exact CI computed via scipy.stats.contingency.odds_ratio."
+}

@@ -1,0 +1,531 @@
+{
+  "experiment": "e7_hmagma",
+  "brief": "brief_v2.md section E7",
+  "seed": 20260424,
+  "timestamp_start": "2026-04-24T19:01:12",
+  "annotations_downloaded": {
+    "fetal_brain": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/hmagma/Fetal_brain.genes.annot",
+    "adult_brain": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/hmagma/Adult_brain.genes.annot",
+    "cortical_neuron": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/hmagma/Cortical_Neuron.genes.annot",
+    "iPSC_neuron": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/hmagma/iPSC_derived_neuro.genes.annot",
+    "iPSC_astro": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/hmagma/iPSC_derived_astro.genes.annot"
+  },
+  "magma_outputs": {
+    "fetal_brain": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/experiments/batch_060/output/e7/hmagma_fetal_brain.genes.out",
+    "adult_brain": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/experiments/batch_060/output/e7/hmagma_adult_brain.genes.out",
+    "cortical_neuron": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/experiments/batch_060/output/e7/hmagma_cortical_neuron.genes.out",
+    "iPSC_neuron": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/experiments/batch_060/output/e7/hmagma_iPSC_neuron.genes.out",
+    "iPSC_astro": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/experiments/batch_060/output/e7/hmagma_iPSC_astro.genes.out"
+  },
+  "gene_set_mapping": {
+    "EDT1_ex_B3": {
+      "n_symbols": 452,
+      "n_mapped": 436
+    },
+    "B3": {
+      "n_symbols": 18,
+      "n_mapped": 18
+    },
+    "IEG_rPRGs": {
+      "n_symbols": 19,
+      "n_mapped": 19,
+      "unmapped": []
+    },
+    "GR_targets": {
+      "n_symbols": 22,
+      "n_mapped": 21,
+      "unmapped": [
+        "TSC22D3"
+      ]
+    },
+    "complement_MHC_excluded": {
+      "n_symbols": 24,
+      "n_mapped": 23,
+      "unmapped": [
+        "CFP"
+      ]
+    }
+  },
+  "per_annotation": {
+    "fetal_brain": {
+      "n_genes": 16913,
+      "gene_set_tests": {
+        "EDT1_ex_B3": {
+          "status": "ok",
+          "beta_1": 2.769208,
+          "se_1": 0.074405,
+          "t": 37.2182,
+          "p_one_sided": 0.0,
+          "p_two_sided": 0.0,
+          "ci_lo": 2.623375,
+          "ci_hi": 2.915041,
+          "n_total": 16913,
+          "n_in_set": 417
+        },
+        "B3": {
+          "status": "ok",
+          "beta_1": 1.633576,
+          "se_1": 0.366911,
+          "t": 4.4522,
+          "p_one_sided": 4e-06,
+          "p_two_sided": 9e-06,
+          "ci_lo": 0.914431,
+          "ci_hi": 2.35272,
+          "n_total": 16913,
+          "n_in_set": 18
+        },
+        "IEG_rPRGs": {
+          "status": "ok",
+          "beta_1": -0.202882,
+          "se_1": 0.357451,
+          "t": -0.5676,
+          "p_one_sided": 0.714836,
+          "p_two_sided": 0.570328,
+          "ci_lo": -0.903486,
+          "ci_hi": 0.497722,
+          "n_total": 16913,
+          "n_in_set": 19
+        },
+        "GR_targets": {
+          "status": "ok",
+          "beta_1": -0.707522,
+          "se_1": 0.348153,
+          "t": -2.0322,
+          "p_one_sided": 0.978926,
+          "p_two_sided": 0.042147,
+          "ci_lo": -1.389902,
+          "ci_hi": -0.025142,
+          "n_total": 16913,
+          "n_in_set": 20
+        },
+        "complement_MHC_excluded": {
+          "status": "ok",
+          "beta_1": -0.118214,
+          "se_1": 0.324614,
+          "t": -0.3642,
+          "p_one_sided": 0.642132,
+          "p_two_sided": 0.715736,
+          "ci_lo": -0.754459,
+          "ci_hi": 0.51803,
+          "n_total": 16913,
+          "n_in_set": 23
+        }
+      }
+    },
+    "adult_brain": {
+      "n_genes": 16910,
+      "gene_set_tests": {
+        "EDT1_ex_B3": {
+          "status": "ok",
+          "beta_1": 2.770069,
+          "se_1": 0.075582,
+          "t": 36.6497,
+          "p_one_sided": 0.0,
+          "p_two_sided": 0.0,
+          "ci_lo": 2.621928,
+          "ci_hi": 2.91821,
+          "n_total": 16910,
+          "n_in_set": 417
+        },
+        "B3": {
+          "status": "ok",
+          "beta_1": 2.116745,
+          "se_1": 0.372084,
+          "t": 5.6889,
+          "p_one_sided": 0.0,
+          "p_two_sided": 0.0,
+          "ci_lo": 1.387461,
+          "ci_hi": 2.84603,
+          "n_total": 16910,
+          "n_in_set": 18
+        },
+        "IEG_rPRGs": {
+          "status": "ok",
+          "beta_1": 0.003004,
+          "se_1": 0.362658,
+          "t": 0.0083,
+          "p_one_sided": 0.496695,
+          "p_two_sided": 0.993391,
+          "ci_lo": -0.707806,
+          "ci_hi": 0.713814,
+          "n_total": 16910,
+          "n_in_set": 19
+        },
+        "GR_targets": {
+          "status": "ok",
+          "beta_1": -0.690002,
+          "se_1": 0.35324,
+          "t": -1.9533,
+          "p_one_sided": 0.974603,
+          "p_two_sided": 0.050795,
+          "ci_lo": -1.382353,
+          "ci_hi": 0.002349,
+          "n_total": 16910,
+          "n_in_set": 20
+        },
+        "complement_MHC_excluded": {
+          "status": "ok",
+          "beta_1": -0.465182,
+          "se_1": 0.329389,
+          "t": -1.4123,
+          "p_one_sided": 0.921054,
+          "p_two_sided": 0.157892,
+          "ci_lo": -1.110784,
+          "ci_hi": 0.180419,
+          "n_total": 16910,
+          "n_in_set": 23
+        }
+      }
+    },
+    "cortical_neuron": {
+      "n_genes": 16911,
+      "gene_set_tests": {
+        "EDT1_ex_B3": {
+          "status": "ok",
+          "beta_1": 2.755084,
+          "se_1": 0.074218,
+          "t": 37.1214,
+          "p_one_sided": 0.0,
+          "p_two_sided": 0.0,
+          "ci_lo": 2.609616,
+          "ci_hi": 2.900551,
+          "n_total": 16911,
+          "n_in_set": 417
+        },
+        "B3": {
+          "status": "ok",
+          "beta_1": 2.535355,
+          "se_1": 0.3656,
+          "t": 6.9348,
+          "p_one_sided": 0.0,
+          "p_two_sided": 0.0,
+          "ci_lo": 1.818779,
+          "ci_hi": 3.251932,
+          "n_total": 16911,
+          "n_in_set": 18
+        },
+        "IEG_rPRGs": {
+          "status": "ok",
+          "beta_1": -0.049063,
+          "se_1": 0.356454,
+          "t": -0.1376,
+          "p_one_sided": 0.554737,
+          "p_two_sided": 0.890526,
+          "ci_lo": -0.747714,
+          "ci_hi": 0.649588,
+          "n_total": 16911,
+          "n_in_set": 19
+        },
+        "GR_targets": {
+          "status": "ok",
+          "beta_1": -0.524329,
+          "se_1": 0.347187,
+          "t": -1.5102,
+          "p_one_sided": 0.934497,
+          "p_two_sided": 0.131006,
+          "ci_lo": -1.204816,
+          "ci_hi": 0.156157,
+          "n_total": 16911,
+          "n_in_set": 20
+        },
+        "complement_MHC_excluded": {
+          "status": "ok",
+          "beta_1": -0.43544,
+          "se_1": 0.323748,
+          "t": -1.345,
+          "p_one_sided": 0.910678,
+          "p_two_sided": 0.178644,
+          "ci_lo": -1.069985,
+          "ci_hi": 0.199105,
+          "n_total": 16911,
+          "n_in_set": 23
+        }
+      }
+    },
+    "iPSC_neuron": {
+      "n_genes": 16898,
+      "gene_set_tests": {
+        "EDT1_ex_B3": {
+          "status": "ok",
+          "beta_1": 2.718847,
+          "se_1": 0.075059,
+          "t": 36.2229,
+          "p_one_sided": 0.0,
+          "p_two_sided": 0.0,
+          "ci_lo": 2.571732,
+          "ci_hi": 2.865962,
+          "n_total": 16898,
+          "n_in_set": 417
+        },
+        "B3": {
+          "status": "ok",
+          "beta_1": 2.351011,
+          "se_1": 0.369157,
+          "t": 6.3686,
+          "p_one_sided": 0.0,
+          "p_two_sided": 0.0,
+          "ci_lo": 1.627463,
+          "ci_hi": 3.074559,
+          "n_total": 16898,
+          "n_in_set": 18
+        },
+        "IEG_rPRGs": {
+          "status": "ok",
+          "beta_1": 0.070265,
+          "se_1": 0.35984,
+          "t": 0.1953,
+          "p_one_sided": 0.422593,
+          "p_two_sided": 0.845186,
+          "ci_lo": -0.635021,
+          "ci_hi": 0.77555,
+          "n_total": 16898,
+          "n_in_set": 19
+        },
+        "GR_targets": {
+          "status": "ok",
+          "beta_1": -0.502106,
+          "se_1": 0.350473,
+          "t": -1.4327,
+          "p_one_sided": 0.924012,
+          "p_two_sided": 0.151976,
+          "ci_lo": -1.189034,
+          "ci_hi": 0.184821,
+          "n_total": 16898,
+          "n_in_set": 20
+        },
+        "complement_MHC_excluded": {
+          "status": "ok",
+          "beta_1": -0.242917,
+          "se_1": 0.326832,
+          "t": -0.7432,
+          "p_one_sided": 0.771329,
+          "p_two_sided": 0.457342,
+          "ci_lo": -0.883508,
+          "ci_hi": 0.397673,
+          "n_total": 16898,
+          "n_in_set": 23
+        }
+      }
+    },
+    "iPSC_astro": {
+      "n_genes": 16890,
+      "gene_set_tests": {
+        "EDT1_ex_B3": {
+          "status": "ok",
+          "beta_1": 2.719295,
+          "se_1": 0.07502,
+          "t": 36.2474,
+          "p_one_sided": 0.0,
+          "p_two_sided": 0.0,
+          "ci_lo": 2.572255,
+          "ci_hi": 2.866334,
+          "n_total": 16890,
+          "n_in_set": 417
+        },
+        "B3": {
+          "status": "ok",
+          "beta_1": 2.164591,
+          "se_1": 0.369025,
+          "t": 5.8657,
+          "p_one_sided": 0.0,
+          "p_two_sided": 0.0,
+          "ci_lo": 1.441302,
+          "ci_hi": 2.88788,
+          "n_total": 16890,
+          "n_in_set": 18
+        },
+        "IEG_rPRGs": {
+          "status": "ok",
+          "beta_1": -0.368341,
+          "se_1": 0.359638,
+          "t": -1.0242,
+          "p_one_sided": 0.847122,
+          "p_two_sided": 0.305756,
+          "ci_lo": -1.073231,
+          "ci_hi": 0.33655,
+          "n_total": 16890,
+          "n_in_set": 19
+        },
+        "GR_targets": {
+          "status": "ok",
+          "beta_1": -0.727172,
+          "se_1": 0.350287,
+          "t": -2.0759,
+          "p_one_sided": 0.981042,
+          "p_two_sided": 0.037915,
+          "ci_lo": -1.413735,
+          "ci_hi": -0.04061,
+          "n_total": 16890,
+          "n_in_set": 20
+        },
+        "complement_MHC_excluded": {
+          "status": "ok",
+          "beta_1": -0.474607,
+          "se_1": 0.326641,
+          "t": -1.453,
+          "p_one_sided": 0.926878,
+          "p_two_sided": 0.146245,
+          "ci_lo": -1.114825,
+          "ci_hi": 0.16561,
+          "n_total": 16890,
+          "n_in_set": 23
+        }
+      }
+    },
+    "standard_magma": {
+      "n_genes": 16556,
+      "gene_set_tests": {
+        "EDT1_ex_B3": {
+          "status": "ok",
+          "beta_1": 3.426588,
+          "se_1": 0.071727,
+          "t": 47.7728,
+          "p_one_sided": 0.0,
+          "p_two_sided": 0.0,
+          "ci_lo": 3.286004,
+          "ci_hi": 3.567172,
+          "n_total": 16556,
+          "n_in_set": 414
+        },
+        "B3": {
+          "status": "ok",
+          "beta_1": 3.240149,
+          "se_1": 0.360706,
+          "t": 8.9828,
+          "p_one_sided": 0.0,
+          "p_two_sided": 0.0,
+          "ci_lo": 2.533165,
+          "ci_hi": 3.947133,
+          "n_total": 16556,
+          "n_in_set": 18
+        },
+        "IEG_rPRGs": {
+          "status": "ok",
+          "beta_1": 0.45352,
+          "se_1": 0.35207,
+          "t": 1.2882,
+          "p_one_sided": 0.098855,
+          "p_two_sided": 0.197711,
+          "ci_lo": -0.236537,
+          "ci_hi": 1.143577,
+          "n_total": 16556,
+          "n_in_set": 19
+        },
+        "GR_targets": {
+          "status": "ok",
+          "beta_1": -0.688017,
+          "se_1": 0.351731,
+          "t": -1.9561,
+          "p_one_sided": 0.974764,
+          "p_two_sided": 0.050472,
+          "ci_lo": -1.37741,
+          "ci_hi": 0.001376,
+          "n_total": 16556,
+          "n_in_set": 19
+        },
+        "complement_MHC_excluded": {
+          "status": "ok",
+          "beta_1": -0.465901,
+          "se_1": 0.326901,
+          "t": -1.4252,
+          "p_one_sided": 0.922942,
+          "p_two_sided": 0.154117,
+          "ci_lo": -1.106628,
+          "ci_hi": 0.174825,
+          "n_total": 16556,
+          "n_in_set": 22
+        }
+      }
+    }
+  },
+  "spearman_vs_standard": {
+    "fetal_brain": {
+      "status": "ok",
+      "spearman_rho": 0.649381,
+      "spearman_p": 0.0,
+      "n_common": 17284
+    },
+    "adult_brain": {
+      "status": "ok",
+      "spearman_rho": 0.640187,
+      "spearman_p": 0.0,
+      "n_common": 17280
+    },
+    "cortical_neuron": {
+      "status": "ok",
+      "spearman_rho": 0.655422,
+      "spearman_p": 0.0,
+      "n_common": 17282
+    },
+    "iPSC_neuron": {
+      "status": "ok",
+      "spearman_rho": 0.649473,
+      "spearman_p": 0.0,
+      "n_common": 17277
+    },
+    "iPSC_astro": {
+      "status": "ok",
+      "spearman_rho": 0.66127,
+      "spearman_p": 0.0,
+      "n_common": 17270
+    }
+  },
+  "paired_bootstrap_fetal_minus_adult": {
+    "EDT1_ex_B3": {
+      "status": "ok",
+      "mean_delta_fetal_minus_adult": -0.00396,
+      "ci_lo_2.5": -0.11163,
+      "ci_hi_97.5": 0.111253,
+      "excludes_zero": false,
+      "n_valid_boots": 1000,
+      "n_common": 16903,
+      "n_in_set": 417
+    },
+    "B3": {
+      "status": "ok",
+      "mean_delta_fetal_minus_adult": -0.48893,
+      "ci_lo_2.5": -0.98724,
+      "ci_hi_97.5": 0.075328,
+      "excludes_zero": false,
+      "n_valid_boots": 1000,
+      "n_common": 16903,
+      "n_in_set": 18
+    },
+    "IEG_rPRGs": {
+      "status": "ok",
+      "mean_delta_fetal_minus_adult": -0.202316,
+      "ci_lo_2.5": -0.715391,
+      "ci_hi_97.5": 0.299027,
+      "excludes_zero": false,
+      "n_valid_boots": 1000,
+      "n_common": 16903,
+      "n_in_set": 19
+    },
+    "GR_targets": {
+      "status": "ok",
+      "mean_delta_fetal_minus_adult": -0.021518,
+      "ci_lo_2.5": -0.462114,
+      "ci_hi_97.5": 0.38344,
+      "excludes_zero": false,
+      "n_valid_boots": 1000,
+      "n_common": 16903,
+      "n_in_set": 20
+    },
+    "complement_MHC_excluded": {
+      "status": "ok",
+      "mean_delta_fetal_minus_adult": 0.361645,
+      "ci_lo_2.5": -0.037514,
+      "ci_hi_97.5": 0.743338,
+      "excludes_zero": false,
+      "n_valid_boots": 1000,
+      "n_common": 16903,
+      "n_in_set": 23
+    }
+  },
+  "verdict_components": [
+    "DEVELOPMENTAL_MATTERS: |beta_fetal - beta_standard| = 0.657 > 0.5 for EDT1_ex_B3"
+  ],
+  "verdict": "DEVELOPMENTAL_MATTERS",
+  "timestamp_end": "2026-04-24T20:40:00",
+  "elapsed_seconds": 5928.5
+}

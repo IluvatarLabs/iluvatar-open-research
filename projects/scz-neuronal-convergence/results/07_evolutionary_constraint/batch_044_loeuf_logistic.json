@@ -1,0 +1,512 @@
+{
+  "batch": "batch_044",
+  "test": "loeuf_logistic",
+  "generated_at": "2026-04-23T01:53:42.037435Z",
+  "n_gene_lists_tested": 3,
+  "inputs": {
+    "gnomad": {
+      "label": "gnomad_constraint",
+      "path": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/item_15/gnomad.v4.1.constraint_metrics.tsv",
+      "exists": true,
+      "sha256": "68d8abdb7fc48f570869b02dfaa74b9fecaece7fcc5f301ddca40ec1ce12da00",
+      "bytes": 95546041
+    },
+    "har": {
+      "label": "har_bed",
+      "path": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/item_15/reference_assets/harsRichard2020.GRCh37.bed",
+      "exists": true,
+      "sha256": "09d2a2221fbb6b603f1c7f72575676606013b2f87372aae0bb62b96517d6e6a2",
+      "bytes": 96325
+    },
+    "tss": {
+      "label": "gene_tss_grch37",
+      "path": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/ldsc/gene_tss_grch37.csv",
+      "exists": true,
+      "sha256": "98fd8d4cfd4827d785fe3c8d3c2639591ca7d9149d8622ac215cf2bd1b804a89",
+      "bytes": 5252382
+    },
+    "pgc3_xlsx": {
+      "label": "pgc3_xlsx",
+      "path": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/19426775/scz2022-Extended-Data-Table1.xlsx",
+      "exists": true,
+      "sha256": "7aa88b5944210540d63f6297803e4abfebc6b012bc265b1260cf618fa55394de",
+      "bytes": 110845
+    },
+    "gtex_tpm": {
+      "label": "gtex_tpm",
+      "path": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/GTEx_v8_gene_median_tpm.gct.gz",
+      "exists": true,
+      "sha256": "ee7201ff2f280b0de5657d4b08e9a240362d9757efed7f7bd5dba35a5f8617b8",
+      "bytes": 6952331
+    },
+    "schema_list": {
+      "label": "schema_exome_wide_significant",
+      "path": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/experiments/batch_044/input/schema_exome_wide_significant.txt",
+      "exists": true,
+      "sha256": "67279034c6c36b4a18677e12f245079b5ad25af4f1e408a86163960ad00baa5d",
+      "bytes": 60
+    }
+  },
+  "results": {
+    "gene_lists": {
+      "PGC3_Prioritised_EDT1": {
+        "primary": {
+          "n": 17134,
+          "n_outcome_1": 1341,
+          "converged": true,
+          "fit_method": "ridge",
+          "condition_number": 9541949588321506.0,
+          "vif": {
+            "scz_top": 1.003278079259965,
+            "log_cds_length": Infinity,
+            "log_gene_length": Infinity,
+            "brain_tau": 1.0229526002256313,
+            "log_obs_mis_plus1": 3.60538968087351
+          },
+          "dropped_covariates": [
+            "log_obs_mis_plus1"
+          ],
+          "coefficients": {
+            "const": {
+              "beta": -9.743168993284149,
+              "se": null,
+              "z": null,
+              "p": null,
+              "ci_low": null,
+              "ci_high": null,
+              "note": "p-value suppressed under L2 regularization; decision rule relies on sign and magnitude of beta_scz."
+            },
+            "scz_top": {
+              "beta": 0.3499506517279308,
+              "se": null,
+              "z": null,
+              "p": null,
+              "ci_low": null,
+              "ci_high": null,
+              "note": "p-value suppressed under L2 regularization; decision rule relies on sign and magnitude of beta_scz."
+            },
+            "log_cds_length": {
+              "beta": 0.8463722101115041,
+              "se": null,
+              "z": null,
+              "p": null,
+              "ci_low": null,
+              "ci_high": null,
+              "note": "p-value suppressed under L2 regularization; decision rule relies on sign and magnitude of beta_scz."
+            },
+            "log_gene_length": {
+              "beta": 0.8463722101115062,
+              "se": null,
+              "z": null,
+              "p": null,
+              "ci_low": null,
+              "ci_high": null,
+              "note": "p-value suppressed under L2 regularization; decision rule relies on sign and magnitude of beta_scz."
+            },
+            "brain_tau": {
+              "beta": 0.009607712586463958,
+              "se": null,
+              "z": null,
+              "p": null,
+              "ci_low": null,
+              "ci_high": null,
+              "note": "p-value suppressed under L2 regularization; decision rule relies on sign and magnitude of beta_scz."
+            },
+            "log_obs_mis_plus1": {
+              "beta": -0.8425686113368128,
+              "se": null,
+              "z": null,
+              "p": null,
+              "ci_low": null,
+              "ci_high": null,
+              "note": "p-value suppressed under L2 regularization; decision rule relies on sign and magnitude of beta_scz."
+            }
+          },
+          "beta_scz": 0.3499506517279308,
+          "se_scz": null,
+          "p_scz": null,
+          "primary_mle_error": "Singular matrix"
+        },
+        "secondary_mle_drop_cds": {
+          "rationale": "log_cds_length dropped because VIF is effectively infinite vs log_gene_length (r>0.99); keeping log_gene_length as canonical length covariate (Samocha 2014). Unregularized MLE yields valid Wald p_scz.",
+          "covariates_used": [
+            "log_gene_length",
+            "brain_tau",
+            "log_obs_mis_plus1"
+          ],
+          "result": {
+            "n": 17134,
+            "n_outcome_1": 1341,
+            "converged": true,
+            "loglike": -4178.13962602167,
+            "aic": 8366.27925204334,
+            "fit_method": "MLE",
+            "condition_number": 127.9587616120897,
+            "vif": {
+              "scz_top": 1.003278079259965,
+              "log_gene_length": 3.619351592578748,
+              "brain_tau": 1.022952600225632,
+              "log_obs_mis_plus1": 3.60538968087351
+            },
+            "dropped_covariates": [],
+            "coefficients": {
+              "const": {
+                "beta": -11.48103074983954,
+                "se": 0.3282745292790915,
+                "z": -34.97387011734508,
+                "p": 5.617018348678045e-268,
+                "ci_low": -12.1244370042684,
+                "ci_high": -10.837624495410681
+              },
+              "scz_top": {
+                "beta": 0.38243856205478477,
+                "se": 0.3111134123036965,
+                "z": 1.2292577141658667,
+                "p": 0.2189751961539358,
+                "ci_low": -0.22733252116782088,
+                "ci_high": 0.9922096452773904
+              },
+              "log_gene_length": {
+                "beta": 1.9916396849152906,
+                "se": 0.06815845756513284,
+                "z": 29.220727053749155,
+                "p": 1.057735412079653e-187,
+                "ci_low": 1.8580515628458287,
+                "ci_high": 2.1252278069847526
+              },
+              "brain_tau": {
+                "beta": 0.04554169000683185,
+                "se": 0.1564882653179077,
+                "z": 0.2910230355887286,
+                "p": 0.7710337017879932,
+                "ci_low": -0.26116967401941565,
+                "ci_high": 0.3522530540330793
+              },
+              "log_obs_mis_plus1": {
+                "beta": -0.9305054953148979,
+                "se": 0.048928703023434966,
+                "z": -19.01757941282894,
+                "p": 1.2198682171980949e-80,
+                "ci_low": -1.0264039910510865,
+                "ci_high": -0.8346069995787093
+              }
+            },
+            "beta_scz": 0.38243856205478477,
+            "se_scz": 0.3111134123036965,
+            "p_scz": 0.2189751961539358,
+            "primary_mle_error": null
+          }
+        },
+        "n": 17134,
+        "n_outcome_1": 1341,
+        "converged": true,
+        "fit_method": "ridge",
+        "condition_number": 9541949588321506.0,
+        "vif": {
+          "scz_top": 1.003278079259965,
+          "log_cds_length": Infinity,
+          "log_gene_length": Infinity,
+          "brain_tau": 1.0229526002256313,
+          "log_obs_mis_plus1": 3.60538968087351
+        },
+        "dropped_covariates": [
+          "log_obs_mis_plus1"
+        ],
+        "coefficients": {
+          "const": {
+            "beta": -9.743168993284149,
+            "se": null,
+            "z": null,
+            "p": null,
+            "ci_low": null,
+            "ci_high": null,
+            "note": "p-value suppressed under L2 regularization; decision rule relies on sign and magnitude of beta_scz."
+          },
+          "scz_top": {
+            "beta": 0.3499506517279308,
+            "se": null,
+            "z": null,
+            "p": null,
+            "ci_low": null,
+            "ci_high": null,
+            "note": "p-value suppressed under L2 regularization; decision rule relies on sign and magnitude of beta_scz."
+          },
+          "log_cds_length": {
+            "beta": 0.8463722101115041,
+            "se": null,
+            "z": null,
+            "p": null,
+            "ci_low": null,
+            "ci_high": null,
+            "note": "p-value suppressed under L2 regularization; decision rule relies on sign and magnitude of beta_scz."
+          },
+          "log_gene_length": {
+            "beta": 0.8463722101115062,
+            "se": null,
+            "z": null,
+            "p": null,
+            "ci_low": null,
+            "ci_high": null,
+            "note": "p-value suppressed under L2 regularization; decision rule relies on sign and magnitude of beta_scz."
+          },
+          "brain_tau": {
+            "beta": 0.009607712586463958,
+            "se": null,
+            "z": null,
+            "p": null,
+            "ci_low": null,
+            "ci_high": null,
+            "note": "p-value suppressed under L2 regularization; decision rule relies on sign and magnitude of beta_scz."
+          },
+          "log_obs_mis_plus1": {
+            "beta": -0.8425686113368128,
+            "se": null,
+            "z": null,
+            "p": null,
+            "ci_low": null,
+            "ci_high": null,
+            "note": "p-value suppressed under L2 regularization; decision rule relies on sign and magnitude of beta_scz."
+          }
+        },
+        "beta_scz": 0.3499506517279308,
+        "se_scz": null,
+        "p_scz": null,
+        "primary_mle_error": "Singular matrix"
+      },
+      "PGC3_Prioritised_SynGO": {
+        "primary": {
+          "n": 17134,
+          "n_outcome_1": 1341,
+          "converged": true,
+          "fit_method": "ridge",
+          "condition_number": 1262996584987460.8,
+          "vif": {
+            "scz_top": 1.0027118079424855,
+            "log_cds_length": Infinity,
+            "log_gene_length": Infinity,
+            "brain_tau": 1.0226200097600566,
+            "log_obs_mis_plus1": 3.605511633201626
+          },
+          "dropped_covariates": [
+            "log_obs_mis_plus1"
+          ],
+          "coefficients": {
+            "const": {
+              "beta": -9.741593818286042,
+              "se": null,
+              "z": null,
+              "p": null,
+              "ci_low": null,
+              "ci_high": null,
+              "note": "p-value suppressed under L2 regularization; decision rule relies on sign and magnitude of beta_scz."
+            },
+            "scz_top": {
+              "beta": 0.7017020141239431,
+              "se": null,
+              "z": null,
+              "p": null,
+              "ci_low": null,
+              "ci_high": null,
+              "note": "p-value suppressed under L2 regularization; decision rule relies on sign and magnitude of beta_scz."
+            },
+            "log_cds_length": {
+              "beta": 0.8462154762930487,
+              "se": null,
+              "z": null,
+              "p": null,
+              "ci_low": null,
+              "ci_high": null,
+              "note": "p-value suppressed under L2 regularization; decision rule relies on sign and magnitude of beta_scz."
+            },
+            "log_gene_length": {
+              "beta": 0.8462154762930588,
+              "se": null,
+              "z": null,
+              "p": null,
+              "ci_low": null,
+              "ci_high": null,
+              "note": "p-value suppressed under L2 regularization; decision rule relies on sign and magnitude of beta_scz."
+            },
+            "brain_tau": {
+              "beta": 0.010329408177893344,
+              "se": null,
+              "z": null,
+              "p": null,
+              "ci_low": null,
+              "ci_high": null,
+              "note": "p-value suppressed under L2 regularization; decision rule relies on sign and magnitude of beta_scz."
+            },
+            "log_obs_mis_plus1": {
+              "beta": -0.842204322126457,
+              "se": null,
+              "z": null,
+              "p": null,
+              "ci_low": null,
+              "ci_high": null,
+              "note": "p-value suppressed under L2 regularization; decision rule relies on sign and magnitude of beta_scz."
+            }
+          },
+          "beta_scz": 0.7017020141239431,
+          "se_scz": null,
+          "p_scz": null,
+          "primary_mle_error": "Singular matrix"
+        },
+        "secondary_mle_drop_cds": {
+          "rationale": "log_cds_length dropped because VIF is effectively infinite vs log_gene_length (r>0.99); keeping log_gene_length as canonical length covariate (Samocha 2014). Unregularized MLE yields valid Wald p_scz.",
+          "covariates_used": [
+            "log_gene_length",
+            "brain_tau",
+            "log_obs_mis_plus1"
+          ],
+          "result": {
+            "n": 17134,
+            "n_outcome_1": 1341,
+            "converged": true,
+            "loglike": -4177.489141296482,
+            "aic": 8364.978282592963,
+            "fit_method": "MLE",
+            "condition_number": 360.7384687420383,
+            "vif": {
+              "scz_top": 1.0027118079424855,
+              "log_gene_length": 3.619450729230642,
+              "brain_tau": 1.0226200097600566,
+              "log_obs_mis_plus1": 3.6055116332016204
+            },
+            "dropped_covariates": [],
+            "coefficients": {
+              "const": {
+                "beta": -11.474186143461871,
+                "se": 0.3283077798327731,
+                "z": -34.94947987314332,
+                "p": 1.3186865050185871e-267,
+                "ci_low": -12.117657567778412,
+                "ci_high": -10.83071471914533
+              },
+              "scz_top": {
+                "beta": 1.11782945091521,
+                "se": 0.636087354100258,
+                "z": 1.7573521053509602,
+                "p": 0.07885781156011709,
+                "ci_low": -0.12887885414267197,
+                "ci_high": 2.364537755973092
+              },
+              "log_gene_length": {
+                "beta": 1.9905929581383393,
+                "se": 0.068158758501572,
+                "z": 29.205240850923488,
+                "p": 1.6637220517710647e-187,
+                "ci_low": 1.8570042462442948,
+                "ci_high": 2.1241816700323835
+              },
+              "brain_tau": {
+                "beta": 0.03983576222236372,
+                "se": 0.15662091697843056,
+                "z": 0.2543450963695341,
+                "p": 0.7992289631374162,
+                "ci_low": -0.26713559428099803,
+                "ci_high": 0.3468071187257255
+              },
+              "log_obs_mis_plus1": {
+                "beta": -0.9298988012914908,
+                "se": 0.048924763584523,
+                "z": -19.006710163964033,
+                "p": 1.5007412418888838e-80,
+                "ci_low": -1.0257895758692928,
+                "ci_high": -0.834008026713689
+              }
+            },
+            "beta_scz": 1.11782945091521,
+            "se_scz": 0.636087354100258,
+            "p_scz": 0.07885781156011709,
+            "primary_mle_error": null
+          }
+        },
+        "n": 17134,
+        "n_outcome_1": 1341,
+        "converged": true,
+        "fit_method": "ridge",
+        "condition_number": 1262996584987460.8,
+        "vif": {
+          "scz_top": 1.0027118079424855,
+          "log_cds_length": Infinity,
+          "log_gene_length": Infinity,
+          "brain_tau": 1.0226200097600566,
+          "log_obs_mis_plus1": 3.605511633201626
+        },
+        "dropped_covariates": [
+          "log_obs_mis_plus1"
+        ],
+        "coefficients": {
+          "const": {
+            "beta": -9.741593818286042,
+            "se": null,
+            "z": null,
+            "p": null,
+            "ci_low": null,
+            "ci_high": null,
+            "note": "p-value suppressed under L2 regularization; decision rule relies on sign and magnitude of beta_scz."
+          },
+          "scz_top": {
+            "beta": 0.7017020141239431,
+            "se": null,
+            "z": null,
+            "p": null,
+            "ci_low": null,
+            "ci_high": null,
+            "note": "p-value suppressed under L2 regularization; decision rule relies on sign and magnitude of beta_scz."
+          },
+          "log_cds_length": {
+            "beta": 0.8462154762930487,
+            "se": null,
+            "z": null,
+            "p": null,
+            "ci_low": null,
+            "ci_high": null,
+            "note": "p-value suppressed under L2 regularization; decision rule relies on sign and magnitude of beta_scz."
+          },
+          "log_gene_length": {
+            "beta": 0.8462154762930588,
+            "se": null,
+            "z": null,
+            "p": null,
+            "ci_low": null,
+            "ci_high": null,
+            "note": "p-value suppressed under L2 regularization; decision rule relies on sign and magnitude of beta_scz."
+          },
+          "brain_tau": {
+            "beta": 0.010329408177893344,
+            "se": null,
+            "z": null,
+            "p": null,
+            "ci_low": null,
+            "ci_high": null,
+            "note": "p-value suppressed under L2 regularization; decision rule relies on sign and magnitude of beta_scz."
+          },
+          "log_obs_mis_plus1": {
+            "beta": -0.842204322126457,
+            "se": null,
+            "z": null,
+            "p": null,
+            "ci_low": null,
+            "ci_high": null,
+            "note": "p-value suppressed under L2 regularization; decision rule relies on sign and magnitude of beta_scz."
+          }
+        },
+        "beta_scz": 0.7017020141239431,
+        "se_scz": null,
+        "p_scz": null,
+        "primary_mle_error": "Singular matrix"
+      },
+      "SCHEMA_exome_wide_significant": {
+        "skipped": true,
+        "reason": "<10 genes in list within background."
+      }
+    },
+    "covariates": [
+      "log_cds_length",
+      "log_gene_length",
+      "brain_tau",
+      "log_obs_mis_plus1"
+    ]
+  }
+}

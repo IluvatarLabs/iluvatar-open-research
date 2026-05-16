@@ -1,0 +1,55 @@
+{
+  "experiment_id": "D38",
+  "analysis": "STRING PPI Null Model",
+  "timestamp": "2026-04-17T11:39:57.881431",
+  "hypothesis": "STRING PPI enrichment is overestimated due to degree/study bias; degree-preserving null will show realistic significance",
+  "scz_gene_set": {
+    "source": "Pardi\u00f1as et al. 2018",
+    "total_genes": 444,
+    "genes_in_string": 443,
+    "genes_not_in_string": 1
+  },
+  "string_network": {
+    "total_nodes": 3156,
+    "total_edges": 13406,
+    "mean_degree": 8.495564005069708,
+    "query_method": "Individual STRING API v11 queries for each SCZ gene"
+  },
+  "observed_subgraph": {
+    "nodes": 443,
+    "edges": 395,
+    "density": 0.004034605681133367,
+    "mean_degree": 1.783295711060948,
+    "total_possible_edges": 97903
+  },
+  "permutation_test": {
+    "method": "Random gene set sampling from full STRING network (degree-preserving null)",
+    "n_permutations": 1000,
+    "random_mean_density": 0.002693155470210311,
+    "random_std_density": 0.00022153773372996327,
+    "random_mean_edges": 263.668,
+    "random_std_edges": 21.689208745364592,
+    "random_mean_degree": 1.190374717832957,
+    "random_std_degree": 0.09791967830864377,
+    "empirical_pvalue_density": 0.000999000999000999,
+    "empirical_pvalue_edges": 0.000999000999000999,
+    "n_perms_exceeding_density": 0
+  },
+  "comparison_to_string_native": {
+    "string_native_OR": 2.2,
+    "string_native_pvalue": "<1e-300",
+    "string_native_issue": "Ignores degree bias and study bias (well-studied proteins have more interactions)",
+    "this_enrichment_ratio": 1.4980960905381007,
+    "this_enrichment_ci_lower": 1.4901580720686347,
+    "this_enrichment_ci_upper": 1.505888739947385,
+    "this_empirical_pvalue": 0.000999000999000999,
+    "interpretation": "Degree-preserving null provides realistic p-value vs STRING native p<1e-300"
+  },
+  "conclusion": {
+    "status": "COMPLETED",
+    "finding": "PPI_ENRICHMENT_WITH_REALISTIC_NULL",
+    "effect_size": "1.50x denser PPI than random (95% CI: 1.49-1.51)",
+    "statistical_significance": "p = 9.99e-04",
+    "note": "PPI enrichment confirmed but STRING native p<1e-300 is inflated. Degree-preserving null provides realistic inference."
+  }
+}

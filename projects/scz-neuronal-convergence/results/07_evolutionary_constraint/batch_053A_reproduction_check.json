@@ -1,0 +1,23 @@
+{
+  "batch": "batch_053_A",
+  "generated_at": "2026-04-24T00:22:20.362088+00:00",
+  "target_pLI_OR": 20.91,
+  "tolerance": 5.0,
+  "observed_pLI_OR": 20.905044510385757,
+  "passes": true,
+  "cell_detail": {
+    "gene_list": "SynGO_EDT1_batch047",
+    "constraint_metric": "pLI >= 0.9",
+    "or": 20.905044510385757,
+    "ci_low": 4.322760436474829,
+    "ci_high": 198.87374157165993,
+    "p_fisher": 6.747900847587123e-06,
+    "emp_p": 0.0001999600079984003,
+    "n_in_list": 11,
+    "n_pli_hit": 9,
+    "n_bg": 17134,
+    "null_mean_or": 2.0445239894028386,
+    "null_std_or": 1.4248088529191216,
+    "n_perm_completed": 5000
+  }
+}

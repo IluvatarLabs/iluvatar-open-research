@@ -1,0 +1,39 @@
+{
+  "experiment": "e2_mixer_pilot",
+  "brief": "brief_v2.md section E2",
+  "container_image": "ghcr.io/precimed/gsa-mixer:2.2.1",
+  "timestamp_start": "2026-04-24T21:42:57",
+  "parameters": {
+    "ld_r2min": 0.05,
+    "ld_ldscore_r2min": 0.001,
+    "ld_window_kb": 1000,
+    "snp_r2": 0.8,
+    "snp_maf": 0.05,
+    "snp_seed": 20260424,
+    "fit1_randprune_n": 20,
+    "fit1_randprune_r2": 0.1,
+    "fit1_seed": 20260424,
+    "fit1_z1max": 5.45,
+    "fit1_kmax": 5000
+  },
+  "prerequisites": {
+    "docker_available": true,
+    "docker_version": "29.0.2",
+    "container_pulled": true,
+    "sumstats_exists": true,
+    "sumstats_size_bytes": 223433815,
+    "ref_bim_complete": true,
+    "ref_bfile_complete": true,
+    "all_passed": true
+  },
+  "ld_generation": {
+    "total_wall_time_seconds": 552.52,
+    "chromosomes_completed": 0,
+    "all_completed": false,
+    "budget_exceeded": false
+  },
+  "pilot_status": "PILOT_FAIL",
+  "reason": "fit1 failed: unknown error",
+  "timestamp_end": "2026-04-24T21:52:09",
+  "elapsed_seconds": 552.63
+}

@@ -1,0 +1,222 @@
+{
+  "experiment_id": "batch_070_e1_drug_target_4bg",
+  "hypothesis": "SCZ GWAS gene depletion for drug targets is robust to background choice",
+  "timestamp": "2026-05-09T21:21:47.747574",
+  "elapsed_seconds": 10.4,
+  "environment": {
+    "timestamp": "2026-05-09T21:21:37.318123",
+    "python_version": "3.13.7 (main, Mar  3 2026, 12:19:54) [GCC 15.2.0]",
+    "platform": "Linux-6.17.0-22-generic-x86_64-with-glibc2.42",
+    "numpy_version": "2.0.1",
+    "pandas_version": "2.3.2",
+    "scipy_version": "1.16.2",
+    "random_seed": 42
+  },
+  "edt1": {
+    "source": "Pardinas et al. 2018 Nat Genet 50:381",
+    "file": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/experiments/batch_008/data/gwas_genes.parquet",
+    "n_raw": 444,
+    "n_gnomad_filtered": 430,
+    "gnomad_filter": "canonical=True, transcript_type=protein_coding, cds_length not null"
+  },
+  "drug_targets": {
+    "source": "DGIdb_graphql_strict",
+    "n_genes_strict": 1714,
+    "n_genes_broad": 3439,
+    "strict_definition": "DrugBank, GuideToPharmacology, ChEMBL, TTD sources only",
+    "broad_definition": "All DGIdb sources (includes PharmGKB, NCI, COSMIC, etc.)",
+    "n_strict_in_gnomad": 1515,
+    "n_broad_in_gnomad": 3131,
+    "download_attempts": [
+      {
+        "source": "DGIdb_graphql_approved_drugs",
+        "url": "https://dgidb.org/api/graphql",
+        "success": true,
+        "n_genes_strict": 1714,
+        "n_genes_broad": 3439,
+        "n_drugs": 4220,
+        "pages_fetched": 9,
+        "strict_sources": [
+          "ChEMBL",
+          "DrugBank",
+          "GuideToPharmacology",
+          "TTD"
+        ]
+      }
+    ]
+  },
+  "backgrounds": {
+    "BG1": "All gnomAD canonical protein-coding genes",
+    "BG2": "Brain-expressed (top 50% in BrainSpan)",
+    "BG3": "Druggable universe (broad DGIdb genes in gnomAD as background)",
+    "BG4": "Expression+CDS-length matched (decile bins)"
+  },
+  "results_strict": [
+    {
+      "background": "BG1_all_protein_coding",
+      "N_background": 18035,
+      "n_edt1_in_bg": 430,
+      "n_drug_targets_in_bg": 1515,
+      "drug_target_rate_bg": 0.084,
+      "drug_target_rate_edt1": 0.1721,
+      "a_edt1_drug": 74,
+      "b_edt1_nodrug": 356,
+      "c_noedt1_drug": 1441,
+      "d_noedt1_nodrug": 16164,
+      "odds_ratio": 2.3317,
+      "p_value": 3.0397432013872095e-09,
+      "ci_95_low": 1.8048,
+      "ci_95_high": 3.0124,
+      "se_log_or": 0.1307
+    },
+    {
+      "background": "BG2_brain_expressed",
+      "N_background": 9236,
+      "n_edt1_in_bg": 318,
+      "n_drug_targets_in_bg": 835,
+      "drug_target_rate_bg": 0.0904,
+      "drug_target_rate_edt1": 0.1667,
+      "a_edt1_drug": 53,
+      "b_edt1_nodrug": 265,
+      "c_noedt1_drug": 782,
+      "d_noedt1_nodrug": 8136,
+      "odds_ratio": 2.0808,
+      "p_value": 9.484070001908198e-06,
+      "ci_95_low": 1.5355,
+      "ci_95_high": 2.8198,
+      "se_log_or": 0.1551
+    },
+    {
+      "background": "BG3_druggable_universe",
+      "N_background": 3131,
+      "n_edt1_in_bg": 151,
+      "n_drug_targets_in_bg": 1515,
+      "drug_target_rate_bg": 0.4839,
+      "drug_target_rate_edt1": 0.4901,
+      "a_edt1_drug": 74,
+      "b_edt1_nodrug": 77,
+      "c_noedt1_drug": 1441,
+      "d_noedt1_nodrug": 1539,
+      "odds_ratio": 1.0264,
+      "p_value": 0.9335223615243382,
+      "ci_95_low": 0.7401,
+      "ci_95_high": 1.4235,
+      "se_log_or": 0.1669
+    },
+    {
+      "background": "BG4_expr_length_matched",
+      "N_background": 14311,
+      "n_edt1_in_bg": 421,
+      "n_drug_targets_in_bg": 1358,
+      "drug_target_rate_bg": 0.0949,
+      "drug_target_rate_edt1": 0.1758,
+      "a_edt1_drug": 74,
+      "b_edt1_nodrug": 347,
+      "c_noedt1_drug": 1284,
+      "d_noedt1_nodrug": 12606,
+      "odds_ratio": 2.0937,
+      "p_value": 1.7515325433184806e-07,
+      "ci_95_low": 1.6185,
+      "ci_95_high": 2.7085,
+      "se_log_or": 0.1314
+    }
+  ],
+  "results_broad": [
+    {
+      "background": "BG1_all_protein_coding",
+      "N_background": 18035,
+      "n_edt1_in_bg": 430,
+      "n_drug_targets_in_bg": 3131,
+      "drug_target_rate_bg": 0.1736,
+      "drug_target_rate_edt1": 0.3512,
+      "a_edt1_drug": 151,
+      "b_edt1_nodrug": 279,
+      "c_noedt1_drug": 2980,
+      "d_noedt1_nodrug": 14625,
+      "odds_ratio": 2.6561,
+      "p_value": 4.561710854657624e-19,
+      "ci_95_low": 2.1706,
+      "ci_95_high": 3.2504,
+      "se_log_or": 0.103
+    },
+    {
+      "background": "BG2_brain_expressed",
+      "N_background": 9236,
+      "n_edt1_in_bg": 318,
+      "n_drug_targets_in_bg": 1738,
+      "drug_target_rate_bg": 0.1882,
+      "drug_target_rate_edt1": 0.3585,
+      "a_edt1_drug": 114,
+      "b_edt1_nodrug": 204,
+      "c_noedt1_drug": 1624,
+      "d_noedt1_nodrug": 7294,
+      "odds_ratio": 2.5099,
+      "p_value": 2.9328098986273015e-13,
+      "ci_95_low": 1.9834,
+      "ci_95_high": 3.1761,
+      "se_log_or": 0.1201
+    },
+    {
+      "background": "BG3_druggable_universe",
+      "N_background": 3131,
+      "n_edt1_in_bg": 151,
+      "n_drug_targets_in_bg": 3131,
+      "drug_target_rate_bg": 1.0,
+      "drug_target_rate_edt1": 1.0,
+      "a_edt1_drug": 151,
+      "b_edt1_nodrug": 0,
+      "c_noedt1_drug": 2980,
+      "d_noedt1_nodrug": 0,
+      "odds_ratio": NaN,
+      "p_value": 1.0,
+      "ci_95_low": null,
+      "ci_95_high": null,
+      "se_log_or": null,
+      "note": "BG3 with BROAD definition: all background genes are drug targets, so d=0. This tests whether EDT1 genes are over-represented among broad drug targets (not clinically meaningful)."
+    },
+    {
+      "background": "BG4_expr_length_matched",
+      "N_background": 14311,
+      "n_edt1_in_bg": 421,
+      "n_drug_targets_in_bg": 2782,
+      "drug_target_rate_bg": 0.1944,
+      "drug_target_rate_edt1": 0.3563,
+      "a_edt1_drug": 150,
+      "b_edt1_nodrug": 271,
+      "c_noedt1_drug": 2632,
+      "d_noedt1_nodrug": 11258,
+      "odds_ratio": 2.3675,
+      "p_value": 2.9919438198799294e-15,
+      "ci_95_low": 1.9308,
+      "ci_95_high": 2.9031,
+      "se_log_or": 0.104
+    }
+  ],
+  "prior_result_batch035": {
+    "OR": 0.67,
+    "p": 0.005,
+    "K": 3500,
+    "N": 20197,
+    "n_scz": 444,
+    "k_overlap": 55,
+    "note": "K=3500 from OpenTargets platform statistics (not gene-level matching)"
+  },
+  "reconciliation": {
+    "key_finding": "Direction reversal driven by background K definition",
+    "batch035_K": 3500,
+    "batch035_expected": "430 * (3500/18035) = 83.5",
+    "batch035_observed": 55,
+    "batch035_direction": "DEPLETED (55 < 83.5)",
+    "this_analysis_strict_K": 1515,
+    "this_analysis_expected": "430 * (1515/18035) = 36.1",
+    "this_analysis_observed": 74,
+    "this_analysis_direction": "ENRICHED",
+    "explanation": "The discrepancy arises because batch_035 used K=3500 from OpenTargets platform statistics (which counts all genes with any approved drug annotation across ALL gene types including non-canonical transcripts) but only found 55 EDT1 overlaps by querying per-gene tractability. The 55 overlaps are correct for the strict OpenTargets definition, but K=3500 is inflated relative to our gnomAD-restricted universe. When K is properly estimated within the same universe (gnomAD canonical protein-coding), SCZ genes are ENRICHED for drug targets, consistent with the hypothesis that GWAS hits druggable biology."
+  },
+  "interpretation_guide": {
+    "consistent_enrichment": "If OR > 1 across all 4 backgrounds in STRICT, enrichment is robust",
+    "background_sensitive": "If OR varies substantially, confounding by that factor",
+    "reversed_in_matched": "If OR ~ 1 in BG4, enrichment is driven by expression/length bias",
+    "batch035_was_wrong": "The batch_035 depletion finding (OR=0.67) was an artifact of mismatched K/N"
+  }
+}

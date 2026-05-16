@@ -1,0 +1,154 @@
+{
+  "batch": "batch_044",
+  "test": "har_fisher",
+  "generated_at": "2026-04-23T01:53:42.063752Z",
+  "n_gene_lists_tested": 3,
+  "bh_correction_n": 3,
+  "har_window_bp": 100000,
+  "inputs": {
+    "gnomad": {
+      "label": "gnomad_constraint",
+      "path": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/item_15/gnomad.v4.1.constraint_metrics.tsv",
+      "exists": true,
+      "sha256": "68d8abdb7fc48f570869b02dfaa74b9fecaece7fcc5f301ddca40ec1ce12da00",
+      "bytes": 95546041
+    },
+    "har": {
+      "label": "har_bed",
+      "path": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/item_15/reference_assets/harsRichard2020.GRCh37.bed",
+      "exists": true,
+      "sha256": "09d2a2221fbb6b603f1c7f72575676606013b2f87372aae0bb62b96517d6e6a2",
+      "bytes": 96325
+    },
+    "tss": {
+      "label": "gene_tss_grch37",
+      "path": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/ldsc/gene_tss_grch37.csv",
+      "exists": true,
+      "sha256": "98fd8d4cfd4827d785fe3c8d3c2639591ca7d9149d8622ac215cf2bd1b804a89",
+      "bytes": 5252382
+    },
+    "pgc3_xlsx": {
+      "label": "pgc3_xlsx",
+      "path": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/19426775/scz2022-Extended-Data-Table1.xlsx",
+      "exists": true,
+      "sha256": "7aa88b5944210540d63f6297803e4abfebc6b012bc265b1260cf618fa55394de",
+      "bytes": 110845
+    },
+    "gtex_tpm": {
+      "label": "gtex_tpm",
+      "path": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/GTEx_v8_gene_median_tpm.gct.gz",
+      "exists": true,
+      "sha256": "ee7201ff2f280b0de5657d4b08e9a240362d9757efed7f7bd5dba35a5f8617b8",
+      "bytes": 6952331
+    },
+    "schema_list": {
+      "label": "schema_exome_wide_significant",
+      "path": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/experiments/batch_044/input/schema_exome_wide_significant.txt",
+      "exists": true,
+      "sha256": "67279034c6c36b4a18677e12f245079b5ad25af4f1e408a86163960ad00baa5d",
+      "bytes": 60
+    }
+  },
+  "rows": [
+    {
+      "gene_list": "PGC3_Prioritised_EDT1",
+      "n_list_in_background": 96,
+      "har_union": {
+        "a": 10,
+        "b": 86,
+        "c": 1347,
+        "d": 15691,
+        "odds_ratio_point": 1.354490140819496,
+        "odds_ratio_scipy": 1.3545173598522124,
+        "odds_ratio_95ci_low": 0.6257278649670971,
+        "odds_ratio_95ci_high": 2.621271941204454,
+        "p_one_sided_greater": 0.22810062830463917,
+        "bh_q": 0.3674907157911389
+      },
+      "har_pollard_only": {
+        "a": 1,
+        "b": 95,
+        "c": 45,
+        "d": 16993,
+        "odds_ratio_point": 3.974296969639832,
+        "odds_ratio_scipy": 3.974970760233918,
+        "odds_ratio_95ci_low": 0.0974637094937806,
+        "odds_ratio_95ci_high": 23.831196597707986,
+        "p_one_sided_greater": 0.2280217156697956
+      },
+      "provenance": {
+        "source": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/19426775/scz2022-Extended-Data-Table1.xlsx ST12 Prioritised==YES & biotype==protein_coding",
+        "original_size": 106,
+        "mhc_removed": 0,
+        "post_mhc_size": 106
+      }
+    },
+    {
+      "gene_list": "PGC3_Prioritised_SynGO",
+      "n_list_in_background": 12,
+      "har_union": {
+        "a": 2,
+        "b": 10,
+        "c": 1355,
+        "d": 15767,
+        "odds_ratio_point": 2.3270694407763632,
+        "odds_ratio_scipy": 2.3272324723247233,
+        "odds_ratio_95ci_low": 0.24767298158177853,
+        "odds_ratio_95ci_high": 10.93582389728739,
+        "p_one_sided_greater": 0.24499381052742591,
+        "bh_q": 0.3674907157911389
+      },
+      "har_pollard_only": {
+        "a": 0,
+        "b": 12,
+        "c": 46,
+        "d": 17076,
+        "odds_ratio_point": 0.0,
+        "odds_ratio_scipy": 0.0,
+        "odds_ratio_95ci_low": 0.0,
+        "odds_ratio_95ci_high": 137.96833926655933,
+        "p_one_sided_greater": 1.0
+      },
+      "provenance": {
+        "source": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/19426775/scz2022-Extended-Data-Table1.xlsx ST12 Prioritised & SynGO.GeneSetMemb & protein_coding",
+        "original_size": 14,
+        "mhc_removed": 0,
+        "post_mhc_size": 14
+      }
+    },
+    {
+      "gene_list": "SCHEMA_exome_wide_significant",
+      "n_list_in_background": 9,
+      "har_union": {
+        "a": 0,
+        "b": 9,
+        "c": 1357,
+        "d": 15768,
+        "odds_ratio_point": 0.0,
+        "odds_ratio_scipy": 0.0,
+        "odds_ratio_95ci_low": 0.0,
+        "odds_ratio_95ci_high": 5.8936324372624105,
+        "p_one_sided_greater": 1.0,
+        "bh_q": 1.0
+      },
+      "har_pollard_only": {
+        "a": 0,
+        "b": 9,
+        "c": 46,
+        "d": 17079,
+        "odds_ratio_point": 0.0,
+        "odds_ratio_scipy": 0.0,
+        "odds_ratio_95ci_low": 0.0,
+        "odds_ratio_95ci_high": 193.78744610544967,
+        "p_one_sided_greater": 1.0
+      },
+      "provenance": {
+        "source": "Singh 2022 Table 1 exome-wide significant genes at P<2.5e-6; file experiments/batch_044/input/schema_exome_wide_significant.txt",
+        "original_size": 10,
+        "mhc_removed": 0,
+        "post_mhc_size": 10
+      }
+    }
+  ],
+  "notes": "Underpowered at OR=1.3 (power ~0.47 per brief \u00a7POWER). Reported descriptively."
+}

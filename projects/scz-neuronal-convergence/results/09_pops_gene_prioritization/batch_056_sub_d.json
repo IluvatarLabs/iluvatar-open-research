@@ -1,0 +1,1615 @@
+{
+  "status": "ok",
+  "batch": "056",
+  "sub": "d",
+  "wall_s": 5.245294094085693,
+  "reproduction_gate_R3": {
+    "status": "diagnostic",
+    "target_median_b3": -0.146775,
+    "note": "R3 is a descriptive check. batch_055_B median_b3 was computed on an Entrez-keyed universe of 18298 genes (batch_055_B/output/cross_disorder/adhd_b3_test.json). Sub-D uses an ENSGID-aligned universe which differs in the B3-present count. Recomputed median not guaranteed bit-identical."
+  },
+  "b3_symbol_to_ensg": {
+    "AP3B2": "ENSG00000103723",
+    "ASIC1": "ENSG00000110881",
+    "CNNM2": "ENSG00000148842",
+    "CPNE7": "ENSG00000178773",
+    "CRHR1": "ENSG00000120088",
+    "DTNB": "ENSG00000138101",
+    "EIF5": "ENSG00000100664",
+    "EPN2": "ENSG00000072134",
+    "FGFR1": "ENSG00000077782",
+    "KIF21B": "ENSG00000116852",
+    "MOB4": "ENSG00000115540",
+    "NAE1": "ENSG00000159593",
+    "NEGR1": "ENSG00000172260",
+    "NXPH1": "ENSG00000122584",
+    "OPCML": "ENSG00000183715",
+    "PLK2": "ENSG00000145632",
+    "SRPK2": "ENSG00000135250",
+    "STRN": "ENSG00000115808"
+  },
+  "n_b3_mapped": 18,
+  "b3_unmapped_symbols": [],
+  "b3_biological_category": {
+    "AP3B2": "scaffold",
+    "ASIC1": "ion-channel",
+    "CNNM2": "misc",
+    "CPNE7": "enzyme",
+    "CRHR1": "receptor",
+    "DTNB": "scaffold",
+    "EIF5": "enzyme",
+    "EPN2": "scaffold",
+    "FGFR1": "receptor",
+    "KIF21B": "motor",
+    "MOB4": "scaffold",
+    "NAE1": "enzyme",
+    "NEGR1": "cell-adhesion",
+    "NXPH1": "cell-adhesion",
+    "OPCML": "cell-adhesion",
+    "PLK2": "enzyme",
+    "SRPK2": "enzyme",
+    "STRN": "scaffold"
+  },
+  "disorders": [
+    "scz",
+    "bip",
+    "mdd",
+    "asd",
+    "adhd",
+    "ibd_delange2017",
+    "height",
+    "alzheimers"
+  ],
+  "model": "MAGMA_Z ~ b3 + log10(gene_length) + lof.pLI + log10(lof.exp+1)",
+  "vif_cascade_rule": "per brief_v2 line 237: drop log10_exp_lof_plus1 first, then log10_gene_length, NEVER drop lof_pLI. Threshold VIF > 5.0.",
+  "per_disorder": {
+    "scz": {
+      "disorder": "scz",
+      "n_gene_universe": 16556,
+      "n_b3_in_universe": 18,
+      "magma_rows_input": 17459,
+      "n_entrez_mapped_ensg": -1,
+      "n_unique_ensg": 17459,
+      "status": "ok",
+      "primary_ols_adjusted": {
+        "beta_1": 3.2387014568185397,
+        "se_1": 0.3607145824334618,
+        "t": 8.97857091046758,
+        "p_one_sided": 1.5161715541458193e-19,
+        "p_two_sided": 3.0323431082916387e-19,
+        "ci95_lo": 2.5316621612551895,
+        "ci95_hi": 3.94574075238189,
+        "n": 16556,
+        "n_b3_in_universe": 18,
+        "covariates_used": [
+          "log10_gene_length",
+          "lof_pLI",
+          "log10_exp_lof_plus1"
+        ],
+        "r_squared": 0.029211288544451652,
+        "bh_q": 1.2129372433166555e-18
+      },
+      "unadjusted_ols": {
+        "beta_1": 3.487522100046391,
+        "se_1": 0.3648226201415934,
+        "t": 9.559500720357825,
+        "p_one_sided": 6.726851740315188e-22,
+        "p_two_sided": 1.3453703480630377e-21,
+        "ci95_lo": 2.7724306191542176,
+        "ci95_hi": 4.202613580938564,
+        "n": 16556,
+        "n_b3_in_universe": 18,
+        "covariates_used": [],
+        "r_squared": 0.005490053802659212
+      },
+      "binary_pli_ols": {
+        "beta_1": 3.2307657462587525,
+        "se_1": 0.3608283938552007,
+        "t": 8.953745883854275,
+        "p_one_sided": 1.8972169761173904e-19,
+        "p_two_sided": 3.794433952234781e-19,
+        "ci95_lo": 2.523503368093888,
+        "ci95_hi": 3.938028124423617,
+        "n": 16556,
+        "n_b3_in_universe": 18,
+        "covariates_used": [
+          "log10_gene_length",
+          "pli_bin",
+          "log10_exp_lof_plus1"
+        ],
+        "r_squared": 0.028751635976941636
+      },
+      "huber_rlm": {
+        "status": "ok",
+        "beta_1": 3.359475562827507,
+        "se_1": 0.3326204562946295,
+        "t": 10.100026920327899,
+        "p_one_sided": 2.7613513458854854e-24,
+        "p_two_sided": 5.522702691770971e-24
+      },
+      "attenuation_ratio_abs": 0.928654031117239,
+      "huber_analytical_relative_diff": 0.03729090427729848,
+      "huber_check_skipped": null,
+      "vif_primary_model": {
+        "b3": 1.001312376649384,
+        "log10_gene_length": 1.4352340436452462,
+        "lof_pLI": 1.048365528067207,
+        "log10_exp_lof_plus1": 1.4119255633869163
+      },
+      "vif_cascade_history": [
+        {
+          "active": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1"
+          ],
+          "vif": {
+            "b3": 1.001312376649384,
+            "log10_gene_length": 1.4352340436452462,
+            "lof_pLI": 1.048365528067207,
+            "log10_exp_lof_plus1": 1.4119255633869163
+          }
+        }
+      ],
+      "dropped_covariates": [],
+      "active_covariates_primary": [
+        "log10_gene_length",
+        "lof_pLI",
+        "log10_exp_lof_plus1"
+      ],
+      "covariate_corr_matrix": {
+        "log10_gene_length": {
+          "log10_gene_length": 1.0,
+          "lof_pLI": 0.2044973462793434,
+          "log10_exp_lof_plus1": 0.5374878642027908
+        },
+        "lof_pLI": {
+          "log10_gene_length": 0.2044973462793434,
+          "lof_pLI": 1.0,
+          "log10_exp_lof_plus1": 0.1621211119610318
+        },
+        "log10_exp_lof_plus1": {
+          "log10_gene_length": 0.5374878642027908,
+          "lof_pLI": 0.1621211119610318,
+          "log10_exp_lof_plus1": 1.0
+        }
+      },
+      "category_stratified": {
+        "scaffold": {
+          "beta_1": 3.2005640714570576,
+          "se_1": 0.6849914074175203,
+          "t": 4.6724149190768305,
+          "p_one_sided": 1.5001104571221228e-06,
+          "p_two_sided": 3.0002209142442457e-06,
+          "ci95_lo": 1.8579073956439325,
+          "ci95_hi": 4.543220747270182,
+          "n": 5,
+          "n_b3_in_universe": 5,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1"
+          ],
+          "r_squared": 0.025767933716324243,
+          "status": "ok"
+        },
+        "enzyme": {
+          "beta_1": 2.757267937063127,
+          "se_1": 0.6851436815603456,
+          "t": 4.024364540272381,
+          "p_one_sided": 2.8691744976625758e-05,
+          "p_two_sided": 5.7383489953251516e-05,
+          "ci95_lo": 1.4143127875871147,
+          "ci95_hi": 4.100223086539139,
+          "n": 5,
+          "n_b3_in_universe": 5,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1"
+          ],
+          "r_squared": 0.025436512239331743,
+          "status": "ok"
+        },
+        "cell-adhesion": {
+          "beta_1": 3.416283096165119,
+          "se_1": 0.8851510053902767,
+          "t": 3.859548343007109,
+          "p_one_sided": 5.701405370863639e-05,
+          "p_two_sided": 0.00011402810741727278,
+          "ci95_lo": 1.681292126029401,
+          "ci95_hi": 5.151274066300837,
+          "n": 3,
+          "n_b3_in_universe": 3,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1"
+          ],
+          "r_squared": 0.025360069382496908,
+          "status": "ok"
+        },
+        "receptor": {
+          "n": 2,
+          "status": "n_too_small"
+        },
+        "ion-channel": {
+          "n": 1,
+          "status": "n_too_small"
+        },
+        "motor": {
+          "n": 1,
+          "status": "n_too_small"
+        },
+        "misc": {
+          "n": 1,
+          "status": "n_too_small"
+        }
+      },
+      "category_counts_in_universe": {
+        "scaffold": 5,
+        "enzyme": 5,
+        "cell-adhesion": 3,
+        "receptor": 2,
+        "ion-channel": 1,
+        "motor": 1,
+        "misc": 1
+      }
+    },
+    "bip": {
+      "disorder": "bip",
+      "n_gene_universe": 16050,
+      "n_b3_in_universe": 18,
+      "magma_rows_input": 18208,
+      "n_entrez_mapped_ensg": 16942,
+      "n_unique_ensg": 16942,
+      "status": "ok",
+      "primary_ols_adjusted": {
+        "beta_1": 0.07336362617916672,
+        "se_1": 0.2518229828079859,
+        "t": 0.2913301453311203,
+        "p_one_sided": 0.3854013000614012,
+        "p_two_sided": 0.7708026001228024,
+        "ci95_lo": -0.4202375856751893,
+        "ci95_hi": 0.5669648380335228,
+        "n": 16050,
+        "n_b3_in_universe": 18,
+        "covariates_used": [
+          "log10_gene_length",
+          "lof_pLI",
+          "log10_exp_lof_plus1"
+        ],
+        "r_squared": 0.0005131024178207655,
+        "bh_q": 0.4404586286416014
+      },
+      "unadjusted_ols": {
+        "beta_1": 0.09011860789301697,
+        "se_1": 0.251698132397969,
+        "t": 0.3580424178536501,
+        "p_one_sided": 0.3601581395612228,
+        "p_two_sided": 0.7203162791224456,
+        "ci95_lo": -0.4032378762358505,
+        "ci95_hi": 0.5834750920218844,
+        "n": 16050,
+        "n_b3_in_universe": 18,
+        "covariates_used": [],
+        "r_squared": 7.988119946400474e-06
+      },
+      "binary_pli_ols": {
+        "beta_1": 0.072741149350509,
+        "se_1": 0.251842469810479,
+        "t": 0.28883591161272154,
+        "p_one_sided": 0.3863553403375082,
+        "p_two_sided": 0.7727106806750164,
+        "ci95_lo": -0.420898259208289,
+        "ci95_hi": 0.566380557909307,
+        "n": 16050,
+        "n_b3_in_universe": 18,
+        "covariates_used": [
+          "log10_gene_length",
+          "pli_bin",
+          "log10_exp_lof_plus1"
+        ],
+        "r_squared": 0.0005155035161833466
+      },
+      "huber_rlm": {
+        "status": "ok",
+        "beta_1": 0.18379302232117437,
+        "se_1": 0.2584047746137053,
+        "t": 0.711260163810558,
+        "p_one_sided": 0.23846151618597033,
+        "p_two_sided": 0.47692303237194067
+      },
+      "attenuation_ratio_abs": 0.8140785559654818,
+      "huber_analytical_relative_diff": 1.5052336136210043,
+      "huber_check_skipped": null,
+      "vif_primary_model": {
+        "b3": 1.0013109665414817,
+        "log10_gene_length": 1.461716119061904,
+        "lof_pLI": 1.0477799631386746,
+        "log10_exp_lof_plus1": 1.440469155272918
+      },
+      "vif_cascade_history": [
+        {
+          "active": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1"
+          ],
+          "vif": {
+            "b3": 1.0013109665414817,
+            "log10_gene_length": 1.461716119061904,
+            "lof_pLI": 1.0477799631386746,
+            "log10_exp_lof_plus1": 1.440469155272918
+          }
+        }
+      ],
+      "dropped_covariates": [],
+      "active_covariates_primary": [
+        "log10_gene_length",
+        "lof_pLI",
+        "log10_exp_lof_plus1"
+      ],
+      "covariate_corr_matrix": {
+        "log10_gene_length": {
+          "log10_gene_length": 1.0,
+          "lof_pLI": 0.2025553892309858,
+          "log10_exp_lof_plus1": 0.5502804216767628
+        },
+        "lof_pLI": {
+          "log10_gene_length": 0.2025553892309858,
+          "lof_pLI": 1.0,
+          "log10_exp_lof_plus1": 0.16477507172900327
+        },
+        "log10_exp_lof_plus1": {
+          "log10_gene_length": 0.5502804216767628,
+          "lof_pLI": 0.16477507172900327,
+          "log10_exp_lof_plus1": 1.0
+        }
+      },
+      "category_stratified": {
+        "scaffold": {
+          "beta_1": -0.26821813923612864,
+          "se_1": 0.47735214069999454,
+          "t": -0.5618873707004027,
+          "p_one_sided": 0.7128996962705114,
+          "p_two_sided": 0.574200607458977,
+          "ci95_lo": -1.2038817252339524,
+          "ci95_hi": 0.6674454467616953,
+          "n": 5,
+          "n_b3_in_universe": 5,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1"
+          ],
+          "r_squared": 0.0005274820486805831,
+          "status": "ok"
+        },
+        "enzyme": {
+          "beta_1": -0.28130983190143044,
+          "se_1": 0.47737995633007485,
+          "t": -0.5892786828840472,
+          "p_one_sided": 0.7221586804896925,
+          "p_two_sided": 0.5556826390206151,
+          "ci95_lo": -1.217027939645296,
+          "ci95_hi": 0.6544082758424351,
+          "n": 5,
+          "n_b3_in_universe": 5,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1"
+          ],
+          "r_squared": 0.0005294461891655056,
+          "status": "ok"
+        },
+        "cell-adhesion": {
+          "beta_1": -0.11291638199409099,
+          "se_1": 0.6167262884203826,
+          "t": -0.1830899446224403,
+          "p_one_sided": 0.5726351206015439,
+          "p_two_sided": 0.8547297587969124,
+          "ci95_lo": -1.3217688860518988,
+          "ci95_hi": 1.0959361220637167,
+          "n": 3,
+          "n_b3_in_universe": 3,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1"
+          ],
+          "r_squared": 0.0005099036100822962,
+          "status": "ok"
+        },
+        "receptor": {
+          "n": 2,
+          "status": "n_too_small"
+        },
+        "ion-channel": {
+          "n": 1,
+          "status": "n_too_small"
+        },
+        "motor": {
+          "n": 1,
+          "status": "n_too_small"
+        },
+        "misc": {
+          "n": 1,
+          "status": "n_too_small"
+        }
+      },
+      "category_counts_in_universe": {
+        "scaffold": 5,
+        "enzyme": 5,
+        "cell-adhesion": 3,
+        "receptor": 2,
+        "ion-channel": 1,
+        "motor": 1,
+        "misc": 1
+      }
+    },
+    "mdd": {
+      "disorder": "mdd",
+      "n_gene_universe": 16725,
+      "n_b3_in_universe": 18,
+      "magma_rows_input": 18469,
+      "n_entrez_mapped_ensg": 17748,
+      "n_unique_ensg": 17748,
+      "status": "ok",
+      "primary_ols_adjusted": {
+        "beta_1": 1.1001393075344077,
+        "se_1": 0.30203947097005,
+        "t": 3.6423693367000256,
+        "p_one_sided": 0.00013547827679725175,
+        "p_two_sided": 0.0002709565535945035,
+        "ci95_lo": 0.5081099654340236,
+        "ci95_hi": 1.6921686496347919,
+        "n": 16725,
+        "n_b3_in_universe": 18,
+        "covariates_used": [
+          "log10_gene_length",
+          "lof_pLI",
+          "log10_exp_lof_plus1"
+        ],
+        "r_squared": 0.011566838751434383,
+        "bh_q": 0.0003612754047926713
+      },
+      "unadjusted_ols": {
+        "beta_1": 1.241194561191973,
+        "se_1": 0.3034234246488673,
+        "t": 4.090635265317201,
+        "p_one_sided": 2.1610414394621165e-05,
+        "p_two_sided": 4.322082878924233e-05,
+        "ci95_lo": 0.6464525310764663,
+        "ci95_hi": 1.8359365913074797,
+        "n": 16725,
+        "n_b3_in_universe": 18,
+        "covariates_used": [],
+        "r_squared": 0.0009996155002647278
+      },
+      "binary_pli_ols": {
+        "beta_1": 1.0949071406460718,
+        "se_1": 0.3020789134835738,
+        "t": 3.624573221677751,
+        "p_one_sided": 0.0001451489320672136,
+        "p_two_sided": 0.0002902978641344272,
+        "ci95_lo": 0.5028004870431305,
+        "ci95_hi": 1.687013794249013,
+        "n": 16725,
+        "n_b3_in_universe": 18,
+        "covariates_used": [
+          "log10_gene_length",
+          "pli_bin",
+          "log10_exp_lof_plus1"
+        ],
+        "r_squared": 0.011465179619404742
+      },
+      "huber_rlm": {
+        "status": "ok",
+        "beta_1": 1.0357035012593354,
+        "se_1": 0.2906492286234783,
+        "t": 3.563413899856029,
+        "p_one_sided": 0.00018303139973107547,
+        "p_two_sided": 0.00036606279946215095
+      },
+      "attenuation_ratio_abs": 0.8863552435146801,
+      "huber_analytical_relative_diff": 0.05857058813713645,
+      "huber_check_skipped": null,
+      "vif_primary_model": {
+        "b3": 1.001312462988739,
+        "log10_gene_length": 1.4555821762402728,
+        "lof_pLI": 1.0469157632328485,
+        "log10_exp_lof_plus1": 1.4312606851895544
+      },
+      "vif_cascade_history": [
+        {
+          "active": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1"
+          ],
+          "vif": {
+            "b3": 1.001312462988739,
+            "log10_gene_length": 1.4555821762402728,
+            "lof_pLI": 1.0469157632328485,
+            "log10_exp_lof_plus1": 1.4312606851895544
+          }
+        }
+      ],
+      "dropped_covariates": [],
+      "active_covariates_primary": [
+        "log10_gene_length",
+        "lof_pLI",
+        "log10_exp_lof_plus1"
+      ],
+      "covariate_corr_matrix": {
+        "log10_gene_length": {
+          "log10_gene_length": 1.0,
+          "lof_pLI": 0.20274975853471336,
+          "log10_exp_lof_plus1": 0.546761295743216
+        },
+        "lof_pLI": {
+          "log10_gene_length": 0.20274975853471336,
+          "lof_pLI": 1.0,
+          "log10_exp_lof_plus1": 0.1584012613543118
+        },
+        "log10_exp_lof_plus1": {
+          "log10_gene_length": 0.546761295743216,
+          "lof_pLI": 0.1584012613543118,
+          "log10_exp_lof_plus1": 1.0
+        }
+      },
+      "category_stratified": {
+        "scaffold": {
+          "beta_1": 0.49604950868229974,
+          "se_1": 0.5727701686594131,
+          "t": 0.8660533243959256,
+          "p_one_sided": 0.1932366733950598,
+          "p_two_sided": 0.3864733467901196,
+          "ci95_lo": -0.6266406650128558,
+          "ci95_hi": 1.6187396823774554,
+          "n": 5,
+          "n_b3_in_universe": 5,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1"
+          ],
+          "r_squared": 0.01082691822684223,
+          "status": "ok"
+        },
+        "enzyme": {
+          "beta_1": 1.0288525925473861,
+          "se_1": 0.5727576096346881,
+          "t": 1.7963141392457467,
+          "p_one_sided": 0.03623130767829427,
+          "p_two_sided": 0.07246261535658854,
+          "ci95_lo": -0.09381296412959794,
+          "ci95_hi": 2.15151814922437,
+          "n": 5,
+          "n_b3_in_universe": 5,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1"
+          ],
+          "r_squared": 0.010973413946668842,
+          "status": "ok"
+        },
+        "cell-adhesion": {
+          "beta_1": 3.2741529481790375,
+          "se_1": 0.7395584481145959,
+          "t": 4.427172668402405,
+          "p_one_sided": 4.804055653392116e-06,
+          "p_two_sided": 9.608111306784233e-06,
+          "ci95_lo": 1.8245400877278246,
+          "ci95_hi": 4.72376580863025,
+          "n": 3,
+          "n_b3_in_universe": 3,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1"
+          ],
+          "r_squared": 0.011940787392642926,
+          "status": "ok"
+        },
+        "receptor": {
+          "n": 2,
+          "status": "n_too_small"
+        },
+        "ion-channel": {
+          "n": 1,
+          "status": "n_too_small"
+        },
+        "motor": {
+          "n": 1,
+          "status": "n_too_small"
+        },
+        "misc": {
+          "n": 1,
+          "status": "n_too_small"
+        }
+      },
+      "category_counts_in_universe": {
+        "scaffold": 5,
+        "enzyme": 5,
+        "cell-adhesion": 3,
+        "receptor": 2,
+        "ion-channel": 1,
+        "motor": 1,
+        "misc": 1
+      }
+    },
+    "asd": {
+      "disorder": "asd",
+      "n_gene_universe": 16677,
+      "n_b3_in_universe": 18,
+      "magma_rows_input": 18356,
+      "n_entrez_mapped_ensg": 17655,
+      "n_unique_ensg": 17655,
+      "status": "ok",
+      "primary_ols_adjusted": {
+        "beta_1": 1.1024344052408588,
+        "se_1": 0.2570851234502787,
+        "t": 4.288207697300206,
+        "p_one_sided": 9.056676100662744e-06,
+        "p_two_sided": 1.811335220132549e-05,
+        "ci95_lo": 0.598520238873908,
+        "ci95_hi": 1.6063485716078096,
+        "n": 16677,
+        "n_b3_in_universe": 18,
+        "covariates_used": [
+          "log10_gene_length",
+          "lof_pLI",
+          "log10_exp_lof_plus1"
+        ],
+        "r_squared": 0.004998027407339678,
+        "bh_q": 3.622670440265098e-05
+      },
+      "unadjusted_ols": {
+        "beta_1": 1.1688203493042468,
+        "se_1": 0.2573786769632847,
+        "t": 4.54124779525143,
+        "p_one_sided": 2.8156934496440646e-06,
+        "p_two_sided": 5.631386899288129e-06,
+        "ci95_lo": 0.6643307934410556,
+        "ci95_hi": 1.673309905167438,
+        "n": 16677,
+        "n_b3_in_universe": 18,
+        "covariates_used": [],
+        "r_squared": 0.0012352298337350298
+      },
+      "binary_pli_ols": {
+        "beta_1": 1.1019611069303699,
+        "se_1": 0.2571348600386012,
+        "t": 4.285537584304762,
+        "p_one_sided": 9.166026143761032e-06,
+        "p_two_sided": 1.8332052287522063e-05,
+        "ci95_lo": 0.597949451564032,
+        "ci95_hi": 1.6059727622967077,
+        "n": 16677,
+        "n_b3_in_universe": 18,
+        "covariates_used": [
+          "log10_gene_length",
+          "pli_bin",
+          "log10_exp_lof_plus1"
+        ],
+        "r_squared": 0.0047703576937787595
+      },
+      "huber_rlm": {
+        "status": "ok",
+        "beta_1": 0.8253028892774282,
+        "se_1": 0.2592069650165755,
+        "t": 3.183953368014832,
+        "p_one_sided": 0.0007263920707717937,
+        "p_two_sided": 0.0014527841415435873
+      },
+      "attenuation_ratio_abs": 0.9432026109890156,
+      "huber_analytical_relative_diff": 0.2513814106725771,
+      "huber_check_skipped": null,
+      "vif_primary_model": {
+        "b3": 1.0013130971983721,
+        "log10_gene_length": 1.4554070447038854,
+        "lof_pLI": 1.0474733978669446,
+        "log10_exp_lof_plus1": 1.4316374617153036
+      },
+      "vif_cascade_history": [
+        {
+          "active": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1"
+          ],
+          "vif": {
+            "b3": 1.0013130971983721,
+            "log10_gene_length": 1.4554070447038854,
+            "lof_pLI": 1.0474733978669446,
+            "log10_exp_lof_plus1": 1.4316374617153036
+          }
+        }
+      ],
+      "dropped_covariates": [],
+      "active_covariates_primary": [
+        "log10_gene_length",
+        "lof_pLI",
+        "log10_exp_lof_plus1"
+      ],
+      "covariate_corr_matrix": {
+        "log10_gene_length": {
+          "log10_gene_length": 1.0,
+          "lof_pLI": 0.2034273148352466,
+          "log10_exp_lof_plus1": 0.5467740594772389
+        },
+        "lof_pLI": {
+          "log10_gene_length": 0.2034273148352466,
+          "lof_pLI": 1.0,
+          "log10_exp_lof_plus1": 0.16045554579550925
+        },
+        "log10_exp_lof_plus1": {
+          "log10_gene_length": 0.5467740594772389,
+          "lof_pLI": 0.16045554579550925,
+          "log10_exp_lof_plus1": 1.0
+        }
+      },
+      "category_stratified": {
+        "scaffold": {
+          "beta_1": 0.24887343669016826,
+          "se_1": 0.4876031110508455,
+          "t": 0.5104016587462188,
+          "p_one_sided": 0.30488842619867174,
+          "p_two_sided": 0.6097768523973435,
+          "ci95_lo": -0.7068804860786839,
+          "ci95_hi": 1.2046273594590204,
+          "n": 5,
+          "n_b3_in_universe": 5,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1"
+          ],
+          "r_squared": 0.003916133918812736,
+          "status": "ok"
+        },
+        "enzyme": {
+          "beta_1": 1.3331121701561097,
+          "se_1": 0.48752314051632173,
+          "t": 2.734459268424159,
+          "p_one_sided": 0.0031274406077303066,
+          "p_two_sided": 0.006254881215460613,
+          "ci95_lo": 0.3775149981346272,
+          "ci95_hi": 2.2887093421775924,
+          "n": 5,
+          "n_b3_in_universe": 5,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1"
+          ],
+          "r_squared": 0.00434711240410024,
+          "status": "ok"
+        },
+        "cell-adhesion": {
+          "beta_1": 0.7882513594373506,
+          "se_1": 0.6299239568641886,
+          "t": 1.251343675451444,
+          "p_one_sided": 0.10541333759020108,
+          "p_two_sided": 0.21082667518040216,
+          "ci95_lo": -0.44646654775878636,
+          "ci95_hi": 2.0229692666334875,
+          "n": 3,
+          "n_b3_in_universe": 3,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1"
+          ],
+          "r_squared": 0.00399411599066446,
+          "status": "ok"
+        },
+        "receptor": {
+          "n": 2,
+          "status": "n_too_small"
+        },
+        "ion-channel": {
+          "n": 1,
+          "status": "n_too_small"
+        },
+        "motor": {
+          "n": 1,
+          "status": "n_too_small"
+        },
+        "misc": {
+          "n": 1,
+          "status": "n_too_small"
+        }
+      },
+      "category_counts_in_universe": {
+        "scaffold": 5,
+        "enzyme": 5,
+        "cell-adhesion": 3,
+        "receptor": 2,
+        "ion-channel": 1,
+        "motor": 1,
+        "misc": 1
+      }
+    },
+    "adhd": {
+      "disorder": "adhd",
+      "n_gene_universe": 16660,
+      "n_b3_in_universe": 18,
+      "magma_rows_input": 18298,
+      "n_entrez_mapped_ensg": 17616,
+      "n_unique_ensg": 17616,
+      "status": "ok",
+      "primary_ols_adjusted": {
+        "beta_1": -0.11076843492950404,
+        "se_1": 0.2865327937889377,
+        "t": -0.38658205039907906,
+        "p_one_sided": 0.6504647064349672,
+        "p_two_sided": 0.6990705871300655,
+        "ci95_lo": -0.672403206640161,
+        "ci95_hi": 0.45086633678115284,
+        "n": 16660,
+        "n_b3_in_universe": 18,
+        "covariates_used": [
+          "log10_gene_length",
+          "lof_pLI",
+          "log10_exp_lof_plus1"
+        ],
+        "r_squared": 0.006369916692473776,
+        "bh_q": 0.6504647064349672
+      },
+      "unadjusted_ols": {
+        "beta_1": -0.14162909031288606,
+        "se_1": 0.28723311390185385,
+        "t": -0.4930806493337674,
+        "p_one_sided": 0.689018948607623,
+        "p_two_sided": 0.621962102784754,
+        "ci95_lo": -0.7046365566113114,
+        "ci95_hi": 0.4213783759855393,
+        "n": 16660,
+        "n_b3_in_universe": 18,
+        "covariates_used": [],
+        "r_squared": 1.4595088140278989e-05
+      },
+      "binary_pli_ols": {
+        "beta_1": -0.11274641350988696,
+        "se_1": 0.28655403408766084,
+        "t": -0.3934560330614514,
+        "p_one_sided": 0.6530061361367459,
+        "p_two_sided": 0.6939877277265083,
+        "ci95_lo": -0.674422818466661,
+        "ci95_hi": 0.4489299914468871,
+        "n": 16660,
+        "n_b3_in_universe": 18,
+        "covariates_used": [
+          "log10_gene_length",
+          "pli_bin",
+          "log10_exp_lof_plus1"
+        ],
+        "r_squared": 0.006378157596909406
+      },
+      "huber_rlm": {
+        "status": "ok",
+        "beta_1": -0.08955492942910825,
+        "se_1": 0.2591937280310131,
+        "t": -0.34551348950231087,
+        "p_one_sided": 0.6351458145848037,
+        "p_two_sided": 0.7297083708303925
+      },
+      "attenuation_ratio_abs": 0.782102283399513,
+      "huber_analytical_relative_diff": 0.19151218949601143,
+      "huber_check_skipped": null,
+      "vif_primary_model": {
+        "b3": 1.0013141758153585,
+        "log10_gene_length": 1.4569482377532785,
+        "lof_pLI": 1.047775827806014,
+        "log10_exp_lof_plus1": 1.4333329543898887
+      },
+      "vif_cascade_history": [
+        {
+          "active": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1"
+          ],
+          "vif": {
+            "b3": 1.0013141758153585,
+            "log10_gene_length": 1.4569482377532785,
+            "lof_pLI": 1.047775827806014,
+            "log10_exp_lof_plus1": 1.4333329543898887
+          }
+        }
+      ],
+      "dropped_covariates": [],
+      "active_covariates_primary": [
+        "log10_gene_length",
+        "lof_pLI",
+        "log10_exp_lof_plus1"
+      ],
+      "covariate_corr_matrix": {
+        "log10_gene_length": {
+          "log10_gene_length": 1.0,
+          "lof_pLI": 0.20388928171332746,
+          "log10_exp_lof_plus1": 0.5474744078530449
+        },
+        "lof_pLI": {
+          "log10_gene_length": 0.20388928171332746,
+          "lof_pLI": 1.0,
+          "log10_exp_lof_plus1": 0.16142873607502553
+        },
+        "log10_exp_lof_plus1": {
+          "log10_gene_length": 0.5474744078530449,
+          "lof_pLI": 0.16142873607502553,
+          "log10_exp_lof_plus1": 1.0
+        }
+      },
+      "category_stratified": {
+        "scaffold": {
+          "beta_1": -0.11407095705864072,
+          "se_1": 0.5431612125310039,
+          "t": -0.21001307609410622,
+          "p_one_sided": 0.5831699818702767,
+          "p_two_sided": 0.8336600362594467,
+          "ci95_lo": -1.1787247426446712,
+          "ci95_hi": 0.9505828285273898,
+          "n": 5,
+          "n_b3_in_universe": 5,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1"
+          ],
+          "r_squared": 0.006363632159053334,
+          "status": "ok"
+        },
+        "enzyme": {
+          "beta_1": -0.1631429197483824,
+          "se_1": 0.5431891938945872,
+          "t": -0.3003427195940175,
+          "p_one_sided": 0.6180402502423223,
+          "p_two_sided": 0.7639194995153553,
+          "ci95_lo": -1.2278515517851123,
+          "ci95_hi": 0.9015657122883474,
+          "n": 5,
+          "n_b3_in_universe": 5,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1"
+          ],
+          "r_squared": 0.006366382482921318,
+          "status": "ok"
+        },
+        "cell-adhesion": {
+          "beta_1": -0.37858999620138173,
+          "se_1": 0.7017216695435129,
+          "t": -0.5395158973039321,
+          "p_one_sided": 0.7052309284351774,
+          "p_two_sided": 0.589538143129645,
+          "ci95_lo": -1.7540391532315447,
+          "ci95_hi": 0.9968591608287813,
+          "n": 3,
+          "n_b3_in_universe": 3,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1"
+          ],
+          "r_squared": 0.006378366231959198,
+          "status": "ok"
+        },
+        "receptor": {
+          "n": 2,
+          "status": "n_too_small"
+        },
+        "ion-channel": {
+          "n": 1,
+          "status": "n_too_small"
+        },
+        "motor": {
+          "n": 1,
+          "status": "n_too_small"
+        },
+        "misc": {
+          "n": 1,
+          "status": "n_too_small"
+        }
+      },
+      "category_counts_in_universe": {
+        "scaffold": 5,
+        "enzyme": 5,
+        "cell-adhesion": 3,
+        "receptor": 2,
+        "ion-channel": 1,
+        "motor": 1,
+        "misc": 1
+      }
+    },
+    "ibd_delange2017": {
+      "disorder": "ibd_delange2017",
+      "n_gene_universe": 16384,
+      "n_b3_in_universe": 18,
+      "magma_rows_input": 17920,
+      "n_entrez_mapped_ensg": 17264,
+      "n_unique_ensg": 17264,
+      "status": "ok",
+      "primary_ols_adjusted": {
+        "beta_1": 0.606751757070729,
+        "se_1": 0.33850033572688665,
+        "t": 1.7924701781101824,
+        "p_one_sided": 0.03653806504449513,
+        "p_two_sided": 0.07307613008899026,
+        "ci95_lo": -0.05674574035420299,
+        "ci95_hi": 1.2702492544956612,
+        "n": 16384,
+        "n_b3_in_universe": 18,
+        "covariates_used": [
+          "log10_gene_length",
+          "lof_pLI",
+          "log10_exp_lof_plus1"
+        ],
+        "r_squared": 0.0062383212673018384,
+        "bh_q": 0.07307613008899026
+      },
+      "unadjusted_ols": {
+        "beta_1": 0.6383274313323549,
+        "se_1": 0.33927047647804226,
+        "t": 1.8814706129422605,
+        "p_one_sided": 0.02996282287343261,
+        "p_two_sided": 0.05992564574686522,
+        "ci95_lo": -0.02667961678023245,
+        "ci95_hi": 1.3033344794449424,
+        "n": 16384,
+        "n_b3_in_universe": 18,
+        "covariates_used": [],
+        "r_squared": 0.00021603997683816711
+      },
+      "binary_pli_ols": {
+        "beta_1": 0.6007215054479421,
+        "se_1": 0.3385381110095303,
+        "t": 1.7744575452866251,
+        "p_one_sided": 0.0380030348846127,
+        "p_two_sided": 0.0760060697692254,
+        "ci95_lo": -0.06285003564210112,
+        "ci95_hi": 1.2642930465379854,
+        "n": 16384,
+        "n_b3_in_universe": 18,
+        "covariates_used": [
+          "log10_gene_length",
+          "pli_bin",
+          "log10_exp_lof_plus1"
+        ],
+        "r_squared": 0.006173559725430211
+      },
+      "huber_rlm": {
+        "status": "ok",
+        "beta_1": 0.4368683524880778,
+        "se_1": 0.3046341565181492,
+        "t": 1.4340754086190284,
+        "p_one_sided": 0.07577537233512022,
+        "p_two_sided": 0.15155074467024043
+      },
+      "attenuation_ratio_abs": 0.9505337343944013,
+      "huber_analytical_relative_diff": 0.2799883191155686,
+      "huber_check_skipped": null,
+      "vif_primary_model": {
+        "b3": 1.0013143743983584,
+        "log10_gene_length": 1.4541080074227208,
+        "lof_pLI": 1.0482991361846046,
+        "log10_exp_lof_plus1": 1.430630356961477
+      },
+      "vif_cascade_history": [
+        {
+          "active": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1"
+          ],
+          "vif": {
+            "b3": 1.0013143743983584,
+            "log10_gene_length": 1.4541080074227208,
+            "lof_pLI": 1.0482991361846046,
+            "log10_exp_lof_plus1": 1.430630356961477
+          }
+        }
+      ],
+      "dropped_covariates": [],
+      "active_covariates_primary": [
+        "log10_gene_length",
+        "lof_pLI",
+        "log10_exp_lof_plus1"
+      ],
+      "covariate_corr_matrix": {
+        "log10_gene_length": {
+          "log10_gene_length": 1.0,
+          "lof_pLI": 0.20469897763053013,
+          "log10_exp_lof_plus1": 0.5461686134891984
+        },
+        "lof_pLI": {
+          "log10_gene_length": 0.20469897763053013,
+          "lof_pLI": 1.0,
+          "log10_exp_lof_plus1": 0.16263861223865622
+        },
+        "log10_exp_lof_plus1": {
+          "log10_gene_length": 0.5461686134891984,
+          "lof_pLI": 0.16263861223865622,
+          "log10_exp_lof_plus1": 1.0
+        }
+      },
+      "category_stratified": {
+        "scaffold": {
+          "beta_1": 0.1020939990012315,
+          "se_1": 0.6417286068810187,
+          "t": 0.15909217371099757,
+          "p_one_sided": 0.43679910785272985,
+          "p_two_sided": 0.8735982157054597,
+          "ci95_lo": -1.1557639105846595,
+          "ci95_hi": 1.3599519085871226,
+          "n": 5,
+          "n_b3_in_universe": 5,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1"
+          ],
+          "r_squared": 0.006044918214106909,
+          "status": "ok"
+        },
+        "enzyme": {
+          "beta_1": -0.32490108146778673,
+          "se_1": 0.641759959327466,
+          "t": -0.5062657411787854,
+          "p_one_sided": 0.6936615381843776,
+          "p_two_sided": 0.6126769236312448,
+          "ci95_lo": -1.5828204452608388,
+          "ci95_hi": 0.9330182823252654,
+          "n": 5,
+          "n_b3_in_universe": 5,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1"
+          ],
+          "r_squared": 0.006058935843045399,
+          "status": "ok"
+        },
+        "cell-adhesion": {
+          "beta_1": 0.27588608808229076,
+          "se_1": 0.8290759767851765,
+          "t": 0.3327633363012955,
+          "p_one_sided": 0.3696585973327614,
+          "p_two_sided": 0.7393171946655228,
+          "ci95_lo": -1.3491930557562148,
+          "ci95_hi": 1.9009652319207961,
+          "n": 3,
+          "n_b3_in_universe": 3,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1"
+          ],
+          "r_squared": 0.00605010193597888,
+          "status": "ok"
+        },
+        "receptor": {
+          "n": 2,
+          "status": "n_too_small"
+        },
+        "ion-channel": {
+          "n": 1,
+          "status": "n_too_small"
+        },
+        "motor": {
+          "n": 1,
+          "status": "n_too_small"
+        },
+        "misc": {
+          "n": 1,
+          "status": "n_too_small"
+        }
+      },
+      "category_counts_in_universe": {
+        "scaffold": 5,
+        "enzyme": 5,
+        "cell-adhesion": 3,
+        "receptor": 2,
+        "ion-channel": 1,
+        "motor": 1,
+        "misc": 1
+      }
+    },
+    "height": {
+      "disorder": "height",
+      "n_gene_universe": 16707,
+      "n_b3_in_universe": 18,
+      "magma_rows_input": 19318,
+      "n_entrez_mapped_ensg": 17780,
+      "n_unique_ensg": 17780,
+      "status": "ok",
+      "primary_ols_adjusted": {
+        "beta_1": 0.2903393442903123,
+        "se_1": 0.2689381867668973,
+        "t": 1.0795764922069786,
+        "p_one_sided": 0.14017320188421434,
+        "p_two_sided": 0.2803464037684287,
+        "ci95_lo": -0.23680801723978417,
+        "ci95_hi": 0.8174867058204087,
+        "n": 16707,
+        "n_b3_in_universe": 18,
+        "covariates_used": [
+          "log10_gene_length",
+          "lof_pLI",
+          "log10_exp_lof_plus1"
+        ],
+        "r_squared": 0.007948678104980456,
+        "bh_q": 0.22427712301474295
+      },
+      "unadjusted_ols": {
+        "beta_1": 0.37102920046362803,
+        "se_1": 0.26979688941650465,
+        "t": 1.3752167464423353,
+        "p_one_sided": 0.08454134996117493,
+        "p_two_sided": 0.16908269992234987,
+        "ci95_lo": -0.15780130242491636,
+        "ci95_hi": 0.8998597033521725,
+        "n": 16707,
+        "n_b3_in_universe": 18,
+        "covariates_used": [],
+        "r_squared": 0.00011320006066217747
+      },
+      "binary_pli_ols": {
+        "beta_1": 0.2889820758958394,
+        "se_1": 0.26897604080971127,
+        "t": 1.0743785023599242,
+        "p_one_sided": 0.14133429721634863,
+        "p_two_sided": 0.28266859443269726,
+        "ci95_lo": -0.23823948357182972,
+        "ci95_hi": 0.8162036353635085,
+        "n": 16707,
+        "n_b3_in_universe": 18,
+        "covariates_used": [
+          "log10_gene_length",
+          "pli_bin",
+          "log10_exp_lof_plus1"
+        ],
+        "r_squared": 0.0078264200852457
+      },
+      "huber_rlm": {
+        "status": "ok",
+        "beta_1": 0.3729566138455531,
+        "se_1": 0.2597622763409811,
+        "t": 1.4357612625629508,
+        "p_one_sided": 0.07553514305927236,
+        "p_two_sided": 0.15107028611854473
+      },
+      "attenuation_ratio_abs": 0.7825242431795452,
+      "huber_analytical_relative_diff": 0.28455416456624383,
+      "huber_check_skipped": null,
+      "vif_primary_model": {
+        "b3": 1.0013127881383508,
+        "log10_gene_length": 1.4566409701091552,
+        "lof_pLI": 1.0466593953894314,
+        "log10_exp_lof_plus1": 1.4320843247274773
+      },
+      "vif_cascade_history": [
+        {
+          "active": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1"
+          ],
+          "vif": {
+            "b3": 1.0013127881383508,
+            "log10_gene_length": 1.4566409701091552,
+            "lof_pLI": 1.0466593953894314,
+            "log10_exp_lof_plus1": 1.4320843247274773
+          }
+        }
+      ],
+      "dropped_covariates": [],
+      "active_covariates_primary": [
+        "log10_gene_length",
+        "lof_pLI",
+        "log10_exp_lof_plus1"
+      ],
+      "covariate_corr_matrix": {
+        "log10_gene_length": {
+          "log10_gene_length": 1.0,
+          "lof_pLI": 0.20243160664632784,
+          "log10_exp_lof_plus1": 0.5472007804483884
+        },
+        "lof_pLI": {
+          "log10_gene_length": 0.20243160664632784,
+          "lof_pLI": 1.0,
+          "log10_exp_lof_plus1": 0.15751550279507762
+        },
+        "log10_exp_lof_plus1": {
+          "log10_gene_length": 0.5472007804483884,
+          "lof_pLI": 0.15751550279507762,
+          "log10_exp_lof_plus1": 1.0
+        }
+      },
+      "category_stratified": {
+        "scaffold": {
+          "beta_1": 0.7137660243558247,
+          "se_1": 0.5097955910201228,
+          "t": 1.400102387954255,
+          "p_one_sided": 0.08075061752714682,
+          "p_two_sided": 0.16150123505429365,
+          "ci95_lo": -0.2854873875773144,
+          "ci95_hi": 1.7130194362889637,
+          "n": 5,
+          "n_b3_in_universe": 5,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1"
+          ],
+          "r_squared": 0.007995881502321667,
+          "status": "ok"
+        },
+        "enzyme": {
+          "beta_1": 0.2802525394429794,
+          "se_1": 0.509847585178392,
+          "t": 0.5496790562319149,
+          "p_one_sided": 0.2912734370155667,
+          "p_two_sided": 0.5825468740311334,
+          "ci95_lo": -0.7191027865532984,
+          "ci95_hi": 1.279607865439257,
+          "n": 5,
+          "n_b3_in_universe": 5,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1"
+          ],
+          "r_squared": 0.00789739918955945,
+          "status": "ok"
+        },
+        "cell-adhesion": {
+          "beta_1": -0.38646802160894517,
+          "se_1": 0.6586486156210792,
+          "t": -0.5867590281724365,
+          "p_one_sided": 0.7213132560187322,
+          "p_two_sided": 0.5573734879625356,
+          "ci95_lo": -1.6774891446190558,
+          "ci95_hi": 0.9045531014011656,
+          "n": 3,
+          "n_b3_in_universe": 3,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1"
+          ],
+          "r_squared": 0.007899902209639431,
+          "status": "ok"
+        },
+        "receptor": {
+          "n": 2,
+          "status": "n_too_small"
+        },
+        "ion-channel": {
+          "n": 1,
+          "status": "n_too_small"
+        },
+        "motor": {
+          "n": 1,
+          "status": "n_too_small"
+        },
+        "misc": {
+          "n": 1,
+          "status": "n_too_small"
+        }
+      },
+      "category_counts_in_universe": {
+        "scaffold": 5,
+        "enzyme": 5,
+        "cell-adhesion": 3,
+        "receptor": 2,
+        "ion-channel": 1,
+        "motor": 1,
+        "misc": 1
+      }
+    },
+    "alzheimers": {
+      "disorder": "alzheimers",
+      "n_gene_universe": 16713,
+      "n_b3_in_universe": 18,
+      "magma_rows_input": 18464,
+      "n_entrez_mapped_ensg": 17748,
+      "n_unique_ensg": 17748,
+      "status": "ok",
+      "primary_ols_adjusted": {
+        "beta_1": 0.16854035353115715,
+        "se_1": 0.25569157436943674,
+        "t": 0.6591548976410193,
+        "p_one_sided": 0.25490269513860503,
+        "p_two_sided": 0.5098053902772101,
+        "ci95_lo": -0.33264223012031213,
+        "ci95_hi": 0.6697229371826264,
+        "n": 16713,
+        "n_b3_in_universe": 18,
+        "covariates_used": [
+          "log10_gene_length",
+          "lof_pLI",
+          "log10_exp_lof_plus1"
+        ],
+        "r_squared": 0.004118795419441712,
+        "bh_q": 0.3398702601848067
+      },
+      "unadjusted_ols": {
+        "beta_1": 0.16442495197426754,
+        "se_1": 0.2560255410435867,
+        "t": 0.6422208944625382,
+        "p_one_sided": 0.2603692890444062,
+        "p_two_sided": 0.5207385780888124,
+        "ci95_lo": -0.3374122352250716,
+        "ci95_hi": 0.6662621391736067,
+        "n": 16713,
+        "n_b3_in_universe": 18,
+        "covariates_used": [],
+        "r_squared": 2.4680599474025122e-05
+      },
+      "binary_pli_ols": {
+        "beta_1": 0.1681789827745456,
+        "se_1": 0.25571500434304983,
+        "t": 0.657681324592624,
+        "p_one_sided": 0.25537599278433487,
+        "p_two_sided": 0.5107519855686697,
+        "ci95_lo": -0.333049526108286,
+        "ci95_hi": 0.6694074916573771,
+        "n": 16713,
+        "n_b3_in_universe": 18,
+        "covariates_used": [
+          "log10_gene_length",
+          "pli_bin",
+          "log10_exp_lof_plus1"
+        ],
+        "r_squared": 0.004094438800304245
+      },
+      "huber_rlm": {
+        "status": "ok",
+        "beta_1": 0.2273989094968182,
+        "se_1": 0.23828107495512935,
+        "t": 0.9543305507566626,
+        "p_one_sided": 0.1699581741534691,
+        "p_two_sided": 0.3399163483069382
+      },
+      "attenuation_ratio_abs": 1.0250290573752678,
+      "huber_analytical_relative_diff": 0.34922530262036144,
+      "huber_check_skipped": null,
+      "vif_primary_model": {
+        "b3": 1.0013133858982146,
+        "log10_gene_length": 1.456435991460667,
+        "lof_pLI": 1.0471237343305466,
+        "log10_exp_lof_plus1": 1.4322679339398894
+      },
+      "vif_cascade_history": [
+        {
+          "active": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1"
+          ],
+          "vif": {
+            "b3": 1.0013133858982146,
+            "log10_gene_length": 1.456435991460667,
+            "lof_pLI": 1.0471237343305466,
+            "log10_exp_lof_plus1": 1.4322679339398894
+          }
+        }
+      ],
+      "dropped_covariates": [],
+      "active_covariates_primary": [
+        "log10_gene_length",
+        "lof_pLI",
+        "log10_exp_lof_plus1"
+      ],
+      "covariate_corr_matrix": {
+        "log10_gene_length": {
+          "log10_gene_length": 1.0,
+          "lof_pLI": 0.20304186433365162,
+          "log10_exp_lof_plus1": 0.547164896587676
+        },
+        "lof_pLI": {
+          "log10_gene_length": 0.20304186433365162,
+          "lof_pLI": 1.0,
+          "log10_exp_lof_plus1": 0.15914259926282814
+        },
+        "log10_exp_lof_plus1": {
+          "log10_gene_length": 0.547164896587676,
+          "lof_pLI": 0.15914259926282814,
+          "log10_exp_lof_plus1": 1.0
+        }
+      },
+      "category_stratified": {
+        "scaffold": {
+          "beta_1": 0.05962515289070202,
+          "se_1": 0.48470301676171845,
+          "t": 0.12301378540834199,
+          "p_one_sided": 0.45104883064804924,
+          "p_two_sided": 0.9020976612960985,
+          "ci95_lo": -0.8904441282085217,
+          "ci95_hi": 1.0096944339899256,
+          "n": 5,
+          "n_b3_in_universe": 5,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1"
+          ],
+          "r_squared": 0.004093799897470496,
+          "status": "ok"
+        },
+        "enzyme": {
+          "beta_1": 0.43085365262590886,
+          "se_1": 0.48471713456894067,
+          "t": 0.8888764640207476,
+          "p_one_sided": 0.1870411362432719,
+          "p_two_sided": 0.3740822724865438,
+          "ci95_lo": -0.5192433008716588,
+          "ci95_hi": 1.3809506061234764,
+          "n": 5,
+          "n_b3_in_universe": 5,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1"
+          ],
+          "r_squared": 0.004139990938490379,
+          "status": "ok"
+        },
+        "cell-adhesion": {
+          "beta_1": -0.004307653742304921,
+          "se_1": 0.6262006332722749,
+          "t": -0.006879031277555309,
+          "p_one_sided": 0.5027442737169439,
+          "p_two_sided": 0.9945114525661124,
+          "ci95_lo": -1.2317272589504573,
+          "ci95_hi": 1.2231119514658473,
+          "n": 3,
+          "n_b3_in_universe": 3,
+          "covariates_used": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1"
+          ],
+          "r_squared": 0.0040929007285076535,
+          "status": "ok"
+        },
+        "receptor": {
+          "n": 2,
+          "status": "n_too_small"
+        },
+        "ion-channel": {
+          "n": 1,
+          "status": "n_too_small"
+        },
+        "motor": {
+          "n": 1,
+          "status": "n_too_small"
+        },
+        "misc": {
+          "n": 1,
+          "status": "n_too_small"
+        }
+      },
+      "category_counts_in_universe": {
+        "scaffold": 5,
+        "enzyme": 5,
+        "cell-adhesion": 3,
+        "receptor": 2,
+        "ion-channel": 1,
+        "motor": 1,
+        "misc": 1
+      }
+    }
+  },
+  "decision_classification": {
+    "classification": "UNINTERPRETABLE",
+    "reason": "bip: Huber-vs-OLS \u03b2_1 rel-diff 1.505 > 0.2; asd: Huber-vs-OLS \u03b2_1 rel-diff 0.251 > 0.2; ibd_delange2017: Huber-vs-OLS \u03b2_1 rel-diff 0.280 > 0.2; height: Huber-vs-OLS \u03b2_1 rel-diff 0.285 > 0.2; alzheimers: Huber-vs-OLS \u03b2_1 rel-diff 0.349 > 0.2"
+  }
+}

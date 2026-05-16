@@ -1,0 +1,89 @@
+{
+  "input_file": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/experiments/batch_044/output/B_height_sldsc.results",
+  "method": "95% CI = point +/- 1.96 * jackknife SE; two-sided p from Z = Coef/SE",
+  "refuted_threshold_height_enrichment": 1.25,
+  "why_threshold": "30% excess over 1.0 equals 1.25; pre-registered in brief.md \u00a7Sub-B as the threshold for 'height specificity REFUTED' (i.e. height enrichment >=1.25 would mean neuronal signal is not SCZ-specific).",
+  "neuronal": {
+    "category": "neuronalL2_0",
+    "enrichment": {
+      "point": 1.2353295975439071,
+      "se": 0.2749002120456804,
+      "ci_low_95": 0.6965251819343736,
+      "ci_high_95": 1.7741340131534407,
+      "ci_upper_exceeds_refuted_threshold": true,
+      "p_from_sldsc_column": 0.3903561205260275
+    },
+    "tau_star": {
+      "point": -6.043663683411695e-09,
+      "se": 1.937202169917865e-08,
+      "z": -0.3119789858416242,
+      "raw_p_two_sided": 0.7550564937230649,
+      "ci_low_95": -4.401282621380185e-08,
+      "ci_high_95": 3.1925498846978456e-08
+    }
+  },
+  "oligodendrocyte": {
+    "category": "oligodendrocyteL2_0",
+    "enrichment": {
+      "point": 1.7061604584306724,
+      "se": 0.5973074482402458,
+      "ci_low_95": 0.5354378598797906,
+      "ci_high_95": 2.876883056981554,
+      "ci_upper_exceeds_refuted_threshold": true,
+      "p_from_sldsc_column": 0.2377805195226443
+    },
+    "tau_star": {
+      "point": 5.427778939030077e-09,
+      "se": 4.4062271731662935e-08,
+      "z": 0.1231842736589929,
+      "raw_p_two_sided": 0.9019611785198114,
+      "ci_low_95": -8.093427365502928e-08,
+      "ci_high_95": 9.178983153308942e-08
+    }
+  },
+  "astrocyte": {
+    "category": "astrocyteL2_0",
+    "enrichment": {
+      "point": 1.9525532955655185,
+      "se": 0.9745181436005012,
+      "ci_low_95": 0.04249773410853619,
+      "ci_high_95": 3.862608857022501,
+      "ci_upper_exceeds_refuted_threshold": true,
+      "p_from_sldsc_column": 0.3287811420487229
+    },
+    "tau_star": {
+      "point": 1.8981101607367525e-08,
+      "se": 7.054608982989582e-08,
+      "z": 0.2690595843530901,
+      "raw_p_two_sided": 0.7878838309268857,
+      "ci_low_95": -1.192892344592283e-07,
+      "ci_high_95": 1.5725143767396332e-07
+    }
+  },
+  "OPC": {
+    "category": "OPCL2_0",
+    "enrichment": {
+      "point": 0.099752151484434,
+      "se": 0.6410740770008317,
+      "ci_low_95": -1.1567530394371963,
+      "ci_high_95": 1.3562573424060642,
+      "ci_upper_exceeds_refuted_threshold": true,
+      "p_from_sldsc_column": 0.1612621069942444
+    },
+    "tau_star": {
+      "point": -7.687813754763629e-08,
+      "se": 4.7508750728124767e-08,
+      "z": -1.6181889940146357,
+      "raw_p_two_sided": 0.10562187401181287,
+      "ci_low_95": -1.6999528897476082e-07,
+      "ci_high_95": 1.6239013879488257e-08
+    }
+  },
+  "minimum_detectable_neuronal_enrichment": {
+    "neuronal_enrichment_se": 0.2749002120456804,
+    "z_alpha_two_sided_0_05": 1.96,
+    "threshold_formula": "1 + 1.96 * SE",
+    "min_detectable_enrichment": 1.5388044156095335,
+    "interpretation": "Any enrichment point estimate below 1.539 is statistically undetectable from 1.0 at alpha=0.05 (two-sided) given the jackknife SE=0.275. The pre-registered REFUTED threshold (1.25) lies BELOW this minimum-detectable floor, so 'height neuronal enrichment is not >=1.25' cannot be concluded from a non-significant test alone (Type II not Type I)."
+  }
+}

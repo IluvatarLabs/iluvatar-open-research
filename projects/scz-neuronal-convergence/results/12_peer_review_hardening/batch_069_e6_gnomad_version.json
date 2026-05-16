@@ -1,0 +1,30 @@
+{
+  "experiment": "E6_gnomAD_version_justification",
+  "batch": "batch_069",
+  "status": "COMPLETED",
+  "loeuf_035_count_v4": 1353,
+  "loeuf_total_v4": 17320,
+  "loeuf_035_percentile_v4": 7.81,
+  "loeuf_v4_summary": {
+    "mean": 0.9903,
+    "median": 0.962,
+    "std": 0.4599,
+    "min": 0.04,
+    "max": 1.998,
+    "q10": 0.393,
+    "q25": 0.6478,
+    "q75": 1.279,
+    "q90": 1.703
+  },
+  "pli_09_count_v4": 3065,
+  "pli_total_v4": 17320,
+  "pli_09_percentile_v4": 17.7,
+  "cross_version_comparison": {
+    "n_matched_genes": 16046,
+    "pli_spearman_rho": 0.8333,
+    "pli_spearman_p": 0.0,
+    "loeuf_spearman_rho": 0.8429,
+    "loeuf_spearman_p": 0.0
+  },
+  "v2_available": true
+}

@@ -1,0 +1,152 @@
+{
+  "batch_id": "batch_017",
+  "hypotheses": {
+    "H017-1_STAT1_convergence": {
+      "stat1_neuronal": {
+        "overlap": 6,
+        "gene_set_size": 6,
+        "target_set_size": 379,
+        "background": 20000,
+        "overlap_genes": [
+          "DTNBP1",
+          "GRM7",
+          "KCNMA1",
+          "RGS4",
+          "SLC6A1",
+          "TCF4"
+        ],
+        "odds_ratio": Infinity,
+        "p_value": 0.015316619391192176,
+        "label": "STAT1 neuronal vs SynGO",
+        "n_targets": 6
+      },
+      "stat1_immune": {
+        "overlap": 11,
+        "gene_set_size": 12,
+        "target_set_size": 89,
+        "background": 20000,
+        "overlap_genes": [
+          "CCL2",
+          "CCL3",
+          "CD14",
+          "CD180",
+          "CXCL8",
+          "IL10",
+          "IL1B",
+          "IL6",
+          "MYD88",
+          "NFKB1",
+          "TNFRSF1A"
+        ],
+        "odds_ratio": 12.551282051282051,
+        "p_value": 0.0022742037073117632,
+        "label": "STAT1 immune vs KEGG TLR",
+        "n_targets": 12
+      },
+      "stat3_immune": {
+        "overlap": 4,
+        "gene_set_size": 4,
+        "target_set_size": 89,
+        "background": 20000,
+        "overlap_genes": [
+          "CCL2",
+          "IL10",
+          "IL6",
+          "MYD88"
+        ],
+        "odds_ratio": Infinity,
+        "p_value": 0.06038740920096852,
+        "label": "STAT3 immune vs KEGG TLR",
+        "n_targets": 4
+      },
+      "convergence": "False",
+      "stat1_neuronal_sig": "False",
+      "stat1_immune_sig": true
+    },
+    "H017-2_ReMap_EGR1_CTCF": {
+      "preflight": {
+        "egr1_total_peaks": 192833,
+        "egr1_brain_peaks": 18346,
+        "ctcf_total_peaks": 723866,
+        "ctcf_brain_peaks": 220011,
+        "egr1_threshold_met": true,
+        "ctcf_threshold_met": true
+      },
+      "egr1_vs_pardinas": {
+        "overlap": 5,
+        "gene_set_size": 9,
+        "target_set_size": 121,
+        "background": 20000,
+        "overlap_genes": [
+          "DGKH",
+          "DRD2",
+          "PPP1R1B",
+          "SNAP25",
+          "TCF4"
+        ],
+        "odds_ratio": 1.3038793103448276,
+        "p_value": 0.4796651470378443,
+        "label": "EGR1 DoRothEA targets vs Pardi\u00f1as 2018"
+      },
+      "ctcf_vs_pardinas": {
+        "overlap": 7,
+        "gene_set_size": 14,
+        "target_set_size": 121,
+        "background": 20000,
+        "overlap_genes": [
+          "AKT1",
+          "BDNF",
+          "CACNA1C",
+          "DLGAP1",
+          "NRG1",
+          "SLC6A4",
+          "TCF4"
+        ],
+        "odds_ratio": 1.0614035087719298,
+        "p_value": 0.5649936793344741,
+        "label": "CTCF DoRothEA targets vs Pardi\u00f1as 2018"
+      },
+      "remap_confirmation": {
+        "egr1_peaks_in_brain": 18346,
+        "ctcf_peaks_in_brain": 220011,
+        "egr1_has_brain_data": true,
+        "ctcf_has_brain_data": true
+      },
+      "remap_supports": "False",
+      "egr1_sig": "False",
+      "ctcf_sig": "False"
+    },
+    "H017-3_GEO_expression_axis": {
+      "geo_fallback": true,
+      "n_deg": 4,
+      "deg_genes": [
+        "CDC42BPB",
+        "SAMSN1",
+        "DSC2",
+        "PTPRE"
+      ],
+      "n_degs_tested": 4,
+      "syngo_enrichment": {
+        "overlap": 0,
+        "gene_set_size": 4,
+        "target_set_size": 379,
+        "background": 20000,
+        "overlap_genes": [],
+        "odds_ratio": 0.0,
+        "p_value": 1.0,
+        "label": "DEGs vs SynGO"
+      },
+      "tlr_enrichment": {
+        "overlap": 0,
+        "gene_set_size": 4,
+        "target_set_size": 89,
+        "background": 20000,
+        "overlap_genes": [],
+        "odds_ratio": 0.0,
+        "p_value": 1.0,
+        "label": "DEGs vs KEGG TLR"
+      },
+      "expression_axis_characterized": false
+    }
+  }
+}

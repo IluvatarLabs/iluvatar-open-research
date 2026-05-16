@@ -1,0 +1,456 @@
+{
+  "status": "ok",
+  "batch": "058",
+  "sub": "b",
+  "brief": "brief_v2.md (v2.1)",
+  "wall_s": 4614.747776508331,
+  "smoke": false,
+  "n_shared_frame": 16556,
+  "n_aligned_feature_matrix": 16556,
+  "n_features_loaded": 17423,
+  "n_features_munged_total": 57742,
+  "use_gaussianized_magma": true,
+  "P0_feature_category_summary": {
+    "counts": {
+      "expression": 37204,
+      "ppi": 8717,
+      "pathway": 8479,
+      "other": 3342
+    },
+    "shares": {
+      "expression": 0.6443143638945655,
+      "ppi": 0.15096463579370303,
+      "pathway": 0.14684285268955008,
+      "other": 0.05787814762218143
+    },
+    "total_features": 57742,
+    "cat_map_size": 57742
+  },
+  "loaded_subset_other_gates": {
+    "n_loaded": 17423,
+    "counts_loaded": {
+      "expression": 14313,
+      "ppi": 747,
+      "pathway": 660,
+      "other": 1703
+    },
+    "other_mass_fraction": 0.09774436090225563,
+    "other_mass_weighted": 0.08072396101115001,
+    "mass_share_by_category": {
+      "expression": 0.8979892876034326,
+      "ppi": 0.008283329542568467,
+      "pathway": 0.013003421842848934,
+      "other": 0.08072396101115001
+    },
+    "gate_threshold": 0.15,
+    "gate_fires_fraction": false,
+    "gate_fires_weighted": false,
+    "gate_fires": false
+  },
+  "P1_shapiro_raw": {
+    "W": 0.9635809491261251,
+    "p": 9.88263479128688e-34,
+    "n_tested": 5000,
+    "used_subsample": true,
+    "alpha": 0.05,
+    "is_normal_at_alpha": false
+  },
+  "P1_shapiro_gaussianized": {
+    "W": 0.9995729887836234,
+    "p": 0.3509955243694085,
+    "n_tested": 5000,
+    "used_subsample": true,
+    "alpha": 0.05,
+    "is_normal_at_alpha": true
+  },
+  "P2_R2_reproduction_gate": {
+    "raw_pearson_rho": 0.5152272666923785,
+    "target_lo": 0.495,
+    "target_hi": 0.535,
+    "pass": true
+  },
+  "reconstruction_check": {
+    "rho_recon_vs_preds": 0.9999999999999954,
+    "max_abs_diff": 2.7331488211546073e-08,
+    "mean_abs_diff": 2.9027774796241177e-09,
+    "n_features_used": 17423,
+    "note": "Exact match not expected when we use subset of coefs; high \u03c1 confirms linear-model sum is the right mechanism."
+  },
+  "B1_category_ablation": {
+    "partial_full_from_preds": 0.5096146756810062,
+    "partial_full_from_recon_at_X_beta": 0.5096146756032491,
+    "observed_delta": {
+      "expression": 0.20060916838668535,
+      "ppi": 0.010286306460211114,
+      "pathway": 0.01377481702793415,
+      "other": 0.0025436146089631295
+    },
+    "observed_partial_ablated": {
+      "expression": 0.3090055072943208,
+      "ppi": 0.49932836922079504,
+      "pathway": 0.495839858653072,
+      "other": 0.507071061072043
+    },
+    "variance_norm_diagnostic": {
+      "sd_full": 0.3484497582342931,
+      "partial_variance_normalized_by_category": {
+        "expression": 0.30900550729432086,
+        "ppi": 0.49932836922079493,
+        "pathway": 0.4958398586530717,
+        "other": 0.5070710610720432
+      },
+      "delta_variance_normalized_by_category": {
+        "expression": 0.2006091683866853,
+        "ppi": 0.010286306460211225,
+        "pathway": 0.013774817027934483,
+        "other": 0.0025436146089629075
+      }
+    },
+    "bootstrap": {
+      "expression": {
+        "partial_full": {
+          "point": 0.509816595777401,
+          "ci_lo": 0.4958955239671977,
+          "ci_hi": 0.5220681812384061,
+          "std": 0.00664048655430691
+        },
+        "partial_ablated": {
+          "point": 0.30894366636067,
+          "ci_lo": 0.2931190264624515,
+          "ci_hi": 0.3238186210093689,
+          "std": 0.007884064783060137
+        },
+        "delta": {
+          "point": 0.200872929416731,
+          "ci_lo": 0.1887928387637678,
+          "ci_hi": 0.21337690953737978,
+          "std": 0.0063543881816949315
+        }
+      },
+      "ppi": {
+        "partial_full": {
+          "point": 0.509816595777401,
+          "ci_lo": 0.4958955239671977,
+          "ci_hi": 0.5220681812384061,
+          "std": 0.00664048655430691
+        },
+        "partial_ablated": {
+          "point": 0.4995336461485143,
+          "ci_lo": 0.4861250242530144,
+          "ci_hi": 0.5116956847850815,
+          "std": 0.0065826502512947175
+        },
+        "delta": {
+          "point": 0.010282949628886758,
+          "ci_lo": 0.007483073621110098,
+          "ci_hi": 0.013241722475314287,
+          "std": 0.0014631513256293303
+        }
+      },
+      "pathway": {
+        "partial_full": {
+          "point": 0.509816595777401,
+          "ci_lo": 0.4958955239671977,
+          "ci_hi": 0.5220681812384061,
+          "std": 0.00664048655430691
+        },
+        "partial_ablated": {
+          "point": 0.49601472068339775,
+          "ci_lo": 0.4821286856103272,
+          "ci_hi": 0.5083587159722639,
+          "std": 0.006777606456322827
+        },
+        "delta": {
+          "point": 0.013801875094003276,
+          "ci_lo": 0.01016374805410872,
+          "ci_hi": 0.0173073761375231,
+          "std": 0.0019147424612524135
+        }
+      },
+      "other": {
+        "partial_full": {
+          "point": 0.509816595777401,
+          "ci_lo": 0.4958955239671977,
+          "ci_hi": 0.5220681812384061,
+          "std": 0.00664048655430691
+        },
+        "partial_ablated": {
+          "point": 0.5072754222521114,
+          "ci_lo": 0.49354064353169774,
+          "ci_hi": 0.5197929407720692,
+          "std": 0.006729980739063563
+        },
+        "delta": {
+          "point": 0.002541173525289608,
+          "ci_lo": 0.0010022008373768542,
+          "ci_hi": 0.004155387851516162,
+          "std": 0.0008049696865341492
+        }
+      }
+    },
+    "permutation_null_summary": {
+      "expression": {
+        "null_mean": 0.14149956793465573,
+        "null_std": 0.008839261585113813,
+        "null_median": 0.14064648249341472,
+        "null_p05": 0.12827055112321853,
+        "null_p95": 0.15775274432178046,
+        "observed_delta": 0.20060916838668535,
+        "p_perm_upper": 0.0
+      },
+      "ppi": {
+        "null_mean": 0.0023075442018989987,
+        "null_std": 0.0018764242506448736,
+        "null_median": 0.002333557862616742,
+        "null_p05": -0.0006699904039178306,
+        "null_p95": 0.005463370098583791,
+        "observed_delta": 0.010286306460211114,
+        "p_perm_upper": 0.0
+      },
+      "pathway": {
+        "null_mean": 0.0019454707962915769,
+        "null_std": 0.0018150252311475502,
+        "null_median": 0.0019161519911418678,
+        "null_p05": -0.001061764218575123,
+        "null_p95": 0.005008671241042123,
+        "observed_delta": 0.01377481702793415,
+        "p_perm_upper": 0.0
+      },
+      "other": {
+        "null_mean": 0.0053256380620800734,
+        "null_std": 0.002868730981596723,
+        "null_median": 0.0052498331195941494,
+        "null_p05": 0.0006553996344211945,
+        "null_p95": 0.010201671052538752,
+        "observed_delta": 0.0025436146089631295,
+        "p_perm_upper": 0.849
+      }
+    },
+    "decision_per_category": {
+      "expression": {
+        "category_drives": true,
+        "meets_p_perm_under_0_05": true,
+        "meets_delta_floor_0_10": true,
+        "observed_delta": 0.20060916838668535,
+        "p_perm": 0.0,
+        "delta_floor": 0.1
+      },
+      "ppi": {
+        "category_drives": false,
+        "meets_p_perm_under_0_05": true,
+        "meets_delta_floor_0_10": false,
+        "observed_delta": 0.010286306460211114,
+        "p_perm": 0.0,
+        "delta_floor": 0.1
+      },
+      "pathway": {
+        "category_drives": false,
+        "meets_p_perm_under_0_05": true,
+        "meets_delta_floor_0_10": false,
+        "observed_delta": 0.01377481702793415,
+        "p_perm": 0.0,
+        "delta_floor": 0.1
+      },
+      "other": {
+        "category_drives": false,
+        "meets_p_perm_under_0_05": false,
+        "meets_delta_floor_0_10": false,
+        "observed_delta": 0.0025436146089631295,
+        "p_perm": 0.849,
+        "delta_floor": 0.1
+      }
+    },
+    "internal_consistency_per_cat": {
+      "expression": true,
+      "ppi": true,
+      "pathway": true,
+      "other": true
+    },
+    "internal_consistency_fail": false
+  },
+  "B2_tail_restricted": {
+    "use_gaussianized_magma": true,
+    "thresholds": {
+      "upper_tau": 0.8416212335729143,
+      "lower_tau": -0.8416212335729142
+    },
+    "tails": {
+      "upper_tail": {
+        "n": 3311,
+        "status": "ok",
+        "point_pearson_rho": 0.229099406919196,
+        "bootstrap": {
+          "point": 0.22946450893343118,
+          "ci_lo": 0.18664497138084327,
+          "ci_hi": 0.27281283338801476,
+          "std": 0.022660029858234492
+        }
+      },
+      "middle": {
+        "n": 9934,
+        "status": "ok",
+        "point_pearson_rho": 0.3037664092018359,
+        "bootstrap": {
+          "point": 0.3037687182713955,
+          "ci_lo": 0.2879264938098568,
+          "ci_hi": 0.32097924281258,
+          "std": 0.008546428238005313
+        }
+      },
+      "lower_tail": {
+        "n": 3311,
+        "status": "ok",
+        "point_pearson_rho": 0.18880139460172057,
+        "bootstrap": {
+          "point": 0.18835685677602704,
+          "ci_lo": 0.15304131764375498,
+          "ci_hi": 0.22538668240305607,
+          "std": 0.018510537680753458
+        }
+      }
+    },
+    "ls_mc_null_point_estimate": {
+      "status": "ok",
+      "tail_rho_mc": 0.2702840665653461,
+      "n_mc": 100000,
+      "n_tail": 19798,
+      "rho_input": 0.515,
+      "tau_input": 0.842,
+      "seed": 20260424
+    },
+    "ls_mc_null_ci_at_tail_n": {
+      "status": "ok",
+      "n_resample": 1000,
+      "n_finite": 1000,
+      "tail_n": 3311,
+      "null_mean": 0.2694423402134971,
+      "null_median": 0.2703301355288634,
+      "null_std": 0.016365442263344028,
+      "null_ci_lo": 0.23665723754028653,
+      "null_ci_hi": 0.30034716080214396
+    },
+    "decision": {
+      "tail_enriched": false,
+      "upper_tail_rho": 0.229099406919196,
+      "upper_tail_ci_lo": 0.18664497138084327,
+      "upper_tail_ci_hi": 0.27281283338801476,
+      "ls_mc_null_point_estimate": 0.2702840665653461,
+      "ls_mc_null_median_at_tail_n": 0.2703301355288634,
+      "ls_mc_null_ci_lo_at_tail_n": 0.23665723754028653,
+      "ls_mc_null_ci_hi_at_tail_n": 0.30034716080214396,
+      "ci_disjoint": false,
+      "decision_rule": "CI-based: observed bootstrap CI disjoint from MC-null CI AND observed > null median (v2.1 FIX #3, no scalar p-value)"
+    }
+  },
+  "B3_rank_partial": {
+    "raw_partial": 0.5096146756810062,
+    "rank_partial": 0.5151720698889759,
+    "abs_diff": 0.005557394207969746,
+    "signed_diff": 0.005557394207969746,
+    "bootstrap": {
+      "raw_partial": {
+        "point": 0.5097229859068998,
+        "ci_lo": 0.4958577109343193,
+        "ci_hi": 0.5227181951123154,
+        "std": 0.006775307274460882
+      },
+      "rank_partial": {
+        "point": 0.5151964527037294,
+        "ci_lo": 0.5039085375356183,
+        "ci_hi": 0.5264186117954782,
+        "std": 0.005868464189589404
+      },
+      "abs_diff": {
+        "point": 0.005493000998551066,
+        "ci_lo": 0.0010506801111296537,
+        "ci_hi": 0.009878327195506614,
+        "std": 0.0022701164155248628
+      },
+      "signed_diff": {
+        "point": 0.005473466796829569,
+        "ci_lo": 0.0009868720508438705,
+        "ci_hi": 0.009878327195506614,
+        "std": 0.0023168651600281847
+      }
+    },
+    "decision": {
+      "distribution_sensitive": false,
+      "threshold": 0.03,
+      "ci_excludes_zero": true
+    }
+  },
+  "bh_fdr_family": {
+    "labels": [
+      "B1_expression",
+      "B1_ppi",
+      "B1_pathway",
+      "B1_other",
+      "B3_rank_minus_raw"
+    ],
+    "pvals": [
+      0.0,
+      0.0,
+      0.0,
+      0.849,
+      0.01815482910710231
+    ],
+    "qvals": [
+      0.0,
+      0.0,
+      0.0,
+      0.849,
+      0.022693536383877888
+    ],
+    "q_threshold": 0.05,
+    "family_size": 5,
+    "note": "v2.1 FIX #3: 3 B.2 tests dropped from BH family (CI-based, not p-based). Family is 4 B.1 + 1 B.3 = 5 tests."
+  },
+  "aggregate_decision": {
+    "classification": "2A_DIRECT_CATEGORY_DRIVES_expression",
+    "reason": "\u0394\u03c1_expression=0.201 p_perm=0.000 >= floor 0.1 AND p_perm < 0.05",
+    "category": "expression"
+  },
+  "provenance_sha256": {
+    "gnomad_tsv": "68d8abdb7fc48f570869b02dfaa74b9fecaece7fcc5f301ddca40ec1ce12da00",
+    "gene_annot": "940086e0781e9b244da76d27f02cc25dd45c957ee4415915cd1ced37b63d1e72",
+    "magma_scz": "8eaded5409b49981de428189805957420d378c5cf138c9d40056acf4f1030fa0",
+    "pops_preds_p05": "60fcb6ccea3077d4b50f0612213ffe50db850f9783cc7660029146cee82f9405",
+    "pops_coefs_p05": "d3c5dcfa7382293c4306d3f7506f537897f611530100d95238cd5dc1c2eeae43",
+    "pops_features_dir": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/pops_features/features_munged"
+  },
+  "brief_contract": {
+    "sub_b_bh_family_size": 5,
+    "bh_fdr_family_size": 5,
+    "bh_q": 0.05,
+    "seed": 20260424,
+    "n_boot": 1000,
+    "n_perm": 1000,
+    "delta_floor": 0.1,
+    "tail_enriched_diff": 0.05,
+    "distribution_diff": 0.03,
+    "other_mass_gate": 0.15,
+    "permutation_null_category_counts_deviation": {
+      "brief_v2_L133_spec": "preserve {36,772, 8,717, 8,479, 3,774} counts over 57,742 columns",
+      "implemented_as": "category counts preserved within loaded coefs\u2229munged subset; design-deviation from brief_v2 L133 due to restriction to features with non-zero ridge \u03b2",
+      "loaded_subset_counts": {
+        "expression": 14313,
+        "ppi": 747,
+        "pathway": 660,
+        "other": 1703
+      },
+      "full_munged_counts": {
+        "expression": 37204,
+        "ppi": 8717,
+        "pathway": 8479,
+        "other": 3342
+      }
+    },
+    "sub_b_decision_rule_changes_v2_1": {
+      "fix_1_other_gate": "other-mass gate evaluated on LOADED subset via BOTH fraction AND weighted metrics; fires if either > 0.15",
+      "fix_2_permutation_counts": "category counts preserved within loaded coefs\u2229munged subset (see permutation_null_category_counts_deviation)",
+      "fix_3_b2_ci_based": "B.2 decision is CI-disjointness vs MC-null CI at tail-N; no scalar p-value; 3 B.2 tests removed from BH family",
+      "fix_6_reconstruction_halt": "reconstruction \u03c1(X@\u03b2, PoPS_preds) >= 0.99 enforced in non-smoke runs",
+      "fix_8_ls_mc_n": "LS-MC point-anchor n raised to 100000 (was 10,000) for \u00b10.0016 precision"
+    }
+  }
+}

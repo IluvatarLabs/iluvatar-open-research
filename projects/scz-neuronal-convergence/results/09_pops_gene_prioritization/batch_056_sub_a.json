@@ -1,0 +1,104 @@
+{
+  "status": "ok",
+  "batch": "056",
+  "sub": "a",
+  "wall_s": 15.482505798339844,
+  "reproduction_gate_R1": {
+    "status": "ok",
+    "preds_path": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/experiments/batch_054_A/output/sweep/cutoff_0.05/PGC3_EUR_PoPS.preds",
+    "n_common": 17459,
+    "rho_observed": 0.5101842528282293,
+    "rho_target": 0.5102,
+    "delta": 1.5747171770663648e-05,
+    "tolerance": 0.0001,
+    "pass": true
+  },
+  "n_common": 16556,
+  "n_final": 16556,
+  "n_raw_before_dropna": 17459,
+  "dropna_col_counts": {
+    "PoPS_Score": 0,
+    "MAGMA_Z": 0,
+    "lof_pLI": 903,
+    "log10_gene_length": 0
+  },
+  "provenance": {
+    "bit_identical_claim": "bootstrap matrix built with np.random.default_rng(20260423) on the Sub-A analysis sample (n = 16556). Bit-identical to batch_054_A ONLY if n == 17459.",
+    "bit_identical_to_batch_054A": false,
+    "expected_n_for_bit_identity": 17459
+  },
+  "point_estimates": {
+    "rho_pops_pli_pearson": 0.2899559748601349,
+    "rho_pops_pli_spearman": 0.22791739799234909,
+    "rho_magma_pli_pearson": 0.10397904780752473,
+    "rho_magma_pli_spearman": 0.06812576553706706,
+    "rho_pops_magma_spearman": 0.5123577760944915,
+    "rho_pops_magma_pearson": 0.5152272666923785,
+    "partial_rho_pops_magma_given_pli": 0.5096146756810062,
+    "partial_rho_pops_magma_given_pli_length": 0.505011788827204,
+    "delta_rho_pops_minus_magma_vs_pli_pearson": 0.18597692705261018,
+    "delta_rho_pops_minus_magma_vs_pli_spearman": 0.15979163245528202
+  },
+  "bootstrap": {
+    "n_boot": 1000,
+    "seed": 20260423,
+    "n_genes": 16556,
+    "rho_pops_pli_pearson": {
+      "ci_lo": 0.274096638766601,
+      "ci_hi": 0.3058369041586351,
+      "median": 0.290318493431148
+    },
+    "rho_magma_pli_pearson": {
+      "ci_lo": 0.0887413314914635,
+      "ci_hi": 0.11955225309242318,
+      "median": 0.1042373517310542
+    },
+    "rho_pops_pli_spearman": {
+      "ci_lo": 0.21258063419466014,
+      "ci_hi": 0.24322019164572162,
+      "median": 0.22803097925326163
+    },
+    "rho_magma_pli_spearman": {
+      "ci_lo": 0.052344485058891936,
+      "ci_hi": 0.08331062973232298,
+      "median": 0.06841497335015176
+    },
+    "rho_pops_magma_spearman": {
+      "ci_lo": 0.5004425669769885,
+      "ci_hi": 0.5237803610695633,
+      "median": 0.5125929184509781
+    },
+    "delta_rho_pearson": {
+      "ci_lo": 0.17040651794877856,
+      "ci_hi": 0.2007116111358135,
+      "median": 0.18622665642434894
+    },
+    "delta_rho_spearman": {
+      "ci_lo": 0.14360718080231988,
+      "ci_hi": 0.17423853286241556,
+      "median": 0.1596967002619554
+    },
+    "partial_rho_given_pli": {
+      "ci_lo": 0.4969917345862743,
+      "ci_hi": 0.5223784296905303,
+      "median": 0.509863088847985
+    },
+    "partial_rho_given_pli_length": {
+      "ci_lo": 0.4925105287381422,
+      "ci_hi": 0.5177069608365805,
+      "median": 0.5052528176117104
+    }
+  },
+  "decision_classification": {
+    "classification": "Intermediate",
+    "reason": "None of Pattern A / B / B-weak thresholds met."
+  },
+  "inputs": {
+    "pops_preds_p05": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/experiments/batch_054_A/output/sweep/cutoff_0.05/PGC3_EUR_PoPS.preds",
+    "magma_scz": "experiments/batch_053_B/output/PGC3_EUR_gene_ENSGID.genes.out",
+    "gnomad": "data/item_15/gnomad.v4.1.constraint_metrics.tsv",
+    "gene_annot": "data/pops_features/gene_annot_jun10.txt",
+    "common_ensgids": "experiments/batch_055_A/output/common_ensgids.txt"
+  },
+  "gnomad_dedup_rule": "canonical AND mane_select AND ENSG prefix; keep max lof.pLI; tie-break min lof.oe_ci.upper"
+}

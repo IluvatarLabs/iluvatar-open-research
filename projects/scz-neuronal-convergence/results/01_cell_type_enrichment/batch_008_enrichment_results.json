@@ -1,0 +1,221 @@
+{
+  "cell_type_results": [
+    {
+      "cell_type": "Astrocytes",
+      "n_markers": 100,
+      "overlap": 0,
+      "odds_ratio": 0.0,
+      "p_value": 1.0,
+      "fdr_corrected_p": 1.0,
+      "bootstrap_stability": 0.0,
+      "classification": "NEGATIVE",
+      "genes_in_overlap": []
+    },
+    {
+      "cell_type": "Excitatory_L2/3",
+      "n_markers": 100,
+      "overlap": 0,
+      "odds_ratio": 0.0,
+      "p_value": 1.0,
+      "fdr_corrected_p": 1.0,
+      "bootstrap_stability": 0.0,
+      "classification": "NEGATIVE",
+      "genes_in_overlap": []
+    },
+    {
+      "cell_type": "Excitatory_L4",
+      "n_markers": 100,
+      "overlap": 0,
+      "odds_ratio": 0.0,
+      "p_value": 1.0,
+      "fdr_corrected_p": 1.0,
+      "bootstrap_stability": 0.0,
+      "classification": "NEGATIVE",
+      "genes_in_overlap": []
+    },
+    {
+      "cell_type": "Excitatory_L5",
+      "n_markers": 100,
+      "overlap": 0,
+      "odds_ratio": 0.0,
+      "p_value": 1.0,
+      "fdr_corrected_p": 1.0,
+      "bootstrap_stability": 0.0,
+      "classification": "NEGATIVE",
+      "genes_in_overlap": []
+    },
+    {
+      "cell_type": "Inhibitory_PV",
+      "n_markers": 100,
+      "overlap": 0,
+      "odds_ratio": 0.0,
+      "p_value": 1.0,
+      "fdr_corrected_p": 1.0,
+      "bootstrap_stability": 0.0,
+      "classification": "NEGATIVE",
+      "genes_in_overlap": []
+    },
+    {
+      "cell_type": "Inhibitory_SST",
+      "n_markers": 100,
+      "overlap": 0,
+      "odds_ratio": 0.0,
+      "p_value": 1.0,
+      "fdr_corrected_p": 1.0,
+      "bootstrap_stability": 0.0,
+      "classification": "NEGATIVE",
+      "genes_in_overlap": []
+    },
+    {
+      "cell_type": "Inhibitory_VIP",
+      "n_markers": 100,
+      "overlap": 0,
+      "odds_ratio": 0.0,
+      "p_value": 1.0,
+      "fdr_corrected_p": 1.0,
+      "bootstrap_stability": 0.0,
+      "classification": "NEGATIVE",
+      "genes_in_overlap": []
+    },
+    {
+      "cell_type": "Microglia",
+      "n_markers": 100,
+      "overlap": 0,
+      "odds_ratio": 0.0,
+      "p_value": 1.0,
+      "fdr_corrected_p": 1.0,
+      "bootstrap_stability": 0.0,
+      "classification": "NEGATIVE",
+      "genes_in_overlap": []
+    },
+    {
+      "cell_type": "Oligodendrocytes",
+      "n_markers": 100,
+      "overlap": 0,
+      "odds_ratio": 0.0,
+      "p_value": 1.0,
+      "fdr_corrected_p": 1.0,
+      "bootstrap_stability": 0.0,
+      "classification": "NEGATIVE",
+      "genes_in_overlap": []
+    }
+  ],
+  "summary": {
+    "n_cell_types_tested": 9,
+    "n_positive": 0,
+    "n_negative": 9,
+    "n_inconclusive": 0,
+    "overall_classification": "REFUTED",
+    "gwas_dataset": "ieu-a-1183 (PGC3 SCZ) or literature fallback",
+    "marker_dataset": "GSE178096",
+    "bootstrap_interpretation": "interpretable"
+  },
+  "bootstrap_details": {
+    "n_iterations": 100,
+    "n_successful": 100,
+    "n_failed": 0,
+    "failure_rate": 0.0,
+    "cell_type_stabilities": {
+      "Astrocytes": {
+        "n_iterations": 100,
+        "stability": 0.0,
+        "mean_or": 0.0,
+        "median_or": 0.0,
+        "std_or": 0.0,
+        "min_or": 0.0,
+        "max_or": 0.0,
+        "proportion_or_gt_1.5": 0.0,
+        "status": "unstable"
+      },
+      "Excitatory_L2/3": {
+        "n_iterations": 100,
+        "stability": 0.0,
+        "mean_or": 0.0,
+        "median_or": 0.0,
+        "std_or": 0.0,
+        "min_or": 0.0,
+        "max_or": 0.0,
+        "proportion_or_gt_1.5": 0.0,
+        "status": "unstable"
+      },
+      "Excitatory_L4": {
+        "n_iterations": 100,
+        "stability": 0.0,
+        "mean_or": 0.0,
+        "median_or": 0.0,
+        "std_or": 0.0,
+        "min_or": 0.0,
+        "max_or": 0.0,
+        "proportion_or_gt_1.5": 0.0,
+        "status": "unstable"
+      },
+      "Excitatory_L5": {
+        "n_iterations": 100,
+        "stability": 0.0,
+        "mean_or": 0.0,
+        "median_or": 0.0,
+        "std_or": 0.0,
+        "min_or": 0.0,
+        "max_or": 0.0,
+        "proportion_or_gt_1.5": 0.0,
+        "status": "unstable"
+      },
+      "Inhibitory_PV": {
+        "n_iterations": 100,
+        "stability": 0.0,
+        "mean_or": 0.0,
+        "median_or": 0.0,
+        "std_or": 0.0,
+        "min_or": 0.0,
+        "max_or": 0.0,
+        "proportion_or_gt_1.5": 0.0,
+        "status": "unstable"
+      },
+      "Inhibitory_SST": {
+        "n_iterations": 100,
+        "stability": 0.0,
+        "mean_or": 0.0,
+        "median_or": 0.0,
+        "std_or": 0.0,
+        "min_or": 0.0,
+        "max_or": 0.0,
+        "proportion_or_gt_1.5": 0.0,
+        "status": "unstable"
+      },
+      "Inhibitory_VIP": {
+        "n_iterations": 100,
+        "stability": 0.0,
+        "mean_or": 0.0,
+        "median_or": 0.0,
+        "std_or": 0.0,
+        "min_or": 0.0,
+        "max_or": 0.0,
+        "proportion_or_gt_1.5": 0.0,
+        "status": "unstable"
+      },
+      "Microglia": {
+        "n_iterations": 100,
+        "stability": 0.0,
+        "mean_or": 0.0,
+        "median_or": 0.0,
+        "std_or": 0.0,
+        "min_or": 0.0,
+        "max_or": 0.0,
+        "proportion_or_gt_1.5": 0.0,
+        "status": "unstable"
+      },
+      "Oligodendrocytes": {
+        "n_iterations": 100,
+        "stability": 0.0,
+        "mean_or": 0.0,
+        "median_or": 0.0,
+        "std_or": 0.0,
+        "min_or": 0.0,
+        "max_or": 0.0,
+        "proportion_or_gt_1.5": 0.0,
+        "status": "unstable"
+      }
+    },
+    "interpretation": "interpretable"
+  }
+}

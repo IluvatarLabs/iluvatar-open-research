@@ -1,0 +1,78 @@
+{
+  "batch": "batch_044",
+  "test": "length_stratified_permutation",
+  "generated_at": "2026-04-23T01:53:44.795651Z",
+  "n_gene_lists_tested": 3,
+  "inputs": {
+    "gnomad": {
+      "label": "gnomad_constraint",
+      "path": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/item_15/gnomad.v4.1.constraint_metrics.tsv",
+      "exists": true,
+      "sha256": "68d8abdb7fc48f570869b02dfaa74b9fecaece7fcc5f301ddca40ec1ce12da00",
+      "bytes": 95546041
+    },
+    "har": {
+      "label": "har_bed",
+      "path": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/item_15/reference_assets/harsRichard2020.GRCh37.bed",
+      "exists": true,
+      "sha256": "09d2a2221fbb6b603f1c7f72575676606013b2f87372aae0bb62b96517d6e6a2",
+      "bytes": 96325
+    },
+    "tss": {
+      "label": "gene_tss_grch37",
+      "path": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/ldsc/gene_tss_grch37.csv",
+      "exists": true,
+      "sha256": "98fd8d4cfd4827d785fe3c8d3c2639591ca7d9149d8622ac215cf2bd1b804a89",
+      "bytes": 5252382
+    },
+    "pgc3_xlsx": {
+      "label": "pgc3_xlsx",
+      "path": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/19426775/scz2022-Extended-Data-Table1.xlsx",
+      "exists": true,
+      "sha256": "7aa88b5944210540d63f6297803e4abfebc6b012bc265b1260cf618fa55394de",
+      "bytes": 110845
+    },
+    "gtex_tpm": {
+      "label": "gtex_tpm",
+      "path": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/GTEx_v8_gene_median_tpm.gct.gz",
+      "exists": true,
+      "sha256": "ee7201ff2f280b0de5657d4b08e9a240362d9757efed7f7bd5dba35a5f8617b8",
+      "bytes": 6952331
+    },
+    "schema_list": {
+      "label": "schema_exome_wide_significant",
+      "path": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/experiments/batch_044/input/schema_exome_wide_significant.txt",
+      "exists": true,
+      "sha256": "67279034c6c36b4a18677e12f245079b5ad25af4f1e408a86163960ad00baa5d",
+      "bytes": 60
+    }
+  },
+  "results": {
+    "gene_lists": {
+      "PGC3_Prioritised_EDT1": {
+        "observed_odds_ratio": 1.8528632602699957,
+        "observed_overlap": 13,
+        "n_permutations": 10000,
+        "empirical_p_one_sided_greater": 0.1725827417258274,
+        "null_or_mean": 1.3532800160415175,
+        "null_or_std": 0.45054509413316574,
+        "null_overlap_mean": 9.7726
+      },
+      "PGC3_Prioritised_SynGO": {
+        "observed_odds_ratio": 5.903141361256544,
+        "observed_overlap": 4,
+        "n_permutations": 10000,
+        "empirical_p_one_sided_greater": 0.09319068093190681,
+        "null_or_mean": 2.3529340652154302,
+        "null_or_std": 1.8835943699039266,
+        "null_overlap_mean": 1.8373
+      },
+      "SCHEMA_exome_wide_significant": {
+        "skipped": true
+      }
+    },
+    "n_permutations": 10000,
+    "n_length_deciles": 10,
+    "rng_seed": 20260422
+  }
+}

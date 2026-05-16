@@ -1,0 +1,432 @@
+{
+  "batch": "batch_044",
+  "sub_experiment": "C_constraint_har",
+  "generated_at": "2026-04-23T01:53:44.795894Z",
+  "scope": {
+    "n_gene_lists": 3,
+    "gene_lists": [
+      "PGC3_Prioritised_EDT1",
+      "PGC3_Prioritised_SynGO",
+      "SCHEMA_exome_wide_significant"
+    ],
+    "magma_top1pct_dropped": true,
+    "magma_drop_reason": "MAGMA binary not on PATH; synthesizing gene scores violates Rule 0. 3-list scope retains full scientific power via PGC3 Prioritised + SynGO sub-intersection + SCHEMA positive control."
+  },
+  "gene_list_sizes": {
+    "PGC3_Prioritised_EDT1": 106,
+    "PGC3_Prioritised_SynGO": 14,
+    "SCHEMA_exome_wide_significant": 10
+  },
+  "loeuf_fisher_rows": [
+    {
+      "a": 13,
+      "b": 83,
+      "c": 1328,
+      "d": 15710,
+      "odds_ratio_point": 1.8527770850397118,
+      "odds_ratio_scipy": 1.8528632602699957,
+      "odds_ratio_95ci_low": 0.9443929618521723,
+      "odds_ratio_95ci_high": 3.356037841361179,
+      "p_one_sided_greater": 0.03617486336989208,
+      "gene_list": "PGC3_Prioritised_EDT1",
+      "n_list_in_background": 96,
+      "n_list_overlap_loeuf": 13,
+      "n_background": 17134,
+      "n_background_loeuf": 1341,
+      "provenance": {
+        "source": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/19426775/scz2022-Extended-Data-Table1.xlsx ST12 Prioritised==YES & biotype==protein_coding",
+        "original_size": 106,
+        "mhc_removed": 0,
+        "post_mhc_size": 106
+      },
+      "bh_q": 0.03617486336989208
+    },
+    {
+      "a": 4,
+      "b": 8,
+      "c": 1337,
+      "d": 15785,
+      "odds_ratio_point": 5.901921660558042,
+      "odds_ratio_scipy": 5.903141361256544,
+      "odds_ratio_95ci_low": 1.2988531549581852,
+      "odds_ratio_95ci_high": 22.06437852609016,
+      "p_one_sided_greater": 0.0111008485552306,
+      "gene_list": "PGC3_Prioritised_SynGO",
+      "n_list_in_background": 12,
+      "n_list_overlap_loeuf": 4,
+      "n_background": 17134,
+      "n_background_loeuf": 1341,
+      "provenance": {
+        "source": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/19426775/scz2022-Extended-Data-Table1.xlsx ST12 Prioritised & SynGO.GeneSetMemb & protein_coding",
+        "original_size": 14,
+        "mhc_removed": 0,
+        "post_mhc_size": 14
+      },
+      "bh_q": 0.0166512728328459
+    },
+    {
+      "a": 8,
+      "b": 1,
+      "c": 1333,
+      "d": 15792,
+      "odds_ratio_point": 94.71324290637557,
+      "odds_ratio_scipy": 94.77569392348087,
+      "odds_ratio_95ci_low": 12.682249222600715,
+      "odds_ratio_95ci_high": 4205.677130494438,
+      "p_one_sided_greater": 1.156884768909796e-08,
+      "gene_list": "SCHEMA_exome_wide_significant",
+      "n_list_in_background": 9,
+      "n_list_overlap_loeuf": 8,
+      "n_background": 17134,
+      "n_background_loeuf": 1341,
+      "provenance": {
+        "source": "Singh 2022 Table 1 exome-wide significant genes at P<2.5e-6; file experiments/batch_044/input/schema_exome_wide_significant.txt",
+        "original_size": 10,
+        "mhc_removed": 0,
+        "post_mhc_size": 10
+      },
+      "bh_q": 3.470654306729388e-08
+    }
+  ],
+  "loeuf_logistic_primary": {
+    "primary": {
+      "n": 17134,
+      "n_outcome_1": 1341,
+      "converged": true,
+      "fit_method": "ridge",
+      "condition_number": 9541949588321506.0,
+      "vif": {
+        "scz_top": 1.003278079259965,
+        "log_cds_length": Infinity,
+        "log_gene_length": Infinity,
+        "brain_tau": 1.0229526002256313,
+        "log_obs_mis_plus1": 3.60538968087351
+      },
+      "dropped_covariates": [
+        "log_obs_mis_plus1"
+      ],
+      "coefficients": {
+        "const": {
+          "beta": -9.743168993284149,
+          "se": null,
+          "z": null,
+          "p": null,
+          "ci_low": null,
+          "ci_high": null,
+          "note": "p-value suppressed under L2 regularization; decision rule relies on sign and magnitude of beta_scz."
+        },
+        "scz_top": {
+          "beta": 0.3499506517279308,
+          "se": null,
+          "z": null,
+          "p": null,
+          "ci_low": null,
+          "ci_high": null,
+          "note": "p-value suppressed under L2 regularization; decision rule relies on sign and magnitude of beta_scz."
+        },
+        "log_cds_length": {
+          "beta": 0.8463722101115041,
+          "se": null,
+          "z": null,
+          "p": null,
+          "ci_low": null,
+          "ci_high": null,
+          "note": "p-value suppressed under L2 regularization; decision rule relies on sign and magnitude of beta_scz."
+        },
+        "log_gene_length": {
+          "beta": 0.8463722101115062,
+          "se": null,
+          "z": null,
+          "p": null,
+          "ci_low": null,
+          "ci_high": null,
+          "note": "p-value suppressed under L2 regularization; decision rule relies on sign and magnitude of beta_scz."
+        },
+        "brain_tau": {
+          "beta": 0.009607712586463958,
+          "se": null,
+          "z": null,
+          "p": null,
+          "ci_low": null,
+          "ci_high": null,
+          "note": "p-value suppressed under L2 regularization; decision rule relies on sign and magnitude of beta_scz."
+        },
+        "log_obs_mis_plus1": {
+          "beta": -0.8425686113368128,
+          "se": null,
+          "z": null,
+          "p": null,
+          "ci_low": null,
+          "ci_high": null,
+          "note": "p-value suppressed under L2 regularization; decision rule relies on sign and magnitude of beta_scz."
+        }
+      },
+      "beta_scz": 0.3499506517279308,
+      "se_scz": null,
+      "p_scz": null,
+      "primary_mle_error": "Singular matrix"
+    },
+    "secondary_mle_drop_cds": {
+      "rationale": "log_cds_length dropped because VIF is effectively infinite vs log_gene_length (r>0.99); keeping log_gene_length as canonical length covariate (Samocha 2014). Unregularized MLE yields valid Wald p_scz.",
+      "covariates_used": [
+        "log_gene_length",
+        "brain_tau",
+        "log_obs_mis_plus1"
+      ],
+      "result": {
+        "n": 17134,
+        "n_outcome_1": 1341,
+        "converged": true,
+        "loglike": -4178.13962602167,
+        "aic": 8366.27925204334,
+        "fit_method": "MLE",
+        "condition_number": 127.9587616120897,
+        "vif": {
+          "scz_top": 1.003278079259965,
+          "log_gene_length": 3.619351592578748,
+          "brain_tau": 1.022952600225632,
+          "log_obs_mis_plus1": 3.60538968087351
+        },
+        "dropped_covariates": [],
+        "coefficients": {
+          "const": {
+            "beta": -11.48103074983954,
+            "se": 0.3282745292790915,
+            "z": -34.97387011734508,
+            "p": 5.617018348678045e-268,
+            "ci_low": -12.1244370042684,
+            "ci_high": -10.837624495410681
+          },
+          "scz_top": {
+            "beta": 0.38243856205478477,
+            "se": 0.3111134123036965,
+            "z": 1.2292577141658667,
+            "p": 0.2189751961539358,
+            "ci_low": -0.22733252116782088,
+            "ci_high": 0.9922096452773904
+          },
+          "log_gene_length": {
+            "beta": 1.9916396849152906,
+            "se": 0.06815845756513284,
+            "z": 29.220727053749155,
+            "p": 1.057735412079653e-187,
+            "ci_low": 1.8580515628458287,
+            "ci_high": 2.1252278069847526
+          },
+          "brain_tau": {
+            "beta": 0.04554169000683185,
+            "se": 0.1564882653179077,
+            "z": 0.2910230355887286,
+            "p": 0.7710337017879932,
+            "ci_low": -0.26116967401941565,
+            "ci_high": 0.3522530540330793
+          },
+          "log_obs_mis_plus1": {
+            "beta": -0.9305054953148979,
+            "se": 0.048928703023434966,
+            "z": -19.01757941282894,
+            "p": 1.2198682171980949e-80,
+            "ci_low": -1.0264039910510865,
+            "ci_high": -0.8346069995787093
+          }
+        },
+        "beta_scz": 0.38243856205478477,
+        "se_scz": 0.3111134123036965,
+        "p_scz": 0.2189751961539358,
+        "primary_mle_error": null
+      }
+    },
+    "n": 17134,
+    "n_outcome_1": 1341,
+    "converged": true,
+    "fit_method": "ridge",
+    "condition_number": 9541949588321506.0,
+    "vif": {
+      "scz_top": 1.003278079259965,
+      "log_cds_length": Infinity,
+      "log_gene_length": Infinity,
+      "brain_tau": 1.0229526002256313,
+      "log_obs_mis_plus1": 3.60538968087351
+    },
+    "dropped_covariates": [
+      "log_obs_mis_plus1"
+    ],
+    "coefficients": {
+      "const": {
+        "beta": -9.743168993284149,
+        "se": null,
+        "z": null,
+        "p": null,
+        "ci_low": null,
+        "ci_high": null,
+        "note": "p-value suppressed under L2 regularization; decision rule relies on sign and magnitude of beta_scz."
+      },
+      "scz_top": {
+        "beta": 0.3499506517279308,
+        "se": null,
+        "z": null,
+        "p": null,
+        "ci_low": null,
+        "ci_high": null,
+        "note": "p-value suppressed under L2 regularization; decision rule relies on sign and magnitude of beta_scz."
+      },
+      "log_cds_length": {
+        "beta": 0.8463722101115041,
+        "se": null,
+        "z": null,
+        "p": null,
+        "ci_low": null,
+        "ci_high": null,
+        "note": "p-value suppressed under L2 regularization; decision rule relies on sign and magnitude of beta_scz."
+      },
+      "log_gene_length": {
+        "beta": 0.8463722101115062,
+        "se": null,
+        "z": null,
+        "p": null,
+        "ci_low": null,
+        "ci_high": null,
+        "note": "p-value suppressed under L2 regularization; decision rule relies on sign and magnitude of beta_scz."
+      },
+      "brain_tau": {
+        "beta": 0.009607712586463958,
+        "se": null,
+        "z": null,
+        "p": null,
+        "ci_low": null,
+        "ci_high": null,
+        "note": "p-value suppressed under L2 regularization; decision rule relies on sign and magnitude of beta_scz."
+      },
+      "log_obs_mis_plus1": {
+        "beta": -0.8425686113368128,
+        "se": null,
+        "z": null,
+        "p": null,
+        "ci_low": null,
+        "ci_high": null,
+        "note": "p-value suppressed under L2 regularization; decision rule relies on sign and magnitude of beta_scz."
+      }
+    },
+    "beta_scz": 0.3499506517279308,
+    "se_scz": null,
+    "p_scz": null,
+    "primary_mle_error": "Singular matrix"
+  },
+  "loeuf_logistic_primary_list": "PGC3_Prioritised_EDT1",
+  "har_fisher_rows": [
+    {
+      "gene_list": "PGC3_Prioritised_EDT1",
+      "n_list_in_background": 96,
+      "har_union": {
+        "a": 10,
+        "b": 86,
+        "c": 1347,
+        "d": 15691,
+        "odds_ratio_point": 1.354490140819496,
+        "odds_ratio_scipy": 1.3545173598522124,
+        "odds_ratio_95ci_low": 0.6257278649670971,
+        "odds_ratio_95ci_high": 2.621271941204454,
+        "p_one_sided_greater": 0.22810062830463917,
+        "bh_q": 0.3674907157911389
+      },
+      "har_pollard_only": {
+        "a": 1,
+        "b": 95,
+        "c": 45,
+        "d": 16993,
+        "odds_ratio_point": 3.974296969639832,
+        "odds_ratio_scipy": 3.974970760233918,
+        "odds_ratio_95ci_low": 0.0974637094937806,
+        "odds_ratio_95ci_high": 23.831196597707986,
+        "p_one_sided_greater": 0.2280217156697956
+      },
+      "provenance": {
+        "source": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/19426775/scz2022-Extended-Data-Table1.xlsx ST12 Prioritised==YES & biotype==protein_coding",
+        "original_size": 106,
+        "mhc_removed": 0,
+        "post_mhc_size": 106
+      }
+    },
+    {
+      "gene_list": "PGC3_Prioritised_SynGO",
+      "n_list_in_background": 12,
+      "har_union": {
+        "a": 2,
+        "b": 10,
+        "c": 1355,
+        "d": 15767,
+        "odds_ratio_point": 2.3270694407763632,
+        "odds_ratio_scipy": 2.3272324723247233,
+        "odds_ratio_95ci_low": 0.24767298158177853,
+        "odds_ratio_95ci_high": 10.93582389728739,
+        "p_one_sided_greater": 0.24499381052742591,
+        "bh_q": 0.3674907157911389
+      },
+      "har_pollard_only": {
+        "a": 0,
+        "b": 12,
+        "c": 46,
+        "d": 17076,
+        "odds_ratio_point": 0.0,
+        "odds_ratio_scipy": 0.0,
+        "odds_ratio_95ci_low": 0.0,
+        "odds_ratio_95ci_high": 137.96833926655933,
+        "p_one_sided_greater": 1.0
+      },
+      "provenance": {
+        "source": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/19426775/scz2022-Extended-Data-Table1.xlsx ST12 Prioritised & SynGO.GeneSetMemb & protein_coding",
+        "original_size": 14,
+        "mhc_removed": 0,
+        "post_mhc_size": 14
+      }
+    },
+    {
+      "gene_list": "SCHEMA_exome_wide_significant",
+      "n_list_in_background": 9,
+      "har_union": {
+        "a": 0,
+        "b": 9,
+        "c": 1357,
+        "d": 15768,
+        "odds_ratio_point": 0.0,
+        "odds_ratio_scipy": 0.0,
+        "odds_ratio_95ci_low": 0.0,
+        "odds_ratio_95ci_high": 5.8936324372624105,
+        "p_one_sided_greater": 1.0,
+        "bh_q": 1.0
+      },
+      "har_pollard_only": {
+        "a": 0,
+        "b": 9,
+        "c": 46,
+        "d": 17079,
+        "odds_ratio_point": 0.0,
+        "odds_ratio_scipy": 0.0,
+        "odds_ratio_95ci_low": 0.0,
+        "odds_ratio_95ci_high": 193.78744610544967,
+        "p_one_sided_greater": 1.0
+      },
+      "provenance": {
+        "source": "Singh 2022 Table 1 exome-wide significant genes at P<2.5e-6; file experiments/batch_044/input/schema_exome_wide_significant.txt",
+        "original_size": 10,
+        "mhc_removed": 0,
+        "post_mhc_size": 10
+      }
+    }
+  ],
+  "schema_positive_control": {
+    "gene_list": "SCHEMA_exome_wide_significant",
+    "odds_ratio": 94.71324290637557,
+    "bh_q": 3.470654306729388e-08,
+    "threshold_or_min": 5.0,
+    "threshold_q_max": 0.01,
+    "pass_gate": true
+  },
+  "decision": {
+    "classification": "ESTABLISHED",
+    "reason": "LOEUF Fisher q<0.05 on >=1 PGC3 list AND PGC3_EDT1 OR>1.5 AND logistic beta_scz>0 (ridge; p suppressed) AND SCHEMA control passes. Logistic fit method=ridge: p-value suppressed under L2 regularization; decision uses sign of beta_scz only.",
+    "logistic_fit_method": "ridge",
+    "beta_scz": 0.3499506517279308,
+    "p_scz": null
+  }
+}

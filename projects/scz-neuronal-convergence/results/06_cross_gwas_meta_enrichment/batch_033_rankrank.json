@@ -1,0 +1,18 @@
+{
+  "status": "success",
+  "correction": "FIXED: uses only Neuronal markers from batch_009 (not all PanglaoDB markers)",
+  "n_total_genes": 54908,
+  "n_neuronal_markers": 88,
+  "n_oligo_markers": 34,
+  "neuronal_median_rank_pct": 45.015298317185106,
+  "non_neuronal_median_rank_pct": 50.00910614118161,
+  "mannwhitney_u": 2352972.0,
+  "mannwhitney_p": 0.6907534286548586,
+  "spearman_rho": -0.0016978151939934002,
+  "spearman_p": 0.6907547424736799,
+  "ks_stat": 0.07937547676693968,
+  "ks_p": 0.607709984411049,
+  "oligo_mannwhitney_p": 0.7209818434811719,
+  "neuronal_gws_count": 1,
+  "interpretation": "NOT significant rank enrichment for neuronal genes (median at 45.0th pctile, MWU p=6.91e-01)"
+}

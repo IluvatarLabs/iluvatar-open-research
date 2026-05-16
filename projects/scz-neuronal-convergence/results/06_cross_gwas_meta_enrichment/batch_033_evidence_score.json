@@ -1,0 +1,42 @@
+{
+  "n_scored_genes": 470,
+  "score_distribution": {
+    "min": 1,
+    "max": 9,
+    "median": 3.0,
+    "p75": 4.0,
+    "p25": 2.0
+  },
+  "high_score_enrichment": {
+    "label": "High-evidence-score \u00d7 Neuronal",
+    "marker_n": 95,
+    "overlap": 3,
+    "gwas_n": 195,
+    "universe": 20297,
+    "odds_ratio": 3.3984375,
+    "ci_lo": 1.066793036103747,
+    "ci_hi": 10.826258749858448,
+    "p_value": 0.06365535636779643,
+    "overlap_genes": [
+      "GABBR2",
+      "NRGN",
+      "RERE"
+    ]
+  },
+  "low_score_enrichment": {
+    "label": "Low-evidence-score \u00d7 Neuronal",
+    "marker_n": 95,
+    "overlap": 0,
+    "gwas_n": 157,
+    "universe": 20297,
+    "odds_ratio": 0.0,
+    "ci_lo": null,
+    "ci_hi": null,
+    "p_value": 1.0,
+    "overlap_genes": []
+  },
+  "point_biserial": {
+    "r": 0.14103499364075242,
+    "p": 0.0021784744565520975
+  }
+}

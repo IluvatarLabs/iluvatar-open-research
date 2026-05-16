@@ -1,0 +1,21 @@
+{
+  "harmonization_meta": {
+    "disorder": "height",
+    "source": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/ldsc/comparator_sumstats/height.sumstats.gz",
+    "z_to_p_conversion": true,
+    "n_snps_input": 31731185,
+    "n_snps_after_bim_match": 14820063
+  },
+  "test": {
+    "disorder": "height",
+    "n_genes_in_output": 19318,
+    "n_b3_in_output": 18,
+    "median_b3": 1.2959999999999998,
+    "median_bg": 0.7382150000000001,
+    "sd_bg": 1.1377126852538377,
+    "std_effect": 0.49026877104350036,
+    "perm_p": 0.0357964203579642,
+    "n_perm": 10000,
+    "perm_seed": 20260423
+  }
+}

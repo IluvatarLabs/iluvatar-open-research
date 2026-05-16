@@ -1,0 +1,47 @@
+{
+  "positive_control": {
+    "neuronal_OR": 3.073268921095008,
+    "neuronal_p": 0.0015683414959904217,
+    "immune_OR": 0.0,
+    "immune_p": 1.0,
+    "gene_list_quality": "PASS"
+  },
+  "test_a_pgc2_neuronal": {
+    "OR": 3.073268921095008,
+    "p": 0.0015683414959904217,
+    "overlap": 11,
+    "genes": [
+      "CACNA1C",
+      "CACNB2",
+      "CHRNA3",
+      "CHRNA5",
+      "CHRNB4",
+      "DRD2",
+      "GRIA1",
+      "GRM3",
+      "KCNJ13",
+      "SLC32A1",
+      "TCF4"
+    ]
+  },
+  "test_b_pgc2_immune": {
+    "OR": 0.0,
+    "p": 1.0,
+    "overlap": 0,
+    "genes": []
+  },
+  "test_c_asd_neuronal": {
+    "OR": 0.0,
+    "p": 1.0,
+    "overlap": 0,
+    "genes": []
+  },
+  "test_d_asd_immune": {
+    "OR": 0.0,
+    "p": 1.0,
+    "overlap": 0,
+    "genes": []
+  },
+  "decision": "SPECTRUM_CONFIRMED",
+  "power_warning": "ASD N=15, exploratory only \u2014 underpowered for Bonferroni correction"
+}

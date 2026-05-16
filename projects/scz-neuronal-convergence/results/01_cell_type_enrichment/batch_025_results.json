@@ -1,0 +1,294 @@
+{
+  "batch_id": "batch_025",
+  "timestamp": "2026-04-11T22:28:53.606900",
+  "pgc3_gene_list_n": 106,
+  "pgc3_extended_n": 437,
+  "background_size": 20297,
+  "cell_type_markers": {
+    "Astrocytes": 15,
+    "Ependymal cells": 27,
+    "Neurons": 95,
+    "Oligodendrocyte progenitor cells": 10,
+    "Oligodendrocytes": 36,
+    "Retinal ganglion cells": 13,
+    "Microglia (PanglaoDB)": 80
+  },
+  "pathway_gene_set_sizes": {
+    "NF-kB (Reactome)": 65,
+    "NF-kB TF RELA (DoRothEA)": 243,
+    "NF-kB TF NFKB1 (DoRothEA)": 250,
+    "TLR (KEGG)": 102,
+    "SPI1 regulon (DoRothEA)": 599
+  },
+  "results": {
+    "PGC3 \u00d7 Neurons": {
+      "marker_n": 95,
+      "overlap": 2,
+      "gwas_n": 106,
+      "a": 2,
+      "b": 93,
+      "c": 104,
+      "d": 20098,
+      "odds_ratio": 4.155913978494624,
+      "ci_lo": 1.0106448099690568,
+      "ci_hi": 17.089704341504333,
+      "p_value": 0.08827138226499368,
+      "overlap_genes": [
+        "GABBR2",
+        "RERE"
+      ],
+      "fdr_corrected": 0.22067845566248417
+    },
+    "PGC3 \u00d7 Oligodendrocytes": {
+      "marker_n": 36,
+      "overlap": 0,
+      "gwas_n": 106,
+      "a": 0,
+      "b": 36,
+      "c": 106,
+      "d": 20155,
+      "odds_ratio": 0.0,
+      "ci_lo": null,
+      "ci_hi": null,
+      "p_value": 1.0,
+      "overlap_genes": [],
+      "fdr_corrected": 1.0
+    },
+    "PGC3 \u00d7 Astrocytes": {
+      "marker_n": 15,
+      "overlap": 0,
+      "gwas_n": 106,
+      "a": 0,
+      "b": 15,
+      "c": 106,
+      "d": 20176,
+      "odds_ratio": 0.0,
+      "ci_lo": null,
+      "ci_hi": null,
+      "p_value": 1.0,
+      "overlap_genes": [],
+      "fdr_corrected": 1.0
+    },
+    "PGC3 \u00d7 Oligodendrocyte progenitor cells": {
+      "marker_n": 10,
+      "overlap": 1,
+      "gwas_n": 106,
+      "a": 1,
+      "b": 9,
+      "c": 105,
+      "d": 20182,
+      "odds_ratio": 21.356613756613758,
+      "ci_lo": 2.6817208874074097,
+      "ci_hi": 170.0792029815338,
+      "p_value": 0.05102512509929699,
+      "overlap_genes": [
+        "EPN2"
+      ],
+      "fdr_corrected": 0.22067845566248417
+    },
+    "PGC3 \u00d7 Microglia (PanglaoDB)": {
+      "marker_n": 80,
+      "overlap": 0,
+      "gwas_n": 106,
+      "a": 0,
+      "b": 80,
+      "c": 106,
+      "d": 20111,
+      "odds_ratio": 0.0,
+      "ci_lo": null,
+      "ci_hi": null,
+      "p_value": 1.0,
+      "overlap_genes": [],
+      "fdr_corrected": 1.0
+    },
+    "PGC3 \u00d7 NF-\u03baB (Reactome, combined)": {
+      "marker_n": 65,
+      "overlap": 0,
+      "gwas_n": 106,
+      "a": 0,
+      "b": 65,
+      "c": 106,
+      "d": 20126,
+      "odds_ratio": 0.0,
+      "ci_lo": null,
+      "ci_hi": null,
+      "p_value": 1.0,
+      "overlap_genes": []
+    },
+    "PGC3 \u00d7 NF-\u03baB TF RELA (DoRothEA)": {
+      "marker_n": 243,
+      "overlap": 1,
+      "gwas_n": 106,
+      "a": 1,
+      "b": 242,
+      "c": 105,
+      "d": 19949,
+      "odds_ratio": 0.7850846123573396,
+      "ci_lo": 0.10911530484981888,
+      "ci_hi": 5.6486837424740735,
+      "p_value": 0.7219755845536302,
+      "overlap_genes": [
+        "CRHR1"
+      ]
+    },
+    "PGC3 \u00d7 NF-\u03baB TF NFKB1 (DoRothEA)": {
+      "marker_n": 250,
+      "overlap": 1,
+      "gwas_n": 106,
+      "a": 1,
+      "b": 249,
+      "c": 105,
+      "d": 19942,
+      "odds_ratio": 0.7627462229871869,
+      "ci_lo": 0.10602258068589429,
+      "ci_hi": 5.487338611430556,
+      "p_value": 0.7321023143735986,
+      "overlap_genes": [
+        "GATAD2A"
+      ]
+    },
+    "PGC3 \u00d7 TLR (KEGG)": {
+      "marker_n": 102,
+      "overlap": 3,
+      "gwas_n": 106,
+      "a": 3,
+      "b": 99,
+      "c": 103,
+      "d": 20092,
+      "odds_ratio": 5.911150338334805,
+      "ci_lo": 1.8441378119204768,
+      "ci_hi": 18.9474442183947,
+      "p_value": 0.016364202658612,
+      "overlap_genes": [
+        "AKT3",
+        "IRF3",
+        "MAPK3"
+      ]
+    },
+    "PGC3 \u00d7 SPI1 regulon (DoRothEA)": {
+      "marker_n": 599,
+      "overlap": 5,
+      "gwas_n": 106,
+      "a": 5,
+      "b": 594,
+      "c": 101,
+      "d": 19597,
+      "odds_ratio": 1.6332466579991332,
+      "ci_lo": 0.6629167771331669,
+      "ci_hi": 4.023875602305794,
+      "p_value": 0.2039976014929749,
+      "overlap_genes": [
+        "BNIP3L",
+        "GATAD2A",
+        "MLXIP",
+        "PDE4B",
+        "RERE"
+      ]
+    },
+    "PGC3.ExtGWAS \u00d7 NF-\u03baB (Reactome, combined)": {
+      "marker_n": 65,
+      "overlap": 1,
+      "gwas_n": 437,
+      "a": 1,
+      "b": 64,
+      "c": 436,
+      "d": 19796,
+      "odds_ratio": 0.7094323394495413,
+      "ci_lo": 0.09819289120437573,
+      "ci_hi": 5.125567014920741,
+      "p_value": 0.7575628885262036,
+      "overlap_genes": [
+        "RELA"
+      ]
+    },
+    "PGC3.ExtGWAS \u00d7 NF-\u03baB TF RELA (DoRothEA)": {
+      "marker_n": 243,
+      "overlap": 4,
+      "gwas_n": 437,
+      "a": 4,
+      "b": 239,
+      "c": 433,
+      "d": 19621,
+      "odds_ratio": 0.7583947742228493,
+      "ci_lo": 0.28102949807787436,
+      "ci_hi": 2.0466272668968957,
+      "p_value": 0.770823514669937,
+      "overlap_genes": [
+        "CRHR1",
+        "EGR1",
+        "TBL1XR1",
+        "UBE2D3"
+      ]
+    },
+    "PGC3.ExtGWAS \u00d7 NF-\u03baB TF NFKB1 (DoRothEA)": {
+      "marker_n": 250,
+      "overlap": 2,
+      "gwas_n": 437,
+      "a": 2,
+      "b": 248,
+      "c": 435,
+      "d": 19612,
+      "odds_ratio": 0.3635891731553578,
+      "ci_lo": 0.09013226513915999,
+      "ci_hi": 1.4667010379877912,
+      "p_value": 0.9724771725205544,
+      "overlap_genes": [
+        "GATAD2A",
+        "SRPK2"
+      ]
+    },
+    "PGC3.ExtGWAS \u00d7 TLR (KEGG)": {
+      "marker_n": 102,
+      "overlap": 4,
+      "gwas_n": 437,
+      "a": 4,
+      "b": 98,
+      "c": 433,
+      "d": 19762,
+      "odds_ratio": 1.862845831173116,
+      "ci_lo": 0.6823459162154809,
+      "ci_hi": 5.085682361764427,
+      "p_value": 0.17773195098161262,
+      "overlap_genes": [
+        "AKT3",
+        "IRF3",
+        "MAPK3",
+        "RELA"
+      ]
+    },
+    "PGC3.ExtGWAS \u00d7 SPI1 regulon (DoRothEA)": {
+      "marker_n": 599,
+      "overlap": 19,
+      "gwas_n": 437,
+      "a": 19,
+      "b": 580,
+      "c": 418,
+      "d": 19280,
+      "odds_ratio": 1.5109717868338557,
+      "ci_lo": 0.9470829413164997,
+      "ci_hi": 2.410597468300235,
+      "p_value": 0.06083717852667126,
+      "overlap_genes": [
+        "ANKRD11",
+        "ARHGAP1",
+        "BNIP3L",
+        "CTNND1",
+        "DENND4B",
+        "EXOC4",
+        "GALNT10",
+        "GATAD2A",
+        "MEF2C",
+        "MLXIP",
+        "PDE4B",
+        "PTK2B",
+        "RERE",
+        "SNCA",
+        "TBC1D5",
+        "TBL1XR1",
+        "TMEM131",
+        "ZEB2",
+        "ZNF365"
+      ]
+    }
+  }
+}

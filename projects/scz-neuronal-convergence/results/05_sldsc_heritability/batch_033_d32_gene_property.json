@@ -1,0 +1,93 @@
+{
+  "method": "MAGMA gene-property regression (OLS)",
+  "n_genes": 19271,
+  "predictors": [
+    "is_neurons",
+    "is_oligodendrocytes",
+    "is_astrocytes",
+    "is_oligodendrocyte_progenitor_cells"
+  ],
+  "r_squared": 9.802272888903563e-05,
+  "adj_r_squared": -0.00010957656048526943,
+  "individual_tests": {
+    "Neurons": {
+      "n_markers": -43,
+      "mean_z_markers": -0.5115110846770129,
+      "mean_z_nonmarkers": -1.1102881659738528,
+      "diff_z": 0.5987770812968399,
+      "t_stat": 0.6425958263768735,
+      "p_value": 0.5221992130890736,
+      "cohen_d": 0.06795887466482205,
+      "significant": false,
+      "direction": "enriched",
+      "fdr_p": 0.6310280628100073,
+      "fdr_significant": false
+    },
+    "Oligodendrocytes": {
+      "n_markers": -1,
+      "mean_z_markers": -0.042989468837301724,
+      "mean_z_nonmarkers": -1.10949767508188,
+      "diff_z": 1.066508206244578,
+      "t_stat": 0.840531531914867,
+      "p_value": 0.40662816937619606,
+      "cohen_d": 0.12953980478342175,
+      "significant": false,
+      "direction": "enriched",
+      "fdr_p": 0.6310280628100073,
+      "fdr_significant": false
+    },
+    "Astrocytes": {
+      "n_markers": -44,
+      "mean_z_markers": -2.986730541724592,
+      "mean_z_nonmarkers": -1.1061522361531326,
+      "diff_z": -1.8805783055714593,
+      "t_stat": -0.7786265480586554,
+      "p_value": 0.4491422401122499,
+      "cohen_d": -0.20496963549343925,
+      "significant": false,
+      "direction": "depleted",
+      "fdr_p": 0.6310280628100073,
+      "fdr_significant": false
+    },
+    "Oligodendrocyte progenitor cells": {
+      "n_markers": 4,
+      "mean_z_markers": 0.4779583956484771,
+      "mean_z_nonmarkers": -1.1084392296063066,
+      "diff_z": 1.5863976252547838,
+      "t_stat": 0.49709647810255825,
+      "p_value": 0.6310280628100073,
+      "cohen_d": 0.1659718546316542,
+      "significant": false,
+      "direction": "enriched",
+      "fdr_p": 0.6310280628100073,
+      "fdr_significant": false
+    }
+  },
+  "joint_regression": {
+    "is_neurons": {
+      "coefficient": 0.6235817077077357,
+      "standard_error": 0.9725970503516868,
+      "p_value": 0.521432117340072,
+      "significant": false
+    },
+    "is_oligodendrocytes": {
+      "coefficient": 1.0187830416455907,
+      "standard_error": 1.5464287873882336,
+      "p_value": 0.5100338427272758,
+      "significant": false
+    },
+    "is_astrocytes": {
+      "coefficient": -2.0295104872364327,
+      "standard_error": 2.3322261451340625,
+      "p_value": 0.38420024854064827,
+      "significant": false
+    },
+    "is_oligodendrocyte_progenitor_cells": {
+      "coefficient": 1.6905249734380963,
+      "standard_error": 2.8591129427461177,
+      "p_value": 0.5543424189342191,
+      "significant": false
+    }
+  },
+  "interpretation": "Neuronal marker genes show stronger MAGMA z-scores (p=5.22e-01), consistent with F013 gene-level enrichment."
+}

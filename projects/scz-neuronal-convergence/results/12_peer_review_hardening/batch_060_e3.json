@@ -1,0 +1,99 @@
+{
+  "status": "ok",
+  "batch": "060",
+  "sub": "e3",
+  "brief": "brief_v2.md",
+  "wall_s": 4.4050867557525635,
+  "smoke": true,
+  "n_frame": 16556,
+  "n_edt1_ex_b3": 414,
+  "edt1_ex_b3_pli": {
+    "mean": 0.3622529095074756,
+    "std": 0.4595610425622113
+  },
+  "null_pli_distribution": {
+    "n_draws": 500,
+    "n_finite": 500,
+    "mean_of_means": 0.2665592500844931,
+    "std_across_draws": 0.019441679014010865,
+    "se_mean": 0.0008694583174411876,
+    "q05": 0.2346185268750923,
+    "q50": 0.2665181703910907,
+    "q95": 0.2981436165305326,
+    "mean_of_stds": 0.4134248631938043
+  },
+  "pli_regression": {
+    "pli_beta": 0.31227984750914156,
+    "pli_se": 0.03135894692635559,
+    "pli_t": 9.95823769983444,
+    "pli_p": 2.6995847564302876e-23,
+    "covariates": [
+      "log10_gene_length",
+      "lof_pLI",
+      "log10_exp_lof_plus1",
+      "log10_NSNPS_plus1"
+    ],
+    "n": 16556
+  },
+  "bias_analysis": {
+    "pli_gap": 0.09569365942298247,
+    "pli_regression_coefficient": 0.31227984750914156,
+    "expected_bias": 0.029883201372200692,
+    "observed_beta_scz": 3.4265879770359398,
+    "bias_fraction_of_observed": 0.00872097887825142,
+    "bias_fraction_threshold_adequate": 0.1,
+    "bias_fraction_threshold_inadequate": 0.2
+  },
+  "seed_verification": {
+    "status": "MISMATCH",
+    "e2_ring_per_decile": [
+      18,
+      39,
+      29,
+      32,
+      36,
+      27,
+      35,
+      37,
+      67,
+      84
+    ],
+    "our_ring_per_decile": [
+      19,
+      39,
+      30,
+      33,
+      36,
+      28,
+      36,
+      38,
+      68,
+      87
+    ],
+    "decile_match": false,
+    "e2_n_draws": 10000,
+    "our_n_draws": 500,
+    "note": "Ring-per-decile match confirms the same frame and decile structure. Full beta verification requires loading the .npz (not done here to keep E3 lightweight)."
+  },
+  "verdict": {
+    "verdict": "PARTIALLY_CONTROLLED",
+    "reason": "mean_pLI_null=0.2666 in [0.2, 0.3]"
+  },
+  "provenance_sha256": {
+    "gnomad_tsv": "68d8abdb7fc48f570869b02dfaa74b9fecaece7fcc5f301ddca40ec1ce12da00",
+    "gene_annot": "940086e0781e9b244da76d27f02cc25dd45c957ee4415915cd1ced37b63d1e72",
+    "magma_scz": "8eaded5409b49981de428189805957420d378c5cf138c9d40056acf4f1030fa0",
+    "e2_results": "321d52bfdff25a05792ce21f994def2c5bf37d69a073cc1d68bbc41dbb4c11cf"
+  },
+  "brief_contract": {
+    "n_null_draws": 500,
+    "seed_base": 20260426,
+    "cell_key": "remaining__scz",
+    "cell_seed_used": 23180351,
+    "deciles": 10,
+    "pli_adequate_floor": 0.3,
+    "pli_partial_floor": 0.2,
+    "bias_inconsequential_threshold": 0.1,
+    "bias_inadequate_threshold": 0.2
+  }
+}

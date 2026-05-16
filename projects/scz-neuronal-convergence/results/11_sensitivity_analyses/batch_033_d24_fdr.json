@@ -1,0 +1,153 @@
+{
+  "n_tests": 9,
+  "results": [
+    {
+      "label": "PGC3 \u00d7 Neurons",
+      "marker_n": 95,
+      "overlap": 2,
+      "gwas_n": 106,
+      "universe": 20297,
+      "odds_ratio": 4.155913978494624,
+      "ci_lo": 1.0106448099690568,
+      "ci_hi": 17.089704341504333,
+      "p_value": 0.08827138226499368,
+      "overlap_genes": [
+        "GABBR2",
+        "RERE"
+      ],
+      "fdr_corrected": 0.26481414679498105,
+      "fdr_significant": false
+    },
+    {
+      "label": "PGC3 \u00d7 Oligodendrocytes",
+      "marker_n": 36,
+      "overlap": 0,
+      "gwas_n": 106,
+      "universe": 20297,
+      "odds_ratio": 0.0,
+      "ci_lo": null,
+      "ci_hi": null,
+      "p_value": 1.0,
+      "overlap_genes": [],
+      "fdr_corrected": 1.0,
+      "fdr_significant": false
+    },
+    {
+      "label": "PGC3 \u00d7 Astrocytes",
+      "marker_n": 15,
+      "overlap": 0,
+      "gwas_n": 106,
+      "universe": 20297,
+      "odds_ratio": 0.0,
+      "ci_lo": null,
+      "ci_hi": null,
+      "p_value": 1.0,
+      "overlap_genes": [],
+      "fdr_corrected": 1.0,
+      "fdr_significant": false
+    },
+    {
+      "label": "PGC3 \u00d7 Oligodendrocyte progenitor cells",
+      "marker_n": 10,
+      "overlap": 1,
+      "gwas_n": 106,
+      "universe": 20297,
+      "odds_ratio": 21.356613756613758,
+      "ci_lo": 2.6817208874074097,
+      "ci_hi": 170.0792029815338,
+      "p_value": 0.05102512509929699,
+      "overlap_genes": [
+        "EPN2"
+      ],
+      "fdr_corrected": 0.22961306294683648,
+      "fdr_significant": false
+    },
+    {
+      "label": "PGC3 \u00d7 NF-\u03baB (Reactome)",
+      "marker_n": 253,
+      "overlap": 1,
+      "gwas_n": 106,
+      "universe": 20297,
+      "odds_ratio": 0.7535525321239607,
+      "ci_lo": 0.10474952144604953,
+      "ci_hi": 5.420945230407523,
+      "p_value": 0.7363296804082369,
+      "overlap_genes": [
+        "PSMA4"
+      ],
+      "fdr_corrected": 0.9467095890963045,
+      "fdr_significant": false
+    },
+    {
+      "label": "PGC3 \u00d7 NF-\u03baB RELA (DoRothEA)",
+      "marker_n": 243,
+      "overlap": 1,
+      "gwas_n": 106,
+      "universe": 20297,
+      "odds_ratio": 0.7850846123573396,
+      "ci_lo": 0.10911530484981888,
+      "ci_hi": 5.6486837424740735,
+      "p_value": 0.7219755845536302,
+      "overlap_genes": [
+        "CRHR1"
+      ],
+      "fdr_corrected": 0.9467095890963045,
+      "fdr_significant": false
+    },
+    {
+      "label": "PGC3 \u00d7 NF-\u03baB NFKB1 (DoRothEA)",
+      "marker_n": 250,
+      "overlap": 1,
+      "gwas_n": 106,
+      "universe": 20297,
+      "odds_ratio": 0.7627462229871869,
+      "ci_lo": 0.10602258068589429,
+      "ci_hi": 5.487338611430556,
+      "p_value": 0.7321023143735986,
+      "overlap_genes": [
+        "GATAD2A"
+      ],
+      "fdr_corrected": 0.9467095890963045,
+      "fdr_significant": false
+    },
+    {
+      "label": "PGC3 \u00d7 TLR (KEGG)",
+      "marker_n": 102,
+      "overlap": 3,
+      "gwas_n": 106,
+      "universe": 20297,
+      "odds_ratio": 5.911150338334805,
+      "ci_lo": 1.8441378119204768,
+      "ci_hi": 18.9474442183947,
+      "p_value": 0.016364202658612,
+      "overlap_genes": [
+        "AKT3",
+        "IRF3",
+        "MAPK3"
+      ],
+      "fdr_corrected": 0.14727782392750802,
+      "fdr_significant": false
+    },
+    {
+      "label": "PGC3 \u00d7 SPI1 (DoRothEA)",
+      "marker_n": 599,
+      "overlap": 5,
+      "gwas_n": 106,
+      "universe": 20297,
+      "odds_ratio": 1.6332466579991332,
+      "ci_lo": 0.6629167771331669,
+      "ci_hi": 4.023875602305794,
+      "p_value": 0.2039976014929749,
+      "overlap_genes": [
+        "BNIP3L",
+        "GATAD2A",
+        "MLXIP",
+        "PDE4B",
+        "RERE"
+      ],
+      "fdr_corrected": 0.45899460335919356,
+      "fdr_significant": false
+    }
+  ],
+  "fdr_method": "BH across all tests"
+}

@@ -1,0 +1,30 @@
+{
+  "batch_id": "batch_028",
+  "analysis_date": "2026-04-13",
+  "directives": [
+    "D11 Step 2",
+    "D12"
+  ],
+  "step1_pgc3_prep": {
+    "input_file": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/19426775/PGC3_SCZ_wave3.european.autosome.public.v3.vcf.tsv.gz",
+    "snps_loaded": 7659767,
+    "snps_valid": 7659767,
+    "output_file": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/ldsc/PGC3_sumstats/PGC3_EUR.sumstats.gz"
+  },
+  "step2_magma": {
+    "status": "not_run",
+    "genes_tested": 0,
+    "significant_bonferroni": 0
+  },
+  "step3_annotations": {
+    "neuronal_markers": 95,
+    "oligodendrocyte_markers": 36,
+    "astrocyte_markers": 15,
+    "OPC_markers": 10,
+    "microglia_note": "Not in PanglaoDB markers (F018/F046/F049)"
+  },
+  "step4_sldsc": {
+    "status": "executed",
+    "baseline_results": "not_found"
+  }
+}

@@ -1,0 +1,20 @@
+trait	full_name	category	study	N	gcst	rg	SE	z	p	ci_95_lo	ci_95_hi	status
+mdd	Major Depressive Disorder	psychiatric	Wray 2018 PGC MDD (GCST006477)	480359	GCST006477	0.3902	0.0188	20.7461	1.3296e-95	0.353352	0.427048	ok
+asd	Autism Spectrum Disorder	psychiatric	ASD GWAS 2023 (GCST90275152)	54976	GCST90275152	0.2448	0.0314	7.8054	5.9324e-15	0.183256	0.306344	ok
+anxiety	Anxiety Disorders	psychiatric	Anxiety GWAS 2024 (GCST90468110)	394626	GCST90468110	0.3123	0.0455	6.8586	6.9518e-12	0.22312000000000004	0.40148	ok
+edu	Educational Attainment	cognitive	EA Lee 2025 SSGAC (GCST90566696)	753152	GCST90566696	0.0487	0.0172	2.8336	0.0046	0.014988000000000001	0.082412	ok
+cognitive	Cognitive Performance	cognitive	Cognitive Lee/Savage 2018 (GCST006572)	257841	GCST006572	-0.2381	0.0186	-12.7888	1.8929e-37	-0.274556	-0.20164400000000002	ok
+neuroticism	Neuroticism	cognitive	Neuroticism Nagel 2018 (GCST90029028)	393411	GCST90029028	0.2349	0.0191	12.319	7.1566e-35	0.197464	0.272336	ok
+risk_taking	Risk-Taking Behavior	cognitive	Risk-taking Karlsson Linner 2019 (GCST006810)	436236	GCST006810	0.3369	0.0623	5.4121	6.2289e-08	0.21479199999999998	0.45900799999999997	ok
+crp	C-Reactive Protein	inflammatory	CRP GWAS (GCST008055)	566217	GCST008055	-0.0204	0.0444	-0.4589	0.6463	-0.107424	0.066624	ok
+t2d	Type 2 Diabetes	metabolic	T2D DIAMANTE (GCST010118)	433540	GCST010118	-0.0109	0.0189	-0.5769	0.564	-0.047944	0.026144	ok
+alzheimers	Alzheimer's Disease	neurodegeneration	AD GWAS (GCST007320)	455258	GCST007320	0.1331	0.0725	1.8354	0.0664	-0.00899999999999998	0.2752	ok
+parkinson	Parkinson's Disease	neurodegeneration	PD Nalls 2019 IPDGC (GCST009325)	482730	GCST009325	-0.001	0.029	-0.035	0.972	-0.05784	0.05584	ok
+height	Height	anthropometric	Height GIANT (GCST008053)	253288	GCST008053	-0.0227	0.0271	-0.8386	0.4017	-0.075816	0.030415999999999995	ok
+ptsd	Post-Traumatic Stress Disorder	psychiatric	PTSD Nievergelt 2024 PGC	1222882								BLOCKED_NO_SOURCE
+ocd	Obsessive-Compulsive Disorder	psychiatric	OCD GWAS	100000								BLOCKED_NO_SOURCE
+anorexia	Anorexia Nervosa	psychiatric	AN Watson 2019 PGC	72417								BLOCKED_NO_SOURCE
+smoking	Smoking Initiation	cognitive	GSCAN Saunders 2019	1237000								BLOCKED_NO_SOURCE
+alcohol	Alcohol Use	cognitive	GSCAN Liu 2019	940000								BLOCKED_NO_SOURCE
+cannabis	Cannabis Use Disorder	cognitive	Johnson 2020 ICC	374287								BLOCKED_NO_SOURCE
+il6	Interleukin-6	inflammatory	IL-6 GWAS	20414								BLOCKED_NO_SOURCE

@@ -1,0 +1,163 @@
+{
+  "metadata": {
+    "analysis": "D52_cross_disorder_celltype_sldsc",
+    "date": "2026-04-21",
+    "cell_type_annotation_source": "experiments/batch_034/output/ld_scores_final/celltype",
+    "baseline_ld": "data/ldsc/baselineLD/baselineLD v2.2",
+    "reference_panel": "1000G Phase 3 EUR",
+    "snp_set": "HapMap3 no MHC"
+  },
+  "datasets": {
+    "SCZ": {
+      "source": "PGC3 SCZ EUR (batch_034)",
+      "citation": "Trubetskoy et al 2022",
+      "n_snps_analyzed": 1168466,
+      "stats": {
+        "total_h2": 0.8215,
+        "total_h2_se": 0.029,
+        "lambda_gc": 1.7385,
+        "mean_chi2": 2.0143
+      }
+    },
+    "MDD": {
+      "source": "Shorter et al 2025, Nat Genet, GCST90726344",
+      "citation": "Shorter et al 2025 (PMID:41233554)",
+      "n_cases": 151582,
+      "n_controls": 362873,
+      "n_snps_analyzed": 1119500,
+      "stats": {
+        "total_h2": 0.0663,
+        "total_h2_se": 0.0028,
+        "lambda_gc": 1.6145,
+        "mean_chi2": 1.776
+      }
+    },
+    "ASD": {
+      "source": "Matoba et al 2020, Transl Psychiatry, GCST010514 (iPSYCH-PGC-SPARK EUR)",
+      "citation": "Matoba et al 2020 (PMID:32747698)",
+      "n_cases": 22916,
+      "n_controls": 32504,
+      "n_snps_analyzed": 1137076,
+      "stats": {
+        "total_h2": 0.1903,
+        "total_h2_se": 0.0213,
+        "lambda_gc": 1.1779,
+        "mean_chi2": 1.214
+      }
+    }
+  },
+  "celltype_results": {
+    "neuronal": {
+      "SCZ": {
+        "prop_snps": 0.009603333848333857,
+        "prop_h2": 0.017568545568287422,
+        "prop_h2_se": 0.0030521012708441503,
+        "enrichment": 1.8294215160848022,
+        "enrichment_se": 0.31781684559197937,
+        "enrichment_p": 0.00892664313223123
+      },
+      "MDD": {
+        "prop_snps": 0.009603333848333857,
+        "prop_h2": 0.015937470190705946,
+        "prop_h2_se": 0.0037556743016088417,
+        "enrichment": 1.659576813886465,
+        "enrichment_se": 0.3910802603473415,
+        "enrichment_p": 0.0951237054302125
+      },
+      "ASD": {
+        "prop_snps": 0.009603333848333857,
+        "prop_h2": 0.021474596525438275,
+        "prop_h2_se": 0.006829747335730462,
+        "enrichment": 2.2361605734621044,
+        "enrichment_se": 0.7111850367375699,
+        "enrichment_p": 0.08014081223352308
+      }
+    },
+    "oligodendrocyte": {
+      "SCZ": {
+        "prop_snps": 0.003611210504534437,
+        "prop_h2": 0.0018732740441575035,
+        "prop_h2_se": 0.0010173211756163798,
+        "enrichment": 0.5187385342962745,
+        "enrichment_se": 0.28171195623710515,
+        "enrichment_p": 0.08900339993300209
+      },
+      "MDD": {
+        "prop_snps": 0.003611210504534437,
+        "prop_h2": 0.00451655638727243,
+        "prop_h2_se": 0.001872798388614803,
+        "enrichment": 1.25070426705981,
+        "enrichment_se": 0.5186068179252395,
+        "enrichment_p": 0.6289317635634222
+      },
+      "ASD": {
+        "prop_snps": 0.003611210504534437,
+        "prop_h2": 0.007645993077498128,
+        "prop_h2_se": 0.00728912824285351,
+        "enrichment": 2.1172936520586085,
+        "enrichment_se": 2.01847226399593,
+        "enrichment_p": 0.5799662460577901
+      }
+    },
+    "astrocyte": {
+      "SCZ": {
+        "prop_snps": 0.0016053925084031477,
+        "prop_h2": 0.0012507763715966195,
+        "prop_h2_se": 0.001040668010234383,
+        "enrichment": 0.7791093860533472,
+        "enrichment_se": 0.6482327560314299,
+        "enrichment_p": 0.7335635111349851
+      },
+      "MDD": {
+        "prop_snps": 0.0016053925084031477,
+        "prop_h2": 0.00143208538412588,
+        "prop_h2_se": 0.0006364171758491609,
+        "enrichment": 0.8920468836311857,
+        "enrichment_se": 0.3964246578440761,
+        "enrichment_p": 0.7855065560859608
+      },
+      "ASD": {
+        "prop_snps": 0.0016053925084031477,
+        "prop_h2": 0.0020110756263911136,
+        "prop_h2_se": 0.0048071350745811795,
+        "enrichment": 1.2527002685414865,
+        "enrichment_se": 2.994367451834407,
+        "enrichment_p": 0.9329610238596652
+      }
+    },
+    "OPC": {
+      "SCZ": {
+        "prop_snps": 0.0010972698429952967,
+        "prop_h2": 0.0034514520728552473,
+        "prop_h2_se": 0.002329712123142223,
+        "enrichment": 3.145490687535501,
+        "enrichment_se": 2.1231897860080062,
+        "enrichment_p": 0.31457201956090314
+      },
+      "MDD": {
+        "prop_snps": 0.0010972698429952967,
+        "prop_h2": 0.0010459200598664567,
+        "prop_h2_se": 0.0006960456693597227,
+        "enrichment": 0.9532022287346686,
+        "enrichment_se": 0.6343432053684047,
+        "enrichment_p": 0.9413795872610339
+      },
+      "ASD": {
+        "prop_snps": 0.0010972698429952967,
+        "prop_h2": 0.0004998764152019,
+        "prop_h2_se": 0.0009438724765687584,
+        "enrichment": 0.4555637962648743,
+        "enrichment_se": 0.860200872733549,
+        "enrichment_p": 0.5285458682100981
+      }
+    }
+  },
+  "interpretation": {
+    "neuronal_enrichment_comparison": {
+      "SCZ": "enrichment=1.83x, p=0.0089",
+      "MDD": "enrichment=1.66x, p=0.0951",
+      "ASD": "enrichment=2.24x, p=0.0801"
+    },
+    "scz_specificity_assessment": "Neuronal enrichment is highest in SCZ (1.83x, p=0.009), moderate in ASD (2.24x, p=0.080), and lower in MDD (1.66x, p=0.095). No cell type reaches Bonferroni-corrected significance in MDD or ASD. SCZ shows the strongest neuronal signal with nominal significance, suggesting partial but not exclusive specificity."
+  }
+}

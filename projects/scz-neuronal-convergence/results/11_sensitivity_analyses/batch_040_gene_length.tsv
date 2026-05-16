@@ -1,0 +1,15 @@
+metric	value
+empirical_p	0.0
+k_obs	17.0
+or_obs	9.958923949217306
+or_null_median	1.4359032501889644
+adjusted_or	6.935651094812074
+attenuation_ratio	0.8558174299240617
+n_permutations	10000.0
+n_scz_genes	444.0
+n_neuronal_markers	95.0
+length_tolerance	0.1
+null_mean	3.1963
+null_std	1.6936842415279185
+null_min	0.0
+null_max	14.0

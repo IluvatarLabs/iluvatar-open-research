@@ -1,0 +1,610 @@
+{
+  "strata": {
+    "afr": {
+      "mean_chi2": 1.0716,
+      "n_snps": 5465552,
+      "n_genes_tested": 54740,
+      "n_gws_genes": 16253,
+      "n_fdr_genes": 34102,
+      "min_detectable_or_neuron": 2.1,
+      "power_at_or3_neuron": 0.784,
+      "power_status": "UNINTERPRETABLE",
+      "power_detail": {
+        "Neurons": {
+          "min_detectable_or": 2.1,
+          "power_at_or3": 0.784,
+          "k_overlap_needed": 3,
+          "status": "ADEQUATE"
+        },
+        "Oligodendrocytes": {
+          "min_detectable_or": Infinity,
+          "power_at_or3": 0.335,
+          "k_overlap_needed": 3,
+          "status": "LOW_POWER"
+        },
+        "OPCs": {
+          "min_detectable_or": Infinity,
+          "power_at_or3": 0.073,
+          "k_overlap_needed": 3,
+          "status": "LOW_POWER"
+        },
+        "Astrocytes": {
+          "min_detectable_or": Infinity,
+          "power_at_or3": 0.147,
+          "k_overlap_needed": 3,
+          "status": "LOW_POWER"
+        }
+      },
+      "enrichment": [
+        {
+          "cell_type": "Neurons",
+          "k_overlap": 25,
+          "n_cell_markers": 95,
+          "odds_ratio": 0.846,
+          "ci_lo": 0.535,
+          "ci_hi": 1.336,
+          "p_raw": 0.5024095348979232,
+          "p_bonf": 1.0
+        },
+        {
+          "cell_type": "Oligodendrocytes",
+          "k_overlap": 13,
+          "n_cell_markers": 36,
+          "odds_ratio": 1.339,
+          "ci_lo": 0.678,
+          "ci_hi": 2.644,
+          "p_raw": 0.46515651169033817,
+          "p_bonf": 1.0
+        },
+        {
+          "cell_type": "OPCs",
+          "k_overlap": 6,
+          "n_cell_markers": 10,
+          "odds_ratio": 3.553,
+          "ci_lo": 1.002,
+          "ci_hi": 12.592,
+          "p_raw": 0.07461058310711335,
+          "p_bonf": 0.2984
+        },
+        {
+          "cell_type": "Astrocytes",
+          "k_overlap": 1,
+          "n_cell_markers": 15,
+          "odds_ratio": 0.169,
+          "ci_lo": 0.022,
+          "ci_hi": 1.286,
+          "p_raw": 0.051367389570362465,
+          "p_bonf": 0.2055
+        }
+      ],
+      "top_genes": [
+        {
+          "gene": "BTNL2",
+          "n_snps": 1177,
+          "stouffer_z": -33.20848425359665,
+          "stouffer_p": 8.120387012811097e-242,
+          "stouffer_p_bonf": 4.4450998508127943e-237
+        },
+        {
+          "gene": "HLA-DRA",
+          "n_snps": 758,
+          "stouffer_z": -31.165717430892474,
+          "stouffer_p": 3.106561116733631e-213,
+          "stouffer_p_bonf": 1.7005315552999896e-208
+        },
+        {
+          "gene": "PYY",
+          "n_snps": 535,
+          "stouffer_z": 29.594768994982676,
+          "stouffer_p": 1.7447904101618745e-192,
+          "stouffer_p_bonf": 9.550982705226101e-188
+        },
+        {
+          "gene": "PPY",
+          "n_snps": 564,
+          "stouffer_z": 29.4208819215151,
+          "stouffer_p": 2.9694392755730227e-190,
+          "stouffer_p_bonf": 1.6254710594486726e-185
+        },
+        {
+          "gene": "HLA-DRB9",
+          "n_snps": 503,
+          "stouffer_z": -29.36021676002561,
+          "stouffer_p": 1.7697350061556272e-189,
+          "stouffer_p_bonf": 9.687529423695904e-185
+        },
+        {
+          "gene": "LINC01976",
+          "n_snps": 554,
+          "stouffer_z": 28.92461268351473,
+          "stouffer_p": 5.855443338577456e-184,
+          "stouffer_p_bonf": 3.2052696835372996e-179
+        },
+        {
+          "gene": "MICC",
+          "n_snps": 682,
+          "stouffer_z": 28.60953789956198,
+          "stouffer_p": 5.112751884363625e-180,
+          "stouffer_p_bonf": 2.7987203815006486e-175
+        },
+        {
+          "gene": "COMMD4",
+          "n_snps": 217,
+          "stouffer_z": 28.1709132268598,
+          "stouffer_p": 1.3288217879151107e-174,
+          "stouffer_p_bonf": 7.273970467047316e-170
+        },
+        {
+          "gene": "ENSG00000231918",
+          "n_snps": 345,
+          "stouffer_z": 27.96887243955854,
+          "stouffer_p": 3.886719120501717e-172,
+          "stouffer_p_bonf": 2.12759004656264e-167
+        },
+        {
+          "gene": "ENSG00000267420",
+          "n_snps": 528,
+          "stouffer_z": 27.90147161821696,
+          "stouffer_p": 2.5605970380625087e-171,
+          "stouffer_p_bonf": 1.401670818635417e-166
+        }
+      ]
+    },
+    "lat": {
+      "mean_chi2": 1.0859,
+      "n_snps": 6269814,
+      "n_genes_tested": 54929,
+      "n_gws_genes": 18038,
+      "n_fdr_genes": 35452,
+      "min_detectable_or_neuron": 2.2,
+      "power_at_or3_neuron": 0.08,
+      "power_status": "UNINTERPRETABLE",
+      "power_detail": {
+        "Neurons": {
+          "min_detectable_or": 2.2,
+          "power_at_or3": 0.08,
+          "k_overlap_needed": 3,
+          "status": "ADEQUATE"
+        },
+        "Oligodendrocytes": {
+          "min_detectable_or": Infinity,
+          "power_at_or3": 0.079,
+          "k_overlap_needed": 3,
+          "status": "LOW_POWER"
+        },
+        "OPCs": {
+          "min_detectable_or": Infinity,
+          "power_at_or3": 0.0,
+          "k_overlap_needed": 3,
+          "status": "LOW_POWER"
+        },
+        "Astrocytes": {
+          "min_detectable_or": Infinity,
+          "power_at_or3": 0.0,
+          "k_overlap_needed": 3,
+          "status": "LOW_POWER"
+        }
+      },
+      "enrichment": [
+        {
+          "cell_type": "Neurons",
+          "k_overlap": 33,
+          "n_cell_markers": 95,
+          "odds_ratio": 1.089,
+          "ci_lo": 0.714,
+          "ci_hi": 1.662,
+          "p_raw": 0.7429999369585483,
+          "p_bonf": 1.0
+        },
+        {
+          "cell_type": "Oligodendrocytes",
+          "k_overlap": 10,
+          "n_cell_markers": 36,
+          "odds_ratio": 0.787,
+          "ci_lo": 0.379,
+          "ci_hi": 1.631,
+          "p_raw": 0.5971333721660779,
+          "p_bonf": 1.0
+        },
+        {
+          "cell_type": "OPCs",
+          "k_overlap": 2,
+          "n_cell_markers": 10,
+          "odds_ratio": 0.511,
+          "ci_lo": 0.109,
+          "ci_hi": 2.408,
+          "p_raw": 0.5139189644631882,
+          "p_bonf": 1.0
+        },
+        {
+          "cell_type": "Astrocytes",
+          "k_overlap": 5,
+          "n_cell_markers": 15,
+          "odds_ratio": 1.023,
+          "ci_lo": 0.349,
+          "ci_hi": 2.992,
+          "p_raw": 1.0,
+          "p_bonf": 1.0
+        }
+      ],
+      "top_genes": [
+        {
+          "gene": "ENSG00000286828",
+          "n_snps": 429,
+          "stouffer_z": -38.61544479523322,
+          "stouffer_p": 0.0,
+          "stouffer_p_bonf": 0.0
+        },
+        {
+          "gene": "ENSG00000248758",
+          "n_snps": 400,
+          "stouffer_z": -37.301478024467954,
+          "stouffer_p": 1.553010255389395e-304,
+          "stouffer_p_bonf": 8.530530031828407e-300
+        },
+        {
+          "gene": "RNU1-73P",
+          "n_snps": 371,
+          "stouffer_z": -36.91930235499931,
+          "stouffer_p": 2.265184789039041e-298,
+          "stouffer_p_bonf": 1.2442433527712548e-293
+        },
+        {
+          "gene": "GALNT13",
+          "n_snps": 311,
+          "stouffer_z": -36.69406228441875,
+          "stouffer_p": 9.082516895730288e-295,
+          "stouffer_p_bonf": 4.98893570565569e-290
+        },
+        {
+          "gene": "RIOK2",
+          "n_snps": 381,
+          "stouffer_z": -36.477233331185026,
+          "stouffer_p": 2.546593281326916e-291,
+          "stouffer_p_bonf": 1.3988182235000616e-286
+        },
+        {
+          "gene": "ENSG00000234022",
+          "n_snps": 229,
+          "stouffer_z": -34.95306886209986,
+          "stouffer_p": 1.1631058842327166e-267,
+          "stouffer_p_bonf": 6.388824311501888e-263
+        },
+        {
+          "gene": "ENSG00000251054",
+          "n_snps": 445,
+          "stouffer_z": -34.38034289136072,
+          "stouffer_p": 4.960119630668525e-259,
+          "stouffer_p_bonf": 2.724544111929914e-254
+        },
+        {
+          "gene": "CNN2P6",
+          "n_snps": 284,
+          "stouffer_z": 34.28534355153542,
+          "stouffer_p": 1.2977337203960873e-257,
+          "stouffer_p_bonf": 7.128321552763668e-253
+        },
+        {
+          "gene": "RNA5SP127",
+          "n_snps": 268,
+          "stouffer_z": 34.25800536847183,
+          "stouffer_p": 3.3146137442026113e-257,
+          "stouffer_p_bonf": 1.8206841835530522e-252
+        },
+        {
+          "gene": "ZNF292",
+          "n_snps": 431,
+          "stouffer_z": 33.80331174527084,
+          "stouffer_p": 1.7631595563507493e-250,
+          "stouffer_p_bonf": 9.68485912707903e-246
+        }
+      ]
+    },
+    "eur_female": {
+      "mean_chi2": 1.3799,
+      "n_snps": 6433715,
+      "n_genes_tested": 54897,
+      "n_gws_genes": 22803,
+      "n_fdr_genes": 39054,
+      "min_detectable_or_neuron": Infinity,
+      "power_at_or3_neuron": 0.0,
+      "power_status": "UNINTERPRETABLE",
+      "power_detail": {
+        "Neurons": {
+          "min_detectable_or": Infinity,
+          "power_at_or3": 0.0,
+          "k_overlap_needed": 3,
+          "status": "LOW_POWER"
+        },
+        "Oligodendrocytes": {
+          "min_detectable_or": Infinity,
+          "power_at_or3": 0.0,
+          "k_overlap_needed": 3,
+          "status": "LOW_POWER"
+        },
+        "OPCs": {
+          "min_detectable_or": Infinity,
+          "power_at_or3": 0.0,
+          "k_overlap_needed": 3,
+          "status": "LOW_POWER"
+        },
+        "Astrocytes": {
+          "min_detectable_or": Infinity,
+          "power_at_or3": 0.0,
+          "k_overlap_needed": 3,
+          "status": "LOW_POWER"
+        }
+      },
+      "enrichment": [
+        {
+          "cell_type": "Neurons",
+          "k_overlap": 39,
+          "n_cell_markers": 95,
+          "odds_ratio": 0.98,
+          "ci_lo": 0.651,
+          "ci_hi": 1.476,
+          "p_raw": 1.0,
+          "p_bonf": 1.0
+        },
+        {
+          "cell_type": "Oligodendrocytes",
+          "k_overlap": 13,
+          "n_cell_markers": 36,
+          "odds_ratio": 0.795,
+          "ci_lo": 0.403,
+          "ci_hi": 1.571,
+          "p_raw": 0.6126747927761967,
+          "p_bonf": 1.0
+        },
+        {
+          "cell_type": "OPCs",
+          "k_overlap": 4,
+          "n_cell_markers": 10,
+          "odds_ratio": 0.938,
+          "ci_lo": 0.265,
+          "ci_hi": 3.325,
+          "p_raw": 1.0,
+          "p_bonf": 1.0
+        },
+        {
+          "cell_type": "Astrocytes",
+          "k_overlap": 5,
+          "n_cell_markers": 15,
+          "odds_ratio": 0.704,
+          "ci_lo": 0.24,
+          "ci_hi": 2.059,
+          "p_raw": 0.6075146159970849,
+          "p_bonf": 1.0
+        }
+      ],
+      "top_genes": [
+        {
+          "gene": "GMEB1",
+          "n_snps": 231,
+          "stouffer_z": -40.63181521741554,
+          "stouffer_p": 0.0,
+          "stouffer_p_bonf": 0.0
+        },
+        {
+          "gene": "ENSG00000289291",
+          "n_snps": 267,
+          "stouffer_z": -39.811262018661274,
+          "stouffer_p": 0.0,
+          "stouffer_p_bonf": 0.0
+        },
+        {
+          "gene": "ENSG00000252777",
+          "n_snps": 235,
+          "stouffer_z": -39.43121197537323,
+          "stouffer_p": 0.0,
+          "stouffer_p_bonf": 0.0
+        },
+        {
+          "gene": "ZC3HAV1",
+          "n_snps": 283,
+          "stouffer_z": 40.1635663668961,
+          "stouffer_p": 0.0,
+          "stouffer_p_bonf": 0.0
+        },
+        {
+          "gene": "ENSG00000290051",
+          "n_snps": 300,
+          "stouffer_z": 38.66834098535204,
+          "stouffer_p": 0.0,
+          "stouffer_p_bonf": 0.0
+        },
+        {
+          "gene": "ZKSCAN3",
+          "n_snps": 295,
+          "stouffer_z": 39.10962129919318,
+          "stouffer_p": 0.0,
+          "stouffer_p_bonf": 0.0
+        },
+        {
+          "gene": "ZSCAN31",
+          "n_snps": 305,
+          "stouffer_z": 39.433291743366155,
+          "stouffer_p": 0.0,
+          "stouffer_p_bonf": 0.0
+        },
+        {
+          "gene": "ENSG00000289467",
+          "n_snps": 299,
+          "stouffer_z": 38.88719520209676,
+          "stouffer_p": 0.0,
+          "stouffer_p_bonf": 0.0
+        },
+        {
+          "gene": "PAIP1P1",
+          "n_snps": 462,
+          "stouffer_z": 39.32130652850464,
+          "stouffer_p": 0.0,
+          "stouffer_p_bonf": 0.0
+        },
+        {
+          "gene": "GPR89P",
+          "n_snps": 191,
+          "stouffer_z": 40.39579750235002,
+          "stouffer_p": 0.0,
+          "stouffer_p_bonf": 0.0
+        }
+      ]
+    },
+    "eur_male": {
+      "mean_chi2": 1.5956,
+      "n_snps": 6426248,
+      "n_genes_tested": 54910,
+      "n_gws_genes": 23351,
+      "n_fdr_genes": 38888,
+      "min_detectable_or_neuron": Infinity,
+      "power_at_or3_neuron": 0.0,
+      "power_status": "UNINTERPRETABLE",
+      "power_detail": {
+        "Neurons": {
+          "min_detectable_or": Infinity,
+          "power_at_or3": 0.0,
+          "k_overlap_needed": 3,
+          "status": "LOW_POWER"
+        },
+        "Oligodendrocytes": {
+          "min_detectable_or": Infinity,
+          "power_at_or3": 0.0,
+          "k_overlap_needed": 3,
+          "status": "LOW_POWER"
+        },
+        "OPCs": {
+          "min_detectable_or": Infinity,
+          "power_at_or3": 0.0,
+          "k_overlap_needed": 3,
+          "status": "LOW_POWER"
+        },
+        "Astrocytes": {
+          "min_detectable_or": Infinity,
+          "power_at_or3": 0.0,
+          "k_overlap_needed": 3,
+          "status": "LOW_POWER"
+        }
+      },
+      "enrichment": [
+        {
+          "cell_type": "Neurons",
+          "k_overlap": 36,
+          "n_cell_markers": 95,
+          "odds_ratio": 0.825,
+          "ci_lo": 0.545,
+          "ci_hi": 1.249,
+          "p_raw": 0.40642387477368164,
+          "p_bonf": 1.0
+        },
+        {
+          "cell_type": "Oligodendrocytes",
+          "k_overlap": 12,
+          "n_cell_markers": 36,
+          "odds_ratio": 0.676,
+          "ci_lo": 0.338,
+          "ci_hi": 1.351,
+          "p_raw": 0.313176415020181,
+          "p_bonf": 1.0
+        },
+        {
+          "cell_type": "OPCs",
+          "k_overlap": 3,
+          "n_cell_markers": 10,
+          "odds_ratio": 0.579,
+          "ci_lo": 0.15,
+          "ci_hi": 2.24,
+          "p_raw": 0.532609162738658,
+          "p_bonf": 1.0
+        },
+        {
+          "cell_type": "Astrocytes",
+          "k_overlap": 6,
+          "n_cell_markers": 15,
+          "odds_ratio": 0.901,
+          "ci_lo": 0.321,
+          "ci_hi": 2.532,
+          "p_raw": 1.0,
+          "p_bonf": 1.0
+        }
+      ],
+      "top_genes": [
+        {
+          "gene": "LINC01623",
+          "n_snps": 354,
+          "stouffer_z": 41.84586310669148,
+          "stouffer_p": 0.0,
+          "stouffer_p_bonf": 0.0
+        },
+        {
+          "gene": "PHF5AP1",
+          "n_snps": 126,
+          "stouffer_z": -46.3184289549495,
+          "stouffer_p": 0.0,
+          "stouffer_p_bonf": 0.0
+        },
+        {
+          "gene": "PBX4",
+          "n_snps": 126,
+          "stouffer_z": -46.35122410766564,
+          "stouffer_p": 0.0,
+          "stouffer_p_bonf": 0.0
+        },
+        {
+          "gene": "CILP2",
+          "n_snps": 109,
+          "stouffer_z": -38.10917382015169,
+          "stouffer_p": 0.0,
+          "stouffer_p_bonf": 0.0
+        },
+        {
+          "gene": "GPR89P",
+          "n_snps": 190,
+          "stouffer_z": 60.04174202337549,
+          "stouffer_p": 0.0,
+          "stouffer_p_bonf": 0.0
+        },
+        {
+          "gene": "LINC01012",
+          "n_snps": 202,
+          "stouffer_z": 50.93746208326838,
+          "stouffer_p": 0.0,
+          "stouffer_p_bonf": 0.0
+        },
+        {
+          "gene": "ENSG00000291338",
+          "n_snps": 450,
+          "stouffer_z": 42.281171594155204,
+          "stouffer_p": 0.0,
+          "stouffer_p_bonf": 0.0
+        },
+        {
+          "gene": "UGT1A12P",
+          "n_snps": 205,
+          "stouffer_z": 42.5962197782301,
+          "stouffer_p": 0.0,
+          "stouffer_p_bonf": 0.0
+        },
+        {
+          "gene": "RHPN1",
+          "n_snps": 338,
+          "stouffer_z": 39.64042942837473,
+          "stouffer_p": 0.0,
+          "stouffer_p_bonf": 0.0
+        },
+        {
+          "gene": "ENSG00000255899",
+          "n_snps": 1899,
+          "stouffer_z": -41.70260197927773,
+          "stouffer_p": 0.0,
+          "stouffer_p_bonf": 0.0
+        }
+      ]
+    }
+  },
+  "comparison_with_sldsc": {
+    "eur_male_gene_level_vs_F082": "Gene-level results for EUR male are supplementary to S-LDSC F082 (male neuronal 1.78x, p=0.010). Gene-level Stouffer Z does not model LD structure, so S-LDSC is the authoritative method.",
+    "eur_female_gene_level_vs_F082": "Gene-level results for EUR female are supplementary to S-LDSC F082 (female neuronal 1.70x, p=0.239). Gene-level is less powerful.",
+    "afr_lat_note": "AFR and LAT gene-level results are NOT comparable to EUR S-LDSC due to different LD structure, sample sizes, and ancestries.",
+    "note": "Gene-level is supplementary to S-LDSC (F076, F082). S-LDSC models LD and is more powerful. When gene-level and S-LDSC disagree, defer to S-LDSC."
+  }
+}

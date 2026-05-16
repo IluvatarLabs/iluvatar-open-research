@@ -1,0 +1,36 @@
+{
+  "batch": "batch_020",
+  "decision": "IMMUNE_ALSO_RELEVANT",
+  "interpretation": "Both enriched — spectrum model needs modification to account for immune contribution in treatment-resistant SCZ genes. Neuronal OR (9.68) >> Immune OR (5.42) still supports spectrum direction, but immune is not-zero.",
+  "f041_upgrade": false,
+  "pardinas_n": 122,
+  "syngo_result": {
+    "label": "SynGO Neuronal",
+    "foreground_n": 122,
+    "test_n": 1029,
+    "overlap": 41,
+    "odds_ratio": 9.68,
+    "p_value": 6.27e-23,
+    "significant": true
+  },
+  "tlr_result": {
+    "label": "KEGG TLR Immune",
+    "foreground_n": 122,
+    "test_n": 95,
+    "overlap": 3,
+    "odds_ratio": 5.42,
+    "p_value": 0.0204,
+    "significant": true
+  },
+  "positive_control_pass": true,
+  "comparison": {
+    "batch_018_pgc2_neuronal_or": 3.07,
+    "batch_018_pgc2_neuronal_p": 0.0016,
+    "batch_018_pgc2_immune_or": 0.0,
+    "batch_018_pgc2_immune_p": 1.0,
+    "batch_020_pardinas_neuronal_or": 9.68,
+    "batch_020_pardinas_neuronal_p": 6.27e-23,
+    "batch_020_pardinas_immune_or": 5.42,
+    "batch_020_pardinas_immune_p": 0.0204
+  }
+}

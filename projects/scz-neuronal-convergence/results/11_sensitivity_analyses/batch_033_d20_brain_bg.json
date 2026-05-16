@@ -1,0 +1,102 @@
+{
+  "Pardi\u00f1as": {
+    "standard": {
+      "label": "Pardi\u00f1as \u00d7 Neuronal (Entrez)",
+      "marker_n": 95,
+      "overlap": 17,
+      "gwas_n": 444,
+      "universe": 20297,
+      "odds_ratio": 10.093526691887348,
+      "ci_lo": 5.921471975083508,
+      "ci_hi": 17.205060077719203,
+      "p_value": 2.379614194733084e-11,
+      "overlap_genes": [
+        "CNTNAP2",
+        "DLGAP1",
+        "GABBR2",
+        "GABRA1",
+        "GAD1",
+        "KCNMA1",
+        "NBEA",
+        "NRGN",
+        "PCLO",
+        "PCSK2",
+        "PDE1A",
+        "PPP1R1B",
+        "RGS17",
+        "SCN1A",
+        "SYNPR",
+        "TH",
+        "ZIC1"
+      ]
+    },
+    "brain_expressed": {
+      "label": "Pardi\u00f1as \u00d7 Neuronal (brain bg)",
+      "marker_n": 93,
+      "overlap": 17,
+      "gwas_n": 417,
+      "universe": 14565,
+      "odds_ratio": 7.86921052631579,
+      "ci_lo": 4.607997756423925,
+      "ci_hi": 13.43847752988843,
+      "p_value": 9.900410095330604e-10,
+      "overlap_genes": [
+        "CNTNAP2",
+        "DLGAP1",
+        "GABBR2",
+        "GABRA1",
+        "GAD1",
+        "KCNMA1",
+        "NBEA",
+        "NRGN",
+        "PCLO",
+        "PCSK2",
+        "PDE1A",
+        "PPP1R1B",
+        "RGS17",
+        "SCN1A",
+        "SYNPR",
+        "TH",
+        "ZIC1"
+      ]
+    },
+    "brain_bg_size": 14565,
+    "brain_markers": 93,
+    "brain_gwas": 417
+  },
+  "PGC3": {
+    "standard": {
+      "label": "PGC3 \u00d7 Neuronal (Entrez)",
+      "marker_n": 95,
+      "overlap": 2,
+      "gwas_n": 106,
+      "universe": 20297,
+      "odds_ratio": 4.155913978494624,
+      "ci_lo": 1.0106448099690568,
+      "ci_hi": 17.089704341504333,
+      "p_value": 0.08827138226499368,
+      "overlap_genes": [
+        "GABBR2",
+        "RERE"
+      ]
+    },
+    "brain_expressed": {
+      "label": "PGC3 \u00d7 Neuronal (brain bg)",
+      "marker_n": 93,
+      "overlap": 2,
+      "gwas_n": 100,
+      "universe": 14565,
+      "odds_ratio": 3.2235927337968153,
+      "ci_lo": 0.7830219546127591,
+      "ci_hi": 13.2710839743015,
+      "p_value": 0.13391700037391727,
+      "overlap_genes": [
+        "GABBR2",
+        "RERE"
+      ]
+    },
+    "brain_bg_size": 14565,
+    "brain_markers": 93,
+    "brain_gwas": 100
+  }
+}

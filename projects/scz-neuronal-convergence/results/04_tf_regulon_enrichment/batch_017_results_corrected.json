@@ -1,0 +1,103 @@
+{
+  "batch_id": "batch_017",
+  "hypotheses": {
+    "H017-1_STAT1_neuronal_SynGO": {
+      "overlap": 6,
+      "gene_set_size": 6,
+      "target_set_size": 379,
+      "background": 20000,
+      "overlap_genes": [
+        "DTNBP1",
+        "GRM7",
+        "KCNMA1",
+        "RGS4",
+        "SLC6A1",
+        "TCF4"
+      ],
+      "odds_ratio": Infinity,
+      "p_value": 0.015316619391192176,
+      "label": "STAT1 neuronal vs SynGO"
+    },
+    "H017-1_STAT1_immune_KEGG": {
+      "overlap": 11,
+      "gene_set_size": 12,
+      "target_set_size": 89,
+      "background": 20000,
+      "overlap_genes": [
+        "CCL2",
+        "CCL3",
+        "CD14",
+        "CD180",
+        "CXCL8",
+        "IL10",
+        "IL1B",
+        "IL6",
+        "MYD88",
+        "NFKB1",
+        "TNFRSF1A"
+      ],
+      "odds_ratio": 12.551282051282051,
+      "p_value": 0.0022742037073117632,
+      "label": "STAT1 immune vs KEGG TLR"
+    },
+    "H017-1_STAT3_immune_KEGG": {
+      "overlap": 4,
+      "gene_set_size": 4,
+      "target_set_size": 89,
+      "background": 20000,
+      "overlap_genes": [
+        "CCL2",
+        "IL10",
+        "IL6",
+        "MYD88"
+      ],
+      "odds_ratio": Infinity,
+      "p_value": 0.06038740920096852,
+      "label": "STAT3 immune vs KEGG TLR"
+    },
+    "H017-1_convergence": {
+      "stat1_neuronal_sig": "False",
+      "stat1_immune_sig": true,
+      "convergence": "False"
+    },
+    "H017-2_EGR1_Pardinas": {
+      "overlap": 5,
+      "gene_set_size": 15,
+      "target_set_size": 121,
+      "background": 20000,
+      "overlap_genes": [
+        "DGKH",
+        "DRD2",
+        "PPP1R1B",
+        "SNAP25",
+        "TCF4"
+      ],
+      "odds_ratio": 0.521551724137931,
+      "p_value": 0.9266120350492019,
+      "label": "EGR1 DoRothEA vs Pardi\u00f1as 2018"
+    },
+    "H017-2_CTCF_Pardinas": {
+      "overlap": 7,
+      "gene_set_size": 16,
+      "target_set_size": 121,
+      "background": 20000,
+      "overlap_genes": [
+        "AKT1",
+        "BDNF",
+        "CACNA1C",
+        "DLGAP1",
+        "NRG1",
+        "SLC6A4",
+        "TCF4"
+      ],
+      "odds_ratio": 0.8255360623781677,
+      "p_value": 0.7335352013913845,
+      "label": "CTCF DoRothEA vs Pardi\u00f1as 2018"
+    },
+    "H017-2_ReMap_validation": {
+      "egr1_sig": "False",
+      "ctcf_sig": "False",
+      "remap_supports": "False"
+    }
+  }
+}

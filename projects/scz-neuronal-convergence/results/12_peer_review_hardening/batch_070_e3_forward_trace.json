@@ -1,0 +1,311 @@
+{
+  "experiment_id": "batch_070_E3",
+  "hypothesis_tested": "Does pgc3_genes.txt (n=300) usage in any script affect a primary finding (F-numbered, SUGGESTED or higher) that is still active in research_state.md?",
+  "answer": "NO_ACTIVE_FINDINGS_AFFECTED",
+  "verdict_detail": "Although batch_047 loads pgc3_genes.txt, all primary findings use either hardcoded gene subsets (SynGO_EDT1 n=14) or xlsx-derived lists. No F-numbered finding at SUGGESTED confidence or higher was computed using the incorrect pgc3_genes.txt (n=300) gene list.",
+  "gene_list_comparison": {
+    "pgc3_txt_n": 300,
+    "xlsx_pc_n": 470,
+    "overlap_n": 8,
+    "overlap_genes": [
+      "CHRNA3",
+      "CHRNA5",
+      "CRHR1",
+      "HNF1A",
+      "MAPT",
+      "MC1R",
+      "PLEKHM1",
+      "SNCA"
+    ],
+    "pgc3_txt_only_n": 292,
+    "xlsx_only_n": 462
+  },
+  "scripts_audited": [
+    {
+      "script": "experiments/batch_005/scz_scenic_modal_v2.py",
+      "exists": true,
+      "loads_pgc3_txt_file": false,
+      "references_pgc3_txt_path": false,
+      "loads_xlsx": false,
+      "loads_pgc3_csv": false,
+      "uses_xlsx_primary": false,
+      "batch": "batch_005",
+      "usage_purpose": "SCENIC+ eRegulon analysis. References 'n_pgc3_genes' as a COUNT metric in output JSON. Does NOT load pgc3_genes.txt. Gene p-values come from PGC3 GWAS summary stats download (not from txt file).",
+      "findings_produced": "Early exploratory eRegulon work (iter_005). No F-numbered findings survived.",
+      "impact_classification": "HARMLESS",
+      "reasoning": "These scripts do NOT load pgc3_genes.txt. They reference 'n_pgc3_genes' as an output counter derived from PGC3 summary statistics. Furthermore, batch_005 was early exploratory work (SCENIC+ pilot) that was superseded by batch_009+ cell-type analyses using proper marker genes.",
+      "still_cited_in_research_state": false
+    },
+    {
+      "script": "experiments/batch_005/batch005_modal.py",
+      "exists": true,
+      "loads_pgc3_txt_file": false,
+      "references_pgc3_txt_path": false,
+      "loads_xlsx": false,
+      "loads_pgc3_csv": false,
+      "uses_xlsx_primary": false,
+      "batch": "batch_005",
+      "usage_purpose": "SCENIC+ eRegulon analysis. References 'n_pgc3_genes' as a COUNT metric in output JSON. Does NOT load pgc3_genes.txt. Gene p-values come from PGC3 GWAS summary stats download (not from txt file).",
+      "findings_produced": "Early exploratory eRegulon work (iter_005). No F-numbered findings survived.",
+      "impact_classification": "HARMLESS",
+      "reasoning": "These scripts do NOT load pgc3_genes.txt. They reference 'n_pgc3_genes' as an output counter derived from PGC3 summary statistics. Furthermore, batch_005 was early exploratory work (SCENIC+ pilot) that was superseded by batch_009+ cell-type analyses using proper marker genes.",
+      "still_cited_in_research_state": false
+    },
+    {
+      "script": "experiments/batch_005/app.py",
+      "exists": true,
+      "loads_pgc3_txt_file": false,
+      "references_pgc3_txt_path": false,
+      "loads_xlsx": false,
+      "loads_pgc3_csv": false,
+      "uses_xlsx_primary": false,
+      "batch": "batch_005",
+      "usage_purpose": "SCENIC+ eRegulon analysis. References 'n_pgc3_genes' as a COUNT metric in output JSON. Does NOT load pgc3_genes.txt. Gene p-values come from PGC3 GWAS summary stats download (not from txt file).",
+      "findings_produced": "Early exploratory eRegulon work (iter_005). No F-numbered findings survived.",
+      "impact_classification": "HARMLESS",
+      "reasoning": "These scripts do NOT load pgc3_genes.txt. They reference 'n_pgc3_genes' as an output counter derived from PGC3 summary statistics. Furthermore, batch_005 was early exploratory work (SCENIC+ pilot) that was superseded by batch_009+ cell-type analyses using proper marker genes.",
+      "still_cited_in_research_state": false
+    },
+    {
+      "script": "experiments/batch_025/batch_025_analysis.py",
+      "exists": true,
+      "loads_pgc3_txt_file": false,
+      "references_pgc3_txt_path": false,
+      "loads_xlsx": true,
+      "loads_pgc3_csv": true,
+      "uses_xlsx_primary": true,
+      "batch": "batch_025",
+      "usage_purpose": "PGC3 gene list enrichment analysis. Uses variable name 'pgc3_genes' but loads from XLSX (Extended-Data-Table1.xlsx, sheet 'Extended.Data.Table.1', protein_coding filter). Saves result as pgc3_gene_list.csv. Does NOT load pgc3_genes.txt.",
+      "findings_produced": "Generated the canonical xlsx-derived pgc3_gene_list.csv (n=470) used by downstream batches 033+. Cell-type Fisher enrichment results.",
+      "impact_classification": "HARMLESS",
+      "reasoning": "batch_025 is the script that ESTABLISHED the canonical xlsx-derived gene list. It loads directly from xlsx, not from pgc3_genes.txt. The variable name 'pgc3_genes' is a naming convention, not a file reference.",
+      "still_cited_in_research_state": false
+    },
+    {
+      "script": "experiments/batch_026/run_batch026.py",
+      "exists": true,
+      "loads_pgc3_txt_file": false,
+      "references_pgc3_txt_path": false,
+      "loads_xlsx": true,
+      "loads_pgc3_csv": false,
+      "uses_xlsx_primary": true,
+      "batch": "batch_026",
+      "usage_purpose": "MAGMA-equivalent gene-level analysis + comparison with Extended Data Table. Uses variable 'pgc3_genes' loaded from xlsx (ST12 sheet). Does NOT load pgc3_genes.txt.",
+      "findings_produced": "Gene-level MAGMA comparison. F026 cell-type enrichment (ESTABLISHED).",
+      "impact_classification": "HARMLESS",
+      "reasoning": "batch_026 loads gene lists from the xlsx file directly (ST12 all criteria sheet). It uses 'ext_genes' from xlsx as the canonical source for enrichment. No reference to pgc3_genes.txt file path.",
+      "still_cited_in_research_state": true,
+      "findings_in_research_state": [
+        "F026"
+      ],
+      "finding_safe": true,
+      "finding_safe_reason": "F026 uses xlsx-derived genes, not pgc3_genes.txt."
+    },
+    {
+      "script": "experiments/batch_033/run_batch033.py",
+      "exists": true,
+      "loads_pgc3_txt_file": false,
+      "references_pgc3_txt_path": false,
+      "loads_xlsx": true,
+      "loads_pgc3_csv": true,
+      "uses_xlsx_primary": true,
+      "batch": "batch_033",
+      "usage_purpose": "Integrative analysis + S-LDSC + brain background. Loads 'pgc3_genes' from batch_025/data/pgc3_gene_list.csv (xlsx-derived, n=470). Does NOT load pgc3_genes.txt directly.",
+      "findings_produced": "Cell-type enrichment, meta-enrichment, S-LDSC partitioned heritability. Contributes to F013/F070/F076/F098/F099 (cell-type findings).",
+      "impact_classification": "HARMLESS",
+      "reasoning": "batch_033 loads gene list from pgc3_gene_list.csv which was generated by batch_025 from the xlsx. The variable name 'pgc3_genes' is a naming convention. File path is 'experiments/batch_025/data/pgc3_gene_list.csv', not 'experiments/batch_018/pgc3_genes.txt'.",
+      "still_cited_in_research_state": true,
+      "findings_in_research_state": [
+        "F013 (indirect)"
+      ],
+      "finding_safe": true,
+      "finding_safe_reason": "Uses xlsx-derived CSV, not pgc3_genes.txt."
+    },
+    {
+      "script": "experiments/batch_033/run_batch033_fix.py",
+      "exists": true,
+      "loads_pgc3_txt_file": false,
+      "references_pgc3_txt_path": false,
+      "loads_xlsx": true,
+      "loads_pgc3_csv": true,
+      "uses_xlsx_primary": true,
+      "batch": "batch_033",
+      "usage_purpose": "Integrative analysis + S-LDSC + brain background. Loads 'pgc3_genes' from batch_025/data/pgc3_gene_list.csv (xlsx-derived, n=470). Does NOT load pgc3_genes.txt directly.",
+      "findings_produced": "Cell-type enrichment, meta-enrichment, S-LDSC partitioned heritability. Contributes to F013/F070/F076/F098/F099 (cell-type findings).",
+      "impact_classification": "HARMLESS",
+      "reasoning": "batch_033 loads gene list from pgc3_gene_list.csv which was generated by batch_025 from the xlsx. The variable name 'pgc3_genes' is a naming convention. File path is 'experiments/batch_025/data/pgc3_gene_list.csv', not 'experiments/batch_018/pgc3_genes.txt'.",
+      "still_cited_in_research_state": true,
+      "findings_in_research_state": [
+        "F013 (indirect)"
+      ],
+      "finding_safe": true,
+      "finding_safe_reason": "Uses xlsx-derived CSV, not pgc3_genes.txt."
+    },
+    {
+      "script": "experiments/batch_035/batch_035_analysis.py",
+      "exists": true,
+      "loads_pgc3_txt_file": false,
+      "references_pgc3_txt_path": false,
+      "loads_xlsx": true,
+      "loads_pgc3_csv": false,
+      "uses_xlsx_primary": true,
+      "batch": "batch_035",
+      "usage_purpose": "Drug target enrichment (OpenTargets) + STRING PPI + Sex-stratified S-LDSC. Loads gene list from xlsx (Extended-Data-Table1.xlsx, protein_coding filter). Variable 'pgc3_genes' comes from xlsx, not pgc3_genes.txt.",
+      "findings_produced": "Drug-target enrichment results, STRING PPI. No primary F-numbered findings from this batch survive in research_state.md. Drug-target analysis was DEFERRED (OpenTargets API issues, see F069_03).",
+      "impact_classification": "HARMLESS",
+      "reasoning": "batch_035 loads directly from xlsx (line 83-88: pd.read_excel PGC3_TABLE_PATH). The variable 'pgc3_genes' is xlsx-derived. Does NOT reference pgc3_genes.txt. Furthermore, drug-target findings were not elevated to SUGGESTED or higher.",
+      "still_cited_in_research_state": false
+    },
+    {
+      "script": "experiments/batch_041/d53_brainspan_dev.py",
+      "exists": true,
+      "loads_pgc3_txt_file": false,
+      "references_pgc3_txt_path": false,
+      "loads_xlsx": true,
+      "loads_pgc3_csv": false,
+      "uses_xlsx_primary": true,
+      "batch": "batch_041",
+      "usage_purpose": "BrainSpan developmental trajectory analysis. Loads gene list from xlsx (PGC3_TABLE_PATH = data/19426775/scz2022-Extended-Data-Table1.xlsx). Variable 'pgc3_genes' is xlsx-derived protein_coding set. Does NOT load pgc3_genes.txt.",
+      "findings_produced": "Developmental trajectory Fisher enrichment. No F-numbered findings from this batch survive in research_state.md.",
+      "impact_classification": "HARMLESS",
+      "reasoning": "batch_041 explicitly loads from xlsx (line 35: PGC3_TABLE_PATH). The variable 'pgc3_genes' is constructed from xlsx protein_coding filter. No active findings depend on this analysis.",
+      "still_cited_in_research_state": false
+    },
+    {
+      "script": "experiments/batch_047/scripts/run_sub2_constraint.py",
+      "exists": true,
+      "loads_pgc3_txt_file": false,
+      "references_pgc3_txt_path": true,
+      "loads_xlsx": false,
+      "loads_pgc3_csv": false,
+      "uses_xlsx_primary": false,
+      "batch": "batch_047",
+      "usage_purpose": "Constraint analysis using gnomAD v4.1. LOADS pgc3_genes.txt (or pgc3_genes_v2.txt) as the 'EDT1' gene list. Lines 32-38: iterates over both file paths, takes the larger one. This is the TEXT FILE, not the xlsx. n=300 genes loaded.",
+      "findings_produced": "F121: SynGO x EDT1 pLI enrichment OR=26.44. BUT the SynGO_EDT1 overlap (n=14 genes) is HARDCODED (line 52-53), not derived from the loaded edt1_genes. The loaded pgc3_genes.txt list is used ONLY for the broader 'EDT1' constraint statistics (mean pLI, LOEUF enrichment of the full set).",
+      "impact_classification": "POTENTIALLY_AFFECTED",
+      "reasoning": "batch_047 DOES load pgc3_genes.txt directly (n=300). It uses this list for constraint enrichment of the 'EDT1' set. However, the PRIMARY finding F121 (SynGO x EDT1 pLI OR=26.44) uses the 14 HARDCODED SynGO_EDT1 genes, which are correct regardless of the broader list. The full EDT1 constraint statistics (mean pLI, LOEUF) ARE affected because they use the wrong 300-gene list instead of the correct 470-gene xlsx list. These full-set statistics are NOT F-numbered findings \u2014 they are descriptive context.",
+      "still_cited_in_research_state": true,
+      "findings_in_research_state": [
+        "F121 (referenced in F069_01 context)"
+      ],
+      "finding_safe": true,
+      "finding_safe_reason": "F121 (SynGO x EDT1 OR=26.44) uses the 14 HARDCODED SynGO_EDT1 genes, which are verified correct. The pgc3_genes.txt list is loaded but NOT used for the F121 computation. The broader EDT1 constraint descriptive stats (mean pLI of full set) are affected but are not F-numbered findings."
+    },
+    {
+      "script": "experiments/batch_069/scripts/e1_syngo_constraint_specificity.py",
+      "exists": true,
+      "loads_pgc3_txt_file": true,
+      "references_pgc3_txt_path": true,
+      "loads_xlsx": false,
+      "loads_pgc3_csv": false,
+      "uses_xlsx_primary": false,
+      "batch": "batch_069",
+      "usage_purpose": "SynGO constraint specificity test (R1). LOADS pgc3_genes.txt as 'EDT1_FILE' (line 61). However, the loaded 'edt1_genes' variable is ONLY used for printing a count (line 137: print total). The actual computation uses: (a) HARDCODED SYNGO_EDT1 (n=14 genes, line 72-76), and (b) syngo_all (from SynGO GMT). syngo_minus_edt1 = syngo_all - syngo_edt1_set (the 14 hardcoded genes).",
+      "findings_produced": "F069_01a (ESTABLISHED), F069_01b (SUGGESTED)",
+      "impact_classification": "HARMLESS",
+      "reasoning": "Although the script OPENS pgc3_genes.txt, the loaded variable 'edt1_genes' is only used for a print statement (count display). All computations use the 14 HARDCODED SYNGO_EDT1 genes (which are verified correct from batch_047). F069_01a and F069_01b are computed from SynGO gene sets and gnomAD constraint, not from the pgc3_genes.txt list.",
+      "still_cited_in_research_state": true,
+      "findings_in_research_state": [
+        "F069_01a",
+        "F069_01b"
+      ],
+      "finding_safe": true,
+      "finding_safe_reason": "Computations use hardcoded SynGO_EDT1 list, not pgc3_genes.txt contents."
+    },
+    {
+      "script": "experiments/batch_069/scripts/e4_edt1_arithmetic.py",
+      "exists": true,
+      "loads_pgc3_txt_file": false,
+      "references_pgc3_txt_path": true,
+      "loads_xlsx": true,
+      "loads_pgc3_csv": false,
+      "uses_xlsx_primary": true,
+      "batch": "batch_069",
+      "usage_purpose": "EDT1 arithmetic reconciliation audit (R4). LOADS pgc3_genes.txt (line 114: open(PGC3_TXT)) AND the xlsx. Explicitly COMPARES the two lists to identify the discrepancy. This IS the audit script \u2014 its PURPOSE is to document that pgc3_genes.txt != EDT1 xlsx.",
+      "findings_produced": "F069_04 (ESTABLISHED, arithmetic): EDT1 tiers overlap. pgc3_genes.txt != EDT1.",
+      "impact_classification": "AUDIT_ONLY",
+      "reasoning": "batch_069 E4 is the script that DISCOVERED and DOCUMENTED the pgc3_genes.txt vs EDT1 xlsx discrepancy. It loads both lists for comparison purposes. Its finding F069_04 is the arithmetic reconciliation itself \u2014 it does not produce any biological finding using pgc3_genes.txt.",
+      "still_cited_in_research_state": true,
+      "findings_in_research_state": [
+        "F069_04"
+      ],
+      "finding_safe": true,
+      "finding_safe_reason": "F069_04 IS the audit finding documenting the discrepancy."
+    }
+  ],
+  "classification_summary": {
+    "HARMLESS": 10,
+    "AUDIT_ONLY": 1,
+    "POTENTIALLY_AFFECTED": 1
+  },
+  "potentially_affected_findings": [],
+  "docs_noted": [
+    "experiments/batch_018/challenge.md",
+    "experiments/batch_018/review_2.md",
+    "experiments/batch_018/review_3.md",
+    "experiments/batch_018/design.yaml"
+  ],
+  "overall_verdict": "NO_ACTIVE_FINDINGS_AFFECTED",
+  "key_insight": "pgc3_genes.txt (n=300) appears to be an unrelated gene list (contains CETP, ESR1, APOE, FADS1 \u2014 cardiovascular/metabolic genes) that was placed in batch_018 early in the project. It shares only 8 genes with the true EDT1 xlsx (n=470 SCZ-associated protein-coding genes). Despite being loaded by batch_047 and batch_069 E1, all F-numbered findings from these scripts use HARDCODED gene subsets or xlsx-derived lists for their actual computations.",
+  "detailed_trace": {
+    "batch_005": {
+      "loads_pgc3_txt": false,
+      "source_used": "PGC3 GWAS summary stats (not gene list file)",
+      "status": "HARMLESS \u2014 early SCENIC pilot, superseded"
+    },
+    "batch_025": {
+      "loads_pgc3_txt": false,
+      "source_used": "xlsx (Extended-Data-Table1.xlsx)",
+      "status": "HARMLESS \u2014 this batch CREATED the canonical xlsx-derived CSV"
+    },
+    "batch_026": {
+      "loads_pgc3_txt": false,
+      "source_used": "xlsx (ST12 all criteria sheet)",
+      "status": "HARMLESS \u2014 loads from xlsx"
+    },
+    "batch_033": {
+      "loads_pgc3_txt": false,
+      "source_used": "pgc3_gene_list.csv (xlsx-derived by batch_025)",
+      "status": "HARMLESS \u2014 CSV is xlsx-derived"
+    },
+    "batch_035": {
+      "loads_pgc3_txt": false,
+      "source_used": "xlsx (Extended-Data-Table1.xlsx)",
+      "status": "HARMLESS \u2014 loads from xlsx directly"
+    },
+    "batch_041": {
+      "loads_pgc3_txt": false,
+      "source_used": "xlsx (PGC3_TABLE_PATH)",
+      "status": "HARMLESS \u2014 loads from xlsx directly"
+    },
+    "batch_047": {
+      "loads_pgc3_txt": true,
+      "source_used": "pgc3_genes.txt / pgc3_genes_v2.txt (lines 32-38)",
+      "status": "POTENTIALLY_AFFECTED but SAFE \u2014 the critical F121 finding uses 14 HARDCODED SynGO_EDT1 genes, not the loaded list. Descriptive stats of full EDT1 set (mean pLI, LOEUF) ARE computed on wrong list but are not F-numbered findings.",
+      "descriptive_stats_affected": true,
+      "f_numbered_findings_affected": false
+    },
+    "batch_069_E1": {
+      "loads_pgc3_txt": true,
+      "source_used": "pgc3_genes.txt loaded but ONLY for count display",
+      "status": "HARMLESS \u2014 all computations use hardcoded SynGO_EDT1 (n=14)"
+    },
+    "batch_069_E4": {
+      "loads_pgc3_txt": true,
+      "source_used": "pgc3_genes.txt loaded FOR COMPARISON with xlsx",
+      "status": "AUDIT_ONLY \u2014 this IS the audit script documenting the discrepancy"
+    }
+  },
+  "recommendations": [
+    "batch_047 descriptive EDT1 constraint stats (mean pLI, mean LOEUF of 'EDT1' set) were computed on wrong list (n=300 unrelated genes). These are NOT cited in manuscript or research_state as findings, but if they appear in any intermediate report, they should be flagged as incorrect.",
+    "batch_069 E1 should be patched to load from xlsx rather than pgc3_genes.txt, even though the current computation is unaffected. This prevents future confusion if the loaded variable is ever used.",
+    "The file experiments/batch_018/pgc3_genes.txt should be annotated or renamed to indicate it is NOT the canonical EDT1 gene list. Its provenance is unclear \u2014 it contains cardiovascular/metabolic genes (CETP, ESR1, APOE, FADS1) that are not schizophrenia-associated."
+  ],
+  "environment": {
+    "python_version": "3.13.7 (main, Mar  3 2026, 12:19:54) [GCC 15.2.0]",
+    "platform": "Linux-6.17.0-22-generic-x86_64-with-glibc2.42",
+    "script": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/experiments/batch_070/scripts/e3_pgc3_forward_trace.py",
+    "timestamp": "2026-05-09T21:11:31-0700",
+    "project_root": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia"
+  }
+}

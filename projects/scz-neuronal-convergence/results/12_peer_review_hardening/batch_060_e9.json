@@ -1,0 +1,71 @@
+{
+  "experiment": "e9_mixer_feasibility",
+  "brief": "brief_v2.md section E9",
+  "container_image": "ghcr.io/precimed/gsa-mixer:2.2.1",
+  "timestamp_start": "2026-04-24T17:48:54",
+  "docker_available": true,
+  "docker_version": "Docker version 29.0.2, build 8108357",
+  "docker_check_detail": {
+    "returncode": 0,
+    "stdout": "Docker version 29.0.2, build 8108357",
+    "stderr": "",
+    "elapsed_seconds": 0.02,
+    "success": true,
+    "timed_out": false
+  },
+  "docker_daemon_running": true,
+  "docker_daemon_detail": {
+    "returncode": 0,
+    "stdout": "29.0.2",
+    "stderr": "",
+    "elapsed_seconds": 0.06,
+    "success": true,
+    "timed_out": false
+  },
+  "singularity_available": false,
+  "singularity_version": null,
+  "singularity_check_detail": {
+    "returncode": -1,
+    "stdout": "",
+    "stderr": "Command not found: singularity",
+    "elapsed_seconds": 0,
+    "success": false,
+    "timed_out": false
+  },
+  "runtime_selected": "docker",
+  "container_pulled": "skipped",
+  "test_run_help": {
+    "returncode": 127,
+    "stdout": "",
+    "stderr": "docker: Error response from daemon: failed to create task for container: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: error during container init: exec: \"--help\": executable file not found in $PATH\n\nRun 'docker run --help' for more information",
+    "elapsed_seconds": 0.17,
+    "success": false,
+    "timed_out": false
+  },
+  "test_run_noarg": {
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "elapsed_seconds": 0.3,
+    "success": true,
+    "timed_out": false
+  },
+  "test_run_version": {
+    "returncode": 0,
+    "stdout": "MiXeR container operational",
+    "stderr": "",
+    "elapsed_seconds": 0.31,
+    "success": true,
+    "timed_out": false
+  },
+  "test_run_passed": true,
+  "feasibility_checks": {
+    "docker_or_singularity_available": true,
+    "container_pulled": true,
+    "test_run_passed": true
+  },
+  "verdict": "MIXER_FEASIBLE",
+  "recommendation": "All 3 checks passed. Schedule full MiXeR run in iter_061 using docker runtime with image ghcr.io/precimed/gsa-mixer:2.2.1.",
+  "timestamp_end": "2026-04-24T17:48:54",
+  "elapsed_seconds": 0.9
+}

@@ -1,0 +1,99 @@
+[
+  {
+    "cell_type": "Astrocytes",
+    "k": 15,
+    "overlap": 4,
+    "odds_ratio": 15.798347107438017,
+    "p_value": 0.0002693090593732581,
+    "fdr": 0.0008079271781197744,
+    "power_status": "LOW_POWER",
+    "classification": "POSITIVE",
+    "overlap_genes": [
+      "GJA1",
+      "S100B",
+      "SLC1A2",
+      "SLC1A3"
+    ]
+  },
+  {
+    "cell_type": "Ependymal cells",
+    "k": 27,
+    "overlap": 0,
+    "odds_ratio": 0.7817772778402698,
+    "p_value": 1.0,
+    "fdr": 1.0,
+    "power_status": "ADEQUATE",
+    "classification": "NEGATIVE",
+    "overlap_genes": []
+  },
+  {
+    "cell_type": "Neurons",
+    "k": 95,
+    "overlap": 17,
+    "odds_ratio": 9.763796312976641,
+    "p_value": 2.986639276494334e-11,
+    "fdr": 1.7919835658966004e-10,
+    "power_status": "ADEQUATE",
+    "classification": "POSITIVE",
+    "overlap_genes": [
+      "CNTNAP2",
+      "DLGAP1",
+      "GABBR2",
+      "GABRA1",
+      "GAD1",
+      "KCNMA1",
+      "NBEA",
+      "NRGN",
+      "PCLO",
+      "PCSK2",
+      "PDE1A",
+      "PPP1R1B",
+      "RGS17",
+      "SCN1A",
+      "SYNPR",
+      "TH",
+      "ZIC1"
+    ]
+  },
+  {
+    "cell_type": "Oligodendrocyte progenitor cells",
+    "k": 10,
+    "overlap": 2,
+    "odds_ratio": 10.811085972850679,
+    "p_value": 0.019666239982440048,
+    "fdr": 0.029499359973660072,
+    "power_status": "LOW_POWER",
+    "classification": "POSITIVE",
+    "overlap_genes": [
+      "OLIG2",
+      "TNR"
+    ]
+  },
+  {
+    "cell_type": "Oligodendrocytes",
+    "k": 36,
+    "overlap": 4,
+    "odds_ratio": 5.430681818181818,
+    "p_value": 0.008050575518043598,
+    "fdr": 0.016101151036087197,
+    "power_status": "ADEQUATE",
+    "classification": "POSITIVE",
+    "overlap_genes": [
+      "GJB1",
+      "MBP",
+      "MOG",
+      "ST18"
+    ]
+  },
+  {
+    "cell_type": "Retinal ganglion cells",
+    "k": 13,
+    "overlap": 0,
+    "odds_ratio": 1.592509269674624,
+    "p_value": 1.0,
+    "fdr": 1.0,
+    "power_status": "LOW_POWER",
+    "classification": "NEGATIVE",
+    "overlap_genes": []
+  }
+]

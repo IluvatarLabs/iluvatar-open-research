@@ -1,0 +1,11 @@
+{
+  "pgc3_snp_count": 7659767,
+  "baseline_h2": 0.8208,
+  "baseline_h2_se": 0.029,
+  "lambda_gc": 1.7385,
+  "intercept": 1.0926,
+  "intercept_se": 0.0139,
+  "ratio": 0.0913,
+  "ratio_se": 0.0137,
+  "mean_chi2": 2.0143
+}

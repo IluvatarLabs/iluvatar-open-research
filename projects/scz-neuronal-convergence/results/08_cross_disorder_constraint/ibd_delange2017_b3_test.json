@@ -1,0 +1,21 @@
+{
+  "harmonization_meta": {
+    "disorder": "ibd_delange2017",
+    "source": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/ldsc/comparator_sumstats/ibd_delange2017.preprocessed.tsv",
+    "z_to_p_conversion": false,
+    "n_snps_input": 1150510,
+    "n_snps_after_bim_match": 1150509
+  },
+  "test": {
+    "disorder": "ibd_delange2017",
+    "n_genes_in_output": 17920,
+    "n_b3_in_output": 18,
+    "median_b3": 1.15225,
+    "median_bg": 0.5846750000000001,
+    "sd_bg": 1.4320457984014825,
+    "std_effect": 0.3963385812336129,
+    "perm_p": 0.0537946205379462,
+    "n_perm": 10000,
+    "perm_seed": 20260423
+  }
+}

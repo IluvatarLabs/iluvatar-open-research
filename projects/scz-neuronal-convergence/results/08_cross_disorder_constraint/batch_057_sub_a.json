@@ -1,0 +1,882 @@
+{
+  "status": "ok",
+  "batch": "057",
+  "sub": "a",
+  "wall_s": 6.59924054145813,
+  "smoke": false,
+  "model": "MAGMA_Z ~ in_set + log10(gene_length) + lof_pLI + log10(exp_lof+1) + log10(NSNPS+1)",
+  "disorders": [
+    "scz",
+    "bip",
+    "mdd",
+    "asd",
+    "adhd",
+    "ibd_delange2017",
+    "height",
+    "alzheimers"
+  ],
+  "reproduction_gate_R1": {
+    "target_lo": 2.5,
+    "target_hi": 3.5,
+    "scz_beta_1_adj_with_nsnps": 3.2401488526492814,
+    "pass": true
+  },
+  "per_disorder": {
+    "scz": {
+      "status": "ok",
+      "n_gene_universe": 16556,
+      "n_b3_in_universe": 18,
+      "envelope": {
+        "with_nsnps": {
+          "covariates": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "ols": {
+            "beta_1": 3.2401488526492814,
+            "se_1": 0.3607059987673504,
+            "t": 8.982797246849021,
+            "p_one_sided": 1.4593130976106298e-19,
+            "p_two_sided": 2.9186261952212595e-19,
+            "n": 16556,
+            "covariates_used": [
+              "log10_gene_length",
+              "lof_pLI",
+              "log10_exp_lof_plus1",
+              "log10_NSNPS_plus1"
+            ],
+            "r_squared": 0.029324256502810453
+          },
+          "huber": {
+            "status": "ok",
+            "beta_1": 3.3638664289876012,
+            "se_1": 0.3325836257198218
+          },
+          "huber_abs_diff": {
+            "pass": false,
+            "ratio": 0.3429872992439909,
+            "threshold": 0.3
+          },
+          "huber_rel_diff": {
+            "pass": true,
+            "ratio": 0.03818268294592798,
+            "threshold": 0.2
+          }
+        },
+        "without_nsnps": {
+          "covariates": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1"
+          ],
+          "ols": {
+            "beta_1": 3.2387014568185397,
+            "se_1": 0.3607145824334618,
+            "t": 8.97857091046758,
+            "p_one_sided": 1.5161715541458193e-19,
+            "p_two_sided": 3.0323431082916387e-19,
+            "n": 16556,
+            "covariates_used": [
+              "log10_gene_length",
+              "lof_pLI",
+              "log10_exp_lof_plus1"
+            ],
+            "r_squared": 0.029211288544451652
+          },
+          "huber": {
+            "status": "ok",
+            "beta_1": 3.359475562827507,
+            "se_1": 0.3326204562946295
+          },
+          "huber_abs_diff": {
+            "pass": false,
+            "ratio": 0.3348190283691832,
+            "threshold": 0.3
+          },
+          "huber_rel_diff": {
+            "pass": true,
+            "ratio": 0.03729090427729848,
+            "threshold": 0.2
+          }
+        }
+      },
+      "category_stratified_descriptive_only": {
+        "flag": {
+          "descriptive_only": true,
+          "not_decision_binding": true
+        },
+        "results": {
+          "enzyme": {
+            "beta_1": 2.7567287534386153,
+            "se_1": 0.6851263869871834,
+            "t": 4.023679142707118,
+            "p_one_sided": 2.8775340197229807e-05,
+            "p_two_sided": 5.7550680394459615e-05,
+            "n": 16556,
+            "covariates_used": [
+              "log10_gene_length",
+              "lof_pLI",
+              "log10_exp_lof_plus1",
+              "log10_NSNPS_plus1"
+            ],
+            "r_squared": 0.02554491925759894,
+            "n_in_category": 5,
+            "descriptive_only": true,
+            "not_decision_binding": true
+          },
+          "scaffold": {
+            "beta_1": 3.1939263533325963,
+            "se_1": 0.6849940629863353,
+            "t": 4.662706621730693,
+            "p_one_sided": 1.5725732307381376e-06,
+            "p_two_sided": 3.1451464614762752e-06,
+            "n": 16556,
+            "covariates_used": [
+              "log10_gene_length",
+              "lof_pLI",
+              "log10_exp_lof_plus1",
+              "log10_NSNPS_plus1"
+            ],
+            "r_squared": 0.025871320901944994,
+            "n_in_category": 5,
+            "descriptive_only": true,
+            "not_decision_binding": true
+          },
+          "cell-adhesion": {
+            "beta_1": 3.4324074872686787,
+            "se_1": 0.8851986016447401,
+            "t": 3.877556382139676,
+            "p_one_sided": 5.29593172556369e-05,
+            "p_two_sided": 0.0001059186345112738,
+            "n": 16556,
+            "covariates_used": [
+              "log10_gene_length",
+              "lof_pLI",
+              "log10_exp_lof_plus1",
+              "log10_NSNPS_plus1"
+            ],
+            "r_squared": 0.02547700165758149,
+            "n_in_category": 3,
+            "descriptive_only": true,
+            "not_decision_binding": true
+          }
+        }
+      }
+    },
+    "bip": {
+      "status": "ok",
+      "n_gene_universe": 16050,
+      "n_b3_in_universe": 18,
+      "envelope": {
+        "with_nsnps": {
+          "covariates": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "ols": {
+            "beta_1": 0.07317241574855435,
+            "se_1": 0.2518162007416483,
+            "t": 0.290578666237705,
+            "p_one_sided": 0.3856886669913865,
+            "p_two_sided": 0.771377333982773,
+            "n": 16050,
+            "covariates_used": [
+              "log10_gene_length",
+              "lof_pLI",
+              "log10_exp_lof_plus1",
+              "log10_NSNPS_plus1"
+            ],
+            "r_squared": 0.0006295354546971277
+          },
+          "huber": {
+            "status": "ok",
+            "beta_1": 0.17901839149110116,
+            "se_1": 0.2583987049146007
+          },
+          "huber_abs_diff": {
+            "pass": false,
+            "ratio": 0.42033028625961943,
+            "threshold": 0.3
+          },
+          "huber_rel_diff": {
+            "pass": false,
+            "ratio": 1.4465283762978398,
+            "threshold": 0.2
+          }
+        },
+        "without_nsnps": {
+          "covariates": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1"
+          ],
+          "ols": {
+            "beta_1": 0.07336362617916672,
+            "se_1": 0.2518229828079859,
+            "t": 0.2913301453311203,
+            "p_one_sided": 0.3854013000614012,
+            "p_two_sided": 0.7708026001228024,
+            "n": 16050,
+            "covariates_used": [
+              "log10_gene_length",
+              "lof_pLI",
+              "log10_exp_lof_plus1"
+            ],
+            "r_squared": 0.0005131024178207655
+          },
+          "huber": {
+            "status": "ok",
+            "beta_1": 0.18379302232117437,
+            "se_1": 0.2584047746137053
+          },
+          "huber_abs_diff": {
+            "pass": false,
+            "ratio": 0.4385199274134945,
+            "threshold": 0.3
+          },
+          "huber_rel_diff": {
+            "pass": false,
+            "ratio": 1.5052336136210043,
+            "threshold": 0.2
+          }
+        }
+      }
+    },
+    "mdd": {
+      "status": "ok",
+      "n_gene_universe": 16725,
+      "n_b3_in_universe": 18,
+      "envelope": {
+        "with_nsnps": {
+          "covariates": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "ols": {
+            "beta_1": 1.0913150069884598,
+            "se_1": 0.3019506229268153,
+            "t": 3.6142167762739317,
+            "p_one_sided": 0.0001510706835789781,
+            "p_two_sided": 0.0003021413671579562,
+            "n": 16725,
+            "covariates_used": [
+              "log10_gene_length",
+              "lof_pLI",
+              "log10_exp_lof_plus1",
+              "log10_NSNPS_plus1"
+            ],
+            "r_squared": 0.01227748456959954
+          },
+          "huber": {
+            "status": "ok",
+            "beta_1": 1.025871414188734,
+            "se_1": 0.29052654232927794
+          },
+          "huber_abs_diff": {
+            "pass": true,
+            "ratio": 0.2167360748104423,
+            "threshold": 0.3
+          },
+          "huber_rel_diff": {
+            "pass": true,
+            "ratio": 0.059967646720373496,
+            "threshold": 0.2
+          }
+        },
+        "without_nsnps": {
+          "covariates": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1"
+          ],
+          "ols": {
+            "beta_1": 1.1001393075344077,
+            "se_1": 0.30203947097005,
+            "t": 3.6423693367000256,
+            "p_one_sided": 0.00013547827679725175,
+            "p_two_sided": 0.0002709565535945035,
+            "n": 16725,
+            "covariates_used": [
+              "log10_gene_length",
+              "lof_pLI",
+              "log10_exp_lof_plus1"
+            ],
+            "r_squared": 0.011566838751434383
+          },
+          "huber": {
+            "status": "ok",
+            "beta_1": 1.0357035012593354,
+            "se_1": 0.2906492286234783
+          },
+          "huber_abs_diff": {
+            "pass": true,
+            "ratio": 0.21333571426319206,
+            "threshold": 0.3
+          },
+          "huber_rel_diff": {
+            "pass": true,
+            "ratio": 0.05857058813713645,
+            "threshold": 0.2
+          }
+        }
+      }
+    },
+    "asd": {
+      "status": "ok",
+      "n_gene_universe": 16677,
+      "n_b3_in_universe": 18,
+      "envelope": {
+        "with_nsnps": {
+          "covariates": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "ols": {
+            "beta_1": 1.1089879094293147,
+            "se_1": 0.25701305080656855,
+            "t": 4.314908935359682,
+            "p_one_sided": 8.029409549613448e-06,
+            "p_two_sided": 1.6058819099226896e-05,
+            "n": 16677,
+            "covariates_used": [
+              "log10_gene_length",
+              "lof_pLI",
+              "log10_exp_lof_plus1",
+              "log10_NSNPS_plus1"
+            ],
+            "r_squared": 0.005672646382827717
+          },
+          "huber": {
+            "status": "ok",
+            "beta_1": 0.8237745453706729,
+            "se_1": 0.2588518219811081
+          },
+          "huber_abs_diff": {
+            "pass": false,
+            "ratio": 1.1097232734430176,
+            "threshold": 0.3
+          },
+          "huber_rel_diff": {
+            "pass": false,
+            "ratio": 0.25718347480038145,
+            "threshold": 0.2
+          }
+        },
+        "without_nsnps": {
+          "covariates": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1"
+          ],
+          "ols": {
+            "beta_1": 1.1024344052408588,
+            "se_1": 0.2570851234502787,
+            "t": 4.288207697300206,
+            "p_one_sided": 9.056676100662744e-06,
+            "p_two_sided": 1.811335220132549e-05,
+            "n": 16677,
+            "covariates_used": [
+              "log10_gene_length",
+              "lof_pLI",
+              "log10_exp_lof_plus1"
+            ],
+            "r_squared": 0.004998027407339678
+          },
+          "huber": {
+            "status": "ok",
+            "beta_1": 0.8253028892774282,
+            "se_1": 0.2592069650165755
+          },
+          "huber_abs_diff": {
+            "pass": false,
+            "ratio": 1.077975700204329,
+            "threshold": 0.3
+          },
+          "huber_rel_diff": {
+            "pass": false,
+            "ratio": 0.2513814106725771,
+            "threshold": 0.2
+          }
+        }
+      }
+    },
+    "adhd": {
+      "status": "ok",
+      "n_gene_universe": 16660,
+      "n_b3_in_universe": 18,
+      "envelope": {
+        "with_nsnps": {
+          "covariates": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "ols": {
+            "beta_1": -0.09950067277508293,
+            "se_1": 0.28604307865416884,
+            "t": -0.34785205516327494,
+            "p_one_sided": 0.6360221550576428,
+            "p_two_sided": 0.7279556898847143,
+            "n": 16660,
+            "covariates_used": [
+              "log10_gene_length",
+              "lof_pLI",
+              "log10_exp_lof_plus1",
+              "log10_NSNPS_plus1"
+            ],
+            "r_squared": 0.009849165491337186
+          },
+          "huber": {
+            "status": "ok",
+            "beta_1": -0.08238792705667862,
+            "se_1": 0.25865592450074804
+          },
+          "huber_abs_diff": {
+            "pass": true,
+            "ratio": 0.059825764003518925,
+            "threshold": 0.3
+          },
+          "huber_rel_diff": {
+            "pass": true,
+            "ratio": 0.17198623125983226,
+            "threshold": 0.2
+          }
+        },
+        "without_nsnps": {
+          "covariates": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1"
+          ],
+          "ols": {
+            "beta_1": -0.11076843492950404,
+            "se_1": 0.2865327937889377,
+            "t": -0.38658205039907906,
+            "p_one_sided": 0.6504647064349672,
+            "p_two_sided": 0.6990705871300655,
+            "n": 16660,
+            "covariates_used": [
+              "log10_gene_length",
+              "lof_pLI",
+              "log10_exp_lof_plus1"
+            ],
+            "r_squared": 0.006369916692473776
+          },
+          "huber": {
+            "status": "ok",
+            "beta_1": -0.08955492942910825,
+            "se_1": 0.2591937280310131
+          },
+          "huber_abs_diff": {
+            "pass": true,
+            "ratio": 0.07403517489178506,
+            "threshold": 0.3
+          },
+          "huber_rel_diff": {
+            "pass": true,
+            "ratio": 0.19151218949601143,
+            "threshold": 0.2
+          }
+        }
+      }
+    },
+    "ibd_delange2017": {
+      "status": "ok",
+      "n_gene_universe": 16384,
+      "n_b3_in_universe": 18,
+      "envelope": {
+        "with_nsnps": {
+          "covariates": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "ols": {
+            "beta_1": 0.6085266360329623,
+            "se_1": 0.3384430717530889,
+            "t": 1.7980177076188246,
+            "p_one_sided": 0.03609630559830077,
+            "p_two_sided": 0.07219261119660154,
+            "n": 16384,
+            "covariates_used": [
+              "log10_gene_length",
+              "lof_pLI",
+              "log10_exp_lof_plus1",
+              "log10_NSNPS_plus1"
+            ],
+            "r_squared": 0.0066393061037895995
+          },
+          "huber": {
+            "status": "ok",
+            "beta_1": 0.441865140256096,
+            "se_1": 0.3045130748275403
+          },
+          "huber_abs_diff": {
+            "pass": false,
+            "ratio": 0.49243583245354233,
+            "threshold": 0.3
+          },
+          "huber_rel_diff": {
+            "pass": false,
+            "ratio": 0.2738770760526556,
+            "threshold": 0.2
+          }
+        },
+        "without_nsnps": {
+          "covariates": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1"
+          ],
+          "ols": {
+            "beta_1": 0.606751757070729,
+            "se_1": 0.33850033572688665,
+            "t": 1.7924701781101824,
+            "p_one_sided": 0.03653806504449513,
+            "p_two_sided": 0.07307613008899026,
+            "n": 16384,
+            "covariates_used": [
+              "log10_gene_length",
+              "lof_pLI",
+              "log10_exp_lof_plus1"
+            ],
+            "r_squared": 0.0062383212673018384
+          },
+          "huber": {
+            "status": "ok",
+            "beta_1": 0.4368683524880778,
+            "se_1": 0.3046341565181492
+          },
+          "huber_abs_diff": {
+            "pass": false,
+            "ratio": 0.5018707122338538,
+            "threshold": 0.3
+          },
+          "huber_rel_diff": {
+            "pass": false,
+            "ratio": 0.2799883191155686,
+            "threshold": 0.2
+          }
+        }
+      }
+    },
+    "height": {
+      "status": "ok",
+      "n_gene_universe": 16707,
+      "n_b3_in_universe": 18,
+      "envelope": {
+        "with_nsnps": {
+          "covariates": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "ols": {
+            "beta_1": 0.2906740569969632,
+            "se_1": 0.26896199442736135,
+            "t": 1.0807253925069538,
+            "p_one_sided": 0.1399174449281872,
+            "p_two_sided": 0.2798348898563744,
+            "n": 16707,
+            "covariates_used": [
+              "log10_gene_length",
+              "lof_pLI",
+              "log10_exp_lof_plus1",
+              "log10_NSNPS_plus1"
+            ],
+            "r_squared": 0.007949458062894044
+          },
+          "huber": {
+            "status": "ok",
+            "beta_1": 0.372980087871425,
+            "se_1": 0.25981642562587215
+          },
+          "huber_abs_diff": {
+            "pass": false,
+            "ratio": 0.3060136100258218,
+            "threshold": 0.3
+          },
+          "huber_rel_diff": {
+            "pass": false,
+            "ratio": 0.28315575089427986,
+            "threshold": 0.2
+          }
+        },
+        "without_nsnps": {
+          "covariates": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1"
+          ],
+          "ols": {
+            "beta_1": 0.2903393442903123,
+            "se_1": 0.2689381867668973,
+            "t": 1.0795764922069786,
+            "p_one_sided": 0.14017320188421434,
+            "p_two_sided": 0.2803464037684287,
+            "n": 16707,
+            "covariates_used": [
+              "log10_gene_length",
+              "lof_pLI",
+              "log10_exp_lof_plus1"
+            ],
+            "r_squared": 0.007948678104980456
+          },
+          "huber": {
+            "status": "ok",
+            "beta_1": 0.3729566138455531,
+            "se_1": 0.2597622763409811
+          },
+          "huber_abs_diff": {
+            "pass": false,
+            "ratio": 0.30719798682531285,
+            "threshold": 0.3
+          },
+          "huber_rel_diff": {
+            "pass": false,
+            "ratio": 0.28455416456624383,
+            "threshold": 0.2
+          }
+        }
+      }
+    },
+    "alzheimers": {
+      "status": "ok",
+      "n_gene_universe": 16713,
+      "n_b3_in_universe": 18,
+      "envelope": {
+        "with_nsnps": {
+          "covariates": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1",
+            "log10_NSNPS_plus1"
+          ],
+          "ols": {
+            "beta_1": 0.1707440623417422,
+            "se_1": 0.25571004811813397,
+            "t": 0.6677252755545263,
+            "p_one_sided": 0.25215909803286096,
+            "p_two_sided": 0.5043181960657219,
+            "n": 16713,
+            "covariates_used": [
+              "log10_gene_length",
+              "lof_pLI",
+              "log10_exp_lof_plus1",
+              "log10_NSNPS_plus1"
+            ],
+            "r_squared": 0.004155295588589514
+          },
+          "huber": {
+            "status": "ok",
+            "beta_1": 0.22781094360035636,
+            "se_1": 0.23828995062284108
+          },
+          "huber_abs_diff": {
+            "pass": true,
+            "ratio": 0.2231702730439837,
+            "threshold": 0.3
+          },
+          "huber_rel_diff": {
+            "pass": false,
+            "ratio": 0.33422468972534747,
+            "threshold": 0.2
+          }
+        },
+        "without_nsnps": {
+          "covariates": [
+            "log10_gene_length",
+            "lof_pLI",
+            "log10_exp_lof_plus1"
+          ],
+          "ols": {
+            "beta_1": 0.16854035353115715,
+            "se_1": 0.25569157436943674,
+            "t": 0.6591548976410193,
+            "p_one_sided": 0.25490269513860503,
+            "p_two_sided": 0.5098053902772101,
+            "n": 16713,
+            "covariates_used": [
+              "log10_gene_length",
+              "lof_pLI",
+              "log10_exp_lof_plus1"
+            ],
+            "r_squared": 0.004118795419441712
+          },
+          "huber": {
+            "status": "ok",
+            "beta_1": 0.2273989094968182,
+            "se_1": 0.23828107495512935
+          },
+          "huber_abs_diff": {
+            "pass": true,
+            "ratio": 0.23019356860237833,
+            "threshold": 0.3
+          },
+          "huber_rel_diff": {
+            "pass": false,
+            "ratio": 0.34922530262036144,
+            "threshold": 0.2
+          }
+        }
+      }
+    }
+  },
+  "loeuf_sensitivity": {
+    "scz": {
+      "status": "ok",
+      "covariates": [
+        "log10_gene_length",
+        "lof_oe_ci_upper",
+        "log10_exp_lof_plus1",
+        "log10_NSNPS_plus1"
+      ],
+      "ols": {
+        "beta_1": 3.2527318779292536,
+        "se_1": 0.3606481496665898,
+        "t": 9.01912814729903,
+        "p_one_sided": 1.0498246080469321e-19,
+        "p_two_sided": 2.0996492160938643e-19,
+        "n": 16556,
+        "covariates_used": [
+          "log10_gene_length",
+          "lof_oe_ci_upper",
+          "log10_exp_lof_plus1",
+          "log10_NSNPS_plus1"
+        ],
+        "r_squared": 0.029481521244761555
+      },
+      "huber": {
+        "status": "ok",
+        "beta_1": 3.3750488949867474,
+        "se_1": 0.332188046925868
+      },
+      "huber_abs_diff": {
+        "pass": false,
+        "ratio": 0.339158864867525,
+        "threshold": 0.3
+      }
+    },
+    "mdd": {
+      "status": "ok",
+      "covariates": [
+        "log10_gene_length",
+        "lof_oe_ci_upper",
+        "log10_exp_lof_plus1",
+        "log10_NSNPS_plus1"
+      ],
+      "ols": {
+        "beta_1": 1.097158594843383,
+        "se_1": 0.30190752033362345,
+        "t": 3.6340883248981872,
+        "p_one_sided": 0.00013990064669178496,
+        "p_two_sided": 0.0002798012933835699,
+        "n": 16725,
+        "covariates_used": [
+          "log10_gene_length",
+          "lof_oe_ci_upper",
+          "log10_exp_lof_plus1",
+          "log10_NSNPS_plus1"
+        ],
+        "r_squared": 0.012414168167524497
+      },
+      "huber": {
+        "status": "ok",
+        "beta_1": 1.0415437171341613,
+        "se_1": 0.2908624132479959
+      },
+      "huber_abs_diff": {
+        "pass": true,
+        "ratio": 0.1842116342374131,
+        "threshold": 0.3
+      }
+    },
+    "height": {
+      "status": "ok",
+      "covariates": [
+        "log10_gene_length",
+        "lof_oe_ci_upper",
+        "log10_exp_lof_plus1",
+        "log10_NSNPS_plus1"
+      ],
+      "ols": {
+        "beta_1": 0.28940294415294093,
+        "se_1": 0.2688940761658964,
+        "t": 1.0762711781511745,
+        "p_one_sided": 0.14091077078064554,
+        "p_two_sided": 0.2818215415612911,
+        "n": 16707,
+        "covariates_used": [
+          "log10_gene_length",
+          "lof_oe_ci_upper",
+          "log10_exp_lof_plus1",
+          "log10_NSNPS_plus1"
+        ],
+        "r_squared": 0.008329040451589553
+      },
+      "huber": {
+        "status": "ok",
+        "beta_1": 0.3727032931174546,
+        "se_1": 0.25991625968508714
+      },
+      "huber_abs_diff": {
+        "pass": false,
+        "ratio": 0.30978870993469126,
+        "threshold": 0.3
+      }
+    }
+  },
+  "decision_classification": {
+    "classification": "UNINTERPRETABLE",
+    "reason": "5 disorders fail abs-diff Huber: ['scz', 'bip', 'asd', 'ibd_delange2017', 'height']",
+    "bh_q": {
+      "scz": 1.1674504780885038e-18,
+      "bip": 0.440787047990156,
+      "mdd": 0.00040285515621060823,
+      "asd": 3.211763819845379e-05,
+      "adhd": 0.6360221550576428,
+      "ibd_delange2017": 0.07219261119660154,
+      "height": 0.22386791188509952,
+      "alzheimers": 0.3362121307104813
+    },
+    "huber_fail": [
+      "scz",
+      "bip",
+      "asd",
+      "ibd_delange2017",
+      "height"
+    ]
+  },
+  "provenance_sha256": {
+    "gnomad_tsv": "68d8abdb7fc48f570869b02dfaa74b9fecaece7fcc5f301ddca40ec1ce12da00",
+    "gene_annot": "940086e0781e9b244da76d27f02cc25dd45c957ee4415915cd1ced37b63d1e72",
+    "magma_geneloc": "bfcb5273801cc3e37dcb98f5465f4498daa8c0cfcda2f4f3fbc51abe02000e7e",
+    "magma_scz": "8eaded5409b49981de428189805957420d378c5cf138c9d40056acf4f1030fa0",
+    "magma_per_disorder": {
+      "bip": "4044deac6f1402590ca5452a34c269bfae50d8dec427e2fe4e6024984e59f75f",
+      "mdd": "f22df6596ffd78fb3f10ae1c6420ee6034c645ed37ce9031b4459f310e188d4b",
+      "asd": "2305fcfd341a9c533b1bc1231001ef69db94051d213e5e7f7733d5d5c9195f27",
+      "adhd": "f229faa8ee0e8879c8ff97a5c27a8f28765bccf4fb41d0867dbdbd7ea8b2702d",
+      "ibd_delange2017": "2bfcdd16615c57188a688b2d835893ffc1f8501fefbe45bb39e53c86a679a0bc",
+      "height": "80d3b384de512fa678843f2f8e5cab3422dfea2958ad8c40c42de4e4191b2a52",
+      "alzheimers": "dfb5fe0b299edf13db36c73986306af42e5fe8f407dee3d582c3697a803c5706"
+    }
+  },
+  "brief_contract": {
+    "bh_fdr_family_size": 8,
+    "bh_q": 0.05,
+    "huber_abs_threshold_x_se": 0.3,
+    "category_stratification_flag": "descriptive_only, not_decision_binding"
+  }
+}

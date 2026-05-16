@@ -1,0 +1,306 @@
+{
+  "experiment_id": "batch_069_e2_motif_specificity",
+  "hypothesis": "EGR1/CTCF/MEF2C motif enrichment in SCZ genes is SCZ-specific",
+  "tfs_tested": [
+    "EGR1",
+    "CTCF",
+    "MEF2C"
+  ],
+  "rank_threshold": 500,
+  "rank_threshold_source": "batch_040/d44 design brief (top 1.85% of promoters)",
+  "gene_sets": {
+    "SCZ_GWAS": {
+      "n_total": 443,
+      "n_in_atlas": 443
+    },
+    "ASD_Satterstrom2020": {
+      "n_total": 78,
+      "n_in_atlas": 78
+    },
+    "DDD_Kaplanis2020": {
+      "n_total": 283,
+      "n_in_atlas": 283
+    },
+    "NonSCZ_Constrained_Brain": {
+      "n_total": 300,
+      "n_in_atlas": 300
+    }
+  },
+  "constrained_set_construction": {
+    "n_gnomad_genes": 17940,
+    "n_constrained": 3898,
+    "n_brain_expressed": 11159,
+    "n_constrained_brain": 2916,
+    "n_eligible_after_exclusion": 2568,
+    "n_final": 300,
+    "pli_threshold": 0.5,
+    "brain_expression_source": "BrainSpan (Miller et al. 2014)",
+    "constraint_source": "gnomAD v4.1 (Karczewski et al. 2020)"
+  },
+  "results": {
+    "SCZ_GWAS": {
+      "n_genes_in_atlas": 443,
+      "EGR1": {
+        "odds_ratio": 4.976027548941447,
+        "p_value": 2.6551590163670817e-07,
+        "ci_low": 3.0083208470846987,
+        "ci_high": 8.230787680715459,
+        "k_test": 17,
+        "n_test": 443,
+        "k_bg": 212,
+        "n_bg": 26647,
+        "pct_test": 3.84,
+        "pct_bg": 0.8,
+        "interpretability": "INTERPRETABLE",
+        "interpretability_note": "Expected k=3.5, observed k=17"
+      },
+      "CTCF": {
+        "odds_ratio": 3.145503340375721,
+        "p_value": 1.2232697471248802e-05,
+        "ci_low": 2.008028276418048,
+        "ci_high": 4.927316701916285,
+        "k_test": 21,
+        "n_test": 443,
+        "k_bg": 415,
+        "n_bg": 26647,
+        "pct_test": 4.74,
+        "pct_bg": 1.56,
+        "interpretability": "INTERPRETABLE",
+        "interpretability_note": "Expected k=6.9, observed k=21"
+      },
+      "MEF2C": {
+        "odds_ratio": 3.835924802910855,
+        "p_value": 3.971790361828534e-06,
+        "ci_low": 2.360348951449635,
+        "ci_high": 6.233959213763591,
+        "k_test": 18,
+        "n_test": 443,
+        "k_bg": 291,
+        "n_bg": 26647,
+        "pct_test": 4.06,
+        "pct_bg": 1.09,
+        "interpretability": "INTERPRETABLE",
+        "interpretability_note": "Expected k=4.8, observed k=18"
+      }
+    },
+    "ASD_Satterstrom2020": {
+      "n_genes_in_atlas": 78,
+      "EGR1": {
+        "odds_ratio": 11.897601827179292,
+        "p_value": 4.466230230773278e-06,
+        "ci_low": 5.412497915220866,
+        "ci_high": 26.152976214555032,
+        "k_test": 7,
+        "n_test": 78,
+        "k_bg": 222,
+        "n_bg": 27012,
+        "pct_test": 8.97,
+        "pct_bg": 0.82,
+        "interpretability": "MARGINAL_BUT_INFORMATIVE",
+        "interpretability_note": "Expected k=0.6 but observed k=7; low power to detect null but enrichment is clear"
+      },
+      "CTCF": {
+        "odds_ratio": 2.455334872979215,
+        "p_value": 0.13112140083911097,
+        "ci_low": 0.7713187101956462,
+        "ci_high": 7.816054840597184,
+        "k_test": 3,
+        "n_test": 78,
+        "k_bg": 433,
+        "n_bg": 27012,
+        "pct_test": 3.85,
+        "pct_bg": 1.6,
+        "interpretability": "MARGINAL",
+        "interpretability_note": "Expected k=1.3, observed k=3"
+      },
+      "MEF2C": {
+        "odds_ratio": 8.719802257252121,
+        "p_value": 3.101903204587575e-05,
+        "ci_low": 3.9784230897812787,
+        "ci_high": 19.111831419055882,
+        "k_test": 7,
+        "n_test": 78,
+        "k_bg": 302,
+        "n_bg": 27012,
+        "pct_test": 8.97,
+        "pct_bg": 1.12,
+        "interpretability": "MARGINAL_BUT_INFORMATIVE",
+        "interpretability_note": "Expected k=0.9 but observed k=7; low power to detect null but enrichment is clear"
+      }
+    },
+    "DDD_Kaplanis2020": {
+      "n_genes_in_atlas": 283,
+      "EGR1": {
+        "odds_ratio": 13.891069771039604,
+        "p_value": 1.3853992173245793e-20,
+        "ci_low": 9.126540566649481,
+        "ci_high": 21.142931209774922,
+        "k_test": 27,
+        "n_test": 283,
+        "k_bg": 202,
+        "n_bg": 26807,
+        "pct_test": 9.54,
+        "pct_bg": 0.75,
+        "interpretability": "MARGINAL",
+        "interpretability_note": "Expected k=2.1, observed k=27"
+      },
+      "CTCF": {
+        "odds_ratio": 1.792965165675446,
+        "p_value": 0.14456123367584509,
+        "ci_low": 0.8820036047546695,
+        "ci_high": 3.6447969917535192,
+        "k_test": 8,
+        "n_test": 283,
+        "k_bg": 428,
+        "n_bg": 26807,
+        "pct_test": 2.83,
+        "pct_bg": 1.6,
+        "interpretability": "INTERPRETABLE",
+        "interpretability_note": "Expected k=4.5, observed k=8"
+      },
+      "MEF2C": {
+        "odds_ratio": 5.422709667523105,
+        "p_value": 1.8999880596684868e-07,
+        "ci_low": 3.2321760690007304,
+        "ci_high": 9.097827442098389,
+        "k_test": 16,
+        "n_test": 283,
+        "k_bg": 293,
+        "n_bg": 26807,
+        "pct_test": 5.65,
+        "pct_bg": 1.09,
+        "interpretability": "INTERPRETABLE",
+        "interpretability_note": "Expected k=3.1, observed k=16"
+      }
+    },
+    "NonSCZ_Constrained_Brain": {
+      "n_genes_in_atlas": 300,
+      "EGR1": {
+        "odds_ratio": 3.293745738548317,
+        "p_value": 0.004167783149961727,
+        "ci_low": 1.6116592672330912,
+        "ci_high": 6.73142345331494,
+        "k_test": 8,
+        "n_test": 300,
+        "k_bg": 221,
+        "n_bg": 26790,
+        "pct_test": 2.67,
+        "pct_bg": 0.82,
+        "interpretability": "MARGINAL",
+        "interpretability_note": "Expected k=2.5, observed k=8"
+      },
+      "CTCF": {
+        "odds_ratio": 1.4680302632521063,
+        "p_value": 0.34717488628318705,
+        "ci_low": 0.689539246314313,
+        "ci_high": 3.125439001976231,
+        "k_test": 7,
+        "n_test": 300,
+        "k_bg": 429,
+        "n_bg": 26790,
+        "pct_test": 2.33,
+        "pct_bg": 1.6,
+        "interpretability": "INTERPRETABLE",
+        "interpretability_note": "Expected k=4.8, observed k=7"
+      },
+      "MEF2C": {
+        "odds_ratio": 1.7839967670236412,
+        "p_value": 0.1613553972535307,
+        "ci_low": 0.7887324281425062,
+        "ci_high": 4.035138345010168,
+        "k_test": 6,
+        "n_test": 300,
+        "k_bg": 303,
+        "n_bg": 26790,
+        "pct_test": 2.0,
+        "pct_bg": 1.13,
+        "interpretability": "INTERPRETABLE",
+        "interpretability_note": "Expected k=3.4, observed k=6"
+      }
+    }
+  },
+  "comparison_table": [
+    {
+      "Gene_Set": "SCZ_GWAS",
+      "n_genes": 443,
+      "EGR1_OR": 4.976027548941447,
+      "EGR1_p": 2.6551590163670817e-07,
+      "EGR1_k": 17,
+      "EGR1_interp": "INTERPRETABLE",
+      "CTCF_OR": 3.145503340375721,
+      "CTCF_p": 1.2232697471248802e-05,
+      "CTCF_k": 21,
+      "CTCF_interp": "INTERPRETABLE",
+      "MEF2C_OR": 3.835924802910855,
+      "MEF2C_p": 3.971790361828534e-06,
+      "MEF2C_k": 18,
+      "MEF2C_interp": "INTERPRETABLE"
+    },
+    {
+      "Gene_Set": "ASD_Satterstrom2020",
+      "n_genes": 78,
+      "EGR1_OR": 11.897601827179292,
+      "EGR1_p": 4.466230230773278e-06,
+      "EGR1_k": 7,
+      "EGR1_interp": "MARGINAL_BUT_INFORMATIVE",
+      "CTCF_OR": 2.455334872979215,
+      "CTCF_p": 0.13112140083911097,
+      "CTCF_k": 3,
+      "CTCF_interp": "MARGINAL",
+      "MEF2C_OR": 8.719802257252121,
+      "MEF2C_p": 3.101903204587575e-05,
+      "MEF2C_k": 7,
+      "MEF2C_interp": "MARGINAL_BUT_INFORMATIVE"
+    },
+    {
+      "Gene_Set": "DDD_Kaplanis2020",
+      "n_genes": 283,
+      "EGR1_OR": 13.891069771039604,
+      "EGR1_p": 1.3853992173245793e-20,
+      "EGR1_k": 27,
+      "EGR1_interp": "MARGINAL",
+      "CTCF_OR": 1.792965165675446,
+      "CTCF_p": 0.14456123367584509,
+      "CTCF_k": 8,
+      "CTCF_interp": "INTERPRETABLE",
+      "MEF2C_OR": 5.422709667523105,
+      "MEF2C_p": 1.8999880596684868e-07,
+      "MEF2C_k": 16,
+      "MEF2C_interp": "INTERPRETABLE"
+    },
+    {
+      "Gene_Set": "NonSCZ_Constrained_Brain",
+      "n_genes": 300,
+      "EGR1_OR": 3.293745738548317,
+      "EGR1_p": 0.004167783149961727,
+      "EGR1_k": 8,
+      "EGR1_interp": "MARGINAL",
+      "CTCF_OR": 1.4680302632521063,
+      "CTCF_p": 0.34717488628318705,
+      "CTCF_k": 7,
+      "CTCF_interp": "INTERPRETABLE",
+      "MEF2C_OR": 1.7839967670236412,
+      "MEF2C_p": 0.1613553972535307,
+      "MEF2C_k": 6,
+      "MEF2C_interp": "INTERPRETABLE"
+    }
+  ],
+  "power_notes": {
+    "ASD_EGR1": "Expected k~0.6 at background rate. Likely UNINTERPRETABLE per pre-registration.",
+    "DDD_EGR1": "Expected k~2 at background rate. Marginal power per pre-registration.",
+    "ASD_CTCF": "Expected k~1.2 at background rate. Also marginal per pre-registration.",
+    "NonSCZ_Constrained_EGR1": "Expected k~2.4 at background rate. Testable.",
+    "NonSCZ_Constrained_CTCF": "Expected k~4.7 at background rate. Testable."
+  },
+  "environment": {
+    "python_version": "3.13.7 (main, Mar  3 2026, 12:19:54) [GCC 15.2.0]",
+    "platform": "Linux-6.17.0-22-generic-x86_64-with-glibc2.42",
+    "numpy_version": "2.0.1",
+    "pandas_version": "2.3.2",
+    "scipy_version": "1.16.2",
+    "random_seed": 42,
+    "rank_threshold": 500,
+    "pli_threshold": 0.5
+  },
+  "status": "completed"
+}

@@ -1,0 +1,26 @@
+{
+  "EGR1_neuron": {
+    "source": "ENCODE ENCSR749BFL glutamatergic neuron",
+    "status": "degenerate",
+    "a": 0,
+    "b": 415,
+    "c": 0,
+    "d": 0
+  },
+  "CTCF_hippocampus": {
+    "source": "ENCODE ENCSR877MSN hippocampus",
+    "status": "degenerate",
+    "a": 0,
+    "b": 415,
+    "c": 0,
+    "d": 0
+  },
+  "CTCF_cortex": {
+    "source": "ENCODE ENCSR644VYX cortex",
+    "status": "degenerate",
+    "a": 0,
+    "b": 415,
+    "c": 0,
+    "d": 0
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "Pardi\u00f1as": {
+    "original": {
+      "label": "Pardi\u00f1as \u00d7 Neuronal (original)",
+      "marker_n": 95,
+      "overlap": 17,
+      "gwas_n": 444,
+      "universe": 20297,
+      "odds_ratio": 10.093526691887348,
+      "ci_lo": 5.921471975083508,
+      "ci_hi": 17.205060077719203,
+      "p_value": 2.379614194733084e-11,
+      "overlap_genes": [
+        "CNTNAP2",
+        "DLGAP1",
+        "GABBR2",
+        "GABRA1",
+        "GAD1",
+        "KCNMA1",
+        "NBEA",
+        "NRGN",
+        "PCLO",
+        "PCSK2",
+        "PDE1A",
+        "PPP1R1B",
+        "RGS17",
+        "SCN1A",
+        "SYNPR",
+        "TH",
+        "ZIC1"
+      ]
+    },
+    "minus_cross_disorder": {
+      "label": "Pardi\u00f1as \u00d7 Neuronal (minus cross-disorder)",
+      "marker_n": 95,
+      "overlap": 17,
+      "gwas_n": 444,
+      "universe": 20297,
+      "odds_ratio": 10.093526691887348,
+      "ci_lo": 5.921471975083508,
+      "ci_hi": 17.205060077719203,
+      "p_value": 2.379614194733084e-11,
+      "overlap_genes": [
+        "CNTNAP2",
+        "DLGAP1",
+        "GABBR2",
+        "GABRA1",
+        "GAD1",
+        "KCNMA1",
+        "NBEA",
+        "NRGN",
+        "PCLO",
+        "PCSK2",
+        "PDE1A",
+        "PPP1R1B",
+        "RGS17",
+        "SCN1A",
+        "SYNPR",
+        "TH",
+        "ZIC1"
+      ]
+    },
+    "minus_schema": {
+      "label": "Pardi\u00f1as \u00d7 Neuronal (minus SCHEMA)",
+      "marker_n": 95,
+      "overlap": 17,
+      "gwas_n": 444,
+      "universe": 20297,
+      "odds_ratio": 10.093526691887348,
+      "ci_lo": 5.921471975083508,
+      "ci_hi": 17.205060077719203,
+      "p_value": 2.379614194733084e-11,
+      "overlap_genes": [
+        "CNTNAP2",
+        "DLGAP1",
+        "GABBR2",
+        "GABRA1",
+        "GAD1",
+        "KCNMA1",
+        "NBEA",
+        "NRGN",
+        "PCLO",
+        "PCSK2",
+        "PDE1A",
+        "PPP1R1B",
+        "RGS17",
+        "SCN1A",
+        "SYNPR",
+        "TH",
+        "ZIC1"
+      ]
+    },
+    "n_removed_cross_disorder": 0,
+    "n_removed_schema": 0
+  },
+  "PGC2": {
+    "original": {
+      "label": "PGC2 \u00d7 Neuronal (original)",
+      "marker_n": 95,
+      "overlap": 1,
+      "gwas_n": 200,
+      "universe": 20297,
+      "odds_ratio": 1.0693360419116862,
+      "ci_lo": 0.14833216072399746,
+      "ci_hi": 7.708911978023637,
+      "p_value": 0.6105179609218743,
+      "overlap_genes": [
+        "NRGN"
+      ]
+    },
+    "minus_cross_disorder": {
+      "label": "PGC2 \u00d7 Neuronal (minus cross-disorder)",
+      "marker_n": 95,
+      "overlap": 1,
+      "gwas_n": 200,
+      "universe": 20297,
+      "odds_ratio": 1.0693360419116862,
+      "ci_lo": 0.14833216072399746,
+      "ci_hi": 7.708911978023637,
+      "p_value": 0.6105179609218743,
+      "overlap_genes": [
+        "NRGN"
+      ]
+    },
+    "minus_schema": {
+      "label": "PGC2 \u00d7 Neuronal (minus SCHEMA)",
+      "marker_n": 95,
+      "overlap": 1,
+      "gwas_n": 200,
+      "universe": 20297,
+      "odds_ratio": 1.0693360419116862,
+      "ci_lo": 0.14833216072399746,
+      "ci_hi": 7.708911978023637,
+      "p_value": 0.6105179609218743,
+      "overlap_genes": [
+        "NRGN"
+      ]
+    },
+    "n_removed_cross_disorder": 0,
+    "n_removed_schema": 0
+  },
+  "PGC3": {
+    "original": {
+      "label": "PGC3 \u00d7 Neuronal (original)",
+      "marker_n": 95,
+      "overlap": 2,
+      "gwas_n": 106,
+      "universe": 20297,
+      "odds_ratio": 4.155913978494624,
+      "ci_lo": 1.0106448099690568,
+      "ci_hi": 17.089704341504333,
+      "p_value": 0.08827138226499368,
+      "overlap_genes": [
+        "GABBR2",
+        "RERE"
+      ]
+    },
+    "minus_cross_disorder": {
+      "label": "PGC3 \u00d7 Neuronal (minus cross-disorder)",
+      "marker_n": 95,
+      "overlap": 2,
+      "gwas_n": 106,
+      "universe": 20297,
+      "odds_ratio": 4.155913978494624,
+      "ci_lo": 1.0106448099690568,
+      "ci_hi": 17.089704341504333,
+      "p_value": 0.08827138226499368,
+      "overlap_genes": [
+        "GABBR2",
+        "RERE"
+      ]
+    },
+    "minus_schema": {
+      "label": "PGC3 \u00d7 Neuronal (minus SCHEMA)",
+      "marker_n": 95,
+      "overlap": 2,
+      "gwas_n": 106,
+      "universe": 20297,
+      "odds_ratio": 4.155913978494624,
+      "ci_lo": 1.0106448099690568,
+      "ci_hi": 17.089704341504333,
+      "p_value": 0.08827138226499368,
+      "overlap_genes": [
+        "GABBR2",
+        "RERE"
+      ]
+    },
+    "n_removed_cross_disorder": 0,
+    "n_removed_schema": 0
+  }
+}

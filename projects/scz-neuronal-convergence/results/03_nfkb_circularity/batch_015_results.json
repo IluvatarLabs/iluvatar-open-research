@@ -1,0 +1,153 @@
+{
+  "hypotheses": [
+    {
+      "id": "H015-1",
+      "name": "EGR1 Dual-Cluster Convergence",
+      "neuronal_test": {
+        "label": "EGR1 neuronal targets vs Neuronal marker genes",
+        "a": 9,
+        "b": 0,
+        "c": 87,
+        "d": 19904,
+        "odds_ratio": Infinity,
+        "p_value": 9.205808326639989e-22,
+        "significant": true,
+        "k": 96,
+        "x": 9,
+        "degenerate": true
+      },
+      "immune_test": {
+        "label": "EGR1 immune targets vs Immune marker genes",
+        "a": 6,
+        "b": 0,
+        "c": 76,
+        "d": 19918,
+        "odds_ratio": Infinity,
+        "p_value": 3.942276254568091e-15,
+        "significant": true,
+        "k": 82,
+        "x": 6,
+        "degenerate": true
+      },
+      "convergence": true,
+      "pre_registered_threshold": "neuronal OR > 1.5 AND immune OR > 1.5, both p < 0.0083",
+      "decision": "PASS"
+    },
+    {
+      "id": "H015-2",
+      "name": "TCF4 Regulon Constructable",
+      "test": {
+        "label": "TCF4 targets vs SCZ genes",
+        "a": 2,
+        "b": 9,
+        "c": 134,
+        "d": 19855,
+        "odds_ratio": 32.92703150912106,
+        "p_value": 0.0024251265854709795,
+        "significant": true,
+        "k": 136,
+        "x": 2,
+        "degenerate": false
+      },
+      "targets": [
+        "ZBTB18",
+        "MYT1L",
+        "TCF7L2",
+        "HES6",
+        "ZNF238",
+        "BHLHE41",
+        "BHLHE40",
+        "ST18",
+        "NEUROD1",
+        "TCF4",
+        "DLL3"
+      ],
+      "pre_registered_threshold": "OR > 1.5, p < 0.0083",
+      "decision": "PASS"
+    },
+    {
+      "id": "H015-3",
+      "name": "CTCF Dual-Cluster Convergence",
+      "neuronal_test": {
+        "label": "CTCF neuronal targets vs Neuronal marker genes",
+        "a": 10,
+        "b": 4,
+        "c": 86,
+        "d": 19900,
+        "odds_ratio": 578.4883720930233,
+        "p_value": 3.947963243467409e-21,
+        "significant": true,
+        "k": 96,
+        "x": 10,
+        "degenerate": false
+      },
+      "immune_test": {
+        "label": "CTCF immune targets vs Immune marker genes",
+        "a": 2,
+        "b": 0,
+        "c": 80,
+        "d": 19918,
+        "odds_ratio": Infinity,
+        "p_value": 1.6605830291514576e-05,
+        "significant": true,
+        "k": 82,
+        "x": 2,
+        "degenerate": true
+      },
+      "convergence": true,
+      "pre_registered_threshold": "neuronal OR > 1.5 AND immune OR > 1.5, both p < 0.0083",
+      "decision": "PASS"
+    },
+    {
+      "id": "H015-4",
+      "name": "NF-\u03baB Non-Circularity Test",
+      "vs_pardinas": {
+        "label": "KEGG NF-\u03baB vs Pardi\u00f1as 2018 genes (independent)",
+        "a": 4,
+        "b": 116,
+        "c": 118,
+        "d": 19762,
+        "odds_ratio": 5.774985388661601,
+        "p_value": 0.0062855667624052486,
+        "significant": true,
+        "k": 122,
+        "x": 4,
+        "degenerate": false
+      },
+      "vs_original": {
+        "label": "KEGG NF-\u03baB vs original SCZ genes",
+        "a": 9,
+        "b": 111,
+        "c": 127,
+        "d": 19753,
+        "odds_ratio": 12.610981059799958,
+        "p_value": 1.315619219297494e-07,
+        "significant": true,
+        "k": 136,
+        "x": 9,
+        "degenerate": false
+      },
+      "non_circular": true,
+      "pre_registered_threshold": "OR > 2.0 with Pardi\u00f1as genes",
+      "decision": "PASS",
+      "circularity_interpretation": "REJECTED"
+    }
+  ],
+  "summary": {
+    "egr1_converges": true,
+    "ctcf_converges": true,
+    "tcf4_testable": true,
+    "nfkb_non_circular": true,
+    "convergence_regulators_found": [
+      "EGR1",
+      "CTCF"
+    ],
+    "nfkb_circularity": "REJECTED",
+    "g5_status": "ADVANCED"
+  },
+  "metadata": {
+    "alpha": 0.008333333333333333,
+    "n_tests": 6,
+    "correction": "Bonferroni"
+  }
+}

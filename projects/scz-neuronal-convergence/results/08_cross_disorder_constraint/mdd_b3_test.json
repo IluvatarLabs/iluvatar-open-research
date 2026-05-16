@@ -1,0 +1,21 @@
+{
+  "harmonization_meta": {
+    "disorder": "mdd",
+    "source": "/home/yuanz/Documents/GitHub/biomarvin_schizophrenia/data/ldsc/comparator_sumstats/mdd_ldsc.tsv",
+    "z_to_p_conversion": false,
+    "n_snps_input": 8889960,
+    "n_snps_after_bim_match": 6286235
+  },
+  "test": {
+    "disorder": "mdd",
+    "n_genes_in_output": 18469,
+    "n_b3_in_output": 18,
+    "median_b3": 1.7915,
+    "median_bg": 0.73529,
+    "sd_bg": 1.2893784835147721,
+    "std_effect": 0.8191621106634508,
+    "perm_p": 0.0027997200279972004,
+    "n_perm": 10000,
+    "perm_seed": 20260423
+  }
+}

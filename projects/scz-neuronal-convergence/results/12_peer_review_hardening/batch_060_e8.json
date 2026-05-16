@@ -1,0 +1,194 @@
+{
+  "experiment": "e8_g4_module",
+  "brief": "brief_v2.md section E8",
+  "seed": 20260424,
+  "timestamp_start": "2026-04-24T17:48:53",
+  "module_source": "curated_hub_genes",
+  "modules_raw": {
+    "M1_neuronal": {
+      "n_symbols": 50,
+      "example_genes": [
+        "BSN",
+        "CACNA1A",
+        "CACNA1B",
+        "CAMK2A",
+        "CPLX1",
+        "CPLX2",
+        "DLG4",
+        "GABRA1",
+        "GABRB2",
+        "GABRG2"
+      ]
+    },
+    "M2_astroglia": {
+      "n_symbols": 39,
+      "example_genes": [
+        "AIF1",
+        "ALDH1L1",
+        "AQP4",
+        "C1QA",
+        "C1QB",
+        "C1QC",
+        "C3",
+        "CCL2",
+        "CD14",
+        "CD68"
+      ]
+    },
+    "M3_myelination": {
+      "n_symbols": 29,
+      "example_genes": [
+        "ASPA",
+        "BCAS1",
+        "CLDN11",
+        "CNP",
+        "ENPP2",
+        "ERBB3",
+        "ERBB4",
+        "ERMN",
+        "FA2H",
+        "GALC"
+      ]
+    }
+  },
+  "module_mapping": {
+    "M1_neuronal": {
+      "n_symbols": 50,
+      "n_mapped_ensg": 47,
+      "mapping_rate": 0.94,
+      "unmapped_symbols": [
+        "NEFL",
+        "SYN1",
+        "SYP"
+      ]
+    },
+    "M2_astroglia": {
+      "n_symbols": 39,
+      "n_mapped_ensg": 39,
+      "mapping_rate": 1.0,
+      "unmapped_symbols": []
+    },
+    "M3_myelination": {
+      "n_symbols": 29,
+      "n_mapped_ensg": 27,
+      "mapping_rate": 0.931,
+      "unmapped_symbols": [
+        "NAA",
+        "PLP1"
+      ]
+    }
+  },
+  "pops_info": {
+    "n_total_predictions": 18383,
+    "n_top_k": 1000,
+    "top_k_threshold": 1000,
+    "min_pops_score_in_top_k": 0.540754
+  },
+  "universe_info": {
+    "n_universe": 18383,
+    "n_module_genes_in_universe": 113,
+    "n_pops_top_k_in_universe": 1000
+  },
+  "small_module_warnings": [
+    "M1_neuronal: 47 genes in universe (need >= 50)",
+    "M2_astroglia: 39 genes in universe (need >= 50)",
+    "M3_myelination: 27 genes in universe (need >= 50)"
+  ],
+  "fisher_tests": {
+    "M1_neuronal": {
+      "OR": 26.3262,
+      "CI_lo": 14.6168,
+      "CI_hi": 46.5921,
+      "p_fisher": 7.079489592570363e-24,
+      "a_overlap": 28,
+      "b_pops_only": 972,
+      "c_module_only": 19,
+      "d_neither": 17364,
+      "n_module_in_universe": 47,
+      "n_pops_in_universe": 1000,
+      "n_universe": 18383,
+      "q_BH": 0.0
+    },
+    "M2_astroglia": {
+      "OR": 0.9395,
+      "CI_lo": 0.3214,
+      "CI_hi": 4.1733,
+      "p_fisher": 0.6341543193112334,
+      "a_overlap": 2,
+      "b_pops_only": 998,
+      "c_module_only": 37,
+      "d_neither": 17346,
+      "n_module_in_universe": 39,
+      "n_pops_in_universe": 1000,
+      "n_universe": 18383,
+      "q_BH": 0.634154
+    },
+    "M3_myelination": {
+      "OR": 3.9655,
+      "CI_lo": 1.6745,
+      "CI_hi": 10.8536,
+      "p_fisher": 0.014006829377262336,
+      "a_overlap": 5,
+      "b_pops_only": 995,
+      "c_module_only": 22,
+      "d_neither": 17361,
+      "n_module_in_universe": 27,
+      "n_pops_in_universe": 1000,
+      "n_universe": 18383,
+      "q_BH": 0.02101
+    }
+  },
+  "verdict": "G4_MODULE_SUGGESTED",
+  "verdict_reason": "Polygenic risk concentrates in 2 subtype(s): ['M1_neuronal', 'M3_myelination']. OR > 3 AND q_BH < 0.05. CAVEAT: Using curated hub gene lists (Gandal 2018 supplementary tables not downloadable). Module sizes are smaller than full transcriptomic module membership. Results should be interpreted with this limitation. Full supplementary tables would provide hundreds of genes per module for higher power.",
+  "significant_modules": [
+    "M1_neuronal",
+    "M3_myelination"
+  ],
+  "significant_module_overlap_genes": {
+    "M1_neuronal": {
+      "n_overlap": 28,
+      "genes": [
+        "CACNA1A",
+        "CACNA1B",
+        "CAMK2A",
+        "CPLX2",
+        "DLG4",
+        "GABRG2",
+        "GRIA1",
+        "GRIA2",
+        "GRIN1",
+        "GRIN2A",
+        "GRIN2B",
+        "HOMER1",
+        "MAP2",
+        "MAPT",
+        "NRGN",
+        "NRXN1",
+        "NRXN3",
+        "PCLO",
+        "RAB3A",
+        "RIMS1",
+        "SCN8A",
+        "SHANK2",
+        "SLC12A5",
+        "SNAP25",
+        "STX1A",
+        "STXBP1",
+        "SYT1",
+        "VAMP2"
+      ]
+    },
+    "M3_myelination": {
+      "n_overlap": 5,
+      "genes": [
+        "ERBB4",
+        "PLLP",
+        "QKI",
+        "ST18",
+        "UGT8"
+      ]
+    }
+  },
+  "timestamp_end": "2026-04-24T17:48:53",
+  "elapsed_seconds": 0.2
+}
